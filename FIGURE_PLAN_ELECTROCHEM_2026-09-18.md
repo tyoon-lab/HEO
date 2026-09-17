@@ -1,70 +1,86 @@
-# Electrochemistry Figure Plan
+# Electrochemistry Figure Plan — Updated
 
-**Date:** 2026-09-18
+**Date:** 2026-09-18  
+**Status:** superseded in detail by `manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V1_2026-09-18.md`
 
-## Main electrochemistry figure set
+## Main-text figure logic
 
-### Figure E1 — Electrochemical utilization
+### Figure 1 — Structural/material perturbations
 
-Suggested panels:
+Question: What is changed before electrochemical cycling?
 
-- a. First-cycle voltage profiles for HEO / BM-HEO / Mg-HEO / BM-Mg-HEO.
-- b. First-cycle charge/discharge capacity and ICE summary.
-- c. Low-rate cycling.
-- d. Rate capability.
-
-Message:
-
-Ball milling increases low-rate accessible capacity but the advantage is rate-sensitive; Mg lowers accessible capacity.
-
-### Figure E2 — Current-off relaxation descriptors
-
-Suggested panels:
-
-- a. Representative GITT current-off transient and operational definitions.
-- b. ICI-style apparent instantaneous current-off jump/resistance vs cumulative capacity.
-- c. 3 s to 60 min relaxation amplitude vs cumulative capacity.
-- d. t63 vs cumulative capacity.
+- synthesis and 2 × 2 sample matrix;
+- XRD with principal-peak inset;
+- matched SEM comparison;
+- collaborator-final TEM/HRTEM/SAED/EDS.
 
 Message:
 
-Polarization amplitude and relaxation time evolve independently. Mg strongly lowers polarization amplitude without faster relaxation; ball milling generally slows relaxation.
+Mg provides a composition-level perturbation of the spinel-derived structure, whereas ball milling produces the stronger microstructural/disorder perturbation.
 
-### Figure E3 — Phase-transition-associated polarization
+### Figure 2 — Electrochemical accessibility and utilization
 
-Suggested panels:
+Question: Which synthesis variable controls how much of the electrode can participate?
 
-- a. Late-stage excess relaxation profile vs normalized capacity.
-- b. Peak amplitude comparison.
-- c. Capacity width comparison.
-- d. Capacity-weighted excess polarization area comparison, or combine b-d into one compact summary panel.
-
-Overlay or secondary axis can show relaxed GITT voltage to identify the approximate voltage range of the feature.
+- BET + relative Cdl/accessibility;
+- first-cycle profiles;
+- first-cycle capacity/ICE summary;
+- cycling with standardized 10 wt% FEC;
+- rate capability from the latest 2026-09-17 dataset.
 
 Message:
 
-The pristine HEO exhibits a concentrated late-stage transformation-associated polarization feature. Ball milling broadens this response and lowers the local peak. Mg strongly suppresses the feature, consistent with suppression/stabilization against the spinel-to-rock-salt/conversion transformation.
+Ball milling increases accessible interface and capacity in both compositions. Mg lowers capacity despite Mg-HEO having a larger BET area than HEO. The latest rate data show that BM-HEO retains higher absolute capacity across the tested rate sequence; do not use the superseded interpretation that BM necessarily worsens rate capability.
+
+### Figure 3 — Current-off polarization and relaxation
+
+Question: Does lower polarization mean faster kinetics?
+
+- representative GITT pulse/rest and operational definitions;
+- apparent t→0 current-off resistance vs capacity;
+- 3 s-to-60 min relaxation amplitude vs capacity;
+- model-free t63 vs capacity.
+
+Message:
+
+Polarization magnitude and relaxation time are independent observables. Mg strongly lowers polarization without faster relaxation; BM increases utilization while showing nearly unchanged intermediate-capacity fast resistance and slower long-rest relaxation.
+
+### Figure 4 — Phase-transition-associated polarization and mechanism
+
+Question: How do BM and Mg modify the conversion reaction itself?
+
+- late-stage ΔErelax vs normalized capacity with relaxed-voltage reference;
+- background-subtracted excess relaxation;
+- peak-amplitude vs FWHM-like width map;
+- final synthesis–electrochemistry mechanism schematic.
+
+Message:
+
+Pristine HEO has a concentrated late-stage transition-associated polarization feature. Ball milling broadens and lowers the local maximum while increasing accessibility. Mg strongly suppresses the feature and accessible conversion capacity, consistent with reduced transformation extent/structural stabilization.
 
 ## Supporting Information
 
-Recommended SI plots:
+Recommended SI:
 
-- full t50/t63/t90 curves;
-- early sqrt(t) coefficient / apparent diffusion-related ICI coefficient;
-- terminal relaxation slope;
-- current-on / pulse descriptors;
-- conventional apparent D_GITT;
-- hump-background sensitivity;
-- fitting-window sensitivity;
-- optional compact-model hierarchy (`D-only -> D + one relaxation mode -> distributed relaxation`).
+- structural refinements and additional microscopy;
+- final XPS;
+- full BET and Cdl extraction;
+- no-FEC cycling controls;
+- dQ/dV and post-cycle SEM;
+- E–√t fit quality;
+- t50/t90, early √t slope, terminal slope;
+- conventional apparent DGITT;
+- hump-background sensitivity and alternate capacity coordinates;
+- cycling EIS as supporting data unless a robust parameter series is established.
 
-## Integration with synthesis figures
+Do not include the exploratory `D-only -> D + one compact relaxation mode -> distributed relaxation` hierarchy in the HEO manuscript unless a later analysis yields a robust synthesis-dependent physical parameter. That result belongs primarily to the separate GITT/EKF study.
 
-The electrochemistry figures should be placed after the structural/chemical characterization so that the mechanistic interpretation can refer back to:
+## Core final sequence
 
-- lattice/phase changes with Mg incorporation;
-- particle/surface changes from ball milling;
-- BET / apparent electrochemically accessible interface;
-- any validated XPS/chemical-state trends.
+`Figure 1: what was changed`
 
-Avoid letting the GITT methodology dominate the figure sequence; it is a diagnostic tool supporting the synthesis-controlled phase-evolution story.
+→ `Figure 2: how much became electrochemically accessible`
+
+→ `Figure 3: how polarization and relaxation changed independently`
+
+→ `Figure 4: which coordinate of the phase-transforming reaction BM and Mg regulate`
