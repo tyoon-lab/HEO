@@ -1,0 +1,330 @@
+# HEO Figure Architecture and Captions v1
+
+**Date:** 2026-09-18  
+**Status:** Main-text figure architecture for manuscript v1  
+**Design principle:** each Figure answers one scientific question. Characterization is grouped by its role in the argument rather than by instrument.
+
+---
+
+# Overall figure sequence
+
+## Figure 1 — What structural/material perturbations are introduced by Mg and ball milling?
+
+**Question answered:** What is changed before electrochemical cycling?
+
+### Panel architecture
+
+**a. Synthesis and 2 × 2 sample matrix**  
+Compact schematic showing the common spinel HEO synthesis and the two controlled perturbations:
+
+- HEO
+- BM-HEO
+- Mg-HEO
+- BM-Mg-HEO
+
+The schematic should emphasize that Mg is the composition variable and ball milling is the processing variable. Keep synthesis details minimal; full recipe belongs in Methods.
+
+**b. XRD patterns of the four samples**  
+Full spinel-pattern comparison with one enlarged inset around the principal reflection near 35.7°. The inset should show the small Mg-associated low-angle shift and the milling-induced peak broadening. Do not annotate a unique Mg site. Use final collaborator indexing only.
+
+**c. SEM morphology comparison**  
+Matched-magnification images for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO. The role of this panel is to visualize the processing-induced morphology change, not to infer a quantitative diffusion length.
+
+**d. TEM/HRTEM + SAED/EDS evidence**  
+Use the collaborator-finalized structural assignment. Preferred composition is one compact representative HRTEM/SAED comparison plus EDS maps demonstrating multication homogeneity and Mg detection in Mg-containing samples. Do not use the preliminary CoGa2O4 labels.
+
+### Main message
+
+Mg modifies the parent spinel lattice only modestly, whereas ball milling produces the larger microstructural perturbation/disorder. These are two physically different starting states for the electrochemical comparison.
+
+### Draft caption
+
+**Figure 1. Structural and microstructural perturbations introduced by Mg incorporation and ball milling.** (a) Schematic of the four-sample comparison separating composition (Mg-free versus Mg-containing) from mechanical processing (pristine versus ball-milled). (b) X-ray diffraction patterns of HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO, with an enlarged view of the principal spinel reflection near 35.7° highlighting the small Mg-associated peak shift and milling-induced broadening. (c) Representative SEM images acquired at matched magnification. (d) Representative TEM/HRTEM, SAED, and elemental-mapping results after final crystallographic re-indexing. The structural data establish a modest Mg-associated lattice perturbation and a stronger milling-induced microstructural modification while preserving the dominant spinel-derived phase.
+
+**Finalization requirement:** collaborator must supply final Mg composition/ICP, TEM/SAED indexing, and final XPS decision before this Figure is frozen.
+
+---
+
+# Figure 2 — How do those perturbations change electrochemical accessibility and utilization?
+
+**Question answered:** Which synthesis variable controls how much of the electrode can participate electrochemically?
+
+### Panel architecture
+
+**a. BET surface area + relative interfacial-accessibility summary**  
+Left: BET surface area for the four powders.  
+Right: Cdl or capacitance-derived relative accessible-interface metric from the 3.0–3.3 V scan-rate series. Avoid presenting the Cs = 40 μF cm−2 conversion as absolute ECSA in the main Figure.
+
+Key BET values:
+
+- HEO: 3.94 m² g−1
+- BM-HEO: 18.159 m² g−1
+- Mg-HEO: 6.49 m² g−1
+- BM-Mg-HEO: 16.64 m² g−1
+
+**b. First-cycle voltage profiles**  
+All four samples under the standardized 10 wt% FEC electrolyte condition. Use the latest 2026-09-17 dataset. Final labels should be lithiation/delithiation rather than charge/discharge once WonATech sign convention is verified.
+
+Latest working first-cycle values:
+
+- HEO: 901.25 / 609.12 mAh g−1; ICE 67.59%
+- BM-HEO: 1056.10 / 782.08 mAh g−1; ICE 74.05%
+- Mg-HEO: 731.15 / 458.91 mAh g−1; ICE 62.77%
+- BM-Mg-HEO: 944.07 / 580.83 mAh g−1; ICE 61.52%
+
+**c. First-cycle capacity/ICE summary**  
+Compact bar or point summary. This panel should make the 2 × 2 effects immediately visible: BM increases accessible capacity in both compositions; Mg lowers capacity despite not lowering BET area.
+
+**d. Cycling performance with 10 wt% FEC**  
+Show the common electrolyte condition used for the principal comparison. The main purpose is absolute capacity evolution and sustained sample ordering, not a detailed FEC mechanism.
+
+**e. Rate capability**  
+Use the latest 2026-09-17 rate dataset. BM-HEO remains above HEO across the tested rate sequence and recovers on return to 0.1 C. Do not repeat the older internal statement that ball milling necessarily worsens rate capability.
+
+### Main message
+
+Ball milling strongly increases surface/interfacial accessibility and accessible capacity. Mg lowers capacity even though Mg-HEO has a larger BET area than HEO. Capacity therefore cannot be explained by geometric area or one simple transport parameter alone.
+
+### Draft caption
+
+**Figure 2. Surface accessibility and electrochemical utilization of the four spinel HEO electrodes.** (a) BET specific surface area and relative electrochemically accessible interface obtained from the scan-rate dependence of the non-faradaic current. The capacitance-derived quantity is used only for relative comparison because the specific interfacial capacitance of the porous composite electrode is not independently known. (b) First-cycle voltage profiles and (c) corresponding first-cycle capacity and initial Coulombic efficiency under the common electrolyte condition of 1.0 M LiPF6 in EC/DEC (1:1) with 10 wt% FEC. (d) Cycling performance and (e) rate capability of HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO. Ball milling strongly increases interfacial accessibility and accessible capacity in both compositions, whereas Mg incorporation decreases capacity despite the larger BET area of Mg-HEO relative to HEO.
+
+### SI associated with Figure 2
+
+- full scan-rate CV series and Cdl fits;
+- calculation using Cs = 40 μF cm−2, labeled as nominal/apparent ECSA only;
+- no-FEC cycling controls showing stronger interphase penalty for BM-HEO;
+- selected dQ/dV curves;
+- post-cycle SEM images;
+- cycling EIS series as qualitative/supporting data unless reproducible parameters are established.
+
+---
+
+# Figure 3 — Does lower polarization mean faster kinetics?
+
+**Question answered:** Can capacity and polarization differences be explained by a simple monotonic change in Li transport?
+
+### Panel architecture
+
+**a. Representative GITT pulse/rest and analysis definitions**  
+Show one 10 min pulse followed by 60 min rest. Mark:
+
+- pulse end;
+- early current-off fitting interval (3–30 s);
+- extrapolated t → 0 current-off intercept;
+- Eoff,3s;
+- E60min;
+- ΔErelax;
+- t63.
+
+A small inset of E versus √t with the linear 3–30 s fit is preferred.
+
+**b. Apparent instantaneous current-off resistance vs cumulative first-lithiation capacity**  
+All four samples. Include the large early BM-HEO response below 200 mAh g−1 but avoid allowing it to compress the 200–800 mAh g−1 region visually; a broken axis or small early-region inset may be useful.
+
+Median 200–800 mAh g−1 values:
+
+- HEO: 104.0 Ω
+- BM-HEO: 102.9 Ω
+- Mg-HEO: 40.2 Ω
+- BM-Mg-HEO: 33.0 Ω
+
+Initial 0–200 mAh g−1 values:
+
+- HEO: 296 Ω
+- BM-HEO: 575 Ω
+- Mg-HEO: 43 Ω
+- BM-Mg-HEO: 76 Ω
+
+**c. 3 s-to-60 min relaxation amplitude vs capacity**  
+All four samples. This panel should show the pronounced late-stage HEO hump and the smaller Mg response before Figure 4 isolates it quantitatively.
+
+Median 200–800 mAh g−1 values:
+
+- HEO: 160.9 mV
+- BM-HEO: 174.1 mV
+- Mg-HEO: 109.3 mV
+- BM-Mg-HEO: 142.3 mV
+
+**d. Model-free t63 vs capacity**  
+All four samples, preferably on the same cumulative-capacity coordinate as panels b and c. A compact inset may summarize medians over 200–800 mAh g−1:
+
+- HEO: 8.68 min
+- BM-HEO: 11.61 min
+- Mg-HEO: 11.01 min
+- BM-Mg-HEO: 13.00 min
+
+### Main message
+
+Polarization magnitude and relaxation time are independent observables. Mg greatly lowers polarization without producing faster relaxation, while BM increases utilization despite unchanged intermediate-capacity fast resistance and a longer t63. Therefore reduced polarization cannot automatically be equated with faster Li diffusion.
+
+### Draft caption
+
+**Figure 3. Current interruption separates polarization magnitude from relaxation time.** (a) Representative GITT pulse and 60 min current-off response showing the operational definitions used in the analysis. The early 3–30 s rest region was represented as E = a + b√t and extrapolated to t → 0 to obtain an apparent instantaneous current-off jump; ΔErelax denotes the voltage change from 3 s to 60 min, and t63 is the model-free time required to reach 63.2% of that finite-window relaxation. (b) Apparent instantaneous current-off resistance, (c) 3 s-to-60 min relaxation amplitude, and (d) t63 as functions of cumulative first-lithiation capacity. Over 200–800 mAh g−1, HEO and BM-HEO have nearly identical apparent fast current-off resistance but BM-HEO relaxes more slowly. Mg incorporation substantially lowers the polarization amplitude while t63 remains comparable to or longer than that of HEO. Polarization magnitude and relaxation time therefore do not vary as a single kinetic quantity.
+
+### SI associated with Figure 3
+
+- E versus √t representative fits and R² distribution;
+- t50 and t90 versus capacity;
+- early √t slope;
+- terminal relaxation slope;
+- current-on/pulse descriptors;
+- conventional apparent DGITT as a comparator, not the causal descriptor.
+
+---
+
+# Figure 4 — How do BM and Mg modify the phase-transforming reaction itself?
+
+**Question answered:** Why do BM and Mg change capacity and polarization in opposite ways?
+
+### Panel architecture
+
+**a. State-resolved late-stage relaxation with relaxed-voltage reference**  
+Plot ΔErelax versus normalized capacity z = Q/Qmax for all four samples. Add the relaxed GITT voltage as a light secondary reference or a separate aligned upper axis rather than cluttering the same plot. Mark the approximate 0.6–0.4 V conversion region.
+
+Purpose: demonstrate that the strong HEO hump is state-localized and occurs in the literature-established conversion/phase-evolution region.
+
+**b. Background-subtracted transition-associated excess relaxation**  
+Plot ηtr(z) for all four samples after applying the same declared background procedure. This should make the HEO concentrated peak, BM broadening/lowering, and Mg suppression visually obvious.
+
+Working values:
+
+| Sample | Excess peak | FWHM-like width | normalized excess area |
+|---|---:|---:|---:|
+| HEO | ~71 mV | ~350 mAh g−1 | ~22.3 mV |
+| BM-HEO | ~46 mV | ~417 mAh g−1 | ~15.0 mV |
+| Mg-HEO | ~15.9 mV | ~233 mAh g−1 | ~4.95 mV |
+| BM-Mg-HEO | ~21.1 mV | ~367 mAh g−1 | ~7.58 mV |
+
+The baseline-sensitivity audit must be completed before final numerical freeze.
+
+**c. Peak amplitude versus width map**  
+Preferred over separate bar charts. Plot each of the four samples in a two-dimensional map:
+
+- x-axis: FWHM-like capacity width;
+- y-axis: excess peak amplitude.
+
+Optional marker size can encode normalized excess area if this remains visually clear. The purpose is conceptual: BM moves mainly toward a broader/lower response, whereas Mg moves strongly toward a suppressed-amplitude response.
+
+**d. Mechanistic synthesis–electrochemistry scheme**  
+Final conceptual map:
+
+Pristine HEO:
+
+`concentrated spinel → rock-salt/conversion transformation → pronounced late-stage polarization`
+
+Ball milling:
+
+`larger interface + disorder/heterogeneous local states → broader transformation interval + lower local peak + higher electrochemical accessibility`
+
+Mg incorporation:
+
+`structural stabilization / spectator-like role → reduced conversion extent → lower transition polarization + lower conversion capacity`
+
+BM-Mg-HEO:
+
+`accessibility restored partly by milling, but Mg-imposed suppression of transition extent remains`
+
+The schematic should not assign each relaxation mode to a unique microscopic species and should not depict Mg as completely eliminating the transition.
+
+### Main message
+
+Ball milling and Mg act on different coordinates of the same conversion reaction. BM primarily controls **accessibility and distribution**; Mg primarily controls **transformation extent and structural stabilization**.
+
+### Draft caption
+
+**Figure 4. Ball milling and Mg incorporation regulate different coordinates of the conversion-type phase transformation.** (a) State-resolved GITT relaxation amplitude plotted against normalized first-lithiation capacity, with the relaxed-voltage trajectory indicating the low-voltage conversion region. Pristine HEO develops a pronounced late-stage polarization hump in the voltage range where spinel-to-rock-salt/conversion evolution has been established for compositionally related HEO anodes. (b) Background-subtracted excess relaxation obtained using a common baseline procedure. Ball milling decreases the local maximum of the transition-associated response while distributing it over a wider capacity interval, whereas Mg incorporation strongly suppresses the excess feature. (c) Peak-amplitude versus FWHM-like width map summarizing the distinct changes in the transformation-associated polarization. (d) Mechanistic interpretation of the 2 × 2 comparison. Ball milling increases electrochemical accessibility and broadens the distribution of local transformation states; Mg predominantly stabilizes the oxide/spinel-derived structure and reduces the extent of conversion. The BM-Mg-HEO response shows that milling can increase accessibility without restoring the concentrated transition response suppressed by Mg.
+
+### SI associated with Figure 4
+
+- exact background definition;
+- sensitivity to pre/post background windows;
+- capacity-axis and normalized-capacity versions;
+- absolute capacity-weighted excess area;
+- conventional DGITT overlay in the same state region;
+- literature comparison table for reported spinel/rock-salt phase-evolution voltage ranges.
+
+Do **not** include the exploratory `D-only → D + one compact mode → distributed relaxation` hierarchy in this HEO SI unless a later analysis yields a robust synthesis-dependent physical parameter. That analysis belongs primarily to the separate GITT/EKF study.
+
+---
+
+# Main-text figure call order
+
+## Results 3.1
+
+Call **Figure 1** after the first paragraph defining the 2 × 2 sample matrix. Continue the structural discussion using panels 1b–d.
+
+## Results 3.2
+
+Call **Figure 2a** immediately after introducing the BET/interface contrast, then **Figure 2b,c** for the first-cycle comparison and **Figure 2d,e** for cycling/rate behavior.
+
+## Results 3.3
+
+Call **Figure 3a** when introducing the current-off analysis. Use **Figure 3b–d** in the order fast polarization → relaxation amplitude → relaxation time. This order is important because the contradiction between amplitude and time is the mechanism discriminator.
+
+## Results 3.4–3.5
+
+Call **Figure 4a,b** when assigning the late-stage hump to the phase-transition region. Use **Figure 4c** to compare BM and Mg quantitatively. Close the section with **Figure 4d** as the synthesis–electrochemistry mechanism map.
+
+## Results 3.6–3.7
+
+Do not introduce a new main Figure unless required. Refer back to Figures 2 and 4 to discuss cycling/rate consequences and the integrated mechanism. This avoids a fifth main Figure that only repeats performance data.
+
+---
+
+# Supporting Information architecture
+
+Recommended order:
+
+- **Figure S1:** additional XRD/Rietveld or full structural refinement.
+- **Figure S2:** additional SEM/TEM/EDS and final plane-indexing support.
+- **Figure S3:** XPS after collaborator dataset is finalized.
+- **Figure S4:** full N2 adsorption/desorption and BET fits.
+- **Figure S5:** scan-rate CV series and Cdl extraction.
+- **Figure S6:** no-FEC cycling controls.
+- **Figure S7:** selected dQ/dV evolution.
+- **Figure S8:** post-cycle SEM.
+- **Figure S9:** representative E–√t current-off fits + fit-quality statistics.
+- **Figure S10:** t50 and t90 versus capacity.
+- **Figure S11:** early √t slope and terminal relaxation slope.
+- **Figure S12:** conventional apparent DGITT versus capacity.
+- **Figure S13:** transition-hump background/sensitivity audit.
+- **Figure S14:** alternative absolute-capacity and normalized-capacity hump representations.
+- **Figure S15:** cycling EIS series, retained as supporting data unless a stable parameter extraction is established.
+
+Tables:
+
+- **Table S1:** synthesis/ICP composition and final sample nomenclature.
+- **Table S2:** electrode/cell parameters and active loading.
+- **Table S3:** first-cycle capacity and ICE values from the final raw-data source.
+- **Table S4:** median current-off descriptors by selected capacity interval.
+- **Table S5:** peak/width/area values and sensitivity ranges.
+- **Table S6:** literature comparison of spinel HEO phase-evolution pathways/voltage regions.
+
+---
+
+# Figure-level claim boundaries
+
+1. Figure 1 may show Mg-associated lattice expansion/incorporation only after final ICP/structural analysis; do not claim a unique crystallographic Mg site from the small XRD shift.
+2. Figure 2 Cdl-derived interface is relative, not absolute physical ECSA.
+3. Figure 3 current-off intercept is an apparent fast-response resistance, not a uniquely ohmic or charge-transfer resistance.
+4. Figure 3 t63 is model-free; it equals a true exponential time constant only for an ideal single exponential.
+5. Figure 4 assigns the late-stage hump primarily to the spinel-to-rock-salt/conversion transition based on voltage/state dependence plus literature, but does not claim direct operando phase-fraction measurement in the present experiment.
+6. Peak/width/area numbers remain working values until the common-background sensitivity audit is frozen.
+7. Rate capability and long-rest relaxation time are distinct observables; do not imply that the longer BM t63 necessarily means poorer galvanostatic rate performance.
+
+---
+
+# Final visual logic
+
+The four main Figures should read as one causal sequence:
+
+`Figure 1: what was changed`
+
+→ `Figure 2: how much electrochemistry became accessible`
+
+→ `Figure 3: how polarization and relaxation changed independently`
+
+→ `Figure 4: which part of the phase-transforming reaction BM and Mg regulate`
+
+This sequence keeps GITT as a mechanistic diagnostic rather than allowing the manuscript to become a GITT-method paper.
