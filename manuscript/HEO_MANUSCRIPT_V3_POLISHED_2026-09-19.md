@@ -158,7 +158,7 @@ Cycling and rate data support the same separation (Figure 2d,e). With 10 wt% FEC
 
 BM-HEO also maintains higher absolute capacity than HEO across the tested rate sequence and recovers the higher capacity after returning to 0.1 C. Higher practical rate utilization therefore does not require faster long-time relaxation. Continuous galvanostatic utilization and post-pulse relaxation probe different aspects of the electrode response, which motivates direct analysis of the GITT current-off transient.
 
-Post-cycle microscopy shows substantial surface reconstruction in both HEO and BM-HEO, while cycling EIS displays strong state/history dependence. These datasets are retained as supporting evidence because the microscopy does not uniquely identify interphase chemistry and several EIS spectra do not support a stable equivalent-circuit parameter series.
+Post-cycle microscopy shows substantial surface reconstruction in both HEO and BM-HEO, while cycling EIS displays strong state/history dependence. These datasets are used as supporting evidence because the microscopy does not uniquely identify interphase chemistry and several EIS spectra do not support a stable equivalent-circuit parameter series.
 
 ## 3.3. Current interruption separates polarization magnitude from relaxation time
 
