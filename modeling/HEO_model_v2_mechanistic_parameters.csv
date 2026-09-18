@@ -1,0 +1,5 @@
+Sample,Median structural tau (s),ln(tau) distribution width,Required transition-polarization scale (mV),Observed excess peak (mV)
+HEO,537.2600,0.25,106.3255,70.7686
+BM-HEO,950.2911,0.65,94.3343,44.0711
+Mg-HEO,741.2548,0.40,28.9919,15.9050
+BM-Mg-HEO,1246.9375,0.75,54.3921,21.0968
