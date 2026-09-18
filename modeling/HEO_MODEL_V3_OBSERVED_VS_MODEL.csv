@@ -1,0 +1,5 @@
+Sample,Observed_DeltaErelax_mV,Model_DeltaErelax_mV,Observed_t63_min,Model_t63_min,Observed_PT_peak_mV,Model_PT_peak_mV
+HEO,160.9,158.61,8.68,8.58,70.8,69.69
+BM-HEO,176.3,176.49,11.57,11.56,44.1,41.78
+Mg-HEO,109.5,108.60,11.01,11.16,15.9,14.41
+BM-Mg-HEO,144.3,142.95,12.99,12.90,21.1,18.83
