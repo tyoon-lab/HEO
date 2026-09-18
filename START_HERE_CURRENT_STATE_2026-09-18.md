@@ -1,6 +1,6 @@
 # HEO — START HERE / Current Project State
 
-**Last consolidated:** 2026-09-18
+**Last consolidated:** 2026-09-19
 **Purpose:** This is the single entry point for continuing the HEO manuscript/project in a new chat without a separate handoff message.
 **Rule:** Read this file first. Then open the linked authoritative files only as needed.
 
@@ -45,7 +45,9 @@ The three experimentally distinct coordinates are accessibility, transformation 
 
 # 2. Current authoritative manuscript and reference files
 
-Main manuscript: manuscript/HEO_MANUSCRIPT_V1_INTEGRATED_2026-09-18.md
+Main manuscript (current authoritative draft): manuscript/HEO_MANUSCRIPT_V2_FIGURE_ALIGNED_2026-09-19.md
+
+Previous integrated draft retained for history: manuscript/HEO_MANUSCRIPT_V1_INTEGRATED_2026-09-18.md
 
 The earlier excess-area unit mistake has already been corrected in this integrated file. The capacity-weighted excess-polarization quantity is reported as mV·mAh g−1, not mWh g−1. It is explicitly treated as a comparative metric, not an energy quantity.
 
@@ -343,14 +345,15 @@ Use the reference master for exact claim boundaries.
 Start here without asking for another handoff.
 
 Recommended order:
-1. Use the current Figure 5 architecture: compact mechanism-sufficiency schematic + 4 × 7 pulse-end circular state array + pulse-end phi-bar versus model mean lithiation state. Keep Delta phi-bar_rest in SI.
-2. Retain the column coordinate as model mean lithiation state c-bar; do not relabel it directly as experimental normalized capacity without a validated mapping.
-3. For BM-containing samples, depict ensemble-averaged radial phi states or representative quantiles; do not imply a directly simulated heterogeneous 2D single particle.
-4. Add the visual-simulation section and claim boundary to the integrated manuscript and update the main figure architecture/numbering.
-5. Keep compact/detailed model parameter tables in SI.
-6. If stronger model validation is desired, fit/compare representative experimental GITT voltage transients; do not automatically fit all phase-field parameters because identifiability remains a concern.
-7. Later run the spatial MATLAB port locally and check directional unit tests.
-8. Continue collaborator-dependent structural/method cleanup.
+1. Read and revise the current authoritative manuscript: manuscript/HEO_MANUSCRIPT_V2_FIGURE_ALIGNED_2026-09-19.md. Its Results sections now follow Figures 1–5 directly: structure → accessibility/utilization → current-off decoupling → experimental transition response → modeled internal-state evolution.
+2. Use the current Figure 5 architecture: compact mechanism-sufficiency schematic + 4 × 7 pulse-end circular state array + pulse-end phi-bar versus model mean lithiation state. Keep Delta phi-bar_rest in SI.
+3. Retain the column coordinate as model mean lithiation state c-bar; do not relabel it directly as experimental normalized capacity without a validated mapping.
+4. For BM-containing samples, depict ensemble-averaged radial phi states or representative quantiles; do not imply a directly simulated heterogeneous 2D single particle.
+5. Complete missing collaborator/student methods and structural metadata in V2; do not reopen the Figure 1–5 story unless new data require it.
+6. Keep compact/detailed model parameter tables in SI.
+7. If stronger model validation is desired, fit/compare representative experimental GITT voltage transients; do not automatically fit all phase-field parameters because identifiability remains a concern.
+8. Later run the spatial MATLAB port locally and check directional unit tests.
+9. Continue collaborator-dependent structural/method cleanup.
 
 If raw GITT files are needed for new numerical reanalysis and are not available in the active chat/runtime, request re-upload. Current GitHub notes preserve the key raw-derived numerical outputs and logic.
 
