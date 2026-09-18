@@ -173,78 +173,44 @@ Polarization magnitude and relaxation time are independent observables. Mg great
 
 ---
 
-# Figure 4 — How do BM and Mg modify the phase-transforming reaction itself?
+# Figure 4 — What does the experiment establish about the late-stage transition-associated response?
 
-**Question answered:** Why do BM and Mg change capacity and polarization in opposite ways?
+**Question answered:** What experimentally observed features distinguish redistribution of the transition-associated response from suppression of its extent?
 
 ### Panel architecture
 
-**a. State-resolved late-stage relaxation with relaxed-voltage reference**  
-Plot ΔErelax versus normalized capacity z = Q/Qmax for all four samples. Add the relaxed GITT voltage as a light secondary reference or a separate aligned upper axis rather than cluttering the same plot. Mark the approximate 0.6–0.4 V conversion region.
-
-Purpose: demonstrate that the strong HEO hump is state-localized and occurs in the literature-established conversion/phase-evolution region.
+**a. State-resolved late-stage relaxation**  
+Plot Delta E_relax versus normalized capacity z = Q/Qmax for all four samples, focused on the late-stage region. The relaxed GITT voltage may be included only as a light secondary reference if it remains readable.
 
 **b. Background-subtracted transition-associated excess relaxation**  
-Plot ηtr(z) for all four samples after applying the same declared background procedure. This should make the HEO concentrated peak, BM broadening/lowering, and Mg suppression visually obvious.
+Plot eta_excess(z) for all four samples using the common declared background procedure. This panel should make the concentrated HEO peak, BM broadening/lowering, Mg suppression, and partial BM-Mg recovery visually obvious.
 
-Working values:
+**c. Peak amplitude versus width map**  
+Plot FWHM-like capacity width on the x-axis and excess peak amplitude on the y-axis. Marker area may encode normalized excess area. This is the compact experimental summary panel.
+
+Do not include a mechanistic cartoon in Figure 4. The model/interpretation begins explicitly in Figure 5a.
+
+### Working values
 
 | Sample | Excess peak | FWHM-like width | normalized excess area |
 |---|---:|---:|---:|
-| HEO | ~71 mV | ~350 mAh g−1 | ~22.3 mV |
-| BM-HEO | ~46 mV | ~417 mAh g−1 | ~15.0 mV |
-| Mg-HEO | ~15.9 mV | ~233 mAh g−1 | ~4.95 mV |
-| BM-Mg-HEO | ~21.1 mV | ~367 mAh g−1 | ~7.58 mV |
-
-The baseline-sensitivity audit must be completed before final numerical freeze.
-
-**c. Peak amplitude versus width map**  
-Preferred over separate bar charts. Plot each of the four samples in a two-dimensional map:
-
-- x-axis: FWHM-like capacity width;
-- y-axis: excess peak amplitude.
-
-Optional marker size can encode normalized excess area if this remains visually clear. The purpose is conceptual: BM moves mainly toward a broader/lower response, whereas Mg moves strongly toward a suppressed-amplitude response.
-
-**d. Mechanistic synthesis–electrochemistry scheme**  
-Final conceptual map:
-
-Pristine HEO:
-
-`concentrated spinel → rock-salt/conversion transformation → pronounced late-stage polarization`
-
-Ball milling:
-
-`larger interface + disorder/heterogeneous local states → broader transformation interval + lower local peak + higher electrochemical accessibility`
-
-Mg incorporation:
-
-`structural stabilization / spectator-like role → reduced conversion extent → lower transition polarization + lower conversion capacity`
-
-BM-Mg-HEO:
-
-`accessibility restored partly by milling, but Mg-imposed suppression of transition extent remains`
-
-The schematic should not assign each relaxation mode to a unique microscopic species and should not depict Mg as completely eliminating the transition.
-
-### Main message
-
-Ball milling and Mg act on different coordinates of the same conversion reaction. BM primarily controls **accessibility and distribution**; Mg primarily controls **transformation extent and structural stabilization**.
+| HEO | 70.8 mV | 354 mAh g−1 | 22.1 mV |
+| BM-HEO | 44.1 mV | 430 mAh g−1 | 14.1 mV |
+| Mg-HEO | 15.9 mV | 250 mAh g−1 | 4.94 mV |
+| BM-Mg-HEO | 21.1 mV | 392 mAh g−1 | 7.58 mV |
 
 ### Draft caption
 
-**Figure 4. Ball milling and Mg incorporation regulate different coordinates of the conversion-type phase transformation.** (a) State-resolved GITT relaxation amplitude plotted against normalized first-lithiation capacity, with the relaxed-voltage trajectory indicating the low-voltage conversion region. Pristine HEO develops a pronounced late-stage polarization hump in the voltage range where spinel-to-rock-salt/conversion evolution has been established for compositionally related HEO anodes. (b) Background-subtracted excess relaxation obtained using a common baseline procedure. Ball milling decreases the local maximum of the transition-associated response while distributing it over a wider capacity interval, whereas Mg incorporation strongly suppresses the excess feature. (c) Peak-amplitude versus FWHM-like width map summarizing the distinct changes in the transformation-associated polarization. (d) Mechanistic interpretation of the 2 × 2 comparison. Ball milling increases electrochemical accessibility and broadens the distribution of local transformation states; Mg predominantly stabilizes the oxide/spinel-derived structure and reduces the extent of conversion. The BM-Mg-HEO response shows that milling can increase accessibility without restoring the concentrated transition response suppressed by Mg.
+**Figure 4. State-resolved current-off relaxation isolates a synthesis-dependent late-stage transition-associated polarization.** (a) Late-stage relaxation amplitude plotted against normalized first-lithiation capacity. Pristine HEO develops a concentrated high-state response in the voltage/state region associated in related spinel HEO literature with spinel-to-rock-salt/conversion evolution, whereas the feature is broadened after ball milling and strongly suppressed after Mg incorporation. (b) Background-subtracted excess polarization obtained using the same fitting windows and functional form for all four samples. Ball milling lowers the local maximum while distributing the excess response over a wider capacity interval; Mg incorporation strongly suppresses the excess response. (c) Peak-amplitude versus FWHM-like-width map, with marker area representing normalized excess area. The excess area is a comparative polarization descriptor derived from discrete GITT states and is not interpreted as dissipated energy.
 
 ### SI associated with Figure 4
 
-- exact background definition;
-- sensitivity to pre/post background windows;
+- exact background definition and fitting windows;
+- background-fit sensitivity;
 - capacity-axis and normalized-capacity versions;
 - absolute capacity-weighted excess area;
-- conventional DGITT overlay in the same state region;
+- conventional apparent DGITT overlay in the same state region;
 - literature comparison table for reported spinel/rock-salt phase-evolution voltage ranges.
-
-Do **not** include the exploratory `D-only → D + one compact mode → distributed relaxation` hierarchy in this HEO SI unless a later analysis yields a robust synthesis-dependent physical parameter. That analysis belongs primarily to the separate GITT/EKF study.
 
 ---
 
@@ -296,7 +262,7 @@ Call **Figure 3a** when introducing the current-off analysis. Use **Figure 3b–
 
 ## Results 3.4–3.5
 
-Call **Figure 4a,b** when assigning the late-stage hump to the phase-transition region. Use **Figure 4c** to compare BM and Mg quantitatively. Close the section with **Figure 4d** as the synthesis–electrochemistry mechanism map.
+Call **Figure 4a,b** when assigning the late-stage hump to the phase-transition region. Use **Figure 4c** to compare BM and Mg quantitatively. End Figure 4 with the experimental summary map; the synthesis–electrochemistry model interpretation begins with Figure 5a.
 
 ## Results 3.6
 
