@@ -584,3 +584,58 @@ The spatial MATLAB port preserves:
 The current environment has no MATLAB or Octave runtime. The file is therefore structurally translated but not runtime-verified here.
 
 The first local MATLAB run should be accepted only if the directional unit tests pass and the result remains close in ordering to the frozen Python snapshot. Do not refit parameters merely to eliminate ordinary solver-level differences.
+
+---
+
+## Visual-simulation manuscript decision — final update of 2026-09-18
+
+After reviewing the numerical model outputs, a manuscript-placement decision was made.
+
+### Parameter tables are supporting evidence, not the main originality
+
+The project explicitly recognizes the potential circularity:
+GITT shape -> hypothesized mechanism -> model choice -> extracted effective numbers.
+
+Therefore the fitted/effective parameters should not be presented as if their numerical extraction alone proves the mechanism.
+
+Decision:
+- detailed parameter table -> SI;
+- compact effective parameter summary -> optional, probably SI;
+- main-text modeling contribution -> visual internal-state simulation linked back to the GITT observables.
+
+### Current preferred visual simulation
+
+The preferred main-text candidate is a 4-row × 7-column circular-particle snapshot array.
+
+Rows:
+1. HEO
+2. BM-HEO
+3. Mg-HEO
+4. BM-Mg-HEO
+
+Common target modeled mean-lithiation states:
+0.55, 0.62, 0.68, 0.74, 0.80, 0.86, 0.92.
+
+The 0.55 state was deliberately added so all samples visually begin from a comparable low-transformation condition.
+
+Color represents the radial structural order parameter phi:
+- phi ~ 0: parent-like;
+- phi ~ 1: transformed-like.
+
+Important boundary:
+phi is a modeled late-stage transition-associated internal-state variable, not a directly measured phase fraction and not a complete description of every earlier structural transition during lithiation.
+
+The snapshot window is intentionally truncated to the late-stage transition region so the one-phi model does not imply that earlier structural changes are absent.
+
+Dedicated figure-direction note:
+`manuscript/HEO_VISUAL_SIMULATION_MAIN_FIGURE_DIRECTION_2026-09-18.md`
+
+### Broader methodological positioning
+
+If retained in the main text, the modeling originality should be framed as:
+
+**GITT observables -> mechanism discrimination -> modeled internal-state visualization**
+
+rather than as unique extraction of microscopic phase-field constants.
+
+This distinction must be preserved in subsequent manuscript revisions.
