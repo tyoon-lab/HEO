@@ -256,15 +256,13 @@ Suggested panels:
 
 Suggested panels:
 
-- compact schematic of the reduced spatial model and the three independent physical coordinates: transport scale, transformation stabilization/extent, and structural mobility/local-transition heterogeneity;
-- 4 × 7 circular array of pulse-end radial phi states for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO at model mean lithiation states c-bar ≈ 0.55, 0.62, 0.68, 0.75, 0.80, 0.86, and 0.91;
-- Delta phi-bar_rest versus c-bar, where Delta phi-bar_rest is the additional structural-state change between the end of the 600 s pulse and the end of the subsequent 60 min rest;
-- optional compact directional-comparison panel if space permits, explicitly labeled as a mechanism-sufficiency comparison rather than a quantitative fit.
+- **(a)** compact broad-audience logic schematic linking the experimental constraints to independent model coordinates for transport scale, transformation stabilization/extent, local-transition heterogeneity, and structural-mobility heterogeneity;
+- **(b)** 4 × 7 circular array of pulse-end radial phi states for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO at model mean lithiation states c-bar ≈ 0.55, 0.62, 0.68, 0.75, 0.80, 0.86, and 0.91;
+- **(c)** pulse-end mean structural state phi-bar versus c-bar for all four samples.
 
-For BM-HEO and BM-Mg-HEO, the circular maps represent ensemble-averaged radial states over the frozen 11-quantile distributions. Do not depict unmodeled random angular patches within a particle. Use a common phi color scale with 0 = parent-like/pre-transition and 1 = transformed-like. Label the window explicitly as the late-stage transition window and the maps explicitly as pulse-end states. The Delta phi-bar_rest panel is an internal-state descriptor and must not be presented as numerically equivalent to Delta E_relax.
+For BM-HEO and BM-Mg-HEO, the circular maps and phi-bar trajectory are ensemble averages over the frozen 11-quantile distributions. Do not depict unmodeled random angular patches within a particle. Use a common phi color scale with 0 = parent-like/pre-transition and 1 = transformed-like, and label the displayed range explicitly as the late-stage transition window. The model mean lithiation coordinate c-bar must not be relabeled directly as experimental normalized capacity without an explicit quantitative calibration.
 
-
-**Draft caption — Figure 5. Spatial mechanism-sufficiency model visualizes distinct late-stage internal-state evolution.** (a) Model concept and pulse-end radial maps of the late-stage structural order parameter phi for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO over a common model mean-lithiation window. The maps are sampled at the end of the 600 s galvanostatic pulse immediately before current interruption. For BM-containing samples, each circle represents an ensemble-averaged radial state over the frozen 11-quantile distribution of local transition conditions and structural mobilities; it is not a directly simulated heterogeneous two-dimensional single particle. phi ≈ 0 denotes a parent-like/pre-transition state and phi ≈ 1 a transformed-like state. (b) Additional structural-state evolution during the subsequent 60 min rest, Delta phi-bar_rest = phi-bar_rest,end - phi-bar_pulse,end. HEO exhibits a concentrated rest-associated structural change, BM-HEO distributes the response over a broader state interval, Mg-HEO remains strongly suppressed until high model state, and BM-Mg-HEO partially reopens the transformation pathway. Delta phi-bar_rest is a model internal-state descriptor and is not interpreted as numerically equivalent to the measured voltage relaxation. The model is used to test mechanistic sufficiency rather than to identify unique microscopic parameters or directly measure experimental phase fractions.
+**Draft caption — Figure 5. Spatial mechanism-sufficiency model visualizes distinct late-stage internal-state evolution.** (a) Experimental GITT constraints are evaluated against independent model coordinates for transport scale, transformation stabilization/extent, local-transition heterogeneity, and structural-mobility heterogeneity. (b) Pulse-end radial maps of the late-stage structural order parameter phi at selected values of the model mean lithiation state c-bar. HEO and Mg-HEO use the single frozen radial parameter set, whereas BM-HEO and BM-Mg-HEO are shown as ensemble-averaged radial states over the frozen 11-quantile distributions. phi near 0 denotes a parent-like/pre-transition state and phi near 1 a transformed-like state. (c) Pulse-end mean structural state phi-bar versus c-bar. Ball milling advances and distributes the modeled transformation over a broader reaction-progress interval, Mg strongly suppresses the late-stage transformed state, and BM-Mg-HEO partially recovers transformation while retaining Mg-related suppression. The model is used as a mechanism-sufficiency visualization and does not represent a unique parameter identification, a directly measured phase fraction, or a complete reconstruction of all structural transitions during lithiation.
 
 **Question answered:** What internal-state evolution is physically compatible with the experimentally observed combinations of polarization amplitude, transition width, transformed fraction, and relaxation time?
 
@@ -291,7 +289,11 @@ Recommended SI order:
 14. transition-hump background sensitivity / peak-width-area robustness;
 15. conventional apparent DGITT as a comparator, explicitly not used as the central causal descriptor;
 16. cycling EIS series and outlier/state-matching note;
-17. additional post-cycle SEM.
+17. additional post-cycle SEM;
+18. spatial-model equations and full effective-parameter table;
+19. 7-versus-11-quantile convergence and volume-versus-surface chemical-potential readout comparison;
+20. model sensitivity / identifiability boundaries and directional unit-test table;
+21. model-predicted Delta phi-bar_rest during the 60 min zero-flux interval, explicitly labeled as an internal-state descriptor rather than a voltage fit.
 
 The exploratory `D-only → D + compact relaxation → distributed relaxation` comparison remains outside this HEO manuscript and is reserved for the separate GITT/EKF study unless a later robustness analysis yields a uniquely useful synthesis-dependent descriptor.
 
