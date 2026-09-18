@@ -82,12 +82,15 @@ Preferred interpretation:
 ### BM-Mg-HEO
 Ball milling partially broadens/re-introduces a weak excess response relative to Mg-HEO, but the HEO-like concentrated transition is not restored. This is an internal check that processing can increase accessibility without reversing the stronger compositional constraint imposed by Mg on transformation extent.
 
-## Figure 4 architecture
+## Figure 4 architecture — finalized as experimental-only
 
-- **(a)** Late-stage raw (Delta E_{relax}) vs normalized capacity, focused on (z \ge 0.30).
-- **(b)** Background-subtracted transition-associated excess polarization for (0.40 \le z \le 0.90).
+Figure 4 should remain a three-panel experimental figure so that the experimental evidence is visually separated from the spatial mechanism-sufficiency model introduced in Figure 5.
+
+- **(a)** Late-stage raw Delta E_relax vs normalized capacity, focused on z >= 0.30. Where readable, include the relaxed-voltage trajectory only as a light reference for the low-voltage transition region.
+- **(b)** Background-subtracted transition-associated excess polarization for 0.40 <= z <= 0.90.
 - **(c)** Peak-amplitude vs FWHM-like-width map; marker area is proportional to normalized excess area.
-- **(d)** Mechanistic summary: ball milling controls accessibility/distribution, whereas Mg controls transformation extent/stability.
+
+The earlier mechanistic-summary panel is removed from Figure 4. Its role is superseded by Figure 5a, which explicitly begins the model-based interpretation.
 
 ## Manuscript wording boundary
 The excess area is a comparative polarization descriptor derived from discrete GITT states. It is **not** a rigorous dissipated-energy measurement. Avoid calling it energy loss.
