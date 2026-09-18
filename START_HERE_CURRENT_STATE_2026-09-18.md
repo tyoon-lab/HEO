@@ -45,9 +45,13 @@ The three experimentally distinct coordinates are accessibility, transformation 
 
 # 2. Current authoritative manuscript and reference files
 
-Main manuscript (current authoritative draft): manuscript/HEO_MANUSCRIPT_V2_FIGURE_ALIGNED_2026-09-19.md
+Main manuscript (current authoritative draft): manuscript/HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md
 
-Previous integrated draft retained for history: manuscript/HEO_MANUSCRIPT_V1_INTEGRATED_2026-09-18.md
+Manuscript architecture/literature positioning note: manuscript/HEO_MANUSCRIPT_ARCHITECTURE_AND_LITERATURE_POSITIONING_2026-09-19.md
+
+Previous drafts retained for history:
+- manuscript/HEO_MANUSCRIPT_V2_FIGURE_ALIGNED_2026-09-19.md
+- manuscript/HEO_MANUSCRIPT_V1_INTEGRATED_2026-09-18.md
 
 The earlier excess-area unit mistake has already been corrected in this integrated file. The capacity-weighted excess-polarization quantity is reported as mV·mAh g−1, not mWh g−1. It is explicitly treated as a comparative metric, not an energy quantity.
 
@@ -345,7 +349,7 @@ Use the reference master for exact claim boundaries.
 Start here without asking for another handoff.
 
 Recommended order:
-1. Read and revise the current authoritative manuscript: manuscript/HEO_MANUSCRIPT_V2_FIGURE_ALIGNED_2026-09-19.md. Its Results sections now follow Figures 1–5 directly: structure → accessibility/utilization → current-off decoupling → experimental transition response → modeled internal-state evolution.
+1. Read and revise the current authoritative manuscript: manuscript/HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md. Its Results sections now follow Figures 1–5 directly: structure → accessibility/utilization → current-off decoupling → experimental transition response → modeled internal-state evolution.
 2. Use the current Figure 5 architecture: compact mechanism-sufficiency schematic + 4 × 7 pulse-end circular state array + pulse-end phi-bar versus model mean lithiation state. Keep Delta phi-bar_rest in SI.
 3. Retain the column coordinate as model mean lithiation state c-bar; do not relabel it directly as experimental normalized capacity without a validated mapping.
 4. For BM-containing samples, depict ensemble-averaged radial phi states or representative quantiles; do not imply a directly simulated heterogeneous 2D single particle.
