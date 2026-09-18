@@ -202,3 +202,194 @@ Preferred implementation path:
 radial finite difference + method of lines + stiff solver.
 
 Python first; MATLAB only after the Python equations and parameter roles are frozen.
+
+
+---
+
+## Spatial phase-field gate — 1D spherical c(r,t) + phi(r,t)
+
+### Why this gate was added
+
+The minimal v3 model established directional sufficiency but used prescribed relaxation branches. The next gate asks whether the same mechanistic directions emerge from spatially resolved conserved Li transport coupled to a non-conserved structural phase variable, without prescribing a state-localized hump by hand.
+
+### Governing model
+
+A dimensionless spherical free-energy density was defined as
+
+f = c ln c + (1-c) ln(1-c)
+    + W phi^2(1-phi)^2
+    + K(c_tr-c) phi
+    + (kappa/2)|grad phi|^2.
+
+The Li chemical potential is
+
+mu = ln[c/(1-c)] - K phi.
+
+Li is conserved:
+
+dc/dt = -div(J),
+J = -D_eff grad(mu).
+
+The structural order parameter is non-conserved:
+
+dphi/dt = -M_phi [
+    2W phi(1-phi)(1-2phi)
+    + K(c_tr-c)
+    - kappa laplacian(phi)
+].
+
+Boundary conditions reproduce the GITT protocol:
+- spherical symmetry at r = 0;
+- prescribed inward Li flux for 600 s;
+- zero Li flux for 3600 s rest;
+- zero-gradient structural boundary condition.
+
+The voltage-like response is the volume-averaged Li chemical-potential proxy. Absolute voltage is not interpreted; only state dependence and directional changes are used.
+
+### Numerical development failure: under-resolved diffuse interface
+
+The first spatial prototype used kappa = 5e-4. At N = 18 radial finite-volume cells, the HEO transition peak moved to a different state and changed strongly relative to N = 30.
+
+Interpretation:
+the diffuse-interface scale sqrt(kappa/W) was not sufficiently resolved by the coarse mesh.
+
+This result was treated as a failed numerical gate, not ignored.
+
+### Mesh/interface-width correction
+
+kappa was increased to 0.002 so that the diffuse interface is numerically resolved by the intended mesh.
+
+HEO mesh check:
+
+| N | peak proxy | c at peak | t63 at peak (min) | final phi |
+|---:|---:|---:|---:|---:|
+| 18 | 0.9815 | 0.676 | 8.857 | 1.0001 |
+| 24 | 0.9650 | 0.676 | 7.961 | 1.0001 |
+| 30 | 0.9877 | 0.676 | 7.961 | 1.0001 |
+| 40 | 0.9993 | 0.676 | 7.961 | 1.0001 |
+
+Mg mesh check:
+
+| N | peak proxy | c at peak | t63 at peak (min) | final phi |
+|---:|---:|---:|---:|---:|
+| 18 | 0.2250 | 0.892 | 35.271 | 0.2451 |
+| 24 | 0.2250 | 0.892 | 35.271 | 0.2451 |
+| 30 | 0.2250 | 0.892 | 35.271 | 0.2451 |
+| 40 | 0.2250 | 0.892 | 35.271 | 0.2451 |
+
+Decision:
+use N = 30 and kappa = 0.002 for the spatial-mechanism gate.
+
+### Frozen hypothesis-level spatial cases
+
+#### HEO
+- D_eff/R^2 = 0.0015
+- M_phi = 0.015
+- c_tr = 0.60
+- W = 0.60
+- K = 1.80
+
+This gives a relatively sharp transformation localized near c_bar ~ 0.676.
+
+#### Mg-HEO
+- c_tr increased to 0.79;
+- M_phi reduced to 0.001;
+- W increased modestly to 0.80;
+- transport scale otherwise kept HEO-like.
+
+Physical meaning:
+Mg stabilizes the parent/intermediate structure and lowers structural mobility.
+
+Result:
+- transformed fraction after the simulated lithiation window drops from ~1.00 to ~0.245;
+- peak relaxation proxy drops strongly;
+- the remaining transition occurs later;
+- transition-local t63 becomes substantially longer.
+
+This spatial model therefore reproduces the qualitative combination:
+smaller transformation extent + smaller transition-associated response + slower residual structural response.
+
+#### BM-HEO
+BM is represented as an ensemble rather than one smaller homogeneous particle.
+
+Common BM changes:
+- D_eff/R^2 increased to 0.0030;
+- W reduced to 0.50;
+- K = 1.60.
+
+Local transition thresholds are distributed:
+c_tr = [0.48, 0.54, 0.60, 0.66, 0.72]
+with weights [0.1, 0.2, 0.4, 0.2, 0.1].
+
+Reason:
+a smaller effective transport/domain scale alone makes the transition easier but does not naturally generate the experimentally observed broad state interval. Broadening requires heterogeneous local transition conditions, consistent with ball-milling-induced distributions of strain, defects, coherent-domain size, and local nucleation environments.
+
+Result:
+- concentrated peak decreases strongly relative to HEO;
+- the feature spans multiple state increments;
+- the final transformed fraction remains ~1;
+- the ensemble transition is broader and slower than the sharp HEO event.
+
+#### BM-Mg-HEO
+Mg stabilization is retained, but the transition threshold is broadened by milling:
+
+c_tr = [0.64, 0.71, 0.78, 0.85, 0.92].
+
+Result:
+- final transformed fraction rises from ~0.245 for Mg-HEO to ~0.446;
+- the transition response partially re-emerges and broadens;
+- it remains far below the complete HEO transformation.
+
+This reproduces the experimental internal-control logic:
+ball milling can reopen/access more of the Mg-containing conversion pathway without eliminating the compositional stabilization imposed by Mg.
+
+### Spatial gate v2 summary
+
+| Sample | peak proxy | c at peak | FWHM in c | t63 at peak (min) | final transformed fraction |
+|---|---:|---:|---:|---:|---:|
+| HEO | 0.9877 | 0.676 | < one GITT state step | 7.96 | 1.000 |
+| BM-HEO | 0.4162 | 0.676 | 0.108 | 10.96 | 1.000 |
+| Mg-HEO | 0.2250 | 0.892 | < one GITT state step | 35.27 | 0.245 |
+| BM-Mg-HEO | 0.2612 | 0.856 | 0.108 | 31.72 | 0.446 |
+
+Important:
+the HEO and Mg FWHM values are reported as narrower than the discrete simulated GITT state increment, not as physically zero-width transitions.
+
+### What this spatial gate supports
+
+1. A sharp phase-transition-associated relaxation feature can emerge from coupled conserved Li transport and non-conserved structural dynamics without inserting a Gaussian hump directly into the voltage response.
+2. Mg-like stabilization plus reduced structural mobility can simultaneously reduce transformation extent and delay/slow the residual transition.
+3. Ball-milling-like broadening requires heterogeneity in local transition conditions in addition to a shorter effective transport/domain scale.
+4. BM-Mg can partially recover transformed fraction without restoring the pristine HEO transition.
+5. The original qualitative mechanism survives a spatial model after mesh convergence is enforced.
+
+### What it does not yet establish
+
+- unique free-energy coefficients;
+- an absolute phase fraction for the real HEO;
+- an absolute interfacial energy;
+- actual particle radius after milling;
+- unique Mg-induced change in M_phi;
+- quantitative voltage fitting;
+- unique elastic-strain contribution.
+
+The current parameters remain hypothesis-level coordinates.
+
+### Next physics gate before MATLAB
+
+Before a new MATLAB implementation is written, Python should test whether the directional conclusions survive:
+- explicit elastic/coherency energy;
+- surface-wetting or surface-energy terms;
+- moderate changes in c_tr distribution shape;
+- alternative voltage observables (surface vs volume-averaged chemical potential);
+- parameter perturbations around the converged spatial solution.
+
+Only after those checks should the spatial equations be frozen for MATLAB translation.
+
+### MATLAB status correction
+
+The existing file modeling/HEO_PhaseTransition_Model_Final.m is an earlier translation of the phenomenological/minimal model. It predates the spatial c(r,t)+phi(r,t) gate.
+
+It is therefore **legacy/provisional**, not the final spatial MATLAB model.
+
+Do not extend or use it as the final mechanistic implementation until the Python spatial model is frozen.
