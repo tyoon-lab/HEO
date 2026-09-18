@@ -263,3 +263,36 @@ Python/model artifacts generated in the working environment:
 - HEO_model_v2_pulse_rest_parameters.csv
 - HEO_model_v2_mechanistic_parameters.csv
 - HEO_model_v2_pulse_rest_relaxation.png
+
+
+## 10. MATLAB final port
+
+Python v2 passed the intended mechanistic-discrimination gate, so the architecture was ported to MATLAB as:
+
+`modeling/HEO_PhaseTransition_Model_Final.m`
+
+The MATLAB version preserves:
+- D-only negative control;
+- asymmetric state-distributed transition profile;
+- lognormal structural relaxation distribution;
+- actual 600 s pulse + 3600 s rest;
+- the same 3 s-to-3600 s finite-window t63 definition;
+- the explicit Mg stabilization-only / mobility-only / combined comparison;
+- non-identifiability guardrails.
+
+The MATLAB implementation avoids Statistics Toolbox dependence by using `erfinv` for normal quantiles.
+
+### Runtime-verification status
+
+The current execution environment does not contain MATLAB or Octave, so the MATLAB file was translated directly from the Python-v2 equations and checked structurally but could not be executed here. The Python v2 implementation is the executable reference. The first local MATLAB run should verify that the printed parameter table matches the Python-v2 snapshot within numerical tolerance.
+
+Expected MATLAB-v2 parameter targets:
+
+| Sample | median structural tau (s) | sigma_ln(tau) | transition scale (mV) |
+|---|---:|---:|---:|
+| HEO | 537.26 | 0.25 | 106.33 |
+| BM-HEO | 950.29 | 0.65 | 94.33 |
+| Mg-HEO | 741.25 | 0.40 | 28.99 |
+| BM-Mg-HEO | 1246.94 | 0.75 | 54.39 |
+
+No further physical complexity should be added until the MATLAB port reproduces these Python reference values.
