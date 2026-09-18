@@ -243,7 +243,7 @@ Original structure:
 
 New development: visual simulation should be in the main text.
 
-Exact numbering is not frozen. Preferred options are either a new final main figure dedicated to GITT -> modeled internal-state visualization, or selected simulation panels integrated into the final mechanistic figure if readable.
+Current preferred numbering is to retain Figure 4 as the experimental transition-polarization figure and add Figure 5 as an independent model-visualization figure. Figure 5 should separate model visualization from experimental evidence rather than merging the full 4 × 7 array into Figure 4.
 
 Do not bury the visual simulation entirely in SI if it becomes the primary methodological originality. Parameter tables and most sensitivity details should remain SI.
 
@@ -342,10 +342,10 @@ Use the reference master for exact claim boundaries.
 Start here without asking for another handoff.
 
 Recommended order:
-1. Refine the 4 × 7 circular-particle visual simulation figure into publication style.
-2. Decide whether state labels remain model mean lithiation state or are carefully mapped to normalized/experimental capacity.
-3. Add the visual-simulation section and claim boundary to the integrated manuscript.
-4. Update main figure architecture/numbering to include visual simulation.
+1. Refine Figure 5 as an independent model-visualization figure: compact model schematic + 4 × 7 circular state array + phi-bar versus model mean lithiation state.
+2. Retain the column coordinate as model mean lithiation state c-bar; do not relabel it directly as experimental normalized capacity without a validated mapping.
+3. For BM-containing samples, depict ensemble-averaged radial phi states or representative quantiles; do not imply a directly simulated heterogeneous 2D single particle.
+4. Add the visual-simulation section and claim boundary to the integrated manuscript and update the main figure architecture/numbering.
 5. Keep compact/detailed model parameter tables in SI.
 6. If stronger model validation is desired, fit/compare representative experimental GITT voltage transients; do not automatically fit all phase-field parameters because identifiability remains a concern.
 7. Later run the spatial MATLAB port locally and check directional unit tests.
