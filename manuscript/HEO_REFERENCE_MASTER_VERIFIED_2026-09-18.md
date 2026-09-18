@@ -196,7 +196,42 @@ DOI: **10.1016/j.jpowsour.2024.235589**
 
 ---
 
-# F. Claim-to-reference map
+# F. Particle-size / coherent-nucleation references
+
+### [18] Coherency strain and nanoparticle phase separation
+
+**Cogswell, D. A.; Bazant, M. Z.**  
+*Coherency Strain and the Kinetics of Phase Separation in LiFePO4 Nanoparticles.*  
+**ACS Nano** 2012, 6, 2215–2225.  
+DOI: **10.1021/nn204177u**
+
+**Directly supports:** coherency strain strongly modifies nanoscale phase-separation thermodynamics/kinetics.  
+**Boundary:** LiFePO4, not a conversion HEO; use only for general nanoscale phase-transition physics.
+
+### [19] Surface-to-volume control of coherent nucleation barrier
+
+**Cogswell, D. A.; Bazant, M. Z.**  
+*Theory of Coherent Nucleation in Phase-Separating Nanoparticles.*  
+**Nano Letters** 2013, 13, 3036–3041.  
+DOI: **10.1021/nl400497t**
+
+**Directly supports:** the coherent nucleation barrier decreases with increasing area-to-volume ratio and can vanish below a critical size because surface wetting/elastic relaxation changes the balance of chemical and elastic energy.  
+**Role:** general physical precedent showing that nanosizing need not increase phase-transition overpotential.
+
+### [20] Direct nanosize effect in spinel-type HEO
+
+**Li, K.; Shi, L.; An, J.; Zhang, M.; Du, Y.; Ma, Y.; Lou, S.; Yin, G.; Yu, Z.; Hua, X.; Huo, H.**  
+*Stabilizing Configurational Entropy in Spinel-type High Entropy Oxides during Discharge–Charge by Overcoming Kinetic Sluggish Diffusion.*  
+**Angewandte Chemie International Edition** 2025, 64, e202518569.  
+DOI: **10.1002/anie.202518569**
+
+**Directly supports:** comparison of ~150 nm and ~15 nm spinel-type HEOs; the nanosized material shortens solid-state diffusion lengths, reduces polarization, changes plateau shape, and enables more complete/reversible conversion-type phase evolution.  
+**Role:** closest literature precedent for interpreting lower BM-HEO transition polarization despite microstructural refinement.  
+**Boundary:** do not equate the present ~2 μm BSE aggregates with the ~15 nm primary particles in this paper; use as mechanistic precedent for effective-domain/interface refinement only.
+
+---
+
+# G. Claim-to-reference map
 
 | Manuscript claim | Primary references | Evidence status |
 |---|---|---|
@@ -208,12 +243,14 @@ DOI: **10.1016/j.jpowsour.2024.235589**
 | Mg can stabilize conversion-type HEO structure | [8]–[10] | Direct precedent, different HEO crystal/composition contexts |
 | Smaller polarization is not automatically proof of faster diffusion | Present data + [15], [16] | Present-data inference with methodological support |
 | Phase transformation can add overpotential beyond simple diffusion | [17] + [7] | General direct physics + material-specific phase pathway |
+| Coherent nucleation barrier can decrease with particle/domain size | [18], [19] | Direct general phase-field theory; different chemistry |
+| Nanosized spinel HEO can show reduced GITT polarization and more complete conversion | [20] | Direct in spinel-type HEO; different exact composition/processing |
 | FEC can stabilize HEO anode cycling through interphase control | [14] | Direct in related spinel HEO |
 | Conventional DGITT alone may compress relevant transient information | [15] + present data | Methodological support + present observation |
 
 ---
 
-# G. Literature gaps that define the novelty of the present manuscript
+# H. Literature gaps that define the novelty of the present manuscript
 
 1. **Same-family HEO/BM comparisons exist**, including conventional GITT analysis [6], but they largely compress kinetics into apparent D or compact resistance/diffusion descriptors.
 2. **Phase-transition pathways are now structurally established** [5,7], but their state-resolved polarization/relaxation signature under GITT has not been used to distinguish processing and compositional effects in a 2 × 2 comparison.
@@ -223,7 +260,7 @@ DOI: **10.1016/j.jpowsour.2024.235589**
 
 ---
 
-# H. Reference-management rules for this project
+# I. Reference-management rules for this project
 
 - Verify DOI/title/volume/article/page against publisher or authoritative institutional metadata before final submission export.
 - Prefer [7] over reviews when claiming the exact spinel→rock-salt pathway.
@@ -231,4 +268,6 @@ DOI: **10.1016/j.jpowsour.2024.235589**
 - Use [11] for the statement that high-energy milling can itself induce a spinel/rock-salt-like transformation.
 - Use [12] for fragmentation-driven conversion/interfacial utilization in the same FeCoNiCrMn family.
 - Keep [15]–[17] method/physics references separate from material-specific structural evidence.
+- Use [18] and [19] only for general coherent-nucleation/size physics; they do not prove the mechanism in the present HEO.
+- Use [20] as the closest direct spinel-HEO nanosize precedent, while explicitly distinguishing its ~15 nm primary particles from the present ball-milled aggregate morphology.
 - Do not cite a paper for a statement stronger than what the paper directly establishes.
