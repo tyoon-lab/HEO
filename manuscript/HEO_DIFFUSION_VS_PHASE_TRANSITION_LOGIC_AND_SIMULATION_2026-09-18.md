@@ -130,3 +130,29 @@ Mg is therefore interpreted as suppressing the extent of the conversion transiti
 - Li et al., Angewandte Chemie International Edition 2025, DOI 10.1002/anie.202518569: spinel HEO ~150 nm vs ~15 nm; smaller particles show lower GITT polarization and more complete conversion by overcoming kinetic sluggish diffusion.
 - Komayko et al., Journal of Power Sources 2024, 624, 235589: nucleation contributes substantially to overpotential in phase-transforming battery materials.
 - Jin et al., Materials Today Chemistry 2025, 48, 102949: Fe-Co-Cr-Ni-Mn spinel HEO phase path spinel -> mixed spinel/rock-salt -> rock-salt.
+
+## 9. Python implementation status
+
+The minimal mechanism-discrimination model has now been implemented through Python v3.
+
+Key outcome:
+
+- D-only scaling cannot reproduce smaller polarization together with longer relaxation.
+- Mg stabilization-only suppresses the hump but does not reproduce the slower total relaxation.
+- slower structural mobility alone increases relaxation time but leaves the transition hump too large.
+- Mg stabilization + slower residual structural mobility reproduces the observed combination of smaller hump, lower capacity proxy, and longer t63.
+- BM is reproduced by increased accessibility, broader local transition-condition distribution, lower concentrated transition peak, and slower/broader structural relaxation.
+
+The v3 model also includes a broad background relaxation term because the measured 60 min response contains substantial relaxation outside the background-subtracted late-stage excess hump.
+
+Current v3 is semi-phenomenological and was constructed to reproduce directions and approximate scales; agreement with the measured values is closure, not independent validation.
+
+A ±15% independent-parameter Monte-Carlo test (1000 trials) preserved all primary qualitative directions in 100% of trials.
+
+Full development history:
+- `modeling/HEO_MODELING_DEVELOPMENT_LOG_2026-09-18.md`
+- `modeling/heo_minimal_mechanistic_model_v3.py`
+- `modeling/HEO_MODEL_V3_OBSERVED_VS_MODEL.csv`
+- `modeling/HEO_MODEL_V3_ROBUSTNESS.csv`
+
+MATLAB translation remains intentionally deferred until the Python model equations and parameter roles are frozen.
