@@ -1,0 +1,5 @@
+Sample,Peak_dimensionless_relaxation,c_at_peak,FWHM_in_c,t63_at_peak_min,Final_transformed_fraction
+HEO,0.9877,0.676,<state_step,7.9614,1.0001
+BM-HEO,0.4162,0.676,0.108,10.9598,1.0001
+Mg-HEO,0.2250,0.892,<state_step,35.2712,0.2451
+BM-Mg-HEO,0.2612,0.856,0.108,31.7196,0.4457
