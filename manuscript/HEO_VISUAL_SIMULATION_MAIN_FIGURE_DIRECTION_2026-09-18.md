@@ -33,9 +33,13 @@ Therefore the visualization should not start from model state 0 and imply comple
 
 The current visualization begins at approximately model mean lithiation state 0.55. This state was deliberately included so all four samples appear to start from a comparable low-transformation condition.
 
-## Preferred final layout
+## Preferred final layout — refined against frozen v4
 
-Use circular particle cross sections.
+The previous prototype snapshot table is obsolete for final figure construction because its state/timing definition was not fully aligned with the frozen v4 implementation.
+
+The final visualization should explicitly use the **end of the 600 s galvanostatic pulse**, immediately before the 60 min current-off relaxation. This provides a physically direct starting state for the experimentally analyzed GITT relaxation.
+
+Use circular radial-state maps.
 
 Rows:
 1. HEO
@@ -43,53 +47,47 @@ Rows:
 3. Mg-HEO
 4. BM-Mg-HEO
 
-Columns / common target states:
+Recommended displayed model mean-lithiation states, rounded from the frozen-v4 GITT state grid:
 - 0.55
 - 0.62
 - 0.68
-- 0.74
+- 0.75
 - 0.80
 - 0.86
-- 0.92
+- 0.91
 
 Color = phi.
 
-The circles are model visualizations of the radial state profile at selected reaction-progress states, not independent experimentally imaged particles.
+For HEO and Mg-HEO, each map is the radial state of the single frozen parameter set.
 
-## Current prototype matched states
+For BM-HEO and BM-Mg-HEO, each map must be described as the **ensemble-averaged radial phi state** over the frozen 11-quantile distribution. It is not a directly simulated heterogeneous two-dimensional single particle.
 
-| Sample | target | matched state | modeled phi_bar |
-|---|---:|---:|---:|
-| HEO | 0.55 | 0.532 | 0.000 |
-| HEO | 0.62 | 0.604 | 0.023 |
-| HEO | 0.68 | 0.676 | 0.643 |
-| HEO | 0.74 | 0.748 | 0.837 |
-| HEO | 0.80 | 0.784 | 0.953 |
-| HEO | 0.86 | 0.856 | ~1.000 |
-| HEO | 0.92 | 0.892 | ~1.000 |
-| BM-HEO | 0.55 | 0.568 | 0.209 |
-| BM-HEO | 0.62 | 0.604 | 0.454 |
-| BM-HEO | 0.68 | 0.676 | 0.647 |
-| BM-HEO | 0.74 | 0.748 | 0.841 |
-| BM-HEO | 0.80 | 0.784 | 0.944 |
-| BM-HEO | 0.86 | 0.856 | ~1.000 |
-| BM-HEO | 0.92 | 0.892 | ~1.000 |
-| Mg-HEO | 0.55 | 0.532 | 0.000 |
-| Mg-HEO | 0.62 | 0.604 | 0.000 |
-| Mg-HEO | 0.68 | 0.676 | 0.000 |
-| Mg-HEO | 0.74 | 0.748 | 0.000 |
-| Mg-HEO | 0.80 | 0.784 | 0.0004 |
-| Mg-HEO | 0.86 | 0.856 | 0.063 |
-| Mg-HEO | 0.92 | 0.892 | 0.128 |
-| BM-Mg-HEO | 0.55 | 0.568 | 0.000 |
-| BM-Mg-HEO | 0.62 | 0.604 | 0.000 |
-| BM-Mg-HEO | 0.68 | 0.676 | 0.003 |
-| BM-Mg-HEO | 0.74 | 0.748 | 0.042 |
-| BM-Mg-HEO | 0.80 | 0.784 | 0.132 |
-| BM-Mg-HEO | 0.86 | 0.856 | 0.542 |
-| BM-Mg-HEO | 0.92 | 0.892 | 0.681 |
+Do not add random angular domains or patches unless a genuine 2D/3D heterogeneous model is later implemented.
 
-These are model outputs, not experimentally measured phase fractions.
+### Frozen-v4 pulse-end phi-bar audit
+
+The following values were regenerated from the frozen spatial equations and parameters for figure construction. Values are approximate and are intended for numerical auditing of the visualization, not as experimentally measured phase fractions.
+
+| Sample | c-bar ~0.55 | ~0.62 | ~0.68 | ~0.75 | ~0.80 | ~0.86 | ~0.91 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| HEO | 0.000 | 0.042 | 0.633 | 0.790 | 0.935 | ~1.000 | ~1.000 |
+| BM-HEO | 0.036 | 0.481 | 0.639 | 0.795 | 0.937 | ~1.000 | ~1.000 |
+| Mg-HEO | 0.000 | 0.000 | 0.000 | 0.000 | ~0.000 | 0.054 | 0.150 |
+| BM-Mg-HEO | 0.000 | 0.000 | 0.002 | 0.030 | 0.211 | 0.626 | 0.781 |
+
+The important message is the ordering and evolution, not the exact decimal values.
+
+### Rest-period structural-evolution panel
+
+Pair the snapshot array with a second panel showing
+
+Delta phi-bar_rest = phi-bar_(60 min rest end) - phi-bar_(pulse end)
+
+as a function of model mean lithiation state.
+
+This panel provides a direct model-side visualization of how much structural evolution occurs during the same 60 min interval used for the experimental current-off relaxation analysis.
+
+Do not interpret Delta phi-bar_rest as numerically equal to the measured voltage relaxation. It is an internal-state descriptor that links the model dynamics to the GITT relaxation window.
 
 ## Visual message
 
