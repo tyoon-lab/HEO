@@ -24,3 +24,12 @@ Key directories:
 
 Future collaboration direction:
 `FUTURE_DIRECTION_SULFIDE_EXTENSION_2026-09-18.md`
+
+## Current manuscript
+
+Current authoritative manuscript draft:
+
+`manuscript/HEO_MANUSCRIPT_V2_FIGURE_ALIGNED_2026-09-19.md`
+
+The Results now follow the final five-figure logic directly:
+structure -> accessibility/utilization -> current-off decoupling -> experimental transition response -> modeled internal-state evolution.
