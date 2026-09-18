@@ -29,7 +29,12 @@ Future collaboration direction:
 
 Current authoritative manuscript draft:
 
-`manuscript/HEO_MANUSCRIPT_V2_FIGURE_ALIGNED_2026-09-19.md`
+`manuscript/HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md`
 
 The Results now follow the final five-figure logic directly:
 structure -> accessibility/utilization -> current-off decoupling -> experimental transition response -> modeled internal-state evolution.
+
+
+Manuscript architecture/literature positioning note:
+
+`manuscript/HEO_MANUSCRIPT_ARCHITECTURE_AND_LITERATURE_POSITIONING_2026-09-19.md`
