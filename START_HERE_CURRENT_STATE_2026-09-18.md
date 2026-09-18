@@ -224,7 +224,7 @@ Final Figure-5 construction now uses pulse-end radial phi(r), sampled at the end
 - Mg-HEO: 0, 0, 0, 0, ~0, 0.05, 0.15;
 - BM-Mg-HEO: 0, 0, 0.002, 0.03, 0.21, 0.63, 0.78.
 
-A second Figure-5 panel should show Delta phi-bar_rest, the additional structural-state change during the subsequent 60 min rest. This is an internal-state descriptor linked to the GITT relaxation window, not a numerical substitute for Delta E_relax.
+Main Figure 5c should show pulse-end mean structural state phi-bar versus model mean lithiation state c-bar. The additional Delta phi-bar_rest during the subsequent 60 min rest is retained in SI as a model-side dynamics check, not as a numerical substitute for Delta E_relax.
 
 Safe wording:
 The circular snapshots visualize the modeled late-stage transition-associated state variable phi within a spherical particle across a common reaction-progress window. The visualization is intended as a mechanistic representation of the GITT-derived interpretation and should not be interpreted as a directly measured phase fraction or as a complete reconstruction of all structural transitions throughout lithiation.
@@ -334,6 +334,7 @@ Use the reference master for exact claim boundaries.
 12. Main-text value of modeling is GITT -> visual internal-state simulation; parameter details belong mainly in SI.
 13. Current visual-simulation window begins around model state 0.55 to avoid implying that the single-phi model captures all earlier structural transitions.
 14. Preferred visual layout is 4 sample rows × 7 common-state circular-particle snapshots.
+15. Main Figure 5c uses pulse-end mean structural state phi-bar versus c-bar; the 60 min Delta phi-bar_rest curve is supporting information rather than the primary main-text model panel.
 
 ---
 
@@ -342,7 +343,7 @@ Use the reference master for exact claim boundaries.
 Start here without asking for another handoff.
 
 Recommended order:
-1. Refine Figure 5 as an independent model-visualization figure: compact model schematic + 4 × 7 pulse-end circular state array + Delta phi-bar_rest versus model mean lithiation state.
+1. Use the current Figure 5 architecture: compact mechanism-sufficiency schematic + 4 × 7 pulse-end circular state array + pulse-end phi-bar versus model mean lithiation state. Keep Delta phi-bar_rest in SI.
 2. Retain the column coordinate as model mean lithiation state c-bar; do not relabel it directly as experimental normalized capacity without a validated mapping.
 3. For BM-containing samples, depict ensemble-averaged radial phi states or representative quantiles; do not imply a directly simulated heterogeneous 2D single particle.
 4. Add the visual-simulation section and claim boundary to the integrated manuscript and update the main figure architecture/numbering.
