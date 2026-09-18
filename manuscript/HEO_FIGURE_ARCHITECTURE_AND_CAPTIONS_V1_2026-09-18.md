@@ -248,6 +248,38 @@ Do **not** include the exploratory `D-only → D + one compact mode → distribu
 
 ---
 
+# Figure 5 — What internal-state evolution is compatible with the GITT constraints?
+
+**Question answered:** What modeled internal-state evolution can simultaneously accommodate the observed polarization amplitude, transition width, accessible transformed state, and relaxation-time directions?
+
+### Panel architecture
+
+**a. Mechanism-sufficiency logic schematic**  
+Experimental constraints -> independent model coordinates -> modeled radial state. Keep this broad and non-mathematical in the main Figure.
+
+**b. Pulse-end circular radial-state array**  
+Rows: HEO / BM-HEO / Mg-HEO / BM-Mg-HEO.  
+Columns: model mean lithiation state c-bar ≈ 0.55, 0.62, 0.68, 0.75, 0.80, 0.86, 0.91.  
+Color: phi, with 0 = parent-like/pre-transition and 1 = transformed-like.  
+For BM-containing samples, show the ensemble-averaged radial state over the frozen 11-quantile distribution; do not invent angular domains.
+
+**c. Pulse-end phi-bar versus c-bar**  
+Show the mean structural-state progression for all four samples. This should visually establish earlier/broader BM progression, strong Mg suppression, and partial reopening for BM-Mg.
+
+### Draft caption
+
+**Figure 5. Spatial mechanism-sufficiency model visualizes distinct late-stage internal-state evolution.** (a) Experimental GITT constraints are evaluated against independent model coordinates for transport scale, transformation stabilization/extent, local-transition heterogeneity, and structural-mobility heterogeneity. (b) Pulse-end radial maps of the late-stage structural order parameter phi at selected values of the model mean lithiation state c-bar. HEO and Mg-HEO use the single frozen radial parameter set, whereas BM-HEO and BM-Mg-HEO are shown as ensemble-averaged radial states over the frozen 11-quantile distributions. phi near 0 denotes a parent-like/pre-transition state and phi near 1 a transformed-like state. (c) Pulse-end mean structural state phi-bar versus c-bar. Ball milling advances and distributes the modeled transformation over a broader reaction-progress interval, Mg strongly suppresses the late-stage transformed state, and BM-Mg-HEO partially recovers transformation while retaining Mg-related suppression. The model is used as a mechanism-sufficiency visualization and does not represent a unique parameter identification, a directly measured phase fraction, or a complete reconstruction of all structural transitions during lithiation.
+
+### SI associated with Figure 5
+
+- full governing equations and effective-parameter table;
+- 7-versus-11-quantile convergence;
+- volume- versus surface-chemical-potential readout robustness;
+- directional unit-test table and sensitivity/identifiability note;
+- Delta phi-bar_rest during the 60 min rest as a model-side internal-state descriptor.
+
+---
+
 # Main-text figure call order
 
 ## Results 3.1
@@ -266,9 +298,13 @@ Call **Figure 3a** when introducing the current-off analysis. Use **Figure 3b–
 
 Call **Figure 4a,b** when assigning the late-stage hump to the phase-transition region. Use **Figure 4c** to compare BM and Mg quantitatively. Close the section with **Figure 4d** as the synthesis–electrochemistry mechanism map.
 
-## Results 3.6–3.7
+## Results 3.6
 
-Do not introduce a new main Figure unless required. Refer back to Figures 2 and 4 to discuss cycling/rate consequences and the integrated mechanism. This avoids a fifth main Figure that only repeats performance data.
+Call **Figure 5a–c** in the spatial-modeling section. Keep the logic order model constraints -> pulse-end internal-state maps -> mean structural-state progression.
+
+## Results 3.7–3.8
+
+Refer back to Figures 2, 4, and 5 when discussing cycling/rate consequences and the integrated mechanism. Do not add a sixth main Figure unless new independent experimental evidence requires it.
 
 ---
 
@@ -312,12 +348,13 @@ Tables:
 5. Figure 4 assigns the late-stage hump primarily to the spinel-to-rock-salt/conversion transition based on voltage/state dependence plus literature, but does not claim direct operando phase-fraction measurement in the present experiment.
 6. Peak/width/area numbers remain working values until the common-background sensitivity audit is frozen.
 7. Rate capability and long-rest relaxation time are distinct observables; do not imply that the longer BM t63 necessarily means poorer galvanostatic rate performance.
+8. Figure 5 is a mechanism-sufficiency visualization. phi is not a measured phase fraction, c-bar is not directly calibrated to experimental normalized capacity, and BM circular maps are ensemble-averaged radial states rather than simulated heterogeneous 2D particles.
 
 ---
 
 # Final visual logic
 
-The four main Figures should read as one causal sequence:
+The five main Figures should read as one causal sequence:
 
 `Figure 1: what was changed`
 
@@ -325,6 +362,8 @@ The four main Figures should read as one causal sequence:
 
 → `Figure 3: how polarization and relaxation changed independently`
 
-→ `Figure 4: which part of the phase-transforming reaction BM and Mg regulate`
+→ `Figure 4: which part of the phase-transforming reaction BM and Mg regulate experimentally`
 
-This sequence keeps GITT as a mechanistic diagnostic rather than allowing the manuscript to become a GITT-method paper.
+→ `Figure 5: what internal-state evolution is physically compatible with those constraints`
+
+This sequence keeps GITT as a mechanistic diagnostic and keeps the spatial model as a mechanism-sufficiency visualization rather than turning the manuscript into either a conventional diffusivity paper or a parameter-fitting paper.
