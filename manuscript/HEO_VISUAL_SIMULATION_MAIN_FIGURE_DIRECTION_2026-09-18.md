@@ -112,3 +112,51 @@ BM-Mg-HEO: ball milling partially reopens transformation accessibility, but Mg-r
 3. Add a small legend: 0 = parent-like; 1 = transformed-like.
 4. Consider pairing the snapshot array with the experimental transition-hump plot so the chain is explicit: GITT observable -> inferred transition window -> modeled internal-state evolution.
 5. Keep detailed model parameters, sensitivity, and identifiability caveats in SI.
+
+## Refinement: Figure 5 should be an independent model-visualization figure
+
+The current preferred manuscript architecture is now:
+- Figure 4: experimental state-localized transition-associated polarization;
+- Figure 5: spatial-model visualization of internal-state evolution consistent with the experimental directional constraints.
+
+This separation preserves the distinction between experimental evidence and mechanism-sufficiency modeling.
+
+### Important ensemble-visualization caveat
+
+For HEO and Mg-HEO, the frozen spatial model uses a single radial parameter set.
+
+For BM-HEO and BM-Mg-HEO, the frozen model uses an 11-quantile ensemble distribution of local transition/surface conditions and structural mobilities. Therefore a circular map for BM-containing samples must not be described as a directly simulated heterogeneous two-dimensional single particle.
+
+Preferred options:
+1. show an ensemble-averaged radial phi map and label it explicitly as an ensemble-averaged model state; or
+2. show representative quantile particles when the distribution itself is the intended visual message.
+
+For the compact 4 × 7 main-text array, option 1 is preferred. The caption should state that each circle represents the ensemble-averaged radial structural state at the selected model reaction-progress coordinate.
+
+Do not add random angular patches to the circles unless a true 2D/3D heterogeneous model is later implemented.
+
+### Column coordinate
+
+Retain the model mean lithiation/reaction-progress coordinate rather than relabeling it directly as experimental normalized capacity. A direct capacity mapping would imply a quantitative model-to-experiment calibration that has not been established.
+
+Recommended column title:
+**Model mean lithiation state, c̄**
+
+Add a small header:
+**Late-stage transition window**
+
+### Recommended Figure 5 panels
+
+**Figure 5a.** Compact model schematic defining conserved Li state c(r,t), structural order parameter phi(r,t), Mg stabilization coordinate, and BM ensemble heterogeneity.
+
+**Figure 5b.** 4 × 7 circular array of ensemble-averaged radial phi states at c̄ = 0.55, 0.62, 0.68, 0.74, 0.80, 0.86, and 0.92.
+
+**Figure 5c.** Ensemble-averaged phi-bar versus c̄ for the four samples. This plot makes the BM broad/early progression, Mg suppression, and partial reopening in BM-Mg explicit.
+
+Optional Figure 5d only if space allows: directional comparison of model outputs against the experimentally required trends. Avoid presenting this as a quantitative fit.
+
+### Figure-level message
+
+Figure 4 establishes the experimental contradiction to a one-parameter diffusion interpretation. Figure 5 then demonstrates that the observed directions are physically compatible with independent coordinates for transformation extent/stabilization and structural-mobility/transition-condition heterogeneity.
+
+The model should be described as a mechanism-sufficiency visualization, not as a reconstruction of a uniquely identified microscopic pathway.
