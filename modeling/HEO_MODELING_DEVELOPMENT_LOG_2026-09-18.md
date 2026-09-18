@@ -393,3 +393,70 @@ The existing file modeling/HEO_PhaseTransition_Model_Final.m is an earlier trans
 It is therefore **legacy/provisional**, not the final spatial MATLAB model.
 
 Do not extend or use it as the final mechanistic implementation until the Python spatial model is frozen.
+
+
+---
+
+## Spatial physics gate v3 — explicit coherency, surface wetting, and Mg stabilization
+
+The next Python gate replaced the phenomenological Mg shift in c_tr with an explicit stabilization free-energy term and added reduced coherency/surface terms.
+
+New free-energy terms:
+
+- + G_Mg phi: explicit Mg stabilization of the parent/intermediate structure;
+- + 0.5 B_el q_el(r) phi^2: reduced coherency penalty, relaxed near the surface;
+- - S_surf w_surf(r) phi: surface wetting / surface-assisted transformation.
+
+Here q_el(r)=1-exp[-(1-r)/ell_relief] and w_surf(r)=exp[-(1-r)/ell_wet].
+
+Important boundary: B_el is not a full elastic mechanical-equilibrium solution. It is a reduced isotropic coherency-energy coordinate used only for mechanism sufficiency.
+
+### Numerical result
+
+Using N=24 after the diffuse-interface mesh correction:
+
+| Sample | peak proxy | c at peak | FWHM in c | t63 at peak (min) | final phi |
+|---|---:|---:|---:|---:|---:|
+| HEO | 0.7456 | 0.640 | < state step | 7.09 | 1.000 |
+| BM-HEO | 0.2970 | 0.604 | 0.180 | 17.73 | 1.000 |
+| Mg-HEO | 0.1844 | 0.892 | < state step | 37.97 | 0.226 |
+| BM-Mg-HEO | 0.1973 | 0.892 | 0.072 | 37.97 | 0.490 |
+
+These are qualitative hypothesis-level results, not fitted physical parameters.
+
+### Critical BM ablation
+
+A single BM-like particle with shorter effective transport scale, larger surface-relief zone, wetting, and lower barrier shows only a modest peak decrease and remains narrow.
+
+Only an ensemble with heterogeneous local surface/defect wetting conditions reproduces the strong peak-down + width-up direction.
+
+Therefore the BM interpretation is refined to:
+
+BM -> easier local transformation + heterogeneous local transition environments -> lower concentrated peak + broader state interval + high utilization.
+
+### Critical Mg ablation
+
+- explicit stabilization alone suppresses transformed fraction but does not create slow relaxation;
+- low M_phi alone creates slow relaxation but retains substantial transformation;
+- stabilization + low M_phi gives both suppression and slow residual relaxation.
+
+Therefore the Mg two-coordinate interpretation survives without changing c_tr:
+
+Mg -> G_Mg > 0 + M_phi down -> transformation extent down + residual structural relaxation slower.
+
+### Mesh check
+
+N=18,24,30 gives stable qualitative results after kappa=0.002. The new terms therefore do not reintroduce the under-resolved-interface failure observed in the first spatial prototype.
+
+### Decision
+
+Spatial physics gate v3 passes qualitatively.
+
+MATLAB port remains deferred until:
+- voltage-observable sensitivity is checked;
+- continuous heterogeneity distributions are tested;
+- parameter perturbations are run around v3;
+- manuscript placement (main vs SI) is decided.
+
+Detailed note: modeling/HEO_SPATIAL_PHYSICS_GATE_V3_2026-09-18.md
+Executable Python: modeling/heo_spatial_physics_gate_v3.py
