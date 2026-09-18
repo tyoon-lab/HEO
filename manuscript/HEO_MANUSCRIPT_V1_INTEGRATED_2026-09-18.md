@@ -37,7 +37,7 @@ Ball milling and Mg incorporation provide two physically different ways to pertu
 
 This distinction is difficult to resolve when galvanostatic intermittent titration technique (GITT) data are reduced only to an apparent Li-ion diffusion coefficient. Conventional GITT analysis remains useful as a comparative descriptor, but its physical interpretation depends on diffusion geometry, time-window selection, equilibrium assumptions, and the absence of major structural complications.[6,15] These conditions are nontrivial in a phase-evolving conversion electrode. Current interruption preserves additional information. The early voltage response after switching off the current can be represented through an intercept and a sqrt(t) contribution under the semi-infinite diffusion approximation,[16] whereas the subsequent relaxation amplitude and characteristic time can be measured without assuming a single exponential. Phase-transforming electrodes are especially relevant because nucleation itself can constitute a substantial material-level overpotential.[17] Separating polarization magnitude from relaxation time therefore provides a direct way to test whether a synthesis-induced decrease in polarization actually reflects faster transport or instead reflects a change in reaction extent.
 
-This study uses a 2 × 2 material/process comparison—HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO—to determine how ball milling and Mg incorporation modify lithium storage in a spinel HEO anode. Structural and surface characterization is combined with galvanostatic cycling, rate tests, and direct analysis of the current-off portions of 10 min GITT pulses followed by 60 min relaxation. Ball milling increases electrochemical accessibility and capacity while broadening the late-stage transformation-associated polarization and slowing the long-rest response. Mg incorporation instead suppresses the late-stage polarization feature and conversion capacity without shortening the relaxation time. The combined data distinguish two synthesis coordinates: ball milling regulates accessibility and the distribution of the phase-transforming reaction, whereas Mg predominantly reduces the extent of the transformation through structural stabilization.
+This study uses a 2 × 2 material/process comparison—HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO—to determine how ball milling and Mg incorporation modify lithium storage in a spinel HEO anode. Structural and surface characterization is combined with galvanostatic cycling, rate tests, and direct analysis of the current-off portions of 10 min GITT pulses followed by 60 min relaxation. Ball milling increases electrochemical accessibility and capacity while broadening the late-stage transformation-associated polarization and slowing the long-rest response. Mg incorporation instead suppresses the late-stage polarization feature and conversion capacity without shortening the relaxation time. A spatial mechanism-sufficiency model reproduces these directional trends when transformation extent/stabilization and structural-mobility/transition-condition heterogeneity are treated as independent coordinates, and visualizes their distinct late-stage internal-state evolution. The combined results distinguish two synthesis coordinates: ball milling regulates accessibility and the distribution of the phase-transforming reaction, whereas Mg predominantly reduces the extent of the transformation through structural stabilization.
 
 ---
 
@@ -88,6 +88,14 @@ Cyclic voltammetry in the nominal non-faradaic region of 3.0–3.3 V was acquire
 **[[STUDENT TO CONFIRM: potentiostat model and detailed CV/EIS acquisition conditions before final Methods freeze.]]**
 
 ---
+
+## 2.4. Spatial mechanism-sufficiency model
+
+A reduced spatial phase-field model was used as a directional mechanism test rather than as a unique parameter-identification or quantitative voltage-fitting procedure. The model contains a conserved radial Li-state variable, c(r,t), and a nonconserved structural order parameter, phi(r,t), representing the late-stage transition-associated structural state. Values of phi near 0 denote a parent-like/pre-transition state and values near 1 denote a transformed-like state. The variable phi is therefore a modeled internal-state coordinate and is not interpreted as a directly measured experimental phase fraction.
+
+Li transport was represented by diffusion driven by the Li chemical-potential gradient, while structural evolution followed dissipative relaxation of the phase-field free energy. Mg incorporation was represented through an explicit stabilization term for the parent/intermediate state together with reduced residual structural mobility. Ball-milled samples were represented using a distribution of local transition/surface conditions and structural mobilities. The BM-HEO and BM-Mg-HEO calculations used 11 equal-probability quantiles of the frozen ensemble distribution rather than a single deterministic particle.
+
+The numerical protocol reproduced the experimental timing of 600 s galvanostatic perturbation followed by 3600 s zero-flux relaxation over a refined sequence of model states. Model outputs were evaluated through volume-averaged and surface chemical-potential readouts, and the accepted parameter set was required only to reproduce the experimentally observed directional relationships among transition-polarization amplitude, transformation width, characteristic relaxation, and final transformed-state proxy. Detailed equations, parameters, sensitivity tests, numerical convergence, and identifiability limitations are provided in the Supporting Information. The model is used in the main text only to test mechanistic sufficiency and to visualize internal-state evolution consistent with the experimental constraints.
 
 # 3. Results and Discussion
 
@@ -149,7 +157,19 @@ The most coherent interpretation is that Mg stabilizes the oxide/spinel-derived 
 
 Alternative explanations are less complete. Faster Li diffusion could lower polarization but should also tend to shorten the current-off relaxation; t63 and t90 do not show this behavior. Lower purely ohmic or electronic resistance can explain a smaller fast jump but not the selective disappearance of the late-stage feature together with capacity loss. Reduced external surface area is inconsistent with the BET result because Mg-HEO has a larger surface area than HEO. SEI differences can influence the earliest first-cycle response but do not naturally explain the state-localized suppression of the low-voltage transition feature. Suppression of the conversion extent therefore provides the strongest explanation of the combined data, while the exact local Mg configuration remains to be finalized by the structural characterization.
 
-## 3.6. Cycling behavior reflects the balance between accessible interface and interphase stability
+## 3.6. Spatial modeling visualizes distinct late-stage internal-state evolution
+
+The current-interruption analysis provides a set of directional constraints that a physically coherent model should satisfy simultaneously. For BM-HEO, the transformation-associated peak must decrease and broaden while the accessible transformed fraction remains high and the long-rest response becomes slower. For Mg-HEO, the transition-associated response and transformed fraction must decrease strongly even though the characteristic relaxation does not become faster. These combinations cannot be represented coherently by changing a single diffusion coefficient or a single structural-mobility parameter.
+
+A reduced spatial phase-field model was therefore used as a mechanism-sufficiency test. The model couples a conserved radial Li-state variable c(r,t) to a nonconserved late-stage structural order parameter phi(r,t). The purpose is not to identify unique microscopic constants or reconstruct the complete lithiation pathway. Instead, the model asks whether independent coordinates for transport, transformation stability/extent, and structural mobility/local transition conditions can reproduce the experimentally required directions.
+
+The frozen model reproduces the four-sample ordering when Mg and ball milling are assigned different physical roles. Mg-HEO requires both stabilization of the parent/intermediate state and slower mobility of the residual transforming population. Stabilization suppresses the transformed fraction and transition-associated polarization, while the reduced residual structural mobility prevents the remaining response from becoming artificially fast. BM-HEO instead requires a distribution of local transition conditions together with a distribution of structural mobilities. This ensemble description lowers the concentrated transition peak, broadens the reaction-progress interval over which transformation occurs, retains a high final transformed-state proxy, and produces a slower ensemble relaxation. BM-Mg-HEO retains Mg-related stabilization but partially reopens the transformation pathway under milling, giving an intermediate transformed-state response.
+
+Figure 5 visualizes these differences over a common late-stage model reaction-progress window. The circular maps represent ensemble-averaged radial phi states at selected values of the model mean lithiation coordinate c-bar. For BM-containing samples, each map is an ensemble average over the frozen 11-quantile distribution and should not be interpreted as a directly simulated heterogeneous two-dimensional single particle. HEO develops the transformed state over a comparatively concentrated interval, whereas BM-HEO begins transformation earlier and distributes it more broadly. Mg-HEO remains predominantly parent-like over most of the same window, while BM-Mg-HEO shows partial recovery of transformation at high model state. The visualization therefore provides a physically constrained representation of the experimental GITT interpretation rather than a direct measurement of phase fraction.
+
+The value of the model is consequently directional rather than parametric. The experiment establishes that polarization amplitude, transformation width, accessible capacity, and long-rest relaxation do not move together as one kinetic variable. The spatial calculation shows that these observations are mutually compatible when transformation extent/stabilization and structural-mobility/transition-condition heterogeneity are allowed to vary independently. Detailed parameter values remain hypothesis-level and non-unique and are therefore retained primarily in the Supporting Information.
+
+## 3.7. Cycling behavior reflects the balance between accessible interface and interphase stability
 
 The electrochemical consequences of milling persist beyond the first cycle. Under the standardized FEC-containing electrolyte, BM-HEO maintains a higher absolute capacity than HEO during the 100-cycle test. Without FEC, however, BM-HEO shows stronger capacity fade. The same enlarged interface that exposes more active material to conversion also creates more area for electrolyte decomposition and repeated interphase reconstruction. The cycling result therefore reveals a trade-off rather than a uniformly beneficial milling effect: interface enlargement increases electrochemical utilization but also increases interphase burden.
 
@@ -157,7 +177,7 @@ Post-cycle SEM provides qualitative support for substantial surface reconstructi
 
 The EIS series acquired during cycling also shows pronounced state/history dependence, but several spectra contain unstable or outlying responses and the present dataset has not yet been reduced to a uniquely defensible equivalent-circuit parameter series. EIS is therefore retained as Supporting Information rather than used to define the central mechanism.
 
-## 3.7. Ball milling and Mg incorporation regulate different coordinates of the conversion reaction
+## 3.8. Ball milling and Mg incorporation regulate different coordinates of the conversion reaction
 
 The combined results distinguish the roles of processing and composition. Ball milling primarily changes **electrochemical accessibility and reaction distribution**. It increases physical surface area, enlarges the electrochemically accessible interface, increases capacity over the tested rate range, and broadens the late-stage transformation-associated polarization while lengthening the post-pulse relaxation. Mg incorporation primarily changes **conversion extent and structural stability**. It lowers accessible capacity and strongly suppresses the late-stage excess polarization even though the external surface area does not decrease and the characteristic relaxation time does not become shorter.
 
@@ -172,6 +192,8 @@ The four-sample matrix can consequently be described along three experimentally 
 Spinel Fe–Co–Ni–Cr–Mn high-entropy oxide anodes and their ball-milled and Mg-containing derivatives were compared using a 2 × 2 composition/process design. Ball milling increased the BET surface area from 3.94 to 18.159 m² g−1 in the Mg-free material and substantially increased the electrochemically accessible interface and specific capacity. This higher utilization did not coincide with uniformly faster current-off kinetics. HEO and BM-HEO showed nearly identical apparent fast current-off resistances of 106.4 and 106.5 Ω over 200–800 mAh g−1, while t63 increased from 8.68 to 11.57 min after milling. The late-stage transformation-associated excess polarization simultaneously decreased in peak amplitude and broadened in capacity. Ball milling is therefore assigned primarily to increased reaction accessibility and redistribution of the conversion transition rather than to a simple increase in Li diffusivity.
 
 Mg incorporation produced a different trade-off. Accessible capacity and the late-stage transition-associated polarization were both reduced, whereas the characteristic relaxation time did not become shorter. Mg-HEO also exhibited a larger BET area than HEO, excluding loss of external surface area as the origin of the lower capacity. Together with literature evidence for the stabilizing role of Mg in conversion-type HEOs, this response is attributed predominantly to suppression of the extent of the spinel-to-rock-salt/conversion transformation. Ball milling of the Mg-containing material increased utilization but did not restore the pronounced Mg-free transition response, indicating that processing changes accessibility while composition imposes a stronger constraint on transformation extent.
+
+A spatial mechanism-sufficiency model independently supports this separation: the observed directions are reproduced when Mg-related transformation stabilization and residual structural mobility are separated from the heterogeneous transition conditions and structural mobilities introduced by milling. The modeled internal-state maps are not direct phase-fraction measurements, but they provide a constrained visualization of how these independent coordinates can generate the experimentally observed GITT response.
 
 The combined results show that accessible capacity, polarization amplitude, practical rate utilization, and post-pulse relaxation time are distinct observables of a phase-evolving HEO electrode. Separating these quantities resolves the contrasting roles of Mg incorporation and mechanical processing and provides a more direct synthesis–electrochemistry connection than interpretation based on a single apparent GITT diffusion coefficient.
 
@@ -216,7 +238,7 @@ Suggested panels:
 
 **Question answered:** Does lower polarization mean faster relaxation, and does higher capacity mean lower resistance?
 
-## Figure 4. Phase-transition polarization and integrated mechanism
+## Figure 4. Experimental phase-transition polarization and mechanism discrimination
 
 Suggested panels:
 
@@ -227,7 +249,22 @@ Suggested panels:
   - BM: accessibility ↑ / transition distribution broader;
   - Mg: conversion extent ↓ / structure stabilization ↑.
 
-**Question answered:** Which coordinate of the conversion reaction is controlled by processing and which by composition?
+**Question answered:** Which experimentally observed features distinguish redistribution of the transformation from suppression of its extent?
+
+
+## Figure 5. Modeled late-stage internal-state evolution
+
+Suggested panels:
+
+- compact schematic of the reduced spatial model and the three independent physical coordinates: transport scale, transformation stabilization/extent, and structural mobility/local-transition heterogeneity;
+- 4 × 7 circular array of ensemble-averaged radial phi states for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO at model mean lithiation states c-bar = 0.55, 0.62, 0.68, 0.74, 0.80, 0.86, and 0.92;
+- ensemble-averaged phi-bar versus c-bar for all four samples;
+- optional compact directional-comparison panel if space permits, explicitly labeled as a mechanism-sufficiency comparison rather than a quantitative fit.
+
+For BM-HEO and BM-Mg-HEO, the circular maps represent ensemble-averaged radial states over the frozen 11-quantile distributions. Do not depict unmodeled random angular patches within a particle. Use a common phi color scale with 0 = parent-like/pre-transition and 1 = transformed-like. Label the window explicitly as the late-stage transition window.
+
+**Question answered:** What internal-state evolution is physically compatible with the experimentally observed combinations of polarization amplitude, transition width, transformed fraction, and relaxation time?
+
 
 ---
 
