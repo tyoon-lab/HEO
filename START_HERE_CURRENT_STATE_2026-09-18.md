@@ -203,28 +203,28 @@ Rows:
 3. Mg-HEO
 4. BM-Mg-HEO
 
-Common target model states:
+Recommended displayed frozen-v4 model states:
 - 0.55
 - 0.62
 - 0.68
-- 0.74
+- 0.75
 - 0.80
 - 0.86
-- 0.92
+- 0.91
 
-The 0.55 column was deliberately added so all four materials appear to begin from a comparable low-transformation state.
+The 0.55 column is retained so all four materials begin from a comparable low-transformation state. The final displayed states are aligned to the frozen-v4 GITT state grid rather than the earlier prototype table.
 
 This should be presented explicitly as a late-stage transition window, not as full 0→1 lithiation history.
 
 ## Current matched-state behavior from the visual prototype
 
-HEO: ~0.53 phi_bar 0; ~0.60 0.02; ~0.68 0.64; ~0.75 0.84; ~0.78 0.95; >=0.86 ~1.
+Final Figure-5 construction now uses pulse-end radial phi(r), sampled at the end of each 600 s pulse immediately before current interruption. Approximate pulse-end phi-bar values over the displayed states are:
+- HEO: 0.00, 0.04, 0.63, 0.79, 0.94, ~1, ~1;
+- BM-HEO: 0.04, 0.48, 0.64, 0.80, 0.94, ~1, ~1;
+- Mg-HEO: 0, 0, 0, 0, ~0, 0.05, 0.15;
+- BM-Mg-HEO: 0, 0, 0.002, 0.03, 0.21, 0.63, 0.78.
 
-BM-HEO: already partially transformed around ~0.57; transition develops more broadly; reaches near-complete transformation by high state.
-
-Mg-HEO: essentially no late-stage transformation until high state; ~0.86 phi_bar ~0.06; ~0.89 ~0.13 in current visual model.
-
-BM-Mg-HEO: transformation begins earlier than Mg-HEO, remains strongly below HEO/BM over much of the state range, and partially recovers transformation at high state.
+A second Figure-5 panel should show Delta phi-bar_rest, the additional structural-state change during the subsequent 60 min rest. This is an internal-state descriptor linked to the GITT relaxation window, not a numerical substitute for Delta E_relax.
 
 Safe wording:
 The circular snapshots visualize the modeled late-stage transition-associated state variable phi within a spherical particle across a common reaction-progress window. The visualization is intended as a mechanistic representation of the GITT-derived interpretation and should not be interpreted as a directly measured phase fraction or as a complete reconstruction of all structural transitions throughout lithiation.
@@ -342,7 +342,7 @@ Use the reference master for exact claim boundaries.
 Start here without asking for another handoff.
 
 Recommended order:
-1. Refine Figure 5 as an independent model-visualization figure: compact model schematic + 4 × 7 circular state array + phi-bar versus model mean lithiation state.
+1. Refine Figure 5 as an independent model-visualization figure: compact model schematic + 4 × 7 pulse-end circular state array + Delta phi-bar_rest versus model mean lithiation state.
 2. Retain the column coordinate as model mean lithiation state c-bar; do not relabel it directly as experimental normalized capacity without a validated mapping.
 3. For BM-containing samples, depict ensemble-averaged radial phi states or representative quantiles; do not imply a directly simulated heterogeneous 2D single particle.
 4. Add the visual-simulation section and claim boundary to the integrated manuscript and update the main figure architecture/numbering.
