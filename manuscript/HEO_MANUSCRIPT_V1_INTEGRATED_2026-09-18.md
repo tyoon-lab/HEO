@@ -238,19 +238,19 @@ Suggested panels:
 
 **Question answered:** Does lower polarization mean faster relaxation, and does higher capacity mean lower resistance?
 
-## Figure 4. Experimental phase-transition polarization and mechanism discrimination
+## Figure 4. Experimental phase-transition polarization
 
 Suggested panels:
 
-- late-stage ΔErelax overlaid with relaxed GITT voltage;
-- background-subtracted excess feature for all four samples;
-- peak-amplitude / width summary;
-- 2 × 2 mechanistic map:
-  - BM: accessibility ↑ / transition distribution broader;
-  - Mg: conversion extent ↓ / structure stabilization ↑.
+- **(a)** late-stage raw Delta E_relax versus normalized first-lithiation capacity z = Q/Qmax, with the relaxed-voltage trajectory shown only as a light reference if it remains readable;
+- **(b)** background-subtracted transition-associated excess polarization using the common declared background procedure;
+- **(c)** peak-amplitude versus FWHM-like-width map, with marker area proportional to normalized excess area.
 
-**Question answered:** Which experimentally observed features distinguish redistribution of the transformation from suppression of its extent?
+Keep Figure 4 experimental-only. The previous mechanistic summary schematic is removed because Figure 5a now provides the explicit model-side interpretation.
 
+**Draft caption — Figure 4. State-resolved current-off relaxation isolates a synthesis-dependent late-stage transition-associated polarization.** (a) Late-stage relaxation amplitude plotted against normalized first-lithiation capacity. Pristine HEO develops a concentrated high-state response in the voltage/state region associated in related spinel HEO literature with spinel-to-rock-salt/conversion evolution, whereas the feature is broadened after ball milling and strongly suppressed after Mg incorporation. (b) Background-subtracted excess polarization obtained using the same fitting windows and functional form for all four samples. Ball milling lowers the local maximum while distributing the excess response over a wider capacity interval; Mg incorporation strongly suppresses the excess response. (c) Peak-amplitude versus FWHM-like-width map, with marker area representing normalized excess area. The three descriptors separate a concentrated HEO response, a broader/lower BM-HEO response, strong Mg suppression, and partial re-emergence in BM-Mg-HEO. The excess area is a comparative polarization descriptor derived from discrete GITT states and is not interpreted as dissipated energy.
+
+**Question answered:** What experimentally observed features distinguish redistribution of the transformation-associated response from suppression of its extent?
 
 ## Figure 5. Modeled late-stage internal-state evolution
 
