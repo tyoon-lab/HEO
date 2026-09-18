@@ -460,3 +460,103 @@ MATLAB port remains deferred until:
 
 Detailed note: modeling/HEO_SPATIAL_PHYSICS_GATE_V3_2026-09-18.md
 Executable Python: modeling/heo_spatial_physics_gate_v3.py
+
+
+---
+
+## Final Python physics gate v4 — readout, state-resolution, and joint-heterogeneity freeze
+
+### Voltage-readout robustness
+
+The spatial model was evaluated with both volume-averaged and surface chemical-potential proxies. The central peak and relaxation ordering is unchanged.
+
+### Failure: coarse GITT-state sampling
+
+The first continuous Gaussian BM test used a model state increment of ~0.036 per pulse. Gaussian quantile counts gave unstable FWHM and t63 values.
+
+Correction:
+- inward flux reduced to 9e-6;
+- 50 pulse/rest states used;
+- median state increment reduced to ~0.0162 per pulse, comparable in order to the experimental normalized GITT increment.
+
+### Failure: FWHM is unstable for multimodal ensembles
+
+FWHM changed discontinuously with Gaussian quadrature because the distributed response crossed the half-height threshold at different discrete states.
+
+Decision:
+- retain FWHM-like width for experimental data presentation;
+- use polarization-weighted second-moment width for numerical convergence.
+
+### Failure: BM transition-condition heterogeneity alone is insufficient
+
+With refined state sampling, a distribution of local transition conditions reproduced peak-down and width-up but did not robustly preserve BM t63 > HEO.
+
+A single common Mphi for all milled domains was rejected.
+
+### Joint BM distribution
+
+The final BM ensemble uses a common Gaussian latent variable x:
+
+Ssurf = 0.15 + 0.06 x
+
+Mphi = 0.008 exp(-0.6 x)
+
+This gives simultaneously:
+- lower concentrated peak;
+- broader state distribution;
+- slower residual relaxation;
+- high transformed fraction.
+
+Convergence:
+- 7 quantiles: peak 0.1905, moment width 0.0838, t63 26.91 min;
+- 11 quantiles: peak 0.1824, moment width 0.0847, t63 26.91 min.
+
+### Mg Gmg–Mphi grid
+
+A refined grid explicitly confirmed that the Mg result requires two independent coordinates.
+
+Representative frozen Mg point:
+- Gmg = 0.38;
+- Mphi = 0.0006.
+
+This gives strong transformation suppression together with slower relaxation.
+
+### BM-Mg failure and correction
+
+The first BM-Mg candidate recovered transformed fraction but gave a peak below Mg-HEO, contrary to the experimental modest hump re-emergence.
+
+Reducing BM-Mg mobility alone did not increase the hump.
+
+The next test partially reduced the effective Mg stabilization energy under milling.
+
+Frozen BM-Mg interpretation:
+- Mg stabilization is retained but partially weakened in milled local environments;
+- effective Gmg = 0.30;
+- Ssurf = 0.22 + 0.075 x;
+- Mphi = 0.0008 exp(-0.6 x).
+
+This produces:
+- BM-Mg peak > Mg peak;
+- BM-Mg peak << HEO peak;
+- transformed fraction Mg < BM-Mg < HEO.
+
+### Final directional summary
+
+Volume-mu readout:
+
+| Sample | peak / HEO | moment width | t63 at peak | final phi |
+|---|---:|---:|---:|---:|
+| HEO | 1.000 | 0.0683 | 22.03 min | 1.000 |
+| BM-HEO | 0.237 | 0.0847 | 26.91 min | 1.000 |
+| Mg-HEO | 0.136 | 0.0308 | 40.17 min | 0.214 |
+| BM-Mg-HEO | 0.188 | 0.0498 | 40.17 min | 0.824 |
+
+The same directional checks pass with the surface-mu readout.
+
+### Freeze decision
+
+Python spatial physics is now frozen for directional mechanism testing.
+
+The model is not a quantitative fit and the parameters are non-unique.
+
+MATLAB translation may now proceed from the frozen v4 equation/parameter snapshot.
