@@ -239,11 +239,11 @@ Original structure:
 - Figure 1: structural/microstructural perturbations
 - Figure 2: accessibility/utilization
 - Figure 3: current-off polarization vs relaxation
-- Figure 4: late-stage transition polarization / peak-width mechanism
+- Figure 4: experimental late-stage transition polarization / peak-width-area map
 
 New development: visual simulation should be in the main text.
 
-Current preferred numbering is to retain Figure 4 as the experimental transition-polarization figure and add Figure 5 as an independent model-visualization figure. Figure 5 should separate model visualization from experimental evidence rather than merging the full 4 × 7 array into Figure 4.
+Current preferred numbering is to retain Figure 4 as the experimental transition-polarization figure and add Figure 5 as an independent model-visualization figure. Figure 4 is intentionally experimental-only (raw late-stage relaxation -> background-subtracted excess -> peak/width/area summary map); the mechanistic/model schematic begins in Figure 5a. This keeps model interpretation visually separate from the experimental evidence.
 
 Do not bury the visual simulation entirely in SI if it becomes the primary methodological originality. Parameter tables and most sensitivity details should remain SI.
 
