@@ -560,3 +560,27 @@ Python spatial physics is now frozen for directional mechanism testing.
 The model is not a quantitative fit and the parameters are non-unique.
 
 MATLAB translation may now proceed from the frozen v4 equation/parameter snapshot.
+
+
+---
+
+## Final MATLAB spatial port
+
+After the frozen Python v4 gate passed, a new spatial MATLAB implementation was created:
+
+\`modeling/HEO_Spatial_PhaseField_Model_Final.m\`
+
+This is separate from the legacy phenomenological file \`HEO_PhaseTransition_Model_Final.m\`.
+
+The spatial MATLAB port preserves:
+- radial finite-volume equations;
+- explicit Gmg, reduced coherency, and surface-wetting terms;
+- refined 50-state GITT protocol;
+- 11-quantile joint BM/BM-Mg ensembles;
+- volume and surface chemical-potential readouts;
+- moment-width metric;
+- four-sample directional assertions.
+
+The current environment has no MATLAB or Octave runtime. The file is therefore structurally translated but not runtime-verified here.
+
+The first local MATLAB run should be accepted only if the directional unit tests pass and the result remains close in ordering to the frozen Python snapshot. Do not refit parameters merely to eliminate ordinary solver-level differences.
