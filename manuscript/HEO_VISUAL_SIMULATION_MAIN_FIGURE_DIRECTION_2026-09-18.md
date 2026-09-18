@@ -77,17 +77,15 @@ The following values were regenerated from the frozen spatial equations and para
 
 The important message is the ordering and evolution, not the exact decimal values.
 
-### Rest-period structural-evolution panel
+### Main-text progression panel and SI dynamics
 
-Pair the snapshot array with a second panel showing
+The main-text companion to the circular array should be the pulse-end mean structural state, phi-bar, plotted versus the model mean lithiation state, c-bar. This keeps the main Figure focused on internal-state evolution rather than on numerical closure to the measured relaxation signal.
 
-Delta phi-bar_rest = phi-bar_(60 min rest end) - phi-bar_(pulse end)
+The additional structural change during the subsequent 60 min rest,
 
-as a function of model mean lithiation state.
+Delta phi-bar_rest = phi-bar_(60 min rest end) - phi-bar_(pulse end),
 
-This panel provides a direct model-side visualization of how much structural evolution occurs during the same 60 min interval used for the experimental current-off relaxation analysis.
-
-Do not interpret Delta phi-bar_rest as numerically equal to the measured voltage relaxation. It is an internal-state descriptor that links the model dynamics to the GITT relaxation window.
+should be retained in Supporting Information. It is useful for showing that the model also contains state-dependent evolution during the same relaxation interval analyzed experimentally, but it should not be interpreted as numerically equal to the measured voltage relaxation.
 
 ## Visual message
 
@@ -103,13 +101,16 @@ BM-Mg-HEO: ball milling partially reopens transformation accessibility, but Mg-r
 
 > The circular snapshots visualize the modeled late-stage transition-associated state variable phi within a spherical particle across a common reaction-progress window. The visualization is intended as a mechanistic representation of the GITT-derived interpretation and should not be interpreted as a directly measured phase fraction or as a complete reconstruction of all structural transitions throughout lithiation.
 
-## Next visual-development tasks
+## Current publication-style Figure 5 decision
 
-1. Publication-style cleanup of the 4 × 7 array.
-2. Decide whether the column coordinate remains modeled mean lithiation state or is carefully mapped to normalized/experimental capacity.
-3. Add a small legend: 0 = parent-like; 1 = transformed-like.
-4. Consider pairing the snapshot array with the experimental transition-hump plot so the chain is explicit: GITT observable -> inferred transition window -> modeled internal-state evolution.
-5. Keep detailed model parameters, sensitivity, and identifiability caveats in SI.
+Main Figure 5 now uses:
+1. a compact broad-audience logic schematic: experimental constraints -> independent physical coordinates -> modeled internal state;
+2. the 4 × 7 pulse-end circular radial-state array;
+3. pulse-end mean structural state phi-bar versus model mean lithiation state c-bar.
+
+The 60 min Delta phi-bar_rest panel moves to SI together with detailed parameters, sensitivity/convergence, and identifiability caveats.
+
+Do not map c-bar directly onto experimental normalized capacity unless an explicit quantitative calibration is later established.
 
 ## Refinement: Figure 5 should be an independent model-visualization figure
 
@@ -147,9 +148,9 @@ Add a small header:
 
 **Figure 5a.** Compact model schematic defining conserved Li state c(r,t), structural order parameter phi(r,t), Mg stabilization coordinate, and BM ensemble heterogeneity.
 
-**Figure 5b.** 4 × 7 circular array of ensemble-averaged radial phi states at c̄ = 0.55, 0.62, 0.68, 0.74, 0.80, 0.86, and 0.92.
+**Figure 5b.** 4 × 7 circular array of pulse-end radial phi states at c̄ ≈ 0.55, 0.62, 0.68, 0.75, 0.80, 0.86, and 0.91. For BM-containing samples, the displayed radial state is the ensemble average over the frozen 11-quantile distribution.
 
-**Figure 5c.** Ensemble-averaged phi-bar versus c̄ for the four samples. This plot makes the BM broad/early progression, Mg suppression, and partial reopening in BM-Mg explicit.
+**Figure 5c.** Pulse-end mean structural state phi-bar versus c̄ for the four samples. This plot makes the earlier/broader BM progression, strong Mg suppression, and partial reopening in BM-Mg explicit.
 
 Optional Figure 5d only if space allows: directional comparison of model outputs against the experimentally required trends. Avoid presenting this as a quantitative fit.
 
@@ -158,3 +159,8 @@ Optional Figure 5d only if space allows: directional comparison of model outputs
 Figure 4 establishes the experimental contradiction to a one-parameter diffusion interpretation. Figure 5 then demonstrates that the observed directions are physically compatible with independent coordinates for transformation extent/stabilization and structural-mobility/transition-condition heterogeneity.
 
 The model should be described as a mechanism-sufficiency visualization, not as a reconstruction of a uniquely identified microscopic pathway.
+
+
+### Draft caption — Figure 5
+
+**Figure 5. Spatial mechanism-sufficiency model visualizes distinct late-stage internal-state evolution.** (a) Experimental GITT constraints are evaluated against independent model coordinates for transport scale, transformation stabilization/extent, local-transition heterogeneity, and structural-mobility heterogeneity. (b) Pulse-end radial maps of the late-stage structural order parameter phi at selected values of the model mean lithiation state c-bar. HEO and Mg-HEO use the single frozen radial parameter set, whereas BM-HEO and BM-Mg-HEO are shown as ensemble-averaged radial states over the frozen 11-quantile distributions. phi near 0 denotes a parent-like/pre-transition state and phi near 1 a transformed-like state. (c) Pulse-end mean structural state phi-bar versus c-bar. Ball milling advances and distributes the modeled transformation over a broader reaction-progress interval, Mg strongly suppresses the late-stage transformed state, and BM-Mg-HEO partially recovers transformation while retaining Mg-related suppression. The model is used as a mechanism-sufficiency visualization and does not represent a unique parameter identification, a directly measured phase fraction, or a complete reconstruction of all structural transitions during lithiation.
