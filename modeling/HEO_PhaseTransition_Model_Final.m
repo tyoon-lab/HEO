@@ -1,3 +1,12 @@
+% LEGACY / PROVISIONAL MODEL NOTICE (2026-09-18)
+% This file is an earlier MATLAB port of the phenomenological/minimal model.
+% It predates the converged spatial c(r,t)+phi(r,t) Python gate.
+% Do NOT treat this as the final mechanistic MATLAB implementation.
+% The authoritative development path is:
+%   heo_minimal_mechanistic_model_v3.py
+%   -> heo_spatial_phase_field_gate_v2.py
+%   -> future frozen spatial MATLAB port after remaining physics/sensitivity gates.
+%
 % HEO_PhaseTransition_Model_Final.m
 % Final MATLAB port of the Python v2 mechanistic-discrimination model
 % Date: 2026-09-18
