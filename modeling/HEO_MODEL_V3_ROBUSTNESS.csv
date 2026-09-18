@@ -1,0 +1,9 @@
+Criterion,Robustness_percent
+Mg_amp_lower,100.0
+Mg_t63_longer,100.0
+Mg_peak_lower,100.0
+BM_peak_lower,100.0
+BM_width_broader,100.0
+BM_t63_longer,100.0
+BM-Mg_peak_below_HEO,100.0
+BM-Mg_t63_longer_than_HEO,100.0
