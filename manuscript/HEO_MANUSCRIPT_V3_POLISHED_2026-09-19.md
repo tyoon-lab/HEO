@@ -76,21 +76,23 @@ GITT was performed at 100 mA g⁻¹ between 0.005 and 2.5 V using repeated 10 mi
 
 For the early current interruption, the voltage between 3 and 30 s after switching the current off was represented as
 
-[
-E(t)=a+bsqrt{t},
-]
+\[
+E(t)=a+b\sqrt{t},
+\]
 
-and the intercept (a) was extrapolated to (tightarrow0). The corresponding current-off voltage jump was divided by the absolute applied current to define an apparent fast current-off resistance. This quantity is used as an operational descriptor and is not assigned uniquely to ohmic or charge-transfer resistance.
+and the intercept \(a\) was extrapolated to \(t\rightarrow0\). The corresponding current-off voltage jump was divided by the absolute applied current to define an apparent fast current-off resistance. This quantity is used as an operational descriptor and is not assigned uniquely to ohmic or charge-transfer resistance.
 
 The finite-window relaxation amplitude was defined as
 
-[
-Delta E_{mathrm{relax}}=E_{60,mathrm{min}}-E_{mathrm{off},3,mathrm{s}},
-]
+\[
+\Delta E_{\mathrm{relax}}
+=
+E_{60\,\mathrm{min}}-E_{\mathrm{off},3\,\mathrm{s}},
+\]
 
-with absolute magnitude used for comparison where appropriate. Model-free (t_{50}), (t_{63}), and (t_{90}) values were defined as the times required to reach 50%, 63.2%, and 90% of the observed 3 s-to-60 min relaxation amplitude. These quantities do not assume single-exponential relaxation; (t_{63}) equals a conventional time constant only for an ideal single exponential.
+with absolute magnitude used for comparison where appropriate. Model-free \(t_{50}\), \(t_{63}\), and \(t_{90}\) values were defined as the times required to reach 50%, 63.2%, and 90% of the observed 3 s-to-60 min relaxation amplitude. These quantities do not assume single-exponential relaxation; \(t_{63}\) equals a conventional time constant only for an ideal single exponential.
 
-The late-stage excess relaxation feature was quantified after subtracting the same smooth background procedure from (Delta E_{mathrm{relax}}) for all four samples. Peak amplitude, FWHM-like capacity width, normalized excess area, and an absolute capacity-weighted excess metric were extracted. The latter is used only as a comparative quantity and is not interpreted as dissipated energy because (Delta E_{mathrm{relax}}) is sampled at discrete GITT states rather than measured as a continuous operating overpotential.
+The late-stage excess relaxation feature was quantified after applying the same background-fitting procedure to each sample independently. Peak amplitude, FWHM-like capacity width, normalized excess area, and an absolute capacity-weighted excess metric were extracted. The latter is used only as a comparative quantity and is not interpreted as dissipated energy because \(\Delta E_{\mathrm{relax}}\) is sampled at discrete GITT states rather than measured as a continuous operating overpotential.
 
 Cyclic voltammetry in the nominal non-faradaic region of 3.0–3.3 V was acquired at scan rates of 10, 20, 40, 60, 80, and 100 mV s⁻¹ for relative interfacial-capacitance comparison. A specific capacitance of 40 μF cm⁻² was used in the original conversion to a nominal interface area. Because this value is not independently established for the porous composite electrode, the manuscript uses the result only as a relative interfacial-accessibility metric rather than an absolute ECSA.
 
