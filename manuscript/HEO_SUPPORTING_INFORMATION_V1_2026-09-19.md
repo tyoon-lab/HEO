@@ -398,7 +398,7 @@ For BM-HEO:
 | 7 | 0.1905 | 0.0838 | 26.91 |
 | 11 | 0.1824 | 0.0847 | 26.91 |
 
-The surface-chemical-potential readout gives similarly stable moment widths. Eleven probability quantiles are therefore sufficient for the frozen directional model.
+The surface-chemical-potential readout gives similarly stable moment widths. Eleven probability quantiles are therefore sufficient for the frozen directional model. The model moment width is a state-space second-moment descriptor and is not numerically equivalent to the experimental FWHM-like capacity width used in Figure 4; only the directional broadening/narrowing is compared.
 
 ## S7.2. Frozen four-sample directional result
 
