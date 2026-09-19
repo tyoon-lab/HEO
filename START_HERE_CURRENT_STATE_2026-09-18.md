@@ -47,6 +47,8 @@ The three experimentally distinct coordinates are accessibility, transformation 
 
 Main manuscript (current authoritative draft): manuscript/HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md
 
+Supporting Information (current authoritative draft): manuscript/HEO_SUPPORTING_INFORMATION_V1_2026-09-19.md
+
 Manuscript architecture/literature positioning note: manuscript/HEO_MANUSCRIPT_ARCHITECTURE_AND_LITERATURE_POSITIONING_2026-09-19.md
 
 Previous drafts retained for history:
@@ -349,7 +351,9 @@ Use the reference master for exact claim boundaries.
 Start here without asking for another handoff.
 
 Recommended order:
-1. Read and revise the current authoritative manuscript: manuscript/HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md. Its Results sections now follow Figures 1–5 directly: structure → accessibility/utilization → current-off decoupling → experimental transition response → modeled internal-state evolution.
+1. Read the current authoritative main manuscript together with the aligned SI draft:
+   - manuscript/HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md
+   - manuscript/HEO_SUPPORTING_INFORMATION_V1_2026-09-19.md. Its Results sections now follow Figures 1–5 directly: structure → accessibility/utilization → current-off decoupling → experimental transition response → modeled internal-state evolution.
 2. Use the current Figure 5 architecture: compact mechanism-sufficiency schematic + 4 × 7 pulse-end circular state array + pulse-end phi-bar versus model mean lithiation state. Keep Delta phi-bar_rest in SI.
 3. Retain the column coordinate as model mean lithiation state c-bar; do not relabel it directly as experimental normalized capacity without a validated mapping.
 4. For BM-containing samples, depict ensemble-averaged radial phi states or representative quantiles; do not imply a directly simulated heterogeneous 2D single particle.
