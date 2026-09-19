@@ -38,3 +38,8 @@ structure -> accessibility/utilization -> current-off decoupling -> experimental
 Manuscript architecture/literature positioning note:
 
 `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_AND_LITERATURE_POSITIONING_2026-09-19.md`
+
+
+Current Supporting Information draft:
+
+`manuscript/HEO_SUPPORTING_INFORMATION_V1_2026-09-19.md`
