@@ -231,6 +231,135 @@ DOI: **10.1002/anie.202518569**
 
 ---
 
+---
+
+## H. GITT relaxation decomposition, phase-transformation parameterization, and phase-field precedents
+
+### [21] Phase-transformation GITT: diffusion coefficient + interface mobility
+
+**Zhu, Y.; Wang, C.**  
+*Galvanostatic Intermittent Titration Technique for Phase-Transformation Electrodes.*  
+**The Journal of Physical Chemistry C** 2010, 114, 2830–2841.  
+DOI: **10.1021/jp9113333**
+
+**Directly supports:** GITT/PITT can be reformulated for two-phase electrodes using mixed-control phase-transformation theory; Li diffusivity and phase-interface mobility can be extracted in the two-phase region.
+
+**Role in present manuscript:** closest precedent for extracting a transformation-kinetic parameter from intermittent titration.
+
+**Boundary:** LiFePO4 with a specific mixed-control phase-transformation model. The present HEO work does not claim unique interface mobility or unique microscopic parameter extraction.
+
+### [22] GITT relaxation used to probe phase-transformation kinetics
+
+**Chen, Y.; Wang, L.; Anwar, T.; Zhao, Y.; Piao, N.; He, X.; Zhu, Q.**  
+*Application of Galvanostatic Intermittent Titration Technique to Investigate Phase Transformation of LiFePO4 Nanoparticles.*  
+**Electrochimica Acta** 2017, 241, 132–140.  
+DOI: **10.1016/j.electacta.2017.04.137**
+
+**Directly supports:** GITT polarization and rest-to-equilibrium behavior can carry information on phase-transformation kinetics; rate and state dependence were used to compare phase-transformation behavior in LiFePO4.
+
+**Boundary:** phase-transformation rate is inferred from kinetic/polarization behavior rather than from the present paper's current-off amplitude/t63/transition-excess decomposition.
+
+### [23] Staircase-GITT separation of kinetic contributions
+
+**Heubner, C.; Schneider, M.; Michaelis, A.**  
+*SoC dependent kinetic parameters of insertion electrodes from StairCase – GITT.*  
+**Journal of Electroanalytical Chemistry** 2016, 767, 18–23.  
+DOI: **10.1016/j.jelechem.2016.02.013**
+
+**Directly supports:** modified GITT can separate and fit ohmic resistance, exchange current density, and charge-transfer coefficient by exploiting different current/time responses.
+
+**Boundary:** insertion-electrode charge-transfer analysis; not a phase-transformation relaxation model.
+
+### [24] Direct fitting of GITT pulse + relaxation to an electrochemical model
+
+**Horner, J. S.; Whang, G.; Ashby, D. S.; Kolesnichenko, I. V.; Lambert, T. N.; Dunn, B. S.; Talin, A. A.; Roberts, S. A.**  
+*Electrochemical Modeling of GITT Measurements for Improved Solid-State Diffusion Coefficient Evaluation.*  
+**ACS Applied Energy Materials** 2021, 4, 11460–11469.  
+DOI: **10.1021/acsaem.1c02218**
+
+**Directly supports:** a complete GITT current pulse and subsequent relaxation can be numerically fit to a one-dimensional electrochemical model; fitted non-ideal diffusion coefficients were independently tested by discharge prediction.
+
+**Boundary:** the fitted regime is FeS2 intercalation and the extracted parameter is primarily transport-related, not a structural order-parameter mobility.
+
+### [25] Rest-phase heterogeneity and delayed voltage relaxation
+
+**Fath, M.; Heidebrecht, P.; Drechsler, C.; Kamlah, M.**  
+*Impact of particle size distribution on the rest phase behavior of LIB cathodes – Model based analysis.*  
+**Journal of Power Sources** 2024, 596, 234100.  
+DOI: **10.1016/j.jpowsour.2024.234100**
+
+**Directly supports:** nonuniform particle-size distributions can alter the shape and tailing of GITT rest-phase voltage relaxation, and rest-phase parametrization can differ from single-particle expectations.
+
+**Role:** precedent that an ensemble distribution can lengthen/broaden relaxation without requiring a single slower intrinsic diffusivity.
+
+### [26] Direct structural observation of multistage relaxation
+
+**Skurtveit, A.; Tiberg North, E.; Park, H.; Chernyshov, D.; Wragg, D. S.; Koposov, A. Y.**  
+*Stepwise Structural Relaxation in Battery Active Materials.*  
+**ACS Materials Letters** 2025, 7, 343–349.  
+DOI: **10.1021/acsmaterialslett.4c02058**
+
+**Directly supports:** operando XRD after current interruption directly observes structural relaxation; graphite exhibits multiple relaxation stages and LiFePO4 shows slower structural evolution. Kinetic analysis was combined with atomistic simulations.
+
+**Role:** strong independent support for treating GITT rest as potentially structural, not purely diffusional.
+
+### [27] Phase-field analysis of GITT/PITT non-Fickian behavior
+
+**Han, B. C.; Van der Ven, A.; Morgan, D.; Ceder, G.**  
+*Electrochemical modeling of intercalation processes with phase field models.*  
+**Electrochimica Acta** 2004, 49, 4691–4699.  
+DOI: **10.1016/j.electacta.2004.05.024**
+
+**Directly supports:** phase-field models can be used to test how non-Fickian phase-separating behavior biases conventional GITT/PITT diffusion analysis.
+
+**Boundary:** model-system study; not fitted to the present HEO data.
+
+### [28] Phase-field theory of intercalation and phase-transformation waves
+
+**Singh, G. K.; Ceder, G.; Bazant, M. Z.**  
+*Intercalation dynamics in rechargeable battery materials: General theory and phase-transformation waves in LiFePO4.*  
+**Electrochimica Acta** 2008, 53, 7599–7613.  
+DOI: **10.1016/j.electacta.2008.03.083**
+
+**Directly supports:** conserved transport coupled to phase-field thermodynamics and surface reaction kinetics can generate phase-transformation dynamics distinct from classical diffusion-limited shrinking-core behavior.
+
+**Role:** general phase-field physics precedent for treating transport and structural transformation as separate coordinates.
+
+### [29] Fast/slow time-domain voltage-relaxation separation
+
+**Jorkesh, S.; Akbari, A.; Ahmed, R.; Habibi, S.**  
+*SOC-dependent voltage relaxation and dual time-constant behavior in lithium-ion batteries: A time-domain analysis.*  
+**Journal of Power Sources** 2026, 682, 240338.  
+DOI: **10.1016/j.jpowsour.2026.240338**
+
+**Directly supports:** current-off voltage relaxation can be segmented into fast and slow regimes using a derivative-based criterion and represented by two characteristic time constants that vary with SOC and temperature.
+
+**Boundary:** full commercial NMC811 cells and BMS/OCV-oriented relaxation; no phase-transition parameter extraction or structural-order-parameter model.
+
+### Literature-derived distinction for the present HEO manuscript
+
+The reviewed literature establishes the relevant ingredients separately:
+
+1. GITT can be modified to separate electrochemical kinetic contributions [23].
+2. Complete pulse/rest transients can be fit to electrochemical models [24].
+3. GITT in a two-phase material can be used to infer interface mobility as well as diffusivity [21], and phase-transformation kinetics can be assessed from GITT relaxation behavior [22].
+4. Rest-phase tails can arise from ensemble heterogeneity such as particle-size distributions [25].
+5. Structural evolution continues during current-off relaxation and can contain multiple stages [26].
+6. Phase-field descriptions can capture non-Fickian/phase-transforming behavior that changes the interpretation of GITT/PITT [27,28].
+7. Fast and slow voltage-relaxation time domains can be separated empirically [29].
+
+**No direct precedent was identified in the literature reviewed here that combines these elements in the specific sequence used in the present HEO manuscript:**
+
+current-off fast-response descriptor + finite-window relaxation amplitude + model-free relaxation time  
+→ state-localized transition-associated excess response  
+→ 2 × 2 synthesis-variable discrimination (BM vs Mg)  
+→ spatial internal-state visualization constrained by those experimental directions.
+
+This statement is a bounded literature-search conclusion, not a universal priority claim.
+
+**Important novelty boundary:** the present spatial-model coordinates are effective and non-unique. The manuscript should not claim first extraction of a phase-boundary mobility or first phase-transformation GITT parameterization because [21] already provides a direct precedent.
+
+
 # G. Claim-to-reference map
 
 | Manuscript claim | Primary references | Evidence status |
@@ -246,7 +375,10 @@ DOI: **10.1002/anie.202518569**
 | Coherent nucleation barrier can decrease with particle/domain size | [18], [19] | Direct general phase-field theory; different chemistry |
 | Nanosized spinel HEO can show reduced GITT polarization and more complete conversion | [20] | Direct in spinel-type HEO; different exact composition/processing |
 | FEC can stabilize HEO anode cycling through interphase control | [14] | Direct in related spinel HEO |
-| Conventional DGITT alone may compress relevant transient information | [15] + present data | Methodological support + present observation |
+| Conventional DGITT alone may compress relevant transient information | [15], [23–25] + present data | Methodological/model-fitting support + present observation |
+| GITT can probe phase-transformation kinetics/interface mobility | [21], [22] | Direct in LiFePO4; different chemistry/model |
+| Current-off relaxation may contain multiple time domains and structural evolution | [25], [26], [29] | Direct/model-based precedents |
+| Phase-field/non-Fickian behavior can alter GITT interpretation | [27], [28] | Direct theoretical precedent |
 
 ---
 
