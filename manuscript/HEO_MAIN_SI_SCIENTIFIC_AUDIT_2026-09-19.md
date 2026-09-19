@@ -21,13 +21,13 @@
 
 # A. Issues resolved during this audit
 
-## A1. Prior-art boundary for phase-transformation GITT — RESOLVED
+## A1. Prior-art support for the GITT/current-off interpretation — RESOLVED
 
-A direct precedent exists for extracting phase-transformation kinetics from intermittent titration. Zhu and Wang (2010) formulated phase-transformation GITT/PITT and extracted both Li diffusivity and phase-interface mobility in the two-phase region of LiFePO4. Additional precedents exist for GITT-based phase-transformation kinetics, full pulse/rest model fitting, multi-timescale voltage relaxation, structural relaxation after current interruption, and phase-field analysis of GITT/PITT.
+Direct precedents exist for extracting or interpreting additional kinetic information from intermittent titration, including phase-interface mobility, phase-transformation kinetics, full pulse/rest fitting, multi-timescale relaxation, structural relaxation after current interruption, and phase-field analysis of GITT/PITT.
 
-**Action completed:** references [21]–[29] were added to the reference master, Main, and SI. The novelty boundary was revised so the HEO manuscript does not claim the first phase-transformation GITT parameterization or first interface-mobility extraction.
+**Action completed:** references [21]–[29] were added so that the analysis used in the HEO paper is properly grounded in prior literature.
 
-**Current bounded distinction:** the present paper combines independent current-off observables, a state-localized transition-associated excess response, a 2 × 2 synthesis-variable comparison, and a non-unique spatial internal-state model. This is narrower and more defensible than a priority claim.
+**Manuscript identity boundary:** these references support the analysis; they are not the manuscript's central novelty. The paper remains centered on the HEO 2 × 2 material comparison and the contrasting effects of ball milling and Mg incorporation on accessibility, transformation extent/distribution, and relaxation.
 
 ## A2. Model parameter-identification wording — RESOLVED
 
@@ -163,9 +163,9 @@ The Python model itself remains usable for the manuscript because the Main/SI cl
 
 # 3. OPTIONAL PRECISION / POLISH
 
-## 3.1. Keep the recent relaxation literature compact in the Main
+## 3.1. Keep the analysis literature subordinate to the HEO story
 
-The new references [21]–[29] are scientifically useful, but the Introduction should not become a review of GITT methodology. The current Main treatment is acceptable; the detailed comparison belongs in SI S8.
+The references [21]–[29] should remain methodological support only. The Introduction, Results, and Discussion should continue to be organized around the HEO synthesis variables and their electrochemical consequences rather than around development or novelty of the analysis method.
 
 ## 3.2. Journal-dependent terminology normalization
 
