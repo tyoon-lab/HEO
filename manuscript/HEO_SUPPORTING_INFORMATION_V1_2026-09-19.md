@@ -428,7 +428,7 @@ Directional criteria:
 
 Main Figure 5 shows the pulse-end radial structural order parameter over the late-stage model window. For ball-milled samples, the circular maps are ensemble-averaged radial states and are not simulated heterogeneous two-dimensional particles.
 
-**Figure S20.** Model-predicted \(\Delta\bar\phi_{\mathrm{rest}}\) during the subsequent 60 min zero-flux interval. This quantity is an internal-state descriptor and is not numerically equated with the measured voltage relaxation \(\Delta E_{\mathrm{relax}}\).
+**Figure S20.** Model-predicted \(\\Delta\bar\phi_{\mathrm{rest}}\) during the subsequent 60 min zero-flux interval. This quantity is an internal-state descriptor and is not numerically equated with the measured voltage relaxation \(\Delta E_{\mathrm{relax}}\).
 
 ## S7.4. Identifiability and interpretation boundaries
 
@@ -543,7 +543,7 @@ This statement is intentionally narrower than a priority claim. Prior studies al
 - Figure S17: background fits and transition excess.
 - Figure S18: background/window sensitivity.
 - Figure S19: conventional apparent DGITT comparator, if retained.
-- Figure S20: model (Deltaarphi_{mathrm{rest}}).
+- Figure S20: model (\Delta\bar\phi_{mathrm{rest}}).
 
 ## Tables
 
