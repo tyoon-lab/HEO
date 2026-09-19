@@ -98,31 +98,32 @@ Cyclic voltammetry in the nominal non-faradaic region of 3.0–3.3 V was acquire
 
 ## 2.4. Spatial mechanism-sufficiency model
 
-A reduced radial phase-field model was used to test whether the experimentally required directions can arise from independent transport and structural coordinates. The model is not used for unique parameter identification or quantitative voltage fitting. A conserved Li-state variable, (c(r,t)), is coupled to a nonconserved structural order parameter, (phi(r,t)), representing the late-stage transition-associated state. Values near (phi=0) denote a parent-like/pre-transition state and values near (phi=1) denote a transformed-like state. The modeled (phi) is therefore an internal-state coordinate rather than a directly measured phase fraction.
+A reduced radial phase-field model was used to test whether the experimentally required directions can arise from independent transport and structural coordinates. The model is not used for unique parameter identification or quantitative voltage fitting. A conserved Li-state variable, \(c(r,t)\), is coupled to a nonconserved structural order parameter, \(\phi(r,t)\), representing the late-stage transition-associated state. Values near \(\phi=0\) denote a parent-like/pre-transition state and values near \(\phi=1\) denote a transformed-like state. The modeled \(\phi\) is therefore an internal-state coordinate rather than a directly measured phase fraction.
 
 Li transport follows
 
-[
-rac{partial c}{partial t}=-
-ablacdot J,qquad J=-D_{mathrm{eff}}
-ablamu_c,
-]
+\[
+\frac{\partial c}{\partial t}=-\nabla\cdot J,\qquad
+J=-D_{\mathrm{eff}}\nabla\mu_c,
+\]
 
 with
 
-[
-mu_c=lnrac{c}{1-c}-Kphi.
-]
+\[
+\mu_c=\ln\frac{c}{1-c}-K\phi.
+\]
 
 Structural evolution follows dissipative relaxation,
 
-[
-rac{partialphi}{partial t}=-M_phirac{delta G}{deltaphi},
-]
+\[
+\frac{\partial\phi}{\partial t}
+=
+-M_\phi\frac{\delta G}{\delta\phi},
+\]
 
 where the free-energy representation includes a double-well structural term, Li–structure coupling, a Mg-dependent stabilization term, and reduced surface/coherency terms. Detailed equations and parameter definitions are provided in the Supporting Information.
 
-Mg-containing cases were represented by increased stabilization of the parent/intermediate state together with lower mobility of the residual structural transformation. Ball-milled cases were represented by distributions of local transition/surface conditions and structural mobilities. BM-HEO and BM-Mg-HEO used 11 equal-probability quantiles of the selected ensemble distribution rather than a single deterministic particle. The numerical protocol reproduced the experimental 600 s pulse and 3600 s zero-flux rest. Acceptance of the model was based on directional relationships among transition-polarization amplitude, response width, characteristic relaxation, and transformed-state proxy, not on numerical fitting of all microscopic parameters. Numerical convergence, sensitivity tests, parameter tables, and identifiability limitations are reported in the Supporting Information.
+Mg-containing cases were represented by increased stabilization of the parent/intermediate state together with lower mobility of the residual structural transformation. Ball-milled cases were represented by distributions of local transition/surface conditions and structural mobilities. BM-HEO and BM-Mg-HEO used 11 equal-probability quantiles of the selected ensemble distribution rather than a single deterministic particle. The numerical protocol reproduced the experimental 600 s pulse and 3600 s zero-flux rest. No formal inverse parameter identification is claimed. The frozen parameter set was selected through constrained directional tests and was required only to reproduce the experimentally observed ordering of transition-polarization amplitude, response width, characteristic relaxation, and transformed-state proxy. Numerical convergence, sensitivity tests, parameter tables, and identifiability limitations are reported in the Supporting Information.
 
 ---
 
@@ -194,7 +195,7 @@ BM-Mg-HEO provides an internal test of this separation. Milling increases access
 
 The experimental results impose directional constraints that a physically useful model must satisfy simultaneously. BM-HEO must maintain high transformation accessibility while showing a lower, broader transition-associated polarization and slower ensemble relaxation. Mg-HEO must show a much smaller transition response and lower transformed-state fraction without faster relaxation. Changing only one diffusion coefficient or only one structural-mobility parameter cannot reproduce both combinations.
 
-The reduced spatial model therefore tests the smallest set of independent physical coordinates needed to make these observations mutually compatible (Figure 5a). The approach follows the broader phase-field precedent that coupled conserved transport and phase evolution can produce non-Fickian GITT behavior and transformation dynamics distinct from classical diffusion models.[27,28] Transport, transformation stabilization/extent, and local-transition/structural-mobility heterogeneity are allowed to vary independently. Mg requires stabilization of the parent/intermediate state together with slower residual structural mobility. BM requires a distribution of local transition conditions and structural mobilities rather than a uniform acceleration of transport. Unlike phase-transformation GITT methods that identify interface mobility within a specified two-phase model,[21] the present parameters are intentionally treated as effective, non-unique coordinates constrained only by the observed directional relationships.
+The reduced spatial model therefore tests a minimum working set of independent physical coordinates within the model family examined here (Figure 5a). The approach follows the broader phase-field precedent that coupled conserved transport and phase evolution can produce non-Fickian GITT behavior and transformation dynamics distinct from classical diffusion models.[27,28] Transport, transformation stabilization/extent, and local-transition/structural-mobility heterogeneity are allowed to vary independently. Mg requires stabilization of the parent/intermediate state together with slower residual structural mobility. BM requires a distribution of local transition conditions and structural mobilities rather than a uniform acceleration of transport. Unlike phase-transformation GITT methods that identify interface mobility within a specified two-phase model,[21] the present parameters are intentionally treated as effective, non-unique coordinates constrained only by the observed directional relationships.
 
 The circular maps in Figure 5b visualize the resulting radial (phi) state at the end of the 600 s pulse across a common late-stage model window. HEO develops the transformed state over a comparatively concentrated interval. BM-HEO begins transforming earlier and progresses over a broader model-state interval. Mg-HEO remains predominantly parent-like over most of the same window, whereas BM-Mg-HEO shows partial reopening of the transformation pathway at higher state. For BM-HEO and BM-Mg-HEO, each circle represents the ensemble-averaged radial state over the selected 11-quantile distribution; it is not a simulated two-dimensional heterogeneous particle.
 
