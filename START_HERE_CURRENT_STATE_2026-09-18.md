@@ -17,6 +17,17 @@ Alternative:
 ## Manuscript type
 Synthesis/material-centered paper with electrochemical diagnostics used to resolve the distinct roles of Mg incorporation and ball milling.
 
+## Manuscript identity boundary
+
+**This is an HEO materials/mechanism paper, not a GITT-method paper.**
+
+The GITT/current-off/relaxation literature is cited only to establish that:
+- transient components and relaxation times can legitimately be analyzed separately;
+- phase-transforming GITT can contain interface/structural kinetic information;
+- phase-field descriptions are established tools for phase-evolving electrochemical systems.
+
+Do not make method novelty the central contribution. Do not organize the Introduction around GITT history. The manuscript contribution is the **contrasting effect of ball milling and Mg incorporation on accessibility, transformation extent/distribution, and relaxation in the same HEO system**.
+
 ## Central mechanistic message
 
 The 2 × 2 matrix is HEO / BM-HEO / Mg-HEO / BM-Mg-HEO.
@@ -336,7 +347,7 @@ GITT/relaxation/phase-field precedents added 2026-09-19:
 - Singh et al., Electrochim. Acta 2008, DOI 10.1016/j.electacta.2008.03.083 — phase-transformation dynamics.
 - Jorkesh et al., J. Power Sources 2026, DOI 10.1016/j.jpowsour.2026.240338 — fast/slow time-domain voltage relaxation.
 
-Novelty boundary: do not claim first phase-transition parameter extraction from GITT. The present distinction is the combined multi-observable current-off analysis + transition-excess isolation + 2 x 2 synthesis discrimination + non-unique spatial internal-state visualization.
+Methodological boundary: do not claim first phase-transition parameter extraction from GITT. References on GITT decomposition, phase-transition kinetics, and phase-field modeling are supporting precedents only. The manuscript must remain centered on the HEO 2 × 2 synthesis comparison and its mechanistic interpretation.
 
 Use the reference master for exact claim boundaries.
 
