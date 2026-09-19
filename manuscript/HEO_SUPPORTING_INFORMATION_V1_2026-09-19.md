@@ -119,28 +119,30 @@ The Mg-free datasets are sampled at approximately 1 s in the GITT region, wherea
 
 The early current-off voltage is represented empirically as
 
-[
-E(t)=a+bsqrt{t}.
-]
+\[
+E(t)=a+b\sqrt{t}.
+\]
 
-The intercept (a) is extrapolated to (tightarrow 0), and the apparent fast current-off resistance is defined as
+The intercept \(a\) is extrapolated to \(t\rightarrow 0\), and the apparent fast current-off resistance is defined as
 
-[
-R_{mathrm{off,app}}=rac{a-E_{mathrm{pulse,end}}}{|I|}.
-]
+\[
+R_{\mathrm{off,app}}
+=
+\frac{a-E_{\mathrm{pulse,end}}}{|I|}.
+\]
 
 This quantity is an operational descriptor. It is not assigned uniquely to ohmic resistance, charge-transfer resistance, or intrinsic solid-state diffusion.
 
-Median (R^2) values of the 3-30 s (E)-versus-(sqrt{t}) fit are:
+Median \(R^2\) values of the 3–30 s \(E\)-versus-\(\sqrt{t}\) fit are:
 
-| Sample | Median R2 |
+| Sample | Median \(R^2\) |
 |---|---:|
 | HEO | 0.9995 |
 | BM-HEO | 0.9992 |
 | Mg-HEO | 0.9994 |
 | BM-Mg-HEO | 0.9985 |
 
-**Figure S14.** Representative (E) versus (sqrt{t}) fits at selected states for the four samples.
+**Figure S14.** Representative \(E\) versus \(\sqrt{t}\) fits at selected states for the four samples.
 
 ## S3.3. Finite-window relaxation descriptors
 
@@ -177,35 +179,37 @@ Raw-reconstructed medians:
 
 For the background-sensitivity analysis, the common state coordinate is normalized first-lithiation capacity,
 
-[
-z=Q/Q_{max}.
-]
+\[
+z=Q/Q_{\max}.
+\]
 
-A smooth exponential background is fitted independently to each sample using
+A smooth exponential background is fitted independently to each sample using the two state windows
 
-[
+\[
 z=0.20-0.40
-]
+\]
 
 and
 
-[
+\[
 z=0.90-1.00.
-]
+\]
 
 The background form is
 
-[
-eta_{mathrm{bg}}(z)=c+aexp(-z/	au).
-]
-
-The late-stage transition-associated excess response is defined over (0.40le zle0.90) as
-
-[
-eta_{mathrm{excess}}(z)
+\[
+\eta_{\mathrm{bg}}(z)
 =
-max[Delta E_{mathrm{relax}}(z)-eta_{mathrm{bg}}(z),0].
-]
+c+a\exp(-z/\tau).
+\]
+
+The late-stage transition-associated excess response is defined over \(0.40\le z\le0.90\) as
+
+\[
+\eta_{\mathrm{excess}}(z)
+=
+\max\left[\Delta E_{\mathrm{relax}}(z)-\eta_{\mathrm{bg}}(z),0\right].
+\]
 
 This definition excludes the dominant early first-lithiation formation/activation response and isolates the late-stage feature discussed in the main text.
 
@@ -234,50 +238,48 @@ The GITT signal itself does not uniquely separate nucleation, phase-boundary mot
 
 The main text uses the Mg response as a directional contradiction to a one-parameter diffusion interpretation. The numerical comparison below is illustrative rather than a fit.
 
-For otherwise comparable geometry and pulse conditions, use the common short-time direction
+For otherwise comparable geometry and pulse conditions, use the common short-time directions
 
-[
-eta_Dpropto D^{-1/2},
-qquad
-	au_Dpropto D^{-1}.
-]
+\[
+\eta_D\propto D^{-1/2},
+\qquad
+\tau_D\propto D^{-1}.
+\]
 
 HEO and Mg-HEO have median relaxation amplitudes of 160.9 and 109.5 mV, respectively. If this amplitude decrease were attributed entirely to faster diffusion,
 
-[
-rac{D_{mathrm{Mg}}}{D_{mathrm{HEO}}}
-approx
-left(rac{160.9}{109.5}ight)^2
-approx2.16.
-]
+\[
+\frac{D_{\mathrm{Mg}}}{D_{\mathrm{HEO}}}
+\approx
+\left(\frac{160.9}{109.5}\right)^2
+\approx2.16.
+\]
 
 The corresponding diffusion-time prediction would be
 
-[
-t_{63,mathrm{Mg}}
-approx
-rac{8.68}{2.16}
-approx4.0,mathrm{min},
-]
+\[
+t_{63,\mathrm{Mg}}
+\approx
+\frac{8.68}{2.16}
+\approx4.0\ \mathrm{min},
+\]
 
 which is opposite to the measured 11.01 min.
 
 Conversely, matching the measured relaxation-time increase gives
 
-[
-rac{D_{mathrm{Mg}}}{D_{mathrm{HEO}}}
-approx
-rac{8.68}{11.01}
-approx0.79,
-]
+\[
+\frac{D_{\mathrm{Mg}}}{D_{\mathrm{HEO}}}
+\approx
+\frac{8.68}{11.01}
+\approx0.79,
+\]
 
 which would predict a larger diffusion-associated polarization of approximately 181 mV rather than the measured 109.5 mV.
 
-This test does not prove that diffusion is absent. It shows that one varying (D) cannot simultaneously explain the observed directions of polarization amplitude and relaxation time.
+This test does not prove that diffusion is absent. It shows that one varying \(D\) cannot simultaneously explain the observed directions of polarization amplitude and relaxation time.
 
-**Figure S19.** Conventional apparent (D_{mathrm{GITT}}) comparison, if included, should be shown only as a conventional comparator and not as the central causal descriptor.
-
----
+**Figure S19.** Conventional apparent \(D_{\mathrm{GITT}}\) comparison, if included, should be shown only as a conventional comparator and not as the central causal descriptor.
 
 # S6. Spatial phase-field mechanism-sufficiency model
 
@@ -285,90 +287,89 @@ This test does not prove that diffusion is absent. It shows that one varying (D)
 
 The dimensionless free-energy density is
 
-[
+\[
 f=
-cln c +(1-c)ln(1-c)
-+Wphi^2(1-phi)^2
-+K(c^*-c)phi
-+G_{mathrm{Mg}}phi
-+rac{1}{2}B_{mathrm{el}}q_{mathrm{el}}(r)phi^2
--S_{mathrm{surf}}w_{mathrm{surf}}(r)phi
-+rac{kappa}{2}|
-ablaphi|^2.
-]
+c\ln c +(1-c)\ln(1-c)
++W\phi^2(1-\phi)^2
++K(c^*-c)\phi
++G_{\mathrm{Mg}}\phi
++\frac{1}{2}B_{\mathrm{el}}q_{\mathrm{el}}(r)\phi^2
+-S_{\mathrm{surf}}w_{\mathrm{surf}}(r)\phi
++\frac{\kappa}{2}|\nabla\phi|^2.
+\]
 
 The reduced spatial weights are
 
-[
-q_{mathrm{el}}(r)
+\[
+q_{\mathrm{el}}(r)
 =
-1-exp[-(1-r)/ell_{mathrm{relief}}],
-]
+1-\exp[-(1-r)/\ell_{\mathrm{relief}}],
+\]
 
-[
-w_{mathrm{surf}}(r)
+\[
+w_{\mathrm{surf}}(r)
 =
-exp[-(1-r)/ell_{mathrm{wet}}].
-]
+\exp[-(1-r)/\ell_{\mathrm{wet}}].
+\]
 
 Li chemical potential:
 
-[
-mu_c=lnrac{c}{1-c}-Kphi.
-]
+\[
+\mu_c
+=
+\ln\frac{c}{1-c}-K\phi.
+\]
 
 Conserved Li dynamics:
 
-[
-rac{partial c}{partial t}
+\[
+\frac{\partial c}{\partial t}
 =
--
-ablacdot J,
-qquad
-J=-D_{mathrm{eff}}
-ablamu_c.
-]
+-\nabla\cdot J,
+\qquad
+J=-D_{\mathrm{eff}}\nabla\mu_c.
+\]
 
 Nonconserved structural dynamics:
 
-[
-rac{partialphi}{partial t}
+\[
+\frac{\partial\phi}{\partial t}
 =
--M_phirac{delta G}{deltaphi}.
-]
+-M_\phi\frac{\delta G}{\delta\phi}.
+\]
 
 The coherency term is a reduced energetic coordinate rather than a full mechanical-equilibrium elasticity solution.
 
 ## S6.2. Numerical protocol
 
 - Spherical finite-volume radial model.
-- Radial cells in frozen directional gate: (N=18).
-- Diffuse-interface parameter: (kappa=0.002).
+- Radial cells in frozen directional gate: \(N=18\).
+- Diffuse-interface parameter: \(\kappa=0.002\).
 - 600 s inward Li-flux pulse.
 - 3600 s zero-flux rest.
 - 50 pulse/rest states.
-- Dimensionless inward flux: (j=9	imes10^{-6}).
-- Median (Deltaar c) per pulse: approximately 0.0162.
+- Dimensionless inward flux: \(j=9\times10^{-6}\).
+- Median \(\Delta\bar c\) per pulse: approximately 0.0162.
 - BDF primary stiff solver with Radau fallback for sharp transition events.
 - Two voltage-like readouts tested:
-  [
-  V_{mathrm{vol}}propto-langlemu_cangle_V,
-  qquad
-  V_{mathrm{surf}}propto-mu_c(r=R).
-  ]
+  \[
+  V_{\mathrm{vol}}\propto-\langle\mu_c\rangle_V,
+  \qquad
+  V_{\mathrm{surf}}\propto-\mu_c(r=R).
+  \]
 
-The model is a directional mechanism-sufficiency test and not an absolute voltage fit.
+The model is a directional mechanism-sufficiency test and not an absolute voltage fit. No formal inverse parameter identification is claimed. Parameters were selected through constrained directional tests and frozen once the required ordering was reproduced.
 
 ## S6.3. Frozen effective coordinates
 
-| Sample | D_eff/R2 | M_phi | W | K | G_Mg | B_el | S_surf | ell_relief | ell_wet |
+| Sample | \(D_{\mathrm{eff}}/R^2\) | \(M_\phi\) | \(W\) | \(K\) | \(G_{\mathrm{Mg}}\) | \(B_{\mathrm{el}}\) | \(S_{\mathrm{surf}}\) | \(\ell_{\mathrm{relief}}\) | \(\ell_{\mathrm{wet}}\) |
 |---|---:|---:|---:|---:|---:|---:|---|---:|---:|
 | HEO | 0.0015 | 0.015 | 0.60 | 1.80 | 0 | 0.20 | 0.08 | 0.08 | 0.06 |
 | Mg-HEO | 0.0015 | 0.0006 | 0.80 | 1.80 | 0.38 | 0.20 | 0.08 | 0.08 | 0.06 |
-| BM-HEO | 0.0030 | 0.008 exp(-0.6x) | 0.50 | 1.60 | 0 | 0.25 | 0.15 + 0.06x | 0.20 | 0.12 |
-| BM-Mg-HEO | 0.0030 | 0.0008 exp(-0.6x) | 0.70 | 1.70 | 0.30 | 0.25 | 0.22 + 0.075x | 0.20 | 0.12 |
+| BM-HEO | 0.0030 | \(0.008\exp(-0.6x)\) | 0.50 | 1.60 | 0 | 0.25 | \(0.15+0.06x\) | 0.20 | 0.12 |
+| BM-Mg-HEO | 0.0030 | \(0.0008\exp(-0.6x)\) | 0.70 | 1.70 | 0.30 | 0.25 | \(0.22+0.075x\) | 0.20 | 0.12 |
 
-For BM-HEO and BM-Mg-HEO, (xsim N(0,1)) is represented by 11 equal-probability Gaussian quantiles.
+For BM-HEO and BM-Mg-HEO, \(x\sim N(0,1)\) is represented by 11 equal-probability Gaussian quantiles.
 
 These coordinates are effective, non-unique, hypothesis-level quantities. They should not be interpreted as independently measured microscopic constants.
 
@@ -427,7 +428,7 @@ Directional criteria:
 
 Main Figure 5 shows the pulse-end radial structural order parameter over the late-stage model window. For ball-milled samples, the circular maps are ensemble-averaged radial states and are not simulated heterogeneous two-dimensional particles.
 
-**Figure S20.** Model-predicted (Deltaarphi_{mathrm{rest}}) during the subsequent 60 min zero-flux interval. This quantity is an internal-state descriptor and is not numerically equated with the measured voltage relaxation (Delta E_{mathrm{relax}}).
+**Figure S20.** Model-predicted \(\Delta\bar\phi_{\mathrm{rest}}\) during the subsequent 60 min zero-flux interval. This quantity is an internal-state descriptor and is not numerically equated with the measured voltage relaxation \(\Delta E_{\mathrm{relax}}\).
 
 ## S7.4. Identifiability and interpretation boundaries
 
@@ -510,30 +511,14 @@ These studies provide the theoretical precedent for using separate conserved tra
 
 Within the literature reviewed for this manuscript, no direct precedent was identified that combines the following sequence in one phase-evolving conversion-electrode study:
 
-[
-	ext{fast current-off response}
-;+;
-Delta E_{mathrm{relax}}
-;+;
-t_{50/63/90}
-]
-
-[
-ightarrow
-	ext{state-localized transition-associated excess polarization}
-]
-
-[
-ightarrow
-	ext{synthesis-variable discrimination}
-]
-
-[
-ightarrow
-	ext{spatial internal-state visualization constrained by those directions}.
-]
+**fast current-off response + \(\Delta E_{\mathrm{relax}}\) + model-free \(t_{50/63/90}\)**  
+→ **state-localized transition-associated excess polarization**  
+→ **synthesis-variable discrimination**  
+→ **spatial internal-state visualization constrained by those experimental directions**.
 
 This statement is intentionally narrower than a priority claim. Prior studies already establish GITT-based phase-transformation kinetics, interface-mobility extraction, multi-timescale relaxation analysis, and phase-field simulation separately.[21–29]
+
+
 
 # S9. SI figure/table checklist before submission
 
