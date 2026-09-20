@@ -173,24 +173,31 @@ Polarization magnitude and relaxation time are independent observables. Mg great
 
 ---
 
-# Figure 4 — What does the experiment establish about the late-stage transition-associated response?
+# Figure 4 — Does the late-stage excess relaxation track the first-cycle conversion feature?
 
-**Question answered:** What experimentally observed features distinguish redistribution of the transition-associated response from suppression of its extent?
+**Question answered:** Is the GITT excess localized to the same electrochemical event as the first-cycle cathodic conversion feature, and how do BM and Mg change its peak, width, and voltage?
 
-### Panel architecture
+### Panel architecture — current preferred main-text version
 
-**a. State-resolved late-stage relaxation**  
-Plot Delta E_relax versus normalized capacity z = Q/Qmax for all four samples, focused on the late-stage region. The relaxed GITT voltage may be included only as a light secondary reference if it remains readable.
+**a–d. Sample-specific dQ/dV–GITT voltage overlays**  
+One panel each for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO. Plot the normalized first-cycle cathodic dQ/dV response on a common voltage axis and mark the GITT excess-relaxation peak voltage.
 
-**b. Background-subtracted transition-associated excess relaxation**  
-Plot eta_excess(z) for all four samples using the common declared background procedure. This panel should make the concentrated HEO peak, BM broadening/lowering, Mg suppression, and partial BM-Mg recovery visually obvious.
+Current preferred peak positions:
 
-**c. Peak amplitude versus width map**  
-Plot FWHM-like capacity width on the x-axis and excess peak amplitude on the y-axis. Marker area may encode normalized excess area. This is the compact experimental summary panel.
+| Sample | cathodic dQ/dV peak | GITT excess peak | absolute mismatch |
+|---|---:|---:|---:|
+| HEO | 0.545 V | 0.527 V | 18 mV |
+| BM-HEO | 0.589 V | 0.618 V | 29 mV |
+| Mg-HEO | 0.419 V | 0.387 V | 32 mV |
+| BM-Mg-HEO | 0.485 V | 0.503 V | 18 mV |
 
-Do not include a mechanistic cartoon in Figure 4. The model/interpretation begins explicitly in Figure 5a.
+**e. Peak-voltage correspondence**  
+Plot first-cycle cathodic dQ/dV peak voltage versus GITT excess-relaxation peak voltage with the identity line. The purpose is localization of the same conversion-electrochemistry window, not statistical fitting with n = 4.
 
-### Working values
+**f. Peak amplitude versus width map**  
+Plot FWHM-like capacity width on the x-axis and excess peak amplitude on the y-axis. Marker area may encode normalized excess area.
+
+Working excess metrics:
 
 | Sample | Excess peak | FWHM-like width | normalized excess area |
 |---|---:|---:|---:|
@@ -199,48 +206,81 @@ Do not include a mechanistic cartoon in Figure 4. The model/interpretation begin
 | Mg-HEO | 15.9 mV | 250 mAh g−1 | 4.94 mV |
 | BM-Mg-HEO | 21.1 mV | 392 mAh g−1 | 7.58 mV |
 
+### Interpretation boundary
+
+Call the feature **conversion-associated excess relaxation** or **conversion/transformation-associated excess relaxation**.
+
+The voltage correspondence does not identify one unique microscopic conversion step. Do not assign the response solely to metal/Li2O nucleation, rock-salt evolution, or one phase-boundary process.
+
+### Source/provenance boundary
+
+The latest first-cycle profiles are currently available as vector Origin artwork in Park Seong Hyeon's 2026-09-17 HEO progress deck. The vector reconstruction reproduces terminal first-cycle capacities to within ~0.03% and gives stable dQ/dV peak positions over 20–60 mAh g−1 smoothing.
+
+Before final submission, regenerate the dQ/dV panels from the original numerical Origin/source profiles if recoverable. Do not substitute the older power-interrupted first-cycle dataset.
+
 ### Draft caption
 
-**Figure 4. State-resolved current-off relaxation isolates a synthesis-dependent late-stage transition-associated polarization.** (a) Late-stage relaxation amplitude plotted against normalized first-lithiation capacity. Pristine HEO develops a concentrated high-state response in the voltage/state region associated in related spinel HEO literature with spinel-to-rock-salt/conversion evolution, whereas the feature is broadened after ball milling and strongly suppressed after Mg incorporation. (b) Background-subtracted excess polarization obtained using the same fitting windows and functional form for all four samples. Ball milling lowers the local maximum while distributing the excess response over a wider capacity interval; Mg incorporation strongly suppresses the excess response. (c) Peak-amplitude versus FWHM-like-width map, with marker area representing normalized excess area. The excess area is a comparative polarization descriptor derived from discrete GITT states and is not interpreted as dissipated energy.
+**Figure 4. The late-stage excess relaxation tracks the first-cycle cathodic conversion feature.** (a–d) Normalized first-cycle cathodic dQ/dV response and GITT excess-relaxation peak position for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO, respectively. (e) Correspondence between dQ/dV and GITT peak voltages; the absolute mismatch is 18–32 mV across the four samples. (f) Excess-polarization peak amplitude versus FWHM-like capacity width, with marker area proportional to normalized excess area. The voltage correspondence localizes the excess response to the conversion window but does not assign a unique microscopic conversion step.
 
 ### SI associated with Figure 4
 
+- raw state-resolved Delta E_relax;
 - exact background definition and fitting windows;
-- background-fit sensitivity;
+- background-subtracted excess curves;
+- background/window sensitivity;
+- smoothing sensitivity for profile-derived dQ/dV;
 - capacity-axis and normalized-capacity versions;
-- absolute capacity-weighted excess area;
-- conventional apparent DGITT overlay in the same state region;
-- literature comparison table for reported spinel/rock-salt phase-evolution voltage ranges.
+- absolute capacity-weighted excess metric;
+- source/provenance note for the latest first-cycle profile reconstruction.
 
 ---
 
-# Figure 5 — What internal-state evolution is compatible with the GITT constraints?
+# Figure 5 — What conversion-associated internal-state evolution is compatible with the experimental constraints?
 
-**Question answered:** What modeled internal-state evolution can simultaneously accommodate the observed polarization amplitude, transition width, accessible transformed state, and relaxation-time directions?
+**Question answered:** What reduced internal-state evolution can simultaneously accommodate conversion-feature voltage ordering, polarization amplitude, response width, accessible conversion, and relaxation-time directions?
 
 ### Panel architecture
 
 **a. Mechanism-sufficiency logic schematic**  
-Experimental constraints -> independent model coordinates -> modeled radial state. Keep this broad and non-mathematical in the main Figure.
+Experimental constraints -> independent physical coordinates -> modeled internal state. Independent coordinates include transport scale, Mg stabilization/conversion extent, local conversion-condition heterogeneity, and structural-mobility heterogeneity.
 
 **b. Pulse-end circular radial-state array**  
 Rows: HEO / BM-HEO / Mg-HEO / BM-Mg-HEO.  
-Columns: model mean lithiation state c-bar ≈ 0.55, 0.62, 0.68, 0.75, 0.80, 0.86, 0.91.  
-Color: phi, with 0 = parent-like/pre-transition and 1 = transformed-like.  
+Columns: model mean lithiation state c-bar approximately 0.55, 0.62, 0.68, 0.75, 0.80, 0.86, 0.91.  
+Color: phi, interpreted as an **effective conversion-associated structural-state variable**.  
 For BM-containing samples, show the ensemble-averaged radial state over the frozen 11-quantile distribution; do not invent angular domains.
 
 **c. Pulse-end phi-bar versus c-bar**  
-Show the mean structural-state progression for all four samples. This should visually establish earlier/broader BM progression, strong Mg suppression, and partial reopening for BM-Mg.
+Show mean effective converted-state progression for all four samples.
+
+### No-refit conversion check
+
+After the Figure 4 conversion assignment was strengthened, the frozen v4 model was recalculated without parameter refitting.
+
+Relaxation-peak c-bar:
+- BM-HEO 0.5860
+- HEO 0.6184
+- BM-Mg-HEO 0.7966
+- Mg-HEO 0.9100.
+
+The same earlier-to-later ordering is preserved for pulse-end mean-phi onset thresholds 0.02–0.10.
+
+Compare only **direction/order**. Model c-bar is not calibrated numerically to experimental normalized capacity or voltage.
+
+### Model boundary
+
+The model is not a stoichiometrically complete conversion-reaction model and does not explicitly resolve Li2O formation, metallic nanoparticle nucleation, sequential transition-metal reduction, or oxygen redistribution.
 
 ### Draft caption
 
-**Figure 5. Spatial mechanism-sufficiency model visualizes distinct late-stage internal-state evolution.** (a) Experimental GITT constraints are evaluated against independent model coordinates for transport scale, transformation stabilization/extent, local-transition heterogeneity, and structural-mobility heterogeneity. (b) Pulse-end radial maps of the late-stage structural order parameter phi at selected values of the model mean lithiation state c-bar. HEO and Mg-HEO use the single frozen radial parameter set, whereas BM-HEO and BM-Mg-HEO are shown as ensemble-averaged radial states over the frozen 11-quantile distributions. phi near 0 denotes a parent-like/pre-transition state and phi near 1 a transformed-like state. (c) Pulse-end mean structural state phi-bar versus c-bar. Ball milling advances and distributes the modeled transformation over a broader reaction-progress interval, Mg strongly suppresses the late-stage transformed state, and BM-Mg-HEO partially recovers transformation while retaining Mg-related suppression. The model is used as a mechanism-sufficiency visualization and does not represent a unique parameter identification, a directly measured phase fraction, or a complete reconstruction of all structural transitions during lithiation.
+**Figure 5. Reduced spatial modeling of conversion-associated state evolution compatible with the experimental constraints.** (a) Mechanism-sufficiency logic separating transport, Mg stabilization/conversion extent, and milling-induced local-conversion/structural-mobility heterogeneity. (b) Pulse-end radial maps of the effective conversion-associated structural-state variable phi across a common late-stage model window. BM-containing maps are ensemble-averaged radial states. (c) Pulse-end mean phi versus model mean lithiation state c-bar. The model is directional and non-unique: phi is not a directly measured phase fraction, and c-bar is not directly calibrated to experimental normalized capacity or voltage.
 
 ### SI associated with Figure 5
 
 - full governing equations and effective-parameter table;
 - 7-versus-11-quantile convergence;
 - volume- versus surface-chemical-potential readout robustness;
+- no-refit conversion-order cross-check;
 - directional unit-test table and sensitivity/identifiability note;
 - Delta phi-bar_rest during the 60 min rest as a model-side internal-state descriptor.
 
@@ -262,11 +302,11 @@ Call **Figure 3a** when introducing the current-off analysis. Use **Figure 3b–
 
 ## Results 3.4–3.5
 
-Call **Figure 4a,b** when assigning the late-stage hump to the phase-transition region. Use **Figure 4c** to compare BM and Mg quantitatively. End Figure 4 with the experimental summary map; the synthesis–electrochemistry model interpretation begins with Figure 5a.
+Call **Figure 4a–d** when establishing sample-specific dQ/dV–GITT peak correspondence, then **Figure 4e** for the four-sample voltage comparison and **Figure 4f** for peak-width-area redistribution/suppression. Keep raw background-subtraction details in SI. End Figure 4 with experimental evidence only; the reduced model begins explicitly in Figure 5a.
 
 ## Results 3.6
 
-Call **Figure 5a–c** in the spatial-modeling section. Keep the logic order model constraints -> pulse-end internal-state maps -> mean structural-state progression.
+Call **Figure 5a–c** in the reduced spatial-modeling section. Keep the logic order experimental constraints -> conversion-associated internal-state maps -> mean state progression -> no-refit directional cross-check.
 
 ## Results 3.7–3.8
 
