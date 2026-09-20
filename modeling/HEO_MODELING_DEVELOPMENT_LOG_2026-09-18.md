@@ -639,3 +639,37 @@ If retained in the main text, the modeling originality should be framed as:
 rather than as unique extraction of microscopic phase-field constants.
 
 This distinction must be preserved in subsequent manuscript revisions.
+
+---
+
+## 2026-09-20 conversion-assignment cross-check
+
+The frozen v4 model was recalculated after the experimental Figure 4 excess-relaxation peak was found to coincide with the first-cycle cathodic conversion feature.
+
+No parameter was refitted.
+
+Using either the volume-averaged or surface chemical-potential readout, the model relaxation-peak states are:
+
+- BM-HEO: cbar_peak = 0.5860
+- HEO: cbar_peak = 0.6184
+- BM-Mg-HEO: cbar_peak = 0.7966
+- Mg-HEO: cbar_peak = 0.9100
+
+The same earlier-to-later ordering is obtained from pulse-end phibar onset thresholds between 0.02 and 0.10.
+
+This ordering matches the experimental conversion-feature voltage ordering:
+BM-HEO / HEO at higher potential, BM-Mg-HEO intermediate, and Mg-HEO at the lowest potential. The BM-versus-HEO dQ/dV order should not be overinterpreted until raw GCD is reprocessed because the preliminary peak difference is within plot-digitization uncertainty.
+
+### Revised physical interpretation
+
+The spatial model remains valid as a mechanism-sufficiency model, but phi should now be described as an **effective conversion-associated structural-state variable**, not as a literal single crystallographic phase fraction.
+
+Accordingly:
+- G_Mg: stabilization of the unconverted oxide-derived parent/intermediate state;
+- M_phi: effective mobility of conversion-associated structural rearrangement;
+- S_surf: local surface/defect coordinate affecting conversion onset/barrier;
+- BM heterogeneity: distribution of local conversion conditions and structural mobilities.
+
+The model is not a stoichiometrically complete conversion-reaction model and does not explicitly resolve Li2O formation, metallic nanoparticle nucleation, sequential transition-metal reduction, or oxygen redistribution.
+
+Do not calibrate model cbar numerically to experimental Q/Qmax; use only direction/order unless an independent mapping is established.
