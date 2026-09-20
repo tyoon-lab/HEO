@@ -14,13 +14,23 @@ Structural/compositional/interfacial perturbations across HEO / BM-HEO / Mg-HEO 
 - do not overassign Mg site before final ICP/refinement;
 - remove chemically impossible preliminary CoGa2O4 indexing.
 
-### Figure 2 — How much reaction became accessible
-Electrochemical accessibility and utilization.
+### Figure 2 — Conventional electrochemistry before transient analysis
+Establish the expected electrochemical consequences of milling and Mg incorporation before using GITT for deeper separation.
 
-- BET / relative interface;
-- first-cycle profiles and capacities;
-- cycling and rate capability;
-- central contrast: BM increases accessible conversion; Mg lowers accessible conversion despite comparable or higher external area.
+- (a) BET surface area + relative interfacial-capacitance metric;
+- (b) first-cycle voltage profiles + first-cycle capacity/ICE summary;
+- (c) cycling performance with common FEC condition; no-FEC comparison as interphase-control evidence;
+- (d) rate capability from 0.1 C to 5 C + recovery;
+- (e) cycle-resolved dQ/dV showing the strong first-cycle cathodic feature and its evolution in later cycles.
+
+Literature alignment:
+- milling/fragmentation increasing accessible conversion and interfacial storage is consistent with prior (FeCoNiCrMn)₃O₄ work;
+- Mg-related capacity suppression is directionally consistent with electrochemically inactive Mg-containing oxide stabilization reported in related HEO systems;
+- marked first-cycle-to-later-cycle dQ/dV evolution is consistent with reconstructive/irreversible first-cycle conversion reported by microscopy/XRD/XAS studies.
+
+Narrative role:
+conventional electrochemistry should establish what is already broadly expected, then explicitly state what it cannot determine: whether the observed differences arise from Li transport, conversion onset/extent/distribution, or post-conversion relaxation. Figure 3 begins the transient-based separation.
+
 
 ### Figure 3 — Polarization magnitude and relaxation time are independent
 Current-off analysis.
