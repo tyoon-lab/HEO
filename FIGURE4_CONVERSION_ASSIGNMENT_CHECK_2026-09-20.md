@@ -97,15 +97,16 @@ Milling shifts the Mg-containing conversion feature back toward higher potential
 
 ## Figure 4 main-text direction
 
-Preferred main Figure 4:
-1. HEO dQ/dV–GITT voltage overlay
-2. BM-HEO dQ/dV–GITT voltage overlay
-3. Mg-HEO dQ/dV–GITT voltage overlay
-4. BM-Mg-HEO dQ/dV–GITT voltage overlay
-5. one-to-one comparison of dQ/dV peak voltage versus GITT excess peak voltage
-6. peak-amplitude / FWHM-like width / normalized-area map.
+Preferred main Figure 4 is now a compact four-panel experimental figure:
 
-Raw state-resolved curves, background fits, subtraction details, and smoothing/background sensitivity remain in SI.
+1. **(a)** state-resolved 3 s-to-60 min relaxation response showing the late-stage excess feature;
+2. **(b)** background-subtracted GITT excess relaxation on a voltage axis together with the independently derived first-cycle cathodic dQ/dV response for all four samples;
+3. **(c)** one-to-one comparison of dQ/dV peak voltage versus GITT excess peak voltage;
+4. **(d)** peak-amplitude / FWHM-like width / normalized-area map.
+
+The four individual sample overlays remain useful as development/diagnostic plots but are no longer the preferred main-text panel architecture.
+
+Detailed background fits, subtraction details, and smoothing/background sensitivity remain in SI.
 
 ### Submission-source boundary
 
