@@ -34,16 +34,16 @@ The paper should not be positioned primarily as:
 - a phase-field parameter-identification paper;
 - a pure performance paper.
 
-The central contribution is the mechanistic separation of synthesis-sensitive electrochemical coordinates in a phase-evolving HEO anode.
+The central contribution is the mechanistic separation of synthesis-sensitive electrochemical coordinates in a conversion-evolving HEO anode.
 
 ## Abstract logic
 
 1. Phase-evolving HEO anodes cannot be interpreted reliably by a single apparent transport parameter.
 2. A 2 × 2 comparison separates ball milling from Mg incorporation.
-3. Ball milling raises accessibility/capacity but does not accelerate long-rest relaxation; its transition-associated response becomes lower and broader.
-4. Mg lowers accessible capacity and strongly suppresses the transition-associated response without shortening relaxation.
-5. A reduced spatial model shows that the observed directions are compatible when transformation stabilization/extent and transition/mobility heterogeneity are independent.
-6. Main implication: accessibility, transformation extent/distribution, and relaxation time are distinct synthesis-sensitive coordinates.
+3. Ball milling raises accessibility/capacity but does not accelerate long-rest relaxation; its conversion-associated response becomes lower and broader.
+4. Mg lowers accessible capacity and strongly suppresses the conversion-associated response without shortening relaxation.
+5. A reduced spatial model shows that the observed directions are compatible when conversion stabilization/extent and conversion-condition/structural-mobility heterogeneity are independent.
+6. Main implication: accessibility, conversion extent/distribution, and relaxation time are distinct synthesis-sensitive coordinates.
 
 ## Introduction logic
 
@@ -65,11 +65,11 @@ The central contribution is the mechanistic separation of synthesis-sensitive el
 
 ## Unresolved gap emphasized
 
-Same-family HEO/BM studies and conventional GITT already exist [6], and structural phase evolution is established [5,7]. Mg stabilization precedents also exist [8–10]. What remains unresolved is whether synthesis-driven changes in capacity and polarization reflect one transport parameter or independent changes in **accessibility, transformation extent/distribution, and relaxation time**.
+Same-family HEO/BM studies and conventional GITT already exist [6], and structural phase evolution is established [5,7]. Mg stabilization precedents also exist [8–10]. What remains unresolved is whether synthesis-driven changes in capacity and polarization reflect one transport parameter or independent changes in **accessibility, conversion extent/distribution, and relaxation time**.
 
 ## Abstract headline result
 
-Ball milling increases capacity while broadening/lowering the transition-associated response and lengthening relaxation; Mg suppresses the transition-associated response and capacity without faster relaxation.
+Ball milling increases capacity while broadening/lowering the conversion-associated response and lengthening relaxation; Mg suppresses the conversion-associated response and capacity without faster relaxation.
 
 ## Closest prior work and manuscript differentiation
 
@@ -83,7 +83,7 @@ Current manuscript adds:
 - direct current-off separation of fast polarization, finite-window relaxation amplitude, and relaxation time;
 - state-localized transition-associated excess response;
 - a 2 × 2 comparison including Mg;
-- explicit separation of accessibility, transformation extent/distribution, and relaxation time.
+- explicit separation of accessibility, conversion extent/distribution, and relaxation time.
 
 ### [7] Jin et al., Materials Today Chemistry 2025
 Already showed:
@@ -108,16 +108,16 @@ Already showed:
 - smaller spinel HEOs can show lower polarization and more complete conversion.
 
 Current manuscript adds:
-- direct quantification of lower peak + broader transition-associated response together with longer long-rest relaxation.
+- direct quantification of lower peak + broader conversion-associated response together with longer long-rest relaxation.
 
 ### [15–17] GITT/current-interruption/phase-transition physics
 Already showed:
 - apparent GITT diffusivity is model- and assumption-sensitive;
 - current interruption supports early sqrt(t)-based analysis;
-- nucleation can contribute substantially to phase-transition overpotential.
+- nucleation can contribute substantially to conversion/phase-transformation overpotential.
 
 Current manuscript adds:
-- application of these concepts to discriminate processing and compositional effects in a phase-evolving HEO.
+- application of these concepts to discriminate processing and compositional effects in a conversion-evolving HEO.
 
 ## Literature-use boundaries
 
