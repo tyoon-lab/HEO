@@ -2,8 +2,8 @@
 
 ## Mg Incorporation and Ball Milling Independently Regulate Electrochemical Accessibility and Conversion in Spinel High-Entropy Oxide Anodes
 
-**Date:** 2026-09-19  
-**Status:** SI draft aligned to `HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md`  
+**Date:** 2026-09-20  
+**Status:** SI draft aligned to `HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md`  
 **Purpose:** technical completeness, auditability, robustness tests, and claim-boundary support for the main manuscript.
 
 > Values below are included only where they are already verified from the project source files. Missing historical or collaborator-generated metadata are explicitly marked and are not inferred.
