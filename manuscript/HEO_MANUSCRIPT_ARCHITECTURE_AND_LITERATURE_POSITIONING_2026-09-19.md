@@ -1,6 +1,6 @@
 # HEO Manuscript Architecture and Literature Positioning
 
-**Date:** 2026-09-19
+**Date:** 2026-09-20
 **Purpose:** Gate-A / Gate-B note for the figure-aligned HEO manuscript, following the Yoon Lab Publication Toolkit.
 
 ## Manuscript type
@@ -12,16 +12,17 @@ The paper should not be positioned primarily as:
 - a phase-field parameter-identification paper;
 - a pure performance paper.
 
-The central contribution is the mechanistic separation of synthesis-sensitive electrochemical coordinates in a phase-evolving HEO anode.
+The central contribution is the mechanistic separation of synthesis-sensitive electrochemical coordinates in a conversion-type spinel HEO anode.
 
 ## Abstract logic
 
 1. Phase-evolving HEO anodes cannot be interpreted reliably by a single apparent transport parameter.
 2. A 2 × 2 comparison separates ball milling from Mg incorporation.
-3. Ball milling raises accessibility/capacity but does not accelerate long-rest relaxation; its transition-associated response becomes lower and broader.
-4. Mg lowers accessible capacity and strongly suppresses the transition-associated response without shortening relaxation.
-5. A reduced spatial model shows that the observed directions are compatible when transformation stabilization/extent and transition/mobility heterogeneity are independent.
-6. Main implication: accessibility, transformation extent/distribution, and relaxation time are distinct synthesis-sensitive coordinates.
+3. Ball milling raises accessibility/capacity but does not accelerate long-rest relaxation; its conversion-associated response becomes lower and broader.
+4. The GITT excess peak tracks the first-cycle cathodic dQ/dV conversion feature within 18–32 mV across all four samples.
+5. Mg shifts the conversion feature to lower potential, lowers accessible capacity, and strongly suppresses the excess response without shortening relaxation.
+6. A reduced spatial model of conversion-associated state evolution remains directionally consistent without parameter refitting.
+7. Main implication: accessibility, conversion extent/distribution, and relaxation time are distinct synthesis-sensitive coordinates.
 
 ## Introduction logic
 
@@ -29,9 +30,9 @@ The central contribution is the mechanistic separation of synthesis-sensitive el
 2. Establish that lithiation is structurally reconstructive rather than diffusion through an invariant host [5,7].
 3. Introduce ball milling and Mg incorporation as physically different perturbations, using the closest direct precedents [6,8–12].
 4. Define the diagnostic limitation: conventional GITT often compresses a phase-evolving transient into one apparent D [6,15], while current interruption preserves independent amplitude/time information [16].
-5. Connect phase transformation to additional polarization physics through nucleation/phase-boundary contributions [17–20].
-6. State the unresolved question: do BM and Mg alter the same kinetic coordinate, or different coordinates of accessibility, transformation extent/distribution, and relaxation?
-7. State the 2 × 2 strategy and the mechanism-sufficiency role of the spatial model.
+5. Treat spinel-to-rock-salt evolution as part of the broader conversion-associated structural evolution rather than as the only reaction event.
+6. State the unresolved question: do BM and Mg alter the same kinetic coordinate, or different coordinates of accessibility, conversion extent/distribution, and relaxation?
+7. State the 2 × 2 strategy and the mechanism-sufficiency role of the reduced conversion-associated spatial model.
 
 ## Background deliberately omitted or minimized
 
@@ -43,11 +44,11 @@ The central contribution is the mechanistic separation of synthesis-sensitive el
 
 ## Unresolved gap emphasized
 
-Same-family HEO/BM studies and conventional GITT already exist [6], and structural phase evolution is established [5,7]. Mg stabilization precedents also exist [8–10]. What remains unresolved is whether synthesis-driven changes in capacity and polarization reflect one transport parameter or independent changes in **accessibility, transformation extent/distribution, and relaxation time**.
+Same-family HEO/BM studies and conventional GITT already exist [6], and structural phase evolution is established [5,7]. Mg stabilization precedents also exist [8–10]. What remains unresolved is whether synthesis-driven changes in capacity and polarization reflect one transport parameter or independent changes in **accessibility, conversion extent/distribution, and relaxation time**.
 
 ## Abstract headline result
 
-Ball milling increases capacity while broadening/lowering the transition-associated response and lengthening relaxation; Mg suppresses the transition-associated response and capacity without faster relaxation.
+Ball milling increases capacity while broadening/lowering the conversion-associated response and lengthening relaxation; Mg shifts conversion to lower potential and suppresses both the conversion-associated response and accessible capacity without faster relaxation.
 
 ## Closest prior work and manuscript differentiation
 
@@ -116,3 +117,18 @@ Current manuscript adds:
 - Do not manufacture missing experimental metadata.
 - Mark collaborator-dependent items explicitly as YOO GROUP INPUT REQUIRED.
 - Mark local electrochemistry metadata as YOON LAB INPUT REQUIRED.
+
+## 2026-09-20 Figure 4 / Figure 5 conversion update
+
+New experimental cross-check:
+- profile-derived cathodic dQ/dV peaks: HEO 0.545 V, BM-HEO 0.589 V, Mg-HEO 0.419 V, BM-Mg-HEO 0.485 V;
+- GITT excess peaks: 0.527, 0.618, 0.387, and 0.503 V, respectively;
+- absolute mismatch: 18–32 mV.
+
+This makes the conversion assignment an experimental part of the paper rather than a literature-only inference.
+
+Figure 4 main-text role is now: **independent voltage localization of the GITT excess to the first-cycle conversion window + redistribution/suppression map**.
+
+Figure 5 main-text role is now: **reduced conversion-associated internal-state visualization**. The frozen model requires no refitting after the reassignment and preserves the relative onset/peak order. phi is an effective conversion-associated state variable, not a measured phase fraction or complete conversion stoichiometry.
+
+Current journal target: **Advanced Functional Materials**. Keep the manuscript materials-centered; do not turn the conversion reassignment into a methods paper.
