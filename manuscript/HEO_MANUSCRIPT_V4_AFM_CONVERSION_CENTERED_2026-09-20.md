@@ -1,5 +1,8 @@
 # HEO Manuscript v4 — AFM-Targeted Conversion-Centered Draft
 
+> **SUPERSEDED WORKING COPY — do not use as the authoritative manuscript.**  
+> Current authoritative Main: `manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md`.
+
 **Date:** 2026-09-20  
 **Status:** Current authoritative main-text draft for sentence-by-sentence review  
 **Target journal:** Advanced Functional Materials  
