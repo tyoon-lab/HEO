@@ -415,11 +415,13 @@ The model is a directional mechanism-sufficiency test and not an absolute voltag
 
 For BM-HEO and BM-Mg-HEO, \(x\sim N(0,1)\) is represented by 11 equal-probability Gaussian quantiles.
 
-These coordinates are effective, non-unique, hypothesis-level quantities. They should not be interpreted as independently measured microscopic constants.\n\n**Table S6.** Frozen effective coordinates of the reduced spatial model.
+These coordinates are effective, non-unique, hypothesis-level quantities. They should not be interpreted as independently measured microscopic constants.
+
+**Table S6.** Frozen effective coordinates of the reduced spatial model.
 
 ## S6.4. Why Mg requires two coordinates
 
-A (G_{mathrm{Mg}})-(M_phi) scan showed:
+A \(G_{\mathrm{Mg}}\)–\(M_\phi\) scan showed:
 
 - stabilization alone suppresses the transformed fraction but can make residual relaxation too fast;
 - low structural mobility alone slows relaxation but does not sufficiently suppress the transition response;
@@ -427,7 +429,7 @@ A (G_{mathrm{Mg}})-(M_phi) scan showed:
 
 ## S6.5. Why BM requires a distribution
 
-A single ball-milled particle with only shorter effective transport length or easier surface transformation does not reproduce all experimental directions. The accepted BM representation uses a joint distribution of local transition/surface condition and structural mobility. This permits easier local transformation and slow ensemble relaxation to coexist.
+A single ball-milled particle with only shorter effective transport length or easier surface transformation does not reproduce all experimental directions. The accepted BM representation uses a joint distribution of local conversion/surface condition and structural mobility. This permits easier local conversion and slow ensemble relaxation to coexist.
 
 ---
 
@@ -524,7 +526,7 @@ The MATLAB spatial translation (\`HEO_Spatial_PhaseField_Model_Final.m\`) preser
 
 The GITT/current-off analysis is used here to resolve the electrochemical consequences of ball milling and Mg incorporation in the HEO system; it is not presented as the primary methodological contribution of the paper. Several prior studies establish the physical basis for analyzing intermittent transients beyond a single apparent diffusion coefficient.
 
-Current-interruption and modified GITT approaches have separated distinct kinetic contributions or fitted the pulse/rest response directly.[16,23,24] Time-domain voltage relaxation has also been represented by multiple characteristic times.[29] For phase-transforming electrodes specifically, Zhu and Wang formulated phase-transformation GITT/PITT to extract Li diffusivity and phase-interface mobility in LiFePO4,[21] while Chen et al. used GITT polarization and rest-to-equilibrium behavior to compare phase-transformation kinetics.[22] These precedents justify treating the present relaxation amplitude and characteristic time as distinct observables rather than forcing the entire response into one apparent (D).
+Current-interruption and modified GITT approaches have separated distinct kinetic contributions or fitted the pulse/rest response directly.[16,23,24] Time-domain voltage relaxation has also been represented by multiple characteristic times.[29] For phase-transforming electrodes specifically, Zhu and Wang formulated phase-transformation GITT/PITT to extract Li diffusivity and phase-interface mobility in LiFePO4,[21] while Chen et al. used GITT polarization and rest-to-equilibrium behavior to compare phase-transformation kinetics.[22] These precedents justify treating the present relaxation amplitude and characteristic time as distinct observables rather than forcing the entire response into one apparent \(D\).
 
 The long-rest response can also reflect electrode heterogeneity and structural evolution. Fath et al. showed that a particle-size distribution can alter the GITT rest shape and produce delayed equilibration relative to a single-particle description,[25] while Skurtveit et al. directly observed continued structural relaxation after current interruption using operando diffraction.[26] Phase-field studies likewise show that phase-separating/non-Fickian dynamics can change the interpretation of GITT/PITT transients.[27,28]
 
