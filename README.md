@@ -2,44 +2,63 @@
 
 ## Start here
 
-**Current authoritative project state:**
+The repository is maintained so a new chat/session can resume **without a separate handoff message**.
 
-`START_HERE_CURRENT_STATE_2026-09-18.md`
+Read first:
 
-Read that file first when resuming the project in a new chat/session. It contains:
-- current manuscript storyline and title
-- authoritative manuscript/model files
-- raw-derived GITT numbers
-- diffusion-vs-phase-transition logic
-- Mg and ball-milling mechanism
-- modeling authority/legacy distinction
-- visual-simulation main-figure direction
-- revision history and decisions not to reverse
-- immediate next actions
-- sulfide collaboration extension
+\`START_HERE_CURRENT_STATE_2026-09-18.md\`
 
-Key directories:
-- `manuscript/` — integrated manuscript, references, figure and visual-simulation notes
-- `modeling/` — model-development log, frozen Python spatial model, MATLAB port
+That file is the single current-state entry point and contains:
+- AFM-targeted manuscript identity and locked scientific story;
+- authoritative Main/SI files;
+- Figure 4 conversion-assignment evidence and robustness;
+- Figure 5 frozen-model interpretation and no-refit validation;
+- current review Word artifacts;
+- unresolved metadata/source items;
+- decisions that must not be reversed;
+- immediate next actions.
 
-Future collaboration direction:
-`FUTURE_DIRECTION_SULFIDE_EXTENSION_2026-09-18.md`
+## Current authoritative scientific files
 
-## Current manuscript
+Main manuscript:
 
-Current authoritative manuscript draft:
+\`manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md\`
 
-`manuscript/HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md`
+Supporting Information:
 
-The Results now follow the final five-figure logic directly:
-structure -> accessibility/utilization -> current-off decoupling -> experimental transition response -> modeled internal-state evolution.
+\`manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md\`
 
+Figure architecture:
 
-Manuscript architecture/literature positioning note:
+\`manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md\`
 
-`manuscript/HEO_MANUSCRIPT_ARCHITECTURE_AND_LITERATURE_POSITIONING_2026-09-19.md`
+Conversion-assignment audit:
 
+\`FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md\`
 
-Current Supporting Information draft:
+Current consolidation audit:
 
-`manuscript/HEO_SUPPORTING_INFORMATION_V1_2026-09-19.md`
+\`manuscript/HEO_CONSOLIDATION_AUDIT_2026-09-20.md\`
+
+Current review-artifact manifest:
+
+\`manuscript/HEO_CURRENT_ARTIFACTS_2026-09-20.md\`
+
+## Current manuscript story
+
+Figure 1: synthesis / structural perturbation  
+→ Figure 2: accessibility / utilization  
+→ Figure 3: polarization–relaxation decoupling  
+→ Figure 4: conversion-associated excess relaxation; BM redistributes while Mg suppresses/shifts  
+→ Figure 5: reduced spatial model of conversion-associated internal-state evolution
+
+The paper is an **HEO materials/mechanism paper**, not a GITT-method paper.
+
+## Key directories
+
+- \`manuscript/\` — authoritative Main/SI, figure architecture, audits, references
+- \`modeling/\` — frozen Python model, development log, MATLAB translation
+
+Future sulfide collaboration direction:
+
+\`FUTURE_DIRECTION_SULFIDE_EXTENSION_2026-09-18.md\`
