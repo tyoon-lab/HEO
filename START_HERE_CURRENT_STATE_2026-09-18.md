@@ -67,6 +67,8 @@ Manuscript architecture/literature positioning note: manuscript/HEO_MANUSCRIPT_A
 
 Current consolidation/scientific audit: manuscript/HEO_CONSOLIDATION_AUDIT_2026-09-20.md
 
+Current review-artifact manifest: manuscript/HEO_CURRENT_ARTIFACTS_2026-09-20.md
+
 Previous drafts retained for history:
 - manuscript/HEO_MANUSCRIPT_V2_FIGURE_ALIGNED_2026-09-19.md
 - manuscript/HEO_MANUSCRIPT_V1_INTEGRATED_2026-09-18.md
