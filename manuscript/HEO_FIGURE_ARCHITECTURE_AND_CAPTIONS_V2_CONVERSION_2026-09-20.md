@@ -28,22 +28,30 @@
 Narrative role:
 Figures 1–2 establish what the synthesis changed in the material before any electrochemical interpretation is introduced.
 
-### Figure 3 — Conventional electrochemistry and evolving conversion behavior
-Electrochemistry begins here.
+### Figure 3 — Conventional electrochemistry: utilization, retention, and conversion evolution
+Electrochemistry begins here. Keep the main figure compact and materials-centered.
 
-- first-cycle voltage profiles + capacity / initial-efficiency summary;
-- cycling performance with common FEC condition;
-- no-FEC comparison as interphase-control evidence where useful;
-- rate capability from 0.1 C to 5 C + recovery;
-- cycle-resolved dQ/dV showing the strong first-cycle cathodic feature and its evolution in later cycles;
+**Main panels**
+- (a) first-cycle voltage profiles: overlay the four materials on a common axis; include first-cycle lithiation/delithiation capacity and ICE as a compact inset/table;
+- (b) 0.1 C cycling with the common 10 wt% FEC electrolyte: plot absolute specific capacity only in the main panel;
+- (c) absolute rate capability over 0.1–5 C and recovery at 0.1 C;
+- (d) cycle-resolved dQ/dV: emphasize selected cycles (preferred: 1, 2, 10, 100) for each material so the first-cycle conversion feature and subsequent reconstruction remain readable.
 
-Literature alignment:
-- milling/fragmentation increasing accessible conversion and interfacial storage is consistent with prior (FeCoNiCrMn)3O4 work;
-- Mg-related capacity suppression is directionally consistent with stabilization reported in related Mg-containing HEO systems;
-- strong first-cycle-to-later-cycle dQ/dV evolution is consistent with reconstructive conversion and persistent reconstructed states.
+**Supporting Information**
+- no-FEC cycling comparison;
+- Coulombic-efficiency evolution;
+- normalized rate-capacity retention;
+- first three voltage profiles for each material;
+- full multi-cycle dQ/dV set if the selected-cycle main panel is used;
+- CV-derived relative interfacial-capacitance/ECSA-style comparison.
 
-Narrative role:
-establish the conventional electrochemical trends first, then state what these data cannot determine: whether the differences arise from Li transport, conversion onset/extent/distribution, or post-conversion relaxation. Keep the CV-derived relative interfacial-capacitance/ECSA-style comparison in the Supporting Information as corroborating evidence, not a main-panel result.
+**Core materials message**
+- milling increases accessible capacity/utilization in both Mg-free and Mg-containing compositions;
+- BM-HEO has the highest absolute capacity but lower fractional cycling retention;
+- Mg lowers low-rate accessible capacity but shows comparatively stronger normalized high-rate retention;
+- the large first-cycle dQ/dV feature evolves into a broader/weaker response, consistent with a reconstructed post-first-cycle state;
+- do not quantify/assign the exact conversion-peak displacement here; reserve that analysis for Figure 5.
+
 
 ### Figure 4 — Polarization magnitude and relaxation time are independent
 GITT current-off analysis.
