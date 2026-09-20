@@ -423,13 +423,13 @@ These coordinates are effective, non-unique, hypothesis-level quantities. They s
 
 A \(G_{\mathrm{Mg}}\)–\(M_\phi\) scan showed:
 
-- stabilization alone suppresses the transformed fraction but can make residual relaxation too fast;
-- low structural mobility alone slows relaxation but does not sufficiently suppress the transition response;
-- combined stabilization and lower residual structural mobility reproduce the required direction of small transition response, reduced transformed fraction, and slower relaxation.
+- stabilization alone suppresses the converted-state proxy but can make residual relaxation too fast;
+- low structural mobility alone slows relaxation but does not sufficiently suppress the conversion-associated response;
+- combined stabilization and lower residual structural mobility reproduce the required direction of a small conversion-associated response, reduced converted-state proxy, and slower relaxation.
 
 ## S6.5. Why BM requires a distribution
 
-A single ball-milled particle with only shorter effective transport length or easier surface transformation does not reproduce all experimental directions. The accepted BM representation uses a joint distribution of local conversion/surface condition and structural mobility. This permits easier local conversion and slow ensemble relaxation to coexist.
+A single ball-milled particle with only shorter effective transport length or easier surface conversion does not reproduce all experimental directions. The accepted BM representation uses a joint distribution of local conversion/surface condition and structural mobility. This permits easier local conversion and slow ensemble relaxation to coexist.
 
 ---
 
