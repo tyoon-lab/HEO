@@ -29,7 +29,7 @@ The GITT/current-off/relaxation literature is cited only to establish that:
 - phase-transforming GITT can contain interface/structural kinetic information;
 - phase-field descriptions are established tools for phase-evolving electrochemical systems.
 
-Do not make method novelty the central contribution. Do not organize the Introduction around GITT history. The manuscript contribution is the **contrasting effect of ball milling and Mg incorporation on accessibility, transformation extent/distribution, and relaxation in the same HEO system**.
+Do not make method novelty the central contribution. Do not organize the Introduction around GITT history. The manuscript contribution is the **contrasting effect of ball milling and Mg incorporation on accessibility, conversion extent/distribution, and relaxation in the same HEO system**.
 
 ## Central mechanistic message
 
@@ -138,7 +138,7 @@ Experimentally, Mg does the opposite: polarization amplitude strongly decreases,
 
 Therefore do not claim diffusion is absent. Claim instead that a simple single-diffusivity explanation cannot account for the synthesis dependence of the late-stage response.
 
-The more likely origin is a phase-transition/conversion-associated contribution because the feature is localized in the relevant low-voltage range, related five-cation spinel HEO literature directly reports spinel -> mixed spinel/rock-salt -> rock-salt evolution, and phase-transforming electrodes can exhibit nucleation and phase-boundary overpotential.
+The stronger current assignment is a conversion/transformation-associated contribution because the GITT excess peak coincides with the first-cycle cathodic dQ/dV feature within 32 mV across all four samples. Related five-cation spinel HEO literature also reports reconstructive low-voltage conversion chemistry and spinel -> mixed spinel/rock-salt -> rock-salt evolution. This supports conversion-associated interpretation without assigning the signal to one unique microscopic conversion step.
 
 ---
 
@@ -147,10 +147,10 @@ The more likely origin is a phase-transition/conversion-associated contribution 
 A pure Mg-slows-phase-boundary-mobility explanation is insufficient.
 
 Current minimum interpretation uses two coordinates:
-1. thermodynamic / structural stabilization: transformed fraction decreases, conversion capacity decreases, transition excess peak decreases;
-2. slower residual structural mobility: remaining structural/phase rearrangement relaxes more slowly, so t63 does not shorten.
+1. thermodynamic / structural stabilization of the oxide-derived parent/intermediate state: accessible conversion fraction decreases, conversion capacity decreases, and the conversion-associated excess peak decreases/shifts to lower potential;
+2. slower residual structural mobility: remaining conversion-associated structural rearrangement relaxes more slowly, so t63 does not shorten.
 
-Thus: Mg -> stabilization increases + residual structural mobility decreases -> transformed fraction decreases + transition peak decreases + capacity decreases + relaxation slower.
+Thus: Mg -> stabilization increases + residual structural mobility decreases -> conversion extent decreases + conversion feature shifts lower in potential + excess peak decreases + capacity decreases + relaxation remains slow.
 
 ---
 
@@ -209,14 +209,14 @@ Current effective descriptors: D_eff/R^2, M_phi, stabilization energy G_Mg/Delta
 This is the newest manuscript-development direction and should be prioritized.
 
 ## Meaning of phi
-phi is the spatial structural order parameter.
-- phi ~ 0: parent-like / pre-transition state
-- phi ~ 1: transformed-like state
-- intermediate phi: local/coarse-grained partial transformation state
+phi is the effective conversion-associated structural-state coordinate.
+- phi ~ 0: oxide-derived parent/intermediate-like state
+- larger phi: progression toward a more deeply converted-like state
+- intermediate phi: local/coarse-grained partial conversion-associated structural evolution
 
-Crucial boundary: phi is a modeled internal-state variable, not a directly measured phase fraction.
+Crucial boundary: phi is a modeled internal-state variable, not a directly measured rock-salt, metallic-product, or Li2O phase fraction.
 
-The current phi represents the late-stage transition-associated transformation only. It is not a complete model of every structural transformation over the full lithiation range.
+The current phi represents only the late-stage conversion-associated structural evolution. It is not a stoichiometrically complete model of the full conversion reaction or of every earlier structural change during lithiation.
 
 ## Preferred visualization format
 Current preferred main-text visualization: circular particle snapshots.
@@ -381,11 +381,11 @@ Use the reference master for exact claim boundaries.
 Start here without asking for another handoff.
 
 Recommended order:
-1. Read the current authoritative main manuscript, aligned SI draft, and scientific audit:
-   - manuscript/HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md
-   - manuscript/HEO_SUPPORTING_INFORMATION_V1_2026-09-19.md
-   - manuscript/HEO_MAIN_SI_SCIENTIFIC_AUDIT_2026-09-19.md
-   Results follow Figures 1–5 directly: structure → accessibility/utilization → current-off decoupling → experimental transition response → modeled internal-state evolution.
+1. Read the current authoritative main manuscript, aligned SI draft, and consolidation audit:
+   - manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md
+   - manuscript/HEO_SUPPORTING_INFORMATION_V2_CONVERSION_ALIGNED_2026-09-20.md
+   - manuscript/HEO_CONSOLIDATION_AUDIT_2026-09-20.md
+   Results follow Figures 1–5 directly: structure → accessibility/utilization → current-off decoupling → experimental conversion-associated response → modeled conversion-associated internal-state evolution.
 2. Use the current Figure 5 architecture: compact mechanism-sufficiency schematic + 4 × 7 pulse-end circular state array + pulse-end phi-bar versus model mean lithiation state. Keep Delta phi-bar_rest in SI.
 3. Retain the column coordinate as model mean lithiation state c-bar; do not relabel it directly as experimental normalized capacity without a validated mapping.
 4. For BM-containing samples, depict ensemble-averaged radial phi states or representative quantiles; do not imply a directly simulated heterogeneous 2D single particle.
@@ -409,24 +409,19 @@ This should remain a future/collaboration direction and should not be mixed into
 
 ## 2026-09-20 conversion assignment / Figure 4–5 cross-check
 
-New experimental cross-check:
-- Figure 4 excess-relaxation maxima coincide with the first-cycle cathodic conversion feature across all four samples.
-- Preliminary peak voltages: HEO dQ/dV ~0.531 V / GITT 0.527 V; BM ~0.539 / 0.618 V; Mg ~0.365 / 0.387 V; BM-Mg ~0.425 / 0.503 V.
-- Mg-induced peak displacement is especially consistent between dQ/dV and GITT.
+The earlier direct digitization of already-plotted dQ/dV curves was superseded by reconstruction of the latest vector first-cycle voltage profiles from the 2026-09-17 progress presentation.
+
+Current authoritative peak values are given in the next subsection and in `FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md`.
 
 Frozen-v4 model was rerun without refitting:
 - model relaxation peak cbar: BM 0.5860 < HEO 0.6184 < BM-Mg 0.7966 < Mg 0.9100;
 - pulse-end phibar onset gives the same ordering over thresholds 0.02–0.10.
 
-Interpretation update:
-- describe Figure 4 feature as **conversion/transformation-associated** pending raw-GCD dQ/dV freeze;
-- describe Figure 5 as a **reduced spatial model of conversion-associated state evolution**;
-- phi is an effective converted-state coordinate, not a measured phase fraction;
-- do not map model cbar directly to experimental Q/Qmax.
-
-Main manuscript wording should be changed only after raw first-cycle GCD is reprocessed and Figure 4 baseline/window sensitivity is frozen.
-
-Detailed note: FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md.
+Current interpretation:
+- Figure 4 feature is **conversion/transformation-associated**;
+- Figure 5 is a **reduced spatial model of conversion-associated state evolution**;
+- phi is an effective conversion-associated internal-state coordinate, not a measured phase fraction;
+- do not map model cbar directly to experimental Q/Qmax or voltage.
 
 
 # 2026-09-20 Figure 4 conversion assignment — latest profile reconstruction
