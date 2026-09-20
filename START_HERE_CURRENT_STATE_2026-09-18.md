@@ -11,8 +11,7 @@
 ## Working title
 **Mg Incorporation and Ball Milling Independently Regulate Electrochemical Accessibility and Conversion in Spinel High-Entropy Oxide Anodes**
 
-Alternative:
-**Mg Incorporation and Ball Milling Regulate Phase-Transformation Polarization in Spinel High-Entropy Oxide Anodes**
+AFM target selected for the current drafting cycle. Keep the pitch materials-centered: two common HEO modifications alter lithium storage through different physical routes.
 
 ## Target journal
 
@@ -37,24 +36,24 @@ Do not make method novelty the central contribution. Do not organize the Introdu
 The 2 × 2 matrix is HEO / BM-HEO / Mg-HEO / BM-Mg-HEO.
 
 ### Ball milling
-Ball milling primarily changes electrochemical accessibility and the distribution of the phase-transforming reaction.
+Ball milling primarily changes electrochemical accessibility and the distribution of the conversion-associated reaction.
 
 Working interpretation:
-BM -> larger accessible interface / shorter effective domain or transport length -> more heterogeneous local transition conditions and structural mobilities -> transition peak decreases and broadens -> accessible capacity increases -> long-rest ensemble relaxation can become slower.
+BM -> larger accessible interface / shorter effective domain or transport length -> more heterogeneous local conversion conditions and structural mobilities -> conversion-associated peak decreases and broadens -> accessible capacity increases -> long-rest ensemble relaxation can become slower.
 
 Do not reduce the BM story to faster diffusion.
 
 ### Mg incorporation
-Mg primarily changes transformation extent / structural stability.
+Mg primarily changes conversion extent / structural stability.
 
 Working interpretation:
-Mg -> thermodynamic/structural stabilization of the parent/intermediate oxide-derived state + lower mobility of the residual structural transformation -> smaller conversion/transformation fraction -> lower conversion-associated capacity -> much smaller late-stage transition polarization -> relaxation does not become faster and can become slower.
+Mg -> stabilization of the oxide-derived parent/intermediate state + lower mobility of the residual structural rearrangement -> conversion shifts to lower potential + accessible conversion fraction decreases -> conversion-associated excess polarization strongly decreases -> relaxation does not become faster and can become slower.
 
 Concise contrast:
-- BM: accessibility/distribution increases; transformation broadens; utilization increases.
-- Mg: transformation extent decreases; stabilization increases; transition polarization decreases without faster relaxation.
+- BM: accessibility/distribution increases; conversion broadens; utilization increases.
+- Mg: conversion shifts to lower potential and its extent decreases; stabilization increases; excess polarization decreases without faster relaxation.
 
-The three experimentally distinct coordinates are accessibility, transformation extent, and relaxation time.
+The three experimentally distinct coordinates are accessibility, conversion extent/distribution, and relaxation time.
 
 ---
 
@@ -471,3 +470,44 @@ Use:
 - BM ensemble = distribution of local conversion conditions and structural mobilities.
 
 Do not claim the reduced model explicitly resolves Li2O formation, metal-nanoparticle nucleation, sequential cation reduction, or oxygen migration.
+
+## 2026-09-20 latest first-cycle conversion validation — authoritative
+
+The latest continuous first-cycle Excel export is not available. The older first-cycle dataset is excluded because a power interruption produced an obvious profile artifact.
+
+Current preferred source: Park Seong Hyeon's `HEO 진행상황 (20260917).pptx`, slide 10. The latest first-cycle voltage profiles were embedded as Origin vector artwork and reconstructed at high resolution.
+
+Reconstructed terminal first-cycle capacities reproduce the printed values to within ~0.03%:
+- HEO 901.14 mAh g-1;
+- BM-HEO 1055.84;
+- Mg-HEO 731.05;
+- BM-Mg-HEO 943.87.
+
+Common profile-derived cathodic dQ/dV peaks versus GITT excess peaks:
+
+| Sample | dQ/dV peak (V) | GITT excess peak (V) | absolute mismatch |
+|---|---:|---:|---:|
+| HEO | 0.545 | 0.527 | 18 mV |
+| BM-HEO | 0.589 | 0.618 | 29 mV |
+| Mg-HEO | 0.419 | 0.387 | 32 mV |
+| BM-Mg-HEO | 0.485 | 0.503 | 18 mV |
+
+Smoothing sensitivity over 20-60 mAh g-1 keeps the same peak locations within narrow ranges. This **supersedes the earlier direct digitization of plotted dQ/dV curves**.
+
+Interpretation lock:
+- call the Figure 4 feature **conversion-associated excess relaxation** or, when broader wording is useful, **conversion/transformation-associated excess relaxation**;
+- the voltage correspondence localizes the response to the conversion-electrochemistry window but does not identify one unique microscopic conversion step;
+- do not claim direct measurement of metal/Li2O phase fraction.
+
+Figure 5 lock after the reassignment:
+- no parameter refitting was required;
+- model relaxation-peak c-bar ordering is BM 0.5860 < HEO 0.6184 < BM-Mg 0.7966 < Mg 0.9100;
+- pulse-end mean-phi onset thresholds 0.02-0.10 give the same earlier-to-later ordering;
+- describe phi as an **effective conversion-associated structural-state variable**;
+- do not map model c-bar numerically to experimental Q/Qmax or voltage.
+
+Preferred Figure 4 main-text layout now centers the dQ/dV-GITT voltage correspondence and peak-width-area map. Raw state-resolved/background-subtraction details move to SI.
+
+Submission-source boundary: regenerate dQ/dV from the original Origin/source numerical profile if recovered before submission. The current vector reconstruction is the preferred manuscript-development source and the old power-interrupted profile must not be substituted.
+
+Detailed note: `FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md`.
