@@ -2,73 +2,101 @@
 
 ## Authority order
 
-1. Scientific/text authority: `manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md`
-2. SI authority: `manuscript/HEO_SUPPORTING_INFORMATION_V2_CONVERSION_ALIGNED_2026-09-20.md`
-3. Figure architecture authority: `manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md`
-4. Conversion-assignment data note: `FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md`
-5. Numerical peak table: `manuscript/HEO_FIGURE4_LATEST_PPT_DQDV_GITT_PEAK_CHECK_2026-09-20.csv`
+1. Scientific/text authority: \`manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md\`
+2. SI authority: \`manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md\`
+3. Figure architecture authority: \`manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md\`
+4. Conversion-assignment data note: \`FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md\`
+5. Numerical peak table: \`manuscript/HEO_FIGURE4_LATEST_PPT_DQDV_GITT_PEAK_CHECK_2026-09-20.csv\`
 
-The Word file and review PNGs listed below are exports/development artifacts. They do not override the Markdown scientific authority.
+The Word files and review PNGs are exports/development artifacts. They do not override the Markdown scientific authority.
 
-## Final review Word export
+## Main review Word export
 
-File name:
-`HEO_AFM_FinalDraft_ConversionCentered_2026-09-20.docx`
+File:
+\`HEO_AFM_FinalDraft_ConversionCentered_2026-09-20.docx\`
 
 Purpose:
-- sentence-by-sentence AFM manuscript review;
-- contains Figures 1–5 in review form;
-- 16-page rendered QA completed on 2026-09-20;
+- AFM-targeted sentence-by-sentence review;
+- Figures 1–5 in review form;
+- 16-page rendered QA completed;
 - line numbering enabled.
 
 SHA256:
-`a11c6af6386a944a446a8274725a33cb8ab38d636db8bcb371d3242d84a75f34`
+\`a11c6af6386a944a446a8274725a33cb8ab38d636db8bcb371d3242d84a75f34\`
 
 Important:
 - Figure 1 remains a collaborator-data placeholder/review summary.
-- Figure 4 panel (a) remains a deliberate placeholder until the final state-resolved raw relaxation panel is frozen.
-- Yellow-highlighted notes mark unresolved metadata/source items.
-- This binary export is not currently stored in the repository; regenerate from the authoritative Markdown and current figure assets if needed.
+- Figure 4 panel (a) remains a deliberate placeholder until the final state-resolved raw-relaxation panel is frozen.
+- Yellow notes mark unresolved metadata/source items.
+- The binary is not stored in GitHub; regenerate from the authoritative Markdown if unavailable in a future runtime.
+
+## Supporting Information review Word export
+
+File:
+\`HEO_Supporting_Information_V3_Final_2026-09-20.docx\`
+
+Purpose:
+- review-ready SI export aligned to SI v3;
+- 14-page rendered QA completed;
+- actual review Figures S17–S21 inserted;
+- S14–S16 explicitly marked as final-plot pending;
+- S6–S13 source/provenance pending;
+- S1–S5 collaborator-dependent;
+- unresolved/pending sources are visually marked rather than inferred.
+
+SHA256:
+\`a387a8d3c7f6a6a97971a1b0c2924186ba62936c717c18e1bbee9ce76befb75f\`
+
+The binary is not stored in GitHub. If unavailable later, regenerate from:
+\`manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md\`.
 
 ## Figure 4 review composite
 
-File name:
-`HEO_Figure4_conversion_centered_4panel_review.png`
+File:
+\`HEO_Figure4_conversion_centered_4panel_review.png\`
 
 Purpose:
 - development/review visualization of the compact four-panel Figure 4 architecture;
-- panel (a): explicit placeholder for final state-resolved relaxation curves;
-- panel (b): four-sample first-cycle dQ/dV versus GITT excess-peak comparison;
-- panel (c): dQ/dV versus GITT peak-voltage correspondence;
+- panel (a): placeholder for final state-resolved relaxation curves;
+- panel (b): first-cycle dQ/dV versus GITT excess comparison;
+- panel (c): peak-voltage correspondence;
 - panel (d): excess peak-amplitude / width / area map.
 
 SHA256:
-`0ee3d3c7ebadbe4fa9d87d160bc262c21da63aa643c06f75dd38840224be5d09`
+\`0ee3d3c7ebadbe4fa9d87d160bc262c21da63aa643c06f75dd38840224be5d09\`
 
-This is a review composite, not final publication artwork.
+Review composite only; not final publication artwork.
 
 ## Figure 5 review composite
 
-File name:
-`HEO_Figure5_conversion_centered_v6.png`
+File:
+\`HEO_Figure5_conversion_centered_v6.png\`
 
 Purpose:
-- conversion-centered review version of Figure 5;
-- panel (a): mechanism-sufficiency logic;
-- panel (b): 4 × 7 pulse-end radial effective conversion-state maps;
-- panel (c): pulse-end mean internal state versus model mean lithiation state.
+- conversion-centered Figure 5 review version;
+- mechanism-sufficiency logic;
+- 4 × 7 pulse-end radial effective conversion-state maps;
+- pulse-end mean internal state versus model mean lithiation state.
 
 SHA256:
-`f2ab2ad639c667c3e5756b6a2999e0a7dbcfa74c684eeb1b960ce892e9f561d1`
+\`f2ab2ad639c667c3e5756b6a2999e0a7dbcfa74c684eeb1b960ce892e9f561d1\`
 
-This review composite preserves the frozen-v4 model results. The model was not refitted after the conversion reassignment.
+The frozen-v4 model was not refitted after the conversion reassignment.
+
+## SI review figures generated in the 2026-09-20 finalization cycle
+
+- Figure S17: sample-wise background fit + excess curves
+- Figure S18: 105-case background/window sensitivity
+- Figure S19: dQ/dV smoothing robustness + GITT correspondence
+- Figure S20: model convergence/readout + no-refit conversion-ordering validation
+- Figure S21: 60 min model \(\Delta\bar\phi_{\mathrm{rest}}\)
+
+These were inserted into the final SI review Word. Their scientific definitions and numerical content are preserved in the authoritative SI v3 even if the binary image files are unavailable in a future runtime.
 
 ## Figure 4 numerical source
 
 Repository CSV:
-`manuscript/HEO_FIGURE4_LATEST_PPT_DQDV_GITT_PEAK_CHECK_2026-09-20.csv`
-
-Current values:
+\`manuscript/HEO_FIGURE4_LATEST_PPT_DQDV_GITT_PEAK_CHECK_2026-09-20.csv\`
 
 | Sample | dQ/dV peak (V) | GITT excess peak (V) |
 |---|---:|---:|
@@ -81,4 +109,6 @@ All peak pairs differ by no more than 32 mV.
 
 ## Source boundary
 
-The latest four-sample continuous first-cycle numerical GCD files are not currently available. The present dQ/dV values were reconstructed from the user's own vector voltage-profile artwork in the 2026-09-17 progress presentation. The older first-cycle dataset affected by a power interruption is excluded from the conversion assignment. If the original numerical continuous profiles are recovered, they should replace the reconstructed source before submission.
+The latest four-sample continuous numerical first-cycle GCD files are not currently available. The present dQ/dV values were reconstructed from the user's own vector voltage-profile artwork in the 2026-09-17 progress presentation. The older first-cycle dataset affected by a power interruption is excluded from the conversion assignment.
+
+If the original continuous numerical profiles are recovered before submission, use them to regenerate the final dQ/dV artwork while preserving the current claim boundary unless the result materially changes.
