@@ -53,14 +53,30 @@ Electrochemistry begins here. Keep the main figure compact and materials-centere
 - do not quantify/assign the exact conversion-peak displacement here; reserve that analysis for Figure 5.
 
 
-### Figure 4 — Polarization magnitude and relaxation time are independent
-GITT current-off analysis.
+### Figure 4 — GITT separates relaxation magnitude from relaxation time
+Keep the main figure focused on the materials response rather than the short-time fitting procedure.
 
-- representative 600 s pulse + 3600 s rest;
-- apparent fast current-off response;
-- Delta E_relax;
-- model-free t63;
-- key contradiction: Mg lowers polarization but does not shorten relaxation; BM increases capacity but lengthens relaxation.
+**Main panels**
+- (a) representative 600 s pulse + 3600 s rest, defining $\Delta E_{\mathrm{relax}}$ (3 s → 60 min) and $t_{63}$;
+- (b) state-resolved $\Delta E_{\mathrm{relax}}$ for all four materials;
+- (c) state-resolved $t_{63}$ for all four materials;
+- (d) median $\Delta E_{\mathrm{relax}}$ versus median $t_{63}$ over 200–800 mAh g⁻¹ as a compact four-material summary.
+
+**Supporting Information**
+- 3–30 s $E$ versus $\sqrt{t}$ fits and fit-quality statistics;
+- apparent fast current-off resistance versus reaction state;
+- sensitivity to the 3 s reference choice if needed;
+- full raw representative pulse/rest traces.
+
+**Core materials message**
+- ball milling increases accessible capacity but does not accelerate the post-pulse relaxation;
+- Mg incorporation strongly lowers the relaxation magnitude but also does not shorten the relaxation time;
+- relaxation magnitude and timescale are therefore distinct responses to the materials modifications;
+- do not claim diffusion is absent; state only that one changing diffusivity is insufficient to explain all observed trends.
+
+**Transition to Figure 5**
+Figure 4 establishes the magnitude–timescale decoupling. Figure 5 then localizes the additional state-dependent relaxation to the conversion region and compares it directly with the first-cycle dQ/dV response.
+
 
 ### Figure 5 — Conversion assignment and experimental conversion phenotype
 Experimental figure.
