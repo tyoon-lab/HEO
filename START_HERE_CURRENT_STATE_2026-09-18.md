@@ -61,7 +61,7 @@ The three experimentally distinct coordinates are accessibility, conversion exte
 
 Main manuscript (current authoritative draft): manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md
 
-Supporting Information (current authoritative draft): manuscript/HEO_SUPPORTING_INFORMATION_V2_CONVERSION_ALIGNED_2026-09-20.md
+Supporting Information (current authoritative draft): manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md
 
 Manuscript architecture/literature positioning note: manuscript/HEO_MANUSCRIPT_ARCHITECTURE_AND_LITERATURE_POSITIONING_V2_2026-09-20.md
 
@@ -385,7 +385,7 @@ Start here without asking for another handoff.
 Recommended order:
 1. Read the current authoritative main manuscript, aligned SI draft, and consolidation audit:
    - manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md
-   - manuscript/HEO_SUPPORTING_INFORMATION_V2_CONVERSION_ALIGNED_2026-09-20.md
+   - manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md
    - manuscript/HEO_CONSOLIDATION_AUDIT_2026-09-20.md
    Results follow Figures 1–5 directly: structure → accessibility/utilization → current-off decoupling → experimental conversion-associated response → modeled conversion-associated internal-state evolution.
 2. Use the current Figure 5 architecture: compact mechanism-sufficiency schematic + 4 × 7 pulse-end circular state array + pulse-end phi-bar versus model mean lithiation state. Keep Delta phi-bar_rest in SI.
