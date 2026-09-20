@@ -22,7 +22,7 @@ Characterization only.
 - SEM morphology;
 - particle/domain-size statistics where defensible;
 - BET surface area;
-- optional XPS only if the final dataset is reproducible and mechanistically defensible;
+- XPS is provisionally kept in the Supporting Information or held pending final collaborator review; only promote it to a separate main characterization figure if the final dataset is unusually strong and materially changes the materials argument;
 - keep electrochemically derived interface metrics out of the characterization figures.
 
 Narrative role:
