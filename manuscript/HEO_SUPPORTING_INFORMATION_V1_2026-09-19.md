@@ -1,9 +1,9 @@
 # Supporting Information
 
-## Contrasting Roles of Mg Incorporation and Ball Milling in Spinel High-Entropy Oxide Anodes: Phase Evolution, Polarization, and Electrochemical Utilization
+## Contrasting Roles of Mg Incorporation and Ball Milling in Spinel High-Entropy Oxide Anodes: Electrochemical Accessibility and Conversion Dynamics
 
-**Date:** 2026-09-19  
-**Status:** SI draft aligned to `HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md`  
+**Date:** 2026-09-20  
+**Status:** SI draft aligned to `HEO_MANUSCRIPT_V4_AFM_CONVERSION_CENTERED_2026-09-20.md`  
 **Purpose:** technical completeness, auditability, robustness tests, and claim-boundary support for the main manuscript.
 
 > Values below are included only where they are already verified from the project source files. Missing historical or collaborator-generated metadata are explicitly marked and are not inferred.
@@ -93,7 +93,26 @@ Instrument-reported first-cycle capacity pairs and initial Coulombic efficiencie
 
 **[[YOON LAB INPUT REQUIRED — exact C-rate sequence, cycles per rate, and 1 C capacity basis.]]**
 
-**Figure S11.** dQ/dV evolution if retained in the final SI.
+**Figure S11.** First-cycle cathodic dQ/dV / GITT-excess voltage cross-check and smoothing sensitivity. Optional later-cycle dQ/dV evolution can be retained as an additional panel if it remains mechanistically useful.
+
+### S2.4. First-cycle conversion-feature voltage cross-check
+
+A separate continuous first-cycle Excel export is not available for the most recent four-sample comparison. The older first-cycle dataset is not used because a power interruption caused an obvious profile artifact. For the present internal manuscript freeze, the latest first-cycle voltage-profile curves in the 2026-09-17 HEO progress deck were vector-reconstructed and differentiated using the same procedure for all four samples.
+
+The profile-derived cathodic dQ/dV maxima are:
+
+| Sample | Cathodic dQ/dV peak (V) | GITT excess peak (V) | Absolute difference (mV) |
+|---|---:|---:|---:|
+| HEO | 0.545 | 0.527 | 18 |
+| BM-HEO | 0.589 | 0.618 | 29 |
+| Mg-HEO | 0.419 | 0.387 | 32 |
+| BM-Mg-HEO | 0.485 | 0.503 | 18 |
+
+The mean absolute difference is approximately 24 mV and the maximum difference is approximately 32 mV. The dQ/dV peak positions are stable to the tested smoothing range: HEO 0.544-0.547 V, BM-HEO ~0.589 V, Mg-HEO 0.408-0.419 V, and BM-Mg-HEO 0.485-0.486 V.
+
+This comparison is used to localize the GITT excess to the same conversion-electrochemistry window as the first-cycle cathodic feature. It does not identify a unique microscopic conversion step.
+
+**Submission-source boundary:** before final submission, regenerate the dQ/dV panel from the original Origin/source voltage-profile data if that source file can be recovered. The vector reconstruction is sufficiently accurate for the present mechanistic cross-check but should not be treated as preferred long-term raw-data provenance.
 
 **Figure S12.** Cycling EIS series with state-matching/outlier note. The EIS data are supporting evidence only because several spectra are unstable or outlying and do not support one uniquely defensible equivalent-circuit parameter series.
 
@@ -173,7 +192,7 @@ Raw-reconstructed medians:
 
 ---
 
-# S4. Late-stage transition-associated excess analysis
+# S4. Late-stage conversion-associated excess analysis
 
 ## S4.1. State normalization and background definition
 
@@ -203,7 +222,7 @@ The background form is
 c+a\exp(-z/\tau).
 \]
 
-The late-stage transition-associated excess response is defined over \(0.40\le z\le0.90\) as
+The late-stage conversion-associated excess response is defined over \(0.40\le z\le0.90\) as
 
 \[
 \eta_{\mathrm{excess}}(z)
@@ -230,7 +249,7 @@ The capacity-weighted excess quantity is a comparative polarization descriptor, 
 
 **Table S5.** Peak/width/area values and sensitivity ranges after the final background audit.
 
-The GITT signal itself does not uniquely separate nucleation, phase-boundary motion, strain, or other microscopic contributions. The late-stage feature is assigned primarily to the spinel-to-rock-salt/conversion transformation from its voltage/state localization together with independent structural literature on the same five-cation HEO family.
+The GITT signal itself does not uniquely separate nucleation, phase-boundary motion, strain, cation/oxygen rearrangement, metallic-product formation, or other microscopic contributions. The late-stage feature is interpreted as conversion/transformation-associated because its peak voltage coincides with the first-cycle cathodic dQ/dV feature across all four samples and because independent studies of the same spinel-HEO family establish extensive structural reconstruction during low-voltage lithiation. The assignment is therefore to a conversion-electrochemistry window, not to one uniquely identified microscopic reaction step.
 
 ---
 
@@ -340,6 +359,8 @@ Nonconserved structural dynamics:
 
 The coherency term is a reduced energetic coordinate rather than a full mechanical-equilibrium elasticity solution.
 
+For the conversion-centered interpretation, phi is an **effective conversion-associated structural-state coordinate**. Values near phi = 0 represent an oxide-derived parent/intermediate-like state, whereas values near phi = 1 represent a more converted-like state. The model does not explicitly resolve the full conversion stoichiometry, Li2O formation, metallic nanoparticle nucleation, sequential reduction of individual transition metals, or oxygen redistribution.
+
 ## S6.2. Numerical protocol
 
 - Spherical finite-volume radial model.
@@ -424,13 +445,38 @@ Directional criteria:
 - BM-Mg peak > Mg but < HEO.
 - Mg transformed-state proxy < BM-Mg < HEO.
 
-## S7.3. Pulse-end structural maps and rest evolution
+## S7.3. No-refit cross-check after the conversion assignment
+
+The frozen v4 parameter set was recalculated after the experimental Figure 4 feature was reassigned from a generic late-stage transition response to a conversion-associated response. No parameter was refitted.
+
+The model state of maximum relaxation is:
+
+| Sample | Model c-bar at relaxation peak |
+|---|---:|
+| BM-HEO | 0.5860 |
+| HEO | 0.6184 |
+| BM-Mg-HEO | 0.7966 |
+| Mg-HEO | 0.9100 |
+
+Because model c-bar increases as lithiation proceeds while the experimental electrode potential decreases, the earlier-to-later model ordering BM-HEO -> HEO -> BM-Mg-HEO -> Mg-HEO is consistent with the higher-to-lower experimental conversion-feature voltage ordering.
+
+The same ordering is retained when conversion onset is defined by pulse-end mean phi thresholds:
+
+| Pulse-end mean-phi threshold | BM-HEO | HEO | BM-Mg-HEO | Mg-HEO |
+|---|---:|---:|---:|---:|
+| 0.02 | 0.545 | 0.606 | 0.735 | 0.834 |
+| 0.05 | 0.557 | 0.619 | 0.763 | 0.859 |
+| 0.10 | 0.570 | 0.620 | 0.779 | 0.889 |
+
+This is a directional consistency check only. Model c-bar is not numerically calibrated to experimental normalized capacity or voltage.
+
+## S7.4. Pulse-end structural maps and rest evolution
 
 Main Figure 5 shows the pulse-end radial structural order parameter over the late-stage model window. For ball-milled samples, the circular maps are ensemble-averaged radial states and are not simulated heterogeneous two-dimensional particles.
 
 **Figure S20.** Model-predicted \(\\Delta\bar\phi_{\mathrm{rest}}\) during the subsequent 60 min zero-flux interval. This quantity is an internal-state descriptor and is not numerically equated with the measured voltage relaxation \(\Delta E_{\mathrm{relax}}\).
 
-## S7.4. Identifiability and interpretation boundaries
+## S7.5. Identifiability and interpretation boundaries
 
 The model does not uniquely determine:
 
@@ -474,7 +520,7 @@ Accordingly, the present HEO analysis uses established intermittent-relaxation c
 - Figure S8: full first-/selected-cycle profiles.
 - Figure S9: no-FEC cycling control.
 - Figure S10: detailed rate capability.
-- Figure S11: dQ/dV, if retained.
+- Figure S11: first-cycle profile-derived dQ/dV / GITT-excess voltage cross-check and smoothing sensitivity.
 - Figure S12: cycling EIS and state/outlier note.
 - Figure S13: additional post-cycle SEM.
 - Figure S14: representative early current-off fits.
