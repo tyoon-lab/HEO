@@ -173,3 +173,42 @@ Thus all four conversion-associated GITT excess maxima fall within ~32 mV of the
 The voltage localization now strongly supports describing the Figure 4 feature as **conversion/transformation-associated excess relaxation**. The evidence is still phenomenological rather than a direct structural identification of one elementary conversion step, so the manuscript should not assign the peak uniquely to metal/Li2O nucleation or any single microscopic event.
 
 This latest-PPT validation supersedes the earlier plot-resolution dQ/dV peak estimates for manuscript positioning. The remaining required gate is the Figure 4 background/window sensitivity audit.
+
+
+## Latest first-cycle profile reconstruction — supersedes preliminary dQ/dV digitization
+
+The preliminary dQ/dV values above were obtained by digitizing the already-plotted differential-capacity traces. A stronger check was subsequently performed using the **latest first-cycle voltage profiles in the 2026-09-17 HEO progress presentation sent by Park Seong Hyeon**.
+
+The voltage profiles were stored as vector graphics and could therefore be reconstructed at high resolution. The reconstructed terminal first-cycle capacities are 901.14, 1055.84, 731.05, and 943.87 mAh g−1 for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO, respectively, agreeing with the plotted capacity values to within approximately 0.03%.
+
+A common Savitzky–Golay differentiation/smoothing procedure was then applied to all four reconstructed voltage profiles.
+
+| Sample | Profile-derived cathodic dQ/dV peak (V) | GITT excess peak (V) | Difference (V) |
+|---|---:|---:|---:|
+| HEO | 0.545 | 0.527 | -0.018 |
+| BM-HEO | 0.589 | 0.618 | +0.029 |
+| Mg-HEO | 0.419 | 0.387 | -0.032 |
+| BM-Mg-HEO | 0.485 | 0.503 | +0.018 |
+
+All four peak pairs are therefore localized within **32 mV** of each other.
+
+Smoothing sensitivity was small:
+- HEO: 0.544–0.547 V;
+- BM-HEO: ~0.589 V;
+- Mg-HEO: 0.408–0.419 V;
+- BM-Mg-HEO: 0.485–0.486 V.
+
+This result is now the preferred Figure 4 conversion-assignment evidence and **supersedes the earlier plot-digitized peak values**.
+
+### Data-source boundary
+
+The numerical continuous-GCD source files for these latest first-cycle profiles are not currently available. The present values are reconstructed from the user's own vector voltage-profile plots rather than from raster digitization. They are suitable for manuscript development and provide a strong independent cross-check, but the original numerical profiles should replace this source if they are recovered before submission.
+
+### Updated Figure 4 interpretation
+
+The main-text Figure 4 should now emphasize:
+1. sample-specific correspondence between first-cycle cathodic dQ/dV and GITT excess peak voltage;
+2. the one-to-one peak-voltage comparison across all four samples;
+3. the peak-amplitude/width/area map showing BM redistribution versus Mg suppression.
+
+The raw state-resolved and background-subtraction details can remain in the Supporting Information.
