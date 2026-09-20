@@ -64,9 +64,9 @@ Main manuscript (current authoritative draft): manuscript/HEO_MANUSCRIPT_V4_AFM_
 
 Supporting Information (current authoritative draft): manuscript/HEO_SUPPORTING_INFORMATION_V2_CONVERSION_ALIGNED_2026-09-20.md
 
-Manuscript architecture/literature positioning note: manuscript/HEO_MANUSCRIPT_ARCHITECTURE_AND_LITERATURE_POSITIONING_2026-09-19.md
+Manuscript architecture/literature positioning note: manuscript/HEO_MANUSCRIPT_ARCHITECTURE_AND_LITERATURE_POSITIONING_V2_2026-09-20.md
 
-Main–SI scientific audit: manuscript/HEO_MAIN_SI_SCIENTIFIC_AUDIT_2026-09-19.md
+Current consolidation/scientific audit: manuscript/HEO_CONSOLIDATION_AUDIT_2026-09-20.md
 
 Previous drafts retained for history:
 - manuscript/HEO_MANUSCRIPT_V2_FIGURE_ALIGNED_2026-09-19.md
