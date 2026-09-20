@@ -1,0 +1,5 @@
+Sample,dQdV_peak_V_latest_profile,GITT_excess_peak_V,difference_GITT_minus_dQdV_V,dQdV_peak_range_20_60mAh_smoothing_V,first_cycle_capacity_reconstructed_mAh_g
+HEO,0.544575,0.527,-0.017575,0.544-0.547,901.139552
+BM-HEO,0.589146,0.618,0.028854,0.589-0.589,1055.840412
+Mg-HEO,0.418819,0.387,-0.031819,0.408-0.419,731.054107
+BM-Mg-HEO,0.484822,0.503,0.018178,0.485-0.486,943.874605
