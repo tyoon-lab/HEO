@@ -72,3 +72,67 @@ This supports the materials-centered interpretation that ball milling redistribu
 2. Freeze the exact peak positions with the same smoothing/differentiation procedure for all four samples.
 3. Run the planned Figure 4 background/window sensitivity audit.
 4. If both checks remain robust, revise Main 3.4 from generic "late-stage transformation" toward "late-stage conversion/transformation" and consider adding a compact dQ/dV overlay or vertical conversion-band annotation to Figure 4/SI.
+
+
+## Figure 5 frozen-v4 cross-check against the conversion assignment
+
+The frozen spatial model was recalculated without refitting any parameter. For this cross-check, the model variable (phi) is interpreted conservatively as an **effective conversion-associated structural-state coordinate**, not as a measured rock-salt or metallic-phase fraction.
+
+### Frozen-v4 relaxation-peak state
+
+Using both the volume-averaged and surface chemical-potential readouts, the state of maximum 3 s-to-60 min relaxation is identical:
+
+| Sample | Model (ar c) at relaxation peak |
+|---|---:|
+| BM-HEO | 0.5860 |
+| HEO | 0.6184 |
+| BM-Mg-HEO | 0.7966 |
+| Mg-HEO | 0.9100 |
+
+Thus the model ordering from earlier to later conversion-associated response is:
+
+**BM-HEO → HEO → BM-Mg-HEO → Mg-HEO.**
+
+The experimental peak-voltage ordering is the same when higher cathodic voltage is interpreted as an earlier/easier conversion event:
+
+- GITT excess peak: **BM-HEO (0.618 V) > HEO (0.527 V) > BM-Mg-HEO (0.503 V) > Mg-HEO (0.387 V)**.
+- Digitized first-cycle dQ/dV peak: **BM-HEO (~0.539 V) ≈ HEO (~0.531 V) > BM-Mg-HEO (~0.425 V) > Mg-HEO (~0.365 V)**.
+
+The BM-HEO versus HEO dQ/dV difference is only ~8 mV and is within the approximate plot-digitization uncertainty, so those two should be treated as effectively similar until raw GCD data are reprocessed. The much larger Mg-related displacement is robust at the present level.
+
+### Conversion-onset robustness in the model
+
+A second check used the pulse-end ensemble-averaged (arphi) rather than the relaxation peak. Linear interpolation gives:
+
+| Pulse-end converted-state threshold | BM-HEO | HEO | BM-Mg-HEO | Mg-HEO |
+|---|---:|---:|---:|---:|
+| (arphi=0.02) | 0.545 | 0.606 | 0.735 | 0.834 |
+| (arphi=0.05) | 0.557 | 0.619 | 0.763 | 0.859 |
+| (arphi=0.10) | 0.570 | 0.620 | 0.779 | 0.889 |
+
+The same ordering is preserved over all three onset definitions:
+
+**BM-HEO → HEO → BM-Mg-HEO → Mg-HEO.**
+
+Therefore the agreement is not an artifact of selecting the single model relaxation maximum.
+
+### Interpretation
+
+This cross-check supports the revised model interpretation:
+
+- (phi) should be described as an **effective conversion-associated internal-state variable**.
+- (G_{m Mg}>0) represents stabilization of the unconverted oxide-derived parent/intermediate state, delaying conversion to higher lithiation state / lower experimental potential.
+- BM broadens and advances the distribution of local conversion conditions rather than simply accelerating one diffusion coefficient.
+- BM-Mg partially reopens the Mg-suppressed conversion pathway but does not restore the HEO/BM conversion behavior.
+
+### Important boundary: do not map model (ar c) directly onto experimental normalized capacity
+
+The model (ar c) is not calibrated to (Q/Q_{max}), and the four samples have substantially different accessible capacities. Therefore agreement is assessed by **direction/order and qualitative onset displacement**, not by equating a numerical model (ar c) with an experimental normalized-capacity value.
+
+This is especially important because cross-sample (Q/Q_{max}) peak positions do not provide the same ordering as the peak voltages. Peak voltage is the more appropriate current experimental comparator for the conversion-onset question.
+
+### Current conclusion
+
+Without any refitting after the conversion reassignment, the frozen spatial model remains internally consistent with the new experimental interpretation. It should be renamed/reworded as a **reduced spatial model of conversion-associated state evolution**, not as a literal complete conversion-reaction model.
+
+The remaining manuscript gate is the raw-GCD recalculation of first-cycle dQ/dV. If that confirms the current peak positions, Main Figure 4/5 wording can be revised together.
