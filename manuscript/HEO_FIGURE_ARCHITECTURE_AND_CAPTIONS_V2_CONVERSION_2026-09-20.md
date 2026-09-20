@@ -78,35 +78,40 @@ Keep the main figure focused on the materials response rather than the short-tim
 Figure 4 establishes the magnitude–timescale decoupling. Figure 5 then localizes the additional state-dependent relaxation to the conversion region and compares it directly with the first-cycle dQ/dV response.
 
 
-### Figure 5 — Conversion assignment and experimental conversion phenotype
-Experimental figure.
+### Figure 5 — Ball milling redistributes conversion whereas Mg incorporation suppresses it
+This is the main mechanistic experimental figure. The dQ/dV–GITT correspondence is used to establish assignment; the materials conclusion is the contrasting BM and Mg response.
 
+**Main panels**
 - (a) state-resolved 3 s-to-60 min relaxation response showing the late-stage excess feature;
-- (b) background-subtracted GITT excess relaxation on a voltage axis together with independently derived first-cycle cathodic dQ/dV;
-- (c) one-to-one comparison of dQ/dV peak voltage versus GITT excess peak voltage;
-- (d) peak-amplitude versus FWHM-like width map, marker area proportional to normalized excess.
+- (b) background-subtracted GITT excess relaxation on a voltage axis together with first-cycle cathodic dQ/dV for all four materials;
+- (c) dQ/dV peak voltage versus GITT excess-peak voltage, used only to validate localization to the conversion window;
+- (d) peak-amplitude versus FWHM-like width map, with marker area proportional to normalized excess area.
 
-Current peak-voltage comparison:
+**Core materials message**
+- HEO: relatively concentrated conversion-associated response;
+- BM-HEO: higher accessible capacity but lower/broader excess response → conversion redistributed over a broader range of local reaction states;
+- Mg-HEO: lower capacity, strongly suppressed excess, and lower-potential conversion response → accessible conversion is reduced/delayed, consistent with stabilization of oxide-derived parent/intermediate states;
+- BM-Mg-HEO: milling partially restores capacity and shifts/broadens the Mg-containing response but does not recover the concentrated Mg-free response;
+- do not use the small BM-Mg > Mg nominal amplitude difference as a required trend because it is baseline-sensitive.
 
-| Sample | dQ/dV peak (V) | GITT excess peak (V) |
-|---|---:|---:|
-| HEO | 0.545 | 0.527 |
-| BM-HEO | 0.589 | 0.618 |
-| Mg-HEO | 0.419 | 0.387 |
-| BM-Mg-HEO | 0.485 | 0.503 |
+**Interpretation boundaries**
+- use “conversion-associated” or “conversion/transformation-associated” response;
+- do not assign the feature to one unique microscopic event;
+- lower conversion potential indicates a larger electrochemical driving-force requirement, not a direct equilibrium thermodynamic measurement;
+- amplitude is a relaxation-response magnitude, not conversion fraction;
+- width is the breadth over reaction state, not a direct phase-distribution measurement;
+- normalized excess area is comparative and not dissipated energy.
 
-All pairs agree within 32 mV.
+**Supporting Information**
+- raw background fits and subtraction;
+- all 105 baseline/window sensitivity combinations;
+- smoothing sensitivity for dQ/dV;
+- individual material overlays if needed;
+- final numerical dQ/dV regeneration once the original first-cycle source is recovered.
 
-Interpretation:
-- use “conversion/transformation-associated excess relaxation”;
-- do not claim a unique microscopic conversion step;
-- BM: lower + broader response = redistributed accessible conversion;
-- Mg: much smaller response + lower-potential shift = suppressed/delayed deeper conversion;
-- BM-Mg: partial reopening;
-- raw background fits and sensitivity remain in SI.
+**Transition to Figure 6**
+Figure 5 establishes experimentally that milling and Mg alter conversion in different ways. Figure 6 tests whether those roles can reproduce the directional state-evolution trends in a reduced spatial model.
 
-Data-source boundary:
-current dQ/dV peaks were reconstructed from vector first-cycle voltage profiles in the 2026-09-17 progress presentation. Replace with original numerical profiles if recovered.
 
 ### Figure 6 — Reduced spatial model of conversion-associated state evolution
 Model begins only after the experimental assignment has been established in Figure 5.
