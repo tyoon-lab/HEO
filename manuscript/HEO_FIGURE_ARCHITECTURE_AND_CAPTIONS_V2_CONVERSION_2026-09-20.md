@@ -7,7 +7,7 @@
 ## Figure sequence
 
 ### Figure 1 — Crystal structure, composition, and nanoscale microstructure
-Characterization only.
+**Provisional collaborator figure.** Final panel composition and interpretation will be supplied/frozen with the Yoo-group characterization package.
 
 - final refined XRD / lattice parameters / phase assignment;
 - ICP-OES / nominal composition;
@@ -17,7 +17,7 @@ Characterization only.
 - remove the chemically impossible preliminary CoGa2O4 indexing.
 
 ### Figure 2 — Morphology and physical surface characteristics
-Characterization only.
+**Provisional collaborator figure.** Final panel composition and interpretation will be supplied/frozen with the Yoo-group characterization package.
 
 - SEM morphology;
 - particle/domain-size statistics where defensible;
