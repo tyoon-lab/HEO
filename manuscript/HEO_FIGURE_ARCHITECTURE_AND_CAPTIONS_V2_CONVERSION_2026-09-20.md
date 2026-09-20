@@ -35,9 +35,10 @@ Current-off analysis.
 This figure is experimental only.
 
 **Preferred current layout**
-- (a-d) each sample: normalized first-cycle cathodic dQ/dV response versus voltage with the corresponding GITT excess-relaxation peak voltage;
-- (e) one-to-one comparison of dQ/dV peak voltage versus GITT excess peak voltage;
-- (f) peak-amplitude versus FWHM-like width map, marker area proportional to normalized excess.
+- (a) state-resolved 3 s-to-60 min relaxation response showing the late-stage excess feature;
+- (b) background-subtracted GITT excess relaxation on a voltage axis together with the independently derived first-cycle cathodic dQ/dV response for all four samples;
+- (c) one-to-one comparison of dQ/dV peak voltage versus GITT excess peak voltage;
+- (d) peak-amplitude versus FWHM-like width map, marker area proportional to normalized excess.
 
 Current peak-voltage comparison:
 
