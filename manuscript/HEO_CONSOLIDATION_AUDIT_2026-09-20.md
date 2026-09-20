@@ -6,7 +6,7 @@ Checked the 2026-09-20 discussion against the HEO GitHub repository after the AF
 ## Items that were missing and are now updated
 1. AFM as current first target and the materials-centered positioning.
 2. New authoritative Main manuscript v4 with AFM section order and conversion-centered Figure 4/5 language.
-3. Conversion-aligned SI v2.
+3. Review-ready conversion-aligned SI v3 with explicit background/window robustness and no-refit model-ordering validation.
 4. Latest first-cycle voltage-profile reconstruction and common dQ/dV processing:
    - HEO 0.545 V;
    - BM-HEO 0.589 V;
@@ -25,7 +25,6 @@ Checked the 2026-09-20 discussion against the HEO GitHub repository after the AF
 
 ## Still open before submission
 - Recover original numerical continuous first-cycle GCD profiles if possible. Current dQ/dV peaks are reconstructed from the user's own vector voltage-profile plots.
-- Complete Figure 4 background/window sensitivity freeze.
 - Collaborator structural/compositional metadata: Mg recipe, ICP, refined XRD, HRTEM/SAED, final XPS decision.
 - Local electrochemical metadata: current collector, drying, loading/thickness, separator/electrolyte volume, glovebox, 1C/rate sequence, instrumentation, WonATech half-cycle convention.
 - Runtime verification of the MATLAB spatial port or removal of any claim that it was independently verified.
@@ -58,4 +57,20 @@ Current review figures:
 - `HEO_Figure5_conversion_centered_v6.png`
 
 These binary review artifacts are not repository files at present; their names, roles, and SHA256 hashes are preserved in the artifact manifest so they can be regenerated/verified without confusing them with the authoritative Markdown state.
+
+## SI Step 2 — completed 2026-09-20
+
+Authoritative SI is now:
+`manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md`
+
+Changes relative to SI v2:
+- repaired the finite-window relaxation equations/notation;
+- added a 105-case Figure 4 background/window sensitivity audit;
+- robust directions: BM peak < HEO, BM width > HEO, Mg peak < HEO, BM-Mg peak < HEO in 105/105 cases;
+- nominal BM-Mg peak > Mg is not fully robust (80/105) and is no longer a required mechanistic trend;
+- retained the latest dQ/dV/GITT peak-voltage cross-check with smoothing sensitivity;
+- removed the planned standalone conventional apparent-DGITT figure;
+- added the frozen-model no-refit conversion-ordering validation and phi-onset-threshold table;
+- renumbered the final SI figure plan to S1–S21 and tables to S1–S7;
+- kept collaborator-dependent structural/compositional items explicitly open rather than inferring missing values.
 
