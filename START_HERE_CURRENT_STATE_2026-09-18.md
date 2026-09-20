@@ -1,510 +1,455 @@
 # HEO — START HERE / Current Project State
 
-**Last consolidated:** 2026-09-20
-**Purpose:** This is the single entry point for continuing the HEO manuscript/project in a new chat without a separate handoff message.
-**Rule:** Read this file first. Then open the linked authoritative files only as needed.
+**Last consolidated:** 2026-09-20  
+**Purpose:** single entry point for resuming the HEO manuscript/project in a new chat without a separate handoff.  
+**Rule:** read this file first. The linked Main/SI Markdown files are the scientific authority. Historical files are preserved only for provenance.
 
 ---
 
-# 1. Current manuscript identity
+# 0. Restart protocol for a new chat
 
-## Working title
+A new chat should be able to resume from this repository alone.
+
+Read, in this order:
+
+1. **Main manuscript — authoritative**
+   - \`manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md\`
+2. **Supporting Information — authoritative**
+   - \`manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md\`
+3. **Figure architecture**
+   - \`manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md\`
+4. **Conversion-assignment / Figure 4 audit**
+   - \`FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md\`
+5. **Consolidation audit**
+   - \`manuscript/HEO_CONSOLIDATION_AUDIT_2026-09-20.md\`
+6. **Current exported-artifact manifest**
+   - \`manuscript/HEO_CURRENT_ARTIFACTS_2026-09-20.md\`
+
+Do not ask for a separate handoff unless new experimental files are required.
+
+Current status:
+- Main scientific draft: **complete review draft**
+- SI scientific draft: **complete review draft**
+- Main Word review export: completed and rendered
+- SI Word review export: completed and rendered
+- Figure 4 conversion reassignment: locked at current evidence level
+- Figure 4 background/window sensitivity audit: completed
+- Figure 5 no-refit conversion-ordering validation: completed
+- remaining work is primarily final experimental metadata, collaborator structural data, final publication artwork, and optional MATLAB runtime verification.
+
+---
+
+# 1. Manuscript identity
+
+## Current title
+
 **Mg Incorporation and Ball Milling Independently Regulate Electrochemical Accessibility and Conversion in Spinel High-Entropy Oxide Anodes**
-
-AFM target selected for the current drafting cycle. Keep the pitch materials-centered: two common HEO modifications alter lithium storage through different physical routes.
 
 ## Target journal
 
-**Advanced Functional Materials (AFM)** is the current first target. Position the paper as a functional-materials/mechanism study: composition/process → accessibility and conversion → electrochemical function. Do not pitch a new GITT analysis method.
+**Advanced Functional Materials (AFM)** is the current first target.
 
-## Manuscript type
-Synthesis/material-centered paper with electrochemical diagnostics used to resolve the distinct roles of Mg incorporation and ball milling.
+Keep the paper materials-centered:
 
-## Manuscript identity boundary
+**synthesis/composition perturbation → accessibility and conversion dynamics → electrochemical function**
 
-**This is an HEO materials/mechanism paper, not a GITT-method paper.**
+This is **not** a GITT-method paper. GITT/current-off analysis is supporting diagnostics used to distinguish material-level mechanisms.
 
-The GITT/current-off/relaxation literature is cited only to establish that:
-- transient components and relaxation times can legitimately be analyzed separately;
-- phase-transforming GITT can contain interface/structural kinetic information;
-- phase-field descriptions are established tools for phase-evolving electrochemical systems.
+## Central material message
 
-Do not make method novelty the central contribution. Do not organize the Introduction around GITT history. The manuscript contribution is the **contrasting effect of ball milling and Mg incorporation on accessibility, conversion extent/distribution, and relaxation in the same HEO system**.
+The 2 × 2 matrix is:
 
-## Central mechanistic message
+- HEO
+- BM-HEO
+- Mg-HEO
+- BM-Mg-HEO
 
-The 2 × 2 matrix is HEO / BM-HEO / Mg-HEO / BM-Mg-HEO.
+The experimentally distinct coordinates are:
+
+1. **electrochemical accessibility**
+2. **conversion extent/distribution**
+3. **relaxation time**
 
 ### Ball milling
-Ball milling primarily changes electrochemical accessibility and the distribution of the conversion-associated reaction.
 
-Working interpretation:
-BM -> larger accessible interface / shorter effective domain or transport length -> more heterogeneous local conversion conditions and structural mobilities -> conversion-associated peak decreases and broadens -> accessible capacity increases -> long-rest ensemble relaxation can become slower.
+Ball milling primarily:
+- increases physical/electrochemical accessibility;
+- increases capacity/utilization;
+- redistributes conversion over heterogeneous local conditions;
+- lowers the concentrated conversion-associated excess peak;
+- broadens the conversion-associated response;
+- does **not** make long-rest relaxation uniformly faster.
 
-Do not reduce the BM story to faster diffusion.
+Do not reduce the BM story to “faster diffusion.”
 
 ### Mg incorporation
-Mg primarily changes conversion extent / structural stability.
 
-Working interpretation:
-Mg -> stabilization of the oxide-derived parent/intermediate state + lower mobility of the residual structural rearrangement -> conversion shifts to lower potential + accessible conversion fraction decreases -> conversion-associated excess polarization strongly decreases -> relaxation does not become faster and can become slower.
+Mg primarily:
+- stabilizes the oxide-derived parent/intermediate state;
+- shifts the conversion-associated feature to lower potential;
+- suppresses accessible conversion and capacity;
+- strongly suppresses conversion-associated excess polarization;
+- does not shorten relaxation and can leave residual structural relaxation slower.
 
-Concise contrast:
-- BM: accessibility/distribution increases; conversion broadens; utilization increases.
-- Mg: conversion shifts to lower potential and its extent decreases; stabilization increases; excess polarization decreases without faster relaxation.
+Do not describe Mg as a simple diffusion accelerator.
 
-The three experimentally distinct coordinates are accessibility, conversion extent/distribution, and relaxation time.
+### BM-Mg
 
----
-
-# 2. Current authoritative manuscript and reference files
-
-Main manuscript (current authoritative draft): manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md
-
-Supporting Information (current authoritative draft): manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md
-
-Manuscript architecture/literature positioning note: manuscript/HEO_MANUSCRIPT_ARCHITECTURE_AND_LITERATURE_POSITIONING_V2_2026-09-20.md
-
-Current consolidation/scientific audit: manuscript/HEO_CONSOLIDATION_AUDIT_2026-09-20.md
-
-Current review-artifact manifest: manuscript/HEO_CURRENT_ARTIFACTS_2026-09-20.md
-
-Previous drafts retained for history:
-- manuscript/HEO_MANUSCRIPT_V2_FIGURE_ALIGNED_2026-09-19.md
-- manuscript/HEO_MANUSCRIPT_V1_INTEGRATED_2026-09-18.md
-
-The earlier excess-area unit mistake has already been corrected in this integrated file. The capacity-weighted excess-polarization quantity is reported as mV·mAh g−1, not mWh g−1. It is explicitly treated as a comparative metric, not an energy quantity.
-
-Mechanistic logic note: manuscript/HEO_DIFFUSION_VS_PHASE_TRANSITION_LOGIC_AND_SIMULATION_2026-09-18.md
-
-Verified reference master: manuscript/HEO_REFERENCE_MASTER_VERIFIED_2026-09-18.md
-
-Figure architecture: manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md
-
-The visual-simulation direction described later in this START HERE file is newer than the original four-figure architecture and should be treated as a current extension/override.
-
-Raw-derived electrochemical reanalysis:
-- manuscript/FIGURE3_RAW_REANALYSIS_NOTE_2026-09-18.md
-- manuscript/FIGURE4_RAW_REANALYSIS_NOTE_2026-09-18.md
+BM-Mg remains strongly suppressed relative to HEO. Milling shifts the Mg-containing conversion feature back toward higher potential and increases accessibility/capacity. Its nominal excess amplitude is slightly larger than Mg-HEO, but **BM-Mg > Mg peak amplitude is background-sensitive and is not a required mechanistic trend**.
 
 ---
 
-# 3. Key experimental / raw-derived numbers
+# 2. Current authoritative files
+
+## Main
+
+\`manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md\`
+
+## Supporting Information
+
+\`manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md\`
+
+## Figure architecture
+
+\`manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md\`
+
+## Conversion-assignment audit
+
+\`FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md\`
+
+## Numerical Figure 4 peak table
+
+\`manuscript/HEO_FIGURE4_LATEST_PPT_DQDV_GITT_PEAK_CHECK_2026-09-20.csv\`
+
+## Model authority
+
+Read:
+- \`modeling/HEO_FINAL_PYTHON_PHYSICS_GATE_2026-09-18.md\`
+- \`modeling/HEO_MODELING_DEVELOPMENT_LOG_2026-09-18.md\`
+- \`modeling/heo_spatial_phase_field_frozen_v4.py\`
+
+MATLAB translation:
+- \`modeling/HEO_Spatial_PhaseField_Model_Final.m\`
+
+The Python frozen-v4 model is the verified scientific reference. The MATLAB translation has not yet been independently runtime-verified.
+
+## Reference authority
+
+\`manuscript/HEO_REFERENCE_MASTER_VERIFIED_2026-09-18.md\`
+
+Historical drafts are not authoritative.
+
+---
+
+# 3. Key experimental numbers
 
 ## GITT protocol
-- current: 100 mA g−1
-- voltage window: 0.005–2.5 V
-- pulse: 10 min = 600 s
-- rest: 60 min = 3600 s
-- common current-off reference: 3 s
-- early current-off fit: 3–30 s, E = a + b sqrt(t)
-- t50/t63/t90 are finite-window model-free descriptors.
 
-## Current-off summary, approximately 200–800 mAh g−1
+- first-lithiation GITT
+- current: 100 mA g⁻¹
+- voltage window: 0.005–2.5 V
+- pulse: 600 s = 10 min
+- rest: 3600 s = 60 min
+- common current-off reference: 3 s
+- early fit: 3–30 s, \(E=a+b\sqrt t\)
+
+**Do not revert to 60 s rest. The correct rest is 60 min.**
+
+## Current-off medians, approximately 200–800 mAh g⁻¹
 
 | Sample | apparent current-off R (Ω) | ΔErelax (mV) | t63 (min) |
 |---|---:|---:|---:|
-| HEO | ~106 | 160.9 | 8.68 |
-| BM-HEO | ~106 | 176.3 | 11.57 |
+| HEO | 106.4 | 160.9 | 8.68 |
+| BM-HEO | 106.5 | 176.3 | 11.57 |
 | Mg-HEO | 40.2 | 109.5 | 11.01 |
 | BM-Mg-HEO | 33.0 | 144.3 | 12.99 |
 
-Interpretation:
-- Mg strongly decreases polarization amplitude but does not shorten relaxation.
-- BM has almost unchanged intermediate-capacity fast current-off resistance relative to HEO but a longer long-rest relaxation.
+Key contradiction:
+- Mg strongly lowers polarization amplitude but does not shorten relaxation.
+- BM increases utilization while long-rest relaxation becomes slower.
 
-## Late-stage excess transition feature
+Therefore one varying apparent diffusion coefficient cannot explain all trends.
 
-| Sample | peak excess polarization | FWHM-like width | normalized excess area |
-|---|---:|---:|---:|
-| HEO | 70.8 mV | 354 mAh g−1 | 22.1 mV |
-| BM-HEO | 44.1 mV | 430 mAh g−1 | 14.1 mV |
-| Mg-HEO | 15.9 mV | 250 mAh g−1 | 4.94 mV |
-| BM-Mg-HEO | 21.1 mV | 392 mAh g−1 | 7.58 mV |
+## BET
 
-Absolute capacity-weighted excess metric:
-- HEO ~2.39 × 10^4 mV·mAh g−1
-- BM-HEO ~1.79 × 10^4
-- Mg-HEO ~3.96 × 10^3
-- BM-Mg-HEO ~7.08 × 10^3
+- HEO: 3.94 m² g⁻¹
+- BM-HEO: 18.159
+- Mg-HEO: 6.49
+- BM-Mg-HEO: 16.64
 
-This is not dissipated energy.
+## Relative interfacial-capacitance metric
 
----
-
-# 4. Key diagnostic logic: why the late-stage feature is not explained by one D
-
-If a single diffusion coefficient were the dominant changing variable under otherwise comparable pulse conditions, a lower D would be expected to produce larger diffusion-associated concentration polarization and slower relaxation, with tau_D scaling approximately as L^2/D.
-
-Experimentally, Mg does the opposite: polarization amplitude strongly decreases, the late-stage excess peak strongly decreases, and t63/t90 do not decrease.
-
-Therefore do not claim diffusion is absent. Claim instead that a simple single-diffusivity explanation cannot account for the synthesis dependence of the late-stage response.
-
-The stronger current assignment is a conversion/transformation-associated contribution because the GITT excess peak coincides with the first-cycle cathodic dQ/dV feature within 32 mV across all four samples. Related five-cation spinel HEO literature also reports reconstructive low-voltage conversion chemistry and spinel -> mixed spinel/rock-salt -> rock-salt evolution. This supports conversion-associated interpretation without assigning the signal to one unique microscopic conversion step.
-
----
-
-# 5. Current Mg mechanism
-
-A pure Mg-slows-phase-boundary-mobility explanation is insufficient.
-
-Current minimum interpretation uses two coordinates:
-1. thermodynamic / structural stabilization of the oxide-derived parent/intermediate state: accessible conversion fraction decreases, conversion capacity decreases, and the conversion-associated excess peak decreases/shifts to lower potential;
-2. slower residual structural mobility: remaining conversion-associated structural rearrangement relaxes more slowly, so t63 does not shorten.
-
-Thus: Mg -> stabilization increases + residual structural mobility decreases -> conversion extent decreases + conversion feature shifts lower in potential + excess peak decreases + capacity decreases + relaxation remains slow.
-
----
-
-# 6. Current BM mechanism
-
-The initial intuition that nanosizing must increase phase-transition overpotential was rejected as a general rule.
-
-Current evidence in the present sample is BET increase, XRD broadening, similar BSE aggregate scale, and increased capacity/accessibility. Do not claim 15 nm nanoparticles.
-
-Simulation development showed:
-- shorter effective scale / easier local transformation alone can lower the peak;
-- experimental-like peak decrease + broadening requires heterogeneous local transition conditions;
-- robust peak decrease + width increase + slower ensemble t63 requires heterogeneity in both transition conditions and structural mobility.
-
-Current qualitative BM model:
-BM -> shorter effective scale / more interface + heterogeneous local surface/defect/strain conditions + heterogeneous structural mobilities -> lower concentrated peak + broader state interval + higher accessible transformation fraction/capacity + slower ensemble long-rest relaxation.
-
----
-
-# 7. Modeling status and authority order
-
-Authoritative current model: Python spatial phase-field physics frozen for directional mechanism testing, not parameter identification.
-
-Read:
-- modeling/HEO_FINAL_PYTHON_PHYSICS_GATE_2026-09-18.md
-- modeling/HEO_MODELING_DEVELOPMENT_LOG_2026-09-18.md
-- modeling/heo_spatial_phase_field_frozen_v4.py
-
-MATLAB spatial translation: modeling/HEO_Spatial_PhaseField_Model_Final.m
-
-Current environment did not runtime-verify MATLAB/Octave. First local MATLAB run must pass directional unit tests.
-
-Legacy/provisional phenomenological model: modeling/HEO_PhaseTransition_Model_Final.m
-
-All present parameters are effective, non-unique, hypothesis-level descriptors. Excellent fit does not imply unique physics.
-
----
-
-# 8. Parameter table placement decision
-
-Parameter tables are not the main originality.
-
-Reason: observe GITT shape -> hypothesize mechanism -> choose model -> fit/extract values can become circular if the extracted values are presented as the main evidence.
-
-Decision:
-- detailed parameter table -> Supporting Information
-- compact effective-parameter summary -> optional, likely SI
-- visual simulation -> main-text candidate
-
-Current effective descriptors: D_eff/R^2, M_phi, stabilization energy G_Mg/DeltaG_stab, heterogeneity width.
-
----
-
-# 9. Visual simulation — current main-text direction
-
-This is the newest manuscript-development direction and should be prioritized.
-
-## Meaning of phi
-phi is the effective conversion-associated structural-state coordinate.
-- phi ~ 0: oxide-derived parent/intermediate-like state
-- larger phi: progression toward a more deeply converted-like state
-- intermediate phi: local/coarse-grained partial conversion-associated structural evolution
-
-Crucial boundary: phi is a modeled internal-state variable, not a directly measured rock-salt, metallic-product, or Li2O phase fraction.
-
-The current phi represents only the late-stage conversion-associated structural evolution. It is not a stoichiometrically complete model of the full conversion reaction or of every earlier structural change during lithiation.
-
-## Preferred visualization format
-Current preferred main-text visualization: circular particle snapshots.
-
-Rows:
-1. HEO
-2. BM-HEO
-3. Mg-HEO
-4. BM-Mg-HEO
-
-Recommended displayed frozen-v4 model states:
-- 0.55
-- 0.62
-- 0.68
-- 0.75
-- 0.80
-- 0.86
-- 0.91
-
-The 0.55 column is retained so all four materials begin from a comparable low-transformation state. The final displayed states are aligned to the frozen-v4 GITT state grid rather than the earlier prototype table.
-
-This should be presented explicitly as a late-stage transition window, not as full 0→1 lithiation history.
-
-## Current matched-state behavior from the visual prototype
-
-Final Figure-5 construction now uses pulse-end radial phi(r), sampled at the end of each 600 s pulse immediately before current interruption. Approximate pulse-end phi-bar values over the displayed states are:
-- HEO: 0.00, 0.04, 0.63, 0.79, 0.94, ~1, ~1;
-- BM-HEO: 0.04, 0.48, 0.64, 0.80, 0.94, ~1, ~1;
-- Mg-HEO: 0, 0, 0, 0, ~0, 0.05, 0.15;
-- BM-Mg-HEO: 0, 0, 0.002, 0.03, 0.21, 0.63, 0.78.
-
-Main Figure 5c should show pulse-end mean structural state phi-bar versus model mean lithiation state c-bar. The additional Delta phi-bar_rest during the subsequent 60 min rest is retained in SI as a model-side dynamics check, not as a numerical substitute for Delta E_relax.
-
-Safe wording:
-The circular snapshots visualize the modeled late-stage transition-associated state variable phi within a spherical particle across a common reaction-progress window. The visualization is intended as a mechanistic representation of the GITT-derived interpretation and should not be interpreted as a directly measured phase fraction or as a complete reconstruction of all structural transitions throughout lithiation.
-
-Dedicated note: manuscript/HEO_VISUAL_SIMULATION_MAIN_FIGURE_DIRECTION_2026-09-18.md
-
----
-
-# 10. Current figure strategy
-
-Original structure:
-- Figure 1: structural/microstructural perturbations
-- Figure 2: accessibility/utilization
-- Figure 3: current-off polarization vs relaxation
-- Figure 4: experimental late-stage transition polarization / peak-width-area map
-
-New development: visual simulation should be in the main text.
-
-Current preferred numbering is to retain Figure 4 as the experimental transition-polarization figure and add Figure 5 as an independent model-visualization figure. Figure 4 is intentionally experimental-only (raw late-stage relaxation -> background-subtracted excess -> peak/width/area summary map); the mechanistic/model schematic begins in Figure 5a. This keeps model interpretation visually separate from the experimental evidence.
-
-Do not bury the visual simulation entirely in SI if it becomes the primary methodological originality. Parameter tables and most sensitivity details should remain SI.
-
----
-
-# 11. Current experimental-performance numbers
-
-BET:
-- HEO 3.94 m² g−1
-- BM-HEO 18.159
-- Mg-HEO 6.49
-- BM-Mg-HEO 16.64
-
-Nominal Cdl/Cs=40 µF cm−2 apparent interface metric:
+Nominal Cdl/Cs with 40 µF cm⁻²:
 - HEO 4.18 cm²
 - BM-HEO 30.17
 - Mg-HEO 6.56
 - BM-Mg-HEO 39.68
 
-Do not treat this as absolute ECSA in the main text.
+Comparative only. Do not call this absolute ECSA.
 
-Latest first-cycle values:
-- HEO: 901.25 / 609.12 mAh g−1; ICE 67.59%
+## First-cycle instrument-reported capacity pairs
+
+- HEO: 901.25 / 609.12 mAh g⁻¹; ICE 67.59%
 - BM-HEO: 1056.10 / 782.08; ICE 74.05%
 - Mg-HEO: 731.15 / 458.91; ICE 62.77%
 - BM-Mg-HEO: 944.07 / 580.83; ICE 61.52%
 
-WonATech charge/discharge labels must still be verified before assigning lithiation/delithiation wording.
-
-Cycling/rate message:
-- with 10 wt% FEC, BM-HEO maintains higher absolute capacity than HEO;
-- BM-HEO also has higher rate capacity despite longer t63;
-- therefore practical rate utilization and long-rest relaxation are distinct observables;
-- no-FEC BM shows stronger degradation, consistent with increased interphase burden from larger accessible interface.
+WonATech half-cycle convention still requires final verification before assigning lithiation/delithiation wording.
 
 ---
 
-# 12. Structural / methods items still unresolved
+# 4. Figure 4 — conversion assignment is current interpretation
 
-Collaborator-dependent:
-- exact Mg synthesis recipe
-- final nominal and ICP composition
-- final XRD refinement / lattice parameters
-- HRTEM/SAED re-indexing
-- final XPS decision, especially anomalous Cr6+ feature
+## Nominal excess metrics
 
-Important: preliminary CoGa2O4 HRTEM label is chemically impossible for the Ga-free synthesis and must not appear.
+| Sample | peak excess (mV) | FWHM-like width (mAh g⁻¹) | normalized excess area (mV) |
+|---|---:|---:|---:|
+| HEO | 70.77 | 354.13 | 22.07 |
+| BM-HEO | 44.07 | 430.17 | 14.13 |
+| Mg-HEO | 15.91 | 250.29 | 4.94 |
+| BM-Mg-HEO | 21.10 | 391.78 | 7.58 |
 
-Electrochemistry metadata still to confirm:
-- current collector
-- vacuum drying conditions
-- active loading
-- final electrode thickness
-- separator model
-- electrolyte volume
-- glovebox specifications
-- exact 1C definition and rate sequence
-- potentiostat/model details
-- WonATech half-cycle label convention
+Capacity-weighted excess is a comparative polarization metric, **not energy**.
 
----
+## Latest first-cycle dQ/dV cross-check
 
-# 13. Literature anchors added for the current mechanism
+The latest continuous numerical first-cycle export is not available. The older first-cycle dataset is excluded because a power interruption produced an obvious profile artifact.
 
-Material/phase-transition anchors:
-- Cogswell & Bazant, ACS Nano 2012, DOI 10.1021/nn204177u
-- Cogswell & Bazant, Nano Letters 2013, DOI 10.1021/nl400497t
-- Li et al., Angew. Chem. Int. Ed. 2025, DOI 10.1002/anie.202518569
-- Komayko et al., J. Power Sources 2024, DOI 10.1016/j.jpowsour.2024.235589
-- Jin et al., Materials Today Chemistry 2025, DOI 10.1016/j.mtchem.2025.102949
+Current preferred source:
+Park Seong Hyeon, \`HEO 진행상황 (20260917).pptx\`, slide 10, vector Origin artwork.
 
-GITT/relaxation/phase-field precedents added 2026-09-19:
-- Zhu & Wang, J. Phys. Chem. C 2010, DOI 10.1021/jp9113333 — phase-transformation GITT; diffusivity + interface mobility.
-- Chen et al., Electrochim. Acta 2017, DOI 10.1016/j.electacta.2017.04.137 — GITT phase-transformation kinetics.
-- Heubner et al., J. Electroanal. Chem. 2016, DOI 10.1016/j.jelechem.2016.02.013 — StairCase-GITT kinetic separation.
-- Horner et al., ACS Appl. Energy Mater. 2021, DOI 10.1021/acsaem.1c02218 — full pulse/rest direct model fitting.
-- Fath et al., J. Power Sources 2024, DOI 10.1016/j.jpowsour.2024.234100 — particle-distribution effects on rest-phase relaxation.
-- Skurtveit et al., ACS Mater. Lett. 2025, DOI 10.1021/acsmaterialslett.4c02058 — direct structural relaxation after interruption.
-- Han et al., Electrochim. Acta 2004, DOI 10.1016/j.electacta.2004.05.024 — phase-field impact on GITT/PITT interpretation.
-- Singh et al., Electrochim. Acta 2008, DOI 10.1016/j.electacta.2008.03.083 — phase-transformation dynamics.
-- Jorkesh et al., J. Power Sources 2026, DOI 10.1016/j.jpowsour.2026.240338 — fast/slow time-domain voltage relaxation.
+Reconstructed cathodic dQ/dV peaks:
 
-Methodological boundary: do not claim first phase-transition parameter extraction from GITT. References on GITT decomposition, phase-transition kinetics, and phase-field modeling are supporting precedents only. The manuscript must remain centered on the HEO 2 × 2 synthesis comparison and its mechanistic interpretation.
-
-Use the reference master for exact claim boundaries.
-
----
-
-# 14. Revision history / decisions that must not be reversed accidentally
-
-1. Correct GITT rest is 60 min, not 60 s.
-2. Old interpretation 'slower relaxation means worse rate' was rejected; BM has better rate utilization despite longer t63.
-3. Apparent current-off resistance is a descriptor, not uniquely ohmic resistance.
-4. Do not center the paper on a conventional apparent GITT diffusivity.
-5. Do not treat phi as direct measured phase fraction.
-6. Do not interpret excess-polarization area as energy.
-7. Do not claim Mg is simply a diffusion accelerator.
-8. Do not claim BM simply makes transport faster.
-9. Mg stabilization-only and mobility-only are each incomplete; current minimum mechanism uses both.
-10. BM transition-condition heterogeneity alone was insufficient to robustly reproduce slower t63; structural-mobility heterogeneity was also required.
-11. Spatial model is a mechanism-sufficiency model; parameters are non-unique.
-12. Main-text value of modeling is GITT -> visual internal-state simulation; parameter details belong mainly in SI.
-13. Current visual-simulation window begins around model state 0.55 to avoid implying that the single-phi model captures all earlier structural transitions.
-14. Preferred visual layout is 4 sample rows × 7 common-state circular-particle snapshots.
-15. Main Figure 5c uses pulse-end mean structural state phi-bar versus c-bar; the 60 min Delta phi-bar_rest curve is supporting information rather than the primary main-text model panel.
-
----
-
-# 15. Immediate next actions in a new chat
-
-Start here without asking for another handoff.
-
-Recommended order:
-1. Read the current authoritative main manuscript, aligned SI draft, and consolidation audit:
-   - manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md
-   - manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md
-   - manuscript/HEO_CONSOLIDATION_AUDIT_2026-09-20.md
-   Results follow Figures 1–5 directly: structure → accessibility/utilization → current-off decoupling → experimental conversion-associated response → modeled conversion-associated internal-state evolution.
-2. Use the current Figure 5 architecture: compact mechanism-sufficiency schematic + 4 × 7 pulse-end circular state array + pulse-end phi-bar versus model mean lithiation state. Keep Delta phi-bar_rest in SI.
-3. Retain the column coordinate as model mean lithiation state c-bar; do not relabel it directly as experimental normalized capacity without a validated mapping.
-4. For BM-containing samples, depict ensemble-averaged radial phi states or representative quantiles; do not imply a directly simulated heterogeneous 2D single particle.
-5. Complete missing collaborator/student methods and structural metadata in V2; do not reopen the Figure 1–5 story unless new data require it.
-6. Keep compact/detailed model parameter tables in SI.
-7. If stronger model validation is desired, fit/compare representative experimental GITT voltage transients; do not automatically fit all phase-field parameters because identifiability remains a concern.
-8. Later run the spatial MATLAB port locally and check directional unit tests.
-9. Continue collaborator-dependent structural/method cleanup.
-
-If raw GITT files are needed for new numerical reanalysis and are not available in the active chat/runtime, request re-upload. Current GitHub notes preserve the key raw-derived numerical outputs and logic.
-
----
-
-# 16. Future research extension: sulfide systems
-
-A future collaborative extension is planned from high-entropy oxide / oxide conversion systems to sulfide-based materials.
-
-See: FUTURE_DIRECTION_SULFIDE_EXTENSION_2026-09-18.md
-
-This should remain a future/collaboration direction and should not be mixed into the present oxide manuscript unless new sulfide data are generated.
-
-## 2026-09-20 conversion assignment / Figure 4–5 cross-check
-
-The earlier direct digitization of already-plotted dQ/dV curves was superseded by reconstruction of the latest vector first-cycle voltage profiles from the 2026-09-17 progress presentation.
-
-Current authoritative peak values are given in the next subsection and in `FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md`.
-
-Frozen-v4 model was rerun without refitting:
-- model relaxation peak cbar: BM 0.5860 < HEO 0.6184 < BM-Mg 0.7966 < Mg 0.9100;
-- pulse-end phibar onset gives the same ordering over thresholds 0.02–0.10.
-
-Current interpretation:
-- Figure 4 feature is **conversion/transformation-associated**;
-- Figure 5 is a **reduced spatial model of conversion-associated state evolution**;
-- phi is an effective conversion-associated internal-state coordinate, not a measured phase fraction;
-- do not map model cbar directly to experimental Q/Qmax or voltage.
-
-
-# 2026-09-20 Figure 4 conversion assignment — latest profile reconstruction
-
-The latest first-cycle voltage profiles in the 2026-09-17 progress presentation were reconstructed from vector graphics and differentiated with a common smoothing procedure.
-
-| Sample | first-cycle cathodic dQ/dV peak | GITT excess peak |
-|---|---:|---:|
-| HEO | 0.545 V | 0.527 V |
-| BM-HEO | 0.589 V | 0.618 V |
-| Mg-HEO | 0.419 V | 0.387 V |
-| BM-Mg-HEO | 0.485 V | 0.503 V |
-
-All four peak pairs agree within 32 mV. This supersedes the earlier preliminary digitization of already-plotted dQ/dV curves.
-
-Current interpretation:
-- the Figure 4 excess response is **conversion/transformation-associated**;
-- it should not be assigned solely to spinel→rock-salt;
-- same-family literature shows low-voltage conversion chemistry, including Mn nanocrystal formation around 0.5 V and deeper metallic conversion;
-- BM redistributes accessible conversion over a broader state interval;
-- Mg suppresses and shifts deeper conversion to lower potential;
-- BM-Mg partially reopens the Mg-suppressed pathway.
-
-Data-source boundary:
-the latest numerical continuous-GCD source files are not currently available. Present dQ/dV values are reconstructed from the user's own vector voltage-profile plots. Replace with original numerical profiles if recovered before submission.
-
-Detailed note: FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md
-Archived peak table: manuscript/HEO_FIGURE4_LATEST_PPT_DQDV_GITT_PEAK_CHECK_2026-09-20.csv
-
-# 2026-09-20 Figure 5 interpretation update
-
-The frozen v4 model remains compatible with the conversion assignment without refitting.
-
-Model relaxation-peak state:
-BM 0.5860 < HEO 0.6184 < BM-Mg 0.7966 < Mg 0.9100.
-
-Use:
-- phi = effective conversion-associated structural-state coordinate;
-- G_Mg = stabilization of the unconverted oxide-derived parent/intermediate state;
-- M_phi = effective mobility of conversion-associated structural rearrangement;
-- BM ensemble = distribution of local conversion conditions and structural mobilities.
-
-Do not claim the reduced model explicitly resolves Li2O formation, metal-nanoparticle nucleation, sequential cation reduction, or oxygen migration.
-
-## 2026-09-20 latest first-cycle conversion validation — authoritative
-
-The latest continuous first-cycle Excel export is not available. The older first-cycle dataset is excluded because a power interruption produced an obvious profile artifact.
-
-Current preferred source: Park Seong Hyeon's `HEO 진행상황 (20260917).pptx`, slide 10. The latest first-cycle voltage profiles were embedded as Origin vector artwork and reconstructed at high resolution.
-
-Reconstructed terminal first-cycle capacities reproduce the printed values to within ~0.03%:
-- HEO 901.14 mAh g-1;
-- BM-HEO 1055.84;
-- Mg-HEO 731.05;
-- BM-Mg-HEO 943.87.
-
-Common profile-derived cathodic dQ/dV peaks versus GITT excess peaks:
-
-| Sample | dQ/dV peak (V) | GITT excess peak (V) | absolute mismatch |
+| Sample | dQ/dV peak (V) | GITT excess peak (V) | mismatch |
 |---|---:|---:|---:|
 | HEO | 0.545 | 0.527 | 18 mV |
 | BM-HEO | 0.589 | 0.618 | 29 mV |
 | Mg-HEO | 0.419 | 0.387 | 32 mV |
 | BM-Mg-HEO | 0.485 | 0.503 | 18 mV |
 
-Smoothing sensitivity over 20-60 mAh g-1 keeps the same peak locations within narrow ranges. This **supersedes the earlier direct digitization of plotted dQ/dV curves**.
+All four pairs lie within 32 mV.
 
-Interpretation lock:
-- call the Figure 4 feature **conversion-associated excess relaxation** or, when broader wording is useful, **conversion/transformation-associated excess relaxation**;
-- the voltage correspondence localizes the response to the conversion-electrochemistry window but does not identify one unique microscopic conversion step;
-- do not claim direct measurement of metal/Li2O phase fraction.
+Safe language:
+- **conversion-associated excess relaxation**
+- or **conversion/transformation-associated excess relaxation**
 
-Figure 5 lock after the reassignment:
-- no parameter refitting was required;
-- model relaxation-peak c-bar ordering is BM 0.5860 < HEO 0.6184 < BM-Mg 0.7966 < Mg 0.9100;
-- pulse-end mean-phi onset thresholds 0.02-0.10 give the same earlier-to-later ordering;
-- describe phi as an **effective conversion-associated structural-state variable**;
-- do not map model c-bar numerically to experimental Q/Qmax or voltage.
+Do not claim the signal directly measures metallic-product fraction, Li₂O fraction, or one unique conversion step.
 
-Preferred Figure 4 main-text layout now centers the dQ/dV-GITT voltage correspondence and peak-width-area map. Raw state-resolved/background-subtraction details move to SI.
+## Background/window robustness
 
-Submission-source boundary: regenerate dQ/dV from the original Origin/source numerical profile if recovered before submission. The current vector reconstruction is the preferred manuscript-development source and the old power-interrupted profile must not be substituted.
+105 combinations of early-background, late-background, and excess-evaluation windows were tested.
 
-Detailed note: `FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md`.
+Robust in **105/105**:
+- BM peak < HEO
+- BM width > HEO
+- Mg peak < HEO
+- BM-Mg peak < HEO
+
+BM-Mg peak > Mg held in **80/105** only.
+
+Therefore:
+- the key BM redistribution and Mg suppression claims are robust;
+- the small nominal BM-Mg-versus-Mg amplitude recovery is **background-sensitive** and should not be elevated into a core claim.
+
+Preferred Figure 4 layout:
+1. state-resolved relaxation / excess feature
+2. dQ/dV–GITT voltage correspondence
+3. one-to-one peak-voltage comparison
+4. peak-amplitude / width / area map
+
+Detailed background fitting and sensitivity remain in SI.
+
+---
+
+# 5. Figure 5 — reduced spatial model of conversion-associated state evolution
+
+## Meaning of φ
+
+\(\phi\) is an **effective conversion-associated structural-state coordinate**.
+
+- \(\phi\approx0\): oxide-derived parent/intermediate-like state
+- larger \(\phi\): progression toward a more deeply converted-like state
+
+It is **not**:
+- a measured rock-salt fraction;
+- a metallic-product fraction;
+- a Li₂O fraction;
+- a full stoichiometric conversion model.
+
+## Frozen model, no refit after conversion reassignment
+
+Relaxation-peak model states:
+
+| Sample | c̄ at model relaxation maximum |
+|---|---:|
+| BM-HEO | 0.5860 |
+| HEO | 0.6184 |
+| BM-Mg-HEO | 0.7966 |
+| Mg-HEO | 0.9100 |
+
+The same earlier-to-later sequence is obtained from pulse-end \(\bar\phi\) thresholds 0.02, 0.05, and 0.10.
+
+This matches the experimental higher-to-lower conversion-feature voltage ordering directionally.
+
+Do **not** map model \(\bar c\) numerically onto experimental \(Q/Q_{\max}\) or voltage.
+
+## Current parameter meaning
+
+- \(G_{\mathrm{Mg}}\): stabilization of the unconverted oxide-derived parent/intermediate state
+- \(M_\phi\): effective mobility of conversion-associated structural rearrangement
+- \(S_{\mathrm{surf}}\) / BM ensemble: local conversion/surface condition and its heterogeneity
+
+BM-containing maps are ensemble-averaged radial states, not heterogeneous 2D single-particle simulations.
+
+Main Figure 5:
+- mechanism-sufficiency schematic
+- 4 × 7 pulse-end circular state array
+- pulse-end mean \(\bar\phi\) vs model \(\bar c\)
+
+SI:
+- model convergence/readout robustness
+- no-refit conversion-ordering table
+- 60 min \(\Delta\bar\phi_{\mathrm{rest}}\)
+
+---
+
+# 6. SI current state
+
+Authoritative SI:
+\`manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md\`
+
+Scientific SI structure is fixed for review.
+
+Key completed additions:
+- repaired current-off equations;
+- 105-case Figure 4 background/window sensitivity audit;
+- latest dQ/dV/GITT peak correspondence + smoothing robustness;
+- single-D algebraic comparator;
+- frozen effective-coordinate table;
+- model convergence/readout robustness;
+- no-refit conversion-ordering cross-check;
+- pulse-end \(\bar\phi\) onset thresholds;
+- final SI figure plan S1–S21 and tables S1–S7;
+- standalone conventional apparent \(D_{\mathrm{GITT}}\) figure intentionally omitted.
+
+Current figure readiness:
+- S17–S21: actual review figures generated
+- S14–S16: underlying GITT analysis/raw data available; final publication plots still to be generated
+- S6–S13: current progress-material versions exist, but source/provenance should be frozen
+- S1–S5: collaborator-dependent
+
+---
+
+# 7. Current review exports
+
+See:
+\`manuscript/HEO_CURRENT_ARTIFACTS_2026-09-20.md\`
+
+Current Main review Word:
+- \`HEO_AFM_FinalDraft_ConversionCentered_2026-09-20.docx\`
+- SHA256: \`a11c6af6386a944a446a8274725a33cb8ab38d636db8bcb371d3242d84a75f34\`
+- 16-page rendered QA completed
+
+Current SI review Word:
+- \`HEO_Supporting_Information_V3_Final_2026-09-20.docx\`
+- SHA256: \`a387a8d3c7f6a6a97971a1b0c2924186ba62936c717c18e1bbee9ce76befb75f\`
+- 14-page rendered QA completed
+- S17–S21 actual review figures inserted
+- unresolved/pending figure sources marked explicitly
+
+These Word files are review/export artifacts. The Markdown Main/SI files remain scientific authority. If the binary files are not available in a future runtime, regenerate them from the authoritative Markdown rather than reconstructing scientific content from memory.
+
+---
+
+# 8. Unresolved items before submission
+
+## Collaborator-dependent
+
+- exact Mg synthesis recipe
+- final nominal composition / ICP-OES
+- final XRD refinement / lattice parameters / phase fractions
+- HRTEM/SAED re-indexing
+- final XPS decision and reproducible fitting if retained
+
+Do not include the preliminary chemically impossible CoGa₂O₄ assignment in the Ga-free material.
+
+## Local electrochemical metadata
+
+Confirm:
+- current collector
+- drying conditions
+- active loading
+- electrode thickness
+- separator
+- electrolyte volume
+- glovebox conditions
+- exact 1C definition
+- rate sequence / cycles per rate
+- instrumentation
+- WonATech half-cycle label convention
+
+## Data/source cleanup
+
+- recover original numerical continuous first-cycle GCD/Origin source if possible;
+- if recovered, regenerate final dQ/dV artwork from the numerical source;
+- freeze final S6–S13 source provenance;
+- generate final publication-quality S14–S16 plots;
+- replace review/placeholder main figures with final publication artwork.
+
+## Modeling
+
+Either:
+- runtime-verify \`HEO_Spatial_PhaseField_Model_Final.m\` locally in MATLAB and confirm directional unit tests,
+
+or:
+- describe only the verified Python implementation in the submission SI.
+
+---
+
+# 9. Decisions that must not be reversed accidentally
+
+1. GITT rest is **60 min**, not 60 s.
+2. This is an **HEO materials/mechanism paper**, not a GITT-method paper.
+3. Do not center the paper on conventional apparent \(D_{\mathrm{GITT}}\).
+4. Do not claim diffusion is absent; claim one varying \(D\) cannot explain all trends.
+5. Do not say Mg simply accelerates diffusion.
+6. Do not say BM simply accelerates transport.
+7. Do not interpret apparent current-off resistance as uniquely ohmic or charge-transfer resistance.
+8. Do not interpret excess-area metric as energy.
+9. Do not interpret \(\phi\) as a measured phase fraction.
+10. Do not map model \(\bar c\) directly to experimental \(Q/Q_{\max}\).
+11. Do not assign the Figure 4 excess uniquely to spinel→rock-salt.
+12. Use conversion-associated wording unless stronger direct phase evidence is added.
+13. BM-Mg > Mg excess-amplitude recovery is not a robust required trend.
+14. The frozen spatial model is a mechanism-sufficiency model; parameters are effective and non-unique.
+15. Main Figure 4 is experimental; modeling begins in Figure 5.
+16. Parameter tables and most sensitivity details stay in SI.
+17. The old power-interrupted first-cycle profile must not replace the latest vector-derived profile for conversion assignment.
+
+---
+
+# 10. Immediate next actions
+
+Unless new data arrive, the next useful work is **manuscript review and finalization**, not more model development.
+
+Recommended order:
+
+1. Review the final Main Word sentence-by-sentence against the authoritative Main Markdown.
+2. Review the final SI Word and decide which pending structural/electrochemical source figures should be requested from collaborators/students.
+3. Freeze final Figure 1 structural package and methods metadata.
+4. Freeze final publication Figure 4a/S14–S16 using the raw GITT-derived data already available.
+5. If original first-cycle numerical profile is recovered, regenerate dQ/dV; otherwise retain the vector-source boundary explicitly.
+6. Decide whether XPS is retained.
+7. Verify MATLAB port locally or remove any independent-MATLAB-verification implication.
+8. After all metadata/artwork are frozen, make the submission-ready Main + SI export.
+
+Do not reopen the core Figure 1→5 scientific story unless new data directly contradict it.
+
+---
+
+# 11. Future work kept outside this paper
+
+Sulfide-system extension:
+\`FUTURE_DIRECTION_SULFIDE_EXTENSION_2026-09-18.md\`
+
+The separate GITT/EKF methodological project should remain separate from this HEO paper.
