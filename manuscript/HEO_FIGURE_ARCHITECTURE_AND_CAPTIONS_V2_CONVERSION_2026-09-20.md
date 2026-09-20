@@ -36,7 +36,6 @@ Electrochemistry begins here.
 - no-FEC comparison as interphase-control evidence where useful;
 - rate capability from 0.1 C to 5 C + recovery;
 - cycle-resolved dQ/dV showing the strong first-cycle cathodic feature and its evolution in later cycles;
-- relative interfacial-capacitance metric, if retained in main text, explicitly as an electrochemical accessibility descriptor rather than absolute ECSA.
 
 Literature alignment:
 - milling/fragmentation increasing accessible conversion and interfacial storage is consistent with prior (FeCoNiCrMn)3O4 work;
@@ -44,7 +43,7 @@ Literature alignment:
 - strong first-cycle-to-later-cycle dQ/dV evolution is consistent with reconstructive conversion and persistent reconstructed states.
 
 Narrative role:
-establish the conventional electrochemical trends first, then state what these data cannot determine: whether the differences arise from Li transport, conversion onset/extent/distribution, or post-conversion relaxation.
+establish the conventional electrochemical trends first, then state what these data cannot determine: whether the differences arise from Li transport, conversion onset/extent/distribution, or post-conversion relaxation. Keep the CV-derived relative interfacial-capacitance/ECSA-style comparison in the Supporting Information as corroborating evidence, not a main-panel result.
 
 ### Figure 4 — Polarization magnitude and relaxation time are independent
 GITT current-off analysis.
