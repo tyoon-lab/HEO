@@ -40,7 +40,7 @@ The current-state files were cross-checked after the AFM/conversion-centered Wor
 Corrections made during the audit:
 - SI v2 metadata now points to the authoritative Main v4 rather than Main v3.
 - `START_HERE_CURRENT_STATE_2026-09-18.md` no longer uses the preliminary direct-digitization peak values (0.531/0.539/0.365/0.425 V) as current values.
-- START_HERE immediate-next-action links now point to Main v4, SI v2, and this consolidation audit rather than the older v3/v1 files.
+- START_HERE now points to Main v4, SI v3, the current figure architecture, conversion audit, consolidation audit, and artifact manifest.
 - START_HERE model interpretation now defines phi as an effective conversion-associated state coordinate rather than a generic transition-only variable.
 - Figure 4 conversion-assignment note and Figure architecture now use the compact four-panel main-text design.
 - The modeling development log now carries an explicit 2026-09-20 current-interpretation banner while preserving historical phase-transition terminology in the development history.
@@ -73,4 +73,35 @@ Changes relative to SI v2:
 - added the frozen-model no-refit conversion-ordering validation and phi-onset-threshold table;
 - renumbered the final SI figure plan to S1–S21 and tables to S1–S7;
 - kept collaborator-dependent structural/compositional items explicitly open rather than inferring missing values.
+
+## SI Step 3 and restart-state consolidation — completed 2026-09-20
+
+Final SI review export:
+- \`HEO_Supporting_Information_V3_Final_2026-09-20.docx\`
+- SHA256: \`a387a8d3c7f6a6a97971a1b0c2924186ba62936c717c18e1bbee9ce76befb75f\`
+- 14-page rendered QA completed.
+- actual review Figures S17–S21 inserted.
+- S14–S16 retained as final-plot pending because the underlying GITT data/analysis exist but final publication plots were not frozen.
+- S6–S13 retained as source/provenance pending.
+- S1–S5 remain collaborator-dependent.
+
+Render QA caught and corrected:
+- floating/oversized table formatting inherited from an older Word reference template;
+- duplicate conventional-DGITT Figure S19 content;
+- one remaining “surface transformation” phrase;
+- horizontal-rule/footer/line-number layout artifacts.
+
+The final Word export is a review artifact; SI v3 Markdown remains the scientific authority.
+
+## Repository restart lock — completed 2026-09-20
+
+The repository has been consolidated so a new chat can resume without a separate handoff.
+
+Changes:
+- \`START_HERE_CURRENT_STATE_2026-09-18.md\` was rewritten as a current-only restart document rather than a chronological development log.
+- the restart document now contains the authoritative Main/SI paths, locked scientific interpretation, Figure 4 robustness, Figure 5 model boundaries, final Word artifact names/hashes, unresolved items, non-reversible decisions, and immediate next actions.
+- \`README.md\` now points only to the current Main v4 / SI v3 state and no longer advertises Main v3 or SI v1.
+- \`HEO_CURRENT_ARTIFACTS_2026-09-20.md\` now records both final Main and SI Word exports.
+
+A future chat should begin by reading \`START_HERE_CURRENT_STATE_2026-09-18.md\`; no additional handoff text should be required unless new raw files are needed.
 
