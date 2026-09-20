@@ -184,8 +184,12 @@ The conversion-centered reinterpretation strengthens rather than invalidates the
 - Mg is best described as stabilizing the oxide-derived parent/intermediate state and suppressing/shifting conversion.
 - relaxation time remains a separate coordinate and should not be collapsed into one apparent diffusivity.
 
+Completed robustness gate:
+- Figure 4 background/window sensitivity audit tested 105 combinations.
+- BM peak < HEO, BM width > HEO, Mg peak < HEO, and BM-Mg peak < HEO each held in 105/105 cases.
+- The small nominal BM-Mg > Mg peak-amplitude difference held in 80/105 cases and is therefore treated as background-sensitive rather than a robust required trend.
+
 Remaining gates:
-1. Figure 4 background/window sensitivity audit.
-2. Recover original numerical first-cycle source if possible for final dQ/dV artwork.
-3. Freeze final structural/ICP/TEM metadata.
-4. Runtime-check the MATLAB spatial port or remove MATLAB-port claims from submission SI.
+1. Recover original numerical first-cycle source if possible for final dQ/dV artwork.
+2. Freeze final structural/ICP/TEM metadata.
+3. Runtime-check the MATLAB spatial port or describe only the verified Python implementation in the submission SI.
