@@ -1,9 +1,9 @@
 # HEO Main–SI Scientific Consistency Audit
 
-**Date:** 2026-09-19  
+**Date:** 2026-09-20  
 **Mode:** YL AUDIT  
 **Audited files:**  
-- `manuscript/HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md`  
+- `manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_CENTERED_2026-09-20.md`  
 - `manuscript/HEO_SUPPORTING_INFORMATION_V1_2026-09-19.md`  
 - `manuscript/FIGURE3_RAW_REANALYSIS_NOTE_2026-09-18.md`  
 - `manuscript/FIGURE4_RAW_REANALYSIS_NOTE_2026-09-18.md`  
@@ -27,7 +27,7 @@ Direct precedents exist for extracting or interpreting additional kinetic inform
 
 **Action completed:** references [21]–[29] were added so that the analysis used in the HEO paper is properly grounded in prior literature.
 
-**Manuscript identity boundary:** these references support the analysis; they are not the manuscript's central novelty. The paper remains centered on the HEO 2 × 2 material comparison and the contrasting effects of ball milling and Mg incorporation on accessibility, transformation extent/distribution, and relaxation.
+**Manuscript identity boundary:** these references support the analysis; they are not the manuscript's central novelty. The paper remains centered on the HEO 2 × 2 material comparison and the contrasting effects of ball milling and Mg incorporation on accessibility, conversion extent/distribution, and relaxation.
 
 ## A2. Model parameter-identification wording — RESOLVED
 
@@ -64,6 +64,18 @@ Several LaTeX backslashes had been converted into control characters during prog
 
 **Action completed:** Main and SI equations were repaired and rechecked. No residual non-newline control characters remain in the current authoritative Markdown files.
 
+## A7. Conversion assignment and Figure 5 reinterpretation — RESOLVED for current draft
+
+The late-stage GITT excess was re-examined against the latest first-cycle voltage profiles rather than being assigned from literature voltage ranges alone.
+
+Current profile-derived cathodic dQ/dV peaks are 0.545, 0.589, 0.419, and 0.485 V for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO. The corresponding GITT excess peaks are 0.527, 0.618, 0.387, and 0.503 V. All four pairs differ by only 18–32 mV.
+
+**Action completed:** Main Figure 4 and SI now describe the response as conversion-associated (or conversion/transformation-associated when broader wording is useful). The text explicitly states that the voltage correspondence localizes the response to the conversion window but does not identify one unique microscopic conversion step.
+
+The frozen Figure 5 model was recalculated without parameter refitting. Its relaxation-peak c-bar ordering (BM < HEO < BM-Mg < Mg) and pulse-end mean-phi onset ordering remain consistent with the experimental higher-to-lower conversion-feature voltage sequence.
+
+**Model boundary completed:** phi is now defined as an effective conversion-associated structural-state variable, not a measured crystallographic/metallic phase fraction or complete conversion stoichiometry.
+
 ---
 
 # 1. MUST FIX
@@ -80,15 +92,15 @@ Several LaTeX backslashes had been converted into control characters during prog
 
 ---
 
-## 1.2. Freeze the Figure 4 background/window sensitivity audit
+## 1.2. Freeze Figure 4 robustness and final dQ/dV source provenance
 
 **Location:** Main 3.4 / SI S4 / Figure S18 / Table S5
 
-**Problem:** Peak/width/area values currently use a defined exponential background fitted over z = 0.20–0.40 and 0.90–1.00, but the final robustness range for reasonable background/window alternatives has not yet been frozen.
+**Problem:** Peak/width/area values currently use a defined exponential background fitted over z = 0.20–0.40 and 0.90–1.00, but the final robustness range for reasonable background/window alternatives has not yet been frozen. In addition, the latest first-cycle dQ/dV cross-check is reconstructed from high-resolution vector voltage-profile artwork because a separate continuous first-cycle numerical export is not currently available.
 
 **Why it matters:** “BM lower + broader” and “Mg strongly suppressed” are central mechanistic observations. They should not depend critically on one reasonable background choice.
 
-**Required action:** complete the planned background/window sensitivity test and report the range in Figure S18/Table S5. The central trend should remain stable. If the trend is not robust, the Main claim must be narrowed.
+**Required action:** complete the planned background/window sensitivity test and report the range in Figure S18/Table S5. Preserve the present smoothing-sensitivity record for the profile-derived dQ/dV peaks. If the original numerical Origin/source first-cycle profiles can be recovered, regenerate the final dQ/dV artwork from that source; do not substitute the older power-interrupted dataset. If the background trend is not robust, narrow the Main claim.
 
 ---
 
@@ -115,7 +127,7 @@ Do not infer missing values from related papers.
 
 ## 1.4. Decide the status of the unverified MATLAB spatial port
 
-**Location:** SI S7.4 / internal modeling files
+**Location:** SI S7.5 / internal modeling files
 
 **Problem:** The Python directional model is the current physics authority. The MATLAB spatial translation has not been runtime-verified in MATLAB/Octave.
 
@@ -198,7 +210,7 @@ Main and SI agree, within intended rounding, on:
 - Mg-HEO: 40.2 Ω; 109.5 mV; 11.01 min;
 - BM-Mg-HEO: 33.0 Ω; 144.3 mV; 12.99 min.
 
-## Transition-excess metrics
+## Conversion-associated excess metrics
 
 Main rounded values and SI full-precision values are consistent:
 - HEO: 70.77 mV, 354.13 mAh g−1;
@@ -219,7 +231,7 @@ Both documents correctly avoid calling the latter an absolute ECSA.
 ## Model role
 
 Main and SI now consistently state:
-- φ is a modeled internal-state coordinate, not a measured phase fraction;
+- φ is an effective conversion-associated internal-state coordinate, not a measured crystallographic or metallic-product phase fraction;
 - model c-bar is not directly calibrated to experimental normalized capacity;
 - BM maps are ensemble-averaged radial states, not simulated random 2D heterogeneity;
 - parameters are effective/non-unique;
@@ -229,8 +241,8 @@ Main and SI now consistently state:
 ## Mechanistic interpretation
 
 Main and SI consistently support:
-- BM: accessibility increases; transition-associated response broadens and becomes less concentrated; long-rest ensemble relaxation may become slower.
-- Mg: conversion/transformation extent is suppressed through structural stabilization; residual structural relaxation remains slow.
+- BM: accessibility increases; the conversion-associated response occurs at relatively high potential, broadens, and becomes less concentrated; long-rest ensemble relaxation may become slower.
+- Mg: the conversion feature shifts to lower potential and conversion extent is suppressed through stabilization of the oxide-derived parent/intermediate state; residual structural relaxation remains slow.
 - A single changing diffusivity is insufficient to explain the observed amplitude–time directions.
 - Diffusion is not claimed to be absent.
 
@@ -244,6 +256,7 @@ The following could not be independently checked from the current repository sta
 - final collaborator-provided composition/refinement files;
 - raw instrument files and final analysis script execution in the present runtime;
 - final Figure 4 background-sensitivity output;
+- final original numerical source for the latest first-cycle dQ/dV panel (current manuscript-development values come from faithful vector reconstruction);
 - local MATLAB execution of the spatial port;
 - journal-specific reference formatting.
 
