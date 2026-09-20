@@ -136,3 +136,40 @@ This is especially important because cross-sample (Q/Q_{max}) peak positions do 
 Without any refitting after the conversion reassignment, the frozen spatial model remains internally consistent with the new experimental interpretation. It should be renamed/reworded as a **reduced spatial model of conversion-associated state evolution**, not as a literal complete conversion-reaction model.
 
 The remaining manuscript gate is the raw-GCD recalculation of first-cycle dQ/dV. If that confirms the current peak positions, Main Figure 4/5 wording can be revised together.
+
+
+## Updated first-cycle validation from the latest 2026-09-17 voltage-profile slide
+
+The preliminary direct digitization of the plotted dQ/dV traces was replaced by a stronger check using the **latest first-cycle voltage profiles** in Park Seonghyeon's HEO 진행상황 (20260917).pptx, slide 10.
+
+The Origin vector previews embedded in the PowerPoint were extracted and the Cycle-1 lithiation branches were reconstructed directly from the voltage-versus-specific-capacity curves. The reconstructed terminal first-cycle capacities were:
+
+- HEO: 901.14 mAh g^-1
+- BM-HEO: 1055.84 mAh g^-1
+- Mg-HEO: 731.05 mAh g^-1
+- BM-Mg-HEO: 943.87 mAh g^-1
+
+These reproduce the values printed in the same slide (901.25, 1056.10, 731.15, and 944.07 mAh g^-1, respectively) to within ~0.03%, confirming that the vector-curve extraction is faithful.
+
+A common Savitzky-Golay treatment was then applied to the reconstructed first-cycle voltage profiles and cathodic dQ/dV was recalculated. Using a 40 mAh g^-1 smoothing window, the low-voltage first-cycle reduction maxima are:
+
+| Sample | Profile-derived dQ/dV peak (V) | GITT excess peak (V) | GITT - dQ/dV (V) |
+|---|---:|---:|---:|
+| HEO | 0.545 | 0.527 | -0.018 |
+| BM-HEO | 0.589 | 0.618 | +0.029 |
+| Mg-HEO | 0.419 | 0.387 | -0.032 |
+| BM-Mg-HEO | 0.485 | 0.503 | +0.018 |
+
+Smoothing-window sensitivity (20-60 mAh g^-1) gives:
+- HEO: 0.544-0.547 V
+- BM-HEO: 0.589 V
+- Mg-HEO: 0.408-0.419 V
+- BM-Mg-HEO: 0.485-0.486 V
+
+Thus all four conversion-associated GITT excess maxima fall within ~32 mV of the independently reconstructed first-cycle cathodic dQ/dV maximum. This is substantially tighter than the earlier direct digitization of the noisy plotted dQ/dV traces and should be treated as the preferred current validation.
+
+### Current implication
+
+The voltage localization now strongly supports describing the Figure 4 feature as **conversion/transformation-associated excess relaxation**. The evidence is still phenomenological rather than a direct structural identification of one elementary conversion step, so the manuscript should not assign the peak uniquely to metal/Li2O nucleation or any single microscopic event.
+
+This latest-PPT validation supersedes the earlier plot-resolution dQ/dV peak estimates for manuscript positioning. The remaining required gate is the Figure 4 background/window sensitivity audit.
