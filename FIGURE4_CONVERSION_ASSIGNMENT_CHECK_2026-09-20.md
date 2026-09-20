@@ -2,213 +2,189 @@
 
 ## Purpose
 
-Test whether the late-stage Figure 4 GITT excess-relaxation hump is located in the same voltage region as the first-cycle cathodic differential-capacity feature. This is intended to distinguish a generic "phase-transition-associated" interpretation from the more specific hypothesis that the excess response is linked to the low-voltage conversion reaction.
+Test whether the late-stage GITT excess-relaxation feature is localized to the same voltage region as the first-cycle cathodic conversion feature, and check whether the frozen spatial model remains directionally consistent after the interpretation is changed from a generic late-stage phase transition to conversion-associated state evolution.
 
-## Data used
+## Authoritative data sources
 
-GITT raw files recovered from the 2026-09-17 data package:
-- HEO GITT raw data
-- BM-HEO GITT raw data
-- Mg-HEO GITT raw data
-- BM-Mg-HEO GITT raw data
+### GITT
+Raw first-lithiation GITT datasets from the 2026-09-17 HEO package:
+- HEO
+- BM-HEO
+- Mg-HEO
+- BM-Mg-HEO
 
-First-cycle differential-capacity traces:
-- Cycle-1 dQ/dV curves already plotted in the 2026-09-17 HEO progress deck.
-- For this preliminary check, the lightest Cycle-1 curve was digitized directly from the embedded vector plot. The raw first-cycle galvanostatic source file was not reprocessed here, so the dQ/dV peak voltages should be treated as plot-resolution estimates (approximately ±0.01 V).
-
-## GITT reconstruction
-
-For the first lithiation GITT sequence:
-- current pulse = 600 s
-- rest = 3600 s
-- common current-off reference = 3 s
-- relaxation amplitude = E(rest end) - E(3 s)
-- the same independent background form currently used for Figure 4 was fitted to each sample:
-  eta_bg(z) = c + a exp(-z/tau)
-- fit windows: z = 0.20–0.40 and 0.90–1.00
+Protocol:
+- 600 s current pulse
+- 3600 s rest
+- common current-off reference: 3 s
+- excess background fit windows: normalized capacity z = 0.20–0.40 and 0.90–1.00
 - excess evaluated over z = 0.40–0.90.
 
-The reconstructed peak amplitudes reproduced the frozen Figure 4 values essentially exactly for Mg-HEO and BM-Mg-HEO and within ~1 mV for HEO/BM-HEO, confirming that the same feature was recovered. The small HEO/BM differences arise from the preliminary capacity normalization used in this reconstruction and do not change the peak pulse/state.
+### First-cycle voltage profile
+A separate continuous first-cycle Excel export is not available for the latest four-sample comparison.
 
-## Peak-voltage comparison
+The older first-cycle dataset is not used because a power interruption produced an obvious profile artifact.
 
-| Sample | Cycle-1 cathodic dQ/dV peak (V) | GITT excess peak, 60-min relaxed voltage (V) | Difference (V) |
+The preferred present cross-check therefore uses the latest first-cycle voltage profiles in Park Seong Hyeon's **HEO 진행상황 (20260917).pptx**, slide 10. The voltage profiles are embedded as vector artwork derived from Origin and were reconstructed at high resolution.
+
+Reconstructed terminal first-cycle capacities:
+- HEO: 901.14 mAh g^-1
+- BM-HEO: 1055.84 mAh g^-1
+- Mg-HEO: 731.05 mAh g^-1
+- BM-Mg-HEO: 943.87 mAh g^-1
+
+These agree with the values printed in the same slide (901.25, 1056.10, 731.15, and 944.07 mAh g^-1) to within approximately 0.03%, confirming faithful vector reconstruction.
+
+## Preferred dQ/dV–GITT voltage comparison
+
+A common Savitzky–Golay differentiation/smoothing procedure was applied to all four reconstructed first-cycle voltage profiles.
+
+Using a 40 mAh g^-1 smoothing window:
+
+| Sample | Profile-derived cathodic dQ/dV peak (V) | GITT excess peak (V) | GITT - dQ/dV (V) |
 |---|---:|---:|---:|
-| HEO | ~0.531 | 0.527 | -0.003 |
-| BM-HEO | ~0.539 | 0.618 | +0.078 |
-| Mg-HEO | ~0.365 | 0.387 | +0.022 |
-| BM-Mg-HEO | ~0.425 | 0.503 | +0.078 |
+| HEO | 0.545 | 0.527 | -0.018 |
+| BM-HEO | 0.589 | 0.618 | +0.029 |
+| Mg-HEO | 0.419 | 0.387 | -0.032 |
+| BM-Mg-HEO | 0.485 | 0.503 | +0.018 |
 
-All four GITT-excess maxima lie within ~0.08 V of the first-cycle reduction feature.
+All four peak pairs are localized within **32 mV** of one another.
 
-The composition-induced shift is especially notable:
-- HEO -> Mg-HEO: dQ/dV peak shifts by about -0.166 V; GITT excess peak shifts by about -0.141 V.
-- BM-HEO -> BM-Mg-HEO: dQ/dV peak shifts by about -0.114 V; GITT excess peak shifts by about -0.115 V.
+Mean absolute difference: approximately 24 mV.
 
-Thus the Mg-induced displacement of the GITT excess closely tracks the independently observed displacement of the first-cycle reduction feature.
+Smoothing sensitivity over 20–60 mAh g^-1:
+- HEO: 0.544–0.547 V
+- BM-HEO: ~0.589 V
+- Mg-HEO: 0.408–0.419 V
+- BM-Mg-HEO: 0.485–0.486 V
+
+These values supersede the earlier direct digitization of the already-plotted dQ/dV curves.
 
 ## Interpretation
 
-This comparison materially strengthens the assignment of the Figure 4 excess response to the **low-voltage conversion/transformation reaction** rather than to an unspecified phase transition.
+The voltage correspondence provides stronger evidence for a conversion-associated origin than voltage localization alone.
 
-The safest current wording is:
-- **conversion/transformation-associated excess relaxation** for the quantitative descriptor;
-- discussion can state that its voltage localization and sample-dependent shift coincide with the first-cycle cathodic conversion feature.
+Safe current language:
+- **conversion-associated excess relaxation** or
+- **conversion/transformation-associated excess relaxation** when a broader structural label is useful.
 
-The data do not by themselves prove a unique microscopic step. The excess can still contain contributions from rock-salt-like intermediate evolution, cation/oxygen rearrangement, metal/Li2O nucleation, phase-boundary motion, and heterogeneous structural relaxation. Therefore avoid assigning the hump solely to one elementary process.
+The evidence localizes the GITT excess to the same conversion-electrochemistry window as the first-cycle cathodic feature. It does **not** uniquely identify one microscopic step.
 
-## Implication for the four-sample mechanism
+Possible contributors remain:
+- rock-salt-like intermediate evolution
+- cation/oxygen rearrangement
+- nucleation and growth of reduced/metallic products
+- Li2O-associated conversion
+- phase-boundary motion
+- strain accommodation
+- heterogeneous structural relaxation.
 
-- HEO: concentrated conversion-associated response near ~0.53 V.
-- BM-HEO: lower and broader excess, consistent with redistribution of conversion over a wider state interval; the relaxed-voltage maximum moves to ~0.62 V.
-- Mg-HEO: strongly suppressed excess and a lower-voltage maximum near ~0.39 V, matching the lower-voltage shift of the cathodic dQ/dV feature.
-- BM-Mg-HEO: partial reopening/broadening of the response, with peak near ~0.50 V.
+Do not claim that GITT directly measures metallic-product fraction, Li2O fraction, or one unique conversion event.
 
-This supports the materials-centered interpretation that ball milling redistributes electrochemically accessible conversion whereas Mg imposes a compositional/structural constraint on conversion extent.
+## Four-sample mechanistic implication
 
-## Before manuscript wording is frozen
+### HEO
+Conversion-associated response is relatively concentrated and appears near ~0.53–0.55 V.
 
-1. Recompute the first-cycle dQ/dV directly from the raw GCD source data rather than relying on plot digitization.
-2. Freeze the exact peak positions with the same smoothing/differentiation procedure for all four samples.
-3. Run the planned Figure 4 background/window sensitivity audit.
-4. If both checks remain robust, revise Main 3.4 from generic "late-stage transformation" toward "late-stage conversion/transformation" and consider adding a compact dQ/dV overlay or vertical conversion-band annotation to Figure 4/SI.
+### BM-HEO
+Conversion feature occurs at relatively high potential, while the GITT excess is lower and broader. This is consistent with increased accessibility and redistribution over heterogeneous local conversion environments rather than uniform acceleration of one diffusivity.
 
+### Mg-HEO
+Both the first-cycle cathodic feature and the GITT excess move to lower potential, and the excess amplitude is strongly suppressed. This supports stabilization of the oxide-derived parent/intermediate state: a larger lithiation driving force is required before conversion becomes prominent, and the accessible conversion extent is reduced.
 
-## Figure 5 frozen-v4 cross-check against the conversion assignment
+### BM-Mg-HEO
+Milling shifts the Mg-containing conversion feature back toward higher potential and partially restores/broadens the conversion-associated response, but it does not recover the concentrated Mg-free response.
 
-The frozen spatial model was recalculated without refitting any parameter. For this cross-check, the model variable (phi) is interpreted conservatively as an **effective conversion-associated structural-state coordinate**, not as a measured rock-salt or metallic-phase fraction.
+## Figure 4 main-text direction
 
-### Frozen-v4 relaxation-peak state
+Preferred main Figure 4:
+1. HEO dQ/dV–GITT voltage overlay
+2. BM-HEO dQ/dV–GITT voltage overlay
+3. Mg-HEO dQ/dV–GITT voltage overlay
+4. BM-Mg-HEO dQ/dV–GITT voltage overlay
+5. one-to-one comparison of dQ/dV peak voltage versus GITT excess peak voltage
+6. peak-amplitude / FWHM-like width / normalized-area map.
 
-Using both the volume-averaged and surface chemical-potential readouts, the state of maximum 3 s-to-60 min relaxation is identical:
+Raw state-resolved curves, background fits, subtraction details, and smoothing/background sensitivity remain in SI.
 
-| Sample | Model (ar c) at relaxation peak |
+### Submission-source boundary
+
+The current dQ/dV panel is reconstructed from the user's own latest vector voltage-profile artwork, not from a raster image. It is appropriate for manuscript development and the present mechanistic cross-check.
+
+Before final submission, regenerate the dQ/dV curves from the original Origin/source numerical profile if that file can be recovered. The older power-interrupted first-cycle dataset should not be substituted.
+
+## Figure 5 frozen-v4 cross-check after conversion reassignment
+
+The frozen spatial model was recalculated **without refitting** after the conversion-centered interpretation was adopted.
+
+For the model, phi is interpreted as an **effective conversion-associated structural-state coordinate**, not a measured crystallographic or metallic phase fraction.
+
+### Relaxation-peak model state
+
+| Sample | Model c-bar at relaxation peak |
 |---|---:|
 | BM-HEO | 0.5860 |
 | HEO | 0.6184 |
 | BM-Mg-HEO | 0.7966 |
 | Mg-HEO | 0.9100 |
 
-Thus the model ordering from earlier to later conversion-associated response is:
+Earlier-to-later model ordering:
 
-**BM-HEO → HEO → BM-Mg-HEO → Mg-HEO.**
+**BM-HEO -> HEO -> BM-Mg-HEO -> Mg-HEO**
 
-The experimental peak-voltage ordering is the same when higher cathodic voltage is interpreted as an earlier/easier conversion event:
+Experimental conversion-feature voltage ordering from higher to lower potential gives the same direction:
 
-- GITT excess peak: **BM-HEO (0.618 V) > HEO (0.527 V) > BM-Mg-HEO (0.503 V) > Mg-HEO (0.387 V)**.
-- Digitized first-cycle dQ/dV peak: **BM-HEO (~0.539 V) ≈ HEO (~0.531 V) > BM-Mg-HEO (~0.425 V) > Mg-HEO (~0.365 V)**.
+**BM-HEO -> HEO -> BM-Mg-HEO -> Mg-HEO**
 
-The BM-HEO versus HEO dQ/dV difference is only ~8 mV and is within the approximate plot-digitization uncertainty, so those two should be treated as effectively similar until raw GCD data are reprocessed. The much larger Mg-related displacement is robust at the present level.
+The BM-HEO/HEO voltage separation is modest relative to the larger Mg-related shifts and should not be overinterpreted quantitatively.
 
-### Conversion-onset robustness in the model
+### Conversion-onset robustness
 
-A second check used the pulse-end ensemble-averaged (arphi) rather than the relaxation peak. Linear interpolation gives:
+Pulse-end mean-phi thresholds give:
 
-| Pulse-end converted-state threshold | BM-HEO | HEO | BM-Mg-HEO | Mg-HEO |
+| Mean-phi threshold | BM-HEO | HEO | BM-Mg-HEO | Mg-HEO |
 |---|---:|---:|---:|---:|
-| (arphi=0.02) | 0.545 | 0.606 | 0.735 | 0.834 |
-| (arphi=0.05) | 0.557 | 0.619 | 0.763 | 0.859 |
-| (arphi=0.10) | 0.570 | 0.620 | 0.779 | 0.889 |
+| 0.02 | 0.545 | 0.606 | 0.735 | 0.834 |
+| 0.05 | 0.557 | 0.619 | 0.763 | 0.859 |
+| 0.10 | 0.570 | 0.620 | 0.779 | 0.889 |
 
-The same ordering is preserved over all three onset definitions:
+The same ordering is preserved for all three onset definitions.
 
-**BM-HEO → HEO → BM-Mg-HEO → Mg-HEO.**
+## Revised Figure 5 interpretation
 
-Therefore the agreement is not an artifact of selecting the single model relaxation maximum.
+Use:
+**Reduced spatial model of conversion-associated state evolution**
 
-### Interpretation
+Parameter meanings:
+- phi: effective conversion-associated internal-state coordinate
+- G_Mg: stabilization of the unconverted oxide-derived parent/intermediate state
+- M_phi: effective mobility of conversion-associated structural rearrangement
+- S_surf / BM distribution: local surface/defect coordinate affecting conversion onset and its heterogeneity.
 
-This cross-check supports the revised model interpretation:
+The model is not a stoichiometrically complete conversion-reaction model. It does not explicitly resolve:
+- Li2O formation
+- metallic nanoparticle nucleation
+- sequential reduction of individual transition metals
+- oxygen redistribution.
 
-- (phi) should be described as an **effective conversion-associated internal-state variable**.
-- (G_{m Mg}>0) represents stabilization of the unconverted oxide-derived parent/intermediate state, delaying conversion to higher lithiation state / lower experimental potential.
-- BM broadens and advances the distribution of local conversion conditions rather than simply accelerating one diffusion coefficient.
-- BM-Mg partially reopens the Mg-suppressed conversion pathway but does not restore the HEO/BM conversion behavior.
+## Important model boundary
 
-### Important boundary: do not map model (ar c) directly onto experimental normalized capacity
+Do not map model c-bar directly to experimental Q/Qmax or voltage.
 
-The model (ar c) is not calibrated to (Q/Q_{max}), and the four samples have substantially different accessible capacities. Therefore agreement is assessed by **direction/order and qualitative onset displacement**, not by equating a numerical model (ar c) with an experimental normalized-capacity value.
+The four samples have different accessible capacities, and the model state coordinate was not calibrated to an absolute experimental reaction coordinate. Agreement is therefore assessed through **directional onset/peak ordering and qualitative redistribution/suppression**, not numerical state matching.
 
-This is especially important because cross-sample (Q/Q_{max}) peak positions do not provide the same ordering as the peak voltages. Peak voltage is the more appropriate current experimental comparator for the conversion-onset question.
+## Current conclusion
 
-### Current conclusion
+The conversion-centered reinterpretation strengthens rather than invalidates the current HEO story:
 
-Without any refitting after the conversion reassignment, the frozen spatial model remains internally consistent with the new experimental interpretation. It should be renamed/reworded as a **reduced spatial model of conversion-associated state evolution**, not as a literal complete conversion-reaction model.
+- Figure 4 now provides an independent electrochemical localization of the excess relaxation to the conversion window.
+- Figure 5 remains directionally consistent without parameter refitting.
+- BM is best described as increasing accessibility and redistributing conversion.
+- Mg is best described as stabilizing the oxide-derived parent/intermediate state and suppressing/shifting conversion.
+- relaxation time remains a separate coordinate and should not be collapsed into one apparent diffusivity.
 
-The remaining manuscript gate is the raw-GCD recalculation of first-cycle dQ/dV. If that confirms the current peak positions, Main Figure 4/5 wording can be revised together.
-
-
-## Updated first-cycle validation from the latest 2026-09-17 voltage-profile slide
-
-The preliminary direct digitization of the plotted dQ/dV traces was replaced by a stronger check using the **latest first-cycle voltage profiles** in Park Seonghyeon's HEO 진행상황 (20260917).pptx, slide 10.
-
-The Origin vector previews embedded in the PowerPoint were extracted and the Cycle-1 lithiation branches were reconstructed directly from the voltage-versus-specific-capacity curves. The reconstructed terminal first-cycle capacities were:
-
-- HEO: 901.14 mAh g^-1
-- BM-HEO: 1055.84 mAh g^-1
-- Mg-HEO: 731.05 mAh g^-1
-- BM-Mg-HEO: 943.87 mAh g^-1
-
-These reproduce the values printed in the same slide (901.25, 1056.10, 731.15, and 944.07 mAh g^-1, respectively) to within ~0.03%, confirming that the vector-curve extraction is faithful.
-
-A common Savitzky-Golay treatment was then applied to the reconstructed first-cycle voltage profiles and cathodic dQ/dV was recalculated. Using a 40 mAh g^-1 smoothing window, the low-voltage first-cycle reduction maxima are:
-
-| Sample | Profile-derived dQ/dV peak (V) | GITT excess peak (V) | GITT - dQ/dV (V) |
-|---|---:|---:|---:|
-| HEO | 0.545 | 0.527 | -0.018 |
-| BM-HEO | 0.589 | 0.618 | +0.029 |
-| Mg-HEO | 0.419 | 0.387 | -0.032 |
-| BM-Mg-HEO | 0.485 | 0.503 | +0.018 |
-
-Smoothing-window sensitivity (20-60 mAh g^-1) gives:
-- HEO: 0.544-0.547 V
-- BM-HEO: 0.589 V
-- Mg-HEO: 0.408-0.419 V
-- BM-Mg-HEO: 0.485-0.486 V
-
-Thus all four conversion-associated GITT excess maxima fall within ~32 mV of the independently reconstructed first-cycle cathodic dQ/dV maximum. This is substantially tighter than the earlier direct digitization of the noisy plotted dQ/dV traces and should be treated as the preferred current validation.
-
-### Current implication
-
-The voltage localization now strongly supports describing the Figure 4 feature as **conversion/transformation-associated excess relaxation**. The evidence is still phenomenological rather than a direct structural identification of one elementary conversion step, so the manuscript should not assign the peak uniquely to metal/Li2O nucleation or any single microscopic event.
-
-This latest-PPT validation supersedes the earlier plot-resolution dQ/dV peak estimates for manuscript positioning. The remaining required gate is the Figure 4 background/window sensitivity audit.
-
-
-## Latest first-cycle profile reconstruction — supersedes preliminary dQ/dV digitization
-
-The preliminary dQ/dV values above were obtained by digitizing the already-plotted differential-capacity traces. A stronger check was subsequently performed using the **latest first-cycle voltage profiles in the 2026-09-17 HEO progress presentation sent by Park Seong Hyeon**.
-
-The voltage profiles were stored as vector graphics and could therefore be reconstructed at high resolution. The reconstructed terminal first-cycle capacities are 901.14, 1055.84, 731.05, and 943.87 mAh g−1 for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO, respectively, agreeing with the plotted capacity values to within approximately 0.03%.
-
-A common Savitzky–Golay differentiation/smoothing procedure was then applied to all four reconstructed voltage profiles.
-
-| Sample | Profile-derived cathodic dQ/dV peak (V) | GITT excess peak (V) | Difference (V) |
-|---|---:|---:|---:|
-| HEO | 0.545 | 0.527 | -0.018 |
-| BM-HEO | 0.589 | 0.618 | +0.029 |
-| Mg-HEO | 0.419 | 0.387 | -0.032 |
-| BM-Mg-HEO | 0.485 | 0.503 | +0.018 |
-
-All four peak pairs are therefore localized within **32 mV** of each other.
-
-Smoothing sensitivity was small:
-- HEO: 0.544–0.547 V;
-- BM-HEO: ~0.589 V;
-- Mg-HEO: 0.408–0.419 V;
-- BM-Mg-HEO: 0.485–0.486 V.
-
-This result is now the preferred Figure 4 conversion-assignment evidence and **supersedes the earlier plot-digitized peak values**.
-
-### Data-source boundary
-
-The numerical continuous-GCD source files for these latest first-cycle profiles are not currently available. The present values are reconstructed from the user's own vector voltage-profile plots rather than from raster digitization. They are suitable for manuscript development and provide a strong independent cross-check, but the original numerical profiles should replace this source if they are recovered before submission.
-
-### Updated Figure 4 interpretation
-
-The main-text Figure 4 should now emphasize:
-1. sample-specific correspondence between first-cycle cathodic dQ/dV and GITT excess peak voltage;
-2. the one-to-one peak-voltage comparison across all four samples;
-3. the peak-amplitude/width/area map showing BM redistribution versus Mg suppression.
-
-The raw state-resolved and background-subtraction details can remain in the Supporting Information.
+Remaining gates:
+1. Figure 4 background/window sensitivity audit.
+2. Recover original numerical first-cycle source if possible for final dQ/dV artwork.
+3. Freeze final structural/ICP/TEM metadata.
+4. Runtime-check the MATLAB spatial port or remove MATLAB-port claims from submission SI.
