@@ -673,3 +673,28 @@ Accordingly:
 The model is not a stoichiometrically complete conversion-reaction model and does not explicitly resolve Li2O formation, metallic nanoparticle nucleation, sequential transition-metal reduction, or oxygen redistribution.
 
 Do not calibrate model cbar numerically to experimental Q/Qmax; use only direction/order unless an independent mapping is established.
+
+
+### 2026-09-20 latest-profile experimental comparator update
+
+The first-cycle comparison was repeated using vector reconstruction of the latest 2026-09-17 voltage profiles, superseding the preliminary digitization of already-plotted dQ/dV curves.
+
+Experimental cathodic dQ/dV peaks:
+- HEO: 0.545 V
+- BM-HEO: 0.589 V
+- Mg-HEO: 0.419 V
+- BM-Mg-HEO: 0.485 V
+
+GITT excess peaks:
+- HEO: 0.527 V
+- BM-HEO: 0.618 V
+- Mg-HEO: 0.387 V
+- BM-Mg-HEO: 0.503 V
+
+All pairs agree within 32 mV.
+
+The frozen model remains unrefitted. Its earlier-to-later conversion-associated relaxation ordering,
+BM-HEO (cbar 0.5860) < HEO (0.6184) < BM-Mg-HEO (0.7966) < Mg-HEO (0.9100),
+is consistent with the experimental higher-to-lower peak-voltage ordering.
+
+The model comparison remains directional only. Model cbar is not calibrated to experimental Q/Qmax.
