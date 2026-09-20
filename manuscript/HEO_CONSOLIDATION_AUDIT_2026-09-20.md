@@ -18,7 +18,7 @@ Checked the 2026-09-20 discussion against the HEO GitHub repository after the AF
    - Mg-HEO 0.387 V;
    - BM-Mg-HEO 0.503 V.
 6. All four dQ/dV–GITT peak pairs are within 32 mV.
-7. Figure 4 redesign: dQ/dV/GITT correspondence + peak-voltage correlation + amplitude/width/area map; raw/background analysis moved toward SI.
+7. Figure 4 redesign: compact four-panel logic = state-resolved relaxation → dQ/dV/GITT voltage correspondence → peak-voltage correlation → amplitude/width/area map; detailed background/sensitivity analysis remains in SI.
 8. Figure 5 reinterpretation: reduced spatial model of conversion-associated state evolution.
 9. Frozen-model cross-check without refitting: BM 0.5860 < HEO 0.6184 < BM-Mg 0.7966 < Mg 0.9100.
 10. Explicit claim boundary that phi is not a measured rock-salt/metal/Li2O fraction and cbar is not experimental Q/Qmax.
@@ -33,3 +33,29 @@ Checked the 2026-09-20 discussion against the HEO GitHub repository after the AF
 
 ## Current claim boundary
 The strongest supported experimental statement is that the late-stage GITT excess-relaxation feature is localized to and shifts with the first-cycle cathodic conversion feature. This supports a conversion/transformation-associated assignment but does not identify one unique elementary conversion step.
+
+## Step 3 repository audit — completed 2026-09-20
+
+The current-state files were cross-checked after the AFM/conversion-centered Word export.
+
+Corrections made during the audit:
+- SI v2 metadata now points to the authoritative Main v4 rather than Main v3.
+- `START_HERE_CURRENT_STATE_2026-09-18.md` no longer uses the preliminary direct-digitization peak values (0.531/0.539/0.365/0.425 V) as current values.
+- START_HERE immediate-next-action links now point to Main v4, SI v2, and this consolidation audit rather than the older v3/v1 files.
+- START_HERE model interpretation now defines phi as an effective conversion-associated state coordinate rather than a generic transition-only variable.
+- Figure 4 conversion-assignment note and Figure architecture now use the compact four-panel main-text design.
+- The modeling development log now carries an explicit 2026-09-20 current-interpretation banner while preserving historical phase-transition terminology in the development history.
+- The duplicate `HEO_MANUSCRIPT_V4_AFM_CONVERSION_CENTERED_2026-09-20.md` is marked superseded; the authoritative Main remains `HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md`.
+- Current review artifacts are recorded in `manuscript/HEO_CURRENT_ARTIFACTS_2026-09-20.md`.
+
+Current review Word export:
+- `HEO_AFM_FinalDraft_ConversionCentered_2026-09-20.docx`
+- 16 rendered pages checked for overflow, clipping, and figure placement.
+- Word is a review/export artifact; Markdown Main v4 remains the scientific text authority.
+
+Current review figures:
+- `HEO_Figure4_conversion_centered_4panel_review.png`
+- `HEO_Figure5_conversion_centered_v6.png`
+
+These binary review artifacts are not repository files at present; their names, roles, and SHA256 hashes are preserved in the artifact manifest so they can be regenerated/verified without confusing them with the authoritative Markdown state.
+
