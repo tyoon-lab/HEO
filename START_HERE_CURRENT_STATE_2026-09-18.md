@@ -1,6 +1,6 @@
 # HEO — START HERE / Current Project State
 
-**Last consolidated:** 2026-09-19
+**Last consolidated:** 2026-09-20
 **Purpose:** This is the single entry point for continuing the HEO manuscript/project in a new chat without a separate handoff message.
 **Rule:** Read this file first. Then open the linked authoritative files only as needed.
 
@@ -9,10 +9,14 @@
 # 1. Current manuscript identity
 
 ## Working title
-**Contrasting Roles of Mg Incorporation and Ball Milling in Spinel High-Entropy Oxide Anodes: Phase Evolution, Polarization, and Electrochemical Utilization**
+**Mg Incorporation and Ball Milling Independently Regulate Electrochemical Accessibility and Conversion in Spinel High-Entropy Oxide Anodes**
 
 Alternative:
 **Mg Incorporation and Ball Milling Regulate Phase-Transformation Polarization in Spinel High-Entropy Oxide Anodes**
+
+## Target journal
+
+**Advanced Functional Materials (AFM)** is the current first target. Position the paper as a functional-materials/mechanism study: composition/process → accessibility and conversion → electrochemical function. Do not pitch a new GITT analysis method.
 
 ## Manuscript type
 Synthesis/material-centered paper with electrochemical diagnostics used to resolve the distinct roles of Mg incorporation and ball milling.
@@ -56,9 +60,9 @@ The three experimentally distinct coordinates are accessibility, transformation 
 
 # 2. Current authoritative manuscript and reference files
 
-Main manuscript (current authoritative draft): manuscript/HEO_MANUSCRIPT_V3_POLISHED_2026-09-19.md
+Main manuscript (current authoritative draft): manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md
 
-Supporting Information (current authoritative draft): manuscript/HEO_SUPPORTING_INFORMATION_V1_2026-09-19.md
+Supporting Information (current authoritative draft): manuscript/HEO_SUPPORTING_INFORMATION_V2_CONVERSION_ALIGNED_2026-09-20.md
 
 Manuscript architecture/literature positioning note: manuscript/HEO_MANUSCRIPT_ARCHITECTURE_AND_LITERATURE_POSITIONING_2026-09-19.md
 
@@ -74,7 +78,7 @@ Mechanistic logic note: manuscript/HEO_DIFFUSION_VS_PHASE_TRANSITION_LOGIC_AND_S
 
 Verified reference master: manuscript/HEO_REFERENCE_MASTER_VERIFIED_2026-09-18.md
 
-Figure architecture: manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V1_2026-09-18.md
+Figure architecture: manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md
 
 The visual-simulation direction described later in this START HERE file is newer than the original four-figure architecture and should be treated as a current extension/override.
 
@@ -424,3 +428,46 @@ Interpretation update:
 Main manuscript wording should be changed only after raw first-cycle GCD is reprocessed and Figure 4 baseline/window sensitivity is frozen.
 
 Detailed note: FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md.
+
+
+# 2026-09-20 Figure 4 conversion assignment — latest profile reconstruction
+
+The latest first-cycle voltage profiles in the 2026-09-17 progress presentation were reconstructed from vector graphics and differentiated with a common smoothing procedure.
+
+| Sample | first-cycle cathodic dQ/dV peak | GITT excess peak |
+|---|---:|---:|
+| HEO | 0.545 V | 0.527 V |
+| BM-HEO | 0.589 V | 0.618 V |
+| Mg-HEO | 0.419 V | 0.387 V |
+| BM-Mg-HEO | 0.485 V | 0.503 V |
+
+All four peak pairs agree within 32 mV. This supersedes the earlier preliminary digitization of already-plotted dQ/dV curves.
+
+Current interpretation:
+- the Figure 4 excess response is **conversion/transformation-associated**;
+- it should not be assigned solely to spinel→rock-salt;
+- same-family literature shows low-voltage conversion chemistry, including Mn nanocrystal formation around 0.5 V and deeper metallic conversion;
+- BM redistributes accessible conversion over a broader state interval;
+- Mg suppresses and shifts deeper conversion to lower potential;
+- BM-Mg partially reopens the Mg-suppressed pathway.
+
+Data-source boundary:
+the latest numerical continuous-GCD source files are not currently available. Present dQ/dV values are reconstructed from the user's own vector voltage-profile plots. Replace with original numerical profiles if recovered before submission.
+
+Detailed note: FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md
+Archived peak table: manuscript/HEO_FIGURE4_LATEST_PPT_DQDV_GITT_PEAK_CHECK_2026-09-20.csv
+
+# 2026-09-20 Figure 5 interpretation update
+
+The frozen v4 model remains compatible with the conversion assignment without refitting.
+
+Model relaxation-peak state:
+BM 0.5860 < HEO 0.6184 < BM-Mg 0.7966 < Mg 0.9100.
+
+Use:
+- phi = effective conversion-associated structural-state coordinate;
+- G_Mg = stabilization of the unconverted oxide-derived parent/intermediate state;
+- M_phi = effective mobility of conversion-associated structural rearrangement;
+- BM ensemble = distribution of local conversion conditions and structural mobilities.
+
+Do not claim the reduced model explicitly resolves Li2O formation, metal-nanoparticle nucleation, sequential cation reduction, or oxygen migration.
