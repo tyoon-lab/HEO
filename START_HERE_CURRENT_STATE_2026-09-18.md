@@ -422,7 +422,7 @@ or:
 12. Use conversion-associated wording unless stronger direct phase evidence is added.
 13. BM-Mg > Mg excess-amplitude recovery is not a robust required trend.
 14. The frozen spatial model is a mechanism-sufficiency model; parameters are effective and non-unique.
-15. Main Figure 4 is experimental; modeling begins in Figure 5.
+15. Main Figures 3–5 are experimental/electrochemical; modeling begins in Figure 6.
 16. Parameter tables and most sensitivity details stay in SI.
 17. The old power-interrupted first-cycle profile must not replace the latest vector-derived profile for conversion assignment.
 
