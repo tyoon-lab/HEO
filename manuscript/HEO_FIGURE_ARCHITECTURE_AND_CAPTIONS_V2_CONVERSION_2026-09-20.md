@@ -113,17 +113,37 @@ This is the main mechanistic experimental figure. The dQ/dV–GITT correspondenc
 Figure 5 establishes experimentally that milling and Mg alter conversion in different ways. Figure 6 tests whether those roles can reproduce the directional state-evolution trends in a reduced spatial model.
 
 
-### Figure 6 — Reduced spatial model of conversion-associated state evolution
-Model begins only after the experimental assignment has been established in Figure 5.
+### Figure 6 — Reduced spatial model as a consistency test
+Modeling comes only after the experimental materials interpretation is established. Keep the main figure qualitative and directional.
 
-- mechanism-sufficiency logic;
-- 4 × 7 circular pulse-end radial phi maps;
-- pulse-end mean phibar versus model cbar;
-- phi is an effective conversion-associated internal-state coordinate, not a measured phase fraction;
-- cbar is not calibrated to experimental Q/Qmax;
-- frozen model cross-check without refitting:
-  BM cbar_peak 0.5860 < HEO 0.6184 < BM-Mg 0.7966 < Mg 0.9100;
-- model is directional and non-unique.
+**Main panels**
+- (a) compact schematic of the reduced spatial model: Li-state evolution coupled to an effective conversion-associated structural variable; indicate only the conceptual BM and Mg modifications;
+- (b) 4 × 7 pulse-end radial state maps over a common late-stage model window;
+- (c) mean conversion-associated state versus model lithiation state, emphasizing ordering rather than numerical state matching.
+
+**Model interpretation**
+- Mg: stabilization of the oxide-derived parent/intermediate state reduces accessible conversion, while lower residual structural mobility gives slow relaxation;
+- BM: a distribution of local conversion conditions and structural mobilities is required to reproduce higher accessibility together with a broad, lower-amplitude ensemble response;
+- BM-Mg: retains Mg-related stabilization while milling partially reopens and broadens the conversion pathway;
+- HEO: reference case with a comparatively concentrated conversion interval.
+
+**Keep out of the main figure/text unless needed**
+- exact hypothesis-level parameter values ($G_{\rm Mg}$, $M_\phi$, $D_{\rm eff}/R^2$, etc.);
+- absolute model $t_{63}$ values;
+- exact $\bar c$ peak values;
+- surface-versus-volume chemical-potential robustness tables;
+- parameter grids and ablation details;
+- convergence/quantile tests.
+
+These belong in the Supporting Information.
+
+**Boundaries**
+- $\phi$ is an effective conversion-associated structural variable, not a measured phase fraction;
+- model lithiation state is not calibrated to experimental $Q/Q_{\max}$ or voltage;
+- parameters are not uniquely identified material constants;
+- the model does not explicitly resolve Li₂O formation, individual transition-metal reduction, metallic nanoparticle nucleation, or oxygen redistribution;
+- claim only qualitative/directional consistency and mechanism sufficiency.
+
 
 ## Main-text narrative
 
