@@ -403,3 +403,24 @@ A future collaborative extension is planned from high-entropy oxide / oxide conv
 See: FUTURE_DIRECTION_SULFIDE_EXTENSION_2026-09-18.md
 
 This should remain a future/collaboration direction and should not be mixed into the present oxide manuscript unless new sulfide data are generated.
+
+## 2026-09-20 conversion assignment / Figure 4–5 cross-check
+
+New experimental cross-check:
+- Figure 4 excess-relaxation maxima coincide with the first-cycle cathodic conversion feature across all four samples.
+- Preliminary peak voltages: HEO dQ/dV ~0.531 V / GITT 0.527 V; BM ~0.539 / 0.618 V; Mg ~0.365 / 0.387 V; BM-Mg ~0.425 / 0.503 V.
+- Mg-induced peak displacement is especially consistent between dQ/dV and GITT.
+
+Frozen-v4 model was rerun without refitting:
+- model relaxation peak cbar: BM 0.5860 < HEO 0.6184 < BM-Mg 0.7966 < Mg 0.9100;
+- pulse-end phibar onset gives the same ordering over thresholds 0.02–0.10.
+
+Interpretation update:
+- describe Figure 4 feature as **conversion/transformation-associated** pending raw-GCD dQ/dV freeze;
+- describe Figure 5 as a **reduced spatial model of conversion-associated state evolution**;
+- phi is an effective converted-state coordinate, not a measured phase fraction;
+- do not map model cbar directly to experimental Q/Qmax.
+
+Main manuscript wording should be changed only after raw first-cycle GCD is reprocessed and Figure 4 baseline/window sensitivity is frozen.
+
+Detailed note: FIGURE4_CONVERSION_ASSIGNMENT_CHECK_2026-09-20.md.
