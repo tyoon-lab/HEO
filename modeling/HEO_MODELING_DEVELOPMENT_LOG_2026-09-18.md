@@ -1,5 +1,9 @@
 # HEO Modeling Development Log
 
+> **Current interpretation update — 2026-09-20**  
+> The frozen spatial model is now interpreted as a **reduced model of conversion-associated state evolution**, not as a literal single crystallographic phase-transition model. Historical sections below retain the original development terminology so the model-development record is not rewritten retroactively. In current manuscript use, \(\phi\) denotes an effective conversion-associated structural-state coordinate; \(G_{\mathrm{Mg}}\) represents stabilization of the oxide-derived parent/intermediate state; and BM distributions represent heterogeneous local conversion conditions and structural mobilities. The model is not a stoichiometrically complete conversion-reaction model.
+
+
 **Date:** 2026-09-18
 **Status:** Python minimal model v3 passes directional/robustness gate; MATLAB translation deferred until Python science is frozen.
 
