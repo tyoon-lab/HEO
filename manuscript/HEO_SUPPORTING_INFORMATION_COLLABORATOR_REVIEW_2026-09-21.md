@@ -1,14 +1,6 @@
-# Supporting Information — Collaborator Review Draft
+# Supporting Information
 
 ## Structural Modification Reshapes Conversion and Relaxation in Spinel High-Entropy Oxide Anodes
-
-**Date:** 2026-09-20  
-**Status:** collaborator-review SI aligned to `HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md`  
-**Purpose:** technical completeness, auditability, robustness tests, and claim-boundary support for the main manuscript.
-
-> Values below are included only where they are already verified from the project source files. Missing historical or collaborator-generated metadata are explicitly marked and are not inferred.
-
----
 
 # S1. Additional structural and compositional characterization
 
@@ -81,8 +73,6 @@ Instrument-reported first-cycle capacity pairs and initial Coulombic efficiencie
 | Mg-HEO | 731.15 / 458.91 | 62.77 |
 | BM-Mg-HEO | 944.07 / 580.83 | 61.52 |
 
-**[[YOON LAB INPUT REQUIRED — verify WonATech charge/discharge convention before replacing the neutral “half-cycle pair” terminology with lithiation/delithiation labels.]]**
-
 **Figure S8.** Full first-cycle and selected-cycle voltage profiles.
 
 ## S2.3. FEC control, rate capability, dQ/dV, and cycling EIS
@@ -90,8 +80,6 @@ Instrument-reported first-cycle capacity pairs and initial Coulombic efficiencie
 **Figure S9.** Cycling comparison with and without 10 wt% FEC. The no-FEC control is used to show the increased interphase burden of the higher-area BM material rather than to assign a unique SEI chemistry.
 
 **Figure S10.** Detailed rate-capability profiles and recovery at 0.1 C.
-
-**[[YOON LAB INPUT REQUIRED — exact C-rate sequence, cycles per rate, and 1 C capacity basis.]]**
 
 **Figure S11.** Full/selected-cycle dQ/dV evolution supporting the compact main-text panel.
 
@@ -569,20 +557,6 @@ A standalone conventional apparent $D_{\mathrm{GITT}}$ figure is intentionally o
 - Table S5: nominal conversion-associated excess metrics plus background/window sensitivity ranges and directional pass counts.
 - Table S6: frozen model effective coordinates.
 - Table S7: model convergence/readout robustness and no-refit onset/peak-ordering summary.
-
-## Readiness classes
-
-**Available from current Yoon-Lab/project files:** S14–S21 in principle; final formatting/plotting remains to be completed before the submission package is frozen.
-
-**Available in recent progress material but source/provenance should be frozen before final SI:** S6–S13.
-
-**Yoo-group input required before submission:** S1–S5, especially final ICP/XRD refinement/HRTEM indexing, Mg composition/synthesis metadata, and the decision on XPS.
-
-# S10. Items that remain outside the current HEO paper
-
-The exploratory sequence “D-only -> D + compact relaxation -> distributed relaxation” belongs to the separate GITT/EKF methodology project and should not be introduced into this material-centered manuscript unless a future independent validation creates a synthesis-specific result essential to the HEO story.
-
----
 
 # References added for GITT relaxation/phase-transformation positioning
 
