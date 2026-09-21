@@ -117,7 +117,7 @@ Figure 5 establishes experimentally that milling and Mg alter conversion in diff
 Modeling comes only after the experimental materials interpretation is established. Keep the main figure qualitative and directional.
 
 **Main panels**
-- (a) compact schematic of the reduced spatial model: Li-state evolution coupled to an local conversion-progress variable; indicate only the conceptual BM and Mg modifications;
+- (a) compact schematic of the reduced spatial model: Li-state evolution coupled to an variable describing the local extent of conversion; indicate only the conceptual BM and Mg modifications;
 - (b) 4 × 7 pulse-end radial state maps over a common late-stage model window;
 - (c) mean conversion-associated state versus model lithiation state, emphasizing ordering rather than numerical state matching.
 
@@ -138,7 +138,7 @@ Modeling comes only after the experimental materials interpretation is establish
 These belong in the Supporting Information.
 
 **Boundaries**
-- $\phi$ is an local conversion-progress variable, not a measured phase fraction;
+- $\phi$ is an variable describing the local extent of conversion, not a measured phase fraction;
 - model lithiation state is not calibrated to experimental $Q/Q_{\max}$ or voltage;
 - parameters are not uniquely identified material constants;
 - the model does not explicitly resolve Li₂O formation, individual transition-metal reduction, metallic nanoparticle nucleation, or oxygen redistribution;
