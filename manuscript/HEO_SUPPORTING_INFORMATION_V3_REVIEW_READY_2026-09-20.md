@@ -474,7 +474,7 @@ The experimental BM-Mg-versus-Mg excess-amplitude difference is background-sensi
 
 ## S7.3. No-refit conversion-ordering cross-check
 
-After the experimental Figure 5 excess feature was assigned from a generic late-stage transition to conversion-associated electrochemistry, the frozen v4 model was recalculated **without refitting any parameter**.
+After the experimental Figure 5 excess feature was reassigned from a generic late-stage transition to conversion-associated electrochemistry, the frozen v4 model was recalculated **without refitting any parameter**.
 
 Using either the volume-averaged or surface chemical-potential readout, the model relaxation maxima occur at:
 
