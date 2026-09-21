@@ -138,55 +138,33 @@ The active HEO powder, Super P conductive carbon, and poly(acrylic acid) (PAA) b
 
 **[[YOON LAB INPUT REQUIRED — cell metadata: current collector; vacuum-drying temperature/time; final active-material loading; final electrode thickness; separator manufacturer/model if available; electrolyte volume; glovebox H₂O/O₂ specification.]]**
 
-Galvanostatic charge–discharge measurements were performed using a WonATech battery cycler between 0.005 and 2.5 V. The principal low-rate comparison was conducted at 0.1 C. Rate-capability measurements used a stepwise C-rate sequence extending from 0.1 C to 5 C followed by recovery at 0.1 C.
+Galvanostatic charge–discharge measurements were performed using a WonATech battery cycler between 0.005 and 2.5 V. The principal low-rate comparison was conducted at 0.1 C. Rate-capability measurements used a stepwise sequence from 0.1 C to 5 C followed by recovery at 0.1 C.
 
-**[[YOON LAB INPUT REQUIRED — cycling metadata: verify the capacity basis defining 1 C; exact number of cycles at each rate; confirm WonATech charge/discharge label convention before assigning the two half-cycle capacities to lithiation and delithiation.]]**
+**[[YOON LAB INPUT REQUIRED — verify the capacity basis defining 1 C; exact number of cycles at each rate; confirm the WonATech charge/discharge convention before finalizing lithiation/delithiation labels.]]**
 
-GITT was performed at 100 mA g⁻¹ between 0.005 and 2.5 V using repeated 10 min current pulses followed by 60 min open-circuit relaxation. Current-off portions of the response were analyzed because the pulse-period voltage contains both polarization and the change in equilibrium potential associated with continued reaction.
-
-For the early current interruption, the voltage between 3 and 30 s after switching the current off was represented as
-
-\[
-E(t)=a+b\sqrt{t},
-\]
-
-and the intercept \(a\) was extrapolated to \(t\rightarrow0\). The corresponding current-off voltage jump was divided by the absolute applied current to define an apparent fast current-off resistance. This quantity is used as an operational descriptor and is not assigned uniquely to ohmic or charge-transfer resistance.
-
-The finite-window relaxation amplitude was defined as
+GITT was performed at 100 mA g⁻¹ between 0.005 and 2.5 V using repeated 10 min current pulses followed by 60 min open-circuit relaxation. A common 3 s post-interruption reference was used because the Mg-free and Mg-containing datasets were acquired at different time resolutions in the early current-off period. The relaxation magnitude was defined as
 
 \[
 \Delta E_{\mathrm{relax}}
 =
-E_{60\,\mathrm{min}}-E_{\mathrm{off},3\,\mathrm{s}},
+E_{60\,\mathrm{min}}-E_{3\,\mathrm{s}},
 \]
 
-with absolute magnitude used for comparison where appropriate. Model-free \(t_{50}\), \(t_{63}\), and \(t_{90}\) values were defined as the times required to reach 50%, 63.2%, and 90% of the observed 3 s-to-60 min relaxation amplitude. These quantities do not assume single-exponential relaxation; \(t_{63}\) equals a conventional time constant only for an ideal single exponential.
+with absolute magnitude used for comparison where appropriate. The characteristic time $t_{63}$ was defined as the first time required to reach 63.2% of the observed 3 s-to-60 min voltage relaxation. This definition does not assume single-exponential relaxation.
 
-The late-stage excess relaxation feature was quantified after applying the same background-fitting procedure to each sample independently. Peak amplitude, FWHM-like capacity width, normalized excess area, and an absolute capacity-weighted excess metric were extracted. The latter is used only as a comparative quantity and is not interpreted as dissipated energy because \(\Delta E_{\mathrm{relax}}\) is sampled at discrete GITT states rather than measured as a continuous operating overpotential.
+The late-stage excess response was obtained by subtracting a smooth sample-specific background from the state-resolved $\Delta E_{\mathrm{relax}}$ response. Peak position, peak amplitude, and FWHM-like width were used as comparative descriptors. Detailed background definitions, window sensitivity, short-time current-off analysis, and additional relaxation descriptors are provided in the Supporting Information.
 
-Cyclic voltammetry in the nominal non-faradaic region of 3.0–3.3 V was acquired at scan rates of 10, 20, 40, 60, 80, and 100 mV s⁻¹ for relative interfacial-capacitance comparison. A specific capacitance of 40 μF cm⁻² was used in the original conversion to a nominal interface area. Because this value is not independently established for the porous composite electrode, the manuscript uses the result only as a relative interfacial-accessibility metric rather than an absolute ECSA.
+First-cycle differential-capacity curves were obtained from the corresponding galvanostatic voltage profiles using the same differentiation and smoothing procedure for all four materials. The current manuscript-development curves were reconstructed from the latest vector voltage profiles because the original numerical first-cycle source files have not yet been recovered; this source should be replaced by the original numerical data before submission if available.
 
-**[[YOON LAB INPUT REQUIRED — instrumentation metadata: potentiostat/model and final CV/EIS acquisition settings needed for reproducibility.]]**
 
-## 4.4. Reduced spatial model of conversion-associated state evolution
+## 4.4. Reduced spatial model
 
-A reduced radial phase-field model was used to test whether the experimentally required directions can arise from independent transport and structural coordinates. The model is not used for unique parameter identification or quantitative voltage fitting. A conserved Li-state variable, $c(r,t)$, is coupled to a nonconserved structural order parameter, $\phi(r,t)$, representing an local conversion progress. Values near $\phi=0$ denote an oxide-derived parent/intermediate state and larger values denote progression toward a more deeply converted state. The modeled $\phi$ is therefore an internal-state coordinate rather than a directly measured crystallographic or chemical phase fraction.
+A reduced spherical phase-field model was used only to test whether the experimentally inferred effects of ball milling and Mg incorporation are physically compatible with distinct conversion and relaxation contributions. The model couples a conserved Li-state variable, $c(r,t)$, to a nonconserved variable, $\phi(r,t)$, representing the local extent of conversion from an oxide-derived parent/intermediate state toward a more deeply converted state. The variable $\phi$ is not interpreted as the experimentally measured fraction of any specific crystallographic or chemical phase.
 
-Li transport follows
+The model includes Li transport, conversion-state evolution, stabilization of the oxide-derived state in Mg-containing cases, and distributed local conversion conditions for ball-milled cases. The simulated protocol reproduces the experimental 600 s pulse and 3600 s rest sequence. Model acceptance is based on qualitative ordering and response trends rather than numerical fitting of microscopic parameters, voltage, or experimental normalized capacity.
 
-$$\frac{\partial c}{\partial t}=-\nabla\cdot J,\qquad J=-D_{\mathrm{eff}}\nabla\mu_c,$$
+The governing equations, effective parameter sets, ensemble distributions, numerical implementation, convergence tests, ablation studies, and parameter-identifiability limitations are provided in the Supporting Information.
 
-with
-
-$$\mu_c=\ln\frac{c}{1-c}-K\phi.$$
-
-Structural evolution follows dissipative relaxation,
-
-$$\frac{\partial\phi}{\partial t}=-M_\phi\frac{\delta G}{\delta\phi},$$
-
-where the free-energy representation includes a double-well structural term, Li–structure coupling, a Mg-dependent stabilization term, and reduced surface/coherency terms. Detailed equations and parameter definitions are provided in the Supporting Information.
-
-Mg-containing cases were represented by increased stabilization of the unconverted oxide-derived parent/intermediate state together with lower mobility of the residual conversion-associated rearrangement. Ball-milled cases were represented by distributions of local conversion/surface conditions and structural mobilities. BM-HEO and BM-Mg-HEO used 11 equal-probability quantiles of the selected ensemble distribution rather than a single deterministic particle. The numerical protocol reproduced the experimental 600 s pulse and 3600 s zero-flux rest. Acceptance of the model was based on directional relationships among conversion-associated polarization amplitude, response width, characteristic relaxation, and converted-state proxy, not on numerical fitting of all microscopic parameters. Numerical convergence, sensitivity tests, parameter tables, and identifiability limitations are reported in the Supporting Information.
 
 # References
 
