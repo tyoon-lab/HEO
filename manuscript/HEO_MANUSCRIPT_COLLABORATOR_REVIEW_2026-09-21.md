@@ -1,14 +1,3 @@
-# HEO Manuscript v4 — AFM-Target Conversion-Centered Draft
-
-**Date:** 2026-09-20  
-**Status:** sentence-review draft; AFM-target positioning  
-**Scientific backbone:** Figures 1–2 characterization → Figure 3 conventional electrochemistry → Figure 4 current-off decoupling → Figure 5 conversion assignment → Figure 6 reduced model  
-**Literature basis:** \`HEO_REFERENCE_MASTER_VERIFIED_2026-09-18.md\`
-
-> Verified information is written directly. Missing experimental metadata are not inferred. Inputs expected from the Yoo group and Yoon Lab remain explicitly marked. The Figure 5 differential-capacity peak positions currently come from reconstruction of the latest vector voltage profiles; the underlying numerical first-cycle files should replace this source if recovered before submission.
-
----
-
 # Working title
 
 **Structural Modification Reshapes Conversion and Relaxation in Spinel High-Entropy Oxide Anodes**
@@ -88,7 +77,6 @@ BM-Mg-HEO lies between these limiting behaviors. Milling partially restores acce
 
 Figure 5 therefore provides the mechanistic link between the conventional electrochemistry in Figure 3 and the relaxation decoupling in Figure 4. Ball milling mainly changes how broadly conversion is accessed across reaction state, whereas Mg incorporation reduces and delays accessible conversion. These experimentally inferred roles are used in Figure 6 to test whether a reduced spatial model can reproduce the observed ordering of conversion-associated state evolution without treating the GITT response as a single transport process.
 
-> **Internal data-source note for manuscript review:** the current differential-capacity curves were reconstructed from the vector first-cycle voltage profiles in the 2026-09-17 progress presentation because the corresponding numerical continuous-GCD source files are not currently available. The reconstruction reproduces the plotted first-cycle capacities to within ~0.03%. Regenerate the final dQ/dV artwork from the original numerical source if it is recovered before submission.
 
 
 ## 2.5. Reduced spatial modeling tests the proposed conversion roles of milling and Mg
@@ -136,11 +124,7 @@ Powder X-ray diffraction (XRD) patterns were collected using a MiniFlex 600 diff
 
 The active HEO powder, Super P conductive carbon, and poly(acrylic acid) (PAA) binder were mixed at a mass ratio of 8:1:1 using deionized water as the slurry solvent. The slurry was coated using a 100 μm bar-coater gap. CR2032-type half-cells were assembled with the HEO-based electrode as the working electrode and Li metal as the counter electrode. A polypropylene separator and 1.0 M LiPF₆ in EC/DEC (1:1 by volume) containing 10 wt% fluoroethylene carbonate (FEC) were used for the principal four-sample comparison.
 
-**[[YOON LAB INPUT REQUIRED — cell metadata: current collector; vacuum-drying temperature/time; final active-material loading; final electrode thickness; separator manufacturer/model if available; electrolyte volume; glovebox H₂O/O₂ specification.]]**
-
 Galvanostatic charge–discharge measurements were performed using a WonATech battery cycler between 0.005 and 2.5 V. The principal low-rate comparison was conducted at 0.1 C. Rate-capability measurements used a stepwise sequence from 0.1 C to 5 C followed by recovery at 0.1 C.
-
-**[[YOON LAB INPUT REQUIRED — verify the capacity basis defining 1 C; exact number of cycles at each rate; confirm the WonATech charge/discharge convention before finalizing lithiation/delithiation labels.]]**
 
 GITT was performed at 100 mA g⁻¹ between 0.005 and 2.5 V using repeated 10 min current pulses followed by 60 min open-circuit relaxation. A common 3 s post-interruption reference was used because the Mg-free and Mg-containing datasets were acquired at different time resolutions in the early current-off period. The relaxation magnitude was defined as
 
