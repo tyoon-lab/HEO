@@ -1,9 +1,9 @@
-# Supporting Information — v3 Review Draft
+# Supporting Information — Collaborator Review Draft
 
-## Mg Incorporation and Ball Milling Independently Regulate Electrochemical Accessibility and Conversion in Spinel High-Entropy Oxide Anodes
+## Structural Modification Reshapes Conversion and Relaxation in Spinel High-Entropy Oxide Anodes
 
 **Date:** 2026-09-20  
-**Status:** review-ready SI v3 aligned to `HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md`  
+**Status:** collaborator-review SI aligned to `HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md`  
 **Purpose:** technical completeness, auditability, robustness tests, and claim-boundary support for the main manuscript.
 
 > Values below are included only where they are already verified from the project source files. Missing historical or collaborator-generated metadata are explicitly marked and are not inferred.
@@ -93,7 +93,7 @@ Instrument-reported first-cycle capacity pairs and initial Coulombic efficiencie
 
 **[[YOON LAB INPUT REQUIRED — exact C-rate sequence, cycles per rate, and 1 C capacity basis.]]**
 
-**Figure S11.** dQ/dV evolution if retained in the final SI.
+**Figure S11.** Full/selected-cycle dQ/dV evolution supporting the compact main-text panel.
 
 **Figure S12.** Cycling EIS series with state-matching/outlier note. The EIS data are supporting evidence only because several spectra are unstable or outlying and do not support one uniquely defensible equivalent-circuit parameter series.
 
@@ -325,7 +325,7 @@ The conventional apparent \(D_{\mathrm{GITT}}\) curve is not required in the fin
 
 # S6. Reduced spatial model of conversion-associated state evolution
 
-The model variable \(\phi\) is interpreted as an effective conversion-associated structural-state coordinate. Values near zero represent an oxide-derived parent/intermediate state and larger values represent progression toward a more deeply converted state. It is not a directly measured rock-salt fraction, metallic-phase fraction, or Li2O fraction. The model is not a stoichiometrically complete conversion-reaction model.
+The model variable \(\phi\) represents the local extent of conversion. Values near zero correspond to an oxide-derived parent/intermediate state, whereas larger values represent progression toward a more deeply converted state. It is not interpreted as the experimentally measured fraction of any specific rock-salt, metallic, Li2O, or other microscopic phase. The model is not a stoichiometrically complete conversion-reaction model.
 
 ## S6.1. Governing equations
 
@@ -444,7 +444,7 @@ For BM-HEO:
 | 7 | 0.1905 | 0.0838 | 26.91 |
 | 11 | 0.1824 | 0.0847 | 26.91 |
 
-The surface-chemical-potential readout gives similarly stable moment widths. Eleven equal-probability Gaussian quantiles are therefore sufficient for the frozen directional model. The model moment width is a state-space second-moment descriptor and is not numerically equivalent to the experimental FWHM-like capacity width used in Figure 4; only the directional broadening/narrowing is compared.
+The surface-chemical-potential readout gives similarly stable moment widths. Eleven equal-probability Gaussian quantiles are therefore sufficient for the frozen directional model. The model moment width is a state-space second-moment descriptor and is not numerically equivalent to the experimental FWHM-like capacity width used in Figure 5; only the directional broadening/narrowing is compared.
 
 ## S7.2. Frozen four-sample directional result
 
@@ -474,7 +474,7 @@ The experimental BM-Mg-versus-Mg excess-amplitude difference is background-sensi
 
 ## S7.3. No-refit conversion-ordering cross-check
 
-After the experimental Figure 4 excess feature was reassigned from a generic late-stage transition to conversion-associated electrochemistry, the frozen v4 model was recalculated **without refitting any parameter**.
+After the experimental Figure 5 excess feature was assigned from a generic late-stage transition to conversion-associated electrochemistry, the frozen v4 model was recalculated **without refitting any parameter**.
 
 Using either the volume-averaged or surface chemical-potential readout, the model relaxation maxima occur at:
 
@@ -501,7 +501,7 @@ Because the model coordinate \(\bar c\) increases with lithiation while the expe
 
 ## S7.4. Pulse-end structural maps and rest evolution
 
-Main Figure 5 shows the pulse-end radial effective conversion-associated state variable over the late-stage model window. For ball-milled samples, the circular maps are ensemble-averaged radial states and are not simulated heterogeneous two-dimensional particles.
+Main Figure 6 shows the pulse-end radial conversion state over the late-stage model window. For ball-milled samples, the circular maps are ensemble-averaged radial states and are not simulated heterogeneous two-dimensional particles.
 
 **Figure S21.** Model-predicted \(\Delta\bar\phi_{\mathrm{rest}}\) during the subsequent 60 min zero-flux interval. This quantity is an internal-state descriptor and is not numerically equated with the measured voltage relaxation \(\Delta E_{\mathrm{relax}}\).
 
@@ -543,22 +543,22 @@ Accordingly, the present HEO analysis uses established intermittent-relaxation c
 - Figure S5: final XPS, only if the final dataset is retained.
 - Figure S6: N₂ adsorption/desorption isotherms and BET fits.
 - Figure S7: interfacial-capacitance scan-rate regressions.
-- Figure S8: full first-cycle and selected-cycle voltage profiles.
+- Figure S8: additional first-cycle/selected-cycle voltage profiles.
 - Figure S9: no-FEC cycling control.
-- Figure S10: detailed rate capability and 0.1 C recovery.
-- Figure S11: cycling EIS with state-matching/outlier note.
-- Figure S12: additional post-cycle SEM.
-- Figure S13: optional selected-cycle dQ/dV evolution only if it contributes information beyond Figure S19.
-- Figure S14: representative early current-off \(E\)–\(\sqrt t\) fits.
+- Figure S10: detailed/normalized rate-capability comparison and 0.1 C recovery.
+- Figure S11: full or selected-cycle dQ/dV evolution supporting main Figure 3.
+- Figure S12: cycling EIS with state-matching/outlier note.
+- Figure S13: additional post-cycle SEM.
+- Figure S14: representative early current-off $E$–$\sqrt t$ fits.
 - Figure S15: full first-lithiation GITT traces.
-- Figure S16: \(t_{50}\), \(t_{63}\), and \(t_{90}\) versus state.
+- Figure S16: $t_{50}$, $t_{63}$, and $t_{90}$ versus state.
 - Figure S17: sample-wise background fits and excess curves.
 - Figure S18: background/window sensitivity audit.
 - Figure S19: latest first-cycle dQ/dV reconstruction, smoothing sensitivity, and GITT peak-voltage correspondence.
 - Figure S20: model convergence/readout robustness and no-refit conversion-ordering validation.
-- Figure S21: 60 min \(\Delta\bar\phi_{\mathrm{rest}}\).
+- Figure S21: 60 min $\Delta\bar\phi_{\mathrm{rest}}$.
 
-A standalone conventional apparent \(D_{\mathrm{GITT}}\) figure is intentionally omitted unless a later reviewer-specific need arises.
+A standalone conventional apparent $D_{\mathrm{GITT}}$ figure is intentionally omitted unless a later reviewer-specific need arises.
 
 ## Tables
 
@@ -572,11 +572,11 @@ A standalone conventional apparent \(D_{\mathrm{GITT}}\) figure is intentionally
 
 ## Readiness classes
 
-**Available from current Yoon-Lab/project files:** S14–S21 in principle; final formatting/plotting remains to be completed.
+**Available from current Yoon-Lab/project files:** S14–S21 in principle; final formatting/plotting remains to be completed before the submission package is frozen.
 
 **Available in recent progress material but source/provenance should be frozen before final SI:** S6–S13.
 
-**Collaborator-dependent before submission:** S1–S5, especially final ICP/XRD refinement/HRTEM indexing and the decision on XPS.
+**Yoo-group input required before submission:** S1–S5, especially final ICP/XRD refinement/HRTEM indexing, Mg composition/synthesis metadata, and the decision on XPS.
 
 # S10. Items that remain outside the current HEO paper
 
