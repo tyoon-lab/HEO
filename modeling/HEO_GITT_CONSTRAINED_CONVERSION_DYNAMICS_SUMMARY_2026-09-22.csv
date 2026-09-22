@@ -1,0 +1,5 @@
+Sample,Reversible_first_cycle_capacity_mAh_g,Conversion_response_width_mAh_g,Endpoint_tracking_1C,Integrated_dynamic_lag_1C
+HEO,609.12,354.13,0.591629,0.210123
+BM-HEO,782.08,430.17,0.632701,0.269238
+Mg-HEO,458.91,250.29,0.600995,0.215723
+BM-Mg-HEO,580.83,391.78,0.670755,0.278341
