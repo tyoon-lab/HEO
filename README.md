@@ -6,68 +6,57 @@ This repository is maintained so a new chat/session can resume **without a separ
 
 Read first:
 
-`START_HERE_CURRENT_STATE_2026-09-22.md`
+`START_HERE_CURRENT_STATE_2026-09-23.md`
 
-That file is the single current-state entry point and contains:
-- current AFM-target manuscript identity;
-- current Figures 1–5 experimental story;
-- current Main/SI Word status;
-- recovered four-sample raw GITT source locations;
-- why the old spatial phase-field model was removed from the revised manuscript;
-- the new GITT-constrained distributed-threshold conversion-dynamics model;
-- preliminary model results and interpretation boundaries;
-- decisions that must not be accidentally reversed;
-- the exact unresolved question where the next chat must begin.
-
-## Immediate next question
-
-The next session should begin by answering:
-
-**What does “integrated dynamic lag” physically mean, and is it a useful/defensible main-text descriptor?**
-
-Do not continue modeling until this is clarified.
-
-## Current manuscript status
-
-The latest revised Main/SI Word versions generated on 2026-09-21:
-- include page numbers;
-- are experimentally complete through the GITT/dQ/dV conversion analysis;
-- exclude the old spatial/phase-field simulation;
-- do **not yet** include the new 2026-09-22 reduced model.
-
-The new Figure 6 candidate is therefore **under evaluation**, not manuscript-final.
-
-## Current key files
-
-Restart state:
-- `START_HERE_CURRENT_STATE_2026-09-22.md`
-
-New Figure 6 candidate:
-- `modeling/HEO_GITT_CONSTRAINED_CONVERSION_DYNAMICS_2026-09-22.md`
-- `modeling/heo_gitt_constrained_conversion_dynamics.py`
-- `modeling/HEO_GITT_CONSTRAINED_CONVERSION_DYNAMICS_SUMMARY_2026-09-22.csv`
-
-Current manuscript scientific authority before this modeling update:
-- `manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md`
-
-Supporting Information:
-- `manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md`
-
-Figure architecture:
-- `manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md`
-
-Collaborator review package:
-- `manuscript/HEO_MANUSCRIPT_COLLABORATOR_REVIEW_2026-09-21.md`
-- `manuscript/HEO_SUPPORTING_INFORMATION_COLLABORATOR_REVIEW_2026-09-21.md`
-- `manuscript/YOO_GROUP_COLLABORATOR_REVIEW_NOTES_2026-09-21.md`
+That file is the single authoritative current-state entry point.
 
 ## Current paper story
 
-Figure 1: structural/compositional/nanoscale characterization — provisional Yoo-group input  
-→ Figure 2: morphology / physical surface characterization — provisional Yoo-group input  
-→ Figure 3: conventional electrochemistry  
-→ Figure 4: GITT relaxation magnitude vs relaxation time  
-→ Figure 5: conversion-associated excess relaxation + first-cycle dQ/dV; BM redistributes while Mg suppresses/delays conversion  
-→ Figure 6: **reopened**; current preferred candidate is a GITT-constrained reduced conversion-dynamics simulation, not the old free-parameter spatial model
+Figure 1: structural/compositional/nanoscale characterization — provisional collaborator input  
+→ Figure 2: morphology / physical characterization — provisional collaborator input  
+→ Figure 3: conventional electrochemistry / absolute rate-capacity context  
+→ Figure 4: GITT relaxation magnitude vs ensemble effective timescale  
+→ Figure 5: first-cycle conversion-associated excess relaxation + dQ/dV localization  
+→ Figure 6: **cycle-resolved evolution of conversion-associated relaxation**  
+→ Figure 7: **minimal multi-step conversion microkinetic interpretation**
 
-The paper is an **HEO materials/mechanism paper**, not a GITT-method paper.
+The paper remains an **HEO materials/mechanism paper**, not a GITT-method paper.
+
+## Key 2026-09-23 decisions
+
+- Figure 6 is no longer the 2026-09-22 distributed-threshold finite-rate simulation.
+- Figure 6 is now experimental: 1st→2nd→3rd-cycle GITT evolution.
+- Later-cycle background sensitivity passed: exponential and linear baselines give essentially identical C2/C3 hump amplitudes and peak positions.
+- Figure 7 may use a minimal conversion microkinetic network to explain amplitude–timescale decoupling and cycle-history dependence.
+- Figure 7 must **not** claim a unique RDS.
+- Main text should not foreground “single-current non-identifiability” or invite extra experiments; the model is a mechanistic-consistency interpretation.
+- A simple single-step RC description is insufficient, but charge transfer is not claimed to be absent.
+- Current-dependent GITT and oxide-vs-sulfide comparison are strong follow-up directions.
+
+## Current key files
+
+Authoritative restart:
+- `START_HERE_CURRENT_STATE_2026-09-23.md`
+
+Figures 4–7 logic:
+- `manuscript/HEO_FIGURES_4_7_CURRENT_LOGIC_2026-09-23.md`
+
+Figure 6 evidence/audit:
+- `modeling/HEO_CYCLE_RESOLVED_GITT_AND_BACKGROUND_AUDIT_2026-09-23.md`
+
+Figure 7 microkinetics:
+- `modeling/HEO_CONVERSION_MICROKINETICS_2026-09-23.md`
+- `modeling/heo_conversion_microkinetics_electrochemical_growth.py`
+
+Literature map:
+- `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_MAP_2026-09-23.md`
+
+Current manuscript scientific authority before insertion of the new Figure 6–7 material:
+- `manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md`
+- `manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md`
+
+## Immediate next task
+
+Freeze the Figure 6 and Figure 7 panel architectures/captions, then write the Results/Discussion transition through Figures 4–7.
+
+Do not reopen the old distributed-threshold capacity-prediction model unless a specific scientific need emerges.
