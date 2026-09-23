@@ -340,7 +340,7 @@ Therefore the distributed-threshold model is **not the current main Figure 6 dir
 
 ---
 
-# 11. Figure 7 candidate — minimal conversion microkinetics
+# 11. Figure 7 — frozen minimal conversion microkinetics
 
 The new direction is not to fit a unique RDS. It is to ask whether a minimal multi-step conversion network can explain:
 - amplitude/time decoupling;
@@ -376,6 +376,16 @@ Internal counter-current is possible:
 so internal conversion-state evolution can continue at zero external current.
 
 This is the key conceptual basis for prolonged GITT relaxation in a multi-step conversion network.
+
+Frozen main-text architecture:
+- (a) effective R1/R2/R3 reaction network;
+- (b) current-on/current-off balance with an illustrative zero-external-current internal counter-current transient;
+- (c) local linearized multi-state amplitude–timescale separation, E(t)-E_eq = sum_i B_i exp(-t/tau_i);
+- (d) experiment-to-model constraint summary separating accessible reversible reaction extent, relaxation excitation/amplitude, and effective timescale.
+
+The illustrative current-off simulation is a mechanistic-consistency demonstration, not a sample fit. Its compact output is stored in `modeling/HEO_MICROKINETIC_CURRENT_OFF_BALANCE_2026-09-23.csv`.
+
+Do not place the synthetic current-sweep/RDS-discrimination result in the main Figure 7; retain it for SI/future direction.
 
 ---
 
@@ -443,7 +453,7 @@ The modeling direction is now sufficiently closed.
 
 Next session should move to:
 1. Figure 6 architecture is frozen; finalize its caption wording when the plotted panels are assembled;
-2. freeze the Figure 7 minimal microkinetic panel architecture and wording;
+2. Figure 7 architecture is frozen; finalize its caption wording when the schematic/simulation panels are assembled;
 3. write the Results/Discussion transition from Figure 4 → Figure 5 → Figure 6 → Figure 7;
 4. then update Main/SI manuscript text.
 
