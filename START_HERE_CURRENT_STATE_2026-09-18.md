@@ -1,9 +1,11 @@
-# Superseded current-state file
+# HEO — historical restart state
 
-This file is retained only so older links do not break.
+**Superseded on 2026-09-23.**
 
-**Current authoritative restart point:**
+The authoritative restart point is:
 
-`START_HERE_CURRENT_STATE_2026-09-21.md`
+`START_HERE_CURRENT_STATE_2026-09-23.md`
 
-A new chat should read that file first and should not reconstruct the project from this older 2026-09-18 snapshot.
+Read the 2026-09-23 state directly. It contains the current Figure 6 cycle-resolved GITT result, background audit, Figure 7 conversion microkinetics, literature map, and the exact next task.
+
+Do not use this historical file as the current scientific authority.
