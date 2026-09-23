@@ -44,6 +44,18 @@ This is the genuinely new information added by cycles 2–3.
 
 Background audit passed: later-cycle exponential and linear backgrounds are numerically indistinguishable.
 
+### Frozen Figure 6 panel architecture
+
+**(a) Cycle-resolved conversion-associated relaxation profiles.** Plot the background-subtracted excess response for C1, C2, and C3 over the common normalized lithiation coordinate, z = 0.4–0.9, for all four samples. The main visual point is the shift from the late first-cycle feature (z ~ 0.66–0.79) toward a common earlier later-cycle region (z ~ 0.50–0.56).
+
+**(b) Peak amplitude vs cycle.** Show the conversion-associated excess peak amplitude for C1, C2, and C3. This panel carries the strongest direct evidence for history dependence: HEO and BM-HEO decrease strongly, Mg-HEO increases, and BM-Mg-HEO changes comparatively little.
+
+**(c) Effective t63 vs cycle.** Show the median ensemble/state-resolved t63 over z = 0.4–0.9 for C1, C2, and C3. This is intentionally paired with panel (b) to show that the amplitude evolves much more strongly than the effective timescale.
+
+**(d) Normalized amplitude-change vs timescale-change map.** Plot x = t63,3/t63,1 and y = A3/A1, with reference lines at 1. The four samples occupy a narrow x range (0.845–0.923) but a much broader y range (0.435–1.698), providing a compact graphical summary that cycle history redistributes relaxation amplitude far more strongly than it changes the ensemble effective timescale.
+
+Do not replace panel (d) with a reversible-capacity bar in the main figure. Later-cycle reversible capacity remains an important textual/material constraint and may be shown in the SI, but Figure 6 should remain focused on cycle-history evolution of the relaxation response.
+
 ## Figure 7 — minimal microkinetic interpretation
 
 Use an effective network:
