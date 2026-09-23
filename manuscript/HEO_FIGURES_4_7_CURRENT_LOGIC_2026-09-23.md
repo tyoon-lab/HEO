@@ -1,5 +1,22 @@
 # HEO Figures 4–7 — Current Logic, 2026-09-23
 
+## Core electrochemical question
+
+Keep the manuscript-level story simple:
+
+**How can ball milling increase conversion-related capacity while the conversion-associated relaxation becomes slower rather than faster?**
+
+This is the central apparent paradox. Mg incorporation provides the complementary perturbation: it lowers accessible conversion capacity without a proportional change in the relaxation timescale.
+
+Interpretation:
+- capacity primarily reports how much reaction becomes accessible;
+- t63 is an effective descriptor of conversion-associated current-off kinetics, not the forward conversion rate itself;
+- therefore more conversion can coexist with slower relaxation when a modification opens additional reaction population, including slower-relaxing internal states.
+
+This separation is not unique to HEOs, but the multication, heterogeneous, reconstructive nature of HEO conversion provides a natural setting in which reaction accessibility and internal relaxation can become strongly separated.
+
+Detailed wording authority: `manuscript/HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-23.md`.
+
 ## Figure 4 — magnitude and timescale are different observables
 
 Experimental GITT current-off analysis:
@@ -89,20 +106,24 @@ Keep synthetic current-sweep/RDS discrimination in SI or future work, not the ma
 ## Final logical chain
 
 Figure 4:
-What is observed? Magnitude and timescale decouple.
+The apparent paradox first appears: higher accessible capacity does not imply shorter conversion-associated relaxation.
 
 → Figure 5:
-Where does the distinctive signal occur? In the conversion-associated region.
+The unusual relaxation is localized to the conversion region, confirming that the paradox belongs to conversion-associated dynamics.
 
 → Figure 6:
-Is that response a fixed material kinetic fingerprint? No; it evolves strongly with cycle history, mainly through amplitude/population rather than comparable t63 change.
+The relaxation is history-dependent: its amplitude changes strongly with cycling while t63 changes much less.
 
 → Figure 7:
-Why is that possible? A multi-step conversion network naturally separates state excitation/population from relaxation eigen-timescale.
+The paradox is resolved mechanistically. A multi-step conversion network allows the amount of reaction/state population accessed during the pulse to change separately from the internal relaxation eigen-timescales after interruption.
+
+BM and Mg should be used as complementary perturbations throughout:
+- BM: more accessible conversion, but not faster relaxation;
+- Mg: less accessible conversion, without a proportional relaxation-timescale change.
 
 ## Closing mechanistic statement candidate
 
-**Ball milling and Mg incorporation do not simply accelerate or retard conversion. Their electrochemical effects are expressed through different combinations of reversible reaction extent and history-dependent conversion-associated relaxation.**
+**Ball milling and Mg incorporation do not simply accelerate or retard conversion. Ball milling increases the amount of conversion that can be accessed without accelerating the conversion-associated relaxation, whereas Mg incorporation suppresses accessible conversion without a proportional change in the relaxation timescale.**
 
 More explicit follow-on sentence:
 
