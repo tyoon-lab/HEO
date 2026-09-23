@@ -51,12 +51,15 @@ Figure 7 microkinetics:
 Literature map:
 - `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_MAP_2026-09-23.md`
 
-Current manuscript scientific authority before insertion of the new Figure 6–7 material:
-- `manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md`
-- `manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md`
+Current manuscript authority:
+- `manuscript/HEO_MANUSCRIPT_V5_AFM_MICROKINETIC_2026-09-23.md`
+- `manuscript/HEO_SUPPORTING_INFORMATION_V4_MICROKINETIC_2026-09-23.md`
+
+Simplified electrochemistry-story authority:
+- `manuscript/HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-23.md`
 
 ## Immediate next task
 
-Freeze the Figure 6 and Figure 7 panel architectures/captions, then write the Results/Discussion transition through Figures 4–7.
+Figures 6–7 architecture and the Figure 3–7 manuscript logic are now frozen in Main v5/SI v4. Next assemble the final Figure 6–7 artwork, tighten manuscript wording, and perform the full consistency/reference audit.
 
 Do not reopen the old distributed-threshold capacity-prediction model unless a specific scientific need emerges.
