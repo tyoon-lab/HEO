@@ -4,7 +4,13 @@
 
 ## Purpose
 
-Build the electrochemistry section around direct observables that explain the roles of ball milling and Mg incorporation, without overloading the synthesis-centered manuscript with a separate GITT-method narrative.
+Build the electrochemistry section around one simple apparent paradox:
+
+**ball milling increases conversion-related capacity, yet the conversion-associated relaxation is not faster and is often slower.**
+
+Mg incorporation provides the complementary case: it lowers accessible conversion capacity without a proportional change in the relaxation timescale.
+
+The section should first make this mismatch visually obvious, then use cycle-resolved GITT and minimal microkinetics to explain why reaction extent and relaxation kinetics need not change together. Do not overload the synthesis-centered manuscript with a separate GITT-method narrative.
 
 ## Proposed result flow
 
@@ -110,9 +116,18 @@ Do **not** make it a central HEO manuscript result unless a robust parameter eme
 
 ## Central electrochemistry message
 
-The strongest manuscript-level message is not that one sample has a larger or smaller apparent Li diffusivity. It is that **ball milling and Mg incorporation alter different parts of the phase-evolving electrochemical response**:
+The strongest manuscript-level message is the apparent mismatch between **how much conversion is accessed** and **how fast the conversion-associated state relaxes**.
 
-- ball milling increases accessible capacity while broadening the late-stage phase-transition response and slowing residual relaxation;
-- Mg suppresses the late-stage phase-transition-associated polarization and lowers conversion capacity, without producing faster relaxation.
+- **Ball milling:** higher surface area/accessibility allows more conversion and higher capacity, yet t63 is not shortened and is often longer. More conversion therefore does not require faster conversion-associated relaxation.
+- **Mg incorporation:** accessible conversion capacity is reduced, but t63 does not change in proportion to that reduction. Lower capacity therefore does not simply mean slower or faster relaxation.
 
-This distinction explains why polarization amplitude, relaxation time, rate capability, and accessible capacity do not change in parallel and why a single apparent GITT diffusivity is insufficient as the main mechanistic descriptor.
+A shorter t63 remains consistent with faster conversion-related relaxation kinetics, but t63 is not identical to the forward conversion rate. Capacity can be changed through reaction accessibility, surface area, and state population independently of the internal rates controlling post-interruption relaxation.
+
+Figure 7 should resolve this apparent contradiction using a minimal multi-step microkinetic picture in which:
+- reaction accessibility/state population controls how much conversion can be reached;
+- kinetic eigen-timescales control how the resulting state relaxes;
+- additional accessible reaction population can include slower-relaxing states.
+
+This phenomenon is not claimed to be HEO-exclusive. Rather, the multication, heterogeneous, reconstructive nature of HEO conversion makes the separation between reaction accessibility and internal relaxation particularly plausible and experimentally visible.
+
+Detailed current wording authority: `manuscript/HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-23.md`.
