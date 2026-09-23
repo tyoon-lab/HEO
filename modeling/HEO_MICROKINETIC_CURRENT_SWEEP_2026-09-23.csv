@@ -1,0 +1,11 @@
+scenario,relative_pulse_current,residual_relaxation_3s_mV,t63_min
+Nucleation-dominant,0.25,7.307434,14.531713
+Nucleation-dominant,0.50,15.661186,14.755700
+Nucleation-dominant,1.00,24.816023,13.655019
+Nucleation-dominant,2.00,33.254037,10.721111
+Nucleation-dominant,4.00,38.878709,7.037326
+Electrochemical-growth-dominant,0.25,6.658917,12.939998
+Electrochemical-growth-dominant,0.50,15.043390,13.588956
+Electrochemical-growth-dominant,1.00,24.130369,13.704997
+Electrochemical-growth-dominant,2.00,33.021904,13.062868
+Electrochemical-growth-dominant,4.00,41.715700,11.745877
