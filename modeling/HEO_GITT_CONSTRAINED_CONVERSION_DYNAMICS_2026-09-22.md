@@ -1,3 +1,6 @@
+> **STATUS UPDATE — 2026-09-23**  
+> This distributed-threshold model is retained as an exploratory/historical analysis but is **no longer the preferred main Figure 6 direction**. Cycle-resolved GITT provides a stronger experimental Figure 6, and the current Figure 7 candidate is a minimal multi-step conversion microkinetic interpretation. See `START_HERE_CURRENT_STATE_2026-09-23.md`, `modeling/HEO_CYCLE_RESOLVED_GITT_AND_BACKGROUND_AUDIT_2026-09-23.md`, and `modeling/HEO_CONVERSION_MICROKINETICS_2026-09-23.md`. Do not use X as capacity/phase fraction and do not revive integrated dynamic lag as a main descriptor by default.
+
 # GITT-Constrained Conversion-Dynamics Model — 2026-09-22
 
 ## Purpose
