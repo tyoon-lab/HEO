@@ -10,13 +10,14 @@
 Read these files in order:
 
 1. `START_HERE_CURRENT_STATE_2026-09-23.md` — this file; authoritative current state
-2. `manuscript/HEO_FIGURES_4_7_CURRENT_LOGIC_2026-09-23.md` — current Figures 4–7 logic
-3. `modeling/HEO_CYCLE_RESOLVED_GITT_AND_BACKGROUND_AUDIT_2026-09-23.md` — Figure 6 evidence and robustness
-4. `modeling/HEO_CONVERSION_MICROKINETICS_2026-09-23.md` — Figure 7 model logic
-5. `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_MAP_2026-09-23.md` — literature positioning
-6. `manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md` — current manuscript scientific/text authority before the 9/23 Figure 6–7 insertion
-7. `manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md`
-8. `manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md`
+2. `manuscript/HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-23.md` — simplified manuscript-level electrochemistry thesis and HEO positioning
+3. `manuscript/HEO_FIGURES_4_7_CURRENT_LOGIC_2026-09-23.md` — current Figures 4–7 logic
+4. `modeling/HEO_CYCLE_RESOLVED_GITT_AND_BACKGROUND_AUDIT_2026-09-23.md` — Figure 6 evidence and robustness
+5. `modeling/HEO_CONVERSION_MICROKINETICS_2026-09-23.md` — Figure 7 model logic
+6. `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_MAP_2026-09-23.md` — literature positioning
+7. `manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md` — current manuscript scientific/text authority before the 9/23 Figure 6–7 insertion
+8. `manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md`
+9. `manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md`
 
 Do not ask the user for a separate handoff. Continue from Section 15.
 
@@ -34,7 +35,17 @@ Paper identity: **materials/mechanism paper**, not a GITT-method paper.
 
 Preferred hierarchy:
 
-**synthesis/compositional modification → structure/morphology → conventional electrochemistry → state-resolved conversion relaxation → cycle evolution → minimal microkinetic interpretation**
+**synthesis/compositional modification → structure/morphology → conversion capacity vs relaxation paradox → conversion localization → cycle evolution → microkinetic resolution**
+
+Core electrochemistry thesis:
+
+**Ball milling increases the amount of conversion that can be accessed without accelerating the conversion-associated relaxation, whereas Mg incorporation suppresses accessible conversion without a proportional change in the relaxation timescale.**
+
+The key question leading into Figure 7 is:
+
+**How can more conversion coexist with slower relaxation?**
+
+The microkinetic model resolves this by separating reaction accessibility/state population from internal relaxation eigen-timescales. The decoupling is not claimed to be unique to HEOs; HEO is positioned as a multication, structurally heterogeneous conversion system in which this general multi-state behavior is especially visible.
 
 The old free-parameter spatial/phase-field model remains removed from the manuscript.
 
@@ -452,10 +463,10 @@ Do not claim a universal “first” without a full literature audit.
 The modeling direction is now sufficiently closed.
 
 Next session should move to:
-1. Figure 6 architecture is frozen; finalize its caption wording when the plotted panels are assembled;
-2. Figure 7 architecture is frozen; finalize its caption wording when the schematic/simulation panels are assembled;
-3. write the Results/Discussion transition from Figure 4 → Figure 5 → Figure 6 → Figure 7;
-4. then update Main/SI manuscript text.
+1. use `HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-23.md` as the wording authority for the electrochemistry narrative;
+2. Figure 6 and Figure 7 architectures are frozen; finalize caption wording when the panels are assembled;
+3. rewrite the Results/Discussion transition from Figure 3 → Figure 4 → Figure 5 → Figure 6 → Figure 7 around the apparent capacity–relaxation paradox and its microkinetic resolution;
+4. then update the Abstract, Introduction close, Main Methods/model description, captions, and SI so the old reduced-spatial-model story is fully removed.
 
 Do **not** reopen the distributed-threshold capacity-prediction model unless a specific unresolved need emerges.
 
