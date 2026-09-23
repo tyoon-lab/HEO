@@ -121,11 +121,20 @@ Possible stronger second sentence:
 
 Avoid `reconstructed state` unless structural reconstruction is independently demonstrated. Use `cycled state` or `post-first-cycle state`.
 
-## Candidate panels
+## Frozen Figure 6 panel architecture
 
-- (a) cycle-resolved excess profiles or selected C1/C2/C3 comparison
-- (b) hump amplitude vs cycle
-- (c) t63 vs cycle
-- (d) persistent reversible capacity / summary map
+The panel architecture is now fixed:
 
-The exact panel-d design can still be optimized without changing the scientific message.
+- **(a) Cycle-resolved conversion-associated relaxation profiles:** background-subtracted excess response for C1, C2, and C3 over common normalized lithiation z = 0.4–0.9 for all four samples. The key visual is the shift from the late first-cycle feature (z ~ 0.66–0.79) to a common earlier later-cycle region (z ~ 0.50–0.56).
+- **(b) Peak amplitude vs cycle:** conversion-associated excess peak amplitude for C1/C2/C3. This panel emphasizes the large and sample-dependent history effect.
+- **(c) Effective t63 vs cycle:** median ensemble/state-resolved t63 over z = 0.4–0.9 for C1/C2/C3. This panel is deliberately paired with (b) to show that the timescale changes much less than the amplitude.
+- **(d) Normalized amplitude-change vs timescale-change map:** x = t63,3/t63,1 and y = A3/A1, with unity reference lines. The narrow timescale-ratio range (0.845–0.923) versus the broad amplitude-ratio range (0.435–1.698) is the compact graphical summary of the Figure 6 message.
+
+Main-figure design decision:
+- do **not** use later-cycle reversible capacity as panel (d);
+- keep reversible capacity as a material-level constraint in the text and/or SI;
+- keep Figure 6 focused on the evolution and decoupling of relaxation amplitude and effective timescale.
+
+Scientific message remains:
+
+**Cycling strongly redistributes the magnitude of the conversion-associated relaxation while producing only modest changes in its effective timescale.**
