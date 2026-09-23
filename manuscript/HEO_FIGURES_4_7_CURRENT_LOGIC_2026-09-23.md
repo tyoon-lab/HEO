@@ -70,9 +70,21 @@ E(t)-Eeq = sum B_i exp(-t/tau_i).
 Therefore mode excitation/amplitude and timescale are naturally distinct.
 
 Message:
-**a multi-step conversion network provides a physically consistent origin for the amplitude–timescale decoupling and its cycle dependence; a simple single-step RC description is insufficient.**
+**a multi-step conversion network provides a physically consistent interpretation of the amplitude–timescale decoupling and its cycle dependence; a simple single-step RC description is insufficient.**
 
-Do not claim a unique RDS.
+### Frozen Figure 7 panel architecture
+
+Preferred figure title: **Microkinetic interpretation of history-dependent conversion relaxation**
+
+**(a) Effective reaction network.** R1: A + Li+ + e- <-> B; R2: B -> N; R3: B + Li+ + e- <-> P. A/B/N/P are explicitly effective kinetic states.
+
+**(b) Current-off internal counter-current.** Show current-on j_ext=r1+r3 and current-off j_ext=0 with r1=-r3 !=0 allowed. Use one illustrative simulated rest transient to show finite opposing internal currents and continuing voltage relaxation at zero external current. This is not a sample fit.
+
+**(c) Multi-state amplitude–timescale separation.** Show d(delta x)/dt=J delta x and E(t)-E_eq=sum_i B_i exp(-t/tau_i), with B_i identified with excitation/population plus voltage sensitivity and tau_i with kinetic eigen-timescale. The panel explains why amplitude can change strongly while effective t63 changes modestly.
+
+**(d) Experiment-to-model constraint summary.** Connect the model to the three experimental facts: cycle-dependent amplitude >> t63 change; BM gives higher reversible extent with longer effective relaxation; Mg gives lower reversible extent while later-cycle t63 approaches HEO. Present accessible reaction extent, relaxation excitation/amplitude, and effective timescale as distinct but coupled coordinates rather than a single fast/slow axis.
+
+Keep synthetic current-sweep/RDS discrimination in SI or future work, not the main Figure 7. Do not claim a unique RDS.
 
 ## Final logical chain
 
