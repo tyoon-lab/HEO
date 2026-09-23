@@ -131,6 +131,41 @@ df = pd.DataFrame(rows, columns=[
 
 df.to_csv(OUT/"HEO_electrochemical_growth_current_sweep.csv", index=False)
 
+# Compact current-off diagnostic for the main-text Figure 7 concept.
+# This uses one illustrative parameter regime only; it is not a fit to a specific sample.
+# The residual voltage is referenced to the end of the experimental-style 3600 s rest.
+rep_pars = nucleation_dom
+on_rep, off_rep, Eon_rep, Eoff_rep = simulate(rep_pars, jref=JREF)
+sample_times = np.array([0.0, 3.0, 10.0, 30.0, 60.0, 180.0, 600.0, 1800.0, 3600.0])
+off_rows = []
+for t in sample_times:
+    state = np.array([
+        np.interp(t, off_rep.t, off_rep.y[j,:])
+        for j in range(off_rep.y.shape[0])
+    ])
+    r1, r3, rn, u = rates(state, 0.0, rep_pars)
+    E = -RTF*u
+    off_rows.append([
+        t,
+        (Eoff_rep[-1] - E)*1000.0,
+        r1,
+        r3,
+        r1+r3,
+        rn,
+    ])
+
+pd.DataFrame(off_rows, columns=[
+    "rest_time_s",
+    "residual_relaxation_to_3600s_mV",
+    "r1",
+    "r3",
+    "r1_plus_r3",
+    "rn",
+]).to_csv(
+    OUT/"HEO_MICROKINETIC_CURRENT_OFF_BALANCE_2026-09-23.csv",
+    index=False
+)
+
 fig, ax = plt.subplots(figsize=(7.2,5.0))
 for name in scenarios:
     d = df[df["Scenario"]==name]
