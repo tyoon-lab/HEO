@@ -15,8 +15,8 @@ Read these files in order:
 4. `modeling/HEO_CYCLE_RESOLVED_GITT_AND_BACKGROUND_AUDIT_2026-09-23.md` — Figure 6 evidence and robustness
 5. `modeling/HEO_CONVERSION_MICROKINETICS_2026-09-23.md` — Figure 7 model logic
 6. `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_MAP_2026-09-23.md` — literature positioning
-7. `manuscript/HEO_MANUSCRIPT_V4_AFM_CONVERSION_2026-09-20.md` — current manuscript scientific/text authority before the 9/23 Figure 6–7 insertion
-8. `manuscript/HEO_SUPPORTING_INFORMATION_V3_REVIEW_READY_2026-09-20.md`
+7. `manuscript/HEO_MANUSCRIPT_V5_AFM_MICROKINETIC_2026-09-23.md` — current main-manuscript authority
+8. `manuscript/HEO_SUPPORTING_INFORMATION_V4_MICROKINETIC_2026-09-23.md`
 9. `manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md`
 
 Do not ask the user for a separate handoff. Continue from Section 15.
@@ -465,8 +465,8 @@ The modeling direction is now sufficiently closed.
 Next session should move to:
 1. use `HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-23.md` as the wording authority for the electrochemistry narrative;
 2. Figure 6 and Figure 7 architectures are frozen; finalize caption wording when the panels are assembled;
-3. rewrite the Results/Discussion transition from Figure 3 → Figure 4 → Figure 5 → Figure 6 → Figure 7 around the apparent capacity–relaxation paradox and its microkinetic resolution;
-4. then update the Abstract, Introduction close, Main Methods/model description, captions, and SI so the old reduced-spatial-model story is fully removed.
+3. Main v5 and SI v4 now implement the Figure 3 → Figure 7 capacity–relaxation/microkinetic story; next refine wording, artwork, and numerical provenance against the final figures;
+4. freeze collaborator-dependent Figures 1–2 and then perform a full manuscript consistency/reference audit.
 
 Do **not** reopen the distributed-threshold capacity-prediction model unless a specific unresolved need emerges.
 
@@ -479,7 +479,7 @@ Do not expand the microkinetic model further in the current paper unless the Fig
 - Paper remains a materials/mechanism paper, not a GITT-method paper.
 - Figure 5 remains the first-cycle experimental mechanistic centerpiece.
 - Figure 6 is now cycle-resolved experimental evolution, not the old distributed-threshold simulation.
-- Figure 7, if retained, is minimal microkinetic interpretation, not a unique RDS extraction.
+- Figure 7 is the minimal microkinetic resolution of the apparent capacity–relaxation mismatch, not a unique RDS extraction.
 - Do not call t63 a local microscopic time constant; use ensemble/state-resolved effective relaxation timescale.
 - Do not equate smaller relaxation amplitude with faster kinetics.
 - Do not equate hump amplitude with conversion fraction.
