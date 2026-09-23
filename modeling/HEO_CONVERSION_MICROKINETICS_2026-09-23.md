@@ -133,23 +133,34 @@ Potential future study:
 - compare amplitude, t63, and pulse polarization;
 - expand to oxide vs sulfide conversion chemistries.
 
-## Figure 7 role
+## Figure 7 role — frozen architecture
 
-Preferred title direction:
+Preferred title:
 
-**Microkinetic interpretation of conversion-state relaxation**
+**Microkinetic interpretation of history-dependent conversion relaxation**
 
-or
+The main-text figure is an interpretation figure, not a parameter-fitting or RDS-identification figure.
 
-**Microkinetic origin of conversion-associated relaxation**
+### Frozen panels
 
-Preferred panels:
-- (a) effective multi-step conversion network
-- (b) current-on and current-off current-balance concept; r1+r3=0 at OCV but internal counter-current can remain
-- (c) amplitude–timescale separation in the linearized multi-state response
-- (d) compatibility/interpretation summary tied to Figure 5–6 observations
+**(a) Effective multi-step conversion network.** Show R1: A + Li+ + e- <-> B, R2: B -> N, and R3: B + Li+ + e- <-> P. Label A/B/N/P explicitly as effective kinetic states rather than atomistically identified phases or species.
 
-A current-dependence prediction may be placed in SI or used as a small secondary panel only if it does not invite unnecessary experimental expansion.
+**(b) Current interruption and internal counter-current.** Show the galvanostatic condition j_ext = r1 + r3 during the pulse and the open-circuit condition j_ext = 0 after interruption. Include one illustrative simulation of the current-off period showing that r1 and r3 remain finite and opposite while r1+r3 remains zero, together with the continuing voltage relaxation. This is a mechanistic-consistency demonstration, not a fit to any one HEO sample. The compact reproducibility dataset is saved as `HEO_MICROKINETIC_CURRENT_OFF_BALANCE_2026-09-23.csv`.
+
+For the illustrative regime, immediately after interruption r1 ~ -5.0e-5 and r3 ~ +5.0e-5 while r1+r3 is numerically ~1e-18. The internal counter-current then decays during the 3600 s rest while the residual voltage relaxation decreases from ~24.9 mV to zero by the experimental end-reference.
+
+**(c) Multi-state amplitude–timescale separation.** Present the local linearization d(delta x)/dt = J delta x and E(t)-E_eq = sum_i B_i exp(-t/tau_i). Visually separate B_i (state excitation/population and voltage sensitivity) from tau_i (kinetic eigen-timescale). The purpose is to explain why a large change in relaxation amplitude does not require a comparable change in t63. Do not present B_i or tau_i as experimentally measured microscopic eigenmodes.
+
+**(d) Experimental constraints and compatible interpretation.** Tie the model back to Figures 5–6 using three experimentally established constraints: (i) cycling changes conversion-associated amplitude much more strongly than t63; (ii) ball milling increases accessible reversible reaction extent while effective relaxation remains longer; and (iii) Mg lowers accessible reversible reaction extent while later-cycle t63 approaches the undoped HEO. Summarize these as distinct coordinates—accessible reaction extent, relaxation excitation/amplitude, and effective timescale—rather than a single fast/slow kinetic axis.
+
+### Main vs SI boundary
+
+Keep the synthetic current-dependence discrimination out of the main Figure 7. It is useful as an SI/future-direction result because two regimes matched at one reference current separate when current is varied, but putting it in the main figure would shift attention toward RDS identification and invite an unnecessary additional-current experimental requirement.
+
+Likewise, do not make a single-step RC negative-control fit a main panel. The main-text claim is only that a simple single-step RC description is insufficient to account for the full long, history-dependent amplitude–timescale behavior.
+
+The Figure 7 endpoint is therefore:
+**multi-step conversion kinetics provides a physically consistent explanation for independent evolution of accessible reaction extent, relaxation excitation, and effective relaxation timescale without assigning a unique microscopic RDS.**
 
 ## Main paper-level conclusion supported by the model
 
