@@ -296,13 +296,15 @@ Figure 6 should now be an **experimental cycle-evolution figure**, not the earli
 Primary conclusion:
 **conversion-associated relaxation is history-dependent and evolves with cycling.**
 
-Candidate panels:
-- (a) cycle-resolved conversion-associated relaxation profiles / hump localization;
-- (b) peak amplitude vs cycle;
-- (c) t63 vs cycle;
-- (d) summary tying later-cycle reversible capacity to the persistent BM/Mg differences, or an amplitude-change vs timescale-change map.
+Frozen panels:
+- (a) C1/C2/C3 background-subtracted conversion-associated relaxation profiles over common z=0.4–0.9;
+- (b) conversion-associated peak amplitude vs cycle;
+- (c) median ensemble/state-resolved t63 vs cycle over z=0.4–0.9;
+- (d) normalized change map with x=t63,3/t63,1 and y=A3/A1, with unity reference lines.
 
-The exact panel (d) can still be optimized, but the scientific role is frozen:
+Panel (d) is intentionally the amplitude-change vs timescale-change map, not a reversible-capacity bar. The four samples occupy a narrow timescale-ratio range (0.845–0.923) but a broad amplitude-ratio range (0.435–1.698), directly summarizing the Figure 6 conclusion. Later-cycle reversible capacity remains a text/SI material constraint.
+
+The scientific role is frozen:
 - Figure 5 = first-cycle magnitude/timescale decoupling and conversion localization;
 - Figure 6 = cycle-history evolution and persistence/non-persistence of material effects.
 
@@ -440,7 +442,7 @@ Do not claim a universal “first” without a full literature audit.
 The modeling direction is now sufficiently closed.
 
 Next session should move to:
-1. freeze the Figure 6 panel architecture and captions using the cycle-resolved GITT results;
+1. Figure 6 architecture is frozen; finalize its caption wording when the plotted panels are assembled;
 2. freeze the Figure 7 minimal microkinetic panel architecture and wording;
 3. write the Results/Discussion transition from Figure 4 → Figure 5 → Figure 6 → Figure 7;
 4. then update Main/SI manuscript text.
