@@ -1,46 +1,69 @@
 # HEO Modeling Status
 
-**Date:** 2026-09-18
+**Updated:** 2026-09-23
 
-## Current authoritative implementation
+## Current modeling hierarchy
 
-Python spatial phase-field gate v2 is the current mechanistic-development reference.
+### 1. Current Figure 7 candidate — authoritative mechanistic interpretation
 
-Model level:
-- spherical conserved Li field c(r,t);
-- non-conserved structural order parameter phi(r,t);
-- galvanostatic 600 s pulse;
-- 3600 s zero-flux rest;
-- Mg stabilization through c_tr shift plus lower M_phi;
-- ball-milling heterogeneity through a distribution of local transition thresholds.
+`HEO_CONVERSION_MICROKINETICS_2026-09-23.md`  
+`heo_conversion_microkinetics_electrochemical_growth.py`
 
-## File hierarchy
+Purpose:
+- explain amplitude–timescale decoupling and cycle-history dependence using a minimal multi-step conversion network;
+- test mechanistic consistency;
+- **not** assign a unique microscopic RDS.
 
-1. `heo_minimal_mechanistic_model_v3.py`
-   - earlier 0D/ensemble hypothesis-discrimination model;
-   - useful negative-control and logic model.
+Effective network:
+- electrochemical activation A <-> B
+- effective nucleation/activity evolution B -> N
+- electrochemical phase growth B <-> P
 
-2. `heo_spatial_phase_field_gate_v2.py`
-   - current spatial Python reference;
-   - supersedes the minimal model for the next physics-development stage.
+At current off:
+- j_ext = r1 + r3 = 0
+- internal r1 = -r3 != 0 is permitted
 
-3. `HEO_PhaseTransition_Model_Final.m`
-   - legacy/provisional MATLAB port of an earlier phenomenological model;
-   - **not** the final MATLAB implementation;
-   - do not extend until the Python spatial model is frozen.
+Core conclusion:
+a simple single-step RC picture is insufficient, while internal-state nucleation/growth-type dynamics are physically compatible with the data.
 
-## Current gate status
+### 2. Current Figure 6 — experimental, not primarily a model
 
-Passed:
-- D-only directional contradiction for Mg;
-- Mg stabilization + slow structural mobility sufficiency;
-- BM peak-down / width-up from transition-condition heterogeneity;
-- radial mesh/interface-width convergence for HEO and Mg;
-- BM-Mg partial recovery without restoration of pristine HEO transformation.
+`HEO_CYCLE_RESOLVED_GITT_AND_BACKGROUND_AUDIT_2026-09-23.md`
 
-Still required before MATLAB:
-- elastic/coherency-energy test;
-- surface-energy/wetting test;
-- spatial parameter sensitivity;
-- voltage-observable sensitivity;
-- final decision on main text vs SI.
+Figure 6 now uses cycle-resolved GITT to show that conversion-associated relaxation is history-dependent. The strongest cycle effect is in response amplitude/population rather than a comparable change in t63.
+
+### 3. 2026-09-22 distributed-threshold model — historical/exploratory
+
+`HEO_GITT_CONSTRAINED_CONVERSION_DYNAMICS_2026-09-22.md`  
+`heo_gitt_constrained_conversion_dynamics.py`
+
+Useful insight:
+reaction-state distribution and relaxation speed can play different roles.
+
+Current status:
+- not the preferred main Figure 6;
+- X is not capacity or phase fraction;
+- Q×X is not a valid capacity prediction;
+- high-rate rate-capability behavior was not reproduced satisfactorily;
+- cycle-resolved experiments provide a stronger Figure 6.
+
+### 4. Older spatial phase-field models — historical only
+
+Files include:
+- `HEO_FINAL_PYTHON_PHYSICS_GATE_2026-09-18.md`
+- `heo_spatial_phase_field_frozen_v4.py`
+- earlier MATLAB/spatial variants
+
+These are not in the current revised Main/SI.
+
+Do not reinsert them by default.
+
+## Modeling constraints
+
+- do not turn the paper into a GITT-method paper;
+- do not call t63 a local microscopic time constant;
+- do not infer unique conversion fraction from hump amplitude;
+- do not assign a unique nucleation/growth RDS;
+- do not say charge transfer is absent;
+- safe negative-control statement: **a simple single-step RC description is insufficient**;
+- safe model-purpose statement: **the model tests mechanistic consistency rather than assigning a unique elementary rate-limiting step**.
