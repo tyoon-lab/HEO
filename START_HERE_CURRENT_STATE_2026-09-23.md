@@ -45,7 +45,7 @@ The key question leading into Figure 7 is:
 
 **How can more conversion coexist with slower relaxation?**
 
-The microkinetic model resolves this by separating reaction accessibility/state population from internal relaxation eigen-timescales. The decoupling is not claimed to be unique to HEOs; HEO is positioned as a multication, structurally heterogeneous conversion system in which this general multi-state behavior is especially visible.
+The microkinetic model resolves this by showing that capacity and relaxation remain kinetically coupled but need not vary monotonically once reaction accessibility and the distribution of internal kinetic timescales change independently within a heterogeneous multistep network. The decoupling is not claimed to be unique to HEOs; HEO is positioned as a multication, structurally heterogeneous conversion system in which this general multi-state behavior is especially visible.
 
 The old free-parameter spatial/phase-field model remains removed from the manuscript.
 
@@ -405,7 +405,17 @@ Current numerical files:
 - modeling/heo_conversion_microkinetics_electrochemical_growth.py
 
 Main-text claim:
-The model is a literature-informed mechanistic-consistency test. It shows that conversion-state excitation/amplitude and internal relaxation eigen-timescale can vary separately, so more accessible conversion need not imply faster post-interruption relaxation.
+The model is a literature-informed mechanistic-consistency test. Capacity and post-interruption relaxation are both kinetic-dependent. A homogeneous global-rate scaling gives the expected coupling: faster kinetics raises cutoff capacity and shortens t63. An illustrative heterogeneous-accessibility extension can instead increase cutoff capacity and lengthen t63 by adding an accessible slower-relaxing population.
+
+New validation:
+- homogeneous rate scale 0.5 -> 2.0: normalized cutoff capacity 0.299 -> 0.832; matched-state t63 22.45 -> 6.95 min;
+- reference fast population: Qcut = 0.55845, t63 = 13.45 min;
+- added slow accessible population: Qcut = 0.65714 (+17.67%), t63 = 15.28 min (+13.63%);
+- the heterogeneous calculation is an existence proof, not a BM fit.
+
+Current validation files:
+- modeling/HEO_CAPACITY_RELAXATION_MICROKINETIC_VALIDATION_2026-09-25.md
+- modeling/HEO_CAPACITY_RELAXATION_MICROKINETIC_VALIDATION_2026-09-25.csv
 
 Do not claim:
 - unique atomistic identities for I or I*
@@ -437,6 +447,9 @@ Safe main-text direction:
 - conversion involves coupled electrochemical and structural/reconstruction steps;
 - zero external current can coexist with finite opposing internal partial currents;
 - a simple single-step RC description is insufficient for the observed history-dependent amplitude–timescale behavior;
+- capacity and post-interruption relaxation are both kinetic-dependent;
+- a homogeneous global kinetic-speed axis gives the conventional Q-up / t63-down coupling;
+- heterogeneous accessibility and kinetic-timescale distributions can break that monotonic relation;
 - accessible reaction extent, relaxation excitation/amplitude, and effective timescale are distinct but coupled quantities.
 
 Avoid in Main:
