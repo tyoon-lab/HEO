@@ -1,0 +1,4 @@
+eigenvalue_real_s-1,eigenvalue_imag_s-1,tau_s,tau_min,interpretation
+-0.03325964638297126,0.0,30.066465183826907,0.5011077530637817,finite relaxation mode
+-0.0011681260344087382,0.0,856.0720081084081,14.267866801806802,finite relaxation mode
+-9.947117792854373e-13,0.0,inf,inf,conserved-state/SOC mode
