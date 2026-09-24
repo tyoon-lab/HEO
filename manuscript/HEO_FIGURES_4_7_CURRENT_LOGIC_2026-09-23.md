@@ -73,9 +73,14 @@ Background audit passed: later-cycle exponential and linear backgrounds are nume
 
 Do not replace panel (d) with a reversible-capacity bar in the main figure. Later-cycle reversible capacity remains an important textual/material constraint and may be shown in the SI, but Figure 6 should remain focused on cycle-history evolution of the relaxation response.
 
-## Figure 7 — literature-informed conversion microkinetic interpretation
+## Figure 7 — literature-informed kinetic-coupling resolution
 
-Use the current coarse-grained network:
+The current model must preserve two facts simultaneously:
+
+1. capacity is itself kinetic-dependent;
+2. the BM experiment shows higher capacity together with slower effective relaxation.
+
+Current coarse-grained network:
 
 \[
 O+\nu_1 Li^+ + \nu_1e^- \rightleftharpoons I
@@ -89,15 +94,7 @@ I \rightleftharpoons I^*
 I^*+\nu_3 Li^+ + \nu_3e^- \rightleftharpoons C
 \]
 
-with R1/R3 Faradaic and R2 a non-Faradaic structural reconstruction/conversion-activation step.
-
-State meaning:
-- O = oxide-derived state;
-- I = reduced/lithiated oxide intermediate;
-- I* = structurally reconstructed / conversion-active intermediate;
-- C = metal/Li2O-containing converted state.
-
-These are effective kinetic states, not uniquely assigned phases.
+with R1/R3 Faradaic and R2 a structural/reconstruction coordinate.
 
 At current off:
 
@@ -105,45 +102,80 @@ At current off:
 j_{\rm ext}=F(\nu_1r_1+\nu_3r_3)=0
 \]
 
-but individual partial currents need not vanish. For the normalized illustrative case \(\nu_1=\nu_3=1\),
+while finite opposing partial currents and finite R2 can remain. Overall lithiation is conserved while internal populations redistribute.
+
+### Essential control now added
+
+For one homogeneous population, scale all rates together:
+
+- rate scale 0.5: Qcut = 0.2993, t63 = 22.45 min
+- rate scale 1.0: Qcut = 0.5585, t63 = 13.45 min
+- rate scale 2.0: Qcut = 0.8322, t63 = 6.95 min
+
+Therefore the model recovers the conventional expectation:
 
 \[
-r_1=-r_3\neq0
+\text{faster global kinetics}
+\Rightarrow
+Q_{\rm cutoff}\uparrow,\ t_{63}\downarrow.
 \]
 
-can remain while R2 also continues. The total lithiation coordinate \(q=x_I+x_{I^*}+2x_C\) is conserved at open circuit even though the internal populations redistribute.
+The BM result is therefore not interpreted as capacity being unrelated to kinetics.
 
-Representative numerical validation:
-- immediately after interruption: r1 = -4.94e-5, r3 = +4.94e-5, r2 = +6.83e-5;
-- r1+r3 is numerically zero;
-- 3 s-to-60 min relaxation = ~24.0 mV;
-- t63 = ~13.8 min;
-- finite model eigen-times = ~0.50 and 14.3 min.
+### Minimal heterogeneous-accessibility existence proof
 
-Linearized multi-state kinetics gives:
+Reference:
+- fast accessible population weight = 0.65;
+- Qcut = 0.55845;
+- matched-state t63 = 13.45 min.
+
+Illustrative modified case:
+- retain the full fast population;
+- add slow accessible population weight = 0.15;
+- same topology/thermodynamics;
+- R2 of added population = 0.1 times reference.
+
+Result:
+- Qcut = 0.65714, +17.67%;
+- matched-state t63 = 15.28 min, +13.63%.
+
+Thus a heterogeneous multistep conversion system can show
 
 \[
-E(t)-E_{\rm eq}=\sum_i B_i\exp(-t/\tau_i).
+Q_{\rm cutoff}\uparrow
+\quad\text{and}\quad
+t_{63}\uparrow
 \]
 
-Therefore mode excitation/amplitude and eigen-timescale are naturally distinct.
+when additional reaction population becomes accessible while the internal kinetic-timescale distribution shifts toward slower relaxation.
 
-Message:
-**a literature-informed multi-step conversion network provides a physically consistent interpretation of the amplitude–timescale decoupling and its cycle dependence without assigning a unique microscopic RDS.**
+This is an existence proof only. Do not state that BM experimentally creates a ten-times-slower R2 population.
 
-### Frozen Figure 7 panel architecture
+### Revised Figure 7 panel architecture
 
-Preferred figure title: **Literature-informed microkinetic interpretation of history-dependent conversion relaxation**
+**(a) Literature-informed conversion network.**  
+O ↔ I ↔ I* ↔ C; R1/R3 Faradaic, R2 structural/reconstruction.
 
-**(a) Coarse-grained conversion network.** Show \(O \rightleftharpoons I \rightleftharpoons I^* \rightleftharpoons C\), with R1/R3 electrochemical and R2 structural/reconstruction. Avoid the older A/B/N/P notation.
+**(b) Current-off internal redistribution at conserved SOC.**  
+Show finite opposing partial currents and voltage relaxation despite zero external current.
 
-**(b) Current-off internal redistribution.** Show current-on \(j_{\rm ext}=F(\nu_1r_1+\nu_3r_3)\) and current-off \(j_{\rm ext}=0\) with finite opposing R1/R3 partial currents allowed. Use one illustrative simulated rest transient. This is not a sample fit.
+**(c) Homogeneous single-axis kinetic control.**  
+Plot global-rate scaling to show that faster kinetics increases cutoff capacity and shortens t63. This panel explicitly acknowledges that capacity is kinetic-dependent.
 
-**(c) Multi-state amplitude–timescale separation.** Show \(d(\delta x)/dt=J\delta x\) and \(E(t)-E_{\rm eq}=\sum_i B_i\exp(-t/\tau_i)\), with \(B_i\) identified with excitation/population plus voltage sensitivity and \(\tau_i\) with model kinetic eigen-timescale. The representative model has finite modes near 0.50 and 14.3 min.
+**(d) Heterogeneous-accessibility existence proof.**  
+Compare the reference fast population with the fast + added slow population case. Show higher cutoff capacity together with longer matched-state t63. Connect this only to the *direction* of the BM observation, not to a unique microscopic BM mechanism.
 
-**(d) Experiment-to-model constraint summary.** Connect the model to: cycle-dependent amplitude >> t63 change; BM gives higher reversible extent with longer effective relaxation; Mg gives lower reversible extent while later-cycle t63 approaches HEO. Present accessible reaction extent, relaxation excitation/amplitude, and effective timescale as distinct but coupled coordinates rather than a single fast/slow axis.
+The eigenmode relation
 
-Keep the synthetic current-sweep in SI/internal validation. Do not claim a unique RDS or atomistically identify I/I*.
+\[
+E(t)-E_{\rm eq}=\sum_i B_i\exp(-t/\tau_i)
+\]
+
+remains useful as an inset/caption-level mathematical interpretation rather than a full panel.
+
+Correct manuscript statement:
+
+**Capacity and post-interruption relaxation are both governed by conversion kinetics, but they probe different consequences of a heterogeneous multistep network. They are coupled, yet need not vary monotonically with one another.**
 
 ## Final logical chain
 
