@@ -73,35 +73,77 @@ Background audit passed: later-cycle exponential and linear backgrounds are nume
 
 Do not replace panel (d) with a reversible-capacity bar in the main figure. Later-cycle reversible capacity remains an important textual/material constraint and may be shown in the SI, but Figure 6 should remain focused on cycle-history evolution of the relaxation response.
 
-## Figure 7 — minimal microkinetic interpretation
+## Figure 7 — literature-informed conversion microkinetic interpretation
 
-Use an effective network:
-A <-> B, B -> N, B <-> P, with R1/R3 electrochemical.
+Use the current coarse-grained network:
+
+\[
+O+\nu_1 Li^+ + \nu_1e^- \rightleftharpoons I
+\]
+
+\[
+I \rightleftharpoons I^*
+\]
+
+\[
+I^*+\nu_3 Li^+ + \nu_3e^- \rightleftharpoons C
+\]
+
+with R1/R3 Faradaic and R2 a non-Faradaic structural reconstruction/conversion-activation step.
+
+State meaning:
+- O = oxide-derived state;
+- I = reduced/lithiated oxide intermediate;
+- I* = structurally reconstructed / conversion-active intermediate;
+- C = metal/Li2O-containing converted state.
+
+These are effective kinetic states, not uniquely assigned phases.
 
 At current off:
-r1+r3=0, but r1=-r3 !=0 can remain.
+
+\[
+j_{\rm ext}=F(\nu_1r_1+\nu_3r_3)=0
+\]
+
+but individual partial currents need not vanish. For the normalized illustrative case \(\nu_1=\nu_3=1\),
+
+\[
+r_1=-r_3\neq0
+\]
+
+can remain while R2 also continues. The total lithiation coordinate \(q=x_I+x_{I^*}+2x_C\) is conserved at open circuit even though the internal populations redistribute.
+
+Representative numerical validation:
+- immediately after interruption: r1 = -4.94e-5, r3 = +4.94e-5, r2 = +6.83e-5;
+- r1+r3 is numerically zero;
+- 3 s-to-60 min relaxation = ~24.0 mV;
+- t63 = ~13.8 min;
+- finite model eigen-times = ~0.50 and 14.3 min.
 
 Linearized multi-state kinetics gives:
-E(t)-Eeq = sum B_i exp(-t/tau_i).
 
-Therefore mode excitation/amplitude and timescale are naturally distinct.
+\[
+E(t)-E_{\rm eq}=\sum_i B_i\exp(-t/\tau_i).
+\]
+
+Therefore mode excitation/amplitude and eigen-timescale are naturally distinct.
 
 Message:
-**a multi-step conversion network provides a physically consistent interpretation of the amplitude–timescale decoupling and its cycle dependence; a simple single-step RC description is insufficient.**
+**a literature-informed multi-step conversion network provides a physically consistent interpretation of the amplitude–timescale decoupling and its cycle dependence without assigning a unique microscopic RDS.**
 
 ### Frozen Figure 7 panel architecture
 
-Preferred figure title: **Microkinetic interpretation of history-dependent conversion relaxation**
+Preferred figure title: **Literature-informed microkinetic interpretation of history-dependent conversion relaxation**
 
-**(a) Effective reaction network.** R1: A + Li+ + e- <-> B; R2: B -> N; R3: B + Li+ + e- <-> P. A/B/N/P are explicitly effective kinetic states.
+**(a) Coarse-grained conversion network.** Show \(O \rightleftharpoons I \rightleftharpoons I^* \rightleftharpoons C\), with R1/R3 electrochemical and R2 structural/reconstruction. Avoid the older A/B/N/P notation.
 
-**(b) Current-off internal counter-current.** Show current-on j_ext=r1+r3 and current-off j_ext=0 with r1=-r3 !=0 allowed. Use one illustrative simulated rest transient to show finite opposing internal currents and continuing voltage relaxation at zero external current. This is not a sample fit.
+**(b) Current-off internal redistribution.** Show current-on \(j_{\rm ext}=F(\nu_1r_1+\nu_3r_3)\) and current-off \(j_{\rm ext}=0\) with finite opposing R1/R3 partial currents allowed. Use one illustrative simulated rest transient. This is not a sample fit.
 
-**(c) Multi-state amplitude–timescale separation.** Show d(delta x)/dt=J delta x and E(t)-E_eq=sum_i B_i exp(-t/tau_i), with B_i identified with excitation/population plus voltage sensitivity and tau_i with kinetic eigen-timescale. The panel explains why amplitude can change strongly while effective t63 changes modestly.
+**(c) Multi-state amplitude–timescale separation.** Show \(d(\delta x)/dt=J\delta x\) and \(E(t)-E_{\rm eq}=\sum_i B_i\exp(-t/\tau_i)\), with \(B_i\) identified with excitation/population plus voltage sensitivity and \(\tau_i\) with model kinetic eigen-timescale. The representative model has finite modes near 0.50 and 14.3 min.
 
-**(d) Experiment-to-model constraint summary.** Connect the model to the three experimental facts: cycle-dependent amplitude >> t63 change; BM gives higher reversible extent with longer effective relaxation; Mg gives lower reversible extent while later-cycle t63 approaches HEO. Present accessible reaction extent, relaxation excitation/amplitude, and effective timescale as distinct but coupled coordinates rather than a single fast/slow axis.
+**(d) Experiment-to-model constraint summary.** Connect the model to: cycle-dependent amplitude >> t63 change; BM gives higher reversible extent with longer effective relaxation; Mg gives lower reversible extent while later-cycle t63 approaches HEO. Present accessible reaction extent, relaxation excitation/amplitude, and effective timescale as distinct but coupled coordinates rather than a single fast/slow axis.
 
-Keep synthetic current-sweep/RDS discrimination in SI or future work, not the main Figure 7. Do not claim a unique RDS.
+Keep the synthetic current-sweep in SI/internal validation. Do not claim a unique RDS or atomistically identify I/I*.
 
 ## Final logical chain
 
