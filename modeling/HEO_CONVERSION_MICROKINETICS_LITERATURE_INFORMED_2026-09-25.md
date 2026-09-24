@@ -180,7 +180,61 @@ Thus state excitation / relaxation amplitude can change nearly fourfold while th
 
 Keep this current sweep in SI / internal mechanistic validation, not as the main Figure 7 claim.
 
-## 8. Figure 7 interpretation
+## 8. Capacity–relaxation coupling and the BM-like paradox
+
+A separate cutoff-capacity test was added because capacity is itself kinetic-dependent and therefore cannot be treated as independent of relaxation kinetics.
+
+### 8.1 Homogeneous single-axis control
+
+For one homogeneous O–I–I*–C population, all kinetic rate constants were scaled together while equilibrium parameters and the voltage cutoff were held fixed.
+
+| Global rate scale | Normalized cutoff capacity | matched-state \(t_{63}\) (min) |
+|---:|---:|---:|
+| 0.50 | 0.2993 | 22.45 |
+| 0.75 | 0.4187 | 17.12 |
+| 1.00 | 0.5585 | 13.45 |
+| 1.50 | 0.7399 | 9.12 |
+| 2.00 | 0.8322 | 6.95 |
+
+Thus the model recovers the conventional kinetic coupling:
+
+\[
+\text{globally faster kinetics}
+\Rightarrow
+Q_{\rm cutoff}\uparrow,\quad t_{63}\downarrow.
+\]
+
+The observed BM trend therefore cannot be explained by saying that capacity and relaxation are unrelated.
+
+### 8.2 Minimal heterogeneous-accessibility existence proof
+
+The reference calculation contains a fast accessible population with weight 0.65.
+
+An illustrative BM-like case retains that full fast population and adds an additional accessible population with weight 0.15. The additional population has the same reaction topology and thermodynamics, but its structural/reconstruction step R2 is ten times slower.
+
+Reference:
+- normalized cutoff capacity = 0.55845;
+- matched-state \(t_{63}=13.45\) min.
+
+Added-slow-population case:
+- normalized cutoff capacity = 0.65714;
+- matched-state \(t_{63}=15.28\) min.
+
+Therefore cutoff capacity increases by **17.67%** while \(t_{63}\) increases by **13.63%**.
+
+This demonstrates that higher cutoff-limited capacity and slower relaxation can coexist when a materials modification increases accessible reaction population while also changing the distribution of internal kinetic timescales.
+
+The calculation is an existence proof only. It does not establish that ball milling specifically creates a ten-times-slower R2 population, nor do the population weights represent measured phase fractions.
+
+The correct mechanistic statement is:
+
+> Capacity and post-interruption relaxation are both governed by conversion kinetics, but they probe different consequences of a heterogeneous multistep network. They are coupled, yet need not vary monotonically with one another.
+
+Detailed audit:
+- modeling/HEO_CAPACITY_RELAXATION_MICROKINETIC_VALIDATION_2026-09-25.md
+- modeling/HEO_CAPACITY_RELAXATION_MICROKINETIC_VALIDATION_2026-09-25.csv
+
+## 9. Figure 7 interpretation
 
 Preferred panel architecture:
 
@@ -190,23 +244,19 @@ Preferred panel architecture:
 **(b) Current interruption**  
 Show \(j_{\rm ext}=F(\nu_1r_1+\nu_3r_3)=0\) with finite opposing R1/R3 partial currents and finite R2 during early relaxation.
 
-**(c) Amplitude vs eigen-timescale**  
-Use
-\[
-d\delta x/dt=J\delta x
-\]
-and
-\[
-E(t)-E_{\rm eq}=\sum_iB_i e^{-t/\tau_i}.
-\]
-The representative model has finite modes near 0.50 and 14.3 min.
+**(c) Homogeneous kinetic-speed control**  
+Show the cutoff-capacity test in which all rates are scaled together. Faster global kinetics increases cutoff-limited capacity and shortens matched-state \(t_{63}\). This explicitly demonstrates that capacity is kinetic-dependent.
 
-**(d) Experimental constraints**  
-- BM: higher accessible reversible reaction extent but longer effective relaxation;
-- Mg: lower accessible reversible reaction extent while later-cycle \(t_{63}\) approaches Mg-free values;
-- cycling: amplitude changes much more than \(t_{63}\).
+**(d) Heterogeneous-accessibility existence proof**  
+Compare the reference fast population with the illustrative case that retains the same fast population and adds an accessible slower-reconstructing population. The model then gives both higher cutoff capacity and longer matched-state \(t_{63}\), reproducing the direction of the BM paradox without claiming a unique microscopic BM mechanism.
 
-## 9. Claim boundaries
+The linearized relation
+\[
+E(t)-E_{\rm eq}=\sum_iB_i e^{-t/\tau_i}
+\]
+remains the mathematical interpretation of the internal relaxation modes and can be placed as an inset or in the caption rather than occupying a full panel.
+
+## 10. Claim boundaries
 
 Safe:
 - conversion contains coupled electrochemical and structural/reconstruction steps;
@@ -222,9 +272,11 @@ Do not claim:
 - \(t_{63}\) equals one elementary rate constant;
 - this decoupling is unique to HEOs.
 
-## 10. Current numerical outputs
+## 11. Current numerical outputs
 
 - modeling/HEO_MICROKINETIC_CURRENT_OFF_BALANCE_LITERATURE_INFORMED_2026-09-25.csv
 - modeling/HEO_MICROKINETIC_CURRENT_SWEEP_LITERATURE_INFORMED_2026-09-25.csv
 - modeling/HEO_MICROKINETIC_EIGENMODES_LITERATURE_INFORMED_2026-09-25.csv
 - modeling/heo_conversion_microkinetics_electrochemical_growth.py
+- modeling/HEO_CAPACITY_RELAXATION_MICROKINETIC_VALIDATION_2026-09-25.md
+- modeling/HEO_CAPACITY_RELAXATION_MICROKINETIC_VALIDATION_2026-09-25.csv
