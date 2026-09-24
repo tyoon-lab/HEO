@@ -1,0 +1,8 @@
+test_type,condition,global_rate_scale,fast_weight,slow_weight,slow_R2_scale,Q_cutoff_normalized,t63_min_at_matched_state,relaxation_amp_mV_at_matched_state
+homogeneous_global_scaling,slower_global,0.5,0.65,0,NA,0.29934431595198147,22.45,23.837107447697736
+homogeneous_global_scaling,slower_global,0.75,0.65,0,NA,0.4186811102521955,17.116666666666667,22.759363301009937
+homogeneous_global_scaling,reference,1.0,0.65,0,NA,0.5584543323084233,13.45,21.32566300154027
+homogeneous_global_scaling,faster_global,1.5,0.65,0,NA,0.7398990919668067,9.116666666666667,18.501706260901432
+homogeneous_global_scaling,faster_global,2.0,0.65,0,NA,0.8322138533452191,6.95,16.102895314643906
+heterogeneous_accessibility,reference_fast_only,1.0,0.65,0,NA,0.5584543323084233,13.45,21.32566300154027
+heterogeneous_accessibility,added_slow_population,1.0,0.65,0.15,0.1,0.6571400467763767,15.283333333333333,19.321756418536715
