@@ -13,7 +13,7 @@ Read these files in order:
 2. `manuscript/HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-23.md` — simplified manuscript-level electrochemistry thesis and HEO positioning
 3. `manuscript/HEO_FIGURES_4_7_CURRENT_LOGIC_2026-09-23.md` — current Figures 4–7 logic
 4. `modeling/HEO_CYCLE_RESOLVED_GITT_AND_BACKGROUND_AUDIT_2026-09-23.md` — Figure 6 evidence and robustness
-5. `modeling/HEO_CONVERSION_MICROKINETICS_2026-09-23.md` — Figure 7 model logic
+5. `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_INFORMED_2026-09-25.md` — current Figure 7 model authority
 6. `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_MAP_2026-09-23.md` — literature positioning
 7. `manuscript/HEO_MANUSCRIPT_V5_AFM_MICROKINETIC_2026-09-23.md` — current main-manuscript authority
 8. `manuscript/HEO_SUPPORTING_INFORMATION_V4_MICROKINETIC_2026-09-23.md`
@@ -351,95 +351,100 @@ Therefore the distributed-threshold model is **not the current main Figure 6 dir
 
 ---
 
-# 11. Figure 7 — frozen minimal conversion microkinetics
+# 11. Figure 7 — current literature-informed conversion microkinetics
 
-The new direction is not to fit a unique RDS. It is to ask whether a minimal multi-step conversion network can explain:
-- amplitude/time decoupling;
-- long current-off relaxation;
-- cycle-history dependence;
-- BM: higher capacity with longer effective relaxation;
-- Mg: lower capacity with later-cycle HEO-like t63.
+Current authority:
+modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_INFORMED_2026-09-25.md
 
-Effective network:
+The older A/B/N/P network is superseded for main-text use.
+
+Current effective network:
 
 R1:
-`A + Li+ + e- <-> B`
-electrochemical activation
+O + nu1 Li+ + nu1 e- <-> I
 
 R2:
-`B -> N`
-effective nucleation/activity evolution
+I <-> I*
 
 R3:
-`B + Li+ + e- <-> P`
-electrochemical phase-growth / conversion step
+I* + nu3 Li+ + nu3 e- <-> C
 
-State variables are effective, not atomistically identified species.
+State meaning:
+- O = oxide-derived state
+- I = reduced/lithiated oxide intermediate
+- I* = structurally reconstructed / conversion-active intermediate
+- C = metal/Li2O-containing converted state
 
-Important current-off condition:
-`j_ext = r1 + r3 = 0`
+R1/R3 are Faradaic. R2 is a non-Faradaic reconstruction/conversion-activation step.
 
-This does **not** require:
-`r1 = r3 = 0`.
+Current-off condition:
 
-Internal counter-current is possible:
-`r1 = -r3 != 0`,
-so internal conversion-state evolution can continue at zero external current.
+j_ext = F(nu1 r1 + nu3 r3) = 0
 
-This is the key conceptual basis for prolonged GITT relaxation in a multi-step conversion network.
+does not require each partial current to vanish. With nu1 = nu3 = 1 in the normalized demonstration:
 
-Frozen main-text architecture:
-- (a) effective R1/R2/R3 reaction network;
-- (b) current-on/current-off balance with an illustrative zero-external-current internal counter-current transient;
-- (c) local linearized multi-state amplitude–timescale separation, E(t)-E_eq = sum_i B_i exp(-t/tau_i);
-- (d) experiment-to-model constraint summary separating accessible reversible reaction extent, relaxation excitation/amplitude, and effective timescale.
+r1 = -r3 != 0
 
-The illustrative current-off simulation is a mechanistic-consistency demonstration, not a sample fit. Its compact output is stored in `modeling/HEO_MICROKINETIC_CURRENT_OFF_BALANCE_2026-09-23.csv`.
+while r2 can also remain finite.
 
-Do not place the synthetic current-sweep/RDS-discrimination result in the main Figure 7; retain it for SI/future direction.
+This preserves the overall lithiation coordinate q = x_I + x_I* + 2 x_C at open circuit while allowing internal population redistribution.
 
----
+Representative validation:
+- r1(0+) = -4.94e-5
+- r3(0+) = +4.94e-5
+- r2(0+) = +6.83e-5
+- r1+r3 ~ 0
+- 3 s-to-60 min relaxation ~24.0 mV
+- t63 ~13.8 min
+- finite model eigen-times ~0.50 and 14.3 min
+
+Current numerical files:
+- modeling/HEO_MICROKINETIC_CURRENT_OFF_BALANCE_LITERATURE_INFORMED_2026-09-25.csv
+- modeling/HEO_MICROKINETIC_CURRENT_SWEEP_LITERATURE_INFORMED_2026-09-25.csv
+- modeling/HEO_MICROKINETIC_EIGENMODES_LITERATURE_INFORMED_2026-09-25.csv
+- modeling/heo_conversion_microkinetics_electrochemical_growth.py
+
+Main-text claim:
+The model is a literature-informed mechanistic-consistency test. It shows that conversion-state excitation/amplitude and internal relaxation eigen-timescale can vary separately, so more accessible conversion need not imply faster post-interruption relaxation.
+
+Do not claim:
+- unique atomistic identities for I or I*
+- a uniquely measured RDS
+- direct one-to-one mapping of BM or Mg onto a single rate constant
+- t63 as one elementary-step time constant
+- HEO-exclusive decoupling
 
 # 12. Figure 7 main interpretation
 
-Linearized internal-state microkinetics generically gives:
+Linearized internal-state kinetics gives:
 
-`E(t)-E_eq = sum_i B_i exp(-t/tau_i)`
+E(t)-E_eq = sum_i B_i exp(-t/tau_i)
 
 where:
-- B_i depends on how strongly a mode/state is populated or excited and on voltage sensitivity;
-- tau_i derives from kinetic eigenvalues.
+- B_i depends on state excitation/population and voltage sensitivity;
+- tau_i derives from eigenvalues of the coupled network.
 
-Therefore amplitude and timescale need not co-vary.
+The representative model itself contains two finite modes (~0.50 and 14.3 min), while the experimental t63 remains an ensemble/state-resolved descriptor rather than a direct microscopic mode measurement.
 
-This provides a physically coherent interpretation of Figure 5–6:
-- Mg can strongly change hump amplitude/population while leaving effective t63 similar;
-- BM can access more slow/heterogeneous reaction population and therefore show higher capacity with longer ensemble t63.
-
-Do not claim measured microscopic eigenmodes. The equation is a local linearized interpretation of a multi-state kinetic network.
-
----
+This provides a physically coherent interpretation of Figures 5–6:
+- Mg can strongly change relaxation amplitude while leaving effective t63 relatively similar;
+- BM can access more reaction population while retaining a longer ensemble t63;
+- cycling can redistribute amplitude much more strongly than it changes the effective timescale.
 
 # 13. What Figure 7 may and may not claim
 
 Safe main-text direction:
-- a **simple single-step RC description is insufficient** to capture the observed long, history-dependent amplitude–timescale behavior;
-- nucleation- and phase-growth-associated internal-state dynamics provide physically consistent routes to the observations;
-- multi-step conversion kinetics naturally permits amplitude and timescale to evolve differently.
+- conversion involves coupled electrochemical and structural/reconstruction steps;
+- zero external current can coexist with finite opposing internal partial currents;
+- a simple single-step RC description is insufficient for the observed history-dependent amplitude–timescale behavior;
+- accessible reaction extent, relaxation excitation/amplitude, and effective timescale are distinct but coupled quantities.
 
 Avoid in Main:
-- “single-current experiment is non-identifiable” as a headline;
-- “additional current-dependent GITT is required”;
-- a unique RDS assignment;
-- fitting k1, kn, kg as if uniquely identifiable physical constants.
-
-If a limitation sentence is needed in Methods/SI:
-**The model is intended to test mechanistic consistency rather than to assign a unique elementary rate-limiting step.**
-
-Synthetic model result:
-different nucleation-dominant and electrochemical-growth-dominant parameter regimes can be made to produce nearly identical 3-s amplitude and t63 at one reference pulse current. Excitation/current dependence then separates the model regimes. Treat this as a **model prediction / future discrimination route**, not an experimental requirement for the present paper.
-
----
+- unique nucleation/growth RDS assignment;
+- atomistic identification of I or I*;
+- “BM exposes slow states” as an established microscopic fact; use only as one consistent interpretation;
+- “Mg changes k3” or any unique rate-constant assignment;
+- calling model eigenmodes directly measured experimental modes.
 
 # 14. Conversion microkinetics literature position
 
