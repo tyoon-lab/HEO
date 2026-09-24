@@ -108,15 +108,51 @@ The cycle-dependent hump evolution is robust to the choice of later-cycle backgr
 Figures 3–6 therefore establish the apparent contradiction in its simplest form. Ball milling enables more conversion-related reaction yet leaves a slower ensemble relaxation, while Mg suppresses accessible conversion without a proportional change in relaxation time. This behavior requires a kinetic picture in which reaction accessibility and internal relaxation are related but not identical quantities. Figure 7 introduces the minimal microkinetic description needed to make this possible.
 
 
-## 2.6. Multi-step microkinetics resolves the apparent capacity–relaxation contradiction
+## 2.6. Literature-informed conversion microkinetics resolves the apparent capacity–relaxation contradiction
 
-Conversion reactions generally proceed through multiple intermediates and coupled electrochemical/structural steps rather than through a single elementary process. Microkinetic descriptions of conversion electrodes likewise require state evolution and multiple reactions rather than one effective rate constant.[30] For the present HEO system, the goal is not to identify a unique microscopic rate-limiting step, but to test whether a minimal multi-state network can physically reconcile the experimental observation of more accessible conversion with slower relaxation.
+Conversion reactions proceed through coupled electron-transfer, bond-rearrangement, nucleation/reconstruction, and product-formation processes rather than through one elementary rate constant. In NiO, GITT combined with Butler–Volmer and Marcus–Hush–Chidsey analysis has been used to distinguish electrochemical and chemical steps along a multistep conversion pathway,[31] while recent microkinetic modeling of sulfur, FeS₂, and FeF₃ conversion cathodes explicitly tracks intermediate-state evolution through coupled reaction networks.[30] The present model therefore does not introduce an atomistically unique mechanism. Instead, it coarse-grains these established conversion-reaction motifs into the minimum network required to test the experimentally observed separation between accessible reaction extent and current-off relaxation.
 
-The effective network in Figure 7a contains an electrochemical activation step, $A+\mathrm{Li}^++e^- \rightleftharpoons B$, an internal nucleation/activity coordinate, $B\rightarrow N$, and an electrochemical conversion/growth step, $B+\mathrm{Li}^++e^- \rightleftharpoons P$. The labels $A$, $B$, $N$, and $P$ represent effective kinetic states and are not assigned to specific experimentally resolved phases. This distinction is important because the model is intended to capture the logic of a multi-step conversion network rather than to fit atomistic identities.
+The literature-informed network in Figure 7a consists of
 
-The current interruption provides the central physical point (Figure 7b). During the pulse, the external current is carried by the electrochemical steps, $j_{\mathrm{ext}}=r_1+r_3$. At open circuit, $j_{\mathrm{ext}}=0$, but this condition does not require $r_1=r_3=0$. The model permits an internal counter-current, $r_1=-r_3\neq0$, so conversion-state reorganization can continue even though no net current flows through the external circuit. In the illustrative simulation, the opposing rates remain finite immediately after interruption while their sum is numerically zero, and they decay together with the continuing voltage relaxation. Long current-off relaxation is therefore compatible with ongoing redistribution within a coupled conversion network.
+\[
+O+\nu_1\mathrm{Li}^{+}+\nu_1 e^{-}\rightleftharpoons I,
+\]
 
-The same model explains why relaxation amplitude and timescale need not co-vary (Figure 7c). Linearization about a local cycled state gives
+\[
+I\rightleftharpoons I^*,
+\]
+
+and
+
+\[
+I^*+\nu_3\mathrm{Li}^{+}+\nu_3 e^{-}\rightleftharpoons C.
+\]
+
+Here, \(O\) denotes an oxide-derived state, \(I\) a reduced/lithiated oxide intermediate, \(I^*\) a structurally reconstructed conversion-active intermediate, and \(C\) a metal/Li₂O-containing converted state. The second step represents a coarse-grained structural coordinate that may include M–O rearrangement, oxygen/cation redistribution, nucleation, and conversion-interface evolution. These labels are effective kinetic states rather than experimentally assigned phases or atomistic intermediates.
+
+The current interruption provides the central physical point (Figure 7b). Only \(R_1\) and \(R_3\) carry Faradaic current, so the external current balance is
+
+\[
+j_{\mathrm{ext}}=F(\nu_1 r_1+\nu_3 r_3).
+\]
+
+At open circuit,
+
+\[
+j_{\mathrm{ext}}=0,
+\]
+
+but this constrains only the sum of the partial Faradaic currents. Individual partial currents need not vanish, consistent with the general mixed-potential condition that the total current can be zero while nonzero partial currents remain.[32] For the normalized illustrative case \(\nu_1=\nu_3=1\), the model therefore permits
+
+\[
+r_1=-r_3\neq0,
+\]
+
+while the non-Faradaic reconstruction step \(r_2\) can also remain finite. Internal conversion-state redistribution can consequently continue after the external current has been interrupted.
+
+The revised numerical model reproduces the required behavior without the previous phenomenological nucleation variable. Immediately after interruption in a representative calculation, \(r_1=-4.94\times10^{-5}\) and \(r_3=+4.94\times10^{-5}\) in normalized rate units, while \(r_2=6.83\times10^{-5}\); the external Faradaic-current sum is numerically zero. The same simulation gives an experimental-style 3 s-to-60 min relaxation magnitude of approximately 24.0 mV and \(t_{63}\approx13.8\) min. These values are illustrative rather than fitted to a specific sample, but they demonstrate that prolonged voltage relaxation is compatible with continuing internal conversion-state redistribution at zero applied current.
+
+The same model explains why relaxation amplitude and timescale need not co-vary (Figure 7c). Linearization about a local equilibrated state gives
 
 \[
 \frac{d\,\delta\mathbf{x}}{dt}=\mathbf{J}\delta\mathbf{x},
@@ -128,14 +164,11 @@ and therefore
 E(t)-E_{\mathrm{eq}}=\sum_i B_i\exp(-t/\tau_i).
 \]
 
-The coefficients $B_i$ depend on which internal states are populated or excited and on their voltage sensitivity, whereas the $\tau_i$ values arise from the kinetic eigenvalues of the coupled network. Increasing the amount of accessible reaction can therefore increase or redistribute the state population without shortening the slow relaxation modes. In particular, ball milling can expose additional conversion-active material and thereby increase capacity while also increasing the contribution of heterogeneous or slower-relaxing states. Mg can instead suppress the accessible reaction population while leaving the dominant relaxation eigen-timescale comparatively unchanged.
+For the representative parameter set, the two finite model relaxation modes are approximately 0.50 and 14.3 min, together with a conserved-state mode associated with fixed overall state of charge during open-circuit relaxation. The coefficients \(B_i\) depend on which internal states are populated or excited and on their voltage sensitivity, whereas the \(\tau_i\) values arise from the eigenvalues of the coupled conversion network. The experimentally measured \(t_{63}\) is therefore treated as an ensemble-level descriptor and is not assigned directly to one microscopic elementary step.
 
-This interpretation resolves the experimental trends without requiring conversion capacity and relaxation speed to be controlled by one parameter (Figure 7d). Ball milling primarily increases reaction accessibility, consistent with its increased surface area and higher capacity, but does not accelerate the conversion-associated relaxation. Mg primarily suppresses accessible conversion and the first-cycle relaxation amplitude, yet the later-cycle relaxation timescale approaches that of the Mg-free material. The three quantities—accessible reaction extent, relaxation amplitude, and effective relaxation timescale—are therefore coupled but distinct consequences of the conversion network.
+This separation resolves the experimental trends without requiring conversion capacity and relaxation speed to be controlled by one parameter (Figure 7d). Ball milling primarily increases the amount of material and interface that can access the conversion network, consistent with its larger surface area and higher reversible capacity, but this does not require the slow relaxation eigenmodes to become faster. Mg incorporation instead suppresses accessible deep conversion and the first-cycle relaxation amplitude without proportionally changing the later-cycle relaxation timescale. Ball milling and Mg incorporation are therefore treated as materials-level perturbations of accessibility and state stability, respectively, rather than being mapped uniquely onto individual microscopic rate constants.
 
-This separation is not proposed as an HEO-exclusive phenomenon. Multi-step conversion electrodes in general can exhibit different controls over reaction extent and relaxation kinetics.[30] The HEO is nevertheless a particularly suitable system in which to observe the separation because multiple redox-active cations, chemically diverse local environments, and reconstructive phase evolution generate a broad set of possible internal conversion states. Recent studies further show that multication synergy can stabilize specific nanoscale oxide/metal states and that high-entropy spinel conversion can exhibit kinetically sluggish phase evolution that is altered by particle size.[10,20] The present results therefore position the HEO not as an exception to conversion kinetics, but as a multicomponent conversion system in which reaction accessibility and internal relaxation become experimentally separable.
-
-The model is consequently used as a mechanistic-consistency test rather than as a unique rate-constant fit. Different microscopic parameter sets can generate similar relaxation at one pulse current, so no elementary rate-limiting step is assigned. The central conclusion is instead simpler: more conversion can coexist with slower relaxation because the amount of reaction accessed and the internal relaxation modes of the resulting conversion state are not the same kinetic coordinate.
-
+This separation is not proposed as an HEO-exclusive phenomenon. The reconstructive and multistep nature of conversion provides the underlying physical basis, while the multication and chemically heterogeneous HEO reaction landscape makes the separation particularly accessible experimentally. Multiple redox-active cations, diverse local bonding environments, and oxygen/cation rearrangement generate a broad set of possible intermediate conversion states, and recent HEO studies show that particle size and multication chemistry can strongly alter the progression and structural retention of conversion.[10,20] The model is consequently used as a literature-informed mechanistic-consistency test, not as a unique atomistic mechanism or rate-limiting-step fit.
 
 # 3. Conclusions
 
@@ -191,57 +224,91 @@ First-cycle differential-capacity curves were obtained from the corresponding ga
 
 
 
-## 4.4. Minimal conversion microkinetic model
+## 4.4. Literature-informed coarse-grained conversion microkinetic model
 
-A minimal multi-step microkinetic model was used to test whether the experimentally observed separation between accessible reaction extent and conversion-associated relaxation is physically consistent with a coupled conversion network. The model was not fitted to obtain unique microscopic rate constants and was not used to assign a unique elementary rate-limiting step.
+A minimal conversion microkinetic model was used to test whether the experimentally observed separation between accessible reaction extent and post-interruption relaxation is physically consistent with established conversion-reaction motifs. The model is not fitted to obtain unique microscopic rate constants and is not used to assign a unique elementary rate-limiting step.
 
-The effective reaction network consists of three steps:
+The effective reaction network is
 
 \[
-A+\mathrm{Li}^{+}+e^{-}\rightleftharpoons B,
+O+\nu_1\mathrm{Li}^{+}+\nu_1e^{-}\rightleftharpoons I,
 \]
 
 \[
-B\rightarrow N,
+I\rightleftharpoons I^*,
 \]
 
 and
 
 \[
-B+\mathrm{Li}^{+}+e^{-}\rightleftharpoons P.
+I^*+\nu_3\mathrm{Li}^{+}+\nu_3e^{-}\rightleftharpoons C.
 \]
 
-Here, $A$, $B$, $N$, and $P$ denote effective kinetic states rather than atomistically identified phases or chemical species. The first and third reactions carry Faradaic current, while the second describes an effective nucleation/activity coordinate.
+Here, \(O\), \(I\), \(I^*\), and \(C\) denote an oxide-derived state, a reduced/lithiated oxide intermediate, a structurally reconstructed conversion-active intermediate, and a metal/Li₂O-containing converted state, respectively. The network is a coarse-grained representation motivated by established multistep conversion mechanisms and does not assign these states to unique experimentally identified phases.[30,31]
 
-During a galvanostatic pulse, the potential is determined from the current balance
+The first and third reactions are represented by reversible Butler–Volmer-type rates. For the illustrative calculation, symmetric transfer coefficients were used,
 
 \[
-j_{\mathrm{ext}}=r_1+r_3.
+r_1=k_1\left[a_O\exp(u/2)-\frac{a_I}{K_1}\exp(-u/2)\right],
 \]
-
-After current interruption, the external current is set to zero,
 
 \[
-j_{\mathrm{ext}}=r_1+r_3=0,
+r_3=k_3\left[a_{I^*}\exp((u-u_3)/2)-\frac{a_C}{K_3}\exp(-(u-u_3)/2)\right],
 \]
 
-while finite opposing internal rates, $r_1=-r_3\neq0$, are permitted. This allows the internal conversion state to continue evolving during open-circuit relaxation.
-
-The coupled state equations were integrated numerically for a 600 s pulse followed by a 3600 s rest, matching the experimental GITT timing. A representative parameter set was used only to demonstrate current-off internal counter-current and prolonged voltage relaxation. Local linearization of the coupled state dynamics gives
+where \(u\) is the dimensionless electrochemical driving force and \(u_3\) is the relative driving-force offset of the second Faradaic step. The structural/reconstruction step is represented as
 
 \[
-d(\delta\mathbf{x})/dt=\mathbf{J}\delta\mathbf{x},
+r_2=k_{2,f}a_I-k_{2,r}a_{I^*}.
 \]
 
-with a corresponding voltage response represented as a sum of relaxation modes,
+The state balances are
+
+\[
+\frac{dx_I}{dt}=r_1-r_2,
+\]
+
+\[
+\frac{dx_{I^*}}{dt}=r_2-r_3,
+\]
+
+\[
+\frac{dx_C}{dt}=r_3,
+\]
+
+with \(x_O=1-x_I-x_{I^*}-x_C\).
+
+During a galvanostatic pulse, the potential is obtained from the Faradaic current balance
+
+\[
+j_{\mathrm{ext}}=F(\nu_1r_1+\nu_3r_3).
+\]
+
+After current interruption,
+
+\[
+j_{\mathrm{ext}}=F(\nu_1r_1+\nu_3r_3)=0.
+\]
+
+This zero-net-current condition does not require the individual partial currents to vanish.[32] In the normalized illustrative calculation, \(\nu_1=\nu_3=1\), so finite opposing rates \(r_1=-r_3\neq0\) are allowed while \(r_2\) can independently continue to redistribute the internal conversion state.
+
+The coupled state equations were integrated for a 600 s pulse followed by a 3600 s rest, matching the experimental GITT timing. The representative parameter set gives approximately 24.0 mV residual relaxation at the 3 s reference and \(t_{63}\approx13.8\) min. These values were selected only to place the illustrative calculation in the experimental timescale and amplitude range; they are not a fit to HEO, BM-HEO, Mg-HEO, or BM-Mg-HEO.
+
+Local linearization of the open-circuit dynamics gives
+
+\[
+\frac{d\,\delta\mathbf{x}}{dt}=\mathbf{J}\delta\mathbf{x},
+\]
+
+with a corresponding voltage response
 
 \[
 E(t)-E_{\mathrm{eq}}=\sum_i B_i\exp(-t/\tau_i).
 \]
 
-The coefficients $B_i$ and relaxation times $\tau_i$ are interpreted as model-level state-excitation/voltage-sensitivity weights and kinetic eigen-timescales, respectively; they are not treated as directly measured microscopic modes.
+The representative parameter set yields two finite model relaxation modes near 0.50 and 14.3 min and a conserved-state mode associated with fixed overall state of charge at open circuit. The amplitudes \(B_i\) and timescales \(\tau_i\) are model-level state-excitation/voltage-sensitivity weights and kinetic eigen-timescales, respectively; they are not interpreted as directly measured microscopic modes.
 
-A synthetic current-dependence test was used only as an internal identifiability and future-discrimination analysis and is retained in the Supporting Information. The main-text use of the model is limited to testing mechanistic consistency of the experimentally observed capacity–relaxation decoupling.
+A pulse-current sweep was retained as a diagnostic rather than as a fitted experimental result. Increasing the relative pulse current from 0.25 to 4 increases the illustrative 3 s relaxation magnitude from approximately 11.9 to 45.8 mV, while \(t_{63}\) remains within approximately 13.8–14.1 min. This synthetic result demonstrates, within the same reaction network and rate constants, that state excitation amplitude can vary strongly without a proportional change in the dominant relaxation timescale.
 
 # References
 
@@ -311,6 +378,10 @@ A synthetic current-dependence test was used only as an internal identifiability
 
 30. Alsaç, E. P.; Sharma, A. K.; Yoon, S. G.; Vishnugopi, B. S.; Wang, C.; Thomas, T. A.; Nelson, D. L.; Eze, U. D.; Jeong, W. J.; Harris, J.; Mukherjee, P. P.; McDowell, M. T. Linking Pressure to Electrochemical Evolution in Solid-State Conversion Cathode Composites. **ACS Applied Materials & Interfaces** 2026, 18, 1626–1640. DOI: 10.1021/acsami.5c20956.
 
+31. Ng, B.; Faegh, E.; Lateef, S.; Karakalos, S. G.; Mustain, W. E. Structure and chemistry of the solid electrolyte interphase (SEI) on a high capacity conversion-based anode: NiO. **Journal of Materials Chemistry A** 2021, 9, 523. DOI: 10.1039/D0TA09683K.
+
+32. Parsons, R. Electrochemical nomenclature. **Pure and Applied Chemistry** 1974, 37, 499–516. DOI: 10.1351/pac197437040499.
+
 # Figure Captions
 
 **Figure 1. Mg incorporation and ball milling alter crystal structure, composition, and nanoscale microstructure of spinel HEOs.** The four materials are compared using the final XRD, ICP-OES, HRTEM/SAED, and elemental-mapping dataset. The figure establishes the parent spinel-type structure, the comparatively modest lattice/compositional perturbation associated with Mg incorporation, and milling-induced changes in coherent-domain/microstructural characteristics. No unique Mg site is assigned without final refinement, and the chemically incompatible preliminary CoGa₂O₄ indexing is excluded. **[[YOO GROUP INPUT REQUIRED — freeze final refined XRD/HRTEM/SAED/ICP dataset and panel order.]]**
@@ -325,4 +396,4 @@ A synthetic current-dependence test was used only as an internal identifiability
 
 **Figure 6. Conversion-associated relaxation evolves with cycle history.** (a) Background-subtracted conversion-associated relaxation profiles for cycles 1–3 over the common normalized lithiation coordinate, $z=0.4$–0.9. (b) Conversion-associated peak amplitude versus cycle. (c) Median ensemble/state-resolved $t_{63}$ versus cycle over the same state interval. (d) Normalized change map of $A_3/A_1$ versus $t_{63,3}/t_{63,1}$ with unity reference lines. The amplitude ratio spans 0.435–1.698 while the timescale ratio remains within 0.845–0.923, showing that cycling changes how strongly the conversion-associated response is populated or excited much more than it changes the effective relaxation timescale.
 
-**Figure 7. Microkinetic interpretation of the capacity–relaxation mismatch.** (a) Effective multi-step conversion network containing electrochemical activation, internal nucleation/activity evolution, and electrochemical conversion/growth states. (b) Current-on and current-off balances. At open circuit, $j_{\mathrm{ext}}=r_1+r_3=0$ does not require $r_1=r_3=0$; finite opposing internal currents can persist while the voltage relaxes. (c) Local linearized multi-state response, $E(t)-E_{\mathrm{eq}}=\sum_i B_i\exp(-t/\tau_i)$, separating state-excitation/voltage-sensitivity amplitudes from kinetic eigen-timescales. (d) Experimental constraints on the model: ball milling accesses more reversible reaction while retaining slower relaxation, whereas Mg suppresses accessible reaction without a proportional change in later-cycle $t_{63}$. The model is used as a mechanistic-consistency interpretation rather than as a unique rate-limiting-step fit.
+**Figure 7. Literature-informed microkinetic interpretation of the capacity–relaxation mismatch.** (a) Coarse-grained conversion network, \(O \rightleftharpoons I \rightleftharpoons I^* \rightleftharpoons C\), containing two reversible Faradaic steps separated by a structural reconstruction/conversion-activation step. The states are effective kinetic states rather than uniquely assigned phases. (b) Current-on and current-off balances. At open circuit, \(j_{\mathrm{ext}}=F(\nu_1r_1+\nu_3r_3)=0\) constrains the sum of partial Faradaic currents but does not require each partial rate to vanish; internal conversion-state redistribution can persist while the voltage relaxes. (c) Local linearized response, \(E(t)-E_{\mathrm{eq}}=\sum_i B_i\exp(-t/\tau_i)\), separating state-excitation/voltage-sensitivity amplitudes from kinetic eigen-timescales. The representative calculation contains finite modes near 0.50 and 14.3 min. (d) Experimental constraints: ball milling accesses more reversible reaction while retaining slower relaxation, whereas Mg suppresses accessible reaction without a proportional change in later-cycle \(t_{63}\). The model is a literature-informed mechanistic-consistency test rather than a unique atomistic mechanism or rate-limiting-step fit.
