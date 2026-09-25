@@ -152,3 +152,35 @@ Avoid:
 - ball milling creates slow states as an established fact;
 - unique RDS;
 - HEO-exclusive mechanism.
+
+## Terminology lock — 2026-09-25
+
+Manuscript-facing term:
+
+**capacity–kinetics mismatch**
+
+Use `mismatch` rather than `paradox` or `decoupling` as the primary descriptor.
+
+Reason:
+- `paradox` is rhetorically stronger than necessary;
+- unqualified `decoupling` can imply that capacity and kinetics are independent;
+- the present result instead shows that capacity and relaxation share the same conversion network but do not respond as one global fast–slow variable.
+
+Preferred conceptual statement:
+
+**Capacity and relaxation are kinetically linked but not kinetically equivalent.**
+
+Preferred plain-language statement:
+
+**Higher accessible capacity does not necessarily indicate faster conversion kinetics.**
+
+Terminology level:
+- title, headings, and broad discussion: `conversion kinetics` for clarity;
+- first methodological definition and precise mechanistic discussion: `conversion-associated kinetics probed by GITT relaxation`;
+- `t63` remains an effective relaxation timescale, not the forward conversion rate or one microscopic rate constant.
+
+Avoid as primary framing:
+- `paradox`;
+- unqualified `decoupling`;
+- `partial decoupling` unless explicitly qualified as a trend-level description;
+- mathematical terms such as `non-monotonic correspondence` or `non-injective mapping` in the manuscript-facing narrative.
