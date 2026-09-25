@@ -11,7 +11,7 @@
 
 # Working title
 
-**Higher Capacity Does Not Necessarily Indicate Faster Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
+**Mismatch between Capacity and Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
 
 Alternative:
 
