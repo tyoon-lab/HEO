@@ -3,7 +3,7 @@
 **Date:** 2026-09-26  
 **Status:** capacity–kinetics narrative strengthened around the experimental inversion between conventional GITT apparent diffusivity and direct current-off relaxation; literature positioning updated  
 **Scientific backbone:** Figures 1–2 materials perturbations → Figure 3 accessible capacity → Figure 4 GITT kinetic mismatch → Figure 5 conversion localization → Figure 6 history dependence → Figure 7 conversion microkinetic resolution  
-**Literature basis:** \`HEO_REFERENCE_MASTER_VERIFIED_2026-09-18.md\`
+**Literature basis:** `HEO_REFERENCE_MASTER_VERIFIED_2026-09-18.md` + `references/HEO_CONVERSION_GITT_LITERATURE_AUDIT_2026-09-26.md`
 
 > Verified information is written directly. Missing experimental metadata are not inferred. Inputs expected from the Yoo group and Yoon Lab remain explicitly marked. The Figure 5 differential-capacity peak positions currently come from reconstruction of the latest vector voltage profiles; the underlying numerical first-cycle files should replace this source if recovered before submission.
 
