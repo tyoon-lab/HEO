@@ -59,7 +59,7 @@ Result:
 - Mg lower reversible capacity persists while later-cycle t63 approaches Mg-free values.
 
 Main message:
-**Conversion-associated kinetics evolves with reaction history, and capacity and t63 remain non-monotonic across cycling.**
+**Conversion-associated kinetics evolves with reaction history, and capacity and t63 do not vary in parallel across cycling.**
 
 ## Figure 7 — Microkinetic resolution
 
