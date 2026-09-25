@@ -27,7 +27,7 @@ Do not ask the user for a separate handoff. Continue from Section 15.
 
 Working title direction:
 
-**Structural Modification Reshapes Capacity and Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
+**Higher Capacity Does Not Necessarily Indicate Faster Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
 
 Target: **Advanced Functional Materials (AFM)**.
 
