@@ -17,7 +17,7 @@ The HEO result challenges the simplest version of that expectation:
 
 Therefore the paper asks:
 
-**Does higher conversion capacity necessarily indicate faster conversion kinetics in a reconstructive multistep electrode?**
+**Does higher accessible conversion capacity necessarily indicate faster conversion kinetics in a reconstructive multistep electrode?**
 
 ## What GITT means in this paper
 
