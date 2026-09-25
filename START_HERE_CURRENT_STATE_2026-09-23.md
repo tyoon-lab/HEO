@@ -1,6 +1,6 @@
 # HEO — START HERE / Current Project State
 
-**Last consolidated:** 2026-09-23  
+**Last consolidated:** 2026-09-25  
 **Purpose:** single authoritative restart point for the HEO manuscript/project. A new chat should be able to resume from this repository alone, without a separate handoff message.
 
 ---
@@ -10,12 +10,12 @@
 Read these files in order:
 
 1. `START_HERE_CURRENT_STATE_2026-09-23.md` — this file; authoritative current state
-2. `manuscript/HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-23.md` — simplified manuscript-level electrochemistry thesis and HEO positioning
-3. `manuscript/HEO_FIGURES_4_7_CURRENT_LOGIC_2026-09-23.md` — current Figures 4–7 logic
+2. `manuscript/HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-25.md` — current manuscript-level capacity–kinetics thesis and claim boundaries
+3. `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_2026-09-25.md` — current Figures 3–7 logical chain
 4. `modeling/HEO_CYCLE_RESOLVED_GITT_AND_BACKGROUND_AUDIT_2026-09-23.md` — Figure 6 evidence and robustness
 5. `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_INFORMED_2026-09-25.md` — current Figure 7 model authority
 6. `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_MAP_2026-09-23.md` — literature positioning
-7. `manuscript/HEO_MANUSCRIPT_V5_AFM_MICROKINETIC_2026-09-23.md` — current main-manuscript authority
+7. `manuscript/HEO_MANUSCRIPT_V6_AFM_CAPACITY_KINETICS_2026-09-25.md` — current main-manuscript authority
 8. `manuscript/HEO_SUPPORTING_INFORMATION_V4_MICROKINETIC_2026-09-23.md`
 9. `manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md`
 
@@ -27,7 +27,7 @@ Do not ask the user for a separate handoff. Continue from Section 15.
 
 Working title direction:
 
-**Ball Milling and Mg Incorporation Reshape Conversion Dynamics in Spinel High-Entropy Oxide Anodes**
+**Structural Modification Reshapes Capacity and Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
 
 Target: **Advanced Functional Materials (AFM)**.
 
@@ -35,17 +35,17 @@ Paper identity: **materials/mechanism paper**, not a GITT-method paper.
 
 Preferred hierarchy:
 
-**synthesis/compositional modification → structure/morphology → conversion capacity vs relaxation paradox → conversion localization → cycle evolution → microkinetic resolution**
+**materials perturbations → accessible capacity → GITT kinetic mismatch → conversion localization → history dependence → conversion microkinetic resolution**
 
 Core electrochemistry thesis:
 
-**Ball milling increases the amount of conversion that can be accessed without accelerating the conversion-associated relaxation, whereas Mg incorporation suppresses accessible conversion without a proportional change in the relaxation timescale.**
+**Accessible capacity and conversion-associated kinetics are linked through the same conversion network, but they are not kinetically equivalent and therefore need not follow a single fast–slow trend.**
 
 The key question leading into Figure 7 is:
 
-**How can more conversion coexist with slower relaxation?**
+**Does higher accessible conversion capacity necessarily indicate faster conversion-associated kinetics?**
 
-The microkinetic model resolves this by showing that capacity and relaxation remain kinetically coupled but need not vary monotonically once reaction accessibility and the distribution of internal kinetic timescales change independently within a heterogeneous multistep network. The decoupling is not claimed to be unique to HEOs; HEO is positioned as a multication, structurally heterogeneous conversion system in which this general multi-state behavior is especially visible.
+The microkinetic model first recovers the ordinary homogeneous expectation that uniformly faster kinetics gives higher cutoff capacity and shorter relaxation, then shows that a heterogeneous multistep conversion network can instead produce higher accessible capacity together with slower relaxation. The heterogeneous calculation is an existence proof, not a fit to BM-HEO. The effect is not claimed to be unique to HEOs; HEO is positioned as a multication, reconstructive conversion system in which this general capacity–kinetics mismatch becomes experimentally visible.
 
 The old free-parameter spatial/phase-field model remains removed from the manuscript.
 
@@ -316,7 +316,7 @@ Frozen panels:
 Panel (d) is intentionally the amplitude-change vs timescale-change map, not a reversible-capacity bar. The four samples occupy a narrow timescale-ratio range (0.845–0.923) but a broad amplitude-ratio range (0.435–1.698), directly summarizing the Figure 6 conclusion. Later-cycle reversible capacity remains a text/SI material constraint.
 
 The scientific role is frozen:
-- Figure 5 = first-cycle magnitude/timescale decoupling and conversion localization;
+- Figure 5 = first-cycle capacity–kinetics mismatch localization to conversion;
 - Figure 6 = cycle-history evolution and persistence/non-persistence of material effects.
 
 Potential sentence:
@@ -481,9 +481,9 @@ Do not claim a universal “first” without a full literature audit.
 The modeling direction is now sufficiently closed.
 
 Next session should move to:
-1. use `HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-23.md` as the wording authority for the electrochemistry narrative;
+1. use `HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-25.md` as the wording authority for the capacity–kinetics narrative;
 2. Figure 6 and Figure 7 architectures are frozen; finalize caption wording when the panels are assembled;
-3. Main v5 and SI v4 now implement the Figure 3 → Figure 7 capacity–relaxation/microkinetic story; next refine wording, artwork, and numerical provenance against the final figures;
+3. Main v6 is now the current manuscript authority and implements the Figure 3 → Figure 7 capacity–kinetics/microkinetic story; next align the Word collaborator draft and SI wording to v6;
 4. freeze collaborator-dependent Figures 1–2 and then perform a full manuscript consistency/reference audit.
 
 Do **not** reopen the distributed-threshold capacity-prediction model unless a specific unresolved need emerges.
