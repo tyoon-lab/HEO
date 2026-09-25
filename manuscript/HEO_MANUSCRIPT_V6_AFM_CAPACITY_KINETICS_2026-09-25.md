@@ -11,18 +11,18 @@
 
 # Working title
 
-**Structural Modification Reshapes Capacity and Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
+**Higher Capacity Does Not Necessarily Indicate Faster Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
 
 Alternative:
 
-**Capacity and Conversion Kinetics Do Not Follow a Single Rate Axis in Spinel High-Entropy Oxide Anodes**
+**Capacity–Kinetics Mismatch in Multistep Conversion of Spinel High-Entropy Oxide Anodes**
 
 ---
 
 
 # Abstract
 
-Conversion-type high-entropy oxide (HEO) anodes are commonly evaluated by capacity and kinetics, yet the relationship between them is not necessarily simple. Here, ball milling and Mg incorporation are used as complementary perturbations to compare accessible capacity with conversion-associated kinetics probed by GITT relaxation in spinel HEO anodes. Ball milling increases accessible capacity while slowing the effective relaxation, whereas Mg incorporation suppresses accessible conversion without a proportional change in kinetic timescale. The anomalous response is localized to the conversion region and evolves strongly with cycling. A literature-informed microkinetic model recovers the expected homogeneous relation between higher capacity and faster relaxation, but shows that a heterogeneous multistep conversion network can instead produce higher accessible capacity together with slower relaxation. Capacity and relaxation are therefore kinetically linked but not kinetically equivalent, and conversion performance cannot be reduced to a single fast–slow descriptor.
+Conversion-type high-entropy oxide (HEO) anodes are commonly evaluated by capacity and kinetics, but whether greater accessible capacity necessarily reflects faster conversion kinetics remains unclear. Here, ball milling and Mg incorporation are used as complementary perturbations to compare accessible capacity with conversion-associated kinetics probed by GITT relaxation. Ball milling increases accessible capacity while slowing the effective relaxation, whereas Mg incorporation suppresses accessible conversion without a proportional change in kinetic timescale. The anomalous response is localized to the conversion region and evolves strongly with cycling. A literature-informed microkinetic model recovers the expected homogeneous relation between higher capacity and faster relaxation, but shows that a heterogeneous multistep conversion network can instead produce higher accessible capacity together with slower relaxation. Capacity and relaxation are therefore kinetically linked but not kinetically equivalent, and conversion performance cannot be reduced to a single fast–slow descriptor.
 
 **Keywords:** high-entropy oxide; conversion anode; ball milling; magnesium incorporation; GITT; electrochemical relaxation; microkinetics
 
@@ -48,7 +48,7 @@ At this stage, Figures 1–2 are used only to establish that Mg incorporation an
 
 
 
-## 2.2. Ball milling increases accessible capacity whereas Mg incorporation suppresses it
+## 2.2. Ball milling enhances accessible capacity whereas Mg incorporation suppresses it
 
 The conventional electrochemical response first establishes the principal performance difference among the four materials: how much lithium-storage reaction can be accessed (Figure 3). The first lithiation/delithiation capacities are 901.25/609.12 mAh g⁻¹ for HEO, 1056.10/782.08 mAh g⁻¹ for BM-HEO, 731.15/458.91 mAh g⁻¹ for Mg-HEO, and 944.07/580.83 mAh g⁻¹ for BM-Mg-HEO, corresponding to initial Coulombic efficiencies of 67.59%, 74.05%, 62.77%, and 61.52%, respectively. Ball milling therefore increases accessible capacity in both the Mg-free and Mg-containing materials, whereas Mg incorporation lowers it relative to the corresponding Mg-free composition.
 
@@ -60,7 +60,7 @@ The rate-capability data reinforce the distinction between absolute capacity and
 
 The central question is consequently straightforward: does the higher capacity produced by ball milling correspond to faster conversion-associated kinetics, and does the lower capacity produced by Mg correspond to slower kinetics? Figure 4 tests this expectation using GITT relaxation.
 
-## 2.3. Higher accessible capacity does not imply faster conversion-associated kinetics
+## 2.3. Higher capacity does not imply faster conversion kinetics
 
 GITT was used to compare the relaxation dynamics of the four materials (Figure 4). Each step consists of a 10 min galvanostatic pulse followed by a 60 min open-circuit rest. The relaxation magnitude, $\Delta E_{\mathrm{relax}}$, is defined from 3 s after current interruption to the end of the 60 min rest, and $t_{63}$ is the time required to complete 63.2% of this observed relaxation. Because $t_{63}$ is extracted directly from the relaxation trajectory without assuming a single exponential, it is used here as a model-free effective kinetic descriptor. It reflects conversion-associated relaxation kinetics but is not identified with one microscopic rate constant or with the forward conversion rate alone.
 
@@ -70,7 +70,7 @@ Mg incorporation provides a complementary constraint. The median $\Delta E_{\mat
 
 These observations do not imply that capacity and kinetics are unrelated. In a simple homogeneous system, faster reaction kinetics would generally reduce polarization, increase the reaction accessible before cutoff, and accelerate relaxation. The present data instead show that ball milling and Mg incorporation cannot be described as uniform acceleration or deceleration of a single conversion-rate coordinate. The key remaining question is whether the kinetic mismatch is specifically associated with conversion rather than with a generic transport or interfacial process. Figure 5 addresses this by comparing the GITT relaxation with the independent differential-capacity signature of conversion.
 
-## 2.4. The capacity–kinetics mismatch is localized to the conversion region
+## 2.4. The kinetic mismatch is localized to the conversion region
 
 The state-resolved GITT relaxation develops a distinct excess feature during the first lithiation (Figure 5a). The feature is strongest in HEO, becomes lower and broader after ball milling, and is strongly suppressed in the Mg-containing materials. To determine whether this kinetic response is associated with conversion rather than with generic cell relaxation, the background-subtracted GITT excess was compared with the independently derived first-cycle cathodic $dQ/dV$ response.
 
@@ -82,7 +82,7 @@ Mg incorporation provides the complementary behavior. Mg-HEO has lower capacity 
 
 Across the four materials, Figure 5 therefore establishes that the capacity–kinetics mismatch is tied to the conversion region itself. The next question is whether this relationship is fixed by the pristine material or evolves as the conversion electrode changes with cycling.
 
-## 2.5. Conversion-associated kinetics evolves with cycle history
+## 2.5. Conversion kinetics evolves with cycle history
 
 Cycle-resolved GITT shows that the conversion-associated relaxation is not a stationary fingerprint of the pristine material (Figure 6). Over the common lithiation interval $z=0.4$–0.9, the excess peak decreases strongly from cycle 1 to cycle 3 for HEO and BM-HEO, increases for Mg-HEO, and changes little for BM-Mg-HEO. The peak position simultaneously converges from the later first-cycle region ($z\approx0.66$–0.79) toward a common later-cycle region near $z\approx0.50$–0.56.
 
@@ -92,7 +92,7 @@ The capacity–kinetics mismatch also persists after the first cycle. Third-cycl
 
 Figures 3–6 consequently impose three constraints on any mechanistic explanation: capacity and relaxation kinetics do not vary monotonically together, the anomalous response is localized to conversion, and it evolves with reaction history. Figure 7 tests whether a multistep conversion network can satisfy these constraints without treating capacity and relaxation as independent phenomena.
 
-## 2.6. Multistep conversion microkinetics explains the capacity–kinetics mismatch
+## 2.6. Multistep conversion microkinetics resolves the capacity–kinetics mismatch
 
 The microkinetic interpretation must first preserve the ordinary kinetic expectation. When all rates in a homogeneous population are scaled together (Figure 7c), the normalized cutoff capacity increases from 0.299 to 0.832 as the global rate scale rises from 0.5 to 2.0, while matched-state $t_{63}$ decreases from 22.45 to 6.95 min. Uniformly faster kinetics therefore gives both greater cutoff-limited capacity and faster relaxation.
 
