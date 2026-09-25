@@ -80,7 +80,7 @@ The two observables localize to nearly the same voltage region for all four mate
 
 This localization makes the ball-milling result particularly significant. BM-HEO accesses more capacity than HEO, yet the conversion-associated relaxation is not accelerated. The excess feature is also lower and broader after milling, indicating that the conversion-associated nonequilibrium response is redistributed rather than simply amplified. These observations rule out a simple interpretation in which milling uniformly accelerates the conversion reaction.
 
-Mg incorporation provides the complementary behavior. Mg-HEO has lower capacity and a strongly suppressed first-cycle conversion-associated excess, with the feature shifted to lower potential. This is consistent with reduced access to deep conversion and greater stabilization of oxide-derived states reported in related Mg-containing HEO systems.[8–10]. However, the weak excess amplitude is not accompanied by a short $t_{63}$, again separating the magnitude of the conversion-associated response from its effective relaxation rate.
+Mg incorporation provides the complementary behavior. Mg-HEO has lower capacity and a strongly suppressed first-cycle conversion-associated excess, with the feature shifted to lower potential. This is consistent with reduced access to deep conversion and greater stabilization of oxide-derived states reported in related Mg-containing HEO systems.[8–10] However, the weak excess amplitude is not accompanied by a short $t_{63}$, again separating the magnitude of the conversion-associated response from its effective relaxation rate.
 
 Across the four materials, Figure 5 therefore establishes that the capacity–kinetics mismatch is tied to the conversion region itself. The next question is whether this relationship is fixed by the pristine material or evolves as the conversion electrode changes with cycling.
 
@@ -228,7 +228,7 @@ After current interruption,
 j_{\mathrm{ext}}=F(\nu_1r_1+\nu_3r_3)=0.
 \]
 
-This zero-net-current condition does not require the individual partial currents to vanish.[32] In the normalized illustrative calculation, \(\nu_1=\nu_3=1\), so finite opposing rates \(r_1=-r_3\neq0\) are allowed while \(r_2\) can independently continue to redistribute the internal conversion state.
+This zero-net-current condition does not require the individual partial currents to vanish.[32] In the normalized illustrative calculation, \(\nu_1=\nu_3=1\), so finite opposing rates \(r_1=-r_3\neq0\) are allowed while \(r_2\) can also continue to redistribute the internal conversion state.
 
 The coupled state equations were integrated for a 600 s pulse followed by a 3600 s rest, matching the experimental GITT timing. The representative parameter set gives approximately 24.0 mV residual relaxation at the 3 s reference and \(t_{63}\approx13.8\) min. These values were selected only to place the illustrative calculation in the experimental timescale and amplitude range; they are not a fit to HEO, BM-HEO, Mg-HEO, or BM-Mg-HEO.
 
