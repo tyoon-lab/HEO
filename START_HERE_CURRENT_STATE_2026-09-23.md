@@ -16,7 +16,7 @@ Read these files in order:
 5. `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_INFORMED_2026-09-25.md` — current Figure 7 model authority
 6. `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_MAP_2026-09-23.md` — literature positioning
 7. `manuscript/HEO_MANUSCRIPT_V6_AFM_CAPACITY_KINETICS_2026-09-25.md` — current main-manuscript authority
-8. `manuscript/HEO_SUPPORTING_INFORMATION_V4_MICROKINETIC_2026-09-23.md`
+8. `manuscript/HEO_SUPPORTING_INFORMATION_V5_CAPACITY_KINETICS_2026-09-25.md` — current SI authority
 9. `manuscript/HEO_FIGURE_ARCHITECTURE_AND_CAPTIONS_V2_CONVERSION_2026-09-20.md`
 
 Do not ask the user for a separate handoff. Continue from Section 15.
@@ -184,7 +184,7 @@ For lithiation, using common normalized z=0.4–0.9:
 | Mg-HEO | 111.3 / 10.53 | 127.9 / 9.83 | 140.9 / 9.53 |
 | BM-Mg-HEO | 135.2 / 12.70 | 126.7 / 10.90 | 142.6 / 10.73 |
 
-The strongest new message is not simply that the Figure 5 decoupling repeats. It is that the **conversion-associated relaxation itself evolves with cycling**.
+The strongest new message is not simply that the Figure 5 capacity–kinetics mismatch persists. It is that the **conversion-associated relaxation itself evolves with cycling**.
 
 Conversion-associated peak amplitude, using the same first-cycle-style background definition as an exploratory cycle comparison:
 
@@ -344,7 +344,7 @@ However:
 - X is not capacity or phase fraction;
 - Q×X is not a valid capacity prediction;
 - rate-capability data are not reproduced at high rate;
-- the model mostly reformulates a decoupling already visible experimentally;
+- the model mostly reformulates a capacity–kinetics mismatch already visible experimentally;
 - the cycle-resolved GITT analysis provides a stronger, more direct Figure 6.
 
 Therefore the distributed-threshold model is **not the current main Figure 6 direction**. Keep it as historical/exploratory analysis only.
@@ -422,7 +422,7 @@ Do not claim:
 - a uniquely measured RDS
 - direct one-to-one mapping of BM or Mg onto a single rate constant
 - t63 as one elementary-step time constant
-- HEO-exclusive decoupling
+- HEO-exclusive capacity–kinetics mismatch
 
 # 12. Figure 7 main interpretation
 
