@@ -2,12 +2,13 @@
 
 ## Authoritative manuscript state
 
-- Main: `manuscript/HEO_MANUSCRIPT_V8_AFM_CONVERSION_KINETICS_2026-09-26.md`
-- SI: `manuscript/HEO_SUPPORTING_INFORMATION_V7_GITT_DIFFUSIVITY_POSITIONING_2026-09-26.md`
-- Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V2_2026-09-26.md`
+- Main: `manuscript/HEO_MANUSCRIPT_V9_AFM_CAPACITY_KINETICS_2026-09-26.md`
+- SI: `manuscript/HEO_SUPPORTING_INFORMATION_V8_CAPACITY_KINETICS_2026-09-26.md`
+- Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V3_2026-09-26.md`
 - TY10 audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
 - TY10 compact data: `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
 - Literature audit: `references/HEO_CONVERSION_GITT_LITERATURE_AUDIT_2026-09-26.md`
+- Story lock: `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-26.md`
 
 ## New result added on 2026-09-26
 
@@ -57,3 +58,21 @@ Current bounded general statement:
 **Conversion kinetics cannot, in general, be ranked by apparent GITT diffusivity alone.**
 
 Do not broaden this to "GITT is invalid" or "diffusion is absent."
+
+
+## Toolkit-aligned story lock
+
+Primary experimental statement:
+
+**Ball milling reveals that higher accessible capacity can coexist with slower relaxation, while conventional GITT analysis gives the opposite kinetic ranking.**
+
+Bounded mechanistic statement:
+
+**Microkinetic analysis shows that this behavior can arise naturally from the multistep character of conversion.**
+
+Manuscript hierarchy:
+- BM contradiction = scientific event that creates the paper.
+- Mg = complementary constraint, not a coequal headline contradiction.
+- conventional $D_{\mathrm{app}}$ inversion = independent kinetic-ranking test.
+- Figure 5 conversion localization + Figure 6 history dependence = experimental constraints.
+- Figure 7 = existence proof / mechanistic consistency, not unique mechanism identification.
