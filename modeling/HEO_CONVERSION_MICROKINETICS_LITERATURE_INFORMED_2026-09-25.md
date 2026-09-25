@@ -5,7 +5,7 @@
 
 ## 1. Scientific purpose
 
-The model is a **literature-informed coarse-grained conversion microkinetic model** used to test mechanistic consistency of the observed capacity–relaxation mismatch.
+The model is a **literature-informed coarse-grained conversion microkinetic model** used to test mechanistic consistency of the observed capacity–kinetics mismatch.
 
 It is **not**:
 - an atomistically unique conversion mechanism;
@@ -262,7 +262,7 @@ Safe:
 - conversion contains coupled electrochemical and structural/reconstruction steps;
 - zero external current can coexist with finite opposing internal partial currents;
 - accessible reaction extent, relaxation excitation amplitude, and relaxation eigen-timescale are distinct but coupled quantities;
-- the model is consistent with the observed capacity–relaxation mismatch.
+- the model is consistent with the observed capacity–kinetics mismatch.
 
 Do not claim:
 - \(I\) or \(I^*\) is one uniquely identified phase;
@@ -270,7 +270,7 @@ Do not claim:
 - BM maps uniquely to one \(k_i\);
 - Mg maps uniquely to one \(k_i\);
 - \(t_{63}\) equals one elementary rate constant;
-- this decoupling is unique to HEOs.
+- this capacity–kinetics mismatch is unique to HEOs.
 
 ## 11. Current numerical outputs
 
