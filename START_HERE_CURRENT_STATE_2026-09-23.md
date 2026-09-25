@@ -59,7 +59,7 @@ The old free-parameter spatial/phase-field model remains removed from the manusc
 - For readability, titles/headings may use `conversion kinetics`; precise methodological text should define this as **conversion-associated kinetics probed by GITT relaxation**.
 - `t63` is an effective relaxation timescale and must not be equated with the forward conversion rate or one microscopic rate constant.
 
-The old free-parameter spatial/phase-field model remains removed from the manuscript.
+
 
 ---
 
