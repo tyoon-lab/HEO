@@ -154,9 +154,7 @@ First-cycle differential-capacity curves were obtained from the corresponding ga
 
 ## 4.4. Literature-informed coarse-grained conversion microkinetic model
 
-A minimal conversion microkinetic model was used to test whether the experimentally observed capacity–kinetics mismatch is physically consistent with established conversion-reaction motifs. The model is not fitted to obtain unique microscopic rate constants and is not used to assign a unique elementary rate-limiting step.
-
-The effective reaction network is
+A minimal coarse-grained model was used to test whether the capacity–kinetics mismatch is consistent with established multistep conversion motifs rather than to fit unique microscopic rate constants or identify a single rate-limiting step.[30,31] The effective network is
 
 \[
 O+\nu_1\mathrm{Li}^{+}+\nu_1e^{-}\rightleftharpoons I,
@@ -166,25 +164,11 @@ O+\nu_1\mathrm{Li}^{+}+\nu_1e^{-}\rightleftharpoons I,
 I\rightleftharpoons I^*,
 \]
 
-and
-
 \[
-I^*+\nu_3\mathrm{Li}^{+}+\nu_3e^{-}\rightleftharpoons C.
+I^*+\nu_3\mathrm{Li}^{+}+\nu_3e^{-}\rightleftharpoons C,
 \]
 
-Here, \(O\), \(I\), \(I^*\), and \(C\) denote an oxide-derived state, a reduced/lithiated oxide intermediate, a structurally reconstructed conversion-active intermediate, and a metal/Li₂O-containing converted state, respectively. The network is a coarse-grained representation motivated by established multistep conversion mechanisms and does not assign these states to unique experimentally identified phases.[30,31]
-
-The first and third reactions are represented by reversible Butler–Volmer-type rates. For the illustrative calculation, symmetric transfer coefficients were used,
-
-\[
-r_1=k_1\left[a_O\exp(u/2)-\frac{a_I}{K_1}\exp(-u/2)\right],
-\]
-
-\[
-r_3=k_3\left[a_{I^*}\exp((u-u_3)/2)-\frac{a_C}{K_3}\exp(-(u-u_3)/2)\right],
-\]
-
-where \(u\) is the dimensionless electrochemical driving force and \(u_3\) is the relative driving-force offset of the second Faradaic step. The structural/reconstruction step is represented as
+where \(O\), \(I\), \(I^*\), and \(C\) are effective oxide-derived, reduced/lithiated, structurally reconstructed, and more deeply converted states. \(R_1\) and \(R_3\) were represented by reversible Butler–Volmer-type kinetics with symmetric transfer coefficients, and the reconstruction step by
 
 \[
 r_2=k_{2,f}a_I-k_{2,r}a_{I^*}.
@@ -193,52 +177,28 @@ r_2=k_{2,f}a_I-k_{2,r}a_{I^*}.
 The state balances are
 
 \[
-\frac{dx_I}{dt}=r_1-r_2,
-\]
-
-\[
-\frac{dx_{I^*}}{dt}=r_2-r_3,
-\]
-
-\[
+\frac{dx_I}{dt}=r_1-r_2,\qquad
+\frac{dx_{I^*}}{dt}=r_2-r_3,\qquad
 \frac{dx_C}{dt}=r_3,
 \]
 
-with \(x_O=1-x_I-x_{I^*}-x_C\).
-
-During a galvanostatic pulse, the potential is obtained from the Faradaic current balance
+with \(x_O=1-x_I-x_{I^*}-x_C\). The external Faradaic current is
 
 \[
 j_{\mathrm{ext}}=F(\nu_1r_1+\nu_3r_3).
 \]
 
-After current interruption,
+Thus, after current interruption, \(j_{\mathrm{ext}}=0\) constrains the sum of the Faradaic partial currents but does not require each internal rate to vanish.[32] For the normalized illustrative case \(\nu_1=\nu_3=1\), finite opposing rates \(r_1=-r_3\) are allowed while \(r_2\) can continue to redistribute the internal state.
 
-\[
-j_{\mathrm{ext}}=F(\nu_1r_1+\nu_3r_3)=0.
-\]
-
-This zero-net-current condition does not require the individual partial currents to vanish.[32] In the normalized illustrative calculation, \(\nu_1=\nu_3=1\), so finite opposing rates \(r_1=-r_3\neq0\) are allowed while \(r_2\) can also continue to redistribute the internal conversion state.
-
-The coupled state equations were integrated for a 600 s pulse followed by a 3600 s rest, matching the experimental GITT timing. The representative parameter set gives approximately 24.0 mV residual relaxation at the 3 s reference and \(t_{63}\approx13.8\) min. These values were selected only to place the illustrative calculation in the experimental timescale and amplitude range; they are not a fit to HEO, BM-HEO, Mg-HEO, or BM-Mg-HEO.
-
-Local linearization of the open-circuit dynamics gives
+The coupled equations were integrated using the experimental 600 s pulse/3600 s rest timing. The model response was also linearized locally as
 
 \[
 \frac{d\,\delta\mathbf{x}}{dt}=\mathbf{J}\delta\mathbf{x},
+\qquad
+E(t)-E_{\mathrm{eq}}=\sum_i B_i\exp(-t/\tau_i),
 \]
 
-with a corresponding voltage response
-
-\[
-E(t)-E_{\mathrm{eq}}=\sum_i B_i\exp(-t/\tau_i).
-\]
-
-The representative parameter set yields two finite model relaxation modes near 0.50 and 14.3 min and a conserved-state mode associated with fixed overall state of charge at open circuit. The amplitudes \(B_i\) and timescales \(\tau_i\) are model-level state-excitation/voltage-sensitivity weights and kinetic eigen-timescales, respectively; they are not interpreted as directly measured microscopic modes.
-
-A pulse-current sweep was retained as a diagnostic rather than as a fitted experimental result. Increasing the relative pulse current from 0.25 to 4 increases the illustrative 3 s relaxation magnitude from approximately 11.9 to 45.8 mV, while \(t_{63}\) remains within approximately 13.8–14.1 min. This synthetic result demonstrates, within the same reaction network and rate constants, that state excitation amplitude can vary strongly without a proportional change in the dominant relaxation timescale.
-
-A separate cutoff-capacity test was used to preserve the expected coupling between capacity and kinetics. In a homogeneous population, scaling all rates together from 0.5 to 2.0 increases normalized cutoff capacity from 0.299 to 0.832 while shortening matched-state \(t_{63}\) from 22.45 to 6.95 min. An illustrative heterogeneous extension then retains the same fast population while adding a smaller accessible population with a ten-times-slower structural/reconstruction step; this increases cutoff capacity from 0.558 to 0.657 and increases matched-state \(t_{63}\) from 13.45 to 15.28 min. The latter calculation is used only as a mechanistic-consistency existence proof and is not fitted to the ball-milled sample. The homogeneous and heterogeneous tests are therefore used to distinguish a global kinetic-speed change from a change in accessible population and internal kinetic-timescale distribution.
+to distinguish state-dependent response amplitudes from kinetic eigen-timescales. Two illustrative tests were then performed: (i) a homogeneous global-rate scaling at fixed equilibrium parameters and voltage cutoff, and (ii) a heterogeneous-accessibility test in which the reference fast population was retained and an additional slower-reconstructing population was made accessible. Both tests are mechanistic-consistency calculations rather than fits to an individual HEO sample; the parameter set and numerical diagnostics are provided in the Supporting Information.
 
 # References
 
