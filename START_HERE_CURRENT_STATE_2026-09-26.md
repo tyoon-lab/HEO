@@ -2,11 +2,12 @@
 
 ## Authoritative manuscript state
 
-- Main: `manuscript/HEO_MANUSCRIPT_V7_AFM_CAPACITY_KINETICS_2026-09-26.md`
-- SI: `manuscript/HEO_SUPPORTING_INFORMATION_V6_GITT_DIFFUSIVITY_AUDIT_2026-09-26.md`
-- Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_2026-09-26.md`
+- Main: `manuscript/HEO_MANUSCRIPT_V8_AFM_CONVERSION_KINETICS_2026-09-26.md`
+- SI: `manuscript/HEO_SUPPORTING_INFORMATION_V7_GITT_DIFFUSIVITY_POSITIONING_2026-09-26.md`
+- Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V2_2026-09-26.md`
 - TY10 audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
 - TY10 compact data: `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
+- Literature audit: `references/HEO_CONVERSION_GITT_LITERATURE_AUDIT_2026-09-26.md`
 
 ## New result added on 2026-09-26
 
@@ -42,3 +43,17 @@ The prior unresolved collaborator/cell-metadata list remains active, especially:
 - exact electrode area/recorded masses for any final absolute $D_{\mathrm{GITT}}$ reporting.
 
 Absolute $D$ is not required for the present scientific claim.
+
+
+## Literature-positioning update
+
+The current manuscript now explicitly distinguishes two facts:
+
+1. Conventional GITT-derived apparent diffusion coefficients are commonly used as kinetic comparators in HEO/conversion-anode literature.
+2. In the present HEO/BM-HEO pair, conventional $D_{\mathrm{app}}$ and direct current-off relaxation give opposite kinetic rankings.
+
+Current bounded general statement:
+
+**Conversion kinetics cannot, in general, be ranked by apparent GITT diffusivity alone.**
+
+Do not broaden this to "GITT is invalid" or "diffusion is absent."
