@@ -27,7 +27,7 @@ Do not ask the user for a separate handoff. Continue from Section 15.
 
 Working title direction:
 
-**Higher Capacity Does Not Necessarily Indicate Faster Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
+**Mismatch between Capacity and Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
 
 Target: **Advanced Functional Materials (AFM)**.
 
@@ -46,6 +46,18 @@ The key question leading into Figure 7 is:
 **Does higher accessible conversion capacity necessarily indicate faster conversion-associated kinetics?**
 
 The microkinetic model first recovers the ordinary homogeneous expectation that uniformly faster kinetics gives higher cutoff capacity and shorter relaxation, then shows that a heterogeneous multistep conversion network can instead produce higher accessible capacity together with slower relaxation. The heterogeneous calculation is an existence proof, not a fit to BM-HEO. The effect is not claimed to be unique to HEOs; HEO is positioned as a multication, reconstructive conversion system in which this general capacity–kinetics mismatch becomes experimentally visible.
+
+The old free-parameter spatial/phase-field model remains removed from the manuscript.
+
+## Current terminology decision — 2026-09-25
+
+- Primary manuscript term: **capacity–kinetics mismatch**.
+- Do not use `paradox` as the central descriptor.
+- Do not use unqualified `decoupling` as the central claim because capacity and relaxation remain kinetically linked.
+- `Partial decoupling` may be understood conceptually as a trend-level separation, but is not the preferred manuscript term.
+- Plain-language message: **higher accessible capacity does not necessarily indicate faster conversion kinetics**.
+- For readability, titles/headings may use `conversion kinetics`; precise methodological text should define this as **conversion-associated kinetics probed by GITT relaxation**.
+- `t63` is an effective relaxation timescale and must not be equated with the forward conversion rate or one microscopic rate constant.
 
 The old free-parameter spatial/phase-field model remains removed from the manuscript.
 
