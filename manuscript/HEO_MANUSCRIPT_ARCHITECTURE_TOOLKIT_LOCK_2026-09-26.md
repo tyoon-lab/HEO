@@ -5,7 +5,7 @@
 
 ## Scientific event that creates the paper
 
-Ball milling increases accessible conversion capacity but slows the effective current-off relaxation.
+Ball milling increases accessible conversion capacity but slows the conversion-associated effective current-off kinetics.
 
 This is the primary contradiction. Mg incorporation is not a coequal contradiction; it is a complementary perturbation showing that accessible conversion, relaxation amplitude, and relaxation timescale do not move as one scalar kinetic coordinate.
 
@@ -13,7 +13,7 @@ This is the primary contradiction. Mg incorporation is not a coequal contradicti
 
 **Experimental statement**
 
-> Ball milling reveals that higher accessible capacity can coexist with slower relaxation, while conventional GITT analysis gives the opposite kinetic ranking.
+> Ball milling reveals that higher accessible capacity can coexist with slower conversion-associated kinetics, while conventional GITT analysis gives the opposite kinetic ranking.
 
 **Mechanistic statement**
 
@@ -92,3 +92,15 @@ observation before mechanism; Figure 7 only after Figures 3–6 establish constr
 
 Conclusion:
 repeat the experimental contradiction first, then the GITT-ranking implication, then the bounded microkinetic explanation.
+
+
+## Interpretation boundary frozen after EIS review
+
+The manuscript-level phrase **conversion-associated kinetics** is supported because the excess GITT current-off response is localized independently to the conversion region by cathodic (dQ/dV).
+
+Operationally, however, the measured descriptor is (t_{63}), an effective current-off relaxation timescale. The manuscript must not equate (t_{63}) with one microscopic forward conversion rate constant, one diffusion time, or one unique bulk phase-boundary velocity.
+
+Cycling EIS is excluded from the evidence hierarchy. The available spectra have state-matching/outlier and process-overlap limitations and are not required to establish the central claim.
+
+The full wording and claim-boundary decision is frozen in:
+`manuscript/HEO_KINETIC_INTERPRETATION_DECISION_LOCK_2026-09-26.md`.
