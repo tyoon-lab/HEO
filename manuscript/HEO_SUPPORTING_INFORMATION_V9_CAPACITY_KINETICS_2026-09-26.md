@@ -3,7 +3,7 @@
 ## Ball Milling and Mg Incorporation Reshape Conversion Dynamics in Spinel High-Entropy Oxide Anodes
 
 **Date:** 2026-09-26  
-**Status:** aligned to `HEO_MANUSCRIPT_V10_AFM_CAPACITY_KINETICS_2026-09-26.md`; BM contradiction prioritized, conventional-GITT ranking audit retained, cycling EIS removed from the manuscript evidence package, and BM/Mg microkinetic calculations bounded as existence proofs.
+**Status:** aligned to `HEO_MANUSCRIPT_V10_AFM_CAPACITY_KINETICS_2026-09-26.md`; BM contradiction prioritized, conventional-GITT ranking audit retained, cycling impedance data excluded from the manuscript evidence package, and BM/Mg microkinetic calculations bounded as existence proofs.
 **Purpose:** technical completeness, auditability, robustness tests, conventional-GITT limitation audit, and claim-boundary support for the main manuscript.
 
 > Values below are included only where they are already verified from the project source files. Missing historical or collaborator-generated metadata are explicitly marked and are not inferred.
@@ -141,7 +141,7 @@ Median \(R^2\) values of the 3–30 s \(E\)-versus-\(\sqrt{t}\) fit are:
 | Mg-HEO | 0.9994 |
 | BM-Mg-HEO | 0.9985 |
 
-**Figure S12.** Representative \(E\) versus \(\sqrt{t}\) fits at selected states for the four samples.
+**Figure S13.** Representative \(E\) versus \(\sqrt{t}\) fits at selected states for the four samples.
 
 ## S3.3. Finite-window relaxation descriptors
 
@@ -164,9 +164,9 @@ Raw-reconstructed medians are:
 | Mg-HEO | 44.5 | 40.2 | 109.5 | 11.01 |
 | BM-Mg-HEO | 93.8 | 33.0 | 144.3 | 12.99 |
 
-**Figure S12.** Full first-lithiation GITT traces.
+**Figure S14.** Full first-lithiation GITT traces.
 
-**Figure S12.** \(t_{50}\), \(t_{63}\), and \(t_{90}\) versus cumulative capacity.
+**Figure S15.** \(t_{50}\), \(t_{63}\), and \(t_{90}\) versus cumulative capacity.
 
 **Table S4.** Current-off descriptors by selected capacity interval.
 
@@ -223,7 +223,7 @@ The selected state interval excludes the dominant early first-lithiation formati
 
 The capacity-weighted quantity is a comparative polarization descriptor. It is not a dissipated-energy measurement because the voltage recovery is sampled at discrete GITT states rather than integrated as a continuous operating overpotential.
 
-**Figure S12.** Sample-wise background fits and background-subtracted excess curves.
+**Figure S16.** Sample-wise background fits and background-subtracted excess curves.
 
 ## S4.3. Background/window sensitivity audit
 
@@ -250,7 +250,7 @@ The corresponding peak-amplitude and width ranges were:
 
 The BM-HEO peak-down/width-up result and the strong suppression of both Mg-containing peaks relative to HEO are therefore robust to the tested background and window choices. By contrast, the small nominal difference between BM-Mg-HEO and Mg-HEO peak amplitudes is not invariant. The main-text interpretation consequently treats BM-Mg-HEO as remaining strongly suppressed relative to HEO; any amplitude recovery relative to Mg-HEO is described only as nominal/background-sensitive. The particularly broad width range for BM-Mg-HEO reflects the shallow excess feature and is not used as a quantitative mechanistic discriminator.
 
-**Figure S12.** Background/window sensitivity of peak amplitude and FWHM-like width, including the directional pass/fail criteria above.
+**Figure S17.** Background/window sensitivity of peak amplitude and FWHM-like width, including the directional pass/fail criteria above.
 
 **Table S5.** Nominal excess metrics, tested window definitions, sensitivity ranges, and directional pass counts.
 
@@ -273,7 +273,7 @@ This correspondence supports the conversion/transformation-associated assignment
 
 **Data-source boundary.** Numerical continuous-GCD source files corresponding to these latest profiles are not currently available. The present values were reconstructed from the user's own vector voltage-profile plots, not from raster digitization. The original numerical profiles should replace this source if recovered before submission. The older first-cycle dataset affected by a power interruption is not used for this assignment.
 
-**Figure S12.** First-cycle dQ/dV reconstruction, smoothing-window sensitivity, and comparison with the GITT excess-peak voltages.
+**Figure S18.** First-cycle dQ/dV reconstruction, smoothing-window sensitivity, and comparison with the GITT excess-peak voltages.
 
 # S5. Conventional GITT apparent-diffusivity audit
 
@@ -402,7 +402,7 @@ whereas
 
 Because the ratio $\Delta E_s/\Delta E_\tau$ enters quadratically, the stronger increase in the relaxed voltage increment drives the conventional $D_{\mathrm{app}}$ upward even though the direct relaxation time becomes longer. In a reconstructive conversion electrode, $\Delta E_s$ can contain state-dependent thermodynamic and conversion contributions in addition to transport information. The apparent diffusivity therefore does not isolate one microscopic conversion rate.
 
-The pulse-polarization comparison leads to the same caution. A larger conventional $D_{\mathrm{app}}$ for BM-HEO does not systematically correspond to a smaller pulse voltage excursion. This mismatch is documented in Figure S12 rather than used as an independent mechanistic assignment.
+The pulse-polarization comparison leads to the same caution. A larger conventional $D_{\mathrm{app}}$ for BM-HEO does not systematically correspond to a smaller pulse voltage excursion. This mismatch is documented in Figure S22 rather than used as an independent mechanistic assignment.
 
 ## S5.4. Linearity and interpretation boundary
 
@@ -416,7 +416,7 @@ The audit supports the following bounded statement:
 
 It does not establish that diffusion is absent, that $t_{63}$ is a microscopic diffusion time, or that one unique structural process causes the mismatch.
 
-**Figure S12.** Conventional GITT apparent-diffusivity audit for HEO versus BM-HEO. (a) State-matched $D_{\mathrm{app,BM}}/D_{\mathrm{app,HEO}}$ and direct relaxation-rate ratio $t_{63,\mathrm{HEO}}/t_{63,\mathrm{BM}}$. (b) Apparent-diffusivity ratio compared with the inverse pulse-polarization ratio. (c) Separate HEO/BM ratios of $\Delta E_s$ and $\Delta E_\tau$, showing the unequal voltage-term changes that drive the apparent-diffusivity ranking.
+**Figure S22.** Conventional GITT apparent-diffusivity audit for HEO versus BM-HEO. (a) State-matched $D_{\mathrm{app,BM}}/D_{\mathrm{app,HEO}}$ and direct relaxation-rate ratio $t_{63,\mathrm{HEO}}/t_{63,\mathrm{BM}}$. (b) Apparent-diffusivity ratio compared with the inverse pulse-polarization ratio. (c) Separate HEO/BM ratios of $\Delta E_s$ and $\Delta E_\tau$, showing the unequal voltage-term changes that drive the apparent-diffusivity ranking.
 
 **Table S8.** State-matched HEO/BM-HEO conventional-GITT ratio audit over 200–800 mAh g⁻¹.
 
@@ -478,7 +478,7 @@ For cycles 2–3, the nominal exponential background approaches the linear limit
 
 The first-cycle analysis retains the exponential background because the first-cycle background remains visibly curved.
 
-**Figure S12.** Cycle-resolved conversion-associated relaxation and background-sensitivity comparison.
+**Figure S19.** Cycle-resolved conversion-associated relaxation and background-sensitivity comparison.
 
 **Table S6.** Cycle-resolved amplitude, effective timescale, peak position, and reversible-capacity descriptors.
 
@@ -597,7 +597,7 @@ Immediately after current interruption in the representative calculation:
 | 3 s-to-3600 s relaxation | 24.01 mV |
 | \(t_{63}\) | 13.78 min |
 
-**Figure S12.** Representative current-off internal redistribution showing finite opposing Faradaic partial rates and continuing structural redistribution at zero external current, together with the corresponding voltage relaxation.
+**Figure S20.** Representative current-off internal redistribution showing finite opposing Faradaic partial rates and continuing structural redistribution at zero external current, together with the corresponding voltage relaxation.
 
 ## S7.3. Local relaxation modes
 
@@ -678,7 +678,7 @@ is physically possible within the same multistep kinetic framework.
 
 This calculation is an existence proof only. It does not establish that ball milling creates a population with a ten-times-slower \(R_2\), and the population weights are not measured phase fractions.
 
-**Figure S12.** Microkinetic capacity–relaxation validation: homogeneous global-rate control and heterogeneous-accessibility existence proof.
+**Figure S21.** Microkinetic capacity–relaxation validation: homogeneous global-rate control and heterogeneous-accessibility existence proof.
 
 ## S7.7. Mg-like directional existence proof
 
@@ -750,16 +750,17 @@ Accordingly, the main-text conclusion is deliberately bounded: apparent GITT dif
 - Figure S10: detailed/normalized rate-capability comparison and 0.1 C recovery.
 - Figure S11: full or selected-cycle $dQ/dV$ evolution supporting main Figure 3.
 - Figure S12: additional post-cycle SEM.
-- Figure S12: representative early current-off $E$–$\sqrt t$ fits.
-- Figure S12: full first-lithiation GITT traces.
-- Figure S12: $t_{50}$, $t_{63}$, and $t_{90}$ versus state.
-- Figure S12: sample-wise first-cycle background fits and excess curves.
-- Figure S12: first-cycle background/window sensitivity audit.
-- Figure S12: first-cycle $dQ/dV$ smoothing sensitivity and GITT peak-voltage correspondence.
-- Figure S12: cycle-resolved conversion-associated relaxation and later-cycle background sensitivity.
-- Figure S12: representative microkinetic current-off internal redistribution and voltage relaxation.
-- Figure S12: homogeneous capacity–kinetics control and heterogeneous-accessibility existence proof.
-- Figure S12: conventional GITT apparent-diffusivity audit for HEO versus BM-HEO.
+- Figure S13: representative early current-off $E$–$\sqrt t$ fits.
+- Figure S14: full first-lithiation GITT traces.
+- Figure S15: $t_{50}$, $t_{63}$, and $t_{90}$ versus state.
+- Figure S16: sample-wise first-cycle background fits and excess curves.
+- Figure S17: first-cycle background/window sensitivity audit.
+- Figure S18: first-cycle $dQ/dV$ smoothing sensitivity and GITT peak-voltage correspondence.
+- Figure S19: cycle-resolved conversion-associated relaxation and later-cycle background sensitivity.
+- Figure S20: representative microkinetic current-off internal redistribution and voltage relaxation.
+- Figure S21: homogeneous capacity–kinetics control and heterogeneous-accessibility existence proof.
+- Figure S22: conventional GITT apparent-diffusivity audit for HEO versus BM-HEO.
+- Figure S23: Mg-like microkinetic directional existence proof.
 
 
 ## Tables
