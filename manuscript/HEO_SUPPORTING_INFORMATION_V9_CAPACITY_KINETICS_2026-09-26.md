@@ -1,0 +1,825 @@
+# Supporting Information v9 — Capacity–Kinetics and Conventional GITT Diffusivity Audit
+
+## Ball Milling and Mg Incorporation Reshape Conversion Dynamics in Spinel High-Entropy Oxide Anodes
+
+**Date:** 2026-09-26  
+**Status:** aligned to `HEO_MANUSCRIPT_V10_AFM_CAPACITY_KINETICS_2026-09-26.md`; BM contradiction prioritized, conventional-GITT ranking audit retained, cycling EIS removed from the manuscript evidence package, and BM/Mg microkinetic calculations bounded as existence proofs.
+**Purpose:** technical completeness, auditability, robustness tests, conventional-GITT limitation audit, and claim-boundary support for the main manuscript.
+
+> Values below are included only where they are already verified from the project source files. Missing historical or collaborator-generated metadata are explicitly marked and are not inferred.
+
+---
+
+# S1. Additional structural and compositional characterization
+
+## S1.1. XRD refinement and lattice parameters
+
+The main text uses the current XRD peak positions only to establish a modest Mg-associated lattice perturbation and milling-induced peak broadening. Final phase fractions, refined lattice parameters, and uncertainty should be reported here after the collaborator dataset is frozen.
+
+**[[YOO GROUP INPUT REQUIRED — Table S1: nominal composition, ICP-OES composition, refined lattice parameter, phase assignment/phase fraction, and refinement statistics for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO.]]**
+
+**[[YOO GROUP INPUT REQUIRED — Figure S1: full XRD patterns and final Rietveld/refinement comparison.]]**
+
+The present manuscript does not assign Mg to a unique crystallographic site from the small peak shift alone.
+
+## S1.2. Microscopy and elemental analysis
+
+**[[YOO GROUP INPUT REQUIRED — Figure S2: additional SEM/TEM images and particle/domain-size statistics.]]**
+
+**[[YOO GROUP INPUT REQUIRED — Figure S3: final HRTEM/SAED indexing and corresponding lattice-spacing table.]]**
+
+**[[YOO GROUP INPUT REQUIRED — Figure S4: EDS elemental maps for all four compositions.]]**
+
+The preliminary CoGa2O4 HRTEM assignment is not chemically applicable to the Ga-free synthesis and must not be included.
+
+## S1.3. XPS
+
+**[[YOO GROUP INPUT REQUIRED — Figure S5 and Table S2: final XPS spectra, fitting model, binding energies, and compositional comparison if XPS is retained in the final paper.]]**
+
+The batch-dependent Cr6+ feature should not be interpreted mechanistically unless its remeasurement and fitting are reproducible.
+
+## S1.4. N2 adsorption/desorption and BET analysis
+
+**Figure S6.** Full N2 adsorption/desorption isotherms and BET fitting ranges for the four samples.
+
+Verified BET surface areas used in the main text:
+
+| Sample | BET surface area (m2 g-1) |
+|---|---:|
+| HEO | 3.94 |
+| BM-HEO | 18.159 |
+| Mg-HEO | 6.49 |
+| BM-Mg-HEO | 16.64 |
+
+---
+
+# S2. Electrochemical controls and additional performance data
+
+## S2.1. Interfacial-capacitance comparison
+
+Cyclic voltammetry was acquired in the nominal non-faradaic region of 3.0-3.3 V at 10, 20, 40, 60, 80, and 100 mV s-1. The original calculation converted double-layer capacitance to a nominal interface area using 40 uF cm-2. Because this specific capacitance is not independently established for the porous composite electrode, the resulting values are used only as a relative interfacial-accessibility metric.
+
+| Sample | Nominal relative interface metric (cm2) |
+|---|---:|
+| HEO | 4.18 |
+| BM-HEO | 30.17 |
+| Mg-HEO | 6.56 |
+| BM-Mg-HEO | 39.68 |
+
+**Figure S7.** Current versus scan-rate regressions used for the relative interfacial-capacitance comparison.
+
+**Table S3.** Fitted slopes, goodness of fit, and sensitivity of nominal area to the assumed specific capacitance.
+
+## S2.2. First-cycle profiles and half-cycle convention
+
+Instrument-reported first-cycle capacity pairs and initial Coulombic efficiencies:
+
+| Sample | First half-cycle pair (mAh g-1) | ICE (%) |
+|---|---:|---:|
+| HEO | 901.25 / 609.12 | 67.59 |
+| BM-HEO | 1056.10 / 782.08 | 74.05 |
+| Mg-HEO | 731.15 / 458.91 | 62.77 |
+| BM-Mg-HEO | 944.07 / 580.83 | 61.52 |
+
+**[[YOON LAB INPUT REQUIRED — verify WonATech charge/discharge convention before replacing the neutral “half-cycle pair” terminology with lithiation/delithiation labels.]]**
+
+**Figure S8.** Full first-cycle and selected-cycle voltage profiles.
+
+## S2.3. FEC control, rate capability, dQ/dV, and post-cycle morphology
+
+**Figure S9.** Cycling comparison with and without 10 wt% FEC. The no-FEC control is used to show the increased interphase burden of the higher-area BM material rather than to assign a unique SEI chemistry.
+
+**Figure S10.** Detailed rate-capability profiles and recovery at 0.1 C.
+
+**[[YOON LAB INPUT REQUIRED — exact C-rate sequence, cycles per rate, and 1 C capacity basis.]]**
+
+**Figure S11.** Full/selected-cycle dQ/dV evolution supporting the compact main-text panel.
+
+
+**Figure S12.** Additional post-cycle SEM.
+
+---
+
+# S3. Current-off analysis: operational definitions and robustness
+
+## S3.1. Common GITT protocol
+
+- First-lithiation GITT block.
+- Applied current: 100 mA g-1.
+- Pulse duration: 600 s.
+- Open-circuit rest: 3600 s.
+- Nominal capacity increment per pulse: 16.667 mAh g-1.
+- Common current-off reference: 3 s.
+- Early current-off fit: 3-30 s after current interruption.
+
+The Mg-free datasets are sampled at approximately 1 s in the GITT region, whereas the Mg-containing datasets are sampled at approximately 3 s. A common 3 s reference is therefore used for the finite-window relaxation descriptors.
+
+## S3.2. Early current-off fit
+
+The early current-off voltage is represented empirically as
+
+\[
+E(t)=a+b\sqrt{t}.
+\]
+
+The intercept \(a\) is extrapolated to \(t\rightarrow 0\), and the apparent fast current-off resistance is defined as
+
+\[
+R_{\mathrm{off,app}}
+=
+\frac{a-E_{\mathrm{pulse,end}}}{|I|}.
+\]
+
+This quantity is an operational descriptor. It is not assigned uniquely to ohmic resistance, charge-transfer resistance, or intrinsic solid-state diffusion.
+
+Median \(R^2\) values of the 3–30 s \(E\)-versus-\(\sqrt{t}\) fit are:
+
+| Sample | Median \(R^2\) |
+|---|---:|
+| HEO | 0.9995 |
+| BM-HEO | 0.9992 |
+| Mg-HEO | 0.9994 |
+| BM-Mg-HEO | 0.9985 |
+
+**Figure S12.** Representative \(E\) versus \(\sqrt{t}\) fits at selected states for the four samples.
+
+## S3.3. Finite-window relaxation descriptors
+
+The finite-window relaxation amplitude is defined as
+
+\[
+\Delta E_{\mathrm{relax}}
+=
+E_{60\,\mathrm{min}}-E_{\mathrm{off},3\,\mathrm{s}}.
+\]
+
+Model-free \(t_{50}\), \(t_{63}\), and \(t_{90}\) are defined as the first times required to reach 50%, 63.2%, and 90% of the observed 3 s-to-60 min voltage recovery, respectively. These descriptors do not assume single-exponential relaxation. In particular, \(t_{63}\) equals a conventional time constant only for an ideal single exponential.
+
+Raw-reconstructed medians are:
+
+| Sample | \(R_{\mathrm{off,app}}\), 0–200 mAh g⁻¹ (Ω) | \(R_{\mathrm{off,app}}\), 200–800 mAh g⁻¹ (Ω) | \(\Delta E_{\mathrm{relax}}\), 200–800 (mV) | \(t_{63}\), 200–800 (min) |
+|---|---:|---:|---:|---:|
+| HEO | 308.1 | 106.4 | 160.9 | 8.68 |
+| BM-HEO | 592.7 | 106.5 | 176.3 | 11.57 |
+| Mg-HEO | 44.5 | 40.2 | 109.5 | 11.01 |
+| BM-Mg-HEO | 93.8 | 33.0 | 144.3 | 12.99 |
+
+**Figure S12.** Full first-lithiation GITT traces.
+
+**Figure S12.** \(t_{50}\), \(t_{63}\), and \(t_{90}\) versus cumulative capacity.
+
+**Table S4.** Current-off descriptors by selected capacity interval.
+
+# S4. Late-stage conversion/transformation-associated excess analysis
+
+## S4.1. State normalization and nominal background definition
+
+The common state coordinate is normalized first-lithiation capacity,
+
+\[
+z=Q/Q_{\max}.
+\]
+
+For the nominal analysis, a smooth exponential background is fitted independently to each sample using
+
+\[
+0.20\le z\le0.40
+\]
+
+and
+
+\[
+0.90\le z\le1.00.
+\]
+
+The background form is
+
+\[
+\eta_{\mathrm{bg}}(z)
+=
+c+a\exp(-z/\tau).
+\]
+
+The late-stage conversion/transformation-associated excess response is defined over \(0.40\le z\le0.90\) as
+
+\[
+\eta_{\mathrm{excess}}(z)
+=
+\max\left[
+\Delta E_{\mathrm{relax}}(z)-\eta_{\mathrm{bg}}(z),\,0
+\right].
+\]
+
+The selected state interval excludes the dominant early first-lithiation formation/activation response and isolates the late-stage feature discussed in the main text.
+
+## S4.2. Nominal extracted metrics
+
+| Sample | Peak excess polarization (mV) | FWHM-like width (mAh g⁻¹) | Normalized excess area (mV) | Capacity-weighted excess metric (mV·mAh g⁻¹) |
+|---|---:|---:|---:|---:|
+| HEO | 70.77 | 354.13 | 22.07 | 23909.67 |
+| BM-HEO | 44.07 | 430.17 | 14.13 | 17901.01 |
+| Mg-HEO | 15.91 | 250.29 | 4.94 | 3955.99 |
+| BM-Mg-HEO | 21.10 | 391.78 | 7.58 | 7077.32 |
+
+The capacity-weighted quantity is a comparative polarization descriptor. It is not a dissipated-energy measurement because the voltage recovery is sampled at discrete GITT states rather than integrated as a continuous operating overpotential.
+
+**Figure S12.** Sample-wise background fits and background-subtracted excess curves.
+
+## S4.3. Background/window sensitivity audit
+
+The nominal background choice was challenged using a grid of 105 alternative analyses. The early-background window was varied among 0.15–0.35, 0.15–0.40, 0.20–0.35, 0.20–0.40, 0.20–0.45, 0.25–0.40, and 0.25–0.45. The late-background lower bound was varied among \(z=0.88\), 0.90, and 0.92 with the upper bound fixed at 1.00. The excess-evaluation interval was varied among 0.38–0.90, 0.40–0.90, 0.42–0.90, 0.40–0.88, and 0.40–0.92.
+
+Across all 105 combinations, the principal synthesis trends used in the main text were invariant:
+
+| Directional criterion | Passed / tested |
+|---|---:|
+| BM-HEO peak < HEO peak | 105 / 105 |
+| BM-HEO width > HEO width | 105 / 105 |
+| Mg-HEO peak < HEO peak | 105 / 105 |
+| BM-Mg-HEO peak < HEO peak | 105 / 105 |
+| BM-Mg-HEO peak > Mg-HEO peak | 80 / 105 |
+
+The corresponding peak-amplitude and width ranges were:
+
+| Sample | Peak range (mV) | FWHM-like width range (mAh g⁻¹) |
+|---|---:|---:|
+| HEO | 60.7–74.7 | 306–379 |
+| BM-HEO | 36.7–51.0 | 379–497 |
+| Mg-HEO | 13.0–18.6 | 192–351 |
+| BM-Mg-HEO | 12.6–27.6 | 233–872 |
+
+The BM-HEO peak-down/width-up result and the strong suppression of both Mg-containing peaks relative to HEO are therefore robust to the tested background and window choices. By contrast, the small nominal difference between BM-Mg-HEO and Mg-HEO peak amplitudes is not invariant. The main-text interpretation consequently treats BM-Mg-HEO as remaining strongly suppressed relative to HEO; any amplitude recovery relative to Mg-HEO is described only as nominal/background-sensitive. The particularly broad width range for BM-Mg-HEO reflects the shallow excess feature and is not used as a quantitative mechanistic discriminator.
+
+**Figure S12.** Background/window sensitivity of peak amplitude and FWHM-like width, including the directional pass/fail criteria above.
+
+**Table S5.** Nominal excess metrics, tested window definitions, sensitivity ranges, and directional pass counts.
+
+## S4.4. Cross-check against the first-cycle cathodic differential-capacity feature
+
+The latest first-cycle voltage profiles from the 2026-09-17 HEO progress presentation were stored as vector graphics and reconstructed at high resolution. The reconstructed terminal capacities agree with the plotted first-cycle values to within approximately 0.03%.
+
+A common Savitzky–Golay differentiation/smoothing procedure was applied to all four reconstructed profiles.
+
+| Sample | Cathodic dQ/dV peak (V) | GITT excess peak (V) | Difference (V) |
+|---|---:|---:|---:|
+| HEO | 0.545 | 0.527 | −0.018 |
+| BM-HEO | 0.589 | 0.618 | +0.029 |
+| Mg-HEO | 0.419 | 0.387 | −0.032 |
+| BM-Mg-HEO | 0.485 | 0.503 | +0.018 |
+
+All four peak pairs are localized within 32 mV. The dQ/dV peak locations remain stable over smoothing windows of 20–60 mAh g⁻¹: HEO 0.544–0.547 V, BM-HEO approximately 0.589 V, Mg-HEO 0.408–0.419 V, and BM-Mg-HEO 0.485–0.486 V.
+
+This correspondence supports the conversion/transformation-associated assignment of the GITT excess feature while not identifying one unique microscopic elementary step.
+
+**Data-source boundary.** Numerical continuous-GCD source files corresponding to these latest profiles are not currently available. The present values were reconstructed from the user's own vector voltage-profile plots, not from raster digitization. The original numerical profiles should replace this source if recovered before submission. The older first-cycle dataset affected by a power interruption is not used for this assignment.
+
+**Figure S12.** First-cycle dQ/dV reconstruction, smoothing-window sensitivity, and comparison with the GITT excess-peak voltages.
+
+# S5. Conventional GITT apparent-diffusivity audit
+
+The main text uses the compositionally identical HEO/BM-HEO pair to test whether a conventional GITT apparent diffusion coefficient preserves the same kinetic ordering as the directly observed current-off relaxation. This section reports the raw-data-based relative comparison. Absolute diffusion coefficients are intentionally not used as a manuscript claim.
+
+## S5.1. Operational definition
+
+For a finite GITT pulse, the conventional form can be written as
+
+\[
+D_{\mathrm{GITT}}
+=
+\frac{4}{\pi\tau}
+\left(
+\frac{m_BV_M}{M_BS}
+\right)^2
+\left(
+\frac{\Delta E_s}{\Delta E_\tau}
+\right)^2,
+\]
+
+where $m_B$ is active-material mass, $V_M$ and $M_B$ are the active-material molar volume and molar mass, $S$ is electrode area, $\tau$ is the pulse duration, $\Delta E_s$ is the relaxed voltage increment between consecutive GITT states, and $\Delta E_\tau$ is the pulse voltage excursion after removal of the unresolved initial fast contribution.
+
+The present audit uses the same common 3 s reference adopted for the relaxation analysis:
+
+\[
+\Delta E_s
+=
+\left|
+E_{\mathrm{rest,end}}^{(n)}
+-
+E_{\mathrm{rest,end}}^{(n-1)}
+\right|,
+\]
+
+\[
+\Delta E_\tau
+=
+\left|
+E_{\mathrm{pulse,end}}
+-
+E_{\mathrm{pulse},3\,\mathrm{s}}
+\right|.
+\]
+
+The pulse duration is 600 s for both samples. The active-mass factor was recovered from the programmed GITT current and nominal 100 mA g⁻¹ current density; the exact recorded electrode masses should supersede this inference if recovered before submission. Because HEO and BM-HEO have the same nominal composition, $V_M/M_B$ is common. The plotted analysis therefore reports the state-matched ratio
+
+\[
+R_D
+=
+\frac{D_{\mathrm{app,BM}}}{D_{\mathrm{app,HEO}}}
+=
+\left(
+\frac{m_{\mathrm{BM}}/S_{\mathrm{BM}}}
+     {m_{\mathrm{HEO}}/S_{\mathrm{HEO}}}
+\right)^2
+\left[
+\frac{(\Delta E_s/\Delta E_\tau)_{\mathrm{BM}}}
+     {(\Delta E_s/\Delta E_\tau)_{\mathrm{HEO}}}
+\right]^2.
+\]
+
+The common electrode geometry used for the paired cells is assumed for the present relative plot. Final electrode-area metadata must be frozen before submission; if the areas differ, the ratio is updated directly through the explicit $S$ term above. No absolute $D$ values are required for the scientific conclusion.
+
+The audit covers 37 state-matched first-lithiation pulses from approximately 200 to 800 mAh g⁻¹.
+
+## S5.2. Conventional apparent diffusivity and direct relaxation give opposite rankings
+
+Across all 37 matched states,
+
+\[
+R_D>1,
+\]
+
+with a median
+
+\[
+\mathrm{median}(R_D)=1.78.
+\]
+
+Thus, the conventional GITT reduction ranks BM-HEO as having the larger apparent diffusivity over the entire common interval.
+
+The directly observed relaxation gives the opposite result. Define the relative relaxation-rate index
+
+\[
+R_{63}
+=
+\frac{1/t_{63,\mathrm{BM}}}{1/t_{63,\mathrm{HEO}}}
+=
+\frac{t_{63,\mathrm{HEO}}}{t_{63,\mathrm{BM}}}.
+\]
+
+Its median is
+
+\[
+\mathrm{median}(R_{63})=0.762,
+\]
+
+and $R_{63}<1$ at 35 of 37 matched states. Therefore, BM-HEO relaxes more slowly over nearly the entire interval even though the conventional $D_{\mathrm{app}}$ analysis ranks it as faster.
+
+This is the primary conventional-GITT limitation used in the main text. It does not show that Li transport is absent; it shows that $D_{\mathrm{app}}$ is not a reliable one-dimensional fast–slow descriptor of the full conversion-associated kinetic response.
+
+## S5.3. Origin of the opposite ranking in the conventional voltage terms
+
+The two voltage terms entering the conventional expression do not change proportionally after ball milling. Over the same 37 matched states,
+
+\[
+\mathrm{median}
+\left(
+\frac{\Delta E_{s,\mathrm{BM}}}
+     {\Delta E_{s,\mathrm{HEO}}}
+\right)
+=1.81,
+\]
+
+whereas
+
+\[
+\mathrm{median}
+\left(
+\frac{\Delta E_{\tau,\mathrm{BM}}}
+     {\Delta E_{\tau,\mathrm{HEO}}}
+\right)
+=1.18.
+\]
+
+Because the ratio $\Delta E_s/\Delta E_\tau$ enters quadratically, the stronger increase in the relaxed voltage increment drives the conventional $D_{\mathrm{app}}$ upward even though the direct relaxation time becomes longer. In a reconstructive conversion electrode, $\Delta E_s$ can contain state-dependent thermodynamic and conversion contributions in addition to transport information. The apparent diffusivity therefore does not isolate one microscopic conversion rate.
+
+The pulse-polarization comparison leads to the same caution. A larger conventional $D_{\mathrm{app}}$ for BM-HEO does not systematically correspond to a smaller pulse voltage excursion. This mismatch is documented in Figure S12 rather than used as an independent mechanistic assignment.
+
+## S5.4. Linearity and interpretation boundary
+
+As an additional diagnostic, the pulse-on voltage was fitted against $\sqrt{t}$ from 3 to 600 s. The median $R^2$ values are approximately 0.781 for HEO and 0.908 for BM-HEO. The incomplete full-pulse linearity, especially for HEO, provides an additional warning against interpreting the complete conversion transient as a single Fickian diffusion process.
+
+This pulse-on 3–600 s check is distinct from the 3–30 s current-off $E$–$\sqrt{t}$ fits in Section S3.2, which show much higher $R^2$ values and are used only as an early current-off operational descriptor.
+
+The audit supports the following bounded statement:
+
+**A conventional GITT apparent diffusion coefficient can give a kinetic ordering opposite to the directly observed relaxation ordering in the HEO/BM-HEO conversion system; it should therefore not be used as a direct measure of overall conversion kinetics.**
+
+It does not establish that diffusion is absent, that $t_{63}$ is a microscopic diffusion time, or that one unique structural process causes the mismatch.
+
+**Figure S12.** Conventional GITT apparent-diffusivity audit for HEO versus BM-HEO. (a) State-matched $D_{\mathrm{app,BM}}/D_{\mathrm{app,HEO}}$ and direct relaxation-rate ratio $t_{63,\mathrm{HEO}}/t_{63,\mathrm{BM}}$. (b) Apparent-diffusivity ratio compared with the inverse pulse-polarization ratio. (c) Separate HEO/BM ratios of $\Delta E_s$ and $\Delta E_\tau$, showing the unequal voltage-term changes that drive the apparent-diffusivity ranking.
+
+**Table S8.** State-matched HEO/BM-HEO conventional-GITT ratio audit over 200–800 mAh g⁻¹.
+
+# S6. Cycle-resolved conversion-associated relaxation
+
+The main-text Figure 6 compares the conversion-associated GITT response over repeated lithiation cycles. The analysis uses the same operational definition of the 3 s-to-60 min relaxation and the same normalized reaction-state interval, $z=0.4$–0.9, for all four materials.
+
+## S6.1. Cycle-resolved lithiation descriptors
+
+Median lithiation descriptors over $z=0.4$–0.9 are:
+
+| Sample | C1 $\Delta E_{\mathrm{relax}}$ / $t_{63}$ | C2 $\Delta E_{\mathrm{relax}}$ / $t_{63}$ | C3 $\Delta E_{\mathrm{relax}}$ / $t_{63}$ |
+|---|---|---|---|
+| HEO | 168.5 mV / 10.37 min | 129.2 / 9.43 | 138.4 / 9.57 |
+| BM-HEO | 160.5 / 13.02 | 125.7 / 11.18 | 133.5 / 11.33 |
+| Mg-HEO | 111.3 / 10.53 | 127.9 / 9.83 | 140.9 / 9.53 |
+| BM-Mg-HEO | 135.2 / 12.70 | 126.7 / 10.90 | 142.6 / 10.73 |
+
+The conversion-associated excess peak evolves as:
+
+| Sample | C1 peak | C2 peak | C3 peak | $z_{\mathrm{peak}}$, C1→C3 |
+|---|---:|---:|---:|---:|
+| HEO | 71.2 | 23.4 | 31.0 mV | 0.77→0.55 |
+| BM-HEO | 44.8 | 17.2 | 22.4 | 0.67→0.54 |
+| Mg-HEO | 15.9 | 19.3 | 27.0 | 0.79→0.56 |
+| BM-Mg-HEO | 21.1 | 12.6 | 20.8 | 0.66→0.53 |
+
+The first-cycle late feature therefore shifts toward a common earlier reaction-state region after cycling.
+
+## S6.2. Amplitude–timescale change
+
+Cycle-1 to cycle-3 normalized changes are:
+
+| Sample | $A_3/A_1$ | amplitude change | $t_{63,3}/t_{63,1}$ | $t_{63}$ change |
+|---|---:|---:|---:|---:|
+| HEO | 0.435 | -56.5% | 0.923 | -7.7% |
+| BM-HEO | 0.500 | -50.0% | 0.870 | -13.0% |
+| Mg-HEO | 1.698 | +69.8% | 0.905 | -9.5% |
+| BM-Mg-HEO | 0.986 | -1.4% | 0.845 | -15.5% |
+
+Thus the amplitude ratio spans 0.435–1.698, whereas the timescale ratio remains within 0.845–0.923. The amplitude–timescale change map in Figure 6d is based directly on these ratios.
+
+## S6.3. Later-cycle reversible reaction extent
+
+Approximate GITT capacities obtained by pulse counting are:
+
+| Sample | C1 lithiation | C2 lithiation | C3 lithiation | C3 delithiation |
+|---|---:|---:|---:|---:|
+| HEO | 1083 | 700 | 700 | 733 |
+| BM-HEO | 1267 | 850 | 833 | 817 |
+| Mg-HEO | 800 | 467 | 450 | 467 |
+| BM-Mg-HEO | 933 | 567 | 533 | 533 |
+
+These values are used only as approximate reversible-reaction descriptors and not as exact Coulombic efficiencies. They show that the higher accessible reaction extent after milling and the lower accessible reaction extent after Mg incorporation persist after the first cycle.
+
+## S6.4. Later-cycle background sensitivity
+
+For cycles 2–3, the nominal exponential background approaches the linear limit. Exponential and linear backgrounds produce peak-amplitude differences below 0.012%, identical peak positions, and maximum background differences below 0.0016 mV. The fitted exponential background constants are approximately $2.4\times10^3$–$5.4\times10^3$ in normalized-$z$ units, making the background numerically almost linear over the analysis window.
+
+The first-cycle analysis retains the exponential background because the first-cycle background remains visibly curved.
+
+**Figure S12.** Cycle-resolved conversion-associated relaxation and background-sensitivity comparison.
+
+**Table S6.** Cycle-resolved amplitude, effective timescale, peak position, and reversible-capacity descriptors.
+
+
+# S7. Conversion microkinetic existence proof and robustness
+
+The model is used as a mechanistic-consistency existence proof for the experimentally observed capacity–kinetics mismatch. It is not fitted to obtain unique microscopic rate constants, assign a unique rate-determining step, or identify the effective states with one crystallographic phase.
+
+## S7.1. Coarse-grained reaction network
+
+The current model contains
+
+\[
+O+\nu_1\mathrm{Li}^{+}+\nu_1e^-\rightleftharpoons I,
+\]
+
+\[
+I\rightleftharpoons I^*,
+\]
+
+\[
+I^*+\nu_3\mathrm{Li}^{+}+\nu_3e^-\rightleftharpoons C.
+\]
+
+Here, \(O\), \(I\), \(I^*\), and \(C\) denote effective oxide-derived, reduced/lithiated, structurally reconstructed/conversion-active, and more deeply converted metal/Li2O-containing states. \(R_1\) and \(R_3\) are reversible Faradaic steps; \(R_2\) is a reversible non-Faradaic reconstruction coordinate that coarse-grains structural rearrangement, cation/oxygen redistribution, nucleation, and conversion-interface evolution.
+
+For the normalized illustrative calculation,
+
+\[
+r_1=k_1\left[a_Oe^{u/2}-\frac{a_I}{K_1}e^{-u/2}\right],
+\]
+
+\[
+r_2=k_{2,f}a_I-k_{2,r}a_{I^*},
+\]
+
+\[
+r_3=k_3\left[a_{I^*}e^{(u-u_3)/2}-\frac{a_C}{K_3}e^{-(u-u_3)/2}\right].
+\]
+
+The state balances are
+
+\[
+\frac{dx_I}{dt}=r_1-r_2,\qquad
+\frac{dx_{I^*}}{dt}=r_2-r_3,\qquad
+\frac{dx_C}{dt}=r_3,
+\]
+
+with \(x_O=1-x_I-x_{I^*}-x_C\).
+
+Representative illustrative parameters:
+
+| parameter | value |
+|---|---:|
+| \(k_1\) | \(2.0\times10^{-2}\) |
+| \(k_{2,f}\) | \(8.4834\times10^{-4}\) |
+| \(k_{2,r}\) | \(4.2417\times10^{-4}\) |
+| \(k_3\) | \(1.0\times10^{-2}\) |
+| \(u_3\) | -3.0 |
+| \(K_1\) | 1.0 |
+| \(K_3\) | 1.0 |
+| reference normalized current \(J_{\mathrm{ref}}\) | \(2.0\times10^{-4}\) |
+
+These values are illustrative and were not fitted to HEO, BM-HEO, Mg-HEO, or BM-Mg-HEO.
+
+## S7.2. Current-off internal redistribution at conserved overall lithiation
+
+The external Faradaic current is
+
+\[
+j_{\mathrm{ext}}=F(\nu_1r_1+\nu_3r_3).
+\]
+
+After interruption,
+
+\[
+j_{\mathrm{ext}}=0,
+\]
+
+which constrains the sum of the Faradaic partial currents but does not require each internal rate to vanish.[32] For \(\nu_1=\nu_3=1\),
+
+\[
+r_1=-r_3\neq0
+\]
+
+is allowed while \(r_2\) can also remain finite.
+
+Define the normalized overall lithiation coordinate
+
+\[
+q=x_I+x_{I^*}+2x_C.
+\]
+
+Then
+
+\[
+\frac{dq}{dt}=r_1+r_3.
+\]
+
+Thus, at open circuit,
+
+\[
+\frac{dq}{dt}=0,
+\]
+
+while \(O/I/I^*/C\) populations can continue to redistribute.
+
+Immediately after current interruption in the representative calculation:
+
+| quantity | value |
+|---|---:|
+| \(r_1\) | \(-4.9369\times10^{-5}\) |
+| \(r_2\) | \(+6.8330\times10^{-5}\) |
+| \(r_3\) | \(+4.9369\times10^{-5}\) |
+| \(r_1+r_3\) | \(\approx0\) |
+| 3 s-to-3600 s relaxation | 24.01 mV |
+| \(t_{63}\) | 13.78 min |
+
+**Figure S12.** Representative current-off internal redistribution showing finite opposing Faradaic partial rates and continuing structural redistribution at zero external current, together with the corresponding voltage relaxation.
+
+## S7.3. Local relaxation modes
+
+Near an equilibrated state,
+
+\[
+\frac{d\,\delta\mathbf{x}}{dt}=\mathbf{J}\delta\mathbf{x},
+\]
+
+giving
+
+\[
+E(t)-E_{\mathrm{eq}}=\sum_iB_i\exp(-t/\tau_i).
+\]
+
+For the representative parameter set, local linearization gives two finite modes:
+
+| mode | \(\tau\) |
+|---|---:|
+| fast finite mode | 0.50 min |
+| slow finite mode | 14.27 min |
+| conserved-state/SOC mode | infinite |
+
+The slow model eigen-timescale lies close to the illustrative \(t_{63}\), but experimental \(t_{63}\) is treated only as an ensemble-level descriptor and is not equated to one microscopic eigenmode.
+
+## S7.4. State-excitation amplitude versus relaxation timescale
+
+With all rate constants fixed, changing only the pulse current strongly changes the relaxation amplitude while changing \(t_{63}\) only modestly:
+
+| relative pulse current | residual relaxation at 3 s (mV) | \(t_{63}\) (min) |
+|---:|---:|---:|
+| 0.25 | 11.93 | 13.78 |
+| 0.50 | 16.95 | 13.78 |
+| 1.00 | 24.01 | 13.78 |
+| 2.00 | 33.18 | 13.95 |
+| 4.00 | 45.77 | 14.12 |
+
+This calculation supports the Figure 6 interpretation that the magnitude of a conversion-associated nonequilibrium response can evolve more strongly than its effective relaxation timescale.
+
+## S7.5. Capacity–kinetics coupling: homogeneous control
+
+Capacity is itself kinetic-dependent. To establish the conventional baseline, a single homogeneous population was discharged galvanostatically to a fixed model voltage cutoff while all kinetic rate constants were scaled together.
+
+| global rate scale | normalized cutoff capacity | matched-state \(t_{63}\) (min) |
+|---:|---:|---:|
+| 0.50 | 0.2993 | 22.45 |
+| 0.75 | 0.4187 | 17.12 |
+| 1.00 | 0.5585 | 13.45 |
+| 1.50 | 0.7399 | 9.12 |
+| 2.00 | 0.8322 | 6.95 |
+
+Thus,
+
+\[
+\text{uniformly faster kinetics}
+\Rightarrow
+Q_{\mathrm{cutoff}}\uparrow,\quad t_{63}\downarrow.
+\]
+
+The experimental BM trend is therefore not interpreted as an absence of kinetic coupling.
+
+## S7.6. Heterogeneous-accessibility existence proof
+
+A second calculation retains the full reference fast population (weight 0.65) and adds an additional accessible population (weight 0.15) with the same reaction topology and thermodynamic parameters but a ten-times-slower \(R_2\) reconstruction rate.
+
+| case | normalized cutoff capacity | matched-state \(t_{63}\) (min) |
+|---|---:|---:|
+| reference fast population | 0.55845 | 13.45 |
+| fast + added slower-reconstructing population | 0.65714 | 15.28 |
+
+The added population increases cutoff capacity by 17.67% while increasing \(t_{63}\) by 13.63%. Therefore,
+
+\[
+Q_{\mathrm{cutoff}}\uparrow,\quad t_{63}\uparrow
+\]
+
+is physically possible within the same multistep kinetic framework.
+
+This calculation is an existence proof only. It does not establish that ball milling creates a population with a ten-times-slower \(R_2\), and the population weights are not measured phase fractions.
+
+**Figure S12.** Microkinetic capacity–relaxation validation: homogeneous global-rate control and heterogeneous-accessibility existence proof.
+
+## S7.7. Mg-like directional existence proof
+
+The Mg-containing electrode provides a complementary experimental combination: lower accessible capacity, lower conversion-associated relaxation amplitude, and a longer effective relaxation time. A secondary directional calculation tests whether these three changes can coexist within the same coarse-grained conversion network.
+
+The reference model uses the same parameter set and fixed cutoff protocol as the current microkinetic validation. In the illustrative Mg-like case, the deeper-conversion thermodynamic offset is shifted from $u_3=-3$ to $u_3=-2$, while both forward and reverse $R_2$ reconstruction coefficients are multiplied by 0.8. These values are deliberately simple and are not fitted to Mg-HEO.
+
+| case | $u_3$ | $R_2$ rate scale | normalized $Q_{\mathrm{cutoff}}$ | matched-state $\Delta E_{\mathrm{relax}}$ (mV) | matched-state $t_{63}$ (min) |
+|---|---:|---:|---:|---:|---:|
+| reference | -3.0 | 1.0 | 0.55845 | 30.82 | 13.45 |
+| illustrative Mg-like | -2.0 | 0.8 | 0.39688 | 26.37 | 16.45 |
+
+Thus the model gives
+
+\[
+Q_{\mathrm{cutoff}}\downarrow,\qquad
+\Delta E_{\mathrm{relax}}\downarrow,\qquad
+t_{63}\uparrow
+\]
+
+simultaneously. Relative to the reference, the illustrative case decreases cutoff capacity by 28.9%, decreases the matched-state relaxation amplitude by 14.5%, and increases $t_{63}$ by 22.3%.
+
+This is a directional existence proof only. It demonstrates that the experimental Mg combination is internally compatible with a multistep conversion network; it does not establish that Mg incorporation specifically changes $u_3$ or $R_2$ by the chosen amounts.
+
+**Figure S23.** Mg-like microkinetic directional test showing that lower cutoff capacity and lower relaxation amplitude can coexist with a longer effective relaxation time within the same coarse-grained conversion network.
+
+## S7.8. Interpretation boundaries
+
+The model supports the following statement:
+
+**Microkinetic analysis shows that higher accessible capacity and slower post-interruption relaxation can coexist within the same multistep conversion network; it does not uniquely identify the microscopic origin of the experimental mismatch.**
+
+The model does not uniquely determine:
+- microscopic identities of \(I\) or \(I^*\);
+- unique elementary rate constants for the HEO samples;
+- a unique rate-determining step;
+- a unique nucleation or phase-growth mechanism;
+- a quantitative conversion fraction from relaxation amplitude;
+- a direct equality between \(t_{63}\) and the forward conversion rate;
+- a unique one-to-one mapping of BM or Mg incorporation onto a specific model parameter.
+
+**Table S7.** Representative model parameters, current-off current balance, eigenmodes, pulse-current sweep, homogeneous rate-scaling control, heterogeneous-accessibility validation, and the Mg-like directional existence proof.
+
+# S8. Literature basis for the GITT/current-off interpretation
+
+The GITT/current-off analysis is used here to resolve the electrochemical consequences of ball milling and Mg incorporation in the HEO system; it is not presented as a new diffusion-coefficient extraction method. Conventional GITT-derived apparent diffusion coefficients are nevertheless used widely as kinetic comparators in performance-oriented conversion-anode studies, including spinel HEOs.[6,33–36] Representative HEO studies compare $D_{\mathrm{Li}}$ between compositions or microstructures and associate the larger value with faster Li transport, higher capacity, or improved rate capability. The present work tests that kinetic ranking directly rather than assuming that a larger apparent $D$ corresponds to a faster overall conversion response.
+
+Several prior methodological studies define the interpretation boundary. Deiss showed theoretically that neglect of finite heterogeneous reaction kinetics can generate spurious potential dependence in conventional GITT-derived diffusion coefficients even when the true diffusion coefficient is constant.[37] Zhu and Wang developed a phase-transformation GITT treatment that separates ion diffusion from phase-interface mobility,[21] while Horner et al. showed that conventional ideal GITT reductions can differ strongly from pulse-model-based diffusion estimates.[24] Jia et al. reviewed additional parameter, thermodynamic, and phase-change limitations of standard GITT analysis.[15] These studies establish that an apparent $D$ extracted from a phase-transforming transient is not automatically equivalent to the overall reaction rate.
+
+Current-interruption and modified GITT approaches have also separated distinct kinetic contributions or fitted the pulse/rest response directly.[16,23,24] Time-domain voltage relaxation has been represented by multiple characteristic times,[29] and long-rest behavior can reflect particle-size distributions and continuing structural evolution.[25,26] Phase-field studies likewise show that phase-separating and non-Fickian dynamics alter the interpretation of intermittent transients.[27,28]
+
+The present HEO/BM-HEO comparison adds a direct state-matched experimental test. Conventional $D_{\mathrm{app}}$ ranks BM-HEO as faster at all 37 matched states over 200–800 mAh g⁻¹, whereas the independently extracted current-off relaxation rate ranks BM-HEO as slower at 35 of 37 states. The result does not establish that diffusion is absent. It shows that apparent diffusivity can fail to preserve the fast–slow ordering of the overall reconstructive conversion response.
+
+Accordingly, the main-text conclusion is deliberately bounded: apparent GITT diffusivity can remain useful as an operational transport descriptor, but it should not be used alone to rank overall conversion kinetics. The microkinetic model is used only to establish that capacity, accessibility, and internal relaxation timescales can respond differently within the same multistep conversion network; its effective states and rate constants are not uniquely identified.
+
+# S9. SI figure/table checklist before submission
+
+## Figures
+
+- Figure S1: full XRD patterns and final refinement.
+- Figure S2: additional SEM/TEM and particle/domain-size statistics.
+- Figure S3: final HRTEM/SAED indexing.
+- Figure S4: full EDS elemental maps.
+- Figure S5: final XPS, only if the final dataset is retained.
+- Figure S6: N₂ adsorption/desorption isotherms and BET fits.
+- Figure S7: interfacial-capacitance scan-rate regressions.
+- Figure S8: additional first-cycle/selected-cycle voltage profiles.
+- Figure S9: no-FEC cycling control.
+- Figure S10: detailed/normalized rate-capability comparison and 0.1 C recovery.
+- Figure S11: full or selected-cycle $dQ/dV$ evolution supporting main Figure 3.
+- Figure S12: additional post-cycle SEM.
+- Figure S12: representative early current-off $E$–$\sqrt t$ fits.
+- Figure S12: full first-lithiation GITT traces.
+- Figure S12: $t_{50}$, $t_{63}$, and $t_{90}$ versus state.
+- Figure S12: sample-wise first-cycle background fits and excess curves.
+- Figure S12: first-cycle background/window sensitivity audit.
+- Figure S12: first-cycle $dQ/dV$ smoothing sensitivity and GITT peak-voltage correspondence.
+- Figure S12: cycle-resolved conversion-associated relaxation and later-cycle background sensitivity.
+- Figure S12: representative microkinetic current-off internal redistribution and voltage relaxation.
+- Figure S12: homogeneous capacity–kinetics control and heterogeneous-accessibility existence proof.
+- Figure S12: conventional GITT apparent-diffusivity audit for HEO versus BM-HEO.
+
+
+## Tables
+
+- Table S1: nominal composition, ICP-OES, XRD refinement, and phase fractions.
+- Table S2: final XPS fit parameters, if XPS is retained.
+- Table S3: interfacial-capacitance regressions and area-conversion sensitivity.
+- Table S4: current-off descriptors by selected capacity interval.
+- Table S5: first-cycle conversion-associated excess metrics and sensitivity ranges.
+- Table S6: cycle-resolved amplitude, $t_{63}$, peak-position, and reversible-capacity descriptors.
+- Table S7: microkinetic parameters, current-off balance, eigenmodes, pulse-current sweep, and capacity–kinetics validation.
+- Table S8: state-matched HEO/BM-HEO conventional-GITT diffusivity-ratio audit.
+
+## Readiness classes
+
+**Available from current Yoon-Lab/project files:** S13–S23 in principle; final publication artwork remains to be assembled.
+
+**Available in recent progress material but source/provenance should be frozen before final SI:** S6–S12.
+
+**Yoo-group input required before submission:** S1–S5, especially final ICP/XRD refinement/HRTEM indexing, Mg composition/synthesis metadata, and the decision on XPS.
+
+# S10. Items that remain outside the current HEO paper
+
+The exploratory sequence “D-only -> D + compact relaxation -> distributed relaxation” belongs to the separate GITT/EKF methodology project and should not be introduced into this material-centered manuscript unless a future independent validation creates a synthesis-specific result essential to the HEO story.
+
+The former reduced spatial/phase-field model and the distributed-threshold capacity-prediction model are also historical analyses and are not part of the present HEO manuscript. They may remain in the repository for provenance but should not be cited as current manuscript evidence.
+
+---
+
+# References added for GITT relaxation/phase-transformation positioning
+
+[21] Zhu, Y.; Wang, C. *Galvanostatic Intermittent Titration Technique for Phase-Transformation Electrodes.* **J. Phys. Chem. C** 2010, 114, 2830–2841. DOI: 10.1021/jp9113333.
+
+[22] Chen, Y.; Wang, L.; Anwar, T.; Zhao, Y.; Piao, N.; He, X.; Zhu, Q. *Application of Galvanostatic Intermittent Titration Technique to Investigate Phase Transformation of LiFePO4 Nanoparticles.* **Electrochim. Acta** 2017, 241, 132–140. DOI: 10.1016/j.electacta.2017.04.137.
+
+[23] Heubner, C.; Schneider, M.; Michaelis, A. *SoC dependent kinetic parameters of insertion electrodes from StairCase – GITT.* **J. Electroanal. Chem.** 2016, 767, 18–23. DOI: 10.1016/j.jelechem.2016.02.013.
+
+[24] Horner, J. S.; Whang, G.; Ashby, D. S.; Kolesnichenko, I. V.; Lambert, T. N.; Dunn, B. S.; Talin, A. A.; Roberts, S. A. *Electrochemical Modeling of GITT Measurements for Improved Solid-State Diffusion Coefficient Evaluation.* **ACS Appl. Energy Mater.** 2021, 4, 11460–11469. DOI: 10.1021/acsaem.1c02218.
+
+[25] Fath, M.; Heidebrecht, P.; Drechsler, C.; Kamlah, M. *Impact of particle size distribution on the rest phase behavior of LIB cathodes – Model based analysis.* **J. Power Sources** 2024, 596, 234100. DOI: 10.1016/j.jpowsour.2024.234100.
+
+[26] Skurtveit, A.; Tiberg North, E.; Park, H.; Chernyshov, D.; Wragg, D. S.; Koposov, A. Y. *Stepwise Structural Relaxation in Battery Active Materials.* **ACS Mater. Lett.** 2025, 7, 343–349. DOI: 10.1021/acsmaterialslett.4c02058.
+
+[27] Han, B. C.; Van der Ven, A.; Morgan, D.; Ceder, G. *Electrochemical modeling of intercalation processes with phase field models.* **Electrochim. Acta** 2004, 49, 4691–4699. DOI: 10.1016/j.electacta.2004.05.024.
+
+[28] Singh, G. K.; Ceder, G.; Bazant, M. Z. *Intercalation dynamics in rechargeable battery materials: General theory and phase-transformation waves in LiFePO4.* **Electrochim. Acta** 2008, 53, 7599–7613. DOI: 10.1016/j.electacta.2008.03.083.
+
+[29] Jorkesh, S.; Akbari, A.; Ahmed, R.; Habibi, S. *SOC-dependent voltage relaxation and dual time-constant behavior in lithium-ion batteries: A time-domain analysis.* **J. Power Sources** 2026, 682, 240338. DOI: 10.1016/j.jpowsour.2026.240338.
+
+
+[30] Alsaç, E. P.; Sharma, A. K.; Yoon, S. G.; Vishnugopi, B. S.; Wang, C.; Thomas, T. A.; Nelson, D. L.; Eze, U. D.; Jeong, W. J.; Harris, J.; Mukherjee, P. P.; McDowell, M. T. *Linking Pressure to Electrochemical Evolution in Solid-State Conversion Cathode Composites.* **ACS Appl. Mater. Interfaces** 2026, 18, 1626–1640. DOI: 10.1021/acsami.5c20956.
+
+# Additional references used for the conventional-GITT literature positioning
+
+[33] Tian, K.-H.; Duan, C.-Q.; Ma, Q.; Li, X.-L.; Wang, Z.-Y.; Sun, H.-Y.; Luo, S.-H.; Wang, D.; Liu, Y.-G. *High-entropy chemistry stabilizing spinel oxide (CoNiZnXMnLi)₃O₄ (X = Fe, Cr) for high-performance anode of Li-ion batteries.* **Rare Metals** 2022, 41, 1265–1275. DOI: 10.1007/s12598-021-01872-4.
+
+[34] Yang, X.; Wang, H.; Song, Y.; Liu, K.; Huang, T.; Wang, X.; Zhang, C.; Li, J. *Low-Temperature Synthesis of a Porous High-Entropy Transition-Metal Oxide as an Anode for High-Performance Lithium-Ion Batteries.* **ACS Appl. Mater. Interfaces** 2022, 14, 26873–26881. DOI: 10.1021/acsami.2c07576.
+
+[35] Xiao, B.; Wu, G.; Wang, T.; Wei, Z.; Xie, Z.; Sui, Y.; Qi, J.; Wei, F.; Zhang, X.; Tang, L.-B.; Zheng, J.-C. *Enhanced Li-Ion Diffusion and Cycling Stability of Ni-Free High-Entropy Spinel Oxide Anodes with High-Concentration Oxygen Vacancies.* **ACS Appl. Mater. Interfaces** 2023, 15, 2792–2803. DOI: 10.1021/acsami.2c12374.
+
+[36] Zhu, S.; Nong, W.; Nicholas, L. J. J.; Cao, X.; Zhang, P.; Lu, Y.; Xiu, M.; Huang, K.; Wu, G.; Yang, S.-W.; Wu, J.; Liu, Z.; Srinivasan, M.; Hippalgaonkar, K.; Huang, Y. *Rapid in situ growth of high-entropy oxide nanoparticles with reversible spinel structures for efficient Li storage.* **J. Mater. Chem. A** 2024, 12, 11473–11486. DOI: 10.1039/D3TA08101J.
+
+[37] Deiss, E. *Spurious chemical diffusion coefficients of Li⁺ in electrode materials evaluated with GITT.* **Electrochim. Acta** 2005, 50, 2927–2932. DOI: 10.1016/j.electacta.2004.11.042.
