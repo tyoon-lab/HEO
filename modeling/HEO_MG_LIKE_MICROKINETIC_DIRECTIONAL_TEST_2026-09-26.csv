@@ -1,0 +1,3 @@
+case,u3,R2_rate_scale,Q_cutoff_normalized,relaxation_amp_mV_at_matched_state,t63_min_at_matched_state,Q_ratio_vs_ref,amp_ratio_vs_ref,t63_ratio_vs_ref
+reference,-3.0,1.0,0.5584543173295781,30.8237787951011,13.45,1.0,1.0,1.0
+illustrative_Mg_like,-2.0,0.8,0.3968793107895318,26.366496581772473,16.45,0.7106746218514934,0.8553946859352289,1.2230483271375465
