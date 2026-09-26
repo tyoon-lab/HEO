@@ -119,6 +119,28 @@ def third_pulse_relaxation(branches):
         amp3, t63, y = relaxation_metrics(on.y[:, -1], branches)
     return amp3, t63
 
+def matched_charge_relaxation(branches, delta_q=0.30):
+    """Pulse from the common initial state to a matched normalized passed charge.
+
+    This is the protocol used for the Mg-like directional audit. Because
+    JAPP is constant, pulse time is delta_q / JAPP. The subsequent 3600 s
+    current-off relaxation uses the same 3 s reference as the experimental
+    descriptor.
+    """
+    y0 = initial_state(branches)
+    pulse_s = delta_q / JAPP
+    on = solve_ivp(
+        lambda t, z: rhs(t, z, JAPP, branches),
+        [0.0, pulse_s],
+        y0,
+        method="LSODA",
+        rtol=2e-8,
+        atol=1e-10,
+        max_step=2.0,
+    )
+    amp3, t63, _ = relaxation_metrics(on.y[:, -1], branches)
+    return amp3, t63
+
 print("Homogeneous global-rate control")
 for scale in [0.5, 0.75, 1.0, 1.5, 2.0]:
     p = BASE.copy()
@@ -143,4 +165,22 @@ for name, branches in [
 ]:
     Q = capacity_to_cutoff(branches)
     amp3, t63 = third_pulse_relaxation(branches)
+    print(name, Q, amp3, t63)
+
+# Mg-like directional existence proof.
+# The parameter changes are deliberately illustrative, not fitted to Mg-HEO.
+# Relaxation is compared at the same normalized passed charge (Delta Q = 0.30),
+# while Q_cutoff is evaluated with the same fixed voltage cutoff as above.
+mg_like = BASE.copy()
+mg_like["u3"] = -2.0
+mg_like["k2f"] *= 0.8
+mg_like["k2r"] *= 0.8
+
+print("\nMg-like directional test at matched Delta Q = 0.30")
+for name, branches in [
+    ("reference", [(0.65, BASE)]),
+    ("illustrative_Mg_like", [(0.65, mg_like)]),
+]:
+    Q = capacity_to_cutoff(branches)
+    amp3, t63 = matched_charge_relaxation(branches, delta_q=0.30)
     print(name, Q, amp3, t63)
