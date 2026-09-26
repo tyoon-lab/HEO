@@ -2,15 +2,27 @@
 
 ## Authoritative manuscript state
 
-- Main: `manuscript/HEO_MANUSCRIPT_V10_AFM_CAPACITY_KINETICS_2026-09-26.md`
+- Main: `manuscript/HEO_MANUSCRIPT_V11_AFM_CAPACITY_KINETICS_2026-09-26.md`
 - SI: `manuscript/HEO_SUPPORTING_INFORMATION_V9_CAPACITY_KINETICS_2026-09-26.md`
-- Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V4_2026-09-26.md`
+- Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V5_2026-09-26.md`
 - TY10 audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
 - TY10 compact data: `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
 - Microkinetic authority: `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_INFORMED_2026-09-26.md`
 - Mg-like directional audit: `modeling/HEO_MG_LIKE_MICROKINETIC_DIRECTIONAL_TEST_2026-09-26.md`
 - Literature audit: `references/HEO_CONVERSION_GITT_LITERATURE_AUDIT_2026-09-26.md`
 - Story lock: `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-26.md`
+- Main audit: `manuscript/HEO_MAIN_SCIENTIFIC_AUDIT_2026-09-26.md`
+
+## Post-audit manuscript state
+
+Main manuscript v11 preserves the locked scientific architecture while correcting four communication/reproducibility issues found in the Step-1 main audit:
+
+- Figure 4 no longer labels the current-off response as conversion-associated before Figure 5 establishes localization;
+- Figure 5 now localizes the excess current-off relaxation rather than overstating direct localization of the full t63 mismatch;
+- the microkinetic Methods now distinguish pulse/rest, cutoff-capacity, matched-state, and Mg-like matched-charge calculations;
+- Figure 2 no longer incorrectly states that electrochemically derived interface metrics are introduced in Figure 3.
+
+Three submission blockers remain explicit: final HEO/BM electrode geometry for the relative D_app audit, recovery/freeze of the numerical first-cycle dQ/dV source, and unresolved collaborator/cell metadata.
 
 ## New result added on 2026-09-26
 
@@ -35,7 +47,7 @@ The previous main-panel relaxation-magnitude bar is demoted to SI/supporting ana
 
 ## Abstract
 
-The current v10 abstract includes the TY10 ranking inversion and states the BM result as higher accessible capacity with slower conversion-associated kinetics. Mg remains a complementary constraint. Final stylistic wording remains under PI review.
+The current v11 abstract includes the TY10 ranking inversion and states the BM result as higher accessible capacity with slower conversion-associated kinetics. Mg remains a complementary constraint. Final stylistic wording remains under PI review.
 
 ## Unresolved submission inputs
 
