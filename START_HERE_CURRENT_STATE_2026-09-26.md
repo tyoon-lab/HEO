@@ -2,11 +2,13 @@
 
 ## Authoritative manuscript state
 
-- Main: `manuscript/HEO_MANUSCRIPT_V9_AFM_CAPACITY_KINETICS_2026-09-26.md`
-- SI: `manuscript/HEO_SUPPORTING_INFORMATION_V8_CAPACITY_KINETICS_2026-09-26.md`
-- Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V3_2026-09-26.md`
+- Main: `manuscript/HEO_MANUSCRIPT_V10_AFM_CAPACITY_KINETICS_2026-09-26.md`
+- SI: `manuscript/HEO_SUPPORTING_INFORMATION_V9_CAPACITY_KINETICS_2026-09-26.md`
+- Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V4_2026-09-26.md`
 - TY10 audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
 - TY10 compact data: `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
+- Microkinetic authority: `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_INFORMED_2026-09-26.md`
+- Mg-like directional audit: `modeling/HEO_MG_LIKE_MICROKINETIC_DIRECTIONAL_TEST_2026-09-26.md`
 - Literature audit: `references/HEO_CONVERSION_GITT_LITERATURE_AUDIT_2026-09-26.md`
 - Story lock: `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-26.md`
 
@@ -33,7 +35,7 @@ The previous main-panel relaxation-magnitude bar is demoted to SI/supporting ana
 
 ## Abstract
 
-Abstract wording remains under PI review and was intentionally not frozen by the TY10 update.
+The current v10 abstract includes the TY10 ranking inversion and states the BM result as higher accessible capacity with slower conversion-associated kinetics. Mg remains a complementary constraint. Final stylistic wording remains under PI review.
 
 ## Unresolved submission inputs
 
@@ -64,7 +66,7 @@ Do not broaden this to "GITT is invalid" or "diffusion is absent."
 
 Primary experimental statement:
 
-**Ball milling reveals that higher accessible capacity can coexist with slower relaxation, while conventional GITT analysis gives the opposite kinetic ranking.**
+**Ball milling reveals that higher accessible capacity can coexist with slower conversion-associated kinetics, while conventional GITT analysis gives the opposite kinetic ranking.**
 
 Bounded mechanistic statement:
 
@@ -76,3 +78,22 @@ Manuscript hierarchy:
 - conventional $D_{\mathrm{app}}$ inversion = independent kinetic-ranking test.
 - Figure 5 conversion localization + Figure 6 history dependence = experimental constraints.
 - Figure 7 = existence proof / mechanistic consistency, not unique mechanism identification.
+
+
+## Decisions added after TY10
+
+### EIS
+
+Cycling EIS is excluded from the manuscript evidence chain. The available early-cycle spectra contain state-matching/outlier limitations and are not needed to support the central claim. The primary kinetic evidence remains GITT/current-off analysis together with dQ/dV localization.
+
+### Mg-like microkinetic closure
+
+A secondary directional calculation confirms that the experimentally observed Mg combination is physically admissible within the same multistep conversion network:
+
+- lower cutoff-limited capacity;
+- lower relaxation amplitude;
+- longer effective $t_{63}$.
+
+One illustrative, non-fitted case gives $Q_{\rm cutoff}$ 0.55845 → 0.39688, relaxation amplitude 30.82 → 26.37 mV, and $t_{63}$ 13.45 → 16.45 min.
+
+This test is retained in the SI/model audit. Main Figure 7 remains focused on the primary BM contradiction and the homogeneous-control / heterogeneous-accessibility existence proof.
