@@ -11,6 +11,7 @@
 - Mg-like directional audit: `modeling/HEO_MG_LIKE_MICROKINETIC_DIRECTIONAL_TEST_2026-09-26.md`
 - Literature audit: `references/HEO_CONVERSION_GITT_LITERATURE_AUDIT_2026-09-26.md`
 - Story lock: `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-26.md`
+- Kinetic interpretation lock: `manuscript/HEO_KINETIC_INTERPRETATION_DECISION_LOCK_2026-09-26.md`
 - Main audit: `manuscript/HEO_MAIN_SCIENTIFIC_AUDIT_2026-09-26.md`
 
 ## Figure 4 artwork progress
@@ -123,3 +124,16 @@ A secondary directional calculation confirms that the experimentally observed Mg
 One illustrative, non-fitted case gives $Q_{\rm cutoff}$ 0.55845 → 0.39339, relaxation amplitude 33.02 → 28.64 mV, and $t_{63}$ 13.78 → 16.78 min. The matched-state calculation is now reproduced directly by `modeling/heo_capacity_relaxation_heterogeneous_validation.py` at common normalized passed charge $\Delta Q=0.30$.
 
 These values supersede the earlier provisional Mg-like table; the directional result is unchanged. This test is retained in the SI/model audit. Main Figure 7 remains focused on the primary BM contradiction and the homogeneous-control / heterogeneous-accessibility existence proof.
+
+
+## Interpretation lock added after EIS review
+
+The current wording hierarchy is now frozen in `manuscript/HEO_KINETIC_INTERPRETATION_DECISION_LOCK_2026-09-26.md`.
+
+Key points:
+- the manuscript may use **conversion-associated kinetics** because the excess GITT response is independently localized to the conversion region by dQ/dV;
+- (t_{63}) remains an effective current-off relaxation timescale, not a microscopic forward conversion rate constant;
+- EIS is excluded from both the manuscript evidence chain and final SI figure set;
+- BM remains the primary contradiction: capacity up with slower conversion-associated kinetics;
+- Mg remains a complementary constraint: capacity down, relaxation amplitude down, and (t_{63}) longer;
+- the BM-like and Mg-like microkinetic calculations are existence proofs only and do not map the materials uniquely onto individual model parameters.
