@@ -248,9 +248,11 @@ t_{63}\uparrow.
 
 Using the same coarse-grained network and fixed cutoff/matched-state protocol, an illustrative change from $u_3=-3$ to $u_3=-2$ together with an $R_2$ rate scale of 0.8 gives:
 
-- normalized cutoff capacity: 0.55845 → 0.39688;
-- matched-state relaxation amplitude: 30.82 → 26.37 mV;
-- matched-state $t_{63}$: 13.45 → 16.45 min.
+- normalized cutoff capacity: 0.55845 → 0.39339;
+- matched-state relaxation amplitude: 33.02 → 28.64 mV;
+- matched-state $t_{63}$: 13.78 → 16.78 min.
+
+The matched-state calculation is reproduced directly by `modeling/heo_capacity_relaxation_heterogeneous_validation.py` at common normalized passed charge $\Delta Q=0.30$.
 
 Thus lower accessible conversion and lower relaxation amplitude can coexist with a longer effective relaxation time in the same multistep network.
 
