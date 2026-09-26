@@ -13,6 +13,20 @@
 - Story lock: `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-26.md`
 - Main audit: `manuscript/HEO_MAIN_SCIENTIFIC_AUDIT_2026-09-26.md`
 
+## Figure 4 artwork progress
+
+The decisive Figure 4 now has a reproducible artwork draft.
+
+- representative raw pulse recovered from Drive workbook `[GITT try 2_031].xlsx`; workbook metadata identifies the HEO GITT test;
+- panel (a) uses HEO pulse 48 and the common 3 s current-off reference;
+- panel (b) uses the committed 37-point state-matched HEO/BM ratio audit;
+- panels (c,d) use the frozen median t63 and first-cycle reversible-capacity values;
+- plotting code: `modeling/heo_figure4_capacity_kinetics_mismatch.py`;
+- compact pulse data: `modeling/HEO_FIGURE4_PANEL_A_PULSE48_COMPACT_2026-09-26.csv`;
+- source/logic note: `manuscript/HEO_FIGURE4_ARTWORK_DRAFT_NOTE_2026-09-26.md`.
+
+The artwork is draft-ready. The remaining Figure 4 submission gate is verification of final HEO/BM geometric electrode areas and recorded active masses for the relative D_app audit.
+
 ## Post-audit manuscript state
 
 Main manuscript v11 preserves the locked scientific architecture while correcting four communication/reproducibility issues found in the Step-1 main audit:
