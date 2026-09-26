@@ -94,6 +94,6 @@ A secondary directional calculation confirms that the experimentally observed Mg
 - lower relaxation amplitude;
 - longer effective $t_{63}$.
 
-One illustrative, non-fitted case gives $Q_{\rm cutoff}$ 0.55845 → 0.39688, relaxation amplitude 30.82 → 26.37 mV, and $t_{63}$ 13.45 → 16.45 min.
+One illustrative, non-fitted case gives $Q_{\rm cutoff}$ 0.55845 → 0.39339, relaxation amplitude 33.02 → 28.64 mV, and $t_{63}$ 13.78 → 16.78 min. The matched-state calculation is now reproduced directly by `modeling/heo_capacity_relaxation_heterogeneous_validation.py` at common normalized passed charge $\Delta Q=0.30$.
 
-This test is retained in the SI/model audit. Main Figure 7 remains focused on the primary BM contradiction and the homogeneous-control / heterogeneous-accessibility existence proof.
+These values supersede the earlier provisional Mg-like table; the directional result is unchanged. This test is retained in the SI/model audit. Main Figure 7 remains focused on the primary BM contradiction and the homogeneous-control / heterogeneous-accessibility existence proof.
