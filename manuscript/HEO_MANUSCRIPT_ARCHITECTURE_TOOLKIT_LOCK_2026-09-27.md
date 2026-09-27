@@ -71,6 +71,13 @@ Question: Is the excess GITT relaxation associated with conversion?
 
 Answer: GITT-excess and cathodic $dQ/dV$ peak positions agree within 32 mV for all four materials.
 
+Final main panels:
+- (a) state-resolved relaxation + background definition;
+- (b) GITT excess / cathodic $dQ/dV$ voltage-localization comparison;
+- (c) peak-voltage one-to-one comparison.
+
+The amplitude-width map and its background/window sensitivity belong in the SI because they are secondary material-response descriptors, not required to establish localization.
+
 Claim boundary: conversion-associated, not uniquely assigned to nucleation, phase-boundary motion, oxygen migration, one cation, or one product-forming step.
 
 ### Figure 6 — History dependence
