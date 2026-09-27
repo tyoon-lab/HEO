@@ -28,7 +28,7 @@ Therefore the Mg result is not a second headline contradiction of the same type 
 
 ### Conversion localization
 
-The first-cycle GITT excess-relaxation peak and cathodic \(dQ/dV\) peak occur within **32 mV** for all four materials.
+Under the nominal Figure 5 background definition, the first-cycle GITT excess-relaxation peak and cathodic \(dQ/dV\) peak occur within **32 mV** for all four materials. The 105-condition peak-location audit shows broader background dependence for the shallow BM-Mg-HEO feature, while all material-induced peak-shift directions remain concordant with \(dQ/dV\) across the tested definitions.
 
 This supports a **conversion-associated** assignment of the excess current-off response.
 
