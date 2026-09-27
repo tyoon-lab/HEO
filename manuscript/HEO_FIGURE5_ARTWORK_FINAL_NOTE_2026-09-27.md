@@ -31,6 +31,8 @@ The GITT excess is identified first in state space. Each GITT state is then mapp
 
 For visual localization, each trace family may be normalized to its own peak if needed. Such normalization is graphical only; relative trace amplitudes are not used as kinetic rates.
 
+For the current publication-artwork draft, the reconstructed cathodic profile is binned on a 1 mV voltage grid and lightly Gaussian-smoothed over approximately 3 mV **for display only**. The quantitative $dQ/dV$ peak positions remain the independently audited common Savitzky–Golay results and are shown by the peak markers/used in panel (c). The display smoothing must not replace the quantitative peak authority.
+
 Preferred display:
 - four aligned small multiples sharing the voltage axis, one material per row/mini-panel within panel (b), or another layout that avoids an eight-curve overlay;
 - show the GITT-excess peak and $dQ/dV$ peak with subtle vertical markers;
