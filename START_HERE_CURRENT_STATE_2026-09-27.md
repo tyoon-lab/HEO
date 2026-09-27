@@ -29,6 +29,9 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 - Figure 5 nominal peak-localization authority: `manuscript/HEO_FIGURE5_DQDV_GITT_PEAK_CHECK_2026-09-27.csv`
 - Figure 5 voltage-coordinate audit: `manuscript/HEO_FIGURE5_VOLTAGE_COORDINATE_AUDIT_2026-09-27.md`
 - Figure 5 voltage-coordinate sensitivity: `manuscript/HEO_FIGURE5_VOLTAGE_COORDINATE_SENSITIVITY_2026-09-27.csv`
+- Figure 6 artwork note: `manuscript/HEO_FIGURE6_ARTWORK_FINAL_NOTE_2026-09-27.md`
+- Figure 6 panel data: `modeling/HEO_FIGURE6_PANEL_DATA_2026-09-27.csv`
+- Figure 6 plotting code: `modeling/heo_figure6_history_dependence.py`
 - Figure 4 plotting code: `modeling/heo_figure4_capacity_kinetics_mismatch.py`
 - HEO/BM conventional-GITT audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
 - HEO/BM state-matched ratios: `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
@@ -133,7 +136,16 @@ Current $dQ/dV$ values are reconstructed from the latest vector voltage-profile 
 
 ### Figure 6 — history dependence
 
+Final main-panel architecture:
+- (a) $z_{\mathrm{peak}}$ versus cycle;
+- (b) excess peak amplitude versus cycle;
+- (c) median $t_{63}$ versus cycle;
+- (d) $A_3/A_1$ versus $t_{63,3}/t_{63,1}$ change map.
+
+Full cycle-resolved excess profiles remain in the SI to avoid repeating the curve-level presentation of Figure 5.
+
 Cycle-resolved GITT shows:
+- the late first-cycle peak shifts toward a common earlier normalized reaction-state region in cycles 2–3;
 - conversion-associated response magnitude evolves strongly;
 - $t_{63}$ changes more modestly;
 - BM higher-accessibility/longer-$t_{63}$ relation persists beyond the first cycle.
@@ -257,7 +269,7 @@ Cycling EIS is excluded from the manuscript evidence chain because of state matc
 
 ## Immediate next work
 
-The abstract and Figures 3–5 panel architectures are now sufficiently closed for the present round.
+The abstract and Figures 3–6 panel architectures are now sufficiently closed for the present round.
 
 Next priority:
 1. complete/freeze Figures 1–2 with Yoo-group input;
