@@ -105,17 +105,23 @@ conversion-associated, not uniquely assigned to one microscopic conversion step.
 
 ## Figure 6 — History dependence
 
-Track C1/C2/C3.
+Final main-panel architecture:
+- (a) conversion-associated peak state $z_{\mathrm{peak}}$ versus cycle;
+- (b) excess peak amplitude versus cycle;
+- (c) median $t_{63}$ over $z=0.4$–0.9 versus cycle;
+- (d) normalized $A_3/A_1$ versus $t_{63,3}/t_{63,1}$ change map.
+
+The full C1/C2/C3 excess profiles are retained in the Supporting Information rather than repeated in the main figure.
 
 Result:
+- peak state shifts from the late first-cycle region ($z\approx0.66$–0.79) toward a common later-cycle region ($z\approx0.50$–0.56);
 - amplitude changes strongly;
-- t63 changes modestly;
-- peak state shifts toward a common later-cycle region;
-- BM capacity-up / longer-t63 persists;
-- Mg lower reversible capacity persists while later-cycle t63 approaches Mg-free values.
+- $t_{63}$ changes modestly;
+- BM capacity-up / longer-$t_{63}$ persists;
+- Mg lower reversible capacity persists while later-cycle $t_{63}$ approaches Mg-free values.
 
 Main message:
-**Conversion-associated relaxation evolves with reaction history, and capacity and $t_{63}$ do not vary in parallel across cycling.**
+**Conversion-associated relaxation evolves with reaction history: its state location and magnitude change strongly, whereas its effective relaxation timescale changes comparatively modestly.**
 
 ## Figure 7 — Microkinetic existence proof
 
