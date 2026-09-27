@@ -141,9 +141,15 @@ At OCV:
 j_{\rm ext}=F(\nu_1r_1+\nu_3r_3)=0
 \]
 
-but finite opposing partial currents and R2 can remain.
+while
 
-Overall lithiation is conserved while internal populations redistribute.
+\[
+\nu_1r_1=-\nu_3r_3\neq0
+\]
+
+is allowed and R2 can remain finite.
+
+Overall lithiation is conserved while internal populations redistribute. Keep the main panel schematic; numerical partial-current trajectories remain in the SI/model audit.
 
 ### (c) Homogeneous kinetic control
 
@@ -171,9 +177,8 @@ Reference:
 - t63 13.45 min
 
 Illustrative modified case:
-- retain fast population
-- add accessible population weight 0.15
-- slower R2 only for the added illustrative population
+- retain the reference accessible model branch;
+- add an additional accessible branch with a slower R2.
 
 Result:
 - Qcut 0.65714 (+17.67%)
@@ -187,7 +192,13 @@ Q_{\rm cutoff}\uparrow,\quad t_{63}\uparrow
 
 is physically possible in a heterogeneous multistep conversion network.
 
-Do not infer that BM experimentally creates this exact slow population or rate ratio.
+Artwork rule:
+- panels (c) and (d) use the same axes;
+- panel (d) retains the homogeneous-control trajectory as a light dashed reference;
+- do not label the added branch “BM-like” in the main artwork;
+- keep population weights and the illustrative R2 contrast in the SI/model audit.
+
+Do not infer that BM experimentally creates this exact slow branch or rate ratio.
 
 ### Mg-like directional test — SI only
 
