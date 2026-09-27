@@ -75,12 +75,30 @@ Important:
 
 ## Figure 5 — Localization of the excess current-off relaxation
 
-Compare GITT excess relaxation with first-cycle cathodic dQ/dV.
+Purpose:
+Answer only the question **is the excess GITT current-off response associated with conversion?**
 
-All GITT-excess / dQ/dV peak pairs are within 32 mV.
+Final main-panel architecture:
+- (a) state-resolved first-cycle relaxation with the smooth background used to define the late-stage excess;
+- (b) background-subtracted GITT excess and first-cycle cathodic $dQ/dV$ compared on a common voltage axis for all four materials;
+- (c) $V_{\mathrm{peak},dQ/dV}$ versus $V_{\mathrm{peak,GITT}}$ with the one-to-one relation.
+
+Peak pairs:
+- HEO: 0.545 / 0.527 V;
+- BM-HEO: 0.589 / 0.618 V;
+- Mg-HEO: 0.419 / 0.387 V;
+- BM-Mg-HEO: 0.485 / 0.503 V.
+
+All GITT-excess / $dQ/dV$ peak pairs are within 32 mV.
 
 Main message:
 **The excess current-off relaxation feature is localized to the conversion region.**
+
+Main/SI boundary:
+- the peak-amplitude versus FWHM-like-width map is moved to the Supporting Information;
+- the 105-condition background/window sensitivity audit remains in the Supporting Information;
+- BM-HEO peak-down/width-up and Mg-related excess suppression can be mentioned as secondary descriptors, but amplitude and width are not kinetic rates;
+- do not use the shallow, background-sensitive BM-Mg-HEO width as a mechanistic discriminator.
 
 Claim boundary:
 conversion-associated, not uniquely assigned to one microscopic conversion step.
