@@ -23,7 +23,9 @@ Nominal excess definition:
 - exponential background $c+a\exp(-z/\tau)$;
 - excess evaluated over $z=0.40$–0.90.
 
-The current SI records the nominal metrics and a 105-condition background/window audit. The central HEO/BM and Mg-suppression directions are invariant over the tested definitions.
+The current SI records the nominal metrics and a 105-condition background/window audit. The central HEO/BM and Mg-suppression amplitude directions are invariant over the tested definitions.
+
+For voltage localization, the excess peak is first identified in state space and then assigned the **60 min rest-end voltage of the same GITT state**. This rest-end voltage is used as a quasi-relaxed state coordinate; it is not identified with an exact equilibrium potential. Raw-data reconstruction confirms that the current nominal GITT peak voltages (0.527, 0.618, 0.387, and 0.503 V) are 60 min rest-end voltages.
 
 Legacy source notes remain useful for audit history:
 - `manuscript/FIGURE4_RAW_REANALYSIS_NOTE_2026-09-18.md`
@@ -46,17 +48,31 @@ These agree with the corresponding plotted values (901.25, 1056.10, 731.15, 944.
 
 A common Savitzky–Golay differentiation/smoothing procedure was applied to all four reconstructed profiles.
 
-Peak authority:
+Nominal peak authority:
 
-| Sample | $dQ/dV$ peak (V) | GITT excess peak (V) | difference (V) | $dQ/dV$ range over 20–60 mAh g$^{-1}$ smoothing |
+| Sample | $dQ/dV$ peak (V) | GITT excess peak, 60 min rest-end V (V) | difference (V) | $dQ/dV$ range over 20–60 mAh g$^{-1}$ smoothing |
 |---|---:|---:|---:|---|
-| HEO | 0.544575 | 0.527 | -0.017575 | 0.544–0.547 |
-| BM-HEO | 0.589146 | 0.618 | +0.028854 | 0.589–0.589 |
-| Mg-HEO | 0.418819 | 0.387 | -0.031819 | 0.408–0.419 |
-| BM-Mg-HEO | 0.484822 | 0.503 | +0.018178 | 0.485–0.486 |
+| HEO | 0.544575 | 0.527481 | -0.017094 | 0.544–0.547 |
+| BM-HEO | 0.589146 | 0.617535 | +0.028389 | 0.589–0.589 |
+| Mg-HEO | 0.418819 | 0.386972 | -0.031847 | 0.408–0.419 |
+| BM-Mg-HEO | 0.484822 | 0.502865 | +0.018043 | 0.485–0.486 |
 
-Current compact authority:
+Under the nominal background definition, all four rest-end / $dQ/dV$ peak pairs lie within 32 mV.
+
+The 105-condition background/window audit gives the following GITT rest-end peak-location ranges:
+- HEO: 0.527481 V (invariant);
+- BM-HEO: 0.592919–0.628391 V;
+- Mg-HEO: 0.386972 V (invariant);
+- BM-Mg-HEO: 0.453175–0.618300 V.
+
+Thus the exact BM-Mg-HEO peak position is background-sensitive and the 32 mV statement is nominal rather than universal. However, the directions HEO → BM-HEO higher, HEO → Mg-HEO lower, and Mg-HEO → BM-Mg-HEO higher are preserved across all tested GITT definitions and match the corresponding $dQ/dV$ shifts.
+
+Nominal compact authority:
 `manuscript/HEO_FIGURE5_DQDV_GITT_PEAK_CHECK_2026-09-27.csv`
+
+Voltage-coordinate/sensitivity authority:
+`manuscript/HEO_FIGURE5_VOLTAGE_COORDINATE_AUDIT_2026-09-27.md`
+`manuscript/HEO_FIGURE5_VOLTAGE_COORDINATE_SENSITIVITY_2026-09-27.csv`
 
 ## Why the older first-cycle source is not substituted
 
