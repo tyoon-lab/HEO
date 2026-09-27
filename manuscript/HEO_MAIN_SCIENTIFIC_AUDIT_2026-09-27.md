@@ -74,7 +74,9 @@ Figure 5 is now scientifically narrowed to the conversion-localization question:
 - (b) GITT excess versus first-cycle cathodic $dQ/dV$ on a common voltage axis
 - (c) one-to-one peak-voltage comparison
 
-All four GITT-excess/$dQ/dV$ peak pairs lie within 32 mV.
+The GITT voltage coordinate is now explicitly defined as the **60 min rest-end voltage at the excess-peak state**. Under the nominal background definition, all four GITT-excess/$dQ/dV$ peak pairs lie within 32 mV.
+
+A 105-condition peak-location audit shows that HEO and Mg-HEO peak states are invariant, BM-HEO remains narrowly localized, and the shallow BM-Mg-HEO feature has broader baseline-dependent peak-position uncertainty. The 32 mV statement is therefore nominal. More robustly, the directions of HEO → BM, HEO → Mg, and Mg → BM-Mg peak shifts are preserved across all tested definitions and match the $dQ/dV$ shifts.
 
 The prior amplitude–FWHM-like-width main panel is moved to the SI with the 105-condition background/window sensitivity audit. This keeps the main claim at the defensible level: **conversion-associated**, without using excess amplitude or width as kinetic rates.
 
