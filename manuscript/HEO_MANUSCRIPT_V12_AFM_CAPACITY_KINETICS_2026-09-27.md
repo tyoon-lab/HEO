@@ -211,7 +211,7 @@ The reference current-off calculation and pulse-current sweep used the experimen
 E(t)-E_{\mathrm{eq}}=\sum_i B_i\exp(-t/\tau_i),
 \]
 
-to distinguish state-dependent response amplitudes from kinetic eigen-timescales. Two illustrative tests were then performed: (i) a homogeneous global-rate scaling at fixed equilibrium parameters and voltage cutoff, and (ii) a heterogeneous-accessibility test in which the reference fast population was retained and an additional slower-reconstructing population was made accessible. Both tests are mechanistic-consistency calculations rather than fits to an individual HEO sample; the parameter set and numerical diagnostics are provided in the Supporting Information.
+to distinguish state-dependent response amplitudes from kinetic eigen-timescales. Two illustrative tests were then performed: (i) a homogeneous global-rate scaling at fixed equilibrium parameters and voltage cutoff, and (ii) a heterogeneous-accessibility test in which the reference accessible model branch was retained and an additional slower-reconstructing branch was made accessible. Both tests are mechanistic-consistency calculations rather than fits to an individual HEO sample; the parameter set and numerical diagnostics are provided in the Supporting Information.
 
 # References
 
