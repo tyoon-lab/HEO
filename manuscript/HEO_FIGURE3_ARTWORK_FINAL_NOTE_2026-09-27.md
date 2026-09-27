@@ -1,6 +1,6 @@
 # HEO Figure 3 Artwork Final Note — 2026-09-27
 
-**Status:** panel logic frozen for the current manuscript round.
+**Status:** panel logic frozen for the current manuscript round; full numerical-source reproducibility remains open and is tracked in `HEO_FIGURE3_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`.
 
 ## Figure-level question
 
@@ -89,6 +89,8 @@ Use the Yoon Lab figure standard:
 - avoid kinetic labels such as “fast” or “slow” anywhere in Figure 3.
 
 ## Remaining source/data checks before final artwork
+
+Current source audit: `HEO_FIGURE3_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`. The latest conventional electrochemistry plots are traceable to embedded Origin objects in `HEO 진행상황 (20260917).pptx`, but the independent raw cycling/rate acquisition files have not yet been recovered.
 
 - verify the WonATech first-/second-half-cycle convention;
 - freeze the exact rate sequence and number of cycles per rate;
