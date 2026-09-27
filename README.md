@@ -6,60 +6,58 @@ This repository is maintained so a new chat/session can resume **without a separ
 
 Read first:
 
-`START_HERE_CURRENT_STATE_2026-09-23.md`
+`START_HERE_CURRENT_STATE_2026-09-27.md`
 
 That file is the single authoritative current-state entry point.
 
-## Current paper story
+## Current paper identity
 
-Figure 1: structural/compositional/nanoscale characterization — provisional collaborator input  
-→ Figure 2: morphology / physical characterization — provisional collaborator input  
-→ Figure 3: conventional electrochemistry / absolute rate-capacity context  
-→ Figure 4: GITT relaxation magnitude vs ensemble effective timescale  
-→ Figure 5: first-cycle conversion-associated excess relaxation + dQ/dV localization  
-→ Figure 6: **cycle-resolved evolution of conversion-associated relaxation**  
-→ Figure 7: **minimal multi-step conversion microkinetic interpretation**
+Working title:
 
-The paper remains an **HEO materials/mechanism paper**, not a GITT-method paper.
+**Mismatch between Capacity and Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
 
-## Key 2026-09-23 decisions
+Current scientific chain:
 
-- Figure 6 is no longer the 2026-09-22 distributed-threshold finite-rate simulation.
-- Figure 6 is now experimental: 1st→2nd→3rd-cycle GITT evolution.
-- Later-cycle background sensitivity passed: exponential and linear baselines give essentially identical C2/C3 hump amplitudes and peak positions.
-- Figure 7 may use a minimal conversion microkinetic network to explain amplitude–timescale decoupling and cycle-history dependence.
-- Figure 7 must **not** claim a unique RDS.
-- Main text should not foreground “single-current non-identifiability” or invite extra experiments; the model is a mechanistic-consistency interpretation.
-- A simple single-step RC description is insufficient, but charge transfer is not claimed to be absent.
-- Current-dependent GITT and oxide-vs-sulfide comparison are strong follow-up directions.
+Figure 1–2: materials structure/composition/morphology  
+→ Figure 3: accessible conversion capacity  
+→ Figure 4: **BM capacity–timescale mismatch + Mg magnitude–timescale constraint + conventional-$D_{\rm app}$ failure**  
+→ Figure 5: conversion localization  
+→ Figure 6: cycle-history dependence  
+→ Figure 7: multistep microkinetic existence proof
+
+The paper is an HEO conversion-mechanism/materials paper using GITT relaxation as the diagnostic. It is not framed as a general GITT-method paper.
 
 ## Current key files
 
-Authoritative restart:
-- `START_HERE_CURRENT_STATE_2026-09-23.md`
+- `START_HERE_CURRENT_STATE_2026-09-27.md`
+- `manuscript/HEO_MANUSCRIPT_V12_AFM_CAPACITY_KINETICS_2026-09-27.md`
+- `manuscript/HEO_SUPPORTING_INFORMATION_V10_CAPACITY_KINETICS_2026-09-27.md`
+- `manuscript/HEO_ABSTRACT_LOCK_2026-09-27.md`
+- `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-27.md`
+- `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V6_2026-09-27.md`
+- `manuscript/HEO_FIGURE4_ARTWORK_FINAL_NOTE_2026-09-27.md`
+- `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
+- `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
+- `modeling/HEO_MG_CROSS_COMPOSITION_GITT_CHECK_2026-09-27.md`
+- `modeling/heo_figure4_capacity_kinetics_mismatch.py`
 
-Figures 4–7 logic:
-- `manuscript/HEO_FIGURES_4_7_CURRENT_LOGIC_2026-09-23.md`
+## Current locked story
 
-Figure 6 evidence/audit:
-- `modeling/HEO_CYCLE_RESOLVED_GITT_AND_BACKGROUND_AUDIT_2026-09-23.md`
-
-Figure 7 microkinetics:
-- `modeling/HEO_CONVERSION_MICROKINETICS_2026-09-23.md`
-- `modeling/heo_conversion_microkinetics_electrochemical_growth.py`
-
-Literature map:
-- `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_MAP_2026-09-23.md`
-
-Current manuscript authority:
-- `manuscript/HEO_MANUSCRIPT_V5_AFM_MICROKINETIC_2026-09-23.md`
-- `manuscript/HEO_SUPPORTING_INFORMATION_V4_MICROKINETIC_2026-09-23.md`
-
-Simplified electrochemistry-story authority:
-- `manuscript/HEO_ELECTROCHEMISTRY_CORE_STORY_2026-09-23.md`
+- BM is the primary contradiction: accessible capacity increases while $t_{63}$ becomes longer.
+- Mg is complementary but different: lower capacity and longer $t_{63}$ are directionally consistent, while the relaxation voltage-change magnitude also decreases.
+- Conventional HEO/BM $D_{\rm app}$ indicates faster BM behavior even though direct relaxation is slower.
+- Figure 5 supports conversion-associated wording.
+- Figure 7 demonstrates physical possibility only; it does not identify a unique microscopic mechanism.
+- Cycling EIS remains outside the evidence chain.
 
 ## Immediate next task
 
-Figures 6–7 architecture and the Figure 3–7 manuscript logic are now frozen in Main v5/SI v4. Next assemble the final Figure 6–7 artwork, tighten manuscript wording, and perform the full consistency/reference audit.
+The abstract and Figure 4 are closed for the current round.
 
-Do not reopen the old distributed-threshold capacity-prediction model unless a specific scientific need emerges.
+Next:
+1. freeze Figures 1–2 collaborator characterization/composition;
+2. finish Figures 3, 5, and 6 artwork;
+3. continue line-by-line manuscript review from Main v12;
+4. freeze unresolved experimental metadata and the final $dQ/dV$ numerical source.
+
+Do not restart from older v5/v10/v11 manuscript states unless auditing history.
