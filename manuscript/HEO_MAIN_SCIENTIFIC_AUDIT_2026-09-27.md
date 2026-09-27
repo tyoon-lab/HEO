@@ -67,6 +67,20 @@ Figure 4 is now scientifically closed for the current round:
 - (c) relaxation magnitude–timescale map
 - (d) accessible capacity–timescale map
 
+### Figure 5 architecture
+Figure 5 is now scientifically narrowed to the conversion-localization question:
+
+- (a) state-resolved first-cycle relaxation + background definition
+- (b) GITT excess versus first-cycle cathodic $dQ/dV$ on a common voltage axis
+- (c) one-to-one peak-voltage comparison
+
+All four GITT-excess/$dQ/dV$ peak pairs lie within 32 mV.
+
+The prior amplitude–FWHM-like-width main panel is moved to the SI with the 105-condition background/window sensitivity audit. This keeps the main claim at the defensible level: **conversion-associated**, without using excess amplitude or width as kinetic rates.
+
+Remaining source caveat:
+the GITT side is raw-data based, whereas the present first-cycle $dQ/dV$ comparator is reconstructed from the latest vector voltage-profile artwork. Recover the original numerical profile source if possible before submission.
+
 ### Abstract
 The PI-reviewed abstract is frozen in `HEO_ABSTRACT_LOCK_2026-09-27.md`.
 
