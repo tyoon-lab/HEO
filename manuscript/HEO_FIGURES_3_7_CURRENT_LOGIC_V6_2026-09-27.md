@@ -83,20 +83,20 @@ Final main-panel architecture:
 - (b) background-subtracted GITT excess and first-cycle cathodic $dQ/dV$ compared on a common voltage axis for all four materials;
 - (c) $V_{\mathrm{peak},dQ/dV}$ versus $V_{\mathrm{peak,GITT}}$ with the one-to-one relation.
 
-Peak pairs:
+Nominal peak pairs, with the GITT coordinate defined as the 60 min rest-end voltage at the excess-peak state:
 - HEO: 0.545 / 0.527 V;
 - BM-HEO: 0.589 / 0.618 V;
 - Mg-HEO: 0.419 / 0.387 V;
 - BM-Mg-HEO: 0.485 / 0.503 V.
 
-All GITT-excess / $dQ/dV$ peak pairs are within 32 mV.
+All nominal GITT-excess / $dQ/dV$ peak pairs are within 32 mV. Across the 105 background/window definitions, HEO and Mg peak states are invariant, BM remains narrowly localized, and BM-Mg has a broader peak-position range because its excess is shallow. The robust result is that all three material-induced peak-shift directions are invariant and concordant with $dQ/dV$.
 
 Main message:
-**The excess current-off relaxation feature is localized to the conversion region.**
+**The excess current-off relaxation feature is localized to the conversion region, with material-induced voltage shifts concordant with the first-cycle cathodic $dQ/dV$ shifts.**
 
 Main/SI boundary:
 - the peak-amplitude versus FWHM-like-width map is moved to the Supporting Information;
-- the 105-condition background/window sensitivity audit remains in the Supporting Information;
+- the 105-condition background/window sensitivity audit, including peak-location sensitivity, remains in the Supporting Information;
 - BM-HEO peak-down/width-up and Mg-related excess suppression can be mentioned as secondary descriptors, but amplitude and width are not kinetic rates;
 - do not use the shallow, background-sensitive BM-Mg-HEO width as a mechanistic discriminator.
 
