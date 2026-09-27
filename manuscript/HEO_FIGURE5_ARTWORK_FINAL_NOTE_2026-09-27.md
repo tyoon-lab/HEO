@@ -27,6 +27,8 @@ show that the conversion-localization analysis begins from a resolved feature in
 
 Compare the background-subtracted GITT excess with the independently derived first-cycle cathodic $dQ/dV$ response on a common voltage axis for each material.
 
+The GITT excess is identified first in state space. Each GITT state is then mapped to the **60 min rest-end voltage of that same state**. This is a quasi-relaxed state coordinate, not an exact equilibrium potential. Pulse-end and 3 s voltages are not used for localization because they retain the current-induced/immediate current-off polarization under investigation.
+
 For visual localization, each trace family may be normalized to its own peak if needed. Such normalization is graphical only; relative trace amplitudes are not used as kinetic rates.
 
 Preferred display:
@@ -42,20 +44,39 @@ against
 $V_{\mathrm{peak,GITT}}$
 with a one-to-one line.
 
-Current authority:
+Nominal authority:
 
-| Sample | cathodic $dQ/dV$ peak (V) | GITT excess peak (V) | GITT − $dQ/dV$ (V) |
+| Sample | cathodic $dQ/dV$ peak (V) | GITT excess peak, 60 min rest-end V (V) | GITT − $dQ/dV$ (V) |
 |---|---:|---:|---:|
 | HEO | 0.545 | 0.527 | -0.018 |
 | BM-HEO | 0.589 | 0.618 | +0.029 |
 | Mg-HEO | 0.419 | 0.387 | -0.032 |
 | BM-Mg-HEO | 0.485 | 0.503 | +0.018 |
 
-All four pairs lie within 32 mV of the one-to-one relation.
+Under the nominal background definition, all four pairs lie within 32 mV of the one-to-one relation.
 
-The material-dependent shifts are also concordant:
-- Mg incorporation moves both observables to lower potential;
-- milling of Mg-HEO moves both back toward higher potential.
+Peak-location sensitivity across the same 105 background/window definitions used for the SI audit:
+
+| Sample | GITT rest-end peak-V range (V) |
+|---|---:|
+| HEO | 0.527481–0.527481 |
+| BM-HEO | 0.592919–0.628391 |
+| Mg-HEO | 0.386972–0.386972 |
+| BM-Mg-HEO | 0.453175–0.618300 |
+
+The exact BM-Mg-HEO peak position is therefore background-sensitive because the excess feature is shallow. The robust four-material result is the direction of the modification-induced shifts:
+- HEO → BM-HEO: higher potential;
+- HEO → Mg-HEO: lower potential;
+- Mg-HEO → BM-Mg-HEO: higher potential.
+
+All three GITT shift directions are preserved across the tested definitions and match the corresponding $dQ/dV$ shifts.
+
+Artwork rule for panel (c):
+- retain the one-to-one line;
+- use nominal peak positions as the central markers;
+- show GITT background/window peak-position ranges vertically;
+- show $dQ/dV$ smoothing ranges horizontally where visible;
+- treat the BM-Mg-HEO broad range as uncertainty, not as a separate mechanistic signal.
 
 ## Main/SI boundary
 
@@ -71,6 +92,7 @@ Supporting Information retains:
 - nominal excess amplitudes and FWHM-like widths;
 - normalized/capacity-weighted excess metrics;
 - the 105-condition background/window sensitivity audit;
+- GITT peak-location sensitivity across the same 105 definitions;
 - smoothing-window sensitivity for the reconstructed $dQ/dV$ peaks.
 
 Robust SI-level findings:
@@ -122,8 +144,12 @@ The GITT side of the localization analysis is raw-data based and the background/
 
 The current first-cycle $dQ/dV$ curves are reconstructed from the user's latest vector voltage-profile artwork. The original continuous numerical first-cycle profiles remain preferable for final submission if they can be recovered.
 
-Current numeric authority:
+Nominal peak authority:
 `manuscript/HEO_FIGURE5_DQDV_GITT_PEAK_CHECK_2026-09-27.csv`
+
+Voltage-coordinate and sensitivity authority:
+`manuscript/HEO_FIGURE5_VOLTAGE_COORDINATE_AUDIT_2026-09-27.md`
+`manuscript/HEO_FIGURE5_VOLTAGE_COORDINATE_SENSITIVITY_2026-09-27.csv`
 
 Source-provenance audit:
 `manuscript/HEO_FIGURE5_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`
