@@ -1,0 +1,5 @@
+Sample,dQdV_peak_nominal_V,dQdV_smoothing_min_V,dQdV_smoothing_max_V,GITT_peak_pulse_nominal,peak_z_nominal,GITT_rest_end_peak_nominal_V,GITT_rest_end_peak_min_105_V,GITT_rest_end_peak_max_105_V,GITT_peak_pulses_105,GITT_peak_pulse_counts_105,pre_pulse_rested_V_nominal,post_rest_minus_dQdV_mV,pulse_3s_V_nominal,pulse_end_V_nominal
+HEO,0.544575,0.544,0.547,50,0.769,0.527481,0.527481,0.527481,50,105,0.537113,-17.09,0.338199,0.314042
+BM-HEO,0.589146,0.589,0.589,51,0.671,0.617535,0.592919,0.628391,50/51/53,30/55/20,0.628390,28.39,0.458221,0.436204
+Mg-HEO,0.418819,0.408,0.419,38,0.792,0.386972,0.386972,0.386972,38,105,0.403485,-31.85,0.269245,0.253955
+BM-Mg-HEO,0.484822,0.485,0.486,37,0.661,0.502865,0.453175,0.618300,26/35/37/38/40,10/35/15/15/30,0.516473,18.04,0.368167,0.355323
