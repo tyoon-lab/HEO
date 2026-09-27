@@ -22,6 +22,7 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 - Abstract lock: `manuscript/HEO_ABSTRACT_LOCK_2026-09-27.md`
 - Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V6_2026-09-27.md`
 - Figure 3 logic/caption/source note: `manuscript/HEO_FIGURE3_ARTWORK_FINAL_NOTE_2026-09-27.md`
+- Figure 3 source-provenance audit: `manuscript/HEO_FIGURE3_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`
 - Figure 4 logic/caption/source note: `manuscript/HEO_FIGURE4_ARTWORK_FINAL_NOTE_2026-09-27.md`
 - Figure 4 plotting code: `modeling/heo_figure4_capacity_kinetics_mismatch.py`
 - HEO/BM conventional-GITT audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
@@ -73,6 +74,8 @@ Core interpretation:
 - capacity alone is not used to infer intrinsic conversion speed.
 
 Cycle-resolved $dQ/dV$ is not a main Figure 3 panel. First-cycle cathodic $dQ/dV$ is reserved for Figure 5 conversion localization; cycle-resolved $dQ/dV$ belongs in the Supporting Information.
+
+Source status: the latest Figure 3 working graphs are traceable to embedded Origin objects in `HEO 진행상황 (20260917).pptx`. The independent conventional cycling/rate raw files have not yet been recovered, so panel logic is frozen but final numerical-source reproducibility remains an artwork blocker.
 
 ### Figure 4 — decisive mismatch figure
 
@@ -243,7 +246,7 @@ The abstract, Figure 3 panel architecture, and Figure 4 are now sufficiently clo
 
 Next priority:
 1. complete/freeze Figures 1–2 with Yoo-group input;
-2. render/finalize Figure 3 artwork from the locked panel architecture and finish Figures 5 and 6 artwork to publication standard;
+2. recover/freeze Figure 3 raw numerical sources, then render the locked Figure 3 architecture; in parallel finish Figures 5 and 6 artwork to publication standard;
 3. perform line-by-line PI review of the Introduction/Results using Main v12;
 4. recover/freeze remaining methods metadata and original $dQ/dV$ numerical source;
 5. regenerate a full tracked Word manuscript after those items are incorporated.
