@@ -9,12 +9,25 @@ The paper uses BM and Mg as complementary modifications that respectively increa
 ## Figure 3 — Accessible reaction extent
 
 Purpose:
-Establish the capacity differences before interpreting kinetics.
+Establish the capacity differences before interpreting kinetics. Keep Figure 3 strictly on the question **how much reaction is accessed?**
+
+Final main-panel architecture:
+- (a) first-cycle voltage profiles for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO;
+- (b) first- and second-half-cycle capacity summary with initial Coulombic efficiency;
+- (c) absolute specific capacity during 0.1 C cycling under the common electrolyte condition;
+- (d) absolute rate capability over the 0.1–5 C sequence and recovery at 0.1 C.
 
 Main result:
 - BM increases accessible capacity in Mg-free and Mg-containing HEOs.
 - Mg lowers accessible capacity.
 - Absolute high-rate capacity and normalized retention must not be conflated.
+- First-cycle second-half capacity changes are approximately +28.4% for HEO → BM-HEO, -24.7% for HEO → Mg-HEO, and +26.6% for Mg-HEO → BM-Mg-HEO.
+
+Panel-allocation boundary:
+- do not use cycle-resolved $dQ/dV$ as a main Figure 3 panel;
+- first-cycle cathodic $dQ/dV$ is reserved for Figure 5, where it has a specific conversion-localization role;
+- cycle-resolved $dQ/dV$ evolution belongs in the Supporting Information;
+- Coulombic-efficiency evolution and normalized rate retention remain Supporting Information metrics.
 
 Main message:
 **Capacity defines how much reaction is accessed; it does not by itself establish the intrinsic conversion rate.**
