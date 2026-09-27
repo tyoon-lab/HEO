@@ -24,6 +24,9 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 - Figure 3 logic/caption/source note: `manuscript/HEO_FIGURE3_ARTWORK_FINAL_NOTE_2026-09-27.md`
 - Figure 3 source-provenance audit: `manuscript/HEO_FIGURE3_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`
 - Figure 4 logic/caption/source note: `manuscript/HEO_FIGURE4_ARTWORK_FINAL_NOTE_2026-09-27.md`
+- Figure 5 logic/caption/source note: `manuscript/HEO_FIGURE5_ARTWORK_FINAL_NOTE_2026-09-27.md`
+- Figure 5 source-provenance audit: `manuscript/HEO_FIGURE5_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`
+- Figure 5 peak-localization authority: `manuscript/HEO_FIGURE5_DQDV_GITT_PEAK_CHECK_2026-09-27.csv`
 - Figure 4 plotting code: `modeling/heo_figure4_capacity_kinetics_mismatch.py`
 - HEO/BM conventional-GITT audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
 - HEO/BM state-matched ratios: `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
@@ -110,11 +113,19 @@ The main Figure 4(b) must remain HEO/BM-HEO because this compositionally identic
 
 ### Figure 5 — conversion localization
 
+Figure 5 is now frozen as a three-panel localization test:
+
+- (a) state-resolved first-cycle relaxation + background definition;
+- (b) GITT excess / cathodic $dQ/dV$ comparison on a common voltage axis;
+- (c) peak-voltage one-to-one comparison.
+
 The excess GITT relaxation feature and first-cycle cathodic $dQ/dV$ peak are within 32 mV for all four materials.
 
 This supports **conversion-associated** wording but does not identify a unique microscopic conversion step.
 
-Current $dQ/dV$ values are reconstructed from the latest vector voltage-profile figures. Recover the original numerical voltage profiles if possible before submission; otherwise freeze and document the vector-reconstruction provenance.
+The previous amplitude–FWHM-like-width map is moved to the SI together with the 105-condition background/window sensitivity audit. These secondary descriptors are not kinetic rates.
+
+Current $dQ/dV$ values are reconstructed from the latest vector voltage-profile figures. The GITT side is raw-data based; recover the original numerical first-cycle voltage profiles if possible before submission, otherwise retain the documented vector-reconstruction provenance and smoothing-sensitivity checks.
 
 ### Figure 6 — history dependence
 
@@ -242,11 +253,11 @@ Cycling EIS is excluded from the manuscript evidence chain because of state matc
 
 ## Immediate next work
 
-The abstract, Figure 3 panel architecture, and Figure 4 are now sufficiently closed for the present round.
+The abstract and Figures 3–5 panel architectures are now sufficiently closed for the present round.
 
 Next priority:
 1. complete/freeze Figures 1–2 with Yoo-group input;
-2. recover/freeze Figure 3 raw numerical sources, then render the locked Figure 3 architecture; in parallel finish Figures 5 and 6 artwork to publication standard;
+2. recover/freeze Figure 3 raw numerical sources and render Figure 3; render the locked three-panel Figure 5 architecture and finish Figure 6 artwork to publication standard;
 3. perform line-by-line PI review of the Introduction/Results using Main v12;
 4. recover/freeze remaining methods metadata and original $dQ/dV$ numerical source;
 5. regenerate a full tracked Word manuscript after those items are incorporated.
