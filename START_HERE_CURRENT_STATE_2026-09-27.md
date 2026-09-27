@@ -30,7 +30,7 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 - Mg-like microkinetic directional audit: `modeling/HEO_MG_LIKE_MICROKINETIC_DIRECTIONAL_TEST_2026-09-26.md`
 - Literature audit: `references/HEO_CONVERSION_GITT_LITERATURE_AUDIT_2026-09-26.md`
 - Kinetic interpretation lock: `manuscript/HEO_KINETIC_INTERPRETATION_DECISION_LOCK_2026-09-26.md`
-- Main scientific audit: `manuscript/HEO_MAIN_SCIENTIFIC_AUDIT_2026-09-26.md`
+- Main scientific audit: `manuscript/HEO_MAIN_SCIENTIFIC_AUDIT_2026-09-27.md`
 
 ## Scientific event that creates the paper
 
