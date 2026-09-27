@@ -226,6 +226,8 @@ The late-stage conversion/transformation-associated excess response is defined o
 
 The selected state interval excludes the dominant early first-lithiation formation/activation response and isolates the late-stage feature discussed in the main text.
 
+For voltage-localization analysis, the excess feature is identified first in state space and each discrete GITT state is then assigned its **60 min rest-end voltage**. This voltage is used as a quasi-relaxed state coordinate and is not assumed to be an exact equilibrium potential. Pulse-end and 3 s voltages retain the current-induced and immediate current-off polarization and are therefore not used as the localization voltage coordinate.
+
 ## S4.2. Nominal extracted metrics
 
 | Sample | Peak excess polarization (mV) | FWHM-like width (mAh g⁻¹) | Normalized excess area (mV) | Capacity-weighted excess metric (mV·mAh g⁻¹) |
@@ -264,9 +266,20 @@ The corresponding peak-amplitude and width ranges were:
 
 The BM-HEO peak-down/width-up result and the strong suppression of both Mg-containing peaks relative to HEO are therefore robust to the tested background and window choices. By contrast, the small nominal difference between BM-Mg-HEO and Mg-HEO peak amplitudes is not invariant. The main-text interpretation consequently treats BM-Mg-HEO as remaining strongly suppressed relative to HEO; any amplitude recovery relative to Mg-HEO is described only as nominal/background-sensitive. The particularly broad width range for BM-Mg-HEO reflects the shallow excess feature and is not used as a quantitative mechanistic discriminator.
 
+The same 105 definitions were also evaluated for **peak location** using the 60 min rest-end voltage assigned to the peak state:
+
+| Sample | Peak pulse(s) across 105 definitions | Count(s) | Rest-end peak-voltage range (V) |
+|---|---|---|---:|
+| HEO | 50 | 105 | 0.527481–0.527481 |
+| BM-HEO | 50 / 51 / 53 | 30 / 55 / 20 | 0.592919–0.628391 |
+| Mg-HEO | 38 | 105 | 0.386972–0.386972 |
+| BM-Mg-HEO | 26 / 35 / 37 / 38 / 40 | 10 / 35 / 15 / 15 / 30 | 0.453175–0.618300 |
+
+HEO and Mg-HEO therefore have invariant peak states, and BM-HEO remains confined to a narrow higher-potential band. The shallow BM-Mg-HEO feature has substantially greater baseline-dependent peak-position uncertainty. Nevertheless, all tested definitions preserve the direction of the material-induced shifts: HEO to BM-HEO shifts higher, HEO to Mg-HEO shifts lower, and Mg-HEO to BM-Mg-HEO shifts higher in potential.
+
 **Figure S17.** Background/window sensitivity of peak amplitude and FWHM-like width, including the directional pass/fail criteria above.
 
-**Table S5.** Nominal excess metrics, tested window definitions, sensitivity ranges, and directional pass counts.
+**Table S5.** Nominal excess metrics, tested window definitions, amplitude/width sensitivity ranges, peak-location ranges, and directional pass counts.
 
 ## S4.4. Cross-check against the first-cycle cathodic differential-capacity feature
 
@@ -281,13 +294,15 @@ A common Savitzky–Golay differentiation/smoothing procedure was applied to all
 | Mg-HEO | 0.419 | 0.387 | −0.032 |
 | BM-Mg-HEO | 0.485 | 0.503 | +0.018 |
 
-All four peak pairs are localized within 32 mV. The dQ/dV peak locations remain stable over smoothing windows of 20–60 mAh g⁻¹: HEO 0.544–0.547 V, BM-HEO approximately 0.589 V, Mg-HEO 0.408–0.419 V, and BM-Mg-HEO 0.485–0.486 V.
+Under the nominal GITT background definition, all four rest-end-voltage peak pairs are localized within 32 mV. The $dQ/dV$ peak locations remain stable over smoothing windows of 20–60 mAh g⁻¹: HEO 0.544–0.547 V, BM-HEO approximately 0.589 V, Mg-HEO 0.408–0.419 V, and BM-Mg-HEO 0.485–0.486 V.
 
-This correspondence supports the conversion/transformation-associated assignment of the GITT excess feature while not identifying one unique microscopic elementary step.
+The 32 mV bound is therefore a **nominal-analysis result**, not a bound across every GITT background/window definition. Peak-location sensitivity is negligible for HEO and Mg-HEO, modest for BM-HEO, and broader for the shallow BM-Mg-HEO response. The more robust four-material result is that every material-induced GITT peak shift retains the same direction as the corresponding $dQ/dV$ shift across all tested GITT definitions.
+
+This voltage-region and shift-direction correspondence supports the conversion/transformation-associated assignment of the GITT excess feature while not identifying one unique microscopic elementary step.
 
 **Data-source boundary.** Numerical continuous-GCD source files corresponding to these latest profiles are not currently available. The present values were reconstructed from the user's own vector voltage-profile plots, not from raster digitization. The original numerical profiles should replace this source if recovered before submission. The older first-cycle dataset affected by a power interruption is not used for this assignment.
 
-**Figure S18.** First-cycle dQ/dV reconstruction, smoothing-window sensitivity, and comparison with the GITT excess-peak voltages.
+**Figure S18.** First-cycle $dQ/dV$ reconstruction, smoothing-window sensitivity, comparison with nominal GITT excess-peak voltages, and GITT peak-location sensitivity from the 105 background/window definitions.
 
 # S5. Conventional GITT apparent-diffusivity audit
 
