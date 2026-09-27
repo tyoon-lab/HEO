@@ -32,6 +32,8 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 - Figure 6 artwork note: `manuscript/HEO_FIGURE6_ARTWORK_FINAL_NOTE_2026-09-27.md`
 - Figure 6 panel data: `modeling/HEO_FIGURE6_PANEL_DATA_2026-09-27.csv`
 - Figure 6 plotting code: `modeling/heo_figure6_history_dependence.py`
+- Figure 7 artwork note: `manuscript/HEO_FIGURE7_ARTWORK_FINAL_NOTE_2026-09-27.md`
+- Figure 7 plotting scaffold: `modeling/heo_figure7_microkinetic_existence_proof.py`
 - Figure 4 plotting code: `modeling/heo_figure4_capacity_kinetics_mismatch.py`
 - HEO/BM conventional-GITT audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
 - HEO/BM state-matched ratios: `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
@@ -154,9 +156,11 @@ Role: robustness/history constraint, not a separate headline.
 
 ### Figure 7 — microkinetic existence proof
 
-Coarse-grained network:
-
-$O\rightleftharpoons I\rightleftharpoons I^*\rightleftharpoons C$
+Final main-panel architecture:
+- (a) effective $O\rightleftharpoons I\rightleftharpoons I^*\rightleftharpoons C$ network;
+- (b) schematic current-off balance showing that $j_{\rm ext}=0$ can coexist with finite opposing partial currents and finite R2;
+- (c) homogeneous global-rate control on $Q_{\rm cutoff}$ versus matched-state $t_{63}$;
+- (d) heterogeneous-accessibility existence proof on the **same axes**, with the homogeneous trajectory retained as a dashed reference.
 
 R1/R3 are Faradaic; R2 is a coarse-grained structural/reconstruction coordinate.
 
@@ -167,6 +171,8 @@ Homogeneous global speed scaling recovers:
 Illustrative heterogeneous accessibility gives:
 - cutoff capacity 0.55845 → 0.65714 (+17.67%)
 - $t_{63}$ 13.45 → 15.28 min (+13.63%)
+
+Main artwork deliberately avoids “BM-like,” population weights, and the illustrative R2 ratio so the calculation is not presented as a material-specific fit. Those parameters remain in the SI/model audit.
 
 Separate Mg-like SI test gives:
 - $Q_{\rm cutoff}$ 0.55845 → 0.39339
@@ -269,7 +275,7 @@ Cycling EIS is excluded from the manuscript evidence chain because of state matc
 
 ## Immediate next work
 
-The abstract and Figures 3–6 panel architectures are now sufficiently closed for the present round.
+The abstract and Figures 3–7 panel architectures are now sufficiently closed for the present round.
 
 Next priority:
 1. complete/freeze Figures 1–2 with Yoo-group input;
