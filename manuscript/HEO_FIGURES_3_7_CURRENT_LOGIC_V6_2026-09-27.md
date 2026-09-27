@@ -6,7 +6,7 @@
 
 The paper uses BM and Mg as complementary modifications that respectively increase and decrease accessible conversion capacity, with GITT relaxation as the kinetic probe.
 
-## Figure 3 — Accessible reaction extent
+## Figure 3 — Accessible capacity
 
 Purpose:
 Establish the capacity differences before interpreting kinetics. Keep Figure 3 strictly on the question **how much reaction is accessed?**
@@ -32,7 +32,7 @@ Panel-allocation boundary:
 Main message:
 **Capacity defines how much reaction is accessed; it does not by itself establish the intrinsic conversion rate.**
 
-## Figure 4 — Distinct mismatches among reaction extent, relaxation magnitude, relaxation timescale, and apparent diffusivity
+## Figure 4 — Distinct relationships among accessible capacity, relaxation magnitude, relaxation timescale, and apparent diffusivity
 
 Use:
 - $\Delta E_{\mathrm{relax}}$ = 3 s to 60 min recovery
@@ -64,7 +64,7 @@ Interpretation:
 - Conventional $D_{\mathrm{app}}$ gives a conflicting indication for BM: $D_{\mathrm{app,BM}}/D_{\mathrm{app,HEO}}>1$ at 37/37 matched states (median 1.78), whereas $t_{63,\mathrm{HEO}}/t_{63,\mathrm{BM}}<1$ at 35/37 states (median 0.762).
 
 Main message:
-**Ball milling separates accessible reaction extent from relaxation timescale, Mg separates relaxation magnitude from relaxation timescale, and conventional apparent diffusivity fails to preserve the directly measured BM fast–slow ordering.**
+**Ball milling separates accessible capacity from relaxation timescale, Mg separates relaxation magnitude from relaxation timescale, and conventional apparent diffusivity fails to preserve the directly measured BM fast–slow ordering.**
 
 Important:
 - Do not call Mg a capacity–kinetics contradiction.
