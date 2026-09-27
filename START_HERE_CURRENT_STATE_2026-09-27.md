@@ -21,6 +21,7 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 - Story lock: `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-27.md`
 - Abstract lock: `manuscript/HEO_ABSTRACT_LOCK_2026-09-27.md`
 - Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V6_2026-09-27.md`
+- Figure 3 logic/caption/source note: `manuscript/HEO_FIGURE3_ARTWORK_FINAL_NOTE_2026-09-27.md`
 - Figure 4 logic/caption/source note: `manuscript/HEO_FIGURE4_ARTWORK_FINAL_NOTE_2026-09-27.md`
 - Figure 4 plotting code: `modeling/heo_figure4_capacity_kinetics_mismatch.py`
 - HEO/BM conventional-GITT audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
@@ -59,11 +60,19 @@ Do not rewrite the abstract casually. Reopen only if a new analysis materially c
 
 ### Figure 3 — accessible reaction extent
 
-Establish how much reaction is accessed.
+Figure 3 panel logic is frozen for the current round:
 
+- (a) first-cycle voltage profiles;
+- (b) first-/second-half-cycle capacity + ICE summary;
+- (c) absolute 0.1 C cycling;
+- (d) absolute rate capability and 0.1 C recovery.
+
+Core interpretation:
 - BM increases accessible capacity.
 - Mg decreases accessible capacity.
 - capacity alone is not used to infer intrinsic conversion speed.
+
+Cycle-resolved $dQ/dV$ is not a main Figure 3 panel. First-cycle cathodic $dQ/dV$ is reserved for Figure 5 conversion localization; cycle-resolved $dQ/dV$ belongs in the Supporting Information.
 
 ### Figure 4 — decisive mismatch figure
 
@@ -230,11 +239,11 @@ Cycling EIS is excluded from the manuscript evidence chain because of state matc
 
 ## Immediate next work
 
-The abstract and Figure 4 are now sufficiently closed for the present round.
+The abstract, Figure 3 panel architecture, and Figure 4 are now sufficiently closed for the present round.
 
 Next priority:
 1. complete/freeze Figures 1–2 with Yoo-group input;
-2. finish main Figures 3, 5, and 6 artwork to publication standard;
+2. render/finalize Figure 3 artwork from the locked panel architecture and finish Figures 5 and 6 artwork to publication standard;
 3. perform line-by-line PI review of the Introduction/Results using Main v12;
 4. recover/freeze remaining methods metadata and original $dQ/dV$ numerical source;
 5. regenerate a full tracked Word manuscript after those items are incorporated.
