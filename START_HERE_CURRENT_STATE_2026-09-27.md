@@ -26,7 +26,9 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 - Figure 4 logic/caption/source note: `manuscript/HEO_FIGURE4_ARTWORK_FINAL_NOTE_2026-09-27.md`
 - Figure 5 logic/caption/source note: `manuscript/HEO_FIGURE5_ARTWORK_FINAL_NOTE_2026-09-27.md`
 - Figure 5 source-provenance audit: `manuscript/HEO_FIGURE5_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`
-- Figure 5 peak-localization authority: `manuscript/HEO_FIGURE5_DQDV_GITT_PEAK_CHECK_2026-09-27.csv`
+- Figure 5 nominal peak-localization authority: `manuscript/HEO_FIGURE5_DQDV_GITT_PEAK_CHECK_2026-09-27.csv`
+- Figure 5 voltage-coordinate audit: `manuscript/HEO_FIGURE5_VOLTAGE_COORDINATE_AUDIT_2026-09-27.md`
+- Figure 5 voltage-coordinate sensitivity: `manuscript/HEO_FIGURE5_VOLTAGE_COORDINATE_SENSITIVITY_2026-09-27.csv`
 - Figure 4 plotting code: `modeling/heo_figure4_capacity_kinetics_mismatch.py`
 - HEO/BM conventional-GITT audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
 - HEO/BM state-matched ratios: `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
@@ -119,11 +121,13 @@ Figure 5 is now frozen as a three-panel localization test:
 - (b) GITT excess / cathodic $dQ/dV$ comparison on a common voltage axis;
 - (c) peak-voltage one-to-one comparison.
 
-The excess GITT relaxation feature and first-cycle cathodic $dQ/dV$ peak are within 32 mV for all four materials.
+Each GITT excess peak is mapped using the **60 min rest-end voltage of the same GITT state**. Under the nominal background definition, the GITT-rest-end and first-cycle cathodic $dQ/dV$ peak pairs are within 32 mV for all four materials.
+
+The 105-condition peak-location audit shows that HEO and Mg-HEO peak states are invariant and BM-HEO remains in a narrow 0.593–0.628 V band. The shallow BM-Mg-HEO feature has a broader 0.453–0.618 V peak-position range. Therefore the 32 mV statement is nominal, while the robust four-material result is that the directions of HEO → BM, HEO → Mg, and Mg → BM-Mg voltage shifts are preserved across all tested GITT definitions and match the $dQ/dV$ shifts.
 
 This supports **conversion-associated** wording but does not identify a unique microscopic conversion step.
 
-The previous amplitude–FWHM-like-width map is moved to the SI together with the 105-condition background/window sensitivity audit. These secondary descriptors are not kinetic rates.
+The previous amplitude–FWHM-like-width map is moved to the SI together with the 105-condition background/window sensitivity audit. These secondary descriptors are not kinetic rates. Figure 5(c) retains the one-to-one comparison but should display the GITT peak-location sensitivity ranges.
 
 Current $dQ/dV$ values are reconstructed from the latest vector voltage-profile figures. The GITT side is raw-data based; recover the original numerical first-cycle voltage profiles if possible before submission, otherwise retain the documented vector-reconstruction provenance and smoothing-sensitivity checks.
 
