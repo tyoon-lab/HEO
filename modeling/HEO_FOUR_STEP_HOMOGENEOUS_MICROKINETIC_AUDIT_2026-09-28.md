@@ -119,9 +119,11 @@ Do not claim:
 
 ## 8. Recommended Figure 6 architecture
 
-(a) Literature-grounded four-step sequence R1–R4.  
-(b) Single-step limiting audit / homogeneous global expectation.  
-(c) R2–R3 2D kinetic-regime map highlighting the finite Q-up / t63-up region.  
-(d) Representative current-off eigenmode / same-scale relaxation comparison showing why throughput and slow relaxation can move in different directions.
+The literature-grounded four-step sequence should be described in the main text with references rather than occupying a figure panel.
 
-Mg can be marked in observable-space or mentioned textually as a complementary lower-Q / longer-t63 case; avoid mapping it to a unique R2/R3 pair.
+(a) Single-step limiting audit for R1–R4, preferably in normalized Q_cutoff–t63 observable space.  
+(b) R2–R3 two-dimensional kinetic-regime map highlighting the finite region where both Q_cutoff/Q0 > 1 and t63/t63,0 > 1.  
+(c) Observable-space projection of the same R2–R3 map with the experimental BM-HEO/HEO and Mg-HEO/HEO ratios overlaid. The BM point should be described as sharing the same higher-Q/slower-relaxation ordering while lying outside the magnitude reached by the minimal model; the Mg point lies much closer to the model manifold.  
+(d) Representative same-scale current-off relaxation / eigenmode comparison showing that the slow eigen-timescale can lengthen while a different downstream step increases galvanostatic reaction throughput.
+
+Do not include a reaction-sequence schematic in Figure 6. The reaction sequence, physical interpretation of R1–R4, and literature basis belong in the Section 2.5 text and Methods/SI equations.
