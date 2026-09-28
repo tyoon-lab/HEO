@@ -39,6 +39,8 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 - Microkinetic authority: `modeling/HEO_FOUR_STEP_HOMOGENEOUS_MICROKINETIC_AUDIT_2026-09-28.md`
 - Microkinetic reference candidates: `manuscript/HEO_REFERENCE_CANDIDATES_MICROKINETICS_2026-09-28.md`
 - Literature audit: `references/HEO_CONVERSION_GITT_LITERATURE_AUDIT_2026-09-26.md`
+- Main-reference audit: `manuscript/HEO_REFERENCE_AUDIT_MAIN_V16_2026-09-28.md`
+- Microkinetic reference candidates: `manuscript/HEO_REFERENCE_CANDIDATES_MICROKINETICS_2026-09-28.md`
 - Kinetic interpretation lock: `manuscript/HEO_KINETIC_INTERPRETATION_DECISION_LOCK_2026-09-26.md`
 - Main scientific audit: `manuscript/HEO_MAIN_SCIENTIFIC_AUDIT_2026-09-27.md`
 
@@ -309,3 +311,13 @@ Next priority:
 5. regenerate the full tracked Word manuscript after line-by-line text review and collaborator inputs.
 
 Do not reintroduce the discarded heterogeneous-population microkinetic model unless new evidence requires it. Do not reopen the central BM/Mg story or the Figure 4 architecture unless new data require it.
+
+
+## 2026-09-28 late-session reference update
+
+- Main manuscript authority advanced to v16.
+- Main references were pruned to cited literature and renumbered in first-citation order.
+- Main reference count is 24.
+- General GITT-assumption/pitfall support was added using methodological literature already present in the verified project reference pool.
+- Ng et al. is the direct four-step metal-oxide conversion mechanism precedent; Alsaç et al. is the broader conversion reaction-network precedent; Li et al. (JACS 2016) bounds interpretation of the full relaxation-voltage magnitude.
+- Uncited literature was not deleted from the project and remains available in the reference master/audit files.
