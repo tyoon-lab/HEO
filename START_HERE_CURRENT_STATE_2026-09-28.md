@@ -321,3 +321,12 @@ Do not reintroduce the discarded heterogeneous-population microkinetic model unl
 - General GITT-assumption/pitfall support was added using methodological literature already present in the verified project reference pool.
 - Ng et al. is the direct four-step metal-oxide conversion mechanism precedent; Alsaç et al. is the broader conversion reaction-network precedent; Li et al. (JACS 2016) bounds interpretation of the full relaxation-voltage magnitude.
 - Uncited literature was not deleted from the project and remains available in the reference master/audit files.
+
+
+## 2026-09-29 Supporting Information rebuild
+
+- SI electrochemical rebuild is now documented in `manuscript/HEO_SUPPORTING_INFORMATION_V11_AUTHORITY_2026-09-29.md`.
+- All currently available electrochemical figures have been inserted into the working SI (Figures S7–S23).
+- The current-off/GITT audit, conversion-localization/history robustness, and homogeneous four-step microkinetic SI sections are synchronized to main v16.
+- The former heterogeneous-population microkinetic proof is no longer current manuscript evidence.
+- Figures S1–S6 remain pending collaborator-verified structural/compositional inputs.
