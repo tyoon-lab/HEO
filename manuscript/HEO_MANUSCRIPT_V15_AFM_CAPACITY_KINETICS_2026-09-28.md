@@ -36,7 +36,7 @@ The GITT relaxation can also be examined directly without converting the measure
 
 Spinel HEOs provide a useful material system for examining this relationship. Spinel (FeCoNiCrMn)₃O₄ is a conversion-type anode in which multiple redox-active cations share a common oxide structure.[1–4,6] Its lithiation involves substantial reconstruction, including progressive formation of metallic species, Li₂O, and rock-salt-like phases accompanied by cation and oxygen rearrangement.[5,7,20] Ball milling and Mg incorporation provide complementary modifications of this conversion behavior. Milling increases surface area and has been associated with enhanced conversion reversibility,[6,12] whereas Mg-containing HEOs have been reported to exhibit greater structural retention but lower accessible capacity.[8–10] Because these modifications change accessible conversion in opposite directions, they provide a useful basis for testing whether capacity changes are accompanied by corresponding changes in relaxation kinetics.
 
-Here, pristine HEO, ball-milled HEO (BM-HEO), Mg-containing HEO (Mg-HEO), and BM-Mg-HEO are compared to determine the relationships among accessible conversion capacity, GITT relaxation, and conventional GITT-derived apparent diffusivity. The apparent diffusivity is compared with the directly measured relaxation to determine whether the two indicate the same kinetic trend. Differential-capacity analysis identifies where the capacity–relaxation mismatch emerges during lithiation, cycle-resolved GITT examines whether it persists with reaction history, and a multistep microkinetic model tests whether the observed behavior can arise from a heterogeneous conversion network.
+Here, pristine HEO, ball-milled HEO (BM-HEO), Mg-containing HEO (Mg-HEO), and BM-Mg-HEO are compared to determine the relationships among accessible conversion capacity, GITT relaxation, and conventional GITT-derived apparent diffusivity. The apparent diffusivity is compared with the directly measured relaxation to determine whether the two indicate the same kinetic trend. Differential-capacity analysis identifies whether the anomalous relaxation is associated with conversion, and a literature-grounded four-step microkinetic model tests whether higher accessible capacity and slower relaxation can coexist within a homogeneous multistep conversion network.
 
 # 2. Results and Discussion
 
@@ -87,29 +87,25 @@ The main role of Figure 5 is intentionally limited to this localization. The nom
 Figure 5 therefore establishes the specific point required for the kinetic argument: the excess current-off response used to interpret the GITT behavior occurs in the same electrochemical region as first-cycle conversion. This supports the term **conversion-associated relaxation** without equating its magnitude, width, or $t_{63}$ with a unique microscopic rate constant. The next question is whether the capacity-relaxation relation is confined to the first conversion or persists as the electrode evolves with cycling.
 
 
-## 2.5. Conversion-associated relaxation evolves with cycle history
+## 2.5. Step-selective conversion kinetics can produce higher capacity with slower relaxation
 
-Cycle-resolved GITT shows that the conversion-associated relaxation is not a stationary fingerprint of the pristine material (Figure 6). Over the common lithiation interval $z=0.4$–0.9, the excess peak decreases strongly from cycle 1 to cycle 3 for HEO and BM-HEO, increases for Mg-HEO, and changes little for BM-Mg-HEO. The peak position simultaneously converges from the later first-cycle region ($z\approx0.66$–0.79) toward a common later-cycle region near $z\approx0.50$–0.56.
+Conversion is represented by a literature-grounded four-step kinetic sequence, $O\rightleftharpoons I\rightleftharpoons J\rightleftharpoons K\rightleftharpoons C$. Established metal-oxide conversion mechanisms separate initial electrochemical lithiation/electron transfer ($R_1$), M–O dissociation and local structural reconstruction ($R_2$), Li₂O-forming or product-side reconstruction ($R_3$), and subsequent electron transfer/metal reduction ($R_4$).[30,31] The intermediate states are treated as effective kinetic states rather than uniquely identified phases in the present HEO. This coarse-grained sequence is used to test whether the experimentally observed capacity–relaxation ordering is physically accessible within a homogeneous multistep conversion network.
 
-The amplitude evolves much more strongly than the effective timescale: $A_3/A_1$ spans 0.435–1.698, whereas $t_{63,3}/t_{63,1}$ remains within 0.845–0.923. Thus, cycling strongly changes the magnitude and state location of the conversion-associated response while only modestly changing its effective relaxation time. The first-cycle feature is therefore not a fixed material relaxation fingerprint.
+The single-step limiting analysis first establishes the conventional kinetic response (Figure 6a). Each rate is varied independently while the other rates and all equilibrium parameters are held fixed. Slowing either internal step alone decreases the cutoff-limited capacity and lengthens the relaxation. Reducing the $R_2$ rate to 0.1 of its reference value gives $Q_{\mathrm{cutoff}}/Q_0=0.351$ and $t_{63}/t_{63,0}=2.44$, while the corresponding values for $R_3$ are 0.495 and 1.57. $R_1$ and $R_4$ exert substantially weaker control under the representative parameter set. Thus, the higher-capacity/slower-relaxation behavior observed after ball milling is not produced simply by making one conversion step uniformly slower or faster.
 
-The capacity–relaxation mismatch also persists after the first cycle. Third-cycle GITT lithiation capacities are approximately 700, 833, 450, and 533 mAh g⁻¹ for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO, respectively. Ball milling retains a larger reversible capacity together with a longer $t_{63}$, whereas Mg suppresses reversible capacity by approximately 35–36% even as later-cycle $t_{63}$ approaches Mg-free values. The result is therefore not explained by first-cycle irreversibility alone. Later-cycle background sensitivity is negligible and is documented in the Supporting Information.
+A different behavior emerges when the two internal conversion steps change selectively. Figure 6b maps the response obtained by independently varying the $R_2$ and $R_3$ rate scales while keeping the equilibrium parameters fixed. A finite region of this homogeneous parameter space gives both $Q_{\mathrm{cutoff}}/Q_0>1$ and $t_{63}/t_{63,0}>1$; 28 of 396 sampled parameter combinations fall in this higher-capacity/slower-relaxation regime. For example, at an $R_2$ rate scale of approximately 0.41, increasing the $R_3$ rate scale above approximately 8.5 produces higher cutoff capacity together with an approximately 20% longer $t_{63}$. The anomalous ordering is therefore not a single tuned point but occupies a finite step-selective kinetic region.
 
-Figures 3–6 therefore impose three constraints on any explanation: higher accessible capacity can coexist with slower relaxation, the mismatch is localized to conversion, and the conversion-associated response evolves with reaction history. Figure 7 asks whether these observations can arise within a multistep conversion network without treating capacity and relaxation as independent phenomena.
+The origin of this behavior is clarified by the current-off eigenmodes (Figure 6d). Linearization of the relaxation dynamics gives
+\[
+\delta\dot{\mathbf{x}}=\mathbf{J}\delta\mathbf{x},
+\qquad
+\delta E(t)=\sum_i B_i\exp(-t/\tau_i),
+\]
+where $\tau_i$ is an internal relaxation timescale and $B_i$ is its voltage projection. For a representative point within the higher-capacity/slower-relaxation region ($R_2\times0.465$, $R_3\times50$), the cutoff capacity increases by approximately 11%, $t_{63}$ increases by approximately 9%, and the slowest finite eigenmode increases from 15.35 to 17.68 min. A slower internal mode can therefore govern the post-interruption relaxation while a different downstream step sustains greater reaction throughput before the voltage cutoff. Accessible reaction extent and relaxation speed remain coupled to the same conversion network, but they need not preserve the same fast–slow ordering.
 
-## 2.6. Microkinetic analysis shows how the mismatch can arise from multistep conversion
+The experimental ratios provide an additional constraint on this minimal model (Figure 6c). Mg-HEO lies close to the conventional lower-capacity/slower-relaxation region of the calculated response, consistent with reduced access to conversion accompanied by slower internal relaxation. BM-HEO lies in the higher-capacity/slower-relaxation quadrant predicted by the step-selective model, but the experimental changes are larger than those reached by the minimal two-parameter calculation. The model is therefore used as an existence proof for the observed ordering rather than as a quantitative fit or as an assignment of ball milling or Mg incorporation to specific rate constants. The experimental relaxation magnitude, $\Delta E_{\mathrm{relax}}$, is not used as a quantitative fitting target because the measured 3 s-to-60 min voltage change can contain conversion polarization together with transport, interfacial, and state-dependent thermodynamic contributions.[38] Its distinct behavior in Mg-HEO nevertheless provides a complementary experimental constraint, showing that relaxation magnitude and relaxation speed are not equivalent observables.
 
-The microkinetic analysis first reproduces the conventional kinetic limit. When all rates in a homogeneous population are varied together (Figure 7c), the normalized cutoff capacity increases from 0.299 to 0.832 as the global rate factor rises from 0.5 to 2.0, while matched-state $t_{63}$ decreases from 22.45 to 6.95 min. Uniformly faster kinetics therefore gives both greater cutoff-limited capacity and faster relaxation. The experimental ball-milling trend is not obtained by a simple global acceleration.
-
-Conversion, however, contains coupled electrochemical and structural steps.[30,31] The coarse-grained sequence $O\rightleftharpoons I\rightleftharpoons I^*\rightleftharpoons C$ (Figure 7a) represents effective kinetic states rather than uniquely assigned phases. After current interruption, zero external current constrains the sum of the Faradaic partial currents but does not require every internal rate to vanish.[32] Overall lithiation can therefore remain conserved while internal populations continue to redistribute and the voltage relaxes (Figure 7b).
-
-An illustrative heterogeneous calculation then changes reaction accessibility together with one internal timescale. The reference accessible model branch is retained while an additional branch with a slower reconstruction step becomes electrochemically accessible (Figure 7d). The cutoff capacity increases from 0.558 to 0.657 (+17.7%), while matched-state $t_{63}$ increases from 13.45 to 15.28 min (+13.6%). Higher accessible capacity and slower relaxation can therefore coexist within the same multistep kinetic network. The branch weights and rate contrast are illustrative model parameters rather than measured material fractions or fitted microscopic rates.
-
-A secondary directional test reported in the Supporting Information addresses the Mg combination. Within the same coarse-grained network, a perturbation that suppresses deeper conversion while lengthening an internal reconstruction timescale produces lower cutoff capacity, lower relaxation amplitude, and longer $t_{63}$ simultaneously. This calculation is also an existence proof and is not used to map Mg incorporation onto specific model parameters.
-
-Microkinetic analysis thus shows that the experimental behavior can arise naturally from the multistep character of conversion. The calculation is an existence proof, not a fit to BM-HEO, and it does not identify the microscopic step altered by milling or assign the illustrative population weights to measured phase fractions. Its role is narrower: it demonstrates that reaction accessibility and internal relaxation timescales need not change in parallel even though both remain kinetically coupled to the same conversion network.
-
-This distinction also clarifies the conventional-GITT result. The model does not calculate $D_{\mathrm{app}}$ and therefore does not explain the numerical value of the apparent diffusion coefficient. Instead, it shows why a composite conversion response need not be representable by one fast–slow kinetic coordinate. The experimentally observed inversion between $D_{\mathrm{app}}$ and direct relaxation is consistent with that multistep picture. Capacity, apparent diffusivity, and relaxation are therefore related to the same conversion process but are not kinetically equivalent observables.
+This result also provides context for the conventional-GITT analysis. The model does not calculate $D_{\mathrm{app}}$ and does not explain its numerical value. Instead, it shows that even within a homogeneous conversion network, no single kinetic coordinate need control both the amount of reaction accessed before cutoff and the subsequent current-off relaxation. The experimentally observed disagreement between $D_{\mathrm{app}}$ and direct relaxation is therefore consistent with a multistep conversion response in which different kinetic processes contribute differently to the measured observables.
 
 # 3. Conclusions
 
@@ -165,45 +161,42 @@ First-cycle differential-capacity curves were obtained from the corresponding ga
 
 
 
-## 4.4. Literature-informed coarse-grained conversion microkinetic model
+## 4.4. Literature-grounded four-step conversion microkinetic model
 
-A minimal coarse-grained model was used to test whether the capacity–kinetics mismatch is consistent with established multistep conversion motifs rather than to fit unique microscopic rate constants or identify a single rate-limiting step.[30,31] The effective network is
+A homogeneous coarse-grained model was used to test whether the observed capacity–relaxation ordering is physically accessible within an established multistep metal-oxide conversion motif rather than to fit unique microscopic rate constants or identify a unique rate-determining step.[30,31] The effective sequence is
 
 \[
-O+\nu_1\mathrm{Li}^{+}+\nu_1e^{-}\rightleftharpoons I,
+O\rightleftharpoons I\rightleftharpoons J\rightleftharpoons K\rightleftharpoons C.
 \]
 
-\[
-I\rightleftharpoons I^*,
-\]
+$R_1$ represents initial electrochemical lithiation/electron transfer, $R_2$ effective M–O dissociation/local reconstruction, $R_3$ effective Li₂O-forming or product-side reconstruction, and $R_4$ subsequent electron transfer/metal reduction. The states are effective kinetic states and are not assigned to uniquely identified HEO phases. $R_1$ and $R_4$ were represented by reversible Butler–Volmer-type kinetics with symmetric transfer coefficients, whereas the two internal steps were represented by reversible first-order rates,
 
 \[
-I^*+\nu_3\mathrm{Li}^{+}+\nu_3e^{-}\rightleftharpoons C,
-\]
-
-where \(O\), \(I\), \(I^*\), and \(C\) are effective oxide-derived, reduced/lithiated, structurally reconstructed, and more deeply converted states. \(R_1\) and \(R_3\) were represented by reversible Butler–Volmer-type kinetics with symmetric transfer coefficients, and the reconstruction step by
-
-\[
-r_2=k_{2,f}a_I-k_{2,r}a_{I^*}.
+r_2=k_{2,f}a_I-k_{2,r}a_J,
+\qquad
+r_3=k_{3,f}a_J-k_{3,r}a_K.
 \]
 
 The state balances are
 
 \[
 \frac{dx_I}{dt}=r_1-r_2,\qquad
-\frac{dx_{I^*}}{dt}=r_2-r_3,\qquad
-\frac{dx_C}{dt}=r_3,
+\frac{dx_J}{dt}=r_2-r_3,\qquad
+\frac{dx_K}{dt}=r_3-r_4,\qquad
+\frac{dx_C}{dt}=r_4,
 \]
 
-with \(x_O=1-x_I-x_{I^*}-x_C\). The external Faradaic current is
+with $x_O=1-x_I-x_J-x_K-x_C$. The external Faradaic current is
 
 \[
-j_{\mathrm{ext}}=F(\nu_1r_1+\nu_3r_3).
+j_{\mathrm{ext}}=F(\nu_1r_1+\nu_4r_4).
 \]
 
-Thus, after current interruption, \(j_{\mathrm{ext}}=0\) constrains the sum of the Faradaic partial currents but does not require each internal rate to vanish.[32] For the normalized illustrative case \(\nu_1=\nu_3=1\), finite opposing rates \(r_1=-r_3\) are allowed while \(r_2\) can continue to redistribute the internal state.
+After current interruption, $j_{\mathrm{ext}}=0$ constrains the sum of the Faradaic partial currents but does not require all internal rates to vanish.[32] In the normalized calculation with $\nu_1=\nu_4=1$, finite opposing $r_1$ and $r_4$ can coexist while $r_2$ and $r_3$ continue to redistribute the internal state.
 
-The reference current-off calculation and pulse-current sweep used the experimental 600 s pulse/3600 s rest timing. For the capacity–relaxation tests, cutoff capacity was obtained from constant-current integration to a fixed model voltage cutoff, whereas matched-state $t_{63}$ was evaluated after an identical three-pulse sequence so that the externally passed charge was common across the compared cases. The separate Mg-like Supporting Information test used a common initial state and a matched normalized passed charge of $\Delta Q=0.30$. The model response was also linearized locally as
+Cutoff capacity was obtained by constant-current integration to a fixed model voltage cutoff. Relaxation was compared at a common normalized passed charge, $\Delta Q=0.30$, followed by a 3600 s current-off period, and $t_{63}$ was extracted using the same 3 s reference convention as in the experiment. In the single-step limiting audit, each $R_i$ rate was scaled independently while all other kinetic and equilibrium parameters were held fixed. The two-dimensional kinetic map independently varied the $R_2$ and $R_3$ rate scales while keeping the equilibrium constants, $R_1$, and $R_4$ fixed.
+
+The current-off response was locally linearized as
 
 \[
 \frac{d\,\delta\mathbf{x}}{dt}=\mathbf{J}\delta\mathbf{x},
@@ -211,7 +204,7 @@ The reference current-off calculation and pulse-current sweep used the experimen
 E(t)-E_{\mathrm{eq}}=\sum_i B_i\exp(-t/\tau_i),
 \]
 
-to distinguish state-dependent response amplitudes from kinetic eigen-timescales. Two illustrative tests were then performed: (i) a homogeneous global-rate scaling at fixed equilibrium parameters and voltage cutoff, and (ii) a heterogeneous-accessibility test in which the reference accessible model branch was retained and an additional slower-reconstructing branch was made accessible. Both tests are mechanistic-consistency calculations rather than fits to an individual HEO sample; the parameter set and numerical diagnostics are provided in the Supporting Information.
+to relate the measured effective relaxation to the finite internal eigen-timescales. The modeled voltage-relaxation amplitude was not used as a quantitative fitting target because the experimental $\Delta E_{\mathrm{relax}}$ can contain conversion, transport, interfacial, and state-dependent thermodynamic contributions beyond the coarse-grained conversion sequence.[38] All calculations are mechanistic-consistency tests; no modeled rate scale is assigned uniquely to ball milling or Mg incorporation. Parameter values and numerical audits are provided in the Supporting Information.
 
 # References
 
@@ -303,6 +296,4 @@ to distinguish state-dependent response amplitudes from kinetic eigen-timescales
 
 **Figure 5. The excess current-off relaxation is localized to the conversion region.** (a) State-resolved relaxation magnitude, $\Delta E_{\mathrm{relax}}$, during the first lithiation as a function of normalized lithiation capacity, $z$. Dashed curves indicate the sample-specific relaxation backgrounds, and the shaded region denotes the common window used to evaluate the excess response. (b) Normalized background-subtracted GITT excess relaxation plotted against rest-end voltage together with the corresponding first-cycle cathodic $dQ/dV$ response for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO. Dotted lines mark the respective peak voltages. (c) Comparison of the GITT excess-peak voltage, $V_{\mathrm{peak,GITT}}$, with the cathodic $dQ/dV$ peak voltage, $V_{\mathrm{peak},dQ/dV}$. The dashed line represents $V_{\mathrm{peak,GITT}}=V_{\mathrm{peak},dQ/dV}$. The close correspondence between the two peak positions localizes the excess relaxation to the conversion region.
 
-**Figure 6. Conversion-associated relaxation evolves with cycle history.** (a) Cycle dependence of the normalized lithiation state at the excess-relaxation peak, $z_{\mathrm{peak}}$. (b) Corresponding excess-peak amplitude during cycles 1–3. (c) Median characteristic relaxation time, $t_{63}$, over the common lithiation-state interval. (d) Relative change in excess-peak amplitude, $A_3/A_1$, plotted against the corresponding change in relaxation timescale, $t_{63,3}/t_{63,1}$, from cycle 1 to cycle 3. Dashed lines denote unity. Cycling produces substantially larger changes in the magnitude and state location of the conversion-associated response than in its characteristic relaxation timescale.
-
-**Figure 7. Microkinetic analysis shows how the capacity–kinetics mismatch can arise from multistep conversion.** (a) Literature-informed coarse-grained conversion network, $O\rightleftharpoons I\rightleftharpoons I^*\rightleftharpoons C$, with R1 and R3 representing reversible Faradaic steps and R2 an effective structural/reconstruction coordinate. The states are effective kinetic states rather than uniquely assigned phases. (b) Current-off balance showing that $j_{\mathrm{ext}}=0$ can coexist with finite opposing Faradaic partial currents and finite internal redistribution. (c) Homogeneous kinetic-speed control: scaling all rates together increases cutoff-limited capacity and shortens matched-state $t_{63}$. (d) Heterogeneous-accessibility existence proof on the same axes as panel (c): retaining the reference accessible branch while adding an illustrative accessible branch with a slower reconstruction step produces both higher cutoff capacity and longer matched-state $t_{63}$. The dashed trajectory is the homogeneous control. The calculation is an existence proof and does not assign the illustrated branch, population weights, or rate contrast uniquely to ball milling.
+**Figure 6. Step-selective homogeneous conversion kinetics can produce higher cutoff capacity with slower relaxation.** (a) Single-step limiting audit in normalized $Q_{\mathrm{cutoff}}$–$t_{63}$ space. Each of the four effective kinetic steps, $R_1$–$R_4$, is varied independently from 0.1× to 10× while all other kinetic and equilibrium parameters are held fixed. (b) Two-dimensional $R_2$–$R_3$ kinetic-regime map. The solid and dashed boundaries denote $Q_{\mathrm{cutoff}}/Q_0=1$ and $t_{63}/t_{63,0}=1$, respectively; the finite region satisfying both inequalities represents higher cutoff capacity together with slower relaxation. (c) Observable-space projection of the same map with the experimental BM-HEO/HEO and Mg-HEO/HEO ratios overlaid. The experimental points are constraints on the model response and are not microscopic fits. (d) Representative current-off relaxation for the reference model and a point within the higher-capacity/slower-relaxation region ($R_2\times0.465$, $R_3\times50$). The corresponding slowest finite eigenmode increases from 15.35 to 17.68 min while cutoff capacity also increases, illustrating how a slow internal relaxation mode can coexist with greater downstream reaction throughput.\n
