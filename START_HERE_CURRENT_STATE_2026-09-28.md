@@ -297,9 +297,8 @@ Cycling EIS is excluded from the manuscript evidence chain because of state matc
    - glovebox H2O/O2
    - 1 C capacity basis
    - exact rate sequence / cycles per rate
-4. WonATech first-half/second-half convention before replacing neutral half-cycle wording with definitive lithiation/delithiation labels.
-5. Original numerical first-cycle voltage profiles for final $dQ/dV$, if recoverable.
-6. Exact active masses / molar-volume metadata only if absolute $D$ or HEO/Mg cross-composition $D$ is promoted. Absolute $D$ is not required for the current main claim.
+4. Original numerical first-cycle voltage profiles for final $dQ/dV$, if recoverable.
+5. Exact active masses / molar-volume metadata only if absolute $D$ or HEO/Mg cross-composition $D$ is promoted. Absolute $D$ is not required for the current main claim.
 
 ## Immediate next work
 
