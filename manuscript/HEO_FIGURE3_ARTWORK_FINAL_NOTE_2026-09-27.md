@@ -106,3 +106,8 @@ Library artifacts:
 - `HEO_Figure3_vector_extracted_data_2026-09-28.csv`
 
 The first-cycle voltage profiles, 0.1 C cycling traces, and absolute rate-capability traces were regenerated from the embedded Origin vector previews rather than redigitized from a raster screenshot. Panel (b) uses the manuscript-locked numerical lithiation/delithiation capacities and ICE values.
+
+
+## Final manuscript caption — 2026-09-28
+
+**Figure 3. Ball milling increases accessible capacity whereas Mg incorporation decreases it.** (a) First-cycle voltage profiles of pristine HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO. (b) First-cycle lithiation and delithiation capacities with the corresponding initial Coulombic efficiencies. (c) Specific capacity during cycling at 0.1 C. (d) Absolute rate capability over the 0.1–5 C sequence followed by recovery at 0.1 C. The results establish the differences in accessible capacity among the four materials before comparison with the GITT relaxation response.
