@@ -16,7 +16,7 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 
 ## Current authoritative files
 
-- Main manuscript: `manuscript/HEO_MANUSCRIPT_V14_AFM_CAPACITY_KINETICS_2026-09-28.md`
+- Main manuscript: `manuscript/HEO_MANUSCRIPT_V15_AFM_CAPACITY_KINETICS_2026-09-28.md`
 - Supporting Information: `manuscript/HEO_SUPPORTING_INFORMATION_V10_CAPACITY_KINETICS_2026-09-27.md`
 - Story lock: `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-28.md`
 - Abstract lock: `manuscript/HEO_ABSTRACT_LOCK_2026-09-28.md`
@@ -39,8 +39,8 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 - HEO/BM conventional-GITT audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
 - HEO/BM state-matched ratios: `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
 - HEO/Mg exploratory cross-composition check: `modeling/HEO_MG_CROSS_COMPOSITION_GITT_CHECK_2026-09-27.md`
-- Microkinetic authority: `modeling/HEO_CONVERSION_MICROKINETICS_LITERATURE_INFORMED_2026-09-26.md`
-- Mg-like microkinetic directional audit: `modeling/HEO_MG_LIKE_MICROKINETIC_DIRECTIONAL_TEST_2026-09-26.md`
+- Microkinetic authority: `modeling/HEO_FOUR_STEP_HOMOGENEOUS_MICROKINETIC_AUDIT_2026-09-28.md`
+- Microkinetic reference candidates: `manuscript/HEO_REFERENCE_CANDIDATES_MICROKINETICS_2026-09-28.md`
 - Literature audit: `references/HEO_CONVERSION_GITT_LITERATURE_AUDIT_2026-09-26.md`
 - Kinetic interpretation lock: `manuscript/HEO_KINETIC_INTERPRETATION_DECISION_LOCK_2026-09-26.md`
 - Main scientific audit: `manuscript/HEO_MAIN_SCIENTIFIC_AUDIT_2026-09-27.md`
@@ -70,7 +70,7 @@ The 2026-09-28 review deliberately:
 - keeps the unexpected BM result out of the background premise;
 - distinguishes BM's capacity–relaxation contradiction from Mg's complementary magnitude–timescale constraint;
 - contextualizes conventional GITT-derived apparent diffusivity as a widely used kinetic comparator before showing its failure to preserve the observed ordering;
-- uses the microkinetic model to recover the conventional limit first and then establish physical possibility of the heterogeneous mismatch;
+- uses a literature-grounded homogeneous four-step microkinetic model to recover the conventional single-step limit first and then establish a finite step-selective regime with higher cutoff capacity and slower relaxation;
 - ends with materials-evaluation significance rather than a GITT warning alone.
 
 Do not rewrite the abstract casually. Reopen only if body review or new analysis changes a scientific claim.
@@ -305,10 +305,10 @@ Cycling EIS is excluded from the manuscript evidence chain because of state matc
 The revised AFM-length abstract and Figures 3–7 scientific logic are sufficiently closed for the present round.
 
 Next priority:
-1. continue PI line-by-line review from Section 2.2/2.3 using Main v14; the Abstract and Introduction are provisionally locked;
+1. continue PI line-by-line review using Main v15; Sections 2.2–2.5 and the Conclusions now reflect the current four-step homogeneous microkinetic interpretation;
 2. propagate only evidence-supported changes across Abstract/Introduction/Results/Conclusion rather than rewriting mechanically;
 3. complete/freeze Figures 1–2 with Yoo-group input;
 4. recover/freeze Figure 3 raw numerical sources and remaining methods metadata / original $dQ/dV$ numerical source;
 5. regenerate the full tracked Word manuscript after line-by-line text review and collaborator inputs.
 
-Do not reopen the central BM/Mg story or the Figure 4 architecture unless new data require it.
+Do not reintroduce the discarded heterogeneous-population microkinetic model unless new evidence requires it. Do not reopen the central BM/Mg story or the Figure 4 architecture unless new data require it.
