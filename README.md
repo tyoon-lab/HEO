@@ -6,7 +6,7 @@ This repository is maintained so a new chat/session can resume **without a separ
 
 Read first:
 
-`START_HERE_CURRENT_STATE_2026-09-27.md`
+`START_HERE_CURRENT_STATE_2026-09-28.md`
 
 That file is the single authoritative current-state entry point.
 
@@ -29,10 +29,10 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 
 ## Current key files
 
-- `START_HERE_CURRENT_STATE_2026-09-27.md`
-- `manuscript/HEO_MANUSCRIPT_V12_AFM_CAPACITY_KINETICS_2026-09-27.md`
+- `START_HERE_CURRENT_STATE_2026-09-28.md`
+- `manuscript/HEO_MANUSCRIPT_V13_AFM_CAPACITY_KINETICS_2026-09-28.md`
 - `manuscript/HEO_SUPPORTING_INFORMATION_V10_CAPACITY_KINETICS_2026-09-27.md`
-- `manuscript/HEO_ABSTRACT_LOCK_2026-09-27.md`
+- `manuscript/HEO_ABSTRACT_LOCK_2026-09-28.md`
 - `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-27.md`
 - `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V6_2026-09-27.md`
 - `manuscript/HEO_FIGURE4_ARTWORK_FINAL_NOTE_2026-09-27.md`
@@ -52,12 +52,12 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 
 ## Immediate next task
 
-The abstract and Figure 4 are closed for the current round.
+The revised AFM-length abstract and Figure 4 are closed for the current round.
 
 Next:
 1. freeze Figures 1–2 collaborator characterization/composition;
 2. finish Figures 3, 5, and 6 artwork;
-3. continue line-by-line manuscript review from Main v12;
+3. continue line-by-line manuscript review from Main v13, beginning with the Introduction;
 4. freeze unresolved experimental metadata and the final $dQ/dV$ numerical source.
 
 Do not restart from older v5/v10/v11 manuscript states unless auditing history.
