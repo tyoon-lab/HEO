@@ -16,10 +16,11 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 
 ## Current authoritative files
 
-- Main manuscript: `manuscript/HEO_MANUSCRIPT_V13_AFM_CAPACITY_KINETICS_2026-09-28.md`
+- Main manuscript: `manuscript/HEO_MANUSCRIPT_V14_AFM_CAPACITY_KINETICS_2026-09-28.md`
 - Supporting Information: `manuscript/HEO_SUPPORTING_INFORMATION_V10_CAPACITY_KINETICS_2026-09-27.md`
 - Story lock: `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-28.md`
 - Abstract lock: `manuscript/HEO_ABSTRACT_LOCK_2026-09-28.md`
+- Introduction lock: `manuscript/HEO_INTRODUCTION_LOCK_2026-09-28.md`
 - Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V6_2026-09-27.md`
 - Figure 3 logic/caption/source note: `manuscript/HEO_FIGURE3_ARTWORK_FINAL_NOTE_2026-09-27.md`
 - Figure 3 source-provenance audit: `manuscript/HEO_FIGURE3_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`
@@ -74,6 +75,26 @@ The 2026-09-28 review deliberately:
 
 Do not rewrite the abstract casually. Reopen only if body review or new analysis changes a scientific claim.
 
+
+## 2026-09-28 PI line-by-line writing update
+
+The Abstract and Introduction have now been reviewed as one synchronized argument.
+
+Frozen/current writing decisions:
+- Abstract remains the compressed control surface; scientific edits must propagate to the body, but wording is not copied mechanically.
+- Introduction now follows: physical conversion problem → conventional GITT apparent-diffusivity interpretation → direct relaxation descriptors + capacity comparison → HEO/BM/Mg experimental leverage → present-study question and minimal analysis map.
+- Use $D_{\mathrm{app}}$ consistently after definition.
+- Use `pristine HEO` for the unmodified reference on first definition.
+- Avoid repeated lists of conversion processes, repeated contrast markers, and abstract wording such as `manifestation` or unexplained `kinetic ordering`.
+- Section 2.2 title is now **Ball milling increases accessible capacity whereas Mg incorporation decreases it**.
+- Figure 3(b) uses **lithiation / delithiation**, not first/second half-cycle.
+- Figure 3 main role remains accessible reaction extent only; kinetic interpretation begins in Figure 4.
+- Current Figure 3 artwork was regenerated from embedded Origin vector previews; panel (c) CE traces were removed.
+- Figure 5 and Figure 6 captions have been synchronized to their current final panel architectures.
+
+Current keywords:
+`high-entropy oxide; conversion anode; GITT; apparent diffusion coefficient; voltage relaxation; ball milling; Mg incorporation; microkinetics`
+
 ## Figure 3 → Figure 7 logic
 
 ### Figure 3 — accessible capacity
@@ -81,7 +102,7 @@ Do not rewrite the abstract casually. Reopen only if body review or new analysis
 Figure 3 panel logic is frozen for the current round:
 
 - (a) first-cycle voltage profiles;
-- (b) first-/second-half-cycle capacity + ICE summary;
+- (b) first-cycle lithiation/delithiation capacity + ICE summary;
 - (c) absolute 0.1 C cycling;
 - (d) absolute rate capability and 0.1 C recovery.
 
@@ -285,8 +306,8 @@ Cycling EIS is excluded from the manuscript evidence chain because of state matc
 The revised AFM-length abstract and Figures 3–7 scientific logic are sufficiently closed for the present round.
 
 Next priority:
-1. use Main v13 + the 2026-09-28 Abstract Lock as the control surface for line-by-line Introduction review;
-2. propagate only evidence-supported abstract changes into Introduction/Results/Conclusion rather than rewriting mechanically;
+1. continue PI line-by-line review from Section 2.2/2.3 using Main v14; the Abstract and Introduction are provisionally locked;
+2. propagate only evidence-supported changes across Abstract/Introduction/Results/Conclusion rather than rewriting mechanically;
 3. complete/freeze Figures 1–2 with Yoo-group input;
 4. recover/freeze Figure 3 raw numerical sources and remaining methods metadata / original $dQ/dV$ numerical source;
 5. regenerate the full tracked Word manuscript after line-by-line text review and collaborator inputs.
