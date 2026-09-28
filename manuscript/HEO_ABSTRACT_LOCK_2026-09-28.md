@@ -52,3 +52,21 @@ Faster conversion kinetics are generally expected to raise accessible capacity i
 The Abstract is frozen first as the manuscript control surface. The Introduction and Results should now be reviewed line by line against this wording.
 
 Do **not** mechanically rewrite the body to match the Abstract. Where body wording is stronger, weaker, or differently framed, check the evidence first and then decide whether the Abstract or body should move.
+
+
+## 2026-09-28 Introduction synchronization
+
+The Abstract has now been propagated through a PI line-by-line Introduction review.
+
+Current keyword set:
+`high-entropy oxide; conversion anode; GITT; apparent diffusion coefficient; voltage relaxation; ball milling; Mg incorporation; microkinetics`
+
+Synchronization decisions:
+- the Introduction motivates the same capacity–kinetics question without copying the Abstract opening;
+- the reconstructive-process list is not repeatedly re-enumerated;
+- conventional $D_{\mathrm{app}}$ is introduced as conditionally interpretable, not declared invalid;
+- direct relaxation magnitude/timescale are separated from accessible capacity before the HEO material system is introduced;
+- the final Introduction paragraph avoids repeating the BM/Mg accessible-capacity directions already established in the preceding paragraph.
+
+Authority for the reviewed Introduction:
+`manuscript/HEO_INTRODUCTION_LOCK_2026-09-28.md`
