@@ -5,7 +5,7 @@
 PI line-by-line review of the Introduction is provisionally complete for the current manuscript round.
 
 Authority:
-- Main manuscript: `HEO_MANUSCRIPT_V14_AFM_CAPACITY_KINETICS_2026-09-28.md`
+- Main manuscript: `HEO_MANUSCRIPT_V16_AFM_CAPACITY_KINETICS_2026-09-28.md`
 - Abstract: `HEO_ABSTRACT_LOCK_2026-09-28.md`
 - This file records the Introduction text and the reasoning decisions that should survive a chat/session restart.
 
@@ -17,13 +17,13 @@ Reopen the Introduction only if new data, a body-section review, or journal posi
 
 Conversion-type anodes can achieve high theoretical capacities by accommodating multiple Li ions and electrons through conversion reactions. This high capacity, however, comes with extensive structural and chemical reconstruction during conversion, involving bond rearrangement, nucleation and growth of new phases, and redistribution of cations and oxygen. These coupled processes can introduce substantial kinetic limitations, leading to polarization, incomplete reaction, and rate-dependent capacity. Understanding how material modifications affect these kinetics is therefore important for interpreting their influence on electrochemical performance.
 
-The galvanostatic intermittent titration technique (GITT) is widely used to estimate apparent Li-ion diffusion coefficients, $D_{\mathrm{app}}$, from the voltage response to a current pulse and subsequent relaxation. These $D_{\mathrm{app}}$ values are often compared across compositions, structures, and processing conditions as kinetic descriptors, including for conversion-type electrodes and high-entropy oxides (HEOs).[6,33–36] However, the interpretation of $D_{\mathrm{app}}$ is most straightforward when the transient response is governed predominantly by solid-state diffusion. For reconstructive conversion reactions, the resulting $D_{\mathrm{app}}$ may therefore not track the directly observed relaxation rate.
+The galvanostatic intermittent titration technique (GITT) is widely used to estimate apparent Li-ion diffusion coefficients, $D_{\mathrm{app}}$, from the voltage response to a current pulse and subsequent relaxation. These $D_{\mathrm{app}}$ values are often compared across compositions, structures, and processing conditions as kinetic descriptors, including for conversion-type electrodes and high-entropy oxides (HEOs).[1–5] However, conventional GITT diffusion analysis relies on assumptions that can be distorted by finite reaction kinetics, phase transformation, or other non-diffusive contributions.[6–9] For reconstructive conversion reactions, the resulting $D_{\mathrm{app}}$ may therefore not track the directly observed relaxation rate.
 
 The GITT relaxation can also be examined directly without converting the measured voltage response into a diffusion coefficient. Two readily accessible quantities are the magnitude of the voltage relaxation, $\Delta E_{\mathrm{relax}}$, and a characteristic relaxation time, which quantify the extent and timescale of the current-off voltage response, respectively. Such quantities do not require specification of a solid-state diffusion model and can therefore provide complementary information when the origin of the transient is not purely diffusional. Accessible capacity provides a separate measure of how much conversion is reached under load. Comparing accessible capacity with these direct relaxation descriptors therefore provides a simple test of whether a modification that increases the accessible extent of conversion also produces faster relaxation kinetics.
 
-Spinel HEOs provide a useful material system for examining this relationship. Spinel (FeCoNiCrMn)₃O₄ is a conversion-type anode in which multiple redox-active cations share a common oxide structure.[1–4,6] Its lithiation involves substantial reconstruction, including progressive formation of metallic species, Li₂O, and rock-salt-like phases accompanied by cation and oxygen rearrangement.[5,7,20] Ball milling and Mg incorporation provide complementary modifications of this conversion behavior. Milling increases surface area and has been associated with enhanced conversion reversibility,[6,12] whereas Mg-containing HEOs have been reported to exhibit greater structural retention but lower accessible capacity.[8–10] Because these modifications change accessible conversion in opposite directions, they provide a useful basis for testing whether capacity changes are accompanied by corresponding changes in relaxation kinetics.
+Spinel HEOs provide a useful material system for examining this relationship. Spinel (FeCoNiCrMn)₃O₄ is a conversion-type anode in which multiple redox-active cations share a common oxide structure.[1,10–13] Its lithiation involves substantial reconstruction, including progressive formation of metallic species, Li₂O, and rock-salt-like phases accompanied by cation and oxygen rearrangement.[14–16] Ball milling and Mg incorporation provide complementary modifications of this conversion behavior. Milling increases surface area and has been associated with enhanced conversion reversibility,[1,17] whereas Mg-containing HEOs have been reported to exhibit greater structural retention but lower accessible capacity.[18–20] Because these modifications change accessible conversion in opposite directions, they provide a useful basis for testing whether capacity changes are accompanied by corresponding changes in relaxation kinetics.
 
-Here, pristine HEO, ball-milled HEO (BM-HEO), Mg-containing HEO (Mg-HEO), and BM-Mg-HEO are compared to determine the relationships among accessible conversion capacity, GITT relaxation, and conventional GITT-derived apparent diffusivity. The apparent diffusivity is compared with the directly measured relaxation to determine whether the two indicate the same kinetic trend. Differential-capacity analysis identifies where the capacity–relaxation mismatch emerges during lithiation, cycle-resolved GITT examines whether it persists with reaction history, and a multistep microkinetic model tests whether the observed behavior can arise from a heterogeneous conversion network.
+Here, pristine HEO, ball-milled HEO (BM-HEO), Mg-containing HEO (Mg-HEO), and BM-Mg-HEO are compared to determine the relationships among accessible conversion capacity, GITT relaxation, and conventional GITT-derived apparent diffusivity. The apparent diffusivity is compared with the directly measured relaxation to determine whether the two indicate the same kinetic trend. Differential-capacity analysis identifies whether the anomalous relaxation is associated with conversion, and a literature-grounded four-step microkinetic model tests whether higher accessible capacity and slower relaxation can coexist within a homogeneous multistep conversion network.
 
 ## Paragraph architecture
 
@@ -41,7 +41,7 @@ Introduce conventional GITT-derived apparent diffusivity because it is widely us
 
 Required logic:
 - $D_{\mathrm{app}}$ is an apparent Li-ion diffusion coefficient derived from the pulse/rest voltage response;
-- its interpretation is most straightforward when the transient is predominantly diffusion governed;
+- conventional diffusion extraction is assumption dependent and can be distorted by finite reaction kinetics, phase transformation, or other non-diffusive contributions;
 - for reconstructive conversion, $D_{\mathrm{app}}$ may not track the directly observed relaxation rate.
 
 Boundary:
@@ -75,7 +75,7 @@ State the four samples, the three observables being compared, and the minimum an
 PI decisions:
 - use `pristine HEO` at first definition; avoid `bare` and `fresh` for the unmodified reference;
 - omit unexplained method jargon such as `state-matched` from the Introduction unless it is needed;
-- prefer `multistep microkinetic model` to a more opaque modifier when the extra terminology does not help;
+- use `literature-grounded four-step microkinetic model` when the model is introduced because the step assignments now have a direct metal-oxide conversion precedent;
 - avoid repeating the previous paragraph's statement that BM increases and Mg decreases accessible conversion;
 - `same kinetic trend` is clearer here than a bare phrase such as `kinetic ordering`.
 
@@ -97,3 +97,8 @@ These are HEO-specific and should not be generalized mechanically:
 - Mg-HEO is complementary: capacity decreases and relaxation slows, while relaxation magnitude also decreases.
 - $D_{\mathrm{app}}$ is challenged by comparison with directly observed relaxation, not dismissed as physically meaningless.
 - Figure 5 is needed before using `conversion-associated relaxation` as a localized interpretation.
+
+
+## Reference synchronization note
+
+The reviewed Introduction is synchronized to the v16 main-reference numbering (24 cited main references). General GITT assumptions/pitfalls are now cited separately from HEO examples.
