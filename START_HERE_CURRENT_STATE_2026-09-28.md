@@ -87,7 +87,7 @@ Frozen/current writing decisions:
 - Use `pristine HEO` for the unmodified reference on first definition.
 - Avoid repeated lists of conversion processes, repeated contrast markers, and abstract wording such as `manifestation` or unexplained `kinetic ordering`.
 - Section 2.2 title is now **Ball milling increases accessible capacity whereas Mg incorporation decreases it**.
-- Figure 3(b) uses **lithiation / delithiation**, not first/second half-cycle.
+- Figure 3(b) uses **lithiation / delithiation**, not lithiation/delithiation.
 - Figure 3 main role remains accessible reaction extent only; kinetic interpretation begins in Figure 4.
 - Current Figure 3 artwork was regenerated from embedded Origin vector previews; panel (c) CE traces were removed.
 - Figure 5 and Figure 6 captions have been synchronized to their current final panel architectures.
@@ -122,11 +122,11 @@ Current final panel architecture:
 - (a) representative **measured** GITT pulse/rest trace defining $\Delta E_{\mathrm{relax}}$ and $t_{63}$
 - (b) HEO/BM state-matched conventional $D_{\mathrm{app}}$ ratio versus direct relaxation-rate ratio
 - (c) median $\Delta E_{\mathrm{relax}}$ versus median $t_{63}$ for all four materials
-- (d) first-cycle second-half capacity versus median $t_{63}$
+- (d) First-cycle delithiation capacity versus median $t_{63}$
 
 Core median values over 200–800 mAh g⁻¹:
 
-| Sample | $\Delta E_{\mathrm{relax}}$ (mV) | $t_{63}$ (min) | First-cycle second-half capacity (mAh g⁻¹) |
+| Sample | $\Delta E_{\mathrm{relax}}$ (mV) | $t_{63}$ (min) | First-cycle delithiation capacity (mAh g⁻¹) |
 |---|---:|---:|---:|
 | HEO | 160.9 | 8.68 | 609.12 |
 | BM-HEO | 176.3 | 11.57 | 782.08 |
