@@ -155,3 +155,8 @@ Voltage-coordinate and sensitivity authority:
 
 Source-provenance audit:
 `manuscript/HEO_FIGURE5_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`
+
+
+## Final manuscript caption — 2026-09-28
+
+**Figure 5. The excess current-off relaxation is localized to the conversion region.** (a) State-resolved relaxation magnitude, $\Delta E_{\mathrm{relax}}$, during the first lithiation as a function of normalized lithiation capacity, $z$. Dashed curves indicate the sample-specific relaxation backgrounds, and the shaded region denotes the common window used to evaluate the excess response. (b) Normalized background-subtracted GITT excess relaxation plotted against rest-end voltage together with the corresponding first-cycle cathodic $dQ/dV$ response for HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO. Dotted lines mark the respective peak voltages. (c) Comparison of the GITT excess-peak voltage, $V_{\mathrm{peak,GITT}}$, with the cathodic $dQ/dV$ peak voltage, $V_{\mathrm{peak},dQ/dV}$. The dashed line represents $V_{\mathrm{peak,GITT}}=V_{\mathrm{peak},dQ/dV}$. The close correspondence between the two peak positions localizes the excess relaxation to the conversion region.
