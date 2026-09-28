@@ -18,7 +18,7 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 
 - Main manuscript: `manuscript/HEO_MANUSCRIPT_V13_AFM_CAPACITY_KINETICS_2026-09-28.md`
 - Supporting Information: `manuscript/HEO_SUPPORTING_INFORMATION_V10_CAPACITY_KINETICS_2026-09-27.md`
-- Story lock: `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-27.md`
+- Story lock: `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-28.md`
 - Abstract lock: `manuscript/HEO_ABSTRACT_LOCK_2026-09-28.md`
 - Figure logic: `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V6_2026-09-27.md`
 - Figure 3 logic/caption/source note: `manuscript/HEO_FIGURE3_ARTWORK_FINAL_NOTE_2026-09-27.md`
