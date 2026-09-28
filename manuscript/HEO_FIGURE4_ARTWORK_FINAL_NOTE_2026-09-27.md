@@ -68,7 +68,7 @@ This is the Mg complementary constraint. It is **not** a second capacity–rate 
 
 Use the neutral first-cycle second-half capacities until the WonATech half-cycle convention is finally frozen.
 
-| Sample | First-cycle second-half capacity (mAh g⁻¹) | Median $t_{63}$ (min) |
+| Sample | first-cycle delithiation capacity (mAh g⁻¹) | Median $t_{63}$ (min) |
 |---|---:|---:|
 | HEO | 609.12 | 8.68 |
 | BM-HEO | 782.08 | 11.57 |
@@ -82,7 +82,7 @@ Directional arrows may be used as visual guides for material modifications. They
 
 ## Current caption
 
-**Figure 4. GITT reveals distinct mismatches among accessible reaction extent, relaxation magnitude, relaxation timescale, and conventional apparent diffusivity.** (a) Representative first-lithiation GITT step consisting of a 10 min galvanostatic pulse followed by a 60 min open-circuit rest, defining the 3 s-to-60 min relaxation voltage change, $\Delta E_{\mathrm{relax}}$, and the model-free relaxation timescale, $t_{63}$. (b) State-matched HEO/BM-HEO comparison of $D_{\mathrm{app,BM}}/D_{\mathrm{app,HEO}}$ and the direct relaxation-rate ratio $t_{63,\mathrm{HEO}}/t_{63,\mathrm{BM}}$. Both ratios are oriented so that values above unity indicate faster BM-HEO. The $D_{\mathrm{app}}$ ratio remains above unity at all 37 matched states, whereas the direct relaxation-rate ratio is below unity at 35 of 37 states. (c) Median $\Delta E_{\mathrm{relax}}$ versus median $t_{63}$ over the common 200–800 mAh g⁻¹ interval for all four materials. Mg incorporation decreases the relaxation voltage change while lengthening $t_{63}$. (d) First-cycle second-half capacity versus median $t_{63}$. Ball milling increases accessible capacity while lengthening $t_{63}$, whereas Mg incorporation decreases accessible capacity while $t_{63}$ increases. Arrows indicate the corresponding material modifications.
+**Figure 4. GITT reveals distinct mismatches among accessible reaction extent, relaxation magnitude, relaxation timescale, and conventional apparent diffusivity.** (a) Representative first-lithiation GITT step consisting of a 10 min galvanostatic pulse followed by a 60 min open-circuit rest, defining the 3 s-to-60 min relaxation voltage change, $\Delta E_{\mathrm{relax}}$, and the model-free relaxation timescale, $t_{63}$. (b) State-matched HEO/BM-HEO comparison of $D_{\mathrm{app,BM}}/D_{\mathrm{app,HEO}}$ and the direct relaxation-rate ratio $t_{63,\mathrm{HEO}}/t_{63,\mathrm{BM}}$. Both ratios are oriented so that values above unity indicate faster BM-HEO. The $D_{\mathrm{app}}$ ratio remains above unity at all 37 matched states, whereas the direct relaxation-rate ratio is below unity at 35 of 37 states. (c) Median $\Delta E_{\mathrm{relax}}$ versus median $t_{63}$ over the common 200–800 mAh g⁻¹ interval for all four materials. Mg incorporation decreases the relaxation voltage change while lengthening $t_{63}$. (d) first-cycle delithiation capacity versus median $t_{63}$. Ball milling increases accessible capacity while lengthening $t_{63}$, whereas Mg incorporation decreases accessible capacity while $t_{63}$ increases. Arrows indicate the corresponding material modifications.
 
 ## Main-text interpretation lock
 
@@ -107,6 +107,6 @@ The script should generate:
 - (a) measured GITT definition
 - (b) HEO/BM $D_{\mathrm{app}}$ versus direct relaxation-rate ratio
 - (c) $\Delta E_{\mathrm{relax}}$–$t_{63}$ map
-- (d) first-cycle second-half capacity–$t_{63}$ map
+- (d) first-cycle delithiation capacity–$t_{63}$ map
 
 Figure style follows the Yoon Lab publication standard: sans serif, normal-weight axes, left/bottom ticks only, compact legends, no redundant panel titles, and scientific meaning rather than decoration encoded by symbols/lines.
