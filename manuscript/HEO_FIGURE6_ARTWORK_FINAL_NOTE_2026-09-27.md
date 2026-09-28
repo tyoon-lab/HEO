@@ -124,3 +124,8 @@ Underlying audit:
 
 Compact earlier descriptor table:
 `modeling/HEO_CYCLE_HISTORY_DESCRIPTORS_2026-09-23.csv`
+
+
+## Final manuscript caption — 2026-09-28
+
+**Figure 6. Conversion-associated relaxation evolves with cycle history.** (a) Cycle dependence of the normalized lithiation state at the excess-relaxation peak, $z_{\mathrm{peak}}$. (b) Corresponding excess-peak amplitude during cycles 1–3. (c) Median characteristic relaxation time, $t_{63}$, over the common lithiation-state interval. (d) Relative change in excess-peak amplitude, $A_3/A_1$, plotted against the corresponding change in relaxation timescale, $t_{63,3}/t_{63,1}$, from cycle 1 to cycle 3. Dashed lines denote unity. Cycling produces substantially larger changes in the magnitude and state location of the conversion-associated response than in its characteristic relaxation timescale.
