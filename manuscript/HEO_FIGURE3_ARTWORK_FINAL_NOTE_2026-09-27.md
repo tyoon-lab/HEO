@@ -1,6 +1,6 @@
 # HEO Figure 3 Artwork Final Note — 2026-09-27
 
-**Status:** panel logic frozen for the current manuscript round; full numerical-source reproducibility remains open and is tracked in `HEO_FIGURE3_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`.
+**Status:** final Figure 3 artwork was regenerated on 2026-09-28 from the embedded Origin vector previews in `HEO 진행상황 (20260917).pptx`; full independent raw-file reproducibility remains open and is tracked in `HEO_FIGURE3_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`.
 
 ## Figure-level question
 
@@ -17,23 +17,23 @@ Role:
 show the directly measured first-cycle electrochemical response and the different accessible reaction extents without assigning the differences to faster or slower kinetics.
 
 ### (b) First-cycle capacity and ICE summary
-Show the first- and second-half-cycle capacities for all four materials, with initial Coulombic efficiency as compact text/markers.
+Show the first-cycle lithiation and delithiation capacities for all four materials, with initial Coulombic efficiency as compact text.
 
 Current manuscript values:
 
-| Sample | First half-cycle (mAh g^-1) | Second half-cycle (mAh g^-1) | ICE (%) |
+| Sample | Lithiation (mAh g^-1) | Delithiation (mAh g^-1) | ICE (%) |
 |---|---:|---:|---:|
-| HEO | 901.25 | 609.12 | 67.59 |
+| Pristine HEO | 901.25 | 609.12 | 67.59 |
 | BM-HEO | 1056.10 | 782.08 | 74.05 |
 | Mg-HEO | 731.15 | 458.91 | 62.77 |
 | BM-Mg-HEO | 944.07 | 580.83 | 61.52 |
 
-Second-half-cycle perturbation sizes:
+Delithiation-capacity perturbation sizes:
 - HEO → BM-HEO: +28.4%
 - HEO → Mg-HEO: -24.7%
 - Mg-HEO → BM-Mg-HEO: +26.6%
 
-Until the WonATech half-cycle convention is verified, retain the neutral first-/second-half-cycle terminology.
+PI review on 2026-09-28 adopts the lithiation/delithiation terminology for Figure 3(b) and the corresponding manuscript text.
 
 ### (c) 0.1 C cycling
 Plot absolute specific capacity under the common electrolyte condition.
@@ -41,7 +41,7 @@ Plot absolute specific capacity under the common electrolyte condition.
 Role:
 show that the lower Mg accessibility is not only a first-cycle artifact and that BM-HEO retains the highest absolute capacity over the measured cycling window.
 
-Keep Coulombic-efficiency evolution and the no-FEC comparison in the Supporting Information.
+Keep Coulombic-efficiency evolution and the no-FEC comparison in the Supporting Information. The 2026-09-28 final main-panel redraw removes the CE traces/right-hand axis from panel (c).
 
 ### (d) Absolute rate capability
 Plot absolute specific capacity over the 0.1–5 C sequence and the return to 0.1 C.
@@ -97,3 +97,12 @@ Current source audit: `HEO_FIGURE3_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`. The l
 - verify that all cycling/rate panels use the same intended electrolyte condition;
 - archive the final numerical source tables or plotting script used for the publication artwork.
 
+
+## 2026-09-28 final artwork files
+
+Library artifacts:
+- `HEO_Figure3_final_2026-09-28.png`
+- `HEO_Figure3_final_2026-09-28.pdf`
+- `HEO_Figure3_vector_extracted_data_2026-09-28.csv`
+
+The first-cycle voltage profiles, 0.1 C cycling traces, and absolute rate-capability traces were regenerated from the embedded Origin vector previews rather than redigitized from a raster screenshot. Panel (b) uses the manuscript-locked numerical lithiation/delithiation capacities and ICE values.
