@@ -30,11 +30,8 @@ The paper is an HEO conversion-mechanism/materials paper using GITT relaxation a
 - Figure 5 nominal peak-localization authority: `manuscript/HEO_FIGURE5_DQDV_GITT_PEAK_CHECK_2026-09-27.csv`
 - Figure 5 voltage-coordinate audit: `manuscript/HEO_FIGURE5_VOLTAGE_COORDINATE_AUDIT_2026-09-27.md`
 - Figure 5 voltage-coordinate sensitivity: `manuscript/HEO_FIGURE5_VOLTAGE_COORDINATE_SENSITIVITY_2026-09-27.csv`
-- Figure 6 artwork note: `manuscript/HEO_FIGURE6_ARTWORK_FINAL_NOTE_2026-09-27.md`
-- Figure 6 panel data: `modeling/HEO_FIGURE6_PANEL_DATA_2026-09-27.csv`
-- Figure 6 plotting code: `modeling/heo_figure6_history_dependence.py`
-- Figure 7 artwork note: `manuscript/HEO_FIGURE7_ARTWORK_FINAL_NOTE_2026-09-27.md`
-- Figure 7 plotting scaffold: `modeling/heo_figure7_microkinetic_existence_proof.py`
+- Figure 6 microkinetic authority note: `manuscript/HEO_FIGURE6_FOUR_STEP_MICROKINETIC_NOTE_2026-09-28.md`
+- Former cycle-history Figure 6 materials are retained as Supporting Information robustness assets: `manuscript/HEO_FIGURE6_ARTWORK_FINAL_NOTE_2026-09-27.md`, `modeling/HEO_FIGURE6_PANEL_DATA_2026-09-27.csv`, `modeling/heo_figure6_history_dependence.py`
 - Figure 4 plotting code: `modeling/heo_figure4_capacity_kinetics_mismatch.py`
 - HEO/BM conventional-GITT audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
 - HEO/BM state-matched ratios: `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
