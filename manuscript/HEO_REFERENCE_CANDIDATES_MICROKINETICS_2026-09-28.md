@@ -100,3 +100,13 @@ For HEO, (M) denotes an effective local metal–oxygen unit. Do not claim that (
 # Claim boundary
 
 The model is intended to test whether a homogeneous multistep conversion network can produce different ordering of accessible reaction extent and post-interruption relaxation speed. It is not intended to fit atomistic rate constants, identify a unique RDS in the HEO, or reproduce the full experimental relaxation magnitude.
+
+
+## Publisher-verification note
+
+The four-step metal-oxide conversion sequence attributed to Ng et al. was rechecked against the publisher-hosted full text on 2026-09-28. Table 3 explicitly lists: (1) MO + Li+ + e− ⇌ MO–Li+ as the first electron-transfer step; (2) MO–Li+ ⇌ M+ + LiO− as dissociation; (3) Li+ + LiO− ⇌ Li2O as Li2O recombination; and (4) M+ + e− ⇌ M0 as the second electron-transfer step. The same article also uses effective transfer coefficients to discuss possible rate-determining steps.
+
+Publisher metadata for the other principal references was rechecked on 2026-09-28:
+- Alsaç et al., ACS Applied Materials & Interfaces 2026, 18(1), 1626–1640, DOI 10.1021/acsami.5c20956.
+- Li et al., Journal of the American Chemical Society 2016, 138(8), 2838–2848, DOI 10.1021/jacs.6b00061.
+- Evmenenko et al., ACS Nano 2019, 13(7), 7825–7832, DOI 10.1021/acsnano.9b02007.
