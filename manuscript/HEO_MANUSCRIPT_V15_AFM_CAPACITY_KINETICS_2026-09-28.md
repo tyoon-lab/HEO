@@ -281,7 +281,7 @@ to relate the measured effective relaxation to the finite internal eigen-timesca
 
 36. Zhu, S.; Nong, W.; Nicholas, L. J. J.; Cao, X.; Zhang, P.; Lu, Y.; Xiu, M.; Huang, K.; Wu, G.; Yang, S.-W.; Wu, J.; Liu, Z.; Srinivasan, M.; Hippalgaonkar, K.; Huang, Y. Rapid in situ growth of high-entropy oxide nanoparticles with reversible spinel structures for efficient Li storage. **Journal of Materials Chemistry A** 2024, 12, 11473–11486. DOI: 10.1039/D3TA08101J.
 
-37. Deiss, E. Spurious chemical diffusion coefficients of Li⁺ in electrode materials evaluated with GITT. **Electrochimica Acta** 2005, 50, 2927–2932. DOI: 10.1016/j.electacta.2004.11.042.
+37. Deiss, E. Spurious chemical diffusion coefficients of Li⁺ in electrode materials evaluated with GITT. **Electrochimica Acta** 2005, 50, 2927–2932. DOI: 10.1016/j.electacta.2004.11.042.\n\n38. Li, L.; Jacobs, R.; Gao, P.; Gan, L.; Wang, F.; Morgan, D.; Jin, S. Origins of Large Voltage Hysteresis in High-Energy-Density Metal Fluoride Lithium-Ion Battery Conversion Electrodes. **Journal of the American Chemical Society** 2016, 138, 2838–2848. DOI: 10.1021/jacs.6b00061.
 
 
 # Figure Captions
