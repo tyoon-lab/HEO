@@ -92,7 +92,7 @@ Use the Yoon Lab figure standard:
 
 Current source audit: `HEO_FIGURE3_SOURCE_PROVENANCE_AUDIT_2026-09-27.md`. The latest conventional electrochemistry plots are traceable to embedded Origin objects in `HEO 진행상황 (20260917).pptx`, but the independent raw cycling/rate acquisition files have not yet been recovered.
 
-- verify the WonATech first-/second-half-cycle convention;
+- retain the PI-adopted lithiation/delithiation labeling and verify the raw-file direction metadata during the final source archive;
 - freeze the exact rate sequence and number of cycles per rate;
 - verify that all cycling/rate panels use the same intended electrolyte condition;
 - archive the final numerical source tables or plotting script used for the publication artwork.
