@@ -1,7 +1,7 @@
 # HEO SI v12 Step 2B — Conversion Localization / History Robustness
 
 **Date:** 2026-09-29  
-**Status:** Figure S18 complete and frozen; S19–S20 pending.
+**Status:** Figures S18–S19 complete and frozen; S20 pending.
 
 ## Figure S18 — peak localization with sensitivity ranges
 
@@ -48,7 +48,40 @@ Figure S18 adds:
 
 Therefore Figure S18 is retained as an SI robustness figure rather than a duplicate.
 
+
+## Figure S19 — 105-condition background/window sensitivity
+
+Purpose: show whether the first-cycle conversion-associated excess amplitude and width depend strongly on the specific background/window choice.
+
+Nominal values and tested ranges:
+
+| Sample | peak nominal (mV) | peak range (mV) | width nominal (mAh g^-1) | width range (mAh g^-1) |
+|---|---:|---:|---:|---:|
+| HEO | 70.77 | 60.7–74.7 | 354.13 | 306–379 |
+| BM-HEO | 44.07 | 36.7–51.0 | 430.17 | 379–497 |
+| Mg-HEO | 15.91 | 13.0–18.6 | 250.29 | 192–351 |
+| BM-Mg-HEO | 21.10 | 12.6–27.6 | 391.78 | 233–872 |
+
+Directional robustness across all 105 tested definitions:
+- BM-HEO peak < HEO peak: 105/105;
+- BM-HEO width > HEO width: 105/105;
+- Mg-HEO peak < HEO peak: 105/105;
+- BM-Mg-HEO peak < HEO peak: 105/105;
+- BM-Mg-HEO peak > Mg-HEO peak: 80/105.
+
+Interpretation:
+- the BM-HEO peak-down / width-up relation is robust;
+- Mg-associated suppression of the excess amplitude is robust;
+- the BM-Mg-HEO peak amplitude remains lower than HEO in every tested condition;
+- the BM-Mg-HEO width is poorly constrained because the feature is shallow and broad, so its exact width should not be overinterpreted.
+
+Current final artwork:
+- `Figure_S19_background_window_sensitivity_final.png`
+
+Current numerical summaries:
+- `Figure_S19_105condition_sensitivity_summary.csv`
+- `Figure_S19_105condition_directional_counts.csv`
+
 ## Next
 
-- Figure S19: 105-condition background/window sensitivity of excess-peak amplitude and width.
 - Figure S20: cycle-history robustness.
