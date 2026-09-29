@@ -87,13 +87,24 @@ The before/after comparison is scientifically useful, but exact image duplicatio
 This is the appropriate raw-data/context figure supporting the GITT analysis.
 
 ### Figure S14 — early current-off E–sqrt(t) fit
-**Current artwork:** one representative HEO short-time fit.
+**Final artwork:** four-material representative 3–30 s E–sqrt(t) audit at pulse 30 (approximately 500 mAh g⁻¹ for each material).
 
-**Overlap:** none, but the current single-sample panel is incomplete relative to the four-sample Roff,app summary.
+**Overlap:** none. Main Figure 4a defines the pulse/rest observables, whereas S14 verifies the short-time linear representation used for the operational current-off audit.
 
-**Decision:** **REBUILD.**
+**Decision:** **FROZEN.**
 
-Final S14 should show a compact four-material representative audit, preferably at a comparable normalized first-lithiation state, using the same 3–30 s fitting window. The purpose is to demonstrate the quality and operational definition of the early current-off fit across all four materials, not to assign the slope/intercept to one unique physical resistance.
+Final panel arrangement:
+- (a) HEO;
+- (b) BM-HEO;
+- (c) Mg-HEO;
+- (d) BM-Mg-HEO.
+
+All four representative fits are highly linear over the declared 3–30 s interval (R² ≈ 0.999). The fit is shown only as an operational short-time descriptor and is not assigned uniquely to ohmic resistance, charge transfer, or intrinsic solid diffusion.
+
+Current-unit boundary:
+- Mg-free raw workbooks report absolute current (A);
+- Mg-containing raw workbooks report specific current (A g⁻¹).
+Therefore the cross-sample S14 summary reports only fit quality/slope/intercept and does not compare a resistance calculated directly from these mixed current columns.
 
 ## Frozen disposition after audit
 
@@ -106,7 +117,7 @@ Final S14 should show a compact four-material representative audit, preferably a
 | S11 | keep |
 | S12 | keep role; recheck image duplication after main Fig. 2 freeze |
 | S13 | keep |
-| S14 | rebuild — four-material early current-off fit audit |
+| S14 | frozen — four-material 3–30 s early current-off fit audit |
 
 ## Consequence for final SI build
 
