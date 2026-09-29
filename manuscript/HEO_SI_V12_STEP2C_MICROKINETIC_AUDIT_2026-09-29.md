@@ -1,7 +1,7 @@
 # HEO SI v12 Step 2C — Four-Step Microkinetic Audit
 
 **Date:** 2026-09-29  
-**Status:** Figure S21 complete and frozen; Figures S22–S23 pending.
+**Status:** Figures S21–S22 complete and frozen; Figure S23 pending.
 
 ## Figure S21 — full single-step rate sweeps
 
@@ -43,8 +43,48 @@ Current final artwork:
 Current numerical summary:
 - `Figure_S21_single_step_sweep_summary.csv`
 
-## Next
 
-Figure S22 — fixed-R2 line cuts through the R2–R3 map, showing explicitly how R3 acceleration crosses the capacity boundary while the t63 response depends on the selected R2 scale.
+## Figure S22 — fixed-R2 line cuts through the R2–R3 map
+
+Purpose: unpack the two-dimensional regime map in main Figure 6b without reproducing that map.
+
+Figure S22 panels:
+- (a) normalized cutoff capacity, Qcutoff/Q0, versus R3 rate scale at four fixed R2 scales;
+- (b) normalized relaxation timescale, t63/t63,0, versus the same R3 sweep.
+
+Exact fixed R2 scales:
+- 0.406063
+- 0.464961
+- 0.532402
+- 0.698051
+
+Finite Q↑/t63↑ intervals along these line cuts:
+
+| R2 scale | R3 interval with Q/Q0 > 1 and t63/t0 > 1 | Q/Q0 range | t63/t0 range |
+|---:|---:|---:|---:|
+| 0.406063 | 8.498–50 | 1.005–1.042 | 1.200–1.211 |
+| 0.464961 | 3.175–50 | 1.000–1.111 | 1.076–1.097 |
+| 0.532402 | 2.141–2.607 | 1.003–1.034 | 1.009–1.041 |
+| 0.698051 | none | — | — |
+
+Interpretation:
+- When R2 is slowed strongly enough, increasing R3 first recovers and then raises cutoff capacity while the slow current-off mode can remain longer than the reference.
+- The Q↑/t63↑ regime is finite rather than generic.
+- At R2≈0.532 the overlap is narrow; at R2≈0.698 the relaxation becomes faster before the capacity increase can coexist with a longer t63.
+- The anomaly therefore requires coordinated step-selective changes rather than uniform acceleration or simple slowing of one step.
+- The line cuts are a sensitivity/existence audit, not a material-specific assignment of R2 and R3 to ball milling.
+
+## Non-redundancy versus main Figure 6b
+
+Main Figure 6b shows the full 2D R2–R3 regime map and the boundaries Q/Q0=1 and t63/t0=1.
+Figure S22 instead shows one-dimensional cuts through that map, making the origin and finite width of the higher-capacity/slower-relaxation region explicit.
+
+Current final artwork:
+- `Figure_S22_R2_fixed_linecuts_final.png`
+
+Current numerical summary:
+- `Figure_S22_R2_fixed_linecuts_summary.csv`
+
+## Next
 
 Figure S23 — eigenmode spectrum and partial-rate audit for the reference and representative R2×0.465/R3×50 case.
