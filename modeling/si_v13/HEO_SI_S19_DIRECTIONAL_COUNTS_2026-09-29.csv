@@ -1,0 +1,6 @@
+Criterion,Passed,Tested
+BM-HEO peak < HEO peak,105,105
+BM-HEO width > HEO width,105,105
+Mg-HEO peak < HEO peak,105,105
+BM-Mg-HEO peak < HEO peak,105,105
+BM-Mg-HEO peak > Mg-HEO peak,80,105
