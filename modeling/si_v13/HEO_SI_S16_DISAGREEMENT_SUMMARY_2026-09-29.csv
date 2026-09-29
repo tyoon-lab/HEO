@@ -1,0 +1,7 @@
+Metric,Value
+States in conflict quadrant (Dapp>1 and t63_HEO/t63_BM<1),35.0
+Total matched states,37.0
+Median Dapp_BM/Dapp_HEO,1.7816636
+Median t63_HEO/t63_BM,0.7621861174658379
+States with Dapp_BM/Dapp_HEO > 1,37.0
+States with t63_HEO/t63_BM < 1,35.0
