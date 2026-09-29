@@ -58,10 +58,10 @@ Exact raw-sample table generated in the active analysis session:
 Purpose: test whether the HEO/BM kinetic ordering depends on choosing the 63.2% relaxation time.
 
 Definitions use the same current-off window as the main analysis:
-- common reference: 3 s after current interruption;
+- common reference: third recorded zero-current sample after current interruption;
 - rest endpoint: end of the nominal 60 min rest;
-- t50 and t90: first time to complete 50% and 90% of the observed 3 s-to-rest-end recovery;
-- t63: frozen authoritative main-text ratio from the committed HEO/BM audit.
+- t50, t63, and t90: first raw sample to complete 50%, 63.2%, and 90% of the observed reference-to-rest-end recovery.
+The raw-sample t63 result reproduces the frozen main-text ordering and median values to rounding.
 
 State-matched interval: 37 points, approximately 200–800 mAh g^-1.
 
@@ -69,14 +69,16 @@ Direct relaxation-rate ratio is oriented as HEO/BM so that values below unity me
 
 | Descriptor | Median HEO/BM direct-rate ratio | BM slower states |
 |---|---:|---:|
-| t50 | 0.7297 | 34/37 |
-| t63 | 0.7622 | 35/37 |
-| t90 | 0.9007 | 33/37 |
+| t50 | 0.7235 | 34/37 |
+| t63 | 0.7599 | 35/37 |
+| t90 | 0.8961 | 33/37 |
 
 Conclusion: the slower BM current-off response is not an artifact of choosing t63. The contrast weakens at the late 90% recovery criterion, but the ordering remains BM slower over most of the common interval.
 
-Current local artwork:
-- `heo_si_step2A/Figure_S15_t50_t63_t90_robustness.png`
+Final Step 2A-1 artwork:
+- `heo_si_v12_step2A_final/Figure_S15_t50_t63_t90_robustness_final.png`
+
+The final S15 plot uses the exact raw-sample crossings for all three descriptors. It plots the HEO/BM direct relaxation-rate ratios against matched capacity. The unity line separates states where BM-HEO relaxes more slowly (<1) from states where it is not slower (>1). The figure therefore provides a direct robustness test of the chosen relaxation fraction without duplicating the main Figure 4b apparent-diffusivity comparison.
 
 ## Figure S16 — descriptor-disagreement map
 
