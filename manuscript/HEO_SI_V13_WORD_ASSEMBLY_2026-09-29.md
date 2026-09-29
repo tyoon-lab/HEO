@@ -41,7 +41,7 @@ The SI reference list was corrected against publisher/DOI records:
 - Li et al., DOI 10.1021/jacs.6b00061 is the metal-fluoride conversion-electrode voltage-hysteresis paper.
 - Parsons, DOI 10.1351/pac197437040499 is “Electrochemical nomenclature.”
 
-These corrections should also be synchronized to the main-manuscript reference list at the next main-text reference pass.
+These corrected metadata are now also present in the current main-manuscript v16 reference list; retain the DOI/title pairings above in future edits.
 
 ## QA
 
