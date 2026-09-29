@@ -100,21 +100,24 @@ Current local artwork:
 ## Figure S17 — voltage-term decomposition
 
 Plot versus matched capacity:
-- Delta Es,BM / Delta Es,HEO
-- Delta Etau,BM / Delta Etau,HEO
+- ΔEs,BM / ΔEs,HEO
+- ΔEτ,BM / ΔEτ,HEO
 - Dapp,BM / Dapp,HEO
 
-Frozen median ratios from the conventional-GITT audit:
-- median Delta Es ratio = 1.8095
-- median Delta Etau ratio = 1.1758
+Final medians:
+- median ΔEs ratio = 1.8095
+- median ΔEτ ratio = 1.1758
 - median Dapp ratio = 1.7817
 
 The stronger increase in the relaxed voltage increment than in the finite-pulse voltage excursion raises the conventional Dapp ratio even though direct current-off relaxation is slower.
 
-This decomposition is not shown in the main text and therefore adds SI-specific mechanistic audit value.
+Final artwork:
+- `Figure_S17_voltage_term_decomposition_final.png`
 
-Current local artwork:
-- `heo_si_step2A/Figure_S17_voltage_term_decomposition.png`
+Final summary table:
+- `Figure_S17_voltage_term_decomposition_summary.csv`
+
+This decomposition is not shown in the main text and therefore adds SI-specific mechanistic audit value.
 
 ## Main–SI non-redundancy check
 
