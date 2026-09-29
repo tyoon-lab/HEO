@@ -1,7 +1,7 @@
 # HEO SI v12 Step 2C — Four-Step Microkinetic Audit
 
 **Date:** 2026-09-29  
-**Status:** Figures S21–S22 complete and frozen; Figure S23 pending.
+**Status:** Figures S21–S23 complete and frozen.
 
 ## Figure S21 — full single-step rate sweeps
 
@@ -85,6 +85,69 @@ Current final artwork:
 Current numerical summary:
 - `Figure_S22_R2_fixed_linecuts_summary.csv`
 
-## Next
 
-Figure S23 — eigenmode spectrum and partial-rate audit for the reference and representative R2×0.465/R3×50 case.
+## Figure S23 — eigenmode spectrum and partial-rate audit
+
+Purpose: provide the internal kinetic diagnostics behind main Figure 6d without repeating the main voltage-relaxation curves.
+
+Representative cases:
+- reference model;
+- step-selective case (R_2\times0.465, R_3\times50), which lies in the higher-capacity/slower-relaxation regime.
+
+### Panel (a): finite current-off eigen-timescales
+
+Reference finite modes:
+- slowest: 15.35 min;
+- intermediate: 5.96 min;
+- fast: 0.482 min.
+
+(R_2\times0.465, R_3\times50):
+- slowest: 17.68 min;
+- intermediate: 0.584 min;
+- fast: 0.183 min.
+
+Thus the slowest internal mode becomes longer even while the faster internal modes accelerate strongly. The model therefore does not possess one common kinetic acceleration factor governing the full current-off response.
+
+### Panel (b): partial rates at pulse end and 3 s after current interruption
+
+At the 3 s open-circuit state:
+
+Reference:
+- (r_1=-5.0\times10^{-5});
+- (r_2=1.13\times10^{-4});
+- (r_3=7.4\times10^{-5});
+- (r_4=+5.0\times10^{-5}).
+
+Representative step-selective case:
+- (r_1=-6.2\times10^{-5});
+- (r_2=1.03\times10^{-4});
+- (r_3=9.1\times10^{-5});
+- (r_4=+6.2\times10^{-5}).
+
+For both cases, (r_1+r_4\approx0) at open circuit while (r_2) and (r_3) remain finite. Zero external Faradaic current therefore does not require all internal conversion-network rates to vanish.
+
+Interpretation:
+- the representative (Q\uparrow/t_{63}\uparrow) case lengthens the slowest internal relaxation mode;
+- at the same time, the network retains substantial internal redistribution after current interruption;
+- faster and slower internal modes shift in opposite directions;
+- this provides the mechanistic audit for the main-text statement that greater downstream reaction throughput can coexist with a slower dominant current-off mode.
+
+The partial rates and eigenmodes are model diagnostics, not experimentally extracted microscopic rates or uniquely assigned HEO elementary steps.
+
+## Non-redundancy versus main Figure 6d
+
+Main Figure 6d shows only the observable current-off voltage relaxation for the reference and representative step-selective case.
+Figure S23 instead exposes:
+- the finite eigenmode spectrum;
+- the sign and magnitude of the four partial rates at pulse end and immediately after current interruption.
+
+Current final artwork:
+- `Figure_S23_eigenmode_partial_rate_audit_final.png`
+
+Current numerical summaries:
+- `Figure_S23_eigenmode_summary.csv`
+- `Figure_S23_rest3_partial_rate_summary.csv`
+
+## Step 2C completion
+
+Figures S21–S23 now provide SI-only mechanistic audits and do not reproduce main Figure 6 panels directly.
