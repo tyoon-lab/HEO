@@ -29,13 +29,13 @@ Final artwork:
 - `Figure_S7_no_FEC_cycling_control_final.png`
 
 ### Figure S8 — rate capability
-**Current artwork:** absolute capacity versus rate-cycle sequence plus normalized retention/recovery.
+**Current artwork:** final SI artwork now retains only normalized capacity retention/recovery across the rate sequence.
 
 **Overlap:** the upper absolute-capacity panel substantially repeats main Figure 3d.
 
-**Decision:** **REBUILD.**
+**Decision:** **FROZEN.**
 
-Final S8 should show the **normalized rate-retention/recovery analysis only**, optionally with a compact final 0.1 C recovery summary. The absolute rate-capability curves remain in main Figure 3d.
+Final S8 shows the **normalized rate-retention/recovery analysis only**. The absolute rate-capability curves remain exclusively in main Figure 3d.
 
 ### Figure S9 — cycles 1–3 voltage profiles
 **Current artwork:** cycles 1, 2, and 3 for all four materials.
