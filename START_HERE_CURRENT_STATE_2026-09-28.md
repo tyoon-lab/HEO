@@ -1,3 +1,5 @@
+> **SUPERSEDED 2026-09-30:** use `START_HERE_CURRENT_STATE_2026-09-30.md` as the current restart authority. This 2026-09-28 file is retained for provenance.
+
 # HEO — Current State, 2026-09-28
 
 ## Read this first
