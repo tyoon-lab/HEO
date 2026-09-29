@@ -26,6 +26,33 @@ The recalculated median (t_{63}=8.6833) min reproduces the frozen manuscript val
 
 Note: this sub-audit concerns the fractional relaxation times. The separately frozen (Delta E_{\mathrm{relax}}) median uses its established endpoint-processing convention and is not redefined here.
 
+
+## Raw BM-HEO revalidation using the same sample-index convention
+
+The same raw-sample procedure was applied to the BM-HEO workbook over the identical pulses 12–48.
+
+Median fractional-relaxation times measured from the common third zero-current sample are:
+
+| Sample | t50 (min) | t63 (min) | t90 (min) |
+|---|---:|---:|---:|
+| HEO | 4.3167 | 8.6833 | 34.8333 |
+| BM-HEO | 6.0167 | 11.5500 | 38.9000 |
+
+The raw-sample BM median t63 of 11.55 min differs by only 0.02 min from the frozen manuscript value of 11.57 min. The small difference is consistent with raw-sample threshold crossing versus the interpolated descriptor used in the frozen audit and does not affect the ordering.
+
+Using the exact raw-sample crossings, the state-matched HEO/BM direct-rate ratios and directional counts are:
+
+| Descriptor | median HEO/BM ratio | BM slower states |
+|---|---:|---:|
+| t50 | 0.7235 | 34/37 |
+| t63 | 0.7599 | 35/37 |
+| t90 | 0.8961 | 33/37 |
+
+These counts are identical to the previously generated interpolated robustness audit (34/37, 35/37, and 33/37, respectively). Therefore the central conclusion is insensitive both to the chosen relaxation fraction and to the small choice between raw-sample threshold crossing and interpolation.
+
+Exact raw-sample table generated in the active analysis session:
+`HEO_BM_t50_t63_t90_raw_exact_2026-09-29.csv`.
+
 ## Figure S15 — relaxation-fraction robustness
 
 Purpose: test whether the HEO/BM kinetic ordering depends on choosing the 63.2% relaxation time.
