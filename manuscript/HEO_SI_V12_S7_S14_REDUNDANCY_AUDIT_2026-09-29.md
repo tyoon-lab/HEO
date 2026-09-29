@@ -11,18 +11,22 @@ A supplementary figure is retained only if it adds a control, history dependence
 
 ## Figure-by-figure decision
 
-### Figure S7 — FEC control
-**Current artwork:** two stacked cycling panels: principal 10 wt% FEC four-material cycling and corresponding no-FEC cycling.
+### Figure S7 — no-FEC cycling control
+**Final artwork:** no-FEC 0.1 C cycling of HEO, BM-HEO, Mg-HEO, and BM-Mg-HEO only.
 
-**Overlap:** the FEC cycling panel substantially overlaps the role of main Figure 3c, which already presents the principal 0.1 C cycling comparison.
+**Overlap:** removed. The FEC-containing full cycling comparison remains in main Figure 3c and is not repeated in the SI.
 
-**Decision:** **REBUILD.**
+**Decision:** **FROZEN.**
 
-Final S7 should retain the no-FEC control without reproducing the main FEC cycling panel as a second full trace set. Preferred layout:
-- panel (a): no-FEC cycling of the four materials;
-- panel (b): compact FEC-versus-no-FEC retention/control summary (for example selected-cycle retention or endpoint comparison), rather than a second copy of the full FEC cycling curves.
+Final role:
+- Figure S7 contains only the no-FEC control trace set;
+- the main-text FEC cycling panel provides the corresponding principal condition;
+- no approximate digitized FEC/no-FEC summary is introduced because the original numerical control export is not independently frozen.
 
-Scientific boundary: use the control to establish increased interphase/cycling burden under the no-FEC condition; do not assign a unique SEI chemistry from this comparison.
+Scientific boundary: use the control to show the stronger cycling/interphase burden without FEC, especially for BM-HEO, but do not assign a unique SEI chemistry from this comparison.
+
+Final artwork:
+- `Figure_S7_no_FEC_cycling_control_final.png`
 
 ### Figure S8 — rate capability
 **Current artwork:** absolute capacity versus rate-cycle sequence plus normalized retention/recovery.
@@ -95,7 +99,7 @@ Final S14 should show a compact four-material representative audit, preferably a
 
 | Figure | Final status |
 |---|---|
-| S7 | rebuild — no-FEC control + compact FEC/no-FEC summary |
+| S7 | frozen — no-FEC cycling control only; FEC counterpart remains in main Fig. 3c |
 | S8 | rebuild — normalized rate retention/recovery only |
 | S9 | keep |
 | S10 | keep |
@@ -106,9 +110,8 @@ Final S14 should show a compact four-material representative audit, preferably a
 
 ## Consequence for final SI build
 
-Do not assemble the final SI Word yet. First complete only the three electrochemical artwork revisions:
-1. revised Figure S7;
-2. revised Figure S8;
-3. revised Figure S14.
+Do not assemble the final SI Word yet. Figure S7 is now frozen. Complete only the remaining two electrochemical artwork revisions:
+1. revised Figure S8;
+2. revised Figure S14.
 
 Figures S9–S13 can remain as current working sources, subject to publication-style cleanup. Figures S15–S23 are already frozen under the later robustness/microkinetic audit sequence.
