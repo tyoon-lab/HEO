@@ -85,3 +85,41 @@ Current numerical summaries:
 ## Next
 
 - Figure S20: cycle-history robustness.
+
+
+## Figure S20 — cycle-history robustness
+
+Purpose: keep the former cycle-history analysis in the SI and test whether the capacity–relaxation mismatch is confined to the first cycle.
+
+Frozen panels:
+- (a) conversion-associated excess-peak state, z_peak, for cycles 1–3;
+- (b) excess-peak amplitude for cycles 1–3;
+- (c) median t63 over the common lithiation window for cycles 1–3;
+- (d) cycle-3/cycle-1 amplitude ratio A3/A1 versus timescale ratio t63,3/t63,1.
+
+Key observations:
+- the first-cycle late peak at z≈0.66–0.79 shifts to a common earlier region near z≈0.50–0.56 by cycles 2–3;
+- the excess-response amplitude evolves much more strongly than the effective timescale;
+- A3/A1 spans 0.435–1.698, whereas t63,3/t63,1 remains within 0.845–0.923;
+- BM-HEO retains longer t63 than HEO in cycles 2 and 3 while also retaining the higher approximate reversible capacity;
+- the capacity–relaxation mismatch is therefore not attributable only to first-cycle irreversibility.
+
+Current final artwork:
+- `Figure_S20_cycle_history_robustness_final.png`
+
+Current numerical summary:
+- `Figure_S20_cycle_history_summary.csv`
+
+Interpretation boundary:
+- cycle-history changes demonstrate that the conversion-associated relaxation is history dependent;
+- the excess amplitude is not treated as a stationary phase fraction or as a direct measure of conversion extent;
+- the lithiation/delithiation capacities derived by pulse counting are approximate reaction-extent descriptors.
+
+## Step 2B status
+
+Figures S18–S20 are complete and non-redundant with the main text:
+- S18 adds peak-location uncertainty/sensitivity beyond main Figure 5c;
+- S19 adds the 105-condition amplitude/width robustness audit;
+- S20 contains the cycle-history analysis that is intentionally excluded from the current main-text figure sequence.
+
+Next: Step 2C, Figures S21–S23, detailed four-step microkinetic audit.
