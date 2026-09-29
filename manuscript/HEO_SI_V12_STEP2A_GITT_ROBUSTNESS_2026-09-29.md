@@ -3,6 +3,29 @@
 **Date:** 2026-09-29  
 **Status:** Step 2A complete; figures generated and scientifically checked against main Figure 4.
 
+
+## Raw HEO revalidation — exact sample-index convention
+
+The HEO raw workbook was re-opened directly and the first-lithiation GITT block was segmented from the recorded current transitions.
+
+Recovered timing:
+- initial GITT pulse starts at test time 21601 s;
+- each pulse contains 600 recorded current-on samples;
+- each rest contains 3600 recorded zero-current samples;
+- pulse (n) starts at (21601+(n-1)	imes4200) s;
+- pulses 12–48 correspond to approximately 200–800 mAh g⁻¹.
+
+For the historical direct-relaxation descriptor, the reference voltage is taken at the **third recorded zero-current sample after the switch**, and the characteristic time is the **first raw sample** reaching the requested fraction of the observed reference-to-rest-end recovery. No interpolation is required for the frozen value.
+
+Using the raw HEO workbook over pulses 12–48 gives:
+- median (t_{50}=4.3167) min;
+- median (t_{63}=8.6833) min;
+- median (t_{90}=34.8333) min.
+
+The recalculated median (t_{63}=8.6833) min reproduces the frozen manuscript value of 8.68 min to rounding. This raw revalidation fixes the sample-index convention to be used for the BM-HEO robustness calculation.
+
+Note: this sub-audit concerns the fractional relaxation times. The separately frozen (Delta E_{\mathrm{relax}}) median uses its established endpoint-processing convention and is not redefined here.
+
 ## Figure S15 — relaxation-fraction robustness
 
 Purpose: test whether the HEO/BM kinetic ordering depends on choosing the 63.2% relaxation time.
