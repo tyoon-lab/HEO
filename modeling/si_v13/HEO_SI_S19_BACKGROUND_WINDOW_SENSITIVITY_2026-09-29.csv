@@ -1,0 +1,5 @@
+Sample,Peak_nominal_mV,Peak_min_mV,Peak_max_mV,Width_nominal_mAh_g,Width_min_mAh_g,Width_max_mAh_g
+HEO,70.77,60.7,74.7,354.13,306,379
+BM-HEO,44.07,36.7,51.0,430.17,379,497
+Mg-HEO,15.91,13.0,18.6,250.29,192,351
+BM-Mg-HEO,21.1,12.6,27.6,391.78,233,872
