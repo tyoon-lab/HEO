@@ -18,8 +18,8 @@ The paper is a materials/conversion-mechanism paper using GITT relaxation as the
 
 1. Main manuscript: `manuscript/HEO_MANUSCRIPT_V17_PI_COMMENTS_INTEGRATED_2026-09-30.md`
 2. Main reference audit: `manuscript/HEO_REFERENCE_AUDIT_MAIN_V16_2026-09-28.md`
-3. SI architecture freeze: `manuscript/HEO_SI_V12_ARCHITECTURE_FREEZE_2026-09-29.md`
-4. SI final assembly note: `manuscript/HEO_SI_V13_WORD_ASSEMBLY_2026-09-29.md`
+3. SI authority: `manuscript/HEO_SUPPORTING_INFORMATION_V14_MAIN_V17_ALIGNED_2026-09-30.md`
+4. Previous SI Word assembly note: `manuscript/HEO_SI_V13_WORD_ASSEMBLY_2026-09-29.md`
 5. SI electrochemical redundancy audit: `manuscript/HEO_SI_V12_S7_S14_REDUNDANCY_AUDIT_2026-09-29.md`
 6. SI Step 2A GITT robustness: `manuscript/HEO_SI_V12_STEP2A_GITT_ROBUSTNESS_2026-09-29.md`
 7. SI Step 2B localization/history: `manuscript/HEO_SI_V12_STEP2B_LOCALIZATION_HISTORY_2026-09-29.md`
@@ -150,14 +150,13 @@ Thus Figure 6c should retain BOTH experimental markers but distinguish two model
 
 Do not assign BM uniquely to R2/R3 or Mg uniquely to u4. The calculations are mechanistic-consistency tests.
 
-## Supporting Information status — v13
+## Supporting Information status — v14
 
-The electrochemical/mechanistic SI has been rebuilt and de-duplicated against the main text.
+The SI scientific/text authority has been revised to match main v17:
 
-Current Word export generated in the latest session:
-`HEO_SI_V13_FinalElectrochem_2026-09-29.docx`
+`manuscript/HEO_SUPPORTING_INFORMATION_V14_MAIN_V17_ALIGNED_2026-09-30.md`
 
-It contains 20 rendered/QA-checked pages.
+The existing v13 Word file remains an earlier export and will be rebuilt only after the dedicated Main/SI numbering audit.
 
 ### Structural package still pending
 Figures S1–S6 remain collaborator-dependent:
@@ -170,53 +169,51 @@ Figures S1–S6 remain collaborator-dependent:
 
 Do not fabricate these panels.
 
-### Frozen electrochemical/mechanistic SI figures
+### Revised electrochemical/mechanistic SI architecture
 
-- S7: no-FEC cycling control only
-- S8: normalized rate retention/recovery only
+- S7: no-FEC cycling control
+- S8: normalized rate retention/recovery
 - S9: cycles 1–3 voltage profiles
 - S10: cycle-resolved dQ/dV
 - S11: relative interfacial-capacitance audit
-- S12: pristine/post-cycle SEM; recheck exact pristine-image duplication after main Figure 2 is frozen
+- S12: pristine/post-cycle SEM
 - S13: full multi-cycle GITT
-- S14: four-material 3–30 s E–sqrt(t) fits at about 500 mAh g^-1
-- S15: t50/t63/t90 robustness
+- S14: four-material early E–sqrt(t) audit
+- S15: **all-four t63 state dependence + t50/t63/t90 HEO/BM robustness**
 - S16: Dapp/direct-relaxation disagreement map
 - S17: GITT voltage-term decomposition
-- S18: dQ/dV–GITT peak localization with sensitivity
-- S19: 105-condition background/window sensitivity
+- S18: dQ/dV–relaxation-hump localization sensitivity
+- S19: 105-condition relaxation-hump background/window sensitivity
 - S20: cycle-history robustness
-- S21: full R1–R4 single-step sweeps
+- S21: full R1–R4 single-step rate-perturbation sweeps
 - S22: fixed-R2 line cuts through the R2–R3 map
-- S23: eigenmode spectrum + partial-rate audit
+- S23: collective eigenmode spectrum + partial-rate audit
+- S24: **Mg product-side equilibrium-offset trajectory**
 
-### Newly committed SI numerical authorities
+### New v14 numerical authorities
 
-Directory: `modeling/si_v13/`
+Directory: `modeling/si_v14/`
 
-- `HEO_SI_S14_ESQRT_FIT_SUMMARY_2026-09-29.csv`
-- `HEO_SI_S15_T50_T63_T90_RAW_EXACT_2026-09-29.csv`
-- `HEO_SI_S16_DISAGREEMENT_SUMMARY_2026-09-29.csv`
-- `HEO_SI_S17_VOLTAGE_TERM_DECOMPOSITION_SUMMARY_2026-09-29.csv`
-- `HEO_SI_S18_PEAK_LOCALIZATION_SENSITIVITY_2026-09-29.csv`
-- `HEO_SI_S19_BACKGROUND_WINDOW_SENSITIVITY_2026-09-29.csv`
-- `HEO_SI_S19_DIRECTIONAL_COUNTS_2026-09-29.csv`
-- `HEO_SI_S20_CYCLE_HISTORY_SUMMARY_2026-09-29.csv`
-- `HEO_SI_S21_SINGLE_STEP_SWEEP_SUMMARY_2026-09-29.csv`
-- `HEO_SI_S22_R2_FIXED_LINECUTS_SUMMARY_2026-09-29.csv`
-- `HEO_SI_S23_EIGENMODE_SUMMARY_2026-09-29.csv`
-- `HEO_SI_S23_REST3_PARTIAL_RATE_SUMMARY_2026-09-29.csv`
+- `HEO_SI_S15_ALLFOUR_T63_BINNED_2026-09-30.csv`
+- `HEO_SI_FIG4_WINDOW_ROBUSTNESS_SUMMARY_2026-09-30.csv`
+- `HEO_SI_S24_MG_U4_TRAJECTORY_2026-09-30.csv`
+- `plot_HEO_SI_S15_state_fraction_robustness.py`
+- `plot_HEO_SI_S24_Mg_thermodynamic_trajectory.py`
 
-Key SI robustness results:
-- t50: median HEO/BM direct-rate ratio 0.7235; BM slower 34/37 states
-- t63: 0.7599 by exact raw crossing; BM slower 35/37
-- t90: 0.8961; BM slower 33/37
-- conventional-GITT conflict quadrant: 35/37 states
-- median Delta Es ratio BM/HEO = 1.8095
-- median Delta Etau ratio BM/HEO = 1.1758
-- 105-condition BM peak < HEO: 105/105
-- 105-condition BM width > HEO: 105/105
-- BM-Mg width is highly background-sensitive and should not be overinterpreted.
+Important S15 boundary:
+- panel (a) uses the fully verified common all-four state-resolved overlap, approximately z = 0.20–0.63;
+- the main Figure 4 medians remain z = 0.40–0.90 and are tabulated separately;
+- no unverified BM state-resolved values are extrapolated.
+
+Table S5 now explicitly distinguishes the main z = 0.40–0.90 medians from the former 200–800 mAh g^-1 medians retained as robustness/context.
+
+Table S15 is revised to use:
+- BM experiment: Q = 1.284, t63 = 1.256;
+- representative R2×0.465/R3×50: Q = 1.111, t63 = 1.087;
+- Mg experiment: Q = 0.7534, t63 = 1.0154, Delta E = 0.6605;
+- illustrative u4 = -1.5: Q = 0.7637, t63 = 0.9975, modeled Delta E = 0.7549.
+
+Table S18 is added for the full Mg thermodynamic trajectory.
 
 ## Reference state
 
@@ -273,8 +270,8 @@ Avoid:
 Current main-text authority is v17. The Figure 4–6 logic is now revised after PI comment review and the Mg re-analysis.
 
 Next:
-1. revise the Supporting Information to match the new main-text terminology, Figure S15 state-resolved t63 addition, detailed model derivation, and Mg thermodynamic trajectory;
-2. compare Main and SI cross-references/numbering after the SI revision;
+1. compare Main v17 and SI v14 cross-references/numbering and verify that every retained SI item is appropriately called from the main text;
+2. resolve any numbering/citation mismatches found in that audit;
 3. regenerate commented Main Word and revised SI Word;
 4. freeze Figures 1–2 and insert structural SI S1–S6 when collaborator data arrive;
 5. finish methods metadata and run the final submission audit.
