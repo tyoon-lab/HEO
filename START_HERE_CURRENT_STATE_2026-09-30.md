@@ -16,7 +16,7 @@ The paper is a materials/conversion-mechanism paper using GITT relaxation as the
 
 ## Current authority order
 
-1. Main manuscript: `manuscript/HEO_MANUSCRIPT_V16_AFM_CAPACITY_KINETICS_2026-09-28.md`
+1. Main manuscript: `manuscript/HEO_MANUSCRIPT_V17_PI_COMMENTS_INTEGRATED_2026-09-30.md`
 2. Main reference audit: `manuscript/HEO_REFERENCE_AUDIT_MAIN_V16_2026-09-28.md`
 3. SI architecture freeze: `manuscript/HEO_SI_V12_ARCHITECTURE_FREEZE_2026-09-29.md`
 4. SI final assembly note: `manuscript/HEO_SI_V13_WORD_ASSEMBLY_2026-09-29.md`
@@ -25,7 +25,9 @@ The paper is a materials/conversion-mechanism paper using GITT relaxation as the
 7. SI Step 2B localization/history: `manuscript/HEO_SI_V12_STEP2B_LOCALIZATION_HISTORY_2026-09-29.md`
 8. SI Step 2C microkinetic audit: `manuscript/HEO_SI_V12_STEP2C_MICROKINETIC_AUDIT_2026-09-29.md`
 9. Four-step model authority: `modeling/HEO_FOUR_STEP_HOMOGENEOUS_MICROKINETIC_AUDIT_2026-09-28.md`
-10. Conventional-GITT audit: `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
+10. Revised Mg four-step audit: `modeling/HEO_MG_REVISED_WINDOW_FOUR_STEP_TEST_2026-09-30.md`
+11. Revised Mg thermodynamic trajectory: `modeling/HEO_MG_REVISED_WINDOW_U4_TRAJECTORY_2026-09-30.csv`
+12. Conventional-GITT audit: `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
 
 Word files are exports and do not override the Markdown/data authority.
 
@@ -51,34 +53,48 @@ Interpretation:
 
 ### Figure 4 — decisive capacity–relaxation mismatch
 
-Median 200–800 mAh g^-1 values:
+Main four-material medians now use the common normalized first-lithiation window z = 0.40–0.90:
 
 | Sample | Delta E_relax (mV) | t63 (min) | first-cycle delithiation capacity (mAh g^-1) |
 |---|---:|---:|---:|
-| HEO | 160.9 | 8.68 | 609.12 |
-| BM-HEO | 176.3 | 11.57 | 782.08 |
-| Mg-HEO | 109.5 | 11.01 | 458.91 |
-| BM-Mg-HEO | 144.3 | 12.99 | 580.83 |
+| HEO | 168.5 | 10.37 | 609.12 |
+| BM-HEO | 160.5 | 13.02 | 782.08 |
+| Mg-HEO | 111.3 | 10.53 | 458.91 |
+| BM-Mg-HEO | 135.2 | 12.70 | 580.83 |
 
 Primary contradiction:
 **HEO -> BM-HEO gives capacity up while t63 also increases, i.e. higher accessible conversion with slower relaxation.**
 
-Mg is complementary, not the same contradiction:
-- capacity decreases;
-- t63 increases;
-- Delta E_relax decreases.
+The same milling direction is also present in the Mg-containing pair:
+- Mg-HEO -> BM-Mg-HEO: capacity increases;
+- t63 also increases.
 
-State-matched HEO/BM conventional-GITT audit:
+Mg incorporation is a different comparison:
+- capacity decreases;
+- Delta E_relax decreases strongly;
+- t63 changes very little.
+
+Therefore Mg should not be described as a lower-capacity/slower-relaxation case in the main text.
+
+Panel (b) remains the state-matched pristine-HEO/BM-HEO conventional-GITT audit over 200–800 mAh g^-1:
 - median Dapp,BM/Dapp,HEO = 1.7817;
-- ratio > 1 at 37/37 states;
 - median t63,HEO/t63,BM = 0.7622;
-- direct rate ratio < 1 at 35/37 states.
+- detailed 37-state directional counts remain in the SI rather than the main prose.
+
+The former four-material 200–800 mAh g^-1 medians are retained only as SI robustness/context, not as the main Figure 4(c,d) authority.
 
 ### Figure 5 — conversion localization
 
-The first-cycle GITT excess-relaxation peak is localized to the same voltage region as the independently reconstructed cathodic dQ/dV peak.
+Use **relaxation hump** / **background-subtracted relaxation hump**, not “GITT excess” as the main terminology.
 
-Nominal dQ/dV / GITT rest-end peak pairs:
+Figure 5a should show:
+- full first-lithiation Delta E_relax versus normalized lithiation capacity;
+- an enlarged late-stage view of the hump;
+- sample-specific background used to isolate the hump over z = 0.40–0.90.
+
+For voltage localization, each GITT step is placed at the 60 min rest-end voltage of that step.
+
+Nominal dQ/dV / relaxation-hump rest-end peak pairs:
 - HEO: 0.5446 / 0.5275 V
 - BM-HEO: 0.5891 / 0.6175 V
 - Mg-HEO: 0.4188 / 0.3870 V
@@ -86,42 +102,53 @@ Nominal dQ/dV / GITT rest-end peak pairs:
 
 All nominal offsets are within about 32 mV.
 
-Important boundary:
-- HEO, BM-HEO, and Mg-HEO peak localization is comparatively stable.
-- the shallow BM-Mg-HEO GITT peak location is background/window sensitive (0.453–0.618 V).
-- use **conversion-associated relaxation**, not a unique microscopic step assignment.
+Interpretation:
+- the late-stage relaxation hump is dominated by processes occurring in the conversion region;
+- relevant coupled processes can include nucleation/phase growth, phase-boundary motion, M–O rearrangement, cation/oxygen redistribution, and metal/Li2O formation;
+- the hump does not identify one unique microscopic step.
 
-### Figure 6 — homogeneous four-step microkinetic feasibility
+The shallow BM-Mg-HEO peak remains background/window sensitive in the SI.
+
+### Figure 6 — distinct kinetic and thermodynamic perturbations in the four-step model
 
 Current effective sequence:
+oxide-derived state -> lithiated/reduced oxide -> M–O-reconstructed state -> product-side reconstructed state -> metal/Li2O-containing converted state.
 
-[
-O \rightleftharpoons I \rightleftharpoons J \rightleftharpoons K \rightleftharpoons C
-]
+Computational state symbols remain O <-> I <-> J <-> K <-> C.
 
-Interpretation:
-- R1: initial electrochemical lithiation/electron transfer
-- R2: effective M–O dissociation/local reconstruction
-- R3: effective Li2O-forming/product-side reconstruction
-- R4: subsequent electron transfer/metal reduction
+Model meaning:
+- one kinetic population with one set of rate parameters;
+- particle/domain kinetic distributions are not included;
+- R1: initial electrochemical lithiation/electron transfer;
+- R2: effective M–O dissociation/local reconstruction;
+- R3: effective Li2O-forming/product-side reconstruction;
+- R4: subsequent electron transfer/metal reduction.
 
-This is a literature-grounded four-effective-step sequence, not a claim that HEO elementary intermediates were identified.
-
-Single-step audit:
+Single-step rate-perturbation audit:
 - slowing R2 or R3 alone gives the conventional response: capacity down, t63 up;
-- R1 and R4 are much weaker under the representative parameter set.
+- do not call this an a priori RDS assignment.
 
-Two-dimensional R2–R3 audit:
-- 28/396 sampled points satisfy Q/Q0 > 1 and t63/t0 > 1;
-- therefore higher cutoff capacity and slower relaxation are physically accessible within a homogeneous multistep network.
+BM-oriented R2–R3 audit:
+- a finite region gives Q/Q0 > 1 and t63/t0 > 1;
+- representative R2 x 0.465, R3 x 50 gives Q ratio about 1.111, t63 ratio about 1.087, slowest finite collective mode 15.35 -> 17.68 min;
+- experimental BM/HEO is Q = 1.284 and t63 = 1.256 with the revised z = 0.40–0.90 t63 authority;
+- the minimal model reproduces the direction but not the full experimental magnitude.
 
-Representative main-Figure-6d case:
-- R2 x 0.465, R3 x 50
-- Q ratio about 1.111
-- t63 ratio about 1.087
-- slowest finite eigenmode 15.35 -> 17.68 min
+Revised Mg authority:
+- experimental Mg/HEO Q ratio = 0.7534;
+- t63 ratio = 1.0154;
+- Delta E_relax ratio = 0.6605.
 
-The minimal fixed-thermodynamics R2/R3 model is an existence proof, not a quantitative BM fit.
+The fixed-thermodynamics R2–R3 map does not reproduce this Mg direction well. In the same four-step network, keeping all kinetic rates fixed and shifting only the product-side electrochemical equilibrium offset gives a Mg-like trajectory. Illustrative u4 = -3 -> -1.5:
+- Q/Q0 = 0.7637;
+- t63/t0 = 0.9975;
+- modeled Delta E ratio = 0.755.
+
+Thus Figure 6c should retain BOTH experimental markers but distinguish two model trajectories:
+- BM marker with the step-selective R2–R3 kinetic response;
+- Mg marker with a separate product-side thermodynamic-shift trajectory.
+
+Do not assign BM uniquely to R2/R3 or Mg uniquely to u4. The calculations are mechanistic-consistency tests.
 
 ## Supporting Information status — v13
 
@@ -193,9 +220,9 @@ Key SI robustness results:
 
 ## Reference state
 
-Main v16 currently contains 24 references in first-citation order.
+Main v17 retains the audited 24-reference list in first-citation order.
 
-Important corrected DOI/title pairings now present in v16:
+Important corrected DOI/title pairings retained in v17:
 - Ng et al., DOI 10.1039/D0TA09683K: NiO conversion-anode/SEI paper
 - Li et al., DOI 10.1021/jacs.6b00061: metal-fluoride conversion-electrode voltage-hysteresis paper
 - Parsons, DOI 10.1351/pac197437040499: Electrochemical nomenclature
@@ -207,13 +234,13 @@ Retain these corrected metadata.
 Preferred:
 - accessible conversion capacity
 - relaxation voltage change / relaxation magnitude
-- t63 as a directly measured, model-free effective relaxation timescale
-- conversion-associated relaxation after Figure 5 localization
+- t63 as a directly measured characteristic relaxation timescale
+- late-stage relaxation hump dominated by the conversion region after Figure 5 localization
 - conflicting apparent-diffusivity indication
 
 Avoid:
 - calling Delta E_relax itself a kinetic rate
-- treating Mg as a second BM-like capacity–kinetics contradiction
+- treating Mg as a lower-capacity/slower-relaxation case after the revised z = 0.40–0.90 analysis
 - saying apparent D proves faster kinetics
 - saying GITT is invalid
 - saying diffusion is absent
@@ -221,6 +248,7 @@ Avoid:
 - equating t63 with a microscopic forward rate constant
 - assigning experimental Delta E_relax quantitatively to the four-step model
 - reviving the discarded heterogeneous-population model as current evidence
+- forcing Mg onto the BM-oriented fixed-thermodynamics R2–R3 kinetic map
 
 ## Remaining submission blockers
 
@@ -242,11 +270,11 @@ Avoid:
 
 ## Next recommended work
 
-Do not reopen the central BM/Mg story or Figure 3–6 logic unless new data require it.
+Current main-text authority is v17. The Figure 4–6 logic is now revised after PI comment review and the Mg re-analysis.
 
 Next:
-1. freeze Figures 1–2 with Yoo-group input;
-2. insert structural SI S1–S6;
-3. finish methods metadata;
-4. run one final main/SI reference and numbering audit;
-5. regenerate final tracked Main Word and final submission SI Word.
+1. revise the Supporting Information to match the new main-text terminology, Figure S15 state-resolved t63 addition, detailed model derivation, and Mg thermodynamic trajectory;
+2. compare Main and SI cross-references/numbering after the SI revision;
+3. regenerate commented Main Word and revised SI Word;
+4. freeze Figures 1–2 and insert structural SI S1–S6 when collaborator data arrive;
+5. finish methods metadata and run the final submission audit.
