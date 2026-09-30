@@ -272,6 +272,6 @@ Current main-text authority is v17. The Figure 4–6 logic is now revised after 
 Next:
 1. compare Main v17 and SI v14 cross-references/numbering and verify that every retained SI item is appropriately called from the main text;
 2. resolve any numbering/citation mismatches found in that audit;
-3. regenerate commented Main Word and revised SI Word;
+3. regenerate commented Main Word and revised SI Word after the cross-reference audit;
 4. freeze Figures 1–2 and insert structural SI S1–S6 when collaborator data arrive;
 5. finish methods metadata and run the final submission audit.
