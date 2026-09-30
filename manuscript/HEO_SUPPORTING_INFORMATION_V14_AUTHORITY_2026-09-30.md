@@ -53,6 +53,7 @@ The existing electrochemical-control architecture is retained.
 - Figure S11. Relative interfacial-capacitance audit.
 - Figure S12. Representative pristine/post-cycle SEM.
 - Figure S13. Full multi-cycle GITT responses.
+- Table S4. Nominal relative interfacial-accessibility metric derived from the non-faradaic-window capacitance regression; retained only as a relative comparison, not an absolute electrochemically active area.
 
 Main/SI boundaries:
 - absolute FEC cycling remains in main Figure 3c;
