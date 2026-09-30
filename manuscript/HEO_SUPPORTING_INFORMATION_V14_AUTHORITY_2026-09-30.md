@@ -151,7 +151,7 @@ Frozen medians:
 
 The relaxed voltage increment changes more strongly after milling than the finite-pulse voltage excursion. This unequal change raises the conventional Dapp ratio even though the direct relaxation is slower.
 
-Tables S6 and S7 retain the full 37-state audit and compact statistics.
+Tables S6–S7 retain the full 37-state audit and compact statistics.
 
 ---
 
@@ -222,7 +222,7 @@ Frozen medians over z = 0.40–0.90:
 
 The hump amplitude changes substantially more than the characteristic timescale. BM-HEO retains longer t63 than HEO beyond the first cycle while also retaining higher approximate reversible capacity, showing that the BM capacity-relaxation ordering is not confined to first-cycle irreversibility.
 
-Tables S10 and S11 retain cycle-history descriptors and later-cycle background-form sensitivity.
+Tables S10–S11 retain cycle-history descriptors and later-cycle background-form sensitivity.
 
 ---
 
@@ -383,7 +383,7 @@ Thus the slowest collective mode lengthens while faster modes accelerate.
 
 At 3 s open circuit, r1 + r4 is approximately zero while r2 and r3 remain finite. Zero external Faradaic current therefore does not imply that all internal conversion-network rates vanish.
 
-Tables S16 and S17 retain eigenmode and partial-rate values.
+Tables S16–S17 retain eigenmode and partial-rate values.
 
 ## S5.5. Mg directional test through a product-side equilibrium shift
 
