@@ -214,13 +214,24 @@ Recast from a relaxation-only hump toward the broader **conversion-associated po
 
 ## Figure 6
 
-The former Q-based four-step microkinetic model is **no longer the default Main Figure 6**.
+The preferred Main Figure 6 is now a **fully experimental cycle-history robustness test**.
 
-Priority order:
+Raw cycle 1–3 re-analysis reproduces the previous cycle-resolved Delta E_relax and t63 authorities and extends them to Delta E_pol,60.
 
-1. test a fully experimental cycle-history robustness figure for polarization–timescale decoupling;
-2. only if needed, build a minimal multistep consistency model focused on polarization amplitude versus relaxation timescale;
-3. keep the old Q-based R2/R3 model as historical/optional SI material.
+Cycle 3 / cycle 1:
+- HEO: polarization 0.766; t63 0.923
+- BM-HEO: polarization 0.772; t63 0.870
+- Mg-HEO: polarization 1.216; t63 0.905
+- BM-Mg-HEO: polarization 1.019; t63 0.844
+
+The Mg trajectory is particularly strong: polarization increases by ~22% while t63 decreases by ~9.5% within the same material.
+
+Read:
+- `manuscript/HEO_FIGURE6_EXPERIMENTAL_HISTORY_LOCK_2026-10-03.md`
+- `modeling/HEO_CYCLE_RESOLVED_POLARIZATION_T63_AUDIT_2026-10-03.md`
+- `modeling/HEO_CYCLE_RESOLVED_POLARIZATION_T63_SUMMARY_2026-10-03.csv`
+
+The former Q-based R2/R3 model is historical/optional SI material, not the preferred Main Figure 6.
 
 ---
 
@@ -303,9 +314,9 @@ Next:
 
 1. rebuild the Figure 4 concept around Delta E_pol,60 and t63;
 2. decide whether Figure 5 should display the new background-subtracted polarization excess directly;
-3. re-evaluate the existing cycle-history dataset as the likely Figure 6 experimental robustness test;
+3. build/test the experimental cycle-history Figure 6 artwork using the newly locked C1–C3 polarization/t63 result;
 4. decide whether conventional Dapp stays in Main or moves to SI;
-5. only after Figures 4–6 are frozen, revise Abstract, Introduction endpoint, Sections 2.3–2.5, Conclusions, captions, and SI consistently.
+5. only after Figures 4–6 artwork is frozen, revise Abstract, Introduction endpoint, Sections 2.3–2.5, Conclusions, captions, and SI consistently.
 
 Working principle:
 
