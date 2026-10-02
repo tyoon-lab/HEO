@@ -6,411 +6,272 @@ This is the authoritative restart point for the HEO manuscript.
 
 A new chat/session should be able to resume from this file alone without a separate handoff.
 
-The key update since 2026-09-30 is a **reassessment of Figure 6 and the physical meaning of the modeled capacity**. The experimental manuscript is not being rewritten yet. Main v17 and SI v14 remain the text authorities until Figure 6 is re-frozen.
+## Latest scientific decision — polarization/t63 pivot
+
+The manuscript will **not** interpret sample-to-sample accessible capacity as a direct conversion-kinetic speed coordinate.
+
+The former capacity-driven question has been replaced by:
+
+> **Does conversion-region polarization magnitude track the timescale of post-interruption relaxation?**
+
+Raw GITT re-analysis shows that it does not do so universally.
+
+Read next:
+
+`manuscript/HEO_POLARIZATION_T63_PIVOT_LOCK_2026-10-03.md`
+
+Numerical authority:
+
+`modeling/HEO_CONVERSION_POLARIZATION_T63_AUDIT_2026-10-03.md`
+
+`modeling/HEO_CONVERSION_POLARIZATION_T63_SUMMARY_2026-10-03.csv`
+
+The previous Figure 6 reassessment and Q-based model files remain an audit trail, but they are no longer the default manuscript direction.
 
 ---
 
-## Paper identity
-
-Working title:
-
-**Mismatch between Capacity and Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
+# Paper identity
 
 Working target: **Advanced Functional Materials (AFM)**.
 
-The paper is a materials/conversion paper using GITT relaxation as the kinetic diagnostic. It is not intended as a general GITT-method paper.
+The current working title,
+
+**Mismatch between Capacity and Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
+
+is now **under revision** because capacity is no longer the central kinetic coordinate.
+
+The paper remains a materials/conversion paper using GITT-derived direct response descriptors. It should not become a general GITT-method paper.
 
 ---
 
-## Current authority order
+# Text authorities
 
-### Manuscript / SI
+Main manuscript authority remains:
 
-1. Main manuscript:
-   `manuscript/HEO_MANUSCRIPT_V17_PI_COMMENTS_INTEGRATED_2026-09-30.md`
-2. SI authority:
-   `manuscript/HEO_SUPPORTING_INFORMATION_V14_MAIN_V17_ALIGNED_2026-09-30.md`
-3. Main/SI cross-reference audit:
-   `manuscript/HEO_MAIN_SI_CROSSREF_AUDIT_2026-09-30.md`
-4. Main reference audit:
-   `manuscript/HEO_REFERENCE_AUDIT_MAIN_V16_2026-09-28.md`
+`manuscript/HEO_MANUSCRIPT_V17_PI_COMMENTS_INTEGRATED_2026-09-30.md`
 
-### Figure 6 / model reassessment
+SI authority remains:
 
-5. **Read next before touching Figure 6:**
-   `manuscript/HEO_FIGURE6_REASSESSMENT_LOCK_2026-10-03.md`
-6. Original four-step model authority:
-   `modeling/HEO_FOUR_STEP_HOMOGENEOUS_MICROKINETIC_AUDIT_2026-09-28.md`
-7. Operating-polarization exploratory audit:
-   `modeling/HEO_FOUR_STEP_OPERATING_POLARIZATION_AUDIT_2026-10-01.md`
-8. Local kinetic sensitivity:
-   `modeling/HEO_FOUR_STEP_LOCAL_SENSITIVITY_2026-10-03.csv`
-9. Realistic voltage-headroom audit:
-   `modeling/HEO_FOUR_STEP_VOLTAGE_HEADROOM_AUDIT_2026-10-03.md`
-   `modeling/HEO_FOUR_STEP_VOLTAGE_HEADROOM_AUDIT_2026-10-03.csv`
-10. Raw GITT terminal-polarization audit:
-   `modeling/HEO_TERMINAL_POLARIZATION_AUDIT_2026-10-03.md`
-   `modeling/HEO_TERMINAL_POLARIZATION_SUMMARY_2026-10-03.csv`
+`manuscript/HEO_SUPPORTING_INFORMATION_V14_MAIN_V17_ALIGNED_2026-09-30.md`
 
-### Other current model/data authorities
+These files have **not yet been rewritten** after the polarization/t63 pivot.
 
-11. Revised Mg four-step audit:
-   `modeling/HEO_MG_REVISED_WINDOW_FOUR_STEP_TEST_2026-09-30.md`
-12. Mg thermodynamic trajectory:
-   `modeling/HEO_MG_REVISED_WINDOW_U4_TRAJECTORY_2026-09-30.csv`
-13. Conventional GITT state-matched audit:
-   `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
-   `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
-
-Word exports do not override these Markdown/data authorities.
+Do not treat the capacity-based Section 2.5 / Figure 6 interpretation in v17 as frozen.
 
 ---
 
-# Current experimental backbone
+# New central experimental definitions
 
-## Figure 3 — accessible capacity
+For each GITT pulse, define the operational 60-min recoverable polarization:
 
-First-cycle lithiation/delithiation capacities:
+[
+Delta E_{mathrm{pol,60}}
+=
+|E_{mathrm{rest,60,min}}-E_{mathrm{pulse,end}}|.
+]
 
-- HEO: 901.25 / 609.12 mAh g^-1
-- BM-HEO: 1056.10 / 782.08
-- Mg-HEO: 731.15 / 458.91
-- BM-Mg-HEO: 944.07 / 580.83
+This compares the end-of-pulse voltage with the subsequent rest endpoint at the same post-pulse lithiation state.
 
-Safe interpretation:
-- ball milling increases accessible capacity;
-- Mg incorporation decreases accessible capacity;
-- Figure 3 does not by itself establish a microscopic kinetic rate.
+Important terminology boundary:
+
+- use **operational conversion polarization** or **60-min recoverable polarization**;
+- do not call this the exact equilibrium overpotential because the 60 min rest endpoint is not proven to be the true equilibrium potential.
+
+The existing slower current-off relaxation magnitude is:
+
+[
+Delta E_{mathrm{relax}}
+=
+|E_{mathrm{rest,60,min}}-E_{mathrm{rest,3,s}}|.
+]
+
+The characteristic time (t_{63}) remains defined from the 3 s-to-60 min relaxation.
+
+Thus:
+- polarization magnitude = amplitude-like response;
+- (t_{63}) = timescale-like response.
 
 ---
 
-## Figure 4 — primary experimental contradiction
+# First-cycle conversion-window result
 
-Current main four-material medians use the common normalized first-lithiation window z = 0.40–0.90:
+Common normalized first-lithiation window: (z=0.40)–0.90.
 
-| Sample | Delta E_relax (mV) | t63 (min) | first-cycle delithiation capacity (mAh g^-1) |
+| Sample | Delta E_pol,60 (mV) | Delta E_relax (mV) | t63 (min) |
 |---|---:|---:|---:|
-| HEO | 168.5 | 10.37 | 609.12 |
-| BM-HEO | 160.5 | 13.02 | 782.08 |
-| Mg-HEO | 111.3 | 10.53 | 458.91 |
-| BM-Mg-HEO | 135.2 | 12.70 | 580.83 |
+| HEO | 195.9 | 168.5 | 10.37 |
+| BM-HEO | 182.6 | 160.5 | 13.02 |
+| Mg-HEO | 126.4 | 111.3 | 10.53 |
+| BM-Mg-HEO | 148.2 | 135.2 | 12.70 |
 
-Primary result:
+The re-parsed Delta E_relax and t63 values reproduce the existing v17 numerical authority, validating the pulse/rest segmentation.
 
-**HEO -> BM-HEO gives higher accessible capacity while t63 becomes longer.**
+## Material-modification directions
 
-The same milling direction is also present in the Mg-containing pair:
-- Mg-HEO -> BM-Mg-HEO: capacity up;
-- t63 up.
+HEO -> BM-HEO:
+- polarization slightly decreases: ratio 0.932;
+- t63 increases: ratio 1.256.
 
-Mg incorporation is different:
-- capacity down;
-- Delta E_relax strongly down;
-- t63 almost unchanged.
+HEO -> Mg-HEO:
+- polarization strongly decreases: ratio 0.645;
+- t63 is nearly unchanged: ratio 1.015.
 
-Do NOT describe Mg as simply lower-capacity/slower-relaxation.
-
-### Conventional GITT conflict
-
-HEO/BM state-matched range: approximately 200–800 mAh g^-1, 37 states.
-
-- median Dapp,BM/Dapp,HEO = 1.7817
-- median t63,HEO/t63,BM = 0.7622
-- Dapp ratio > 1 at 37/37 states
-- direct relaxation ranks BM slower at 35/37 states
-
-Safe statement:
-
-**Conventional GITT-derived apparent diffusivity does not preserve the observed HEO/BM current-off relaxation ordering.**
-
-Do not say GITT is invalid or diffusion is absent.
-
----
-
-## Figure 5 — conversion localization
-
-Use:
-- relaxation hump
-- background-subtracted relaxation hump
-
-not “GITT excess” as the main term.
-
-Nominal dQ/dV / rest-end relaxation-hump peak pairs:
-
-- HEO: 0.5446 / 0.5275 V
-- BM-HEO: 0.5891 / 0.6175 V
-- Mg-HEO: 0.4188 / 0.3870 V
-- BM-Mg-HEO: 0.4848 / 0.5029 V
-
-All nominal offsets are within ~32 mV.
-
-Safe interpretation:
-- the late-stage relaxation hump is dominated by processes in the conversion region;
-- it does not identify one unique microscopic elementary step.
-
----
-
-# Figure 6 — CURRENT STATUS AFTER 2026-10-03 REASSESSMENT
-
-## Original role
-
-The four-step model uses:
-
-O <-> I <-> J <-> K <-> C
-
-with:
-- R1: initial electrochemical lithiation/electron transfer
-- R2: effective M–O dissociation/local reconstruction
-- R3: effective Li2O-forming/product-side reconstruction
-- R4: subsequent electron transfer/metal reduction
-
-The model was introduced as a minimal homogeneous multistep network to test whether higher accessible capacity and slower current-off relaxation can coexist.
-
-### Frozen original representative result
-
-R2 x 0.465, R3 x 50:
-
-- Q/Q0 ≈ 1.111
-- t63/t0 ≈ 1.087
-- slowest finite mode ≈ 15.35 -> 17.68 min
-
-This remains a valid **mathematical/kinetic existence test**.
-
----
-
-## Critical new issue: experimental cutoff is not approached by growing pulse polarization
-
-The real cell operates between 0.005 and 2.5 V. The conversion region is in the several-hundred-mV range.
-
-Raw first-lithiation GITT traces for all four samples were re-parsed to test whether pulse polarization grows near the terminal cutoff.
-
-Definitions:
-- dE_inst = |E_3s - E_previous_rest_end|
-- dE_tau = |E_pulse_end - E_3s|
-- dE_total = |E_pulse_end - E_previous_rest_end|
-
-Fixed 600 s pulses only; final partial pulse excluded from terminal-window comparison.
-
-Median dE_tau:
-
-| Sample | z=0.80–0.90 | z=0.90–0.98 |
-|---|---:|---:|
-| HEO | 185.6 mV | 147.8 mV |
-| BM-HEO | 139.2 | 119.3 |
-| Mg-HEO | 136.2 | 128.1 |
-| BM-Mg-HEO | 132.1 | 119.9 |
-
-The total pulse excursion also decreases in every sample.
+Mg-HEO -> BM-Mg-HEO:
+- polarization increases: ratio 1.172;
+- t63 increases: ratio 1.207.
 
 Therefore:
 
-**There is no evidence that first-lithiation cutoff is reached because pulse polarization progressively grows at the end of lithiation.**
+> **Conversion-region polarization magnitude and post-interruption relaxation timescale do not collapse onto one material-independent fast–slow coordinate.**
 
-The baseline/rest voltage itself moves downward toward cutoff.
+Do not use a four-sample Pearson/Spearman coefficient as the central evidence. The directional material contrasts are the primary result.
 
-Consequences:
-- do not explain experimental capacity differences by a growing terminal overpotential;
-- do not say “polarization drives cutoff” as the principal physical mechanism;
-- pulse excursion is operational and is not a unique microscopic overpotential.
+---
+
+# Conversion localization under the new definition
+
+Using the same first-cycle exponential-background protocol as the existing Figure 5 analysis, the background-subtracted Delta E_pol,60 excess gives:
+
+| Sample | excess peak (mV) | z_peak | rest-end V at peak (V) | cathodic dQ/dV peak (V) | offset |
+|---|---:|---:|---:|---:|---:|
+| HEO | 72.5 | 0.754 | 0.537 | 0.545 | -7.5 mV |
+| BM-HEO | 49.3 | 0.671 | 0.618 | 0.589 | +28.4 mV |
+| Mg-HEO | 16.9 | 0.792 | 0.387 | 0.419 | -31.8 mV |
+| BM-Mg-HEO | 22.0 | 0.661 | 0.503 | 0.485 | +18.0 mV |
+
+All nominal offsets remain within approximately 32 mV.
+
+Therefore the previous Figure 5 localization logic survives the pivot:
+
+> **The additional recoverable polarization is localized to the conversion region, but its magnitude does not uniquely determine the relaxation timescale.**
+
+---
+
+# Capacity role after the pivot
+
+Figure 3 can retain capacity/performance data.
+
+Safe statements:
+- ball milling increases accessible capacity;
+- Mg incorporation decreases accessible capacity;
+- the material modifications therefore change electrochemical utilization/performance.
+
+Do NOT infer:
+- larger capacity = faster conversion kinetics;
+- smaller capacity = slower conversion kinetics;
+- sample-to-sample capacity is determined by terminal polarization;
+- a polarization-limited cutoff mechanism explains the capacity ordering.
+
+The terminal-polarization audit already showed that pulse excursion decreases, rather than grows, toward the end of first lithiation.
 
 Authority:
+
 `modeling/HEO_TERMINAL_POLARIZATION_AUDIT_2026-10-03.md`
 
 ---
 
-## Local sensitivity result: the strong “different observables see different steps” claim is too strong
+# Figure architecture now under revision
 
-Reference-point +/-1% kinetic sensitivity:
+## Figures 1–2
 
-| step | d ln Q/d ln k | d ln t63/d ln k |
-|---|---:|---:|
-| R1 | +0.0116 | -0.0025 |
-| R2 | +0.2099 | -0.2768 |
-| R3 | +0.3475 | -0.5976 |
-| R4 | +0.0103 | +0.0079 |
+Materials structure/composition/morphology.
 
-Cosine similarity between S_Q and -S_t ≈ 0.993.
+No change in role.
 
-Therefore near the reference point:
-- Q and t63 behave almost like a common scalar fast/slow coordinate;
-- small perturbations preserve the conventional ordering;
-- it is NOT supported to claim that Q and t63 locally probe strongly different rate directions.
+## Figure 3
 
-This is important.
+Electrochemical performance and accessible capacity.
 
-The anomalous Q-up / t63-up result appears only for **finite, step-selective perturbations**.
+**Outcome only; no direct kinetic inference.**
+
+## Figure 4
+
+Should become the direct descriptor figure.
+
+Preferred architecture to test:
+
+(a) representative GITT pulse/rest definition:
+- E_pulse,end
+- E_rest,3s
+- E_rest,60min
+- Delta E_pol,60
+- Delta E_relax
+- t63
+
+(b) state-resolved Delta E_pol,60 versus z
+
+(c) state-resolved t63 versus z
+
+(d) polarization–t63 observable map with material-modification arrows
+
+Exact artwork is not yet frozen.
+
+## Figure 5
+
+Retain conversion localization.
+
+Recast from a relaxation-only hump toward the broader **conversion-associated polarization/recovery feature** if this improves clarity.
+
+## Figure 6
+
+The former Q-based four-step microkinetic model is **no longer the default Main Figure 6**.
+
+Priority order:
+
+1. test a fully experimental cycle-history robustness figure for polarization–timescale decoupling;
+2. only if needed, build a minimal multistep consistency model focused on polarization amplitude versus relaxation timescale;
+3. keep the old Q-based R2/R3 model as historical/optional SI material.
 
 ---
 
-## Finite R2/R3 perturbation interpretation
+# Conventional GITT Dapp
 
-Reconstructed-model comparison:
+The state-matched HEO/BM result remains valid:
 
-| perturbation | Q/Q0 | t63/t0 |
-|---|---:|---:|
-| R2 x 0.465 only | ~0.755 | ~1.373 |
-| R3 x 50 only | ~1.355 | ~0.528 |
-| both | ~1.111 | ~1.087 |
+- median Dapp,BM/Dapp,HEO = 1.7817;
+- direct relaxation is slower in BM at 35/37 states.
 
-Thus:
-- R2 slowing alone: conventional Q down / t63 up
-- R3 acceleration alone: conventional Q up / t63 down
-- both together: capacity gain remains positive while relaxation crosses back to slower-than-reference
+This can remain a secondary diagnostic or move entirely to SI.
 
-This is a **finite nonlinear crossover**, not a generic feature of all multistep reactions.
-
-Do NOT map this onto actual ball milling.
-
-No experimental evidence currently shows that ball milling:
-- slows R2;
-- accelerates R3;
-- changes those specific microscopic barriers in opposite directions.
-
----
-
-## Operating-polarization exploratory audit
-
-A reconstructed-model decomposition showed that the representative perturbation produced only a modest difference in instantaneous current polarization, whereas most of the voltage headroom at the original model cutoff came from a changed internal-state voltage trajectory.
-
-This supports caution against a simple polarization explanation.
-
-However:
-- the original production script used for the frozen SI model results was not committed;
-- this is an exploratory reconstructed-model audit;
-- do not promote its exact percentages/numbers to the manuscript.
+Do not let the Dapp disagreement become the central paper identity.
 
 Authority:
-`modeling/HEO_FOUR_STEP_OPERATING_POLARIZATION_AUDIT_2026-10-01.md`
+
+`modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
+
+`modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
 
 ---
 
-## Realistic voltage-headroom test — key result
+# Former Figure 6 model status
 
-To test whether the original Q-up result was merely caused by a model cutoff placed too close to the operating voltage:
+Historical files:
 
-- keep all kinetics unchanged;
-- add a constant voltage-reference offset;
-- set the reference loaded voltage at DeltaQ=0.30 to a chosen conversion anchor;
-- retain the experimental cutoff 0.005 V.
+`manuscript/HEO_FIGURE6_REASSESSMENT_LOCK_2026-10-03.md`
 
-At a 0.50 V conversion anchor:
+`modeling/HEO_FOUR_STEP_HOMOGENEOUS_MICROKINETIC_AUDIT_2026-09-28.md`
 
-- Q_ref = 1.650904
-- Q_pert = 1.775121
-- Q_pert/Q_ref = 1.075242
-- terminal C_ref = 0.780904
-- terminal C_pert = 0.905121
-- C_pert/C_ref = 1.159068
+`modeling/HEO_FOUR_STEP_LOCAL_SENSITIVITY_2026-10-03.csv`
 
-For conversion anchors >=0.2 V:
-- Q ratio stabilizes at ~1.075;
-- terminal converted-state ratio stabilizes at ~1.159.
-
-Therefore:
-
-**The higher-accessible-charge direction survives when conversion is placed far above the cutoff.**
-
-So the anomaly is not solely a near-cutoff polarization artifact.
-
-Under large voltage headroom, the physically useful model interpretation becomes:
-
-**the perturbation changes how far the population progresses through the multistep conversion sequence before the accessible reaction extent is exhausted.**
-
-This is closer to the experimental intuition that the important quantity may be **how much conversion can be accessed**, rather than a terminal polarization that grows until cutoff.
-
-Authority:
 `modeling/HEO_FOUR_STEP_VOLTAGE_HEADROOM_AUDIT_2026-10-03.md`
 
----
+The finite R2/R3 Q-up/t63-up result remains a valid mathematical existence test, but it is no longer required to explain the experimental paper.
 
-# Current Figure 6 claim boundary
-
-## Safe
-
-Experimental:
-- BM gives higher accessible capacity and slower post-interruption relaxation.
-- Conventional Dapp gives a conflicting HEO/BM ordering.
-- the relaxation anomaly is localized to the conversion region.
-
-Model:
-- a minimal multistep network can produce the same qualitative Q-up / t63-up ordering under finite step-selective perturbations;
-- this qualitative ordering survives a realistic separation between conversion voltage and the 0.005 V cutoff;
-- therefore the ordering is kinetically possible without requiring the model to rely on a near-cutoff polarization artifact.
-
-## Not safe
-
-Do NOT claim:
-- ball milling specifically slows R2 and accelerates R3;
-- R2/R3 are experimentally identified elementary steps;
-- higher BM capacity is caused by lower operating polarization;
-- the capacity difference is caused by terminal polarization growth;
-- “current-on is easier while current-off is slower” as an experimentally demonstrated mechanism;
-- different observables always probe different steps;
-- multistep kinetics automatically destroys fast/slow ordering;
-- the model quantitatively fits BM;
-- the exact reconstructed-model polarization decomposition is a submission-level result.
+Do not map ball milling onto R2/R3.
 
 ---
 
-# Current preferred conceptual wording
+# Current minimum claim
 
-Preferred experimental statement:
+Preferred central statement:
 
-> **Higher accessible capacity can coexist with slower post-interruption relaxation in the ball-milled HEO.**
+> **Material modification changes conversion-region polarization magnitude and post-interruption relaxation timescale in distinct ways, showing that the two responses do not collapse onto a single kinetic fast–slow coordinate.**
 
-Preferred model statement:
+Supporting localization statement:
 
-> **A minimal multistep conversion network can reproduce this qualitative ordering under finite step-selective kinetic changes.**
+> **The polarization/recovery feature is localized to the conversion region by its correspondence with the cathodic differential-capacity response.**
 
-If the voltage-headroom robustness is mentioned:
-
-> **The qualitative ordering persists when the modeled conversion voltage is placed well above the experimental cutoff, indicating that the effect does not depend on a near-cutoff polarization artifact.**
-
-Prefer “accessible conversion extent” or “progression through the multistep conversion sequence” over “polarization-limited cutoff capacity” in the physical interpretation.
-
----
-
-# Manuscript status
-
-## Do not rewrite the whole paper yet
-
-Main v17 and SI v14 remain authoritative for text and numbering.
-
-However, the following v17 Section 2.5 ideas are now under review and should NOT be treated as frozen:
-- language that emphasizes “greater reaction throughput before voltage cutoff” as the physical explanation;
-- any implication that BM maps microscopically to R2/R3;
-- any broad statement that different observables necessarily correspond to different elementary steps.
-
-The Abstract/Conclusion should not be revised until the final Figure 6 architecture is locked.
-
----
-
-# Supporting Information status
-
-Current SI authority:
-`manuscript/HEO_SUPPORTING_INFORMATION_V14_MAIN_V17_ALIGNED_2026-09-30.md`
-
-Existing electrochemical/mechanistic structure remains:
-- S7 no-FEC
-- S8 normalized rate retention/recovery
-- S9 cycles 1–3 voltage profiles
-- S10 cycle dQ/dV
-- S11 relative interfacial-capacitance audit
-- S12 pristine/post-cycle SEM
-- S13 full multi-cycle GITT
-- S14 early E–sqrt(t)
-- S15 relaxation-fraction/state robustness
-- S16 Dapp/direct-relaxation disagreement
-- S17 GITT voltage-term decomposition
-- S18 localization sensitivity
-- S19 background/window sensitivity
-- S20 cycle-history robustness
-- S21 single-step kinetic sweeps
-- S22 R2–R3 line cuts
-- S23 eigenmode/partial-rate audit
-- S24 Mg product-side equilibrium trajectory
-
-New 2026-10-03 audits are not yet inserted into SI numbering.
+No microscopic cause is assigned yet.
 
 ---
 
@@ -436,25 +297,16 @@ New 2026-10-03 audits are not yet inserted into SI numbering.
 
 # Immediate next task
 
-**Do not start by editing prose.**
+**Do not rewrite Main v17 yet.**
 
-Next session should begin from the Figure 6 physics:
+Next:
 
-1. Decide the final modeled “accessible reaction” observable:
-   - retain normalized passed charge Q, supported by the voltage-headroom robustness;
-   - or augment/replace it with final converted-state fraction C as a more direct conversion-extent descriptor.
-2. Decide whether the voltage-headroom audit belongs:
-   - in Main Figure 6;
-   - as a small inset;
-   - or in the SI only.
-3. Freeze the minimum Figure 6 claim as an existence/consistency test.
-4. Only after that, revise:
-   - Section 2.5
-   - Figure 6 caption
-   - Abstract
-   - Conclusion
-   - SI S21–S24 if needed.
+1. rebuild the Figure 4 concept around Delta E_pol,60 and t63;
+2. decide whether Figure 5 should display the new background-subtracted polarization excess directly;
+3. re-evaluate the existing cycle-history dataset as the likely Figure 6 experimental robustness test;
+4. decide whether conventional Dapp stays in Main or moves to SI;
+5. only after Figures 4–6 are frozen, revise Abstract, Introduction endpoint, Sections 2.3–2.5, Conclusions, captions, and SI consistently.
 
-The working principle is:
+Working principle:
 
-**Experiment first; model only supports physical possibility. Do not infer a microscopic BM mechanism that the data do not identify.**
+**Capacity is an outcome. Polarization magnitude and relaxation timescale are the direct kinetic-response coordinates. Experiment first; mechanism only where independently supported.**
