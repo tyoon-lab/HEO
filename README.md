@@ -10,85 +10,92 @@ Read first:
 
 That file is the single authoritative current-state entry point.
 
-## Current paper identity
-
-Working title:
-
-**Mismatch between Capacity and Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
+## Current paper direction
 
 Working target: **Advanced Functional Materials (AFM)**.
+
+The former working title centered on a capacity–kinetics mismatch and is now under revision.
+
+### Latest scientific pivot
+
+The paper no longer treats accessible capacity as a direct conversion-kinetic speed coordinate.
+
+Current central question:
+
+> **Does conversion-region polarization magnitude track the timescale of post-interruption relaxation?**
+
+Raw GITT analysis shows that the two responses do not move along one universal fast–slow axis.
+
+Read:
+
+- `manuscript/HEO_POLARIZATION_T63_PIVOT_LOCK_2026-10-03.md`
+- `modeling/HEO_CONVERSION_POLARIZATION_T63_AUDIT_2026-10-03.md`
+- `modeling/HEO_CONVERSION_POLARIZATION_T63_SUMMARY_2026-10-03.csv`
 
 ## Current scientific chain
 
 Figure 1–2: materials structure/composition/morphology  
-→ Figure 3: accessible conversion capacity  
-→ Figure 4: BM capacity-up / slower-relaxation mismatch + conventional Dapp conflict + Mg magnitude/timescale constraint  
-→ Figure 5: localization of the relaxation anomaly to the conversion region  
-→ Figure 6: **multistep model under active reassessment; existence/consistency test only**
+→ Figure 3: electrochemical capacity/performance as outcomes only  
+→ Figure 4: direct conversion-region polarization and t63 comparison  
+→ Figure 5: localization of the polarization/recovery feature to the conversion region  
+→ Figure 6: **reopened; experimental cycle-history robustness is now preferred over the former capacity-based microkinetic model**
 
-## Critical 2026-10-03 Figure 6 update
+## Locked first-cycle result
 
-Before editing Figure 6 or Section 2.5, read:
+Over z = 0.40–0.90:
 
-`manuscript/HEO_FIGURE6_REASSESSMENT_LOCK_2026-10-03.md`
+| Sample | Delta E_pol,60 (mV) | t63 (min) |
+|---|---:|---:|
+| HEO | 195.9 | 10.37 |
+| BM-HEO | 182.6 | 13.02 |
+| Mg-HEO | 126.4 | 10.53 |
+| BM-Mg-HEO | 148.2 | 12.70 |
 
-New checks show:
+Key contrasts:
 
-- raw first-lithiation GITT pulse excursions do **not** grow near the 0.005 V cutoff; they decrease in all four samples;
-- therefore experimental capacity should not be explained by a progressively growing terminal polarization;
-- near the reference model state, Q and t63 sensitivities are almost scalar-like (cosine similarity ~0.993), so do not claim that the observables locally probe different elementary steps;
-- the Q-up / t63-up regime remains possible under **finite step-selective perturbations**;
-- the qualitative Q-up result survives when the modeled conversion voltage is placed far above the experimental cutoff;
-- in that realistic-headroom limit, the useful model interpretation is different progression through the multistep conversion sequence / accessible conversion extent, not a near-cutoff polarization artifact;
-- there is no experimental basis to assign ball milling uniquely to R2 slowing and R3 acceleration.
+- HEO -> BM: polarization slightly down, t63 up;
+- HEO -> Mg: polarization strongly down, t63 nearly unchanged;
+- Mg -> BM-Mg: polarization up, t63 up.
 
-## Current manuscript authorities
+Safe central statement:
+
+**Material modification changes conversion-region polarization magnitude and post-interruption relaxation timescale in distinct ways; the two responses do not collapse onto one material-independent kinetic fast–slow coordinate.**
+
+## Capacity boundary
+
+Capacity remains an important performance outcome.
+
+Do not claim:
+- larger capacity proves faster conversion kinetics;
+- terminal polarization determines the capacity ordering;
+- the old Q-based R2/R3 model explains the experimental capacity difference.
+
+## Figure 5 localization
+
+Using the same background protocol, the conversion-associated polarization-excess peak remains within about 32 mV of the corresponding cathodic dQ/dV peak for all four materials.
+
+Thus the conversion-localization result survives the new polarization definition.
+
+## Model / Dapp status
+
+- Former Q-based four-step model: historical/optional SI, not current Main endpoint.
+- Conventional Dapp disagreement: still valid, but secondary; Main vs SI placement remains open.
+
+## Manuscript authorities
+
+The existing text authorities remain:
 
 - `manuscript/HEO_MANUSCRIPT_V17_PI_COMMENTS_INTEGRATED_2026-09-30.md`
 - `manuscript/HEO_SUPPORTING_INFORMATION_V14_MAIN_V17_ALIGNED_2026-09-30.md`
-- `manuscript/HEO_MAIN_SI_CROSSREF_AUDIT_2026-09-30.md`
 
-Main v17 and SI v14 remain the text authorities. Do not rewrite them until the final Figure 6 interpretation is frozen.
-
-## Key new audit files
-
-- `manuscript/HEO_FIGURE6_REASSESSMENT_LOCK_2026-10-03.md`
-- `modeling/HEO_TERMINAL_POLARIZATION_AUDIT_2026-10-03.md`
-- `modeling/HEO_TERMINAL_POLARIZATION_SUMMARY_2026-10-03.csv`
-- `modeling/HEO_FOUR_STEP_LOCAL_SENSITIVITY_2026-10-03.csv`
-- `modeling/HEO_FOUR_STEP_OPERATING_POLARIZATION_AUDIT_2026-10-01.md`
-- `modeling/HEO_FOUR_STEP_VOLTAGE_HEADROOM_AUDIT_2026-10-03.md`
-- `modeling/HEO_FOUR_STEP_VOLTAGE_HEADROOM_AUDIT_2026-10-03.csv`
-
-## Current locked experimental message
-
-- BM-HEO has higher accessible capacity than pristine HEO.
-- BM-HEO has a longer directly measured post-interruption relaxation time, t63.
-- Conventional GITT-derived Dapp ranks BM-HEO in the opposite fast/slow direction.
-- The anomalous relaxation is localized to the conversion region.
-- Mg incorporation lowers accessible capacity and relaxation magnitude while leaving t63 nearly unchanged.
-
-## Current model boundary
-
-Safe:
-
-**A minimal multistep conversion network can reproduce higher accessible charge together with slower post-interruption relaxation under finite step-selective changes, and this qualitative ordering survives a realistic voltage-headroom test.**
-
-Not safe:
-
-- ball milling specifically slows R2 and accelerates R3;
-- the model quantitatively fits BM-HEO;
-- terminal polarization growth explains the experimental capacity;
-- different observables always probe different elementary rates;
-- a unique HEO rate-determining step has been identified.
+They have **not yet been rewritten** after the latest pivot.
 
 ## Immediate next task
 
-Start with Figure 6 physics, not prose:
+1. freeze the new Figure 4 polarization–t63 architecture;
+2. update Figure 5 quantity/wording if needed;
+3. test cycle-history data as the new Figure 6;
+4. decide Main vs SI placement of conventional Dapp;
+5. only then revise manuscript prose globally.
 
-1. choose whether the main modeled accessibility coordinate remains normalized passed charge Q or is augmented/replaced by final converted-state fraction C;
-2. decide whether the voltage-headroom robustness belongs in Main Figure 6 or SI;
-3. freeze the minimum model claim;
-4. only then update Section 2.5, Figure 6 caption, Abstract, Conclusion, and corresponding SI text.
-
-Do not restart from older manuscript/model states unless auditing history.
+Do not restart from older model states unless auditing history.
