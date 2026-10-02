@@ -1,0 +1,5 @@
+sample,n_z_0p40_0p90,median_dE_pol60_mV,median_dE_fast_off_0_3s_mV,median_dE_relax_3s_60min_mV,median_t63_min,median_dE_tau_mV,conversion_pol_excess_peak_mV,conversion_pol_excess_z_peak,rest_end_V_at_pol_peak,dQdV_peak_V,peak_voltage_offset_mV
+HEO,33,195.8560,26.2976,168.4882,10.3667,176.2857,72.5025,0.753849,0.537113,0.544575,-7.4617
+BM-HEO,38,182.6308,22.2459,160.4613,13.0167,164.2072,49.2532,0.671068,0.617535,0.589146,28.3891
+Mg-HEO,24,126.3661,15.2893,111.3062,10.5250,119.2566,16.9326,0.791658,0.386972,0.418819,-31.8467
+BM-Mg-HEO,28,148.1534,12.8430,135.2339,12.7000,146.7773,22.0077,0.660709,0.502865,0.484822,18.0433
