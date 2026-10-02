@@ -6,7 +6,7 @@ This repository is maintained so a new chat/session can resume **without a separ
 
 Read first:
 
-`START_HERE_CURRENT_STATE_2026-09-28.md`
+`START_HERE_CURRENT_STATE_2026-10-03.md`
 
 That file is the single authoritative current-state entry point.
 
@@ -16,48 +16,79 @@ Working title:
 
 **Mismatch between Capacity and Conversion Kinetics in Spinel High-Entropy Oxide Anodes**
 
-Current scientific chain:
+Working target: **Advanced Functional Materials (AFM)**.
+
+## Current scientific chain
 
 Figure 1–2: materials structure/composition/morphology  
 → Figure 3: accessible conversion capacity  
-→ Figure 4: **BM capacity–timescale mismatch + Mg magnitude–timescale constraint + conventional-$D_{\rm app}$ failure**  
-→ Figure 5: conversion localization  
-→ Figure 6: cycle-history dependence  
-→ Figure 7: multistep microkinetic existence proof
+→ Figure 4: BM capacity-up / slower-relaxation mismatch + conventional Dapp conflict + Mg magnitude/timescale constraint  
+→ Figure 5: localization of the relaxation anomaly to the conversion region  
+→ Figure 6: **multistep model under active reassessment; existence/consistency test only**
 
-The paper is an HEO conversion-mechanism/materials paper using GITT relaxation as the diagnostic. It is not framed as a general GITT-method paper.
+## Critical 2026-10-03 Figure 6 update
 
-## Current key files
+Before editing Figure 6 or Section 2.5, read:
 
-- `START_HERE_CURRENT_STATE_2026-09-28.md`
-- `manuscript/HEO_MANUSCRIPT_V13_AFM_CAPACITY_KINETICS_2026-09-28.md`
-- `manuscript/HEO_SUPPORTING_INFORMATION_V10_CAPACITY_KINETICS_2026-09-27.md`
-- `manuscript/HEO_ABSTRACT_LOCK_2026-09-28.md`
-- `manuscript/HEO_MANUSCRIPT_ARCHITECTURE_TOOLKIT_LOCK_2026-09-28.md`
-- `manuscript/HEO_FIGURES_3_7_CURRENT_LOGIC_V6_2026-09-27.md`
-- `manuscript/HEO_FIGURE4_ARTWORK_FINAL_NOTE_2026-09-27.md`
-- `modeling/HEO_TY10_CONVENTIONAL_GITT_AUDIT_2026-09-26.md`
-- `modeling/HEO_TY10_HEO_BM_STATE_MATCHED_RATIOS_2026-09-26.csv`
-- `modeling/HEO_MG_CROSS_COMPOSITION_GITT_CHECK_2026-09-27.md`
-- `modeling/heo_figure4_capacity_kinetics_mismatch.py`
+`manuscript/HEO_FIGURE6_REASSESSMENT_LOCK_2026-10-03.md`
 
-## Current locked story
+New checks show:
 
-- BM is the primary contradiction: accessible capacity increases while $t_{63}$ becomes longer.
-- Mg is complementary but different: lower capacity and longer $t_{63}$ are directionally consistent, while the relaxation voltage-change magnitude also decreases.
-- Conventional HEO/BM $D_{\rm app}$ indicates faster BM behavior even though direct relaxation is slower.
-- Figure 5 supports conversion-associated wording.
-- Figure 7 demonstrates physical possibility only; it does not identify a unique microscopic mechanism.
-- Cycling EIS remains outside the evidence chain.
+- raw first-lithiation GITT pulse excursions do **not** grow near the 0.005 V cutoff; they decrease in all four samples;
+- therefore experimental capacity should not be explained by a progressively growing terminal polarization;
+- near the reference model state, Q and t63 sensitivities are almost scalar-like (cosine similarity ~0.993), so do not claim that the observables locally probe different elementary steps;
+- the Q-up / t63-up regime remains possible under **finite step-selective perturbations**;
+- the qualitative Q-up result survives when the modeled conversion voltage is placed far above the experimental cutoff;
+- in that realistic-headroom limit, the useful model interpretation is different progression through the multistep conversion sequence / accessible conversion extent, not a near-cutoff polarization artifact;
+- there is no experimental basis to assign ball milling uniquely to R2 slowing and R3 acceleration.
+
+## Current manuscript authorities
+
+- `manuscript/HEO_MANUSCRIPT_V17_PI_COMMENTS_INTEGRATED_2026-09-30.md`
+- `manuscript/HEO_SUPPORTING_INFORMATION_V14_MAIN_V17_ALIGNED_2026-09-30.md`
+- `manuscript/HEO_MAIN_SI_CROSSREF_AUDIT_2026-09-30.md`
+
+Main v17 and SI v14 remain the text authorities. Do not rewrite them until the final Figure 6 interpretation is frozen.
+
+## Key new audit files
+
+- `manuscript/HEO_FIGURE6_REASSESSMENT_LOCK_2026-10-03.md`
+- `modeling/HEO_TERMINAL_POLARIZATION_AUDIT_2026-10-03.md`
+- `modeling/HEO_TERMINAL_POLARIZATION_SUMMARY_2026-10-03.csv`
+- `modeling/HEO_FOUR_STEP_LOCAL_SENSITIVITY_2026-10-03.csv`
+- `modeling/HEO_FOUR_STEP_OPERATING_POLARIZATION_AUDIT_2026-10-01.md`
+- `modeling/HEO_FOUR_STEP_VOLTAGE_HEADROOM_AUDIT_2026-10-03.md`
+- `modeling/HEO_FOUR_STEP_VOLTAGE_HEADROOM_AUDIT_2026-10-03.csv`
+
+## Current locked experimental message
+
+- BM-HEO has higher accessible capacity than pristine HEO.
+- BM-HEO has a longer directly measured post-interruption relaxation time, t63.
+- Conventional GITT-derived Dapp ranks BM-HEO in the opposite fast/slow direction.
+- The anomalous relaxation is localized to the conversion region.
+- Mg incorporation lowers accessible capacity and relaxation magnitude while leaving t63 nearly unchanged.
+
+## Current model boundary
+
+Safe:
+
+**A minimal multistep conversion network can reproduce higher accessible charge together with slower post-interruption relaxation under finite step-selective changes, and this qualitative ordering survives a realistic voltage-headroom test.**
+
+Not safe:
+
+- ball milling specifically slows R2 and accelerates R3;
+- the model quantitatively fits BM-HEO;
+- terminal polarization growth explains the experimental capacity;
+- different observables always probe different elementary rates;
+- a unique HEO rate-determining step has been identified.
 
 ## Immediate next task
 
-The revised AFM-length abstract and Figure 4 are closed for the current round.
+Start with Figure 6 physics, not prose:
 
-Next:
-1. freeze Figures 1–2 collaborator characterization/composition;
-2. finish Figures 3, 5, and 6 artwork;
-3. continue line-by-line manuscript review from Main v13, beginning with the Introduction;
-4. freeze unresolved experimental metadata and the final $dQ/dV$ numerical source.
+1. choose whether the main modeled accessibility coordinate remains normalized passed charge Q or is augmented/replaced by final converted-state fraction C;
+2. decide whether the voltage-headroom robustness belongs in Main Figure 6 or SI;
+3. freeze the minimum model claim;
+4. only then update Section 2.5, Figure 6 caption, Abstract, Conclusion, and corresponding SI text.
 
-Do not restart from older v5/v10/v11 manuscript states unless auditing history.
+Do not restart from older manuscript/model states unless auditing history.
