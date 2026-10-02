@@ -38,7 +38,7 @@ Figure 1–2: materials structure/composition/morphology
 → Figure 3: electrochemical capacity/performance as outcomes only  
 → Figure 4: direct conversion-region polarization and t63 comparison  
 → Figure 5: localization of the polarization/recovery feature to the conversion region  
-→ Figure 6: **reopened; experimental cycle-history robustness is now preferred over the former capacity-based microkinetic model**
+→ Figure 6: **experimental cycle-history robustness of polarization–timescale non-equivalence**
 
 ## Locked first-cycle result
 
@@ -76,6 +76,20 @@ Using the same background protocol, the conversion-associated polarization-exces
 
 Thus the conversion-localization result survives the new polarization definition.
 
+## Cycle-history robustness
+
+Cycle 3 / cycle 1:
+- HEO: polarization 0.766; t63 0.923
+- BM-HEO: polarization 0.772; t63 0.870
+- Mg-HEO: polarization 1.216; t63 0.905
+- BM-Mg-HEO: polarization 1.019; t63 0.844
+
+Most importantly, Mg-HEO develops larger recoverable polarization while its relaxation becomes faster with cycling. This provides a within-material experimental robustness test.
+
+Read:
+- `manuscript/HEO_FIGURE6_EXPERIMENTAL_HISTORY_LOCK_2026-10-03.md`
+- `modeling/HEO_CYCLE_RESOLVED_POLARIZATION_T63_AUDIT_2026-10-03.md`
+
 ## Model / Dapp status
 
 - Former Q-based four-step model: historical/optional SI, not current Main endpoint.
@@ -94,7 +108,7 @@ They have **not yet been rewritten** after the latest pivot.
 
 1. freeze the new Figure 4 polarization–t63 architecture;
 2. update Figure 5 quantity/wording if needed;
-3. test cycle-history data as the new Figure 6;
+3. assemble/test the locked experimental cycle-history Figure 6;
 4. decide Main vs SI placement of conventional Dapp;
 5. only then revise manuscript prose globally.
 
