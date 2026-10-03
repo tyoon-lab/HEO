@@ -1,193 +1,122 @@
 # HEO conversion-peak-area audit — 2026-10-03
 
-## Purpose
+**STATUS: REVISED / DO NOT USE THE EARLIER 249 → 309 mAh g^-1 RESULT AS A PHYSICAL CONVERSION-CHARGE CLAIM**
 
-Test the revised idea that the manuscript should compare **conversion-peak charge** rather than total first-lithiation capacity when relating accessible conversion extent to relaxation timescale.
+## Why this note was revised
 
-The goal is specifically to remove the 0.005 V cutoff from the central comparison.
+The initial audit integrated a binned reconstruction of the **displayed dQ/dV Origin vector artwork** from \`HEO 진행상황 (20260917).pptx\`, slide 10. That procedure gave approximately 249 mAh g^-1 for HEO and 309 mAh g^-1 for BM-HEO after linear-baseline subtraction over 0.20–0.90 V.
+
+A second audit reconstructed the underlying **first-cycle voltage–capacity vector profiles** from the same slide. These profiles reproduce the plotted terminal capacities to ~0.03%, so their integrated charge is internally constrained. When dQ/dV is re-derived from those voltage profiles and the same linear-baseline idea is applied, the HEO/BM peak-area ordering reverses.
+
+Therefore the displayed dQ/dV vector is suitable for **peak-position localization**, but its reconstructed line geometry is not a quantitatively area-preserving source for conversion charge.
 
 ---
 
-## Source and provenance
+## Source consistency check
 
-Source:
-\`HEO 진행상황 (20260917).pptx\`, slide 10.
-
-The first-cycle voltage and dQ/dV curves are embedded as Origin vector objects.
-
-The voltage-profile vector reconstruction reproduces the plotted first-lithiation terminal capacities:
+First-lithiation capacities reconstructed from the voltage-profile vectors:
 
 - HEO: 901.1396 mAh g^-1
-- BM-HEO: 1055.8404
-- Mg-HEO: 731.0541
-- BM-Mg-HEO: 943.8746
+- BM-HEO: 1055.8404 mAh g^-1
+- Mg-HEO: 731.0541 mAh g^-1
+- BM-Mg-HEO: 943.8746 mAh g^-1
 
-These match the existing Figure 5 provenance audit and confirm that the vector geometry was recovered correctly.
-
-Important:
-the original continuous numerical source is still preferable for final submission. The present result is a vector-source audit.
+These agree with the plotted capacities and remain the preferred vector-source authority until the original continuous numerical GCD files are recovered.
 
 ---
 
-## Operational conversion-peak charge
+## Why the displayed dQ/dV area is not reliable
 
-Use the cathodic first-cycle dQ/dV response and define a baseline-subtracted peak-area descriptor
+### 1. Binned displayed dQ/dV artwork
+
+Using a 2 mV binning of the first-cycle displayed cathodic dQ/dV vector and a linear baseline over 0.20–0.90 V gives approximately:
+
+- HEO: 249 mAh g^-1
+- BM-HEO: 311 mAh g^-1
+
+This reproduces the earlier apparent BM > HEO peak-area result.
+
+However, the raw integral of the binned displayed dQ/dV over 0.20–0.90 V is only approximately:
+
+- HEO: 381 mAh g^-1
+- BM-HEO: 562 mAh g^-1
+
+whereas the charge obtained directly from the voltage–capacity profiles over the same voltage interval is:
+
+- HEO: 756.98 mAh g^-1
+- BM-HEO: 790.74 mAh g^-1
+
+Thus the reconstructed displayed dQ/dV geometry does **not** conserve the actual charge area. Near the flat first-lithiation plateau, repeated/near-repeated voltage values generate narrow or quasi-vertical differential-capacity features whose quantitative area is not preserved by the exported vector artwork and subsequent binning.
+
+### 2. dQ/dV re-derived from the voltage–capacity profile
+
+When the differential-capacity response is re-derived from the voltage-profile vector and a common Savitzky–Golay-type smoothing is applied, the same nominal 0.20–0.90 V linear-baseline subtraction gives the **opposite HEO/BM ordering**.
+
+Representative result:
+
+- HEO excess area: ~630 mAh g^-1
+- BM-HEO excess area: ~520 mAh g^-1
+
+Across reasonable 5–100 mV voltage-domain smoothing, BM/HEO remains approximately 0.79–0.82.
+
+The exact numerical values are processing-dependent, but the important result is that the **ordering itself depends on representation/processing**.
+
+Therefore a baseline-subtracted dQ/dV peak area cannot presently serve as a frozen main-text descriptor.
+
+---
+
+## Baseline-free fixed-voltage-window charge
+
+The physically unambiguous quantity is simply the charge passed through a chosen voltage interval:
 
 \[
-Q_{\mathrm{conv,peak}}
-=
-\int_{0.20\,V}^{0.90\,V}
-\max\left[
--\frac{dQ}{dV}-b(V),0
-\right]dV
+Q_{V_1-V_2}=Q(V_1)-Q(V_2)
 \]
 
-where \(b(V)\) is the linear baseline connecting the dQ/dV values at the two window boundaries.
+For 0.20–0.90 V:
 
-Rationale for the nominal 0.20–0.90 V window:
+- HEO: 756.98 mAh g^-1
+- BM-HEO: 790.74 mAh g^-1
+- BM/HEO = 1.0446
 
-- contains the first-cycle conversion feature of all four materials;
-- lies far above the 0.005 V cutoff;
-- excludes most of the higher-voltage sloping/insertion response;
-- is wide enough not to penalize the broader BM conversion feature.
+Thus BM passes about 4.5% more charge through this broad conversion-dominated voltage interval.
 
-The vector dQ/dV curve was binned on a 2 mV grid. A mild common smoothing was used only to stabilize the baseline/area calculation. HEO/BM results are insensitive to 5–30 mV smoothing.
+Window sensitivity using:
 
-This quantity should be described as **conversion-peak charge** or **conversion-peak area**, not as a unique intrinsic conversion capacity.
+- lower boundary: 0.15–0.30 V
+- upper boundary: 0.75–1.00 V
 
----
+gives BM > HEO in 407/416 tested windows, with BM/HEO spanning ~0.992–1.072.
 
-## Nominal first-cycle result
+The direction is usually BM > HEO, but the contrast is modest and becomes near-unity or slightly reversed for narrower core-peak windows. Examples:
 
-Using 0.20–0.90 V and common mild smoothing:
+| voltage interval | HEO (mAh g^-1) | BM-HEO (mAh g^-1) | BM/HEO |
+|---|---:|---:|---:|
+| 0.20–0.90 V | 756.98 | 790.74 | 1.045 |
+| 0.25–0.85 V | 733.9 | 752.0 | 1.025 |
+| 0.30–0.80 V | 708.5 | 712.7 | 1.006 |
+| 0.35–0.75 V | 676.6 | 668.8 | 0.988 |
+| 0.40–0.75 V | 635.3 | 632.1 | 0.995 |
 
-| sample | Q_conv,peak (mAh g^-1) | first-cycle total lithiation (mAh g^-1) |
-|---|---:|---:|
-| HEO | ~249 | 901.14 |
-| BM-HEO | ~309 | 1055.84 |
-| Mg-HEO | ~163 | 731.05 |
-| BM-Mg-HEO | ~121 | 943.87 |
-
-For the compositionally identical HEO/BM pair:
-
-\[
-Q_{\mathrm{conv,peak,BM}}/Q_{\mathrm{conv,peak,HEO}}
-\approx 1.24
-\]
-
-Thus ball milling increases the integrated conversion-peak charge by approximately 24% under the nominal definition.
-
-This result is not a terminal-cutoff effect because the integration is restricted to 0.20–0.90 V.
+This means the large total-capacity increase after ball milling is **not concentrated uniquely in the core conversion dQ/dV peak**.
 
 ---
 
-## HEO/BM robustness audit
+## Consequence
 
-A window/smoothing sensitivity audit was run over:
+Do **not** currently claim:
 
-- lower boundary: 0.15–0.30 V;
-- upper boundary: 0.75–1.00 V;
-- smoothing scale: 5–30 mV.
+- BM has ~24% larger conversion capacity based on dQ/dV peak area;
+- a baseline-subtracted peak area is a robust conversion-extent descriptor;
+- the HEO/BM central contradiction is proven by conversion-peak area.
 
-Total tested conditions: 462.
+Safe current statements:
 
-Result:
+1. The first-cycle cathodic dQ/dV peak localizes the relevant electrochemical feature to the conversion region.
+2. BM-HEO has higher total accessible capacity under the common protocol.
+3. Within a broad 0.20–0.90 V conversion-dominated interval, BM-HEO passes slightly more charge (~4.5%), but the difference is not robustly large in narrower peak-centered windows.
+4. BM-HEO nevertheless has a longer conversion-region t63.
 
-- BM conversion-peak area > HEO in **461/462** conditions;
-- BM/HEO area-ratio range: ~0.996–1.638;
-- median BM/HEO ratio: ~1.289.
+If the original continuous first-cycle numerical GCD data are recovered, quantitative peak-area analysis may be revisited using an area-conserving differentiation/deconvolution workflow and explicit baseline sensitivity.
 
-Therefore the HEO/BM direction is robust to reasonable conversion-peak integration choices.
-
-The one near-unity reversal is not physically meaningful enough to alter the directional conclusion.
-
----
-
-## Raw-window charge cross-check
-
-Without baseline subtraction, simply integrating the charge traversed between 0.20 and 0.90 V gives approximately:
-
-- HEO: 756.8 mAh g^-1
-- BM-HEO: 790.5 mAh g^-1
-
-BM/HEO = ~1.045.
-
-Thus the same direction is present even before baseline subtraction, although the contrast is much smaller because the raw window includes substantial non-peak background charge.
-
-This supports using the baseline-subtracted peak area as the cleaner conversion-associated descriptor.
-
----
-
-## Conversion-region t63 cross-check
-
-Using first-cycle GITT states whose 60 min rest-end voltage lies within the same 0.20–0.90 V conversion window:
-
-- HEO median t63 = 10.37 min
-- BM-HEO median t63 = 11.92 min
-
-Thus
-
-\[
-t_{63,\mathrm{BM}}/t_{63,\mathrm{HEO}}\approx 1.15
-\]
-
-A voltage-window sensitivity audit over 0.15–0.30 V lower boundaries and 0.75–1.00 V upper boundaries gives BM t63 > HEO t63 in **77/77** tested windows.
-
-Therefore the central HEO/BM observation survives when both observables are restricted to the conversion voltage domain:
-
-\[
-Q_{\mathrm{conv,peak}}\uparrow
-\qquad\text{and}\qquad
-t_{63}\uparrow.
-\]
-
----
-
-## Interpretation
-
-Safe:
-
-**At the same nominal current and for the same nominal composition, ball milling increases the charge associated with the first-lithiation conversion peak while lengthening the conversion-region post-interruption relaxation timescale.**
-
-Preferred physical interpretation:
-
-**Greater accessible conversion extent under the measurement protocol does not necessarily imply faster post-interruption relaxation.**
-
-Do not write:
-
-- conversion-peak area is an intrinsic rate constant;
-- larger peak area proves universally faster conversion kinetics;
-- t63 is the unique conversion rate constant.
-
-The peak area is an extent/accessibility descriptor measured under a fixed protocol, while t63 is a relaxation-timescale descriptor.
-
----
-
-## Mg-containing pair
-
-The Mg-HEO/BM-Mg-HEO conversion-peak area comparison is **not robust** to the same window/background choices because the cathodic dQ/dV response contains more strongly overlapping features.
-
-Across the 462-condition audit:
-
-- BM-Mg/Mg area ratio spans a wide range;
-- only 203/462 conditions give BM-Mg > Mg;
-- the median ratio is ~0.93.
-
-Therefore do **not** use the Mg pair as an independent replication of the HEO/BM conversion-peak-area increase.
-
-Mg can remain a complementary perturbation for relaxation magnitude/timescale and conversion-peak position, but not for a robust peak-area claim unless a better deconvolution is independently justified.
-
----
-
-## Consequence for manuscript story
-
-The strongest current comparison is the compositionally identical HEO/BM pair:
-
-1. ball milling changes material state/morphology;
-2. the baseline-subtracted first-lithiation conversion peak carries ~24% more charge;
-3. the conversion-region t63 is nevertheless longer;
-4. Figure 5 independently localizes the excess current-off response to the conversion region.
-
-This recovers the useful “more accessible conversion / slower relaxation” mismatch **without invoking total capacity or terminal cutoff**.
-
-The paper should not yet be globally rewritten until this definition is discussed and frozen.
+Until then, **peak position is suitable for Figure 5 localization; peak area should not be used as a main quantitative claim.**
