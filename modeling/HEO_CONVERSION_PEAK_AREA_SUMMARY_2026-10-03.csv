@@ -1,10 +1,12 @@
 metric,HEO,BM-HEO,Mg-HEO,BM-Mg-HEO,notes
-first_cycle_total_lithiation_mAh_g,901.1396,1055.8404,731.0541,943.8746,Vector-reconstructed voltage profiles
-Qconv_peak_nominal_mAh_g,249.0,309.2,163.2,121.3,0.20-0.90 V linear-baseline-subtracted dQ/dV area with common mild smoothing
-raw_charge_0p20_0p90_mAh_g,756.8,790.5,557.7,663.5,No baseline subtraction
+first_cycle_total_lithiation_mAh_g,901.1396,1055.8404,731.0541,943.8746,Voltage-profile vector reconstruction
+displayed_dQdV_baseline_area_0p20_0p90_mAh_g,248.8,311.4,,,Binned displayed dQ/dV vector; NOT area-conserving; do not use as physical conversion charge
+voltage_profile_raw_charge_0p20_0p90_mAh_g,756.98,790.74,557.69,663.44,Physically unambiguous charge traversed in fixed voltage window
+BM_over_HEO_raw_window_ratio,,1.0446,,,0.20-0.90 V
+voltage_derived_dQdV_excess_area_representative_mAh_g,631,518,,,Representative common smoothing + linear baseline; ordering reverses vs displayed-vector method
+BM_over_HEO_voltage_derived_excess_ratio,,0.82,,,Approximate; remains ~0.79-0.82 across tested smoothing
+raw_window_direction_robustness,,407/416,,,Lower 0.15-0.30 V; upper 0.75-1.00 V
 median_t63_0p20_0p90_min,10.37,11.92,11.20,13.20,GITT states selected by 60 min rest-end voltage
-BM_over_HEO_Qconv_peak_ratio,,1.242,,,Nominal
-BM_over_HEO_t63_ratio,,1.150,,,Nominal conversion-voltage window
-HEO_BM_Qconv_direction_robustness,,461/462,,,Window/smoothing audit
+BM_over_HEO_t63_ratio,,1.150,,,Conversion-voltage window
 HEO_BM_t63_direction_robustness,,77/77,,,Conversion-voltage-window audit
-BM_Mg_over_Mg_Qconv_direction_robustness,,,,203/462,Not robust
+peak_area_main_claim_status,,,,,DO NOT USE until original continuous numerical GCD data are recovered and area-conserving analysis is performed
