@@ -6,7 +6,7 @@ This repository is maintained so a new chat/session can resume **without a separ
 
 Read first:
 
-`START_HERE_CURRENT_STATE_2026-10-03.md`
+`START_HERE_CURRENT_STATE_2026-10-08.md`
 
 That file is the single authoritative current-state entry point.
 
@@ -14,102 +14,98 @@ That file is the single authoritative current-state entry point.
 
 Working target: **Advanced Functional Materials (AFM)**.
 
-The former working title centered on a capacity–kinetics mismatch and is now under revision.
+Working title:
 
-### Latest scientific pivot
+**GITT Relaxation Fingerprints Resolve Material-Specific Perturbations of Conversion Lithiation in Spinel High-Entropy Oxide Anodes**
 
-The paper no longer treats accessible capacity as a direct conversion-kinetic speed coordinate.
+The paper is now organized around a **reaction-fingerprint mapping** story rather than the former capacity–kinetics mismatch or polarization–t63 endpoint.
 
-Current central question:
+Read next:
 
-> **Does conversion-region polarization magnitude track the timescale of post-interruption relaxation?**
-
-Raw GITT analysis shows that the two responses do not move along one universal fast–slow axis.
-
-Read:
-
-- `manuscript/HEO_POLARIZATION_T63_PIVOT_LOCK_2026-10-03.md`
-- `modeling/HEO_CONVERSION_POLARIZATION_T63_AUDIT_2026-10-03.md`
-- `modeling/HEO_CONVERSION_POLARIZATION_T63_SUMMARY_2026-10-03.csv`
+- `manuscript/HEO_REACTION_FINGERPRINT_STORY_LOCK_2026-10-08.md`
+- `manuscript/HEO_MANUSCRIPT_V18_REACTION_FINGERPRINT_2026-10-08.md`
+- `references/HEO_REACTION_FINGERPRINT_LITERATURE_POSITIONING_2026-10-08.md`
 
 ## Current scientific chain
 
-Figure 1–2: materials structure/composition/morphology  
-→ Figure 3: electrochemical capacity/performance as outcomes only  
-→ Figure 4: direct conversion-region polarization and t63 comparison  
-→ Figure 5: localization of the polarization/recovery feature to the conversion region  
-→ Figure 6: **experimental cycle-history robustness of polarization–timescale non-equivalence**
+Figures 1–2: materials structure/composition/morphology  
+→ Figure 3: conventional accessible-lithiation outcome  
+→ Figure 4: GITT relaxation fingerprint defines R1–R4  
+→ Figure 5: ball milling redistributes regional reaction extent and prolongs post-onset relaxation  
+→ Figure 6: Mg selectively suppresses late-conversion accessibility and closes the 2 × 2 comparison
 
-## Locked first-cycle result
+## Core region map
 
-Over z = 0.40–0.90:
+The current experimental landmarks are L1, L3, and L4, defining:
 
-| Sample | Delta E_pol,60 (mV) | t63 (min) |
-|---|---:|---:|
-| HEO | 195.9 | 10.37 |
-| BM-HEO | 182.6 | 13.02 |
-| Mg-HEO | 126.4 | 10.53 |
-| BM-Mg-HEO | 148.2 | 12.70 |
+- R1: early lithiation / pre-main-conversion
+- R2: conversion onset and progression
+- R3: late conversion-associated reconstructed-state evolution
+- R4: post-main-conversion / post-plateau deep lithiation
 
-Key contrasts:
+The regions are defined from the GITT/relaxed-voltage fingerprint first. Literature is used afterward for broad physical assignment.
 
-- HEO -> BM: polarization slightly down, t63 up;
-- HEO -> Mg: polarization strongly down, t63 nearly unchanged;
-- Mg -> BM-Mg: polarization up, t63 up.
+## Central material result
 
-Safe central statement:
+Ball milling, with or without Mg:
 
-**Material modification changes conversion-region polarization magnitude and post-interruption relaxation timescale in distinct ways; the two responses do not collapse onto one material-independent kinetic fast–slow coordinate.**
+- R1 up
+- R2 up
+- R3 down
+- R4 up
+- t63 down in R1
+- t63 up over R2–R4
 
-## Capacity boundary
+Mg incorporation, with or without ball milling:
 
-Capacity remains an important performance outcome.
+- strongest accessible-reaction loss occurs in R3
+- the t63 of the remaining R3 response changes only weakly
+- relaxed voltage shifts lower
 
-Do not claim:
-- larger capacity proves faster conversion kinetics;
-- terminal polarization determines the capacity ordering;
-- the old Q-based R2/R3 model explains the experimental capacity difference.
+Preferred central statement:
 
-## Figure 5 localization
+> **Ball milling redistributes where conversion proceeds and prolongs the relaxation of the resulting reconstructed states, whereas Mg incorporation primarily limits access to the late conversion-associated state.**
 
-Using the same background protocol, the conversion-associated polarization-excess peak remains within about 32 mV of the corresponding cathodic dQ/dV peak for all four materials.
+## Main conceptual distinction
 
-Thus the conversion-localization result survives the new polarization definition.
+> **Accessible reaction extent and relaxation persistence are related but non-equivalent material properties of reconstructive conversion.**
 
-## Cycle-history robustness
+## Retired / superseded Main stories
 
-Cycle 3 / cycle 1:
-- HEO: polarization 0.766; t63 0.923
-- BM-HEO: polarization 0.772; t63 0.870
-- Mg-HEO: polarization 1.216; t63 0.905
-- BM-Mg-HEO: polarization 1.019; t63 0.844
+- capacity as a direct kinetic-speed coordinate — rejected
+- capacity–kinetics mismatch as paper identity — superseded
+- polarization–t63 non-equivalence as final endpoint — retained only as supporting context
+- conventional GITT Dapp conflict as Main novelty — secondary / likely SI
+- four-step microkinetic model as Main Figure 6 — retired from Main
+- old O/I/J/K/C model steps as experimental reaction-region assignments — rejected
 
-Most importantly, Mg-HEO develops larger recoverable polarization while its relaxation becomes faster with cycling. This provides a within-material experimental robustness test.
+## Internal sensitivity audit
 
-Read:
-- `manuscript/HEO_FIGURE6_EXPERIMENTAL_HISTORY_LOCK_2026-10-03.md`
-- `modeling/HEO_CYCLE_RESOLVED_POLARIZATION_T63_AUDIT_2026-10-03.md`
+The main BM and Mg regional conclusions remain essentially unchanged when L1/L3/L4 are shifted independently by ±1 GITT step.
 
-## Model / Dapp status
+This audit is internal reviewer-defense information for now and should not be added to Main or SI unless later needed.
 
-- Former Q-based four-step model: historical/optional SI, not current Main endpoint.
-- Conventional Dapp disagreement: still valid, but secondary; Main vs SI placement remains open.
+## Manuscript authority
 
-## Manuscript authorities
+Current Main draft:
 
-The existing text authorities remain:
+`manuscript/HEO_MANUSCRIPT_V18_REACTION_FINGERPRINT_2026-10-08.md`
 
-- `manuscript/HEO_MANUSCRIPT_V17_PI_COMMENTS_INTEGRATED_2026-09-30.md`
-- `manuscript/HEO_SUPPORTING_INFORMATION_V14_MAIN_V17_ALIGNED_2026-09-30.md`
+Current story/decision authority:
 
-They have **not yet been rewritten** after the latest pivot.
+`manuscript/HEO_REACTION_FINGERPRINT_STORY_LOCK_2026-10-08.md`
+
+The former v17 Main and v14 SI remain historical sources for unported methods/details only.
 
 ## Immediate next task
 
-1. freeze the new Figure 4 polarization–t63 architecture;
-2. update Figure 5 quantity/wording if needed;
-3. assemble/test the locked experimental cycle-history Figure 6;
-4. decide Main vs SI placement of conventional Dapp;
-5. only then revise manuscript prose globally.
+Follow the Yoon Lab Publication Toolkit abstract-first protocol:
 
-Do not restart from older model states unless auditing history.
+1. line-by-line review the v18 Abstract;
+2. provisionally lock the Abstract;
+3. propagate decisions into Introduction and Results;
+4. freeze Figure 3–6 wording/captions;
+5. rebuild SI around secondary/robustness analyses;
+6. complete final reference and metadata audit.
+
+Do not restart from older capacity–kinetics or four-step-model states unless auditing history.
