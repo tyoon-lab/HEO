@@ -1,5 +1,7 @@
 # HEO L3/L4 raw-data re-audit — 3 of 4 samples (2026-10-12)
 
+> **CORRECTION / methodological hierarchy (2026-10-12):** The HEO project had ALREADY established the electrochemical region criteria L1/L3/L4 and a ±1-GITT-step boundary sensitivity audit before this exploratory three-sample calculation. This document's `t63`-minimum selection and broken-stick regression are **alternative exploratory estimators**, not the previously agreed region-definition method. Their numerical L3/L4 candidates and R3 fractions **must not be used to overturn or silently replace** the previously agreed stage boundaries, recorded R2/R3 fractions, or the PI-reviewed manuscript. The only open item in the 2026-10-12 Methods Lock was final four-sample implementation/standardization of the **already agreed L4 plateau-end criterion**, not scientific redefinition of L4. Reconcile the original boundary table and computational choices before treating any disagreement as a change in scientific conclusions.
+
 ## Status
 
 **PRELIMINARY / NOT FOR FINAL PUBLICATION NUMBERS.** This audit reprocessed three first-lithiation datasets from original Excel workbooks. BM-HEO raw data have **not** been recovered, so the four-sample L4 boundary rule, the BM-dominant R2 absolute capacity gain, and the crossed 2×2 capacity partition are **not closed**. Do not silently overwrite `manuscript/HEO_MANUSCRIPT_V22_PI_INTEGRATED_2026-10-12.md` or historical 29/38/48/31% figures with the candidate values below.
