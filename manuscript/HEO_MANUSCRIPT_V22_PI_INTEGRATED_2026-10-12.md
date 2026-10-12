@@ -80,12 +80,14 @@ The first-lithiation response of spinel high-entropy oxide (HEO) anodes was reso
 
 ## Editorial status (not manuscript prose)
 
-- Figures 1–2 and section 2.1: collaborator-verified characterization remains to be inserted.
-- Figure 3: September 2026 vector-derived graphics support the conventional trends; original numerical cycle/profile/rate source files remain to be recovered for publication-grade provenance.
-- Figure 4: new R1–R4 region-definition artwork still needed. Older artwork compared Dapp and relaxation and **does not** demonstrate these four regions.
-- Figure 5: new BM/R2 stage-capacity artwork still needed. Older artwork localized excess relaxation to a conversion-voltage region; it cannot substitute for the R2 contribution plot.
-- Figure 6: new Mg/R3 and 2×2 comparison artwork still needed. Older artwork described cycling history and cannot substantiate current Figure 6 claims.
-- R1–R4 fractions are protocol-derived GITT fractions, not fractions of the independently measured GCD capacities. Confirm L4 common rule and numerical regional changes before final publication.
-- R2/R3 labels are broad literature-guided assignments, not structural identification from GITT. The 60 min voltage is not guaranteed to be equilibrium OCV.
-- Existing numbered reference markers are inherited and require full reindex/verification. A complete Experimental/Methods section, new captions and synchronized SI are pending.
-- Companion evidence matrix: manuscript/HEO_V22_FIGURE3_6_EVIDENCE_AUDIT_2026-10-12.md.
+**Update after direct October v21 Word figure inspection and v22 export — 2026-10-12.** The PI-reviewed Main prose above remains unchanged. A 12-page v22 DOCX was generated locally as `HEO_Manuscript_V22_PI_Integrated_Figures1-6_2026-10-12.docx` and visually rendered/checked. **The Word binary is a conversation artifact, not committed to GitHub.** Detailed status: `manuscript/HEO_V22_WORD_EXPORT_RELEASE_NOTE_2026-10-12.md`.
+
+- **Main artwork:** Figure 1–6 PNGs already existed embedded in the October 11 v21 stage-origin-aligned Word manuscript and were reused intact. In particular, Figure 4 already shows L1/L3/L4 and R1–R4; Figure 5 already includes HEO–BM-HEO relaxation, fractions and regional t63; Figure 6 already shows the BM-R2/Mg-R3 horizontal reaction schematic. Earlier statements implying that Figure 4–6 required a *full redraw from the historical September figures* are superseded by this direct visual audit.
+- **Figure 6 and quantification:** retained original diagram but its small text needs readability improvement. A review-only table of the four-material GITT stage fractions was inserted into the Word; placement in Main or SI is still to be decided. See `modeling/HEO_ORIGINAL_REGION_PARTITION_RECONSTRUCTION_2026-10-12.md` for the approved pre-existing stage-capacity table.
+- **Figures 1–2 / Section 2.1:** existing v21 illustration and provisional section text were retained for Word continuity; collaborator-verified quantitative structure/composition and missing electrode/synthesis metadata remain open.
+- **Experimental Section:** v21 4.1–4.4 retained as provisional documented source, including explicit missing-input warnings. The body text authority above remains v22; the Word is the integrated review artifact.
+- **References:** 20 entries from the v21 Word are retained, but the citation numbers inherited in the v22 prose require reference-by-reference verification.
+- **GITT region boundaries:** L1/L3/L4 and R1–R4 follow the **already agreed** October segmentation and ±1-pulse robustness; no new broken-stick L4 estimator is incorporated. GITT region fractions are not fractions of the independently measured GCD total capacities.
+- **Remaining:** final Figure 6 artwork readability, Table 1 placement, collaborator Section 2.1/Experimental details, citation/SI synchronization, submission-ready export.
+
+**Figure reuse authority:** `manuscript/HEO_EXISTING_FIGURE1_6_ASSET_REUSE_AUDIT_2026-10-12.md`. **Word export authority:** `manuscript/HEO_V22_WORD_EXPORT_RELEASE_NOTE_2026-10-12.md`.
