@@ -1,3 +1,13 @@
+# LATEST AUTHORITY — v24 raw-verified HEO Main/SI (2026-10-12)
+
+**Authoritative latest review notes:** `manuscript/HEO_V24_RAW_VERIFIED_MAIN_SI_RELEASE_2026-10-12.md` and `modeling/HEO_FOUR_SAMPLE_RAW_WORKBOOK_AUDIT_2026-10-12.md`. Latest Word Main review artifact is `HEO_Manuscript_V24_RawVerified_2026-10-12.docx` (12 rendered pages, 6 images, Abstract exactly unchanged); current companion is `HEO_SI_V16_RawVerified_Focused_Review_2026-10-12.docx` (4 rendered pages, 3 tables, 3 reused context figures). Artifacts are delivered within the session, not GitHub binaries; the existing v22 GitHub markdown remains previous text snapshot.
+
+**Breakthrough since v23:** original **BM HEO 3 GITT raw workbook recovered** plus the other three direct source workbooks; independent first-lithiation complete 600-second pulse counts = HEO **65**, BM **76**, Mg **48**, BM-Mg **56**, exactly the totals of accepted original four-sample regional charge table. Original individual L1/L3/L4 boundary annotations are **still inferred from historical rounded partition**, not independently recovered as signed boundary labels. Mg-free synthesis/BM procedure and instrument models are now provisionally described from collaborator Method document; **Mg-containing synthesis and electrode metadata remain unsigned/missing**, so still not submission-ready. No new segmentation, no unique phase assignment, no EKF spectral Main/SI panels.
+
+**Separate EKF work**: `tyoon-lab/electrochemical-kinetic-fingerprint/03_LFP/HEO_PRISTINE_GITT_TIME_DOMAIN_PILOT_2026-10-12.md` records the pristine HEO 65-pulse inversion; it does not improve L1–L3 electrochemical segmentation and will be used in the LFP–Li₂MnO₃–pristine HEO GITT methodological/comparison manuscript, not the materials HEO AFM paper.
+
+---
+
 # LATEST HANDOFF — HEO v23 / EKF pilot, 2026-10-12
 
 **Read first:** `manuscript/HEO_V23_STAGE_ORIGIN_REVIEW_AND_EKF_GATE_2026-10-12.md`. This adds a 12-page v23 PI scientific-review Word proof (Abstract unchanged, Figures 1–5 reused, Figure 6 layout cleaned) and 4-page focused SI v15 (main Table 1 moved to SI; three region-capacity/contrast/robustness tables). Word/SI binaries are in the conversation artifacts, not tracked in GitHub. v23 is not submission-ready: collaborator Section 2.1, synthesis/electrode metadata, raw BM boundary provenance and full references remain open. The v22 GitHub manuscript remains the preceding textual baseline; follow the new v23 review note for its changes.
