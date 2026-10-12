@@ -17,6 +17,16 @@ A new chat/session should be able to resume from this file without a separate ha
 
 The 2026-10-08 reaction-fingerprint state remains useful history, but the paper identity has sharpened further during PI Abstract review.
 
+## Latest raw-GITT boundary audit — 2026-10-12 (PRELIMINARY)
+
+- Detailed provenance, extraction method, and result: `modeling/HEO_L4_THREE_SAMPLE_RAW_REAUDIT_2026-10-12.md`.
+- Available original GITT files recovered: HEO ([GITT try 2_031].xlsx from Drive), Mg-HEO and BM-Mg-HEO (Sept. 17 Gmail). **BM-HEO raw remains missing**, so all four-sample regional partitions are not finalized.
+- First-lithiation whole pulses extracted: HEO 65, Mg-HEO 48, BM-Mg-HEO 56. Three prior conversion-associated excess peak voltages reproduce the archived audit exactly (HEO pulse 50 at 0.527481 V; Mg pulse 38 at 0.386972 V; BM-Mg pulse 37 at 0.502865 V).
+- Candidate L3 from central `t63` minima: HEO pulse 25; Mg pulse 24; BM-Mg pulse 34. Candidate common broken-stick voltage L4: pulses **53, 37, 39**, sensitivity ranges **50–53, 34–37, 38–40**, respectively.
+- Under **this unfinalized new L4 definition**, corresponding R3 shares are **43.08%, 27.08%, 8.93%**. These do **not** match historical manuscript HEO/Mg R3 shares ~48%/~31%; **do not silently replace frozen Abstract/Results numbers**. Direction of HEO→Mg R3 decrease survives tested L4 variations.
+- Figure 4 preliminary HEO three-trace diagnostic and three-sample L4 knee diagnostics were generated locally (not final figure artwork, not binary-committed to GitHub).
+- Next: obtain **BM HEO 3 GITT 로우 데이터.xlsx**; apply common L1/L3/L4 rules across **four** datasets, check exact region-wise absolute/fractional GITT charge and sensitivity, redraw Figures 4–6. Preserve the v22 prose and PI-preferred Abstract pending completed audit.
+
 ## Latest PI-integrated manuscript and figure audit — 2026-10-12
 
 **Current reviewed prose authority (v22):**
