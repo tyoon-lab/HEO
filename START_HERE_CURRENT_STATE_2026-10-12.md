@@ -1,3 +1,12 @@
+# CROSS-PAPER BOUNDARY UPDATE — 2026-10-12
+
+A separate GITT relaxation manuscript may use **pristine HEO only** as a reconstructive-conversion generalization case.
+
+- Keep BM/Mg modification comparisons and the BM-R2 / Mg-R3 stage-origin story owned by this HEO materials manuscript.
+- Do not migrate the HEO paper's central modification figures/results into the GITT manuscript.
+- Existing HEO/BM apparent-D method-dependence audits remain background/reviewer-defense material.
+- Cross-paper boundary authority: `GITT_CROSS_PAPER_DATA_USE_BOUNDARY_2026-10-12.md`.
+
 # HEO — Current State, 2026-10-12
 
 ## Read this first
