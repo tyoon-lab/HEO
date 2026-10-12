@@ -17,6 +17,19 @@ A new chat/session should be able to resume from this file without a separate ha
 
 The 2026-10-08 reaction-fingerprint state remains useful history, but the paper identity has sharpened further during PI Abstract review.
 
+## Latest PI-integrated manuscript and figure audit — 2026-10-12
+
+**Current reviewed prose authority (v22):**
+
+- `manuscript/HEO_MANUSCRIPT_V22_PI_INTEGRATED_2026-10-12.md`
+- Companion claim-to-evidence audit: `manuscript/HEO_V22_FIGURE3_6_EVIDENCE_AUDIT_2026-10-12.md`
+- The independently maintained PI-preferred Abstract remains `manuscript/HEO_ABSTRACT_PI_PREFERRED_2026-10-12.md`; the v22 Abstract is a verbatim copy.
+- Prior v21 and legacy Figure 3–6 notes are **historical**, not the current body prose/figure assignments. Section 2.1 and the experimental section are not complete.
+
+**Critical submission status:** Figure 3 largely supports the material-capacity contrast (with raw source-provenance limitations). The *existing old* Figures 4, 5 and 6 **do not match the new Main story** and must be redrawn: new Fig 4 = L1/L3/L4 and R1–R4 electrochemical segmentation; new Fig 5 = BM R2 capacity gain with regional t63; new Fig 6 = Mg R3 capacity loss, cross-composition 2×2 comparison and horizontal reaction-sequence synthesis. Do not claim Figure 4–6 publication artwork is final.
+
+**Immediate next work:** standardize L4 across four samples; freeze exact region-wise GITT numerical partition/absolute deltas and t63; regenerate main Figure 4–6 and captions; verify old excess-localization and cycling-history panels' SI relocation; integrate final collaborator Figures 1–2 and Methods; then revise SI/references and audit Abstract against final results.
+
 ## Current paper identity
 
 Working target: **Advanced Functional Materials (AFM)**.
@@ -231,16 +244,5 @@ Keep this internal unless reviewer defense or SI robustness becomes necessary.
 
 ## Next task in a new chat
 
-**Do not rewrite the Abstract from scratch.**
+Resume from v22 and its Figure 3–6 evidence audit, **not from the historical v21 line-by-line review queue**. The manuscript story and Conclusion have been PI reviewed; the primary unfinished work is regenerating Figures 4–6, closing exact numerical/boundary provenance and supplying Figures 1–2/Experimental. Preserve the Abstract unless a real evidence inconsistency requires an update.
 
-Start from the current v21 Introduction and review it line-by-line against the fixed Abstract:
-
-1. Does each paragraph create the need for the next?
-2. Does the Introduction preserve the materials-first question?
-3. Does it avoid making GITT the scientific protagonist?
-4. Does it use the same physical reaction language as the Abstract?
-5. Does the last paragraph state BM-R2 and Mg-R3 without overselling direct microscopic identification?
-
-Then review Results 2.2–2.6 and Conclusion for the same hierarchy.
-
-No separate handoff text should be required.
