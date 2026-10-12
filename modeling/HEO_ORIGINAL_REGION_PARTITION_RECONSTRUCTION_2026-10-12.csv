@@ -1,0 +1,17 @@
+sample,region,region_pulses,region_protocol_capacity_mAh_g,region_fraction_percent,inferred_region_start_pulse,inferred_region_end_pulse,source_status
+HEO,R1,6,100.000000,9.230769,1,6,reconstructed_from_2026_10_07_accepted_region_Q_table
+HEO,R2,19,316.666667,29.230769,7,25,reconstructed_from_2026_10_07_accepted_region_Q_table
+HEO,R3,31,516.666667,47.692308,26,56,reconstructed_from_2026_10_07_accepted_region_Q_table
+HEO,R4,9,150.000000,13.846154,57,65,reconstructed_from_2026_10_07_accepted_region_Q_table
+BM-HEO,R1,9,150.000000,11.842105,1,9,reconstructed_from_2026_10_07_accepted_region_Q_table
+BM-HEO,R2,29,483.333333,38.157895,10,38,reconstructed_from_2026_10_07_accepted_region_Q_table
+BM-HEO,R3,22,366.666667,28.947368,39,60,reconstructed_from_2026_10_07_accepted_region_Q_table
+BM-HEO,R4,16,266.666667,21.052632,61,76,reconstructed_from_2026_10_07_accepted_region_Q_table
+Mg-HEO,R1,6,100.000000,12.500000,1,6,reconstructed_from_2026_10_07_accepted_region_Q_table
+Mg-HEO,R2,18,300.000000,37.500000,7,24,reconstructed_from_2026_10_07_accepted_region_Q_table
+Mg-HEO,R3,15,250.000000,31.250000,25,39,reconstructed_from_2026_10_07_accepted_region_Q_table
+Mg-HEO,R4,9,150.000000,18.750000,40,48,reconstructed_from_2026_10_07_accepted_region_Q_table
+BM-Mg-HEO,R1,9,150.000000,16.071429,1,9,reconstructed_from_2026_10_07_accepted_region_Q_table
+BM-Mg-HEO,R2,26,433.333333,46.428571,10,35,reconstructed_from_2026_10_07_accepted_region_Q_table
+BM-Mg-HEO,R3,5,83.333333,8.928571,36,40,reconstructed_from_2026_10_07_accepted_region_Q_table
+BM-Mg-HEO,R4,16,266.666667,28.571429,41,56,reconstructed_from_2026_10_07_accepted_region_Q_table
