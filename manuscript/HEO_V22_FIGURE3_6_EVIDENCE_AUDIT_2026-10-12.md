@@ -24,6 +24,8 @@ Main stage-origin numbers based on the old GITT protocol table:
 
 **New local-only figure drafts:** `HEO_v22_Figure4_REFERENCE_FIXED_REGIONS_DRAFT.png` (HEO raw + old reconstructed boundaries), `HEO_v22_Figure5_BM_R2_PARTITION_DRAFT.png` and `HEO_v22_Figure6_Mg_R3_2x2_PARTITION_DRAFT.png`. These are numerical audit plots, NOT final publication artwork or GitHub-committed binary files.
 
+> **VISUAL AUDIT CORRECTION (2026-10-12):** This earlier claim audit compared v22 text mainly with the September 2026 Figure 4–6 *historical layouts*. Subsequently the actual **October 11 v21 stage-origin-aligned Word document** was retrieved and all six embedded PNGs were visually inspected. That Word already has **Figure 4 = t63/ΔErest/rest-end-voltage L1/L3/L4 R1–R4 plot, Figure 5 = HEO/BM stage fractions and median t63, Figure 6 = horizontal BM-R2/Mg-R3 stage synthesis**. Thus the blanket assessment “Figures 4–6 need to be redrawn” is **superseded** for current artwork. Keep/revise Fig 4–5 minimally; retain Fig 6 concept with readability polish and explicit four-sample evidence table. Full evidence and visual descriptions: `manuscript/HEO_EXISTING_FIGURE1_6_ASSET_REUSE_AUDIT_2026-10-12.md`. The older September figures remain prior art/provenance, not the images present in the latest Word. No additional region-finding calculations are authorized by this correction.
+
 ## Decision
 
 1. **Figure 3 — Mostly narrative-compatible:** establishes the first-cycle macroscopic capacity contrast. Publication-grade numerical data provenance remains incomplete.
