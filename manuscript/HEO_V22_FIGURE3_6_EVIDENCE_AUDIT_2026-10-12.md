@@ -2,6 +2,28 @@
 
 **Scope:** Check new manuscript claims against the existing GitHub-recorded experimental analyses and against the **actual prior figure designs**. This is a documentary audit, NOT a new raw-data analysis, final graphical rendering, or verification of as-yet-unmade v22 artwork.
 
+## Recovered original 2026-10-07 region partition — AUTHORITATIVE WORKING EVIDENCE
+
+The exact **rounded original accepted four-sample GITT region-capacity table** was recovered from previous analysis discussion and archived in:
+- `modeling/HEO_ORIGINAL_REGION_PARTITION_RECONSTRUCTION_2026-10-12.md`
+- `modeling/HEO_ORIGINAL_REGION_PARTITION_RECONSTRUCTION_2026-10-12.csv`
+- `modeling/HEO_ORIGINAL_REGION_CONTRASTS_2026-10-12.csv`
+
+Original fractional shares **R1/R2/R3/R4**: HEO **9.2/29.2/47.7/13.8%**, BM-HEO **11.8/38.2/28.9/21.1%**, Mg-HEO **12.5/37.5/31.2/18.8%**, BM-Mg-HEO **16.1/46.4/8.9/28.6%**.
+
+Using **16.6667 mAh g⁻¹ per 600s / 100 mA g⁻¹ GITT pulse**, original region counts reconstruct as HEO **6/19/31/9**, BM-HEO **9/29/22/16**, Mg-HEO **6/18/15/9**, BM-Mg-HEO **9/26/5/16**. Therefore **inferred** L1/L3/L4 *cumulative region-end pulses* are **HEO 6/25/56; BM-HEO 9/38/60; Mg-HEO 6/24/39; BM-Mg-HEO 9/35/40**. These IDs are *inferred from rounded accepted region charges*, not directly recovered boundary annotations; do not portray them as new extremum measurements.
+
+Main stage-origin numbers based on the old GITT protocol table:
+- HEO→BM-HEO: **R2 +166.7**, R3 −150, net +183.3 mAh g⁻¹.
+- Mg-HEO→BM-Mg-HEO: **R2 +133.3** (largest POSITIVE region change), R3 −166.7, net +133.3.
+- HEO→Mg-HEO: **R3 −266.7**, net −283.3.
+- BM-HEO→BM-Mg-HEO: **R3 −283.3**, net −333.3.
+- These signed regional differences are derived from the original GITT pulse partition; not from independently measured GCD totals.
+
+**Interpretation:** This restores the original already-agreed BM→R2 and Mg→R3 quantitative evidence. The subsequent 3-sample *broken-stick* L4 calculation remains exploratory and NOT a replacement for accepted region boundaries. Three original raw first-lithiation pulse counts (HEO 65, Mg 48, BM-Mg 56) match reconstructed table totals. BM raw, exact raw-original boundary markers, and per-region t63 for all four remain pending.
+
+**New local-only figure drafts:** `HEO_v22_Figure4_REFERENCE_FIXED_REGIONS_DRAFT.png` (HEO raw + old reconstructed boundaries), `HEO_v22_Figure5_BM_R2_PARTITION_DRAFT.png` and `HEO_v22_Figure6_Mg_R3_2x2_PARTITION_DRAFT.png`. These are numerical audit plots, NOT final publication artwork or GitHub-committed binary files.
+
 ## Decision
 
 1. **Figure 3 — Mostly narrative-compatible:** establishes the first-cycle macroscopic capacity contrast. Publication-grade numerical data provenance remains incomplete.
