@@ -66,6 +66,18 @@ Main stage-origin numbers based on the old GITT protocol table:
 
 **Immediate next work:** standardize L4 across four samples; freeze exact region-wise GITT numerical partition/absolute deltas and t63; regenerate main Figure 4–6 and captions; verify old excess-localization and cycling-history panels' SI relocation; integrate final collaborator Figures 1–2 and Methods; then revise SI/references and audit Abstract against final results.
 
+## v22 integrated Word export — 2026-10-12 (LATEST)
+
+A **12-page** Word review document was produced and successfully rendered with **all 6 original October stage-origin-aligned figures** preserved:
+- `HEO_Manuscript_V22_PI_Integrated_Figures1-6_2026-10-12.docx` (downloadable conversation artifact, **not** a GitHub-tracked binary).
+- GitHub release/QA note: `manuscript/HEO_V22_WORD_EXPORT_RELEASE_NOTE_2026-10-12.md`.
+- Text authority: `manuscript/HEO_MANUSCRIPT_V22_PI_INTEGRATED_2026-10-12.md` (Abstract, Introduction, Results 2.2–2.6, Conclusion PI-reviewed).
+- Word source for existing figures + provisional Section 2.1/Experimental/20 reference entries: `HEO_MANUSCRIPT_V21_STAGE_ORIGIN_ALIGNED_2026-10-11.docx` from Google Drive.
+- Original Oct Word Figure 4 and Figure 5 **already** match the current stage-origin narrative; no full redraw and no new boundary calculation. Figure 6 original schematic is retained but small labels overlap; fix *artwork only* if needed.
+- **Working Table 1** with four-material original GITT R1–R4 fractions is embedded in the Word; still decide whether to keep in Main or place in SI. It is not a new calculation.
+- Proof rendered and all **12 pages reviewed**; image captions stay with pictures and Conclusion is not split over pages.
+- Work remains: Section 2.1 collaborator validation, missing Experimental details, Figure 6 label cleanup, final reference/citation check, SI sync. The Word is a PI-review draft, **not a submission-ready final**.
+
 ## October 11 embedded main-figure visual audit — 2026-10-12 (CURRENT)
 
 **Current real Figure 1–6 visual basis is in `HEO_MANUSCRIPT_V21_STAGE_ORIGIN_ALIGNED_2026-10-11.docx` in the HEO preparation Google Drive folder.** All six embedded PNGs and captions have been directly inspected. Figure 4 already plots three GITT descriptors with L1/L3/L4 and R1–R4; Figure 5 already plots BM/HEO relaxation, R2/R3 region fractions and median t63; Figure 6 already shows the BM-R2/Mg-R3 horizontal reaction-sequence synthesis. The old September “redraw Figure 4–6” assumption is **obsolete** for current artwork.
@@ -288,4 +300,5 @@ Keep this internal unless reviewer defense or SI robustness becomes necessary.
 
 ## Next task in a new chat
 
-**Start by reading `manuscript/HEO_EXISTING_FIGURE1_6_ASSET_REUSE_AUDIT_2026-10-12.md` and inspecting the six already-embedded figures in the Oct 11 v21 Word document.** The current v22 PI-reviewed text is distinct from this v21 existing visual artwork. Keep Figures 4–5, polish Fig 6, connect original signed GITT region-delta evidence and freeze concise captions/SI mapping. Do not rewrite the Abstract or resegment L1/L3/L4. Verify Figures 1–2 materials data and remaining Experimental metadata before final delivery.
+**Begin from v22 Word export, not an unassembled v21 manuscript.** The 12-page file `HEO_Manuscript_V22_PI_Integrated_Figures1-6_2026-10-12.docx` contains all existing main figures and the current PI-approved text, plus provisional v21 2.1/Experimental/20 refs and review-only four-material GITT table. Read `manuscript/HEO_V22_WORD_EXPORT_RELEASE_NOTE_2026-10-12.md` for current limitations. Resolve collaborator Section 2.1/Experimental metadata, Figure 6 small-label overlap, table Main-vs-SI placement, reference numbering, and SI alignment. **Do not** redo established L1/L3/L4 segmentation or Figures 4–5.
+
