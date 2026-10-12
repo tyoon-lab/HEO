@@ -39,6 +39,18 @@ Provisional R3 shares were calculated from the pulse fractions between L3 and L4
 
 **Important discrepancy with prior figures:** Current working v22 numbers `HEO R3 ≈48%` and `Mg-HEO R3 ≈31%` arise from prior boundary choices, not these new candidate knee fits. The sign of the HEO→Mg R3 fractional contrast remains negative across the tested L4 fit variations, **but** the absolute shares and exact quantitative partition are still boundary-dependent. The nominal BM-R2 29→38% result cannot be independently revalidated because the BM-HEO raw workbook is missing.
 
+## L3 cross-descriptor offset — additional audit
+
+The central extrema do not co-locate exactly across modifications. Within `0.15 < z < 0.70`:
+
+| Sample | t63-min pulse | ΔErest-min pulse | Minimum absolute rest-voltage slope, Savitzky–Golay windows 5–11 |
+|---|---:|---:|---|
+| HEO | 25 | 25 | 29–30 |
+| Mg-HEO | 24 | 18 | 20–21 |
+| BM-Mg-HEO | 34 | 39 | 29 |
+
+The slope minimum and the maximum of `dQ/dErest` are derived from the same 60 min voltage trace. These pulse offsets mean that **coincident minima should not be claimed for all samples**. In the v22 Section 2.3, phrase the L3 illustration explicitly as the **pristine HEO reference** and inspect the other materials' landmarks separately. Do not infer that an internal elemental conversion stage shifts by the pulse difference alone. A single frozen operational rule is necessary for comparative capacity partitioning.
+
 ## Reasoning and limitations
 
 1. Continuous two-slope regression supplies an **explicit reproducible candidate** for L4 where the post-plateau voltage decline steepens; it is not uniquely mandated by electrochemical thermodynamics. Broader/shorter windows change the knee index.
