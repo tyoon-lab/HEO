@@ -19,6 +19,10 @@ The 2026-10-08 reaction-fingerprint state remains useful history, but the paper 
 
 ## Latest raw-GITT boundary audit — 2026-10-12 (PRELIMINARY)
 
+> **IMPORTANT CORRECTION:** Region criteria L1/L3/L4 and a ±1-step sensitivity check were agreed and audited in the 2026-10-08 fingerprint and 2026-10-12 Methods locks. The three-sample broken-stick L4 and minimum-t63 boundary proposals below are **separate exploratory candidate estimators**, NOT approved replacements of the established region partition or the historical R2/R3 fractions. Existing four-sample stage story remains the baseline; only a consistent final application/documentation of the already-agreed L4 plateau-end criterion was pending.
+
+
+
 - Detailed provenance, extraction method, and result: `modeling/HEO_L4_THREE_SAMPLE_RAW_REAUDIT_2026-10-12.md`.
 - Available original GITT files recovered: HEO ([GITT try 2_031].xlsx from Drive), Mg-HEO and BM-Mg-HEO (Sept. 17 Gmail). **BM-HEO raw remains missing**, so all four-sample regional partitions are not finalized.
 - First-lithiation whole pulses extracted: HEO 65, Mg-HEO 48, BM-Mg-HEO 56. Three prior conversion-associated excess peak voltages reproduce the archived audit exactly (HEO pulse 50 at 0.527481 V; Mg pulse 38 at 0.386972 V; BM-Mg pulse 37 at 0.502865 V).
