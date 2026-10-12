@@ -17,6 +17,28 @@ A new chat/session should be able to resume from this file without a separate ha
 
 The 2026-10-08 reaction-fingerprint state remains useful history, but the paper identity has sharpened further during PI Abstract review.
 
+## Recovered original 2026-10-07 region partition — AUTHORITATIVE WORKING EVIDENCE
+
+The exact **rounded original accepted four-sample GITT region-capacity table** was recovered from previous analysis discussion and archived in:
+- `modeling/HEO_ORIGINAL_REGION_PARTITION_RECONSTRUCTION_2026-10-12.md`
+- `modeling/HEO_ORIGINAL_REGION_PARTITION_RECONSTRUCTION_2026-10-12.csv`
+- `modeling/HEO_ORIGINAL_REGION_CONTRASTS_2026-10-12.csv`
+
+Original fractional shares **R1/R2/R3/R4**: HEO **9.2/29.2/47.7/13.8%**, BM-HEO **11.8/38.2/28.9/21.1%**, Mg-HEO **12.5/37.5/31.2/18.8%**, BM-Mg-HEO **16.1/46.4/8.9/28.6%**.
+
+Using **16.6667 mAh g⁻¹ per 600s / 100 mA g⁻¹ GITT pulse**, original region counts reconstruct as HEO **6/19/31/9**, BM-HEO **9/29/22/16**, Mg-HEO **6/18/15/9**, BM-Mg-HEO **9/26/5/16**. Therefore **inferred** L1/L3/L4 *cumulative region-end pulses* are **HEO 6/25/56; BM-HEO 9/38/60; Mg-HEO 6/24/39; BM-Mg-HEO 9/35/40**. These IDs are *inferred from rounded accepted region charges*, not directly recovered boundary annotations; do not portray them as new extremum measurements.
+
+Main stage-origin numbers based on the old GITT protocol table:
+- HEO→BM-HEO: **R2 +166.7**, R3 −150, net +183.3 mAh g⁻¹.
+- Mg-HEO→BM-Mg-HEO: **R2 +133.3** (largest POSITIVE region change), R3 −166.7, net +133.3.
+- HEO→Mg-HEO: **R3 −266.7**, net −283.3.
+- BM-HEO→BM-Mg-HEO: **R3 −283.3**, net −333.3.
+- These signed regional differences are derived from the original GITT pulse partition; not from independently measured GCD totals.
+
+**Interpretation:** This restores the original already-agreed BM→R2 and Mg→R3 quantitative evidence. The subsequent 3-sample *broken-stick* L4 calculation remains exploratory and NOT a replacement for accepted region boundaries. Three original raw first-lithiation pulse counts (HEO 65, Mg 48, BM-Mg 56) match reconstructed table totals. BM raw, exact raw-original boundary markers, and per-region t63 for all four remain pending.
+
+**New local-only figure drafts:** `HEO_v22_Figure4_REFERENCE_FIXED_REGIONS_DRAFT.png` (HEO raw + old reconstructed boundaries), `HEO_v22_Figure5_BM_R2_PARTITION_DRAFT.png` and `HEO_v22_Figure6_Mg_R3_2x2_PARTITION_DRAFT.png`. These are numerical audit plots, NOT final publication artwork or GitHub-committed binary files.
+
 ## Latest raw-GITT boundary audit — 2026-10-12 (PRELIMINARY)
 
 > **IMPORTANT CORRECTION:** Region criteria L1/L3/L4 and a ±1-step sensitivity check were agreed and audited in the 2026-10-08 fingerprint and 2026-10-12 Methods locks. The three-sample broken-stick L4 and minimum-t63 boundary proposals below are **separate exploratory candidate estimators**, NOT approved replacements of the established region partition or the historical R2/R3 fractions. Existing four-sample stage story remains the baseline; only a consistent final application/documentation of the already-agreed L4 plateau-end criterion was pending.
@@ -258,5 +280,4 @@ Keep this internal unless reviewer defense or SI robustness becomes necessary.
 
 ## Next task in a new chat
 
-Resume from v22 and its Figure 3–6 evidence audit, **not from the historical v21 line-by-line review queue**. The manuscript story and Conclusion have been PI reviewed; the primary unfinished work is regenerating Figures 4–6, closing exact numerical/boundary provenance and supplying Figures 1–2/Experimental. Preserve the Abstract unless a real evidence inconsistency requires an update.
-
+Start with the **recovered original region-capacity table and inferred L1/L3/L4 boundary indices** above. The original four-sample region-charge allocation is now recovered and committed; do not derive a new region segmentation by fitting knees. Next recover the BM-HEO raw workbook and check original landmark positions against all four original voltage/relaxation curves. Complete original-method per-region t63/ΔErest and Figures 4–6, then freeze captions and update Main/SI. The previously proposed alternative L4 regression is exploratory only.
