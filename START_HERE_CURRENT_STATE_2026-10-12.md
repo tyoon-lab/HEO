@@ -66,6 +66,14 @@ Main stage-origin numbers based on the old GITT protocol table:
 
 **Immediate next work:** standardize L4 across four samples; freeze exact region-wise GITT numerical partition/absolute deltas and t63; regenerate main Figure 4–6 and captions; verify old excess-localization and cycling-history panels' SI relocation; integrate final collaborator Figures 1–2 and Methods; then revise SI/references and audit Abstract against final results.
 
+## October 11 embedded main-figure visual audit — 2026-10-12 (CURRENT)
+
+**Current real Figure 1–6 visual basis is in `HEO_MANUSCRIPT_V21_STAGE_ORIGIN_ALIGNED_2026-10-11.docx` in the HEO preparation Google Drive folder.** All six embedded PNGs and captions have been directly inspected. Figure 4 already plots three GITT descriptors with L1/L3/L4 and R1–R4; Figure 5 already plots BM/HEO relaxation, R2/R3 region fractions and median t63; Figure 6 already shows the BM-R2/Mg-R3 horizontal reaction-sequence synthesis. The old September “redraw Figure 4–6” assumption is **obsolete** for current artwork.
+
+Reuse existing Figure 4 and 5 with minor labeling/caption/QC changes; keep Figure 6 schematic and improve small overlapping text plus supply the two-Mg-contrast/four-sample signed GITT comparison. Figure 3 already exists with first-cycle profiles and bars; Figures 1–2 existing working microscopy/BET art pending collaborator verification. **Do not restart segmentation, numerical analysis, or redraw all figures.** Full audit: `manuscript/HEO_EXISTING_FIGURE1_6_ASSET_REUSE_AUDIT_2026-10-12.md`.
+
+Body prose authority remains `manuscript/HEO_MANUSCRIPT_V22_PI_INTEGRATED_2026-10-12.md`; figure-art basis remains the stage-origin v21 Word. Only the minimal figure-to-text reconciliation, collaborator characterization completion, and Methods/SI/caption sync are open.
+
 ## Current paper identity
 
 Working target: **Advanced Functional Materials (AFM)**.
@@ -280,4 +288,4 @@ Keep this internal unless reviewer defense or SI robustness becomes necessary.
 
 ## Next task in a new chat
 
-Start with the **recovered original region-capacity table and inferred L1/L3/L4 boundary indices** above. The original four-sample region-charge allocation is now recovered and committed; do not derive a new region segmentation by fitting knees. Next recover the BM-HEO raw workbook and check original landmark positions against all four original voltage/relaxation curves. Complete original-method per-region t63/ΔErest and Figures 4–6, then freeze captions and update Main/SI. The previously proposed alternative L4 regression is exploratory only.
+**Start by reading `manuscript/HEO_EXISTING_FIGURE1_6_ASSET_REUSE_AUDIT_2026-10-12.md` and inspecting the six already-embedded figures in the Oct 11 v21 Word document.** The current v22 PI-reviewed text is distinct from this v21 existing visual artwork. Keep Figures 4–5, polish Fig 6, connect original signed GITT region-delta evidence and freeze concise captions/SI mapping. Do not rewrite the Abstract or resegment L1/L3/L4. Verify Figures 1–2 materials data and remaining Experimental metadata before final delivery.
