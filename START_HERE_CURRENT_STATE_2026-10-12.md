@@ -45,17 +45,17 @@ Secondary observations remain scientifically useful but are not the Abstract hea
 - Mg changes the remaining R3 relaxation timescale only weakly;
 - accessibility and relaxation persistence are not the same quantity.
 
-## Abstract status — PROVISIONALLY FIXED 2026-10-12
+## Abstract status — PI-preferred working baseline, 2026-10-12
 
-Current Abstract:
+**Current abstract for all Introduction and body review**:
 
-> Spinel high-entropy oxide (HEO) anodes undergo multistep conversion during lithiation, involving progressive cation reduction, oxide destabilization and reconstruction, and the formation of reduced metal/Li2O-derived states. The GITT relaxation response during first lithiation resolves this process into four electrochemically distinct regimes: early lithiation, conversion onset and progression, late conversion, and post-plateau deep lithiation. This stage-resolved response provides a basis for determining how material modifications alter the conversion sequence underlying the overall capacity. Ball milling and Mg incorporation produce opposite capacity changes, but the GITT analysis shows that they act on different reaction stages: the capacity increase induced by ball milling arises predominantly from expansion of the conversion-onset/progression regime associated with oxide destabilization and structural reconstruction, whereas the capacity loss caused by Mg incorporation is concentrated in the subsequent late-conversion regime associated with evolution toward reduced metal/Li2O-derived states. These results show that macroscopic capacity changes can originate from selective expansion or suppression of specific parts of a multistep conversion sequence. By locating the reaction stage responsible for a performance change, GITT relaxation provides an electrochemical basis for connecting materials processing and composition directly to the conversion processes that should be promoted or suppressed.
+`manuscript/HEO_ABSTRACT_PI_PREFERRED_2026-10-12.md`
 
-Status:
+This is the PI-preferred, improved-flow version agreed in conversation after the earlier provisional lock. Preserve the approved text during line-by-line body review; refine only when evidence, logic, or a final PI decision warrants it. **It supersedes the older abstract text in the v21 snapshot for current narrative alignment**, but does not erase the historical version.
 
-**[ABSTRACT PROVISIONALLY LOCKED]**
+The new abstract begins with multistep conversion, poses the question of which reaction regions control macroscopic capacity changes, states the four GITT electrochemical regimes, contrasts the BM-R2 and Mg-R3 stage origins, and ends with the materials-facing significance of stage specificity.
 
-Do not casually re-compress or shorten this Abstract. Reopen only for a real scientific inconsistency, journal constraint, or a demonstrably better manuscript-level formulation.
+**Do not infer unique microscopic phases at R1-R4 boundaries or claim demonstrated cycling-stability optimization.** Physical assignments are broad associations supported by literature plus state-resolved electrochemistry.
 
 ## Why the Abstract changed the paper
 
