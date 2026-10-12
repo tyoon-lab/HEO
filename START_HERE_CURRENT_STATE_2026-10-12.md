@@ -1,3 +1,11 @@
+# LATEST HANDOFF — HEO v23 / EKF pilot, 2026-10-12
+
+**Read first:** `manuscript/HEO_V23_STAGE_ORIGIN_REVIEW_AND_EKF_GATE_2026-10-12.md`. This adds a 12-page v23 PI scientific-review Word proof (Abstract unchanged, Figures 1–5 reused, Figure 6 layout cleaned) and 4-page focused SI v15 (main Table 1 moved to SI; three region-capacity/contrast/robustness tables). Word/SI binaries are in the conversation artifacts, not tracked in GitHub. v23 is not submission-ready: collaborator Section 2.1, synthesis/electrode metadata, raw BM boundary provenance and full references remain open. The v22 GitHub manuscript remains the preceding textual baseline; follow the new v23 review note for its changes.
+
+**EKF decision:** a pristine HEO raw-GITT 65-pulse time-domain pilot, tested with 27 sensitivity settings, did not robustly improve the accepted four-region boundaries (original 6/25/56 versus spectrum-only ~21/39/56), nor directly identify specific conversion products. Exclude the new EKF analysis from HEO AFM Main/SI. Retain it for the separate LFP–Li2MnO3–pristine HEO GITT manuscript; all BM/Mg contrasts stay in HEO materials paper. Detailed pilot in EKF repo: `03_LFP/HEO_PRISTINE_GITT_TIME_DOMAIN_PILOT_2026-10-12.md`. No new physical-stage claims are authorized by the pilot.
+
+---
+
 # CROSS-PAPER BOUNDARY UPDATE — 2026-10-12
 
 A separate GITT relaxation manuscript may use **pristine HEO only** as a reconstructive-conversion generalization case.
