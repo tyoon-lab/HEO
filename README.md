@@ -6,7 +6,7 @@ This repository is maintained so a new chat/session can resume **without a separ
 
 Read first:
 
-`START_HERE_CURRENT_STATE_2026-10-08.md`
+`START_HERE_CURRENT_STATE_2026-10-12.md`
 
 That file is the single authoritative current-state entry point.
 
@@ -14,98 +14,87 @@ That file is the single authoritative current-state entry point.
 
 Working target: **Advanced Functional Materials (AFM)**.
 
-Working title:
+Working title remains provisional:
 
 **GITT Relaxation Fingerprints Resolve Material-Specific Perturbations of Conversion Lithiation in Spinel High-Entropy Oxide Anodes**
 
-The paper is now organized around a **reaction-fingerprint mapping** story rather than the former capacity–kinetics mismatch or polarization–t63 endpoint.
+The paper is now organized around a **reaction-stage origin of materials performance** story.
+
+Materials-level observation:
+
+- ball milling increases lithiation capacity;
+- Mg incorporation decreases lithiation capacity.
+
+Stage-resolved result:
+
+- **BM capacity gain -> predominantly R2 expansion -> conversion onset/progression, oxide destabilization + structural reconstruction**
+- **Mg capacity loss -> predominantly R3 suppression -> subsequent late conversion toward reduced metal/Li2O-derived states**
+
+The main contribution is not that BM or Mg changes capacity; it is that GITT relaxation identifies **which part of the multistep conversion sequence is responsible for the macroscopic performance change**.
+
+## Current authorities
 
 Read next:
 
-- `manuscript/HEO_REACTION_FINGERPRINT_STORY_LOCK_2026-10-08.md`
-- `manuscript/HEO_MANUSCRIPT_V18_REACTION_FINGERPRINT_2026-10-08.md`
-- `references/HEO_REACTION_FINGERPRINT_LITERATURE_POSITIONING_2026-10-08.md`
+1. `manuscript/HEO_STAGE_ORIGIN_STORY_LOCK_2026-10-12.md`
+2. `manuscript/HEO_ABSTRACT_CONTROL_MAP_2026-10-12.md`
+3. `manuscript/HEO_V21_STAGE_ORIGIN_TEXT_SNAPSHOT_2026-10-12.md`
+4. `manuscript/HEO_METHODS_ANALYSIS_LOCK_2026-10-12.md`
+5. `references/HEO_REACTION_FINGERPRINT_LITERATURE_POSITIONING_2026-10-08.md`
 
-## Current scientific chain
+Current Word working manuscript:
+
+**HEO_MANUSCRIPT_V21_STAGE_ORIGIN_ALIGNED_2026-10-11.docx**
+
+## Abstract status
+
+**[ABSTRACT PROVISIONALLY LOCKED — 2026-10-12]**
+
+Do not restart Abstract rewriting in a new chat. Start with Introduction line-by-line review unless body review exposes a genuine scientific inconsistency.
+
+## Current Figure chain
 
 Figures 1–2: materials structure/composition/morphology  
-→ Figure 3: conventional accessible-lithiation outcome  
-→ Figure 4: GITT relaxation fingerprint defines R1–R4  
-→ Figure 5: ball milling redistributes regional reaction extent and prolongs post-onset relaxation  
-→ Figure 6: Mg selectively suppresses late-conversion accessibility and closes the 2 × 2 comparison
+-> Figure 3: opposite macroscopic capacity changes  
+-> Figure 4: GITT resolves four electrochemical regimes  
+-> Figure 5: BM capacity gain is dominated by R2 expansion  
+-> Figure 6: single horizontal reaction sequence showing BM acting mainly on R2 and Mg mainly on R3
+
+The experimental design may be 2 x 2, but the final conceptual synthesis is **not** a 2 x 2 matrix.
 
 ## Core region map
 
-The current experimental landmarks are L1, L3, and L4, defining:
+- **R1:** early lithiation
+- **R2:** conversion onset/progression; oxide destabilization and structural reconstruction
+- **R3:** late conversion; evolution toward reduced metal/Li2O-derived states
+- **R4:** post-plateau deep lithiation
 
-- R1: early lithiation / pre-main-conversion
-- R2: conversion onset and progression
-- R3: late conversion-associated reconstructed-state evolution
-- R4: post-main-conversion / post-plateau deep lithiation
+Regions are electrochemically defined first; the physical labels are broad literature-supported assignments.
 
-The regions are defined from the GITT/relaxed-voltage fingerprint first. Literature is used afterward for broad physical assignment.
+## Superseded manuscript identities
 
-## Central material result
+Historical only:
 
-Ball milling, with or without Mg:
+- capacity–kinetics mismatch as paper identity;
+- polarization–t63 endpoint;
+- Dapp conflict as Main novelty;
+- four-step microkinetic Main model;
+- BM as simple kinetic acceleration;
+- Mg as simple kinetic slowing;
+- 2 x 2 conceptual synthesis figure.
 
-- R1 up
-- R2 up
-- R3 down
-- R4 up
-- t63 down in R1
-- t63 up over R2–R4
-
-Mg incorporation, with or without ball milling:
-
-- strongest accessible-reaction loss occurs in R3
-- the t63 of the remaining R3 response changes only weakly
-- relaxed voltage shifts lower
-
-Preferred central statement:
-
-> **Ball milling redistributes where conversion proceeds and prolongs the relaxation of the resulting reconstructed states, whereas Mg incorporation primarily limits access to the late conversion-associated state.**
-
-## Main conceptual distinction
-
-> **Accessible reaction extent and relaxation persistence are related but non-equivalent material properties of reconstructive conversion.**
-
-## Retired / superseded Main stories
-
-- capacity as a direct kinetic-speed coordinate — rejected
-- capacity–kinetics mismatch as paper identity — superseded
-- polarization–t63 non-equivalence as final endpoint — retained only as supporting context
-- conventional GITT Dapp conflict as Main novelty — secondary / likely SI
-- four-step microkinetic model as Main Figure 6 — retired from Main
-- old O/I/J/K/C model steps as experimental reaction-region assignments — rejected
-
-## Internal sensitivity audit
-
-The main BM and Mg regional conclusions remain essentially unchanged when L1/L3/L4 are shifted independently by ±1 GITT step.
-
-This audit is internal reviewer-defense information for now and should not be added to Main or SI unless later needed.
-
-## Manuscript authority
-
-Current Main draft:
-
-`manuscript/HEO_MANUSCRIPT_V18_REACTION_FINGERPRINT_2026-10-08.md`
-
-Current story/decision authority:
-
-`manuscript/HEO_REACTION_FINGERPRINT_STORY_LOCK_2026-10-08.md`
-
-The former v17 Main and v14 SI remain historical sources for unported methods/details only.
+Older files remain for audit/history but are not the current story authority.
 
 ## Immediate next task
 
-Follow the Yoon Lab Publication Toolkit abstract-first protocol:
+Follow the Yoon Lab Publication Toolkit Abstract-first protocol:
 
-1. line-by-line review the v18 Abstract;
-2. provisionally lock the Abstract;
-3. propagate decisions into Introduction and Results;
-4. freeze Figure 3–6 wording/captions;
-5. rebuild SI around secondary/robustness analyses;
-6. complete final reference and metadata audit.
+1. keep the Abstract provisionally fixed;
+2. line-by-line review the v21 Introduction;
+3. review Results 2.2–2.6 against the BM-R2 / Mg-R3 hierarchy;
+4. finalize Conclusion after body review;
+5. freeze Figures/captions;
+6. rebuild/synchronize SI;
+7. run reverse Abstract audit and final reference/metadata audit.
 
-Do not restart from older capacity–kinetics or four-step-model states unless auditing history.
+No separate handoff note should be necessary.
