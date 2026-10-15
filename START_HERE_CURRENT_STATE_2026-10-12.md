@@ -1,3 +1,9 @@
+# LATEST PI SCIENTIFIC REVIEW — 2026-10-15 (READ BEFORE v24)
+
+**New HEO discussion authority:** [manuscript/HEO_V25_DOMINANT_REACTION_STAGE_MECHANISM_REVIEW_2026-10-15.md](manuscript/HEO_V25_DOMINANT_REACTION_STAGE_MECHANISM_REVIEW_2026-10-15.md). This contains **insert-ready revisions to Main Sections 2.3, 2.4, 2.5 and 2.6**, physical explanations for why BM preferentially expands R2 while Mg preferentially decreases R3, and PI clarification that GITT potential/polarization/ΔErest/t63 changes are intended to locate **dominant reaction processes**, while phase-specific direct identification remains unproven. It also corrects conversion/reconversion terminology for lithiation versus delithiation, and records that three-cycle GITT inclusion is an open question. The actual v24 Word binary is **not** altered; no Abstract revision has been publication-locked. Preserve the old v22/v24 snapshots and merge these prose replacements during the next Main Word rebuild after claim audit.
+
+---
+
 # LATEST AUTHORITY — v24 raw-verified HEO Main/SI (2026-10-12)
 
 **Authoritative latest review notes:** `manuscript/HEO_V24_RAW_VERIFIED_MAIN_SI_RELEASE_2026-10-12.md` and `modeling/HEO_FOUR_SAMPLE_RAW_WORKBOOK_AUDIT_2026-10-12.md`. Latest Word Main review artifact is `HEO_Manuscript_V24_RawVerified_2026-10-12.docx` (12 rendered pages, 6 images, Abstract exactly unchanged); current companion is `HEO_SI_V16_RawVerified_Focused_Review_2026-10-12.docx` (4 rendered pages, 3 tables, 3 reused context figures). Artifacts are delivered within the session, not GitHub binaries; the existing v22 GitHub markdown remains previous text snapshot.
