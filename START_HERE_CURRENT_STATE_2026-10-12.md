@@ -1,3 +1,11 @@
+# NEW HEO CHARACTERIZATION EVIDENCE GATE — 2026-10-15 (read with v25 Main)
+
+**Source-verified Figure 1–2 scientific audit:** [manuscript/HEO_V26_FIGURE1_2_STRUCTURE_EVIDENCE_GATE_2026-10-15.md](manuscript/HEO_V26_FIGURE1_2_STRUCTURE_EVIDENCE_GATE_2026-10-15.md). Inspection of **actual embedded v25 Figures 1–2**, collaborator's September 17 2026 source presentation and Mg-free synthesis methods established printed BET values **HEO 3.94, BM-HEO 18.159, Mg-HEO 6.49, BM-Mg-HEO 16.64 m²/g**. Milling increases BET in both matched pairs; Mg-free comparison **Mg raises BET yet R3 charge declines**, which argues against *surface area decrease alone* as the Mg explanation. **URGENT Figure1 issue:** multiple collaborator-origin HRTEM indexes say **“CoGa₂O₄”**, but reported precursor system has no Ga; verify whether it is a *reference spinel* vs a mislabeled product before any final Figure1 submission. Mg XPS reports anomalous Cr6+ in an unverified recent batch; quantify ICP/Mg state first. Source slides' electrode BSE aggregate sizes 1.95/2.12/1.93/1.99 µm do not prove milling reduces aggregate size. All such values and ready-to-insert draft §2.1/§2.4/§2.5 phrasing are in the audit.
+
+**Status distinction:** v25 integrated Main/Word is unchanged; v26 is an **evidence review and provisional prose**, not a finished v26 Word or solved phase identification. Original Figures 1–2 require collaborator correction/confirmation. The previously recognized electrochemical stage-localization result BM→R2 / Mg→R3 remains working evidence, while its microscopic structural cause remains conditional.
+
+---
+
 # CURRENT MAIN-TEXT AUTHORITY — v25 stage-dominant mechanism integrated (2026-10-15)
 
 **Read first:** [manuscript/HEO_MANUSCRIPT_V25_STAGE_MECHANISM_INTEGRATED_2026-10-15.md](manuscript/HEO_MANUSCRIPT_V25_STAGE_MECHANISM_INTEGRATED_2026-10-15.md), then [manuscript/HEO_V25_INTEGRATED_WORD_AND_SCIENTIFIC_QA_2026-10-15.md](manuscript/HEO_V25_INTEGRATED_WORD_AND_SCIENTIFIC_QA_2026-10-15.md) and [manuscript/HEO_V25_DOMINANT_REACTION_STAGE_MECHANISM_REVIEW_2026-10-15.md](manuscript/HEO_V25_DOMINANT_REACTION_STAGE_MECHANISM_REVIEW_2026-10-15.md).
