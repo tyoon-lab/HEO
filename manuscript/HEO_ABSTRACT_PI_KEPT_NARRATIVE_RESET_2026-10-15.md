@@ -1,0 +1,14 @@
+# HEO Abstract — PI working draft after narrative reset (2026-10-15)
+
+**Status: KEPT, not PI-final.** User requested that this version be preserved while searching literature. Do not overwrite historical v28 Word Abstract or promote this to final without subsequent PI review. This version fixes conceptual circularity: conversion is a *net reaction*, while distinct electrochemical regions are a study finding rather than presumed universal four chemical reaction steps. GITT-only region quantification is from first lithiation. The phrase `associated with` is a literature-guided association, not an in situ phase observation.
+
+## Working Abstract (unaltered)
+
+Ball milling and Mg incorporation produce opposing changes in the lithiation capacity of spinel high-entropy oxide (HEO) anodes. These macroscopic changes, however, provide limited insight into how the electrochemical response is altered as lithiation proceeds. Analysis of galvanostatic intermittent titration (GITT) voltage and post-pulse relaxation distinguishes four electrochemically distinct regimes: early lithiation, conversion onset and progression, late conversion, and post-plateau deep lithiation. Ball milling produces its largest regional GITT charge increase during conversion onset and progression, associated with oxide destabilization and structural reconstruction. In contrast, Mg incorporation produces its largest regional GITT charge decrease during late conversion, associated with continued reduction and further development of metal/Li₂O-derived products. Increased BET surface area after milling is consistent with improved accessibility of reactive oxide regions, whereas the pronounced Mg-associated late-conversion loss suggests restricted access to further reduction, potentially involving persistent Mg-containing oxide environments. These findings demonstrate that opposing changes in overall capacity arise from different regions of the lithiation pathway, providing a basis for understanding how materials processing and composition influence conversion-type electrodes.
+
+## PI decisions retained
+- No `multistage conversion` as an assumed universal chemical definition in the opening. Start from the opposing **empirical** BM versus Mg capacity changes; identify different regimes as **results**.
+- R2 and R3 may overlap chemically; metal/Li₂O generation can start in R2 and continue through R3. No assignment of four pure phases.
+- Interpret at dominant electrochemical regime level using rest voltage, ΔErest and operational t63, not as direct phase spectroscopy.
+- Avoid unwarranted assertion that R2 regional gain equals total GCD gain or that Mg persistent oxide was measured.
+- New external literature review (2026-10-15) may require strengthening novelty against already extensive dQ/dV stage-integration and GITT conversion studies. **Do not revise this kept working version silently.**
