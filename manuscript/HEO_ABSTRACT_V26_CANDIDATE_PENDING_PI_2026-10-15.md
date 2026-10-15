@@ -1,0 +1,16 @@
+# HEO Abstract — v26 evidence-aligned candidate (NOT PI-locked), 2026-10-15
+
+**Status:** Editorial candidate only. The v26 Word file deliberately preserves the older v24 Abstract and flags it as a historical placeholder; **do not silently overwrite the Word Abstract** until the PI reviews this version. Draft is one paragraph, **179 words**, omits the user-rejected “Yet”, unnecessary “not”, “Together”, and “during the first lithiation”; acknowledges conversion–reconversion across electrochemical cycling but scopes stage localization specifically to lithiation. The claim of increased BET after milling is a source-figure-supported correlation rather than phase-specific proof.
+
+## Abstract
+
+Spinel high-entropy oxide (HEO) anodes exhibit complex conversion–reconversion chemistry during electrochemical cycling. Along the lithiation pathway, overlapping cation reduction, oxide reconstruction, and product evolution distribute charge across distinct reaction regimes, so overall capacity provides limited insight into which regimes are affected by material modifications. Ball milling and Mg incorporation produce opposing changes in lithiation capacity, motivating examination of their stage-specific effects. Galvanostatic intermittent titration (GITT) voltage and post-pulse relaxation identify four electrochemically distinct regimes: early lithiation, conversion onset and progression, late conversion, and post-plateau deep lithiation. Ball milling produces its largest positive regional capacity change during conversion onset and progression, associated with oxide destabilization and structural reconstruction. Mg incorporation produces its largest negative regional change during late conversion, associated with further reduction toward metal/Li₂O-derived products. Increased BET surface area after milling is consistent with improved access to reactive oxide regions, whereas the pronounced Mg-associated late-conversion loss points to a change beyond simple surface-area limitation. These findings identify the dominant reaction-stage origins of capacity changes and provide a basis for evaluating the physical effects of material modifications on conversion-type anodes.
+
+**Keywords:** high-entropy oxide; conversion anode; GITT; voltage relaxation; reaction-stage origin; ball milling; Mg incorporation
+
+## Evidence checks required before locking
+- All four region labels and BM R2 / Mg R3 contrasts are from the **first-lithiation nominal GITT pulse partition**; three-cycle GITT source availability alone does not prove multicycle stage localization.
+- “Conversion–reconversion” refers to general electrochemical cycling behavior and literature-supported oxidation on delithiation; no claim that the exact reverse path or four regimes has been proven on delithiation.
+- R2 oxide reconstruction and R3 metal/Li₂O are **dominant-process assignments constrained by literature and voltage/relaxation observables**, not direct phase quantification.
+- “BET” numbers are read from printed collaborator Figure 2: 3.94/18.159/6.49/16.64 m² g−1 and require source regression verification. Do not infer a unique physical mechanism from surface area.
+- Because v26 Main includes an old Abstract, PI approval must propagate to Main Introduction, Conclusion, figure captions, manuscript abstract and SI before submission.
