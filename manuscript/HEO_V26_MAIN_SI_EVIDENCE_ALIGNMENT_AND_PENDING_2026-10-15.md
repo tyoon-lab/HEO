@@ -1,6 +1,7 @@
 # HEO v26 — Main/SI evidence-aligned PI review and remaining gates (2026-10-15)
 
 ## Read-first manuscript authority
+**New persistent SI text+tables mirror:** [HEO_SI_V17_SOURCE_EVIDENCE_FULLTEXT_2026-10-15.md](HEO_SI_V17_SOURCE_EVIDENCE_FULLTEXT_2026-10-15.md). Three tables S1–S3 and all prose/captions are GitHub-tracked; the original SI image pixels remain in Word/SI v14, not this Markdown.
 - **Full Main text:** [HEO_MANUSCRIPT_V26_EVIDENCE_ALIGNED_2026-10-15.md](HEO_MANUSCRIPT_V26_EVIDENCE_ALIGNED_2026-10-15.md). Text faithfully mirrored from rendered v26 Word; the six embedded figures remain in Word/older Drive sources, not in GitHub Markdown.
 - **Main Word reviewer artifact:** `HEO_Manuscript_V26_EvidenceAligned_PIReview_2026-10-15.docx` (generated conversation artifact, NOT a GitHub binary). Source `HEO_Manuscript_V25_DominantStageMechanism_2026-10-15.docx`.
 - **Supporting Information reviewer artifact:** `HEO_SI_V17_SourceEvidenceReview_2026-10-15.docx` (generated conversation artifact, NOT a GitHub binary); source `HEO_SI_V16_RawVerified_Focused_Review_2026-10-12.docx`.
