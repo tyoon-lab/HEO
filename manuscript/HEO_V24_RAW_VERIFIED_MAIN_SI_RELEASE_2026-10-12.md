@@ -1,3 +1,9 @@
+# FOLLOW-UP PI MECHANISTIC REVIEW (2026-10-15; latest relative to this v24 note)
+
+See [HEO_V25_DOMINANT_REACTION_STAGE_MECHANISM_REVIEW_2026-10-15.md](HEO_V25_DOMINANT_REACTION_STAGE_MECHANISM_REVIEW_2026-10-15.md) for **proposed Main §2.3–2.6 paragraph insertions/replacements** explaining electrochemically dominant processes and the possible BM-R2 / Mg-R3 physical causes. This is a manuscript-discussion addendum **not yet inserted into** the v24 Word binary. The Abstract opening's conversion–reconversion terminology and three-cycle scope remain in PI review. Do not silently imply already verified crystal-phase assignments or Mg occupancy.
+
+---
+
 # HEO v24 — all-four-workbook verification and focused SI release — 2026-10-12
 
 ## Latest active artifacts
