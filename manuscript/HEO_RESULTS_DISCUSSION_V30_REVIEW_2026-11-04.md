@@ -1,3 +1,9 @@
+## 2026-11-04 chat-continuity correction
+
+The **complete v30 manuscript text** has now also been committed to GitHub: `manuscript/HEO_MANUSCRIPT_V30_INTRO_LOCKED_RESULTS_ALIGNED_2026-11-04.md` (commit `155cfdf288d636db23b21db898a3e3ed4479b5eb`). The full editable Word with six figures and Markdown text have also been saved in the persistent personal Library at `/HEO/Manuscripts/`. Earlier notes saying the complete v30 was only a conversation attachment are historical. The Word binary remains absent from GitHub.
+
+---
+
 # Results and Discussion revision aligned with locked Introduction — 2026-11-04
 
 ## Status and sources
