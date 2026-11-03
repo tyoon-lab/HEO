@@ -1,3 +1,9 @@
+## 2026-11-04 FINAL CORRECTION AGAINST LATEST v29 WORD
+
+Earlier v28-based crosswalk below became outdated once `HEO_Manuscript_v29_MaterialsCentered_Review_2026-11-03.docx` was inspected. **v29 [10]=Wang; [22]=He 2016; [23]=Triolo 2023; [24]=Ma 2023; [25]=Yoon et al. Si; [26]=Ng et al. NiO**. Wang is NOT duplicated in v29. New [27] = Minouei et al., JPS (2022) DOI 10.1016/j.jpowsour.2022.232041. The locked Introduction is now internally aligned with these v29 IDs: P1 [7],[23],[22]; P2 [9,20,24]; P3 [7,23]; P4 [4,27]. References from earlier sections of this document that state v28 duplicate remain as historical audit of v28 only, NOT current v29. 
+
+---
+
 # HEO Introduction reference reconciliation — 2026-11-04
 
 ## Scope
