@@ -1,3 +1,9 @@
+## 2026-11-04 P3 LOCKED BY PI
+
+The exact P3 in the current consolidated Introduction is now locked. Its argument prioritizes kinetic contrast: low-rate voltage plateau limits resolution; GITT relaxation gives amplitude and characteristic relaxation time; rest-end QOCV supplies additional quasi-thermodynamic context. The older description of these observables as complementary, physically coupled signals remains correct for interpreting Results, but should not displace the kinetic-first rhetorical structure in P3. Keep the diffusion coefficient discussion out of the Introduction. Next: P4 line-by-line review.
+
+---
+
 ## PI correction: choice of BM and Mg versus capacity outcomes (2026-11-03)
 
 The **study-design rationale** is BM as a *processing perturbation* (particle dimensions, local disorder, interfacial accessibility) versus Mg as a *compositional perturbation* (redox-active cation population and environment), consistent with the uploaded Oct 15 v25 Introduction P2. The PI did **not** choose these modifications because they were expected or known to move initial lithiation capacity in opposite directions. The opposite capacity directions appeared in measured matched groups and belong to **results**. The four samples support crossed main-effect comparisons in both compositional backgrounds / processing conditions. Avoid writing the sample choice as 'selected to give opposite capacity trends'. In Intro P4, state the modification categories before presenting measured signs and R2/R3 region differences. Source: user-uploaded HEO_Manuscript_V25_DominantStageMechanism_2026-10-15(1).docx, original paragraph 2.
