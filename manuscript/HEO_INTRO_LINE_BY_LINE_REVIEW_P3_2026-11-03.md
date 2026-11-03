@@ -1,3 +1,18 @@
+## PI revision — kinetic narrative restored, QOCV subordinate (2026-11-04)
+
+The PI rejected positioning quasi-thermodynamic QOCV and time-dependent relaxation as parallel/coequal GITT goals. The P3 argument is intentionally asymmetric:
+
+1. Dominant reaction changes affect thermodynamics and kinetics.
+2. Broad overlapping conversion plateaus and poorly separated dQ/dV limit thermodynamic voltage contrast.
+3. **Retain verbatim:** “Kinetic responses may provide additional contrast where these voltage features overlap.” This motivates GITT.
+4. GITT probes kinetic relaxation after pulses, analyzed by recovery magnitude (ΔErest) and characteristic relaxation time (t63); keep PI-approved complementarity sentence.
+5. QOCV at rest end is **additional quasi-thermodynamic contextual evidence**, introduced only after kinetic descriptors, not as a coequal initial objective.
+6. Define electrochemical regions mainly using relaxation landmarks considered with QOCV, not sole chemical-phase assignments.
+
+The full Intro P3 and P4 were updated accordingly in `manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md` (commit c4e9bdd873ecd5e6f040bad0d7f95076ee343c50). The prior review candidates below are historical and superseded by this PI revision.
+
+---
+
 # Introduction line-by-line review — Paragraph 3 (2026-11-04)
 
 **Status:** PI-review recommendation only. Existing full Intro candidate preserved; P1/P2 have separate sentence-level reviews. Main v29 Word, SI v17 and kept Abstract unchanged.
