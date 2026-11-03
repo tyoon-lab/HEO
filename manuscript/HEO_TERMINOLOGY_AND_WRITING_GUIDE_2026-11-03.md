@@ -1,3 +1,9 @@
+## 2026-11-04 FULL INTRODUCTION LOCK + v30 RESULTS ALIGNMENT
+
+The PI fixed all four paragraphs of the current consolidated Introduction. P3 and P4 remain verbatim; P1/P2 are the reviewed and integrated versions, with their references reconciled to latest v29 Word ([22] He, [23] Triolo, [24] Ma; new [27] Minouei). The older v28 Wang [10]/[22] duplicate was already removed in v29. A full review copy v30 Word was generated in conversation (six original figures, unchanged Abstract) and its modifications are indexed in `manuscript/HEO_RESULTS_DISCUSSION_V30_REVIEW_2026-11-04.md`. Yoo lab's preliminary XPS slide 8 includes an unverified ~579eV Cr(VI)-like contribution. Do not use Cr valence as proof until final matched-sample refit and provenance confirmed; XPS belongs to 2.1 surface chemistry or SI. 
+
+---
+
 ## 2026-11-04 P4 LOCKED BY PI
 
 PI approved final P4 with concise motivation for two distinct modifications, four matched samples, observed BM capacity gain and Mg capacity loss, and signed region-specific GITT charges. BM gives its largest positive increment in R2 but a negative change in R3; Mg gives the dominant negative increment in R3. The concluding message is uneven regional charge contributions and localizing effects of processing/composition, not proof of individual pure chemical steps. This P4 is now integrated in the consolidated Introduction (commit 86b5690fadedce594a7920ca6fd6472e9d4f9fbb). P3 remains locked unchanged. Citation [27] remains a provisional newly added reference; harmonize numbering before submission. Avoid modifying either paragraph without further PI request.
