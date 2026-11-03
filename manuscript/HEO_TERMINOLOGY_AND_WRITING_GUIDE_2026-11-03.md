@@ -1,3 +1,13 @@
+## Nov 3 primary-source and physical-parameter audit
+
+**GITT relaxation is kinetic information.** Characteristic recovery time t63 summarizes time-dependent recovery of a coupled state-dependent system; ΔErest quantifies finite-window voltage recovery and is influenced by thermodynamics (E–composition slope) as well as kinetic polarization. Neither t63 nor ΔErest by itself identifies a unique intrinsic reaction rate constant, pure resistance, or diffusion coefficient. 60-min rest-end voltage is an approximate relaxed potential, with full equilibration unverified.
+
+**NiO [26] verified against original RSC article:** Ng et al., DOI 10.1039/D0TA09683K, Figure 3 + Section 3.2 separated four SOC regions by GITT-derived OCP, S²D apparent diffusivity, and i0S apparent exchange-current trends, then used LSV/transfer-coefficient modeling and TEM/XPS to interpret conversion-vs-SEI competition. Correct citation: *GITT-derived properties informed region definitions; additional techniques informed reaction assignment*. Avoid saying *D alone proved four conversion steps* or *no GITT prior art*.
+
+**PI explicit hypothesis:** A modification can affect lithiation widely/similarly or unevenly/oppositely among electrochemical regions. This is an empirical question. Intro P2 must mention both possibilities.
+
+---
+
 # HEO terminology and PI writing guide — 2026-11-03
 
 ## PI-approved core definitions (AUTHORITATIVE FOR WRITING, NOT AN EXPERIMENTAL CLAIM)
