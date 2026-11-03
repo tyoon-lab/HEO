@@ -1,0 +1,13 @@
+# HEO Abstract — PI-approved baseline (11 October 2026)
+
+**Status:** PI approved the stage/region-specific Abstract on 2026-10-11; the 2026-10-12 control map labeled it **ABSTRACT PROVISIONALLY LOCKED**. Preserve wording as a historical approved baseline and reopen only if necessary after cross-checking the newly locked 2026-11-04 Introduction/Results. This is NOT a claim of final submission/production copy approval. A previous 2026-09-28 kinetics/diffusivity-oriented lock was superseded by this later approved narrative.
+
+**Source:** `manuscript/HEO_V21_STAGE_ORIGIN_TEXT_SNAPSHOT_2026-10-12.md`, copied verbatim with no rewriting.
+
+## Abstract
+
+Spinel high-entropy oxide (HEO) anodes undergo multistep conversion during lithiation, involving progressive cation reduction, oxide destabilization and reconstruction, and the formation of reduced metal/Li2O-derived states. The GITT relaxation response during first lithiation resolves this process into four electrochemically distinct regimes: early lithiation, conversion onset and progression, late conversion, and post-plateau deep lithiation. This stage-resolved response provides a basis for determining how material modifications alter the conversion sequence underlying the overall capacity. Ball milling and Mg incorporation produce opposite capacity changes, but the GITT analysis shows that they act on different reaction stages: the capacity increase induced by ball milling arises predominantly from expansion of the conversion-onset/progression regime associated with oxide destabilization and structural reconstruction, whereas the capacity loss caused by Mg incorporation is concentrated in the subsequent late-conversion regime associated with evolution toward reduced metal/Li2O-derived states. These results show that macroscopic capacity changes can originate from selective expansion or suppression of specific parts of a multistep conversion sequence. By locating the reaction stage responsible for a performance change, GITT relaxation provides an electrochemical basis for connecting materials processing and composition directly to the conversion processes that should be promoted or suppressed.
+
+## Cross-check required before journal submission
+
+November 2026 editorial guidance favors `electrochemical regions` over implying four chemically isolated `reaction stages`; this baseline retains the exact approved 2026-10-11 wording, so any future polishing to align these labels requires PI review, not silent replacement. Later v29/v30 drafts had introduced a separate working abstract, which did not supersede the prior PI-approved baseline.
