@@ -1,3 +1,23 @@
+## 2026-11-04 P4 remaining-sentences quantitative audit
+
+Current v28 first-cycle continuous GCD lithiation capacities: HEO 901.25; BM-HEO 1056.10; Mg-HEO 731.15; BM-Mg-HEO 944.07 mAh/g. Direction: BM positive in both Mg conditions; Mg negative in both milling conditions. These should be distinguished from nominal GITT charge (100 mA/g * 10 minutes per full pulse).
+
+Using v28 nominal GITT R1/R2/R3/R4 values (mAh/g):
+- BM minus HEO: +50.0, +166.7, -150.0, +116.7; total +183.3.
+- BM-Mg minus Mg: +50.0, +133.3, -166.7, +116.7; total +133.3.
+- Mg minus HEO: 0, -16.7, -266.7, 0; total -283.3.
+- BM-Mg minus BM: 0, -50.0, -283.3, 0; total -333.3.
+
+**Editorial priority:** BM's largest positive charge increment is R2, but BM also strongly DECREASES R3; wording must avoid insinuating milling simply enhances all stages, and signed contributions can compensate. Mg's negative change is strongly localized to R3 in both contrasts. These numerical regional differences reflect the adopted electrochemical partition, not direct independent chemical phase charges. R2 conversion onset and progression and R3 late conversion are **inferred process associations**.
+
+### Preferred full P4 for PI review (current main Introduction unchanged)
+
+Ball milling and Mg incorporation were selected to examine how processing and cation composition affect the lithiation response of spinel HEOs. Previous studies have shown that particle refinement and Mg substitution can influence their electrochemical behavior [4,27]. First-lithiation GITT was applied to pristine HEO, ball-milled HEO (BM-HEO), Mg-containing HEO (Mg-HEO), and ball-milled Mg-HEO (BM-Mg-HEO), allowing the effects of each modification to be compared with and without the other. Across these matched comparisons, ball milling increases first-lithiation capacity, whereas Mg incorporation decreases it. Region-resolved GITT charge shows that ball milling produces its largest positive increment in R2, associated with conversion onset and progression, although its R3 contribution decreases. Mg incorporation, in contrast, produces its largest negative increment in R3, associated with later conversion. These differences show how total capacity changes arise from unequal regional contributions and identify the parts of lithiation most responsive to processing and composition.
+
+**PI decision pending.** P3 is locked verbatim. Bibliography [4,27] provisional and must be reconciled with canonical complete references. Verify the original partition boundary selection and GITT t63 sensitivity separately in Results.
+
+---
+
 ## 2026-11-04 review of P4 sentences 1–3 — recommended compression
 
 The PI agreed to audit only opening rationale before discussing P4 results. The original three sentences repeat (i) processing vs composition, (ii) prior evidence of electrochemical effects, and (iii) mechanistic handles. Condense to two:
