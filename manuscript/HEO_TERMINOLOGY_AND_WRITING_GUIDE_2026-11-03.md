@@ -1,3 +1,9 @@
+## 2026-11-04 P4 LOCKED BY PI
+
+PI approved final P4 with concise motivation for two distinct modifications, four matched samples, observed BM capacity gain and Mg capacity loss, and signed region-specific GITT charges. BM gives its largest positive increment in R2 but a negative change in R3; Mg gives the dominant negative increment in R3. The concluding message is uneven regional charge contributions and localizing effects of processing/composition, not proof of individual pure chemical steps. This P4 is now integrated in the consolidated Introduction (commit 86b5690fadedce594a7920ca6fd6472e9d4f9fbb). P3 remains locked unchanged. Citation [27] remains a provisional newly added reference; harmonize numbering before submission. Avoid modifying either paragraph without further PI request.
+
+---
+
 ## 2026-11-04 P3 LOCKED BY PI
 
 The exact P3 in the current consolidated Introduction is now locked. Its argument prioritizes kinetic contrast: low-rate voltage plateau limits resolution; GITT relaxation gives amplitude and characteristic relaxation time; rest-end QOCV supplies additional quasi-thermodynamic context. The older description of these observables as complementary, physically coupled signals remains correct for interpreting Results, but should not displace the kinetic-first rhetorical structure in P3. Keep the diffusion coefficient discussion out of the Introduction. Next: P4 line-by-line review.
