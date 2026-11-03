@@ -1,3 +1,35 @@
+# 2026-11-03 follow-up: prior literature for *same nominal spinel matrix* BM and Mg trends
+
+The PI hypothesized that the opposite capacity directions of BM and Mg may have been known independently from literature. **Answer: analogous controlled-composition studies exist, but the sign is not uniformly established for first lithiation, and some earlier processing comparisons show the opposite cycling trend.** Separate synthesis BM (mix/heat) vs post-synthesis BM on the same oxide; separate first discharge, first charge, 100th-cycle and rate capacities.
+
+## Direct paper: ball-milled and other preparation of nominal (FeCoNiCrMn)3O4
+
+**Xiao et al., Nano Energy 95 (2022) 106962**, DOI 10.1016/j.nanoen.2022.106962: nominal (FeCoNiCrMn)3O4 HEO produced by oxidizing FeCoNiCrMn HEA powder compared with **ball-milling route** (FeCoNiCrMn)3O4 BM. The main paper explicitly reports better cycling stability and rate capability for alloy-oxidation route than BM-derived counterpart. Their main long-cycle result (596.5 mAh/g after 1200 cycles at 2 A/g) is NOT first-lithiation capacity and NOT proof the BM route raises first-discharge charge. Moreover, **preparation routes differ**, so this is not exactly 'postsynthetic ball mill of fixed parent stock vs the identical stock without milling'. Useful as prior art of nominal-identical-composition BM/non-BM comparative performance, but not a controlled proof of the PI's observed first-lithiation sign. Review Shen et al., SusMat (2024) DOI 10.1002/sus2.215 Fig 5D/E explicitly reproduces HEO vs HEO-BM rate and cycling profiles.
+
+**Zhai et al., J Power Sources 603 (2024) 234418**, DOI 10.1016/j.jpowsour.2024.234418. Parent nominal same (FeCoNiCrMn)3O4; particle fragmentation and high-energy ball milling used to support rising late-cycle capacity/reversibility; headline 2831 mAh/g is cycle 825, NOT first-lithiation. A controlled raw first discharge contrast between already formed pristine and postmill stock remains unverified from accessible original text; refrain from asserting first-cycle BM+ sign.
+
+**Sahoo et al., J Mater Chem A 14 (2026) 12867–12885**, DOI 10.1039/D5TA08614K: same (FeCoCrMnZn)3O4 matrix; 12 h ball mill/5h 1000°C anneal vs 3 h mill/12h anneal; better high-current cycling with shorter mill + longer anneal. **Annealing is a confounding variable**, and only later cycle performance is explicit in abstract. Useful as proof synthesis processing matters, not as first cycle BM proof.
+
+## Mg composition comparisons most relevant to spinel matrix
+
+**Minouei et al., J Power Sources 549 (2022) 232041**, DOI 10.1016/j.jpowsour.2022.232041: (CrMnFeCoNi)3O4 vs (MgCrMnFeCo)3O4, replacing Ni with Mg. Abstract claims Ni-bearing parent favors higher capacity; Mg replacement favors electrode stability/long-cycle. This is a **strong qualitative near-identical-matrix composition comparison**, but quoted capacity is not explicitly first lithiation; primary first-cycle GCD numeric values still require full figure access. Not simply addition of dilute Mg: it is an equiatomic substitution with a different active-cation inventory.
+
+**Duan et al., Ceramics International 47 (2021) 32025–32032**, DOI 10.1016/j.ceramint.2021.08.091: same six-cation backbone **(FeCoNiCrMnXLi)3O4** with X=Mg, Zn, Cu (all seven cations equimolar). A published review Xu et al., Rare Metals (2024) DOI 10.1007/s12598-024-02749-y gives **first discharge/charge** pairs Mg 1031/592.1, Zn 1049.9/706, Cu 1000.1/626.6 mAh/g. This is direct **first-cycle numerical comparison** within near-identical matrix: Mg lower *first discharge than Zn* by 18.9, but higher than Cu by 30.9; Mg lower first **charge** than both Zn (113.9) and Cu (34.5). Do NOT say 'Mg always lowers capacity': effect depends on comparator and on which capacity observable. First numbers here sourced through a secondary review, while original primary abstract independently verifies the X=Mg/Zn/Cu controlled family. Not an Mg-free matched sample.
+
+**Patra et al., AFM 32 (2022) 2110992**, DOI 10.1002/adfm.202110992: quaternary (CrNiMnFe)3O4 plus fifth V/Mg/Cu, electrochemical capacity changes but phase purity changes too. Does not establish controlled Mg initial change alone.
+
+**Xiao et al., ACS AMI 15 (2023) 2792–2803**, DOI 10.1021/acsami.2c12374: (FeCoCrMnMg)3O4 vs (FeCoCrMnZn)3O4, both mechanochemically prepared. More similar spinel, but substitutes Mg for Zn and source abstract only gives *after-2000-cycle* capacity 828.6 for Zn, not their first-cycle numeric difference. GITT Dapp is higher for Zn but not direct regional reduction.
+
+**Lökçü et al., Eurasia Proceedings (2020)**: rock salt Mg5→Mg35 first discharge 1459→1222 mAh/g, controlled Mg fraction but other cations change together. Supplementary evidence only; less relevant than spinel Duan and Minouei.
+
+## Editorial decision for PI
+1. Can now acknowledge that **prior work compared processing routes involving BM for the same nominal spinel and compared Mg substitutions in a closely matched spinel backbone**, sometimes finding capacity differences.
+2. It is **not substantiated** that literature universally established "BM raises initial lithiation and Mg lowers it" in the exact same material under truly isolated variables. In fact Xiao 2022 favors non-BM route for rate/cycling.
+3. Thus a good Introduction P4 would present **BM and Mg as literature-motivated material levers with documented performance effects**; the actual BM+ and Mg− *first-lithiation* signs are observed in the PI's own matched four-sample design. New aspect: define electrochemical regions and locate the separate region-specific first-lithiation charge changes.
+4. Primary same-species comparison citations Xiao 2022 / Minouei 2022; first-cycle controlled-substitution numbers Duan 2021 as cited by Xu 2024; optional background Zhai 2024, Li 2025. Need extract first cycle from original Xiao/Minouei figures before stronger signed assertions.
+
+---
+
 # Mg incorporation in conversion HEO anodes — first-lithiation capacity vs cycling stability (primary-literature audit, 2026-11-03)
 
 **PI's explicit correction:** *initial lithiation capacity*, *reversible first charge capacity*, *capacity after cycling*, and *capacity retention* are distinct observables. Never support a first-lithiation capacity assertion solely by reporting cycling stability. This document checks Mg composition, initial capacity, reduction chemistry and same-composition/matched material significance.
