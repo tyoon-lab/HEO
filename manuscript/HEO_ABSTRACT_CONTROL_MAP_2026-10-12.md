@@ -1,3 +1,9 @@
+## 2026-11-04 AUDIT: Prior abstract lock preserved and restored
+
+The PI explicitly accepted the stage-origin abstract on 2026-10-11. Its verbatim 191-word text is now separately indexed in `manuscript/HEO_ABSTRACT_PI_APPROVED_BASELINE_2026-10-11.md`. The canonical full v30 Markdown manuscript has been restored to that exact text. Earlier v29/v30 working Abstract wording was not subsequently approved. PI-fixed November Introduction P1–P4 and Results remain unchanged. Word with the restored approved abstract (plus 6 original figures) is archived in personal Library at `/HEO/Manuscripts/HEO_Manuscript_v30_AbstractBaselineRestored_2026-11-04.docx`. Because the October Abstract says "reaction stages" where the November Introduction carefully distinguishes measured "electrochemical regions" from inferred chemical reaction processes, treat any future terminology harmonization as a proposal for PI review, never a silent rewrite.
+
+---
+
 # HEO Abstract Control Map — 2026-10-12
 
 Status: **ABSTRACT PROVISIONALLY LOCKED**
