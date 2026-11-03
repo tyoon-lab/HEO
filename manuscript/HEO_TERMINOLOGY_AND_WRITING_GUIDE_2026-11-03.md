@@ -1,3 +1,9 @@
+## Current P3 physical terminology (Nov 3)
+
+Use electrode **thermodynamic state and kinetic behavior** as the opening conceptual pair. The low-rate voltage profile reflects aspects of thermodynamics, while broad conversion plateaus make overlapping contributions difficult to distinguish. GITT relaxation provides kinetic contrast. Name the 60-minute rest-end voltage **QOCV** (quasi-open-circuit voltage); it is a finite-rest estimate, not a verified equilibrium potential. Use **characteristic relaxation time (t63)**, defined operationally from 63.2% of the 3–3600-second recovery, in place of characteristic recovery time. **Relaxation amplitude** (ΔErest) measures the observed voltage recovery, not the amount of reacted material or charge: polarization and thermodynamic voltage slope also contribute. Remove the NiO precedent from Introduction P3 to maintain narrative focus, while keeping it documented as a valid secondary literature precedent. Supporting review: Kim et al., J. Electrochem. Sci. Technol. 2022, DOI 10.33961/jecst.2021.00836.
+
+---
+
 ## Nov 3 primary-source and physical-parameter audit
 
 **GITT relaxation is kinetic information.** Characteristic recovery time t63 summarizes time-dependent recovery of a coupled state-dependent system; ΔErest quantifies finite-window voltage recovery and is influenced by thermodynamics (E–composition slope) as well as kinetic polarization. Neither t63 nor ΔErest by itself identifies a unique intrinsic reaction rate constant, pure resistance, or diffusion coefficient. 60-min rest-end voltage is an approximate relaxed potential, with full equilibration unverified.
