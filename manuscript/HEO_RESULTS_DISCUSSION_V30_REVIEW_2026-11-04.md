@@ -1,3 +1,9 @@
+## 2026-11-04 ABSTRACT VERSION CORRECTION
+
+The initial v30 review copy inherited a **different, unapproved "working" Abstract**. After auditing the PI's 2026-10-11 approval, the original approved Abstract was recovered verbatim (191 words) in `manuscript/HEO_ABSTRACT_PI_APPROVED_BASELINE_2026-10-11.md` and restored to the canonical v30 full-text manuscript. The updated Word containing 6 original figures is in persistent Library as `/HEO/Manuscripts/HEO_Manuscript_v30_AbstractBaselineRestored_2026-11-04.docx`, superseding the earlier v30 Word for subsequent drafting. This was **restoration of previously accepted wording, not fresh PI approval of a changed abstract**. November terminology review may later be necessary to distinguish electrochemical regions from reaction stages. Original 2.1–2.6 Results and Figures remain unchanged.
+
+---
+
 ## 2026-11-04 chat-continuity correction
 
 The **complete v30 manuscript text** has now also been committed to GitHub: `manuscript/HEO_MANUSCRIPT_V30_INTRO_LOCKED_RESULTS_ALIGNED_2026-11-04.md` (commit `155cfdf288d636db23b21db898a3e3ed4479b5eb`). The full editable Word with six figures and Markdown text have also been saved in the persistent personal Library at `/HEO/Manuscripts/`. Earlier notes saying the complete v30 was only a conversation attachment are historical. The Word binary remains absent from GitHub.
