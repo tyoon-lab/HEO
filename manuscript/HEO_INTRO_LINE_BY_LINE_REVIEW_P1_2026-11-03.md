@@ -1,3 +1,5 @@
+**2026-11-04 UPDATE: P1 proposed text was integrated into the consolidated Introduction (commit e28cf9308003d6be16003384ad8cb8d7a2f830d6). P3 and P4 were preserved verbatim. Citation numbers updated to match the v28 reference base plus new addenda; see HEO_INTRO_REFERENCE_RECONCILIATION_2026-11-04.md. Earlier "proposal only" statements below are historical.**
+
 # Introduction line-by-line review — Paragraph 1 (2026-11-03)
 
 **Status:** Editorial recommendation only. Do not replace the latest full Introduction candidate until PI approves sentence changes.
