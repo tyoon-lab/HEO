@@ -1,0 +1,14 @@
+# HEO abstract v13 — numerical reconciliation after PI kinetic-region decision (2026-11-05)
+
+**Status:** Working numerical update of previously PI-locked v12 abstract. The user's new instruction to apply kinetic-region changes overrides the three obsolete numerical spans. Prose/narrative and the original material-design conclusion otherwise remain unchanged. Do not treat this as a fresh abstract conceptual rewrite.
+
+## Revised abstract (238 words)
+
+Spinel high-entropy oxides (HEOs) have attracted considerable interest as high-capacity anodes for lithium-ion batteries. Improving their electrochemical performance has motivated studies of particle refinement and cation substitution, which modify oxide morphology and cation chemistry, respectively. Understanding the effects of these modifications requires examining the lithiation response, where transition-metal reduction and structural reorganization overlap. Here, galvanostatic intermittent titration (GITT) is used to compare the effects of ball milling and Mg incorporation on the conversion response of spinel HEOs. The evolution of voltage-relaxation descriptors, including recovery amplitude and characteristic relaxation time, together with quasi-open-circuit voltage (QOCV), reveals four electrochemical regions (R1–R4) across lithiation. Ball milling increases initial lithiation capacity in both Mg-free and Mg-containing electrodes, with its largest positive change in nominal regional GITT charge occurring in R2 (conversion onset and progression, +150–167 mAh g⁻¹), accompanied by a decrease in R3 (later conversion, −133 to −167 mAh g⁻¹). Mg incorporation decreases capacity in both unmilled and milled electrodes, with its largest regional charge loss in R3 (−250 to −283 mAh g⁻¹). The greater BET surface area after milling is consistent with increased accessibility of oxide domains, whereas the Mg-associated R3 loss may reflect fewer reducible transition-metal centers or more persistent Mg-containing oxide environments. These findings show that processing and composition produce distinct, partially compensating charge changes across lithiation. Such region-resolved analysis helps identify how material modifications affect the evolving electrochemical response and provides guidance for the design of conversion-type electrodes.
+
+## Exactly three changed spans from locked v12
+- BM positive R2: `+133–167` → `+150–167`.
+- BM negative R3: `−150 to −167` → `−133 to −167`.
+- Mg negative R3: `−267 to −283` → `−250 to −283`.
+
+The finer early-R1 milling and late-R3/R4 Mg kinetic fingerprints remain supportive results in §§2.3, 2.5 and Figure 4 rather than being elevated into the abstract's core message.
