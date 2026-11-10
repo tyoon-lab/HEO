@@ -1,0 +1,547 @@
+# Historical START_HERE pre-reconciliation snapshot
+
+This preserves the previous 2026-10-12 entry-point in full, including later prepended updates and older 2026-10-12 tasks. **Do not use it as the active authority.** The current state is in [START_HERE_CURRENT_STATE_2026-10-12.md](../START_HERE_CURRENT_STATE_2026-10-12.md).
+
+---
+
+> **2026-11-07 collaborator manuscript (newest author-provided Word source):** Compared author-supplied v43 commented original against `HEO_Manuscript_Revised_For_Collaborator.docx`. Applied Publication Toolkit **v0.22** (direct/evidence-calibrated voice), set ordered authors Seonghyeon Park, Yoonju Kang, Taekyung Yu* and Taeho Yoon* as co-corresponding, journal-neutral 11-page DOCX with six figures, 24 references, and 11 separate yellow collaborator verification requests. Word comments removed; no fabricated Mg synthesis/electrode metadata. Key mechanism overclaims in later collaborator revision calibrated. Author-review file `HEO_Manuscript_Collaborator_Review_JournalNeutral_2026-11-07.docx` exists as conversation artifact ONLY (SHA256 acaab10dc45993ba7b8f959d8195e8627a4b4b89a7c6aee2f7745c8d0896eb4a). See [review record](manuscript/HEO_2026-11-07_COLLABORATOR_MANUSCRIPT_TOOLKIT_V022_REVIEW.md). SI not provided this turn, so full MS↔SI signoff pending.\n\n> **2026-11-06 HEO v42 manuscript figure placement and styling:** Figure1+Figure2 moved immediately below §2.1; Figure3 below §2.2; Figure4 below §2.3; Figure5 below §2.4; Figure6 below §2.6. Panels moved outside axes and retypeset in regular font for re-plotted Figures3–6. Figure6 uses original HEO QOCV plus a compact **BM R2+ (largest), R3−, R4+ (second largest)** and Mg R3− summary; NO reaction/charge transfer implied. Main Word v42 15 rendered pages and no comments, available as conversation file. Source SEM/XPS embedded plot text cannot all be retypeset without independent editable/numeric originals. See [v42 record](manuscript/HEO_V42_FIGURE_PLACEMENT_REGULAR_TYPOGRAPHY_2026-11-06.md). All PI-approved kinetic boundaries/charge numbers, Abstract/Intro and SI v22 retained.\n\n> **2026-11-06 HEO v41 Figure/artwork and bibliography review:** Main DOCX v41 (13 rendered pages) plus SI v22 (10 pages) delivered as conversation files, Word comments absent. All 6 figure artwork adjusted: Figure3 a–d labels inside and common axes, f legend; Figure4 original four raw-sample GITT curves with all headlines, pulse-counts, shoulder arrows and footnotes removed, retaining (a)–(d) names; Figure5 title removed and b/c titles moved inside; Figure6 box diagram replaced with original HEO QOCV voltage-curve interpretation of R1–R4. ‘late t63 shoulder’ wording removed from main/SI while keeping four accepted numeric boundaries and region charges. Reference bibliography 32→24 in-text-cited items, renumbered first appearance; explicit sources verified for key papers, XPS Cr fit and TEM CoGa2O4 indexing unresolved. See [v41 audit](manuscript/HEO_V41_ARTWORK_CAPTION_REFERENCE_AUDIT_2026-11-06.md).\n\n> **2026-11-06 v40 literature integration:** Main v40 (14 pp) and SI v21 (10 pp) review Word generated as conversation files; both comment-free. §2.5 R3 ΔErest hump interpretation refined from generic “overlapping reduction” to **delayed re-equilibration among heterogeneous conversion states**, grounded by FeF₃ GITT and post-interruption SiO–graphite and graphite/LFP diffraction examples; cites three new items [30]–[32]. SI S7 + Table S6 distinguishes directly comparable recovery amplitude from other voltage bumps/hysteresis and includes Si mechanical counterexample. **No Abstract, 4-sample t63 boundaries, Figures or regional-charge numbers changed.** See [v40 record](manuscript/HEO_V40_R3_HUMP_CROSS_MATERIAL_LITERATURE_INTEGRATION_2026-11-06.md).\n\n> **2026-11-06 HEO v39 raw R3 hump time-window analysis completed:** Using all four ORIGINAL GITT XLSX files, voltage recovery was partitioned 3–60 s, 1–10 min, 10–60 min for every complete pulse. Pristine R3 onset pulse26→hump peak50: total +44.2 mV = −9.8 (early) +16.5 (middle) +37.5 mV (late); late recovery is the dominant hump source. Mg-HEO weak +8.6 mV hump; BM-HEO/BM-Mg-HEO amplitudes decline within R3. At QOCV 0.50 V pristine amplitude 185.5 vs BM 142.6 mV despite smaller local QOCV slope, so slope amplification alone is insufficient. Manuscript **v39** and SI **v20** (Figures S4–S6, Tables S4–S5) generated as downloadable conversation Word files; all t63-only R1–R4 endpoints, charge figures, Abstract/Introduction held fixed; 2 new sources Li 2016 JACS and Knehr 2017 Electrochim Acta added as refs [28]–[29]. See [v39 analysis record](manuscript/HEO_V39_R3_HUMP_RAW_TIME_WINDOW_ANALYSIS_2026-11-06.md). No new unique phase/process assigned to hump.\n\n> **2026-11-06 HEO v35 AUTHOR-APPROVED t63-only boundary basis:** PI's new red-marked Figure 4 uses late t63 shoulders to set Mg-HEO L4=42 and BM-Mg-HEO L4=46 (prior QOCV-knee L4=39/40 superseded). Four endpoints now HEO 6/25/55, BM-HEO 9/38/60, Mg-HEO 7/24/42, BM-Mg 9/35/46. Updated manuscript v35 and SI v19, main Figure 4+5, all abstract/Results/Methods/captions/SI Tables S1–S3; existing 15 Word comments preserved. BM R2 +150–167; BM R3 −117 to −133; Mg R3 −183 to −200 mAh/g. ΔErest and QOCV remain supportive; t63-only region derivation is operational because Mg t63 shoulder amplitude <3-s sampling. See [v35 detailed decision/audit](manuscript/HEO_V35_T63_ONLY_L4_SHOULDER_REASSIGNMENT_2026-11-06.md). Output DOCX files are conversation artifacts, not GitHub binaries.\n\n> **2026-11-05 HEO v34 Figure 2/3 and writing audit:** Main Word `HEO_Manuscript_v34_XPS_CyclingReplotted_Polished_2026-11-05.docx` (conversation artifact, 14 pages, 15 Word comments unchanged). Figure 2: all four matched Cr 2p measured and original reported fit curves reconstructed from PPT slide8 vector plots; unmatched old spectra omitted, ~579 eV chemical-state assignment remains unresolved. Figure 3: all four first-three 0.1C voltage profiles + FEC 100-cycle capacity and rate curves replotted from archived vector paths; corrected green/red PDF drawing order; panel(e) capacity only, not CE. Source CSV, figure PDFs/PNGs and reproducibility script in conversation ZIP. Full rationale [v34 record](manuscript/HEO_V34_XPS_FIGURE3_VECTOR_REPLOT_WRITING_AUDIT_2026-11-05.md). Abstract/Intro and Figures 1/4/5/6 unchanged; region charge remains principal explanation. Instrument source exports, XPS calibration, Mg metadata, CoGa₂O₄ indexing still unresolved.\n\n> **2026-11-05 manuscript v33 + SI v18 integrated:** User explicitly approved applying four-workbook kinetic-boundary reassignment and prioritizing **region-resolved charge as the main capacity result**, with early R1 milling and late R3–R4 Mg t63 fingerprints as supporting kinetic details. Working boundaries HEO 6/25/55, BM 9/38/60, Mg 7/24/39, BM-Mg 9/35/40; updated manuscript Figures 4–6, all regional capacities, SI Tables S1–S3, and abstract numerical ranges (v13). Word main v33 retained all 15 prior comments. See [v33 integration record](manuscript/HEO_V33_KINETIC_REGION_CHARGE_PRIORITY_INTEGRATION_2026-11-05.md) and [updated abstract v13](manuscript/HEO_ABSTRACT_V13_BOUNDARY_RECONCILED_2026-11-05.md). Main/SI DOCX are local conversation artifacts, not committed GitHub binaries. Earlier 'v12 locked' remains an archived decision, superseded only for its three numbers by this PI-authorized update.\n\n> **2026-11-05 scientific logic review (candidate, no manuscript edits):** Four-workbook raw GITT comparison shows strong early-R1 t63 trajectory changes with milling (both Mg pairings) and attenuated late t63 maxima after Mg; distinguish from intrinsic rate constants and account for state/QOCV mismatch early. Review and section-specific edits at [manuscript/HEO_V33_LOGIC_AUDIT_EARLY_R1_MG_LATE_R3R4_2026-11-05.md](manuscript/HEO_V33_LOGIC_AUDIT_EARLY_R1_MG_LATE_R3R4_2026-11-05.md). v12 abstract remains locked; numerical regional-charge changes remain unapproved pending boundary decision.\n\n> **2026-11-05 new original-workbook kinetic-boundary reanalysis:** All four source GITT xlsx files recovered and pulse-by-pulse t63, ΔErest, 60-min QOCV recomputed with 3 s reference; candidate raw-derived L1/L3/L4 = HEO 6/25/55, BM 9/38/60, Mg 7/24/39, BM-Mg 9/35/40 (late Mg samples use QOCV knee). See [modeling/HEO_FOUR_SAMPLE_RAW_GITT_KINETIC_BOUNDARY_CHECK_2026-11-05.md](modeling/HEO_FOUR_SAMPLE_RAW_GITT_KINETIC_BOUNDARY_CHECK_2026-11-05.md). **Provisional pending PI review; do not silently overwrite locked abstract or Figure 5/SI numbers.** Earlier assistant manually interpolated four-sample plot was invalid as raw evidence; new plot truly from the four raw workbooks.\n\n> **2026-11-04 PI-LOCKED ABSTRACT v12:** Approved text stored verbatim in [manuscript/HEO_ABSTRACT_V12_PI_LOCKED_2026-11-04.md](manuscript/HEO_ABSTRACT_V12_PI_LOCKED_2026-11-04.md). The PI will manually insert it into the newest manuscript. Do not claim the v30 GitHub manuscript or Word has been updated with this Abstract; do not revise Abstract automatically. Continue working on Results, figure/SI provenance, and Methods against the already locked Introduction.
+
+# 2026-11-04 CRITICAL ABSTRACT RESTORATION — READ BEFORE DRAFTING
+
+**Previously approved abstract was accidentally displaced in the v29/v30 Word working copy. This is corrected in the current canonical GitHub v30 manuscript.** The PI approved an R2/R3 stage-origin abstract on **2026-10-11** (recorded as **ABSTRACT PROVISIONALLY LOCKED** in `manuscript/HEO_ABSTRACT_CONTROL_MAP_2026-10-12.md`). The exact 191-word approved baseline was recovered verbatim from `manuscript/HEO_V21_STAGE_ORIGIN_TEXT_SNAPSHOT_2026-10-12.md` and separately preserved in [manuscript/HEO_ABSTRACT_PI_APPROVED_BASELINE_2026-10-11.md](manuscript/HEO_ABSTRACT_PI_APPROVED_BASELINE_2026-10-11.md). **Do not treat the newer v29/v30 “working abstract” as PI approval**: that wording was not specifically approved. The canonical updated complete manuscript in [manuscript/HEO_MANUSCRIPT_V30_INTRO_LOCKED_RESULTS_ALIGNED_2026-11-04.md](manuscript/HEO_MANUSCRIPT_V30_INTRO_LOCKED_RESULTS_ALIGNED_2026-11-04.md) now restores the original approved abstract exactly, keeping Introduction and Results unchanged.
+
+**Word with six figures and reconciled Abstract** is saved in user Library at `/HEO/Manuscripts/HEO_Manuscript_v30_AbstractBaselineRestored_2026-11-04.docx`. Aligned Markdown Library copy: `/HEO/Manuscripts/HEO_Manuscript_v30_AbstractBaselineRestored_2026-11-04.md`. Original `HEO_Manuscript_v30_IntroLocked_ResultsAligned_2026-11-04.docx` is historical and still has the different unapproved working abstract. **Use AbstractBaselineRestored Word** henceforth, no separate handoff. The previously PI-locked Introduction P1–P4 is unchanged, as are Results 2.1–2.6 and 6 existing figures.
+
+**Scientific terminology check:** The October-approved abstract says “reaction stages” and “stage-resolved”, while the November-locked Introduction more precisely differentiates measured **electrochemical regions** from inferred overlapping **dominant reaction processes**. Preserve the old approved Abstract as-is for now; any terminology polishing requires explicit PI discussion, not silent editing. “Provisionally locked” means an approved drafting baseline rather than final submission signoff.
+
+---
+
+> **2026-11-04 additional non-destructive review:** Quantitative v30 GITT/SI audit and archived Word Figure 1–6 visual check completed; see [manuscript/HEO_V30_RESULTS_FIGURE_DATA_AUDIT_2026-11-04.md](manuscript/HEO_V30_RESULTS_FIGURE_DATA_AUDIT_2026-11-04.md). The main findings are numerical agreement with SI Tables S1–S3, a **still-empty Figure 3e FEC cycling placeholder**, unresolved `CoGa2O4` HRTEM label, GITT-vs-GCD capacity-basis distinctions, per-sample normalized Figure 4 charge axes, and substantial Experimental placeholders. No change to locked Introduction, v30 working Abstract, main manuscript or SI. Prioritize Figure 3e source fill and 2.3–2.4 figure/interpretation polish, then Methods provenance.\n\n# LATEST AUTHORITATIVE STATE — 2026-11-04 (verified after chat-continuity audit)
+
+**START HERE FOR ALL NEW CHATS. No separate handoff required.** The **complete current v30 manuscript text is now committed to GitHub**, not just the change log: [manuscript/HEO_MANUSCRIPT_V30_INTRO_LOCKED_RESULTS_ALIGNED_2026-11-04.md](manuscript/HEO_MANUSCRIPT_V30_INTRO_LOCKED_RESULTS_ALIGNED_2026-11-04.md), commit `155cfdf288d636db23b21db898a3e3ed4479b5eb`. This is the canonical **current manuscript draft** for further Results, Discussion, reference and figure-data checks. Preserve its four-paragraph locked Introduction unless PI explicitly requests change. Its Abstract is **earlier working draft, explicitly not finally approved**; do not rewrite without PI direction. Figures 1–6 are in the v30 Word file.
+
+**Current Introduction**: [manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md](manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md). P1/P2 reviewed, P3/P4 preserved verbatim; **all P1–P4 now fixed by PI**. Source bibliography is **v29**, with [22] He (2016), [23] Triolo (2023), [24] Ma (2023), [25] Yoon et al., [26] Ng, [27] new Minouei. The duplicate Wang [10]/[22] described in *old v28 notes* had already been removed in v29; treat older contradictory notes as historical.
+
+**Binary/editable and full-text v30 archived persistently in personal Library**:
+- `/HEO/Manuscripts/HEO_Manuscript_v30_IntroLocked_ResultsAligned_2026-11-04.docx` (Word with original six figures)
+- `/HEO/Manuscripts/HEO_Manuscript_v30_IntroLocked_ResultsAligned_2026-11-04.md` (full manuscript text)
+The **Word binary is NOT uploaded to GitHub**, but the **complete text IS**. v29 Word remains unmodified on Google Drive. To get illustrations/open embedded figures use the Library Word.
+
+**Results discussion and pending analyses**: [manuscript/HEO_RESULTS_DISCUSSION_V30_REVIEW_2026-11-04.md](manuscript/HEO_RESULTS_DISCUSSION_V30_REVIEW_2026-11-04.md). BM: largest positive nominal GITT increment R2 and concurrent R3 decrease. Mg: largest negative R3. The regional GITT pulse charge is distinct from first-cycle continuous GCD capacity. GITT current 100 mA/g, pulse 600s, rest 3600s; t63 = 63.2% first crossing over 3–3600s. t63 and ΔErest extrema need not coincide. Avoid calling region partitions unique phase/chemical steps. BET is gas-accessible area, not direct active area. Mg-rich residual oxide is hypothesis informed by external literature, not directly confirmed by these electrodes.
+
+**Yoo Taekyung lab XPS**: source Park Seonghyeon 2026-07-30 email attachment `Figure 구성 전 데이터.pptx`, Slide 8: preliminary four-sample Cr2p and suspected ~579eV Cr(VI)-like signal, inconsistent between batches. Repeated Mg XPS was requested, **final verification not located**; do not insert unvalidated Cr(VI) assignment or claim it proves R3 chemistry. If validated, place concise surface composition in Section 2.1 and fit details in SI. HRTEM figure label CoGa₂O₄ also requires collaborator verification. Check Mg precursor stoichiometry, crystallographic labeling, BET raw and other Methods placeholders before submission.
+
+**Next useful work**: systematic v30 figure-to-text and raw-data review, accurate figure caption/source checks, reference numbering, section-by-section submission polish, XPS final-data follow-up. No new electrochemical experiments unless clearly necessary. Do not say XPS is finished or that v30 binary is on GitHub.
+
+---
+
+# 2026-11-04 LATEST: INTRO LOCKED; RESULTS V30 REVIEW COPY; YOO-LAB XPS AUDITED
+
+PI fixed entire 4-paragraph Introduction. P1/P2 are the reviewed text with **v29** references [22] He, [23] Triolo, [24] Ma; P3/P4 wording unchanged. Canonical text: [manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md](manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md), commit 8799adc0b3436c86c462650a768a2c16142f598e. **Correction:** v29 already removed duplicate Wang [10]/[22] that existed in v28; prior reference notices in earlier log are historical. V29 [25]=Yoon et al silicon paper, [26]=Ng NiO, [27] Minouei NEW. Full Results and Discussion edited in new conversation review copy v30 Word `HEO_Manuscript_v30_IntroLocked_ResultsAligned_2026-11-04.docx`, six existing figures and unchanged Abstract; rendered 14 pages and QA. Detailed change/XPS audit: [manuscript/HEO_RESULTS_DISCUSSION_V30_REVIEW_2026-11-04.md](manuscript/HEO_RESULTS_DISCUSSION_V30_REVIEW_2026-11-04.md). **Yoo group 2026-07-30 PowerPoint slide 8 has preliminary four-sample Cr2p fits with anomalous ~579 eV Cr(VI) candidate; repeats were planned and not verified. Exclude CrVI and Mg-rich XPS-mechanism claims until validated. After validated, use surface chemistry in 2.1 + fit arrays SI**. Word v29 in Drive remains original, do not claim it was overwritten. Preserve no extra GCD experiments constraint.
+
+---
+
+# 2026-11-04 LATEST — INTRODUCTION P1–P4 INTEGRATED, P3/P4 LOCKED
+
+Current complete four-paragraph Introduction: [manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md](manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md), commit e28cf9308003d6be16003384ad8cb8d7a2f830d6. Reviewed P1 and P2 adopted. **PI-approved P3 and P4 remain verbatim**, including kinetic-first GITT with subordinate QOCV and BM positive R2 / negative R3 versus Mg negative R3. P1 now cites Luo [7], Triolo [24], He [23] with specific reduction routes, spinel-to-rock-salt and in situ overlapping Fe3O4 stages. P2 now cites Li [9], Xiao [20], Ma [25] and specifies quantitative charge redistribution across lithiation as the gap, acknowledging prior mechanistic studies. **Citation map:** [manuscript/HEO_INTRO_REFERENCE_RECONCILIATION_2026-11-04.md](manuscript/HEO_INTRO_REFERENCE_RECONCILIATION_2026-11-04.md), commit bf7e7710b93863de387a135bc1181f5f5a36d358. Citation IDs aligned with v28: [24] Triolo, [25] Ma, [26] Ng reserved/unused in Intro, [27] Minouei; v28 [22] duplicates [10] Wang and will require full manuscript-wide reference renumbering on eventual integration. Abstract, v29 Word and SI not touched. Next: full main text editorial/figure-data verification, and bibliography dedup once Word integrated.
+
+---
+
+# 2026-11-04 LATEST — P4 LOCKED AFTER PI APPROVAL
+
+Full consolidated Introduction: [manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md](manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md), commit 86b5690fadedce594a7920ca6fd6472e9d4f9fbb. PI has now locked P3 AND P4. P4 introduces ball milling versus Mg incorporation as processing/compositional modifications; cites prior particle refinement/Mg substitution literature [4,27] (provisional numbering); applies first-lithiation GITT to four samples in matched comparisons; reports BM increases total initial capacity and Mg decreases it; BM's largest positive GITT increment in R2 with simultaneous R3 decrease, Mg's largest negative in R3; concludes nonuniform regional changes. No phase-specific proof claimed. P1/P2 reviewed in separate proposal documents but not yet affirmatively marked locked. Do not revise P3/P4 unprompted. Reference-number reconciliation and experimental source verification remain pending for eventual full manuscript integration.
+
+---
+
+# 2026-11-04 LATEST — PI STREAMLINES INTRODUCTION P3
+
+PI explicitly asked to remove the QOCV definition sentence from Introduction P3 because it interrupted the kinetics narrative, and to remove the unexplained apparent-diffusion-coefficient critique from the same paragraph. Final current P3 is 126 words: altered thermodynamic/kinetic behavior → broad low-rate voltage/dQdV limitations → GITT time-resolved recovery → amplitude and characteristic relaxation time → electrochemical regions and charge attribution. Preserves exact PI-approved magnitude/time sentence. Intro P4 changed 'QOCV' to 'rest-end voltage' to avoid undefined acronym. Detailed finite-rest QOCV and diffusivity assumptions should stay in Results/Methods, if needed. Changes committed in [manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md](manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md) and [manuscript/HEO_INTRO_LINE_BY_LINE_REVIEW_P3_2026-11-03.md](manuscript/HEO_INTRO_LINE_BY_LINE_REVIEW_P3_2026-11-03.md). Kept Abstract and Main v29 Word/SI unchanged.
+
+---
+
+# 2026-11-04 LATEST — Introduction P3 line-by-line physical audit
+
+New separate PI-review document: [manuscript/HEO_INTRO_LINE_BY_LINE_REVIEW_P3_2026-11-03.md](manuscript/HEO_INTRO_LINE_BY_LINE_REVIEW_P3_2026-11-03.md), 165-word proposed P3. P3 now connects dominant processes to *thermodynamic and kinetic behavior*, treats low-rate voltage as containing thermodynamic information, notes plateau overlap/dQdV limitations, uses GITT QOCV plus finite-window voltage recovery magnitude and **characteristic relaxation time**, and ends with region-charge comparisons. Keeps exact PI-approved complementary-information sentence, leaves out NiO citation per PI preference, and limits GITT D assumptions to one sentence with references. Critical Results 2.3 QA remains: t63 vs amplitude L3 minima not exact in Mg / BM-Mg; 3–3600s finite window; t63 minima may be noise sensitive at small ΔErest. P1 and P2 reviewed separately; original full Introduction untouched pending approval. Citation numbering still provisional/inconsistent with v28.
+
+---
+
+# 2026-11-03 LATEST — INTRO FOUR PARAGRAPHS CONSOLIDATED AFTER BM/Mg PRIOR-ART CHECK
+
+Current Introduction candidate: [manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md](manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md). P4 now cites Xiao Nano Energy 2022 (BM-containing preparation-route comparison of same nominal spinel HEO, provisional ref [1]) and Minouei JPS 2022 (Ni-to-Mg spinel substitution, new provisional ref [27]) as prior examples of processing/composition affecting performance. **Opposite first-lithiation capacity changes are findings from the present matched 2x2 comparison, never a literature-proven general sign or material-selection premise.** Four-paragraph structure remains; P1 reaction-process overlap, P2 capacity distribution gap, P3 thermodynamic voltage versus time-dependent GITT signatures, P4 sample choice and observed region charges. Preserve current kept Abstract, Main v29 Word and SI. All citation indices provisional until full manuscript reference remap.
+
+---
+
+# 2026-11-03 LATEST — Same-Composition BM and Mg Prior-Art Reaudit
+
+Expanded [manuscript/HEO_MG_FIRST_LITHIATION_CAPACITY_CONVERSION_PRIOR_ART_AUDIT_2026-11-03.md](manuscript/HEO_MG_FIRST_LITHIATION_CAPACITY_CONVERSION_PRIOR_ART_AUDIT_2026-11-03.md). **Xiao et al. Nano Energy 2022 DOI 10.1016/j.nanoen.2022.106962** compares same *nominal* (FeCoNiCrMn)3O4 from alloy oxidation and ball-milling synthesis route, with BETTER cycling/rate performance of non-BM route (not controlled post-synthesis BM, and first-lithiation numeric effect not verified). **Minouei et al. JPS 2022 DOI 10.1016/j.jpowsour.2022.232041** compares (CrMnFeCoNi)3O4 with Mg-for-Ni variant, says Ni favors high capacity (first-cycle numbers pending full-text figure). **Duan et al. Ceram Int 2021 DOI 10.1016/j.ceramint.2021.08.091** X=Mg/Zn/Cu within (FeCoNiCrMnXLi)3O4; Xu Rare Metals 2024 review gives first discharge/charge Zn 1049.9/706, Mg 1031/592.1, Cu 1000.1/626.6 mAh/g. Mg first discharge LOWER than Zn but HIGHER than Cu; first charge LOWER than both. Therefore same/backbone material studies exist and capacity differences are known, but the specific proposition 'BM raises and Mg lowers FIRST LITHIATION' is not universally verified. Our four matched samples' direction remains directly observed; novelty charge redistribution among GITT electrochemical regions. **No canonical Intro change yet**, PI discussing prior art and strongest narrative. 
+
+---
+
+# 2026-11-03 LATEST — Mg FIRST-LITHIATION CAPACITY LITERATURE AUDIT
+
+Latest PI correction: do not use cycling stability as evidence for first-lithiation capacity. Completed primary paper audit at [manuscript/HEO_MG_FIRST_LITHIATION_CAPACITY_CONVERSION_PRIOR_ART_AUDIT_2026-11-03.md](manuscript/HEO_MG_FIRST_LITHIATION_CAPACITY_CONVERSION_PRIOR_ART_AUDIT_2026-11-03.md). Core finding: Mg content 5→35% in rocksalt (MgCoNiZnLi)O reduced INITIAL discharge from 1459→1222 mAh/g at 100mA/g, yet 5th-cycle capacity rose 168→576 mAh/g (Lökçü et al 2020 proceedings; clear distinct metrics). Minouei et al JPS 2022 Ni→Mg substituted spinel notes Ni favorable to higher capacity, Mg favorable over long cycling; original first capacity numbers not available in abstract. Wang et al Nat Commun 2023 first-lithiation XAS/STEM finds active Co/Ni/Cu/Zn reduction and Mg-rich residual oxide, strong physical analogy but rocksalt not same spinel. Nam et al Chem Mater 2024 spinel different compositions initial 972–1028, demonstrating Mg not universally low capacity. Liu et al Chem Sci 2026 Mg stabilizer is mainly long-term cycling/DFT, not initial capacity direct proof. Sn-based HEO can show Mg activation (ACS AMI 2022). **Use literature as rationale for composition/active-ion balance, and state opposite total first-lithiation capacity trends as our own matched experiments**. Both BM and Mg have possible multiple effects; actual R3 specific chemical blocking is interpretation not direct proof. The Intro current candidate remains unchanged pending PI discussion, while audit gives recommended replacement P4 wording and references. Note provisional Introduction reference indices differ from v28 canonical refs.
+
+---
+
+# 2026-11-03 LATEST — INTRO SAMPLE CHOICE EXPLAINED; RELAXATION MAGNITUDE vs TIME
+
+The current full Introduction candidate [manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md](manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md) was updated: PI-approved sentence that relaxation amplitude and characteristic relaxation time provide complementary magnitude/timescale descriptors; P4 now briefly explains *why* ball milling (processing morphology/surface accessibility) and Mg incorporation (composition and possible active-ion vs structural-stability balance) were compared, with literature [4,17,20,21] and the actual opposite first-lithiation GCD capacity directions across matched pairs. Four-paragraph structure maintained. The relative sign of either modification is not a universal literature result. Physical check: a larger RC polarization may relax faster if effective C is smaller; ΔErest is finite 3–3600s so fastest transient is excluded. Details documented in [manuscript/HEO_TERMINOLOGY_AND_WRITING_GUIDE_2026-11-03.md](manuscript/HEO_TERMINOLOGY_AND_WRITING_GUIDE_2026-11-03.md). Main v29 and SI v17 unchanged.
+
+---
+
+# 2026-11-03 LATEST — GITT KINETICS AND NiO REFERENCE CORRECTED
+
+Latest Introduction candidate updated in place at [manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md](manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md) after PI flagged P2 one-sided modification hypothesis, thermodynamics versus kinetics, and inconsistent Ng [26] citation. P2 now permits both broad/uniform and uneven/opposite effects. P3 explicitly calls t63 an effective kinetic relaxation-time descriptor, distinguishes ΔErest as finite-window recovery amplitude and rest-end voltage as relaxation-state potential, and accurately describes Ng NiO 2021 Fig 3 SOC regions as *GITT-derived S²D, i0S and OCP trends*, with LSV + BV/MHC + TEM/XPS for conversion vs SEI assignment. Primary text verified DOI 10.1039/D0TA09683K. Detailed definitions and caveats in [manuscript/HEO_TERMINOLOGY_AND_WRITING_GUIDE_2026-11-03.md](manuscript/HEO_TERMINOLOGY_AND_WRITING_GUIDE_2026-11-03.md). No changes to kept Abstract, v29 Main Word, or SI v17.
+
+---
+
+# 2026-11-03 LATEST — CONSOLIDATED INTRO UPDATED + TERMINOLOGY AND PI WRITING RULES LOCKED
+
+**Current revised Introduction full text:** [manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md](manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md), updated in place after PI's wording and terminology preferences. **Dedicated authoritative terms/style guide:** [manuscript/HEO_TERMINOLOGY_AND_WRITING_GUIDE_2026-11-03.md](manuscript/HEO_TERMINOLOGY_AND_WRITING_GUIDE_2026-11-03.md): *overlapping reaction processes* = physical chemistry; *electrochemical regions (R1–R4)* = GITT observables defining lithiation intervals; *dominant reaction processes* = literature-supported comparatively prevalent processes within electrochemical regions. Writing: **avoid “Together,”**, prefer affirmative sentences avoiding repetitive “not/do not/without,” neutral yet confidently literature-grounded, simple and concrete. Original PI-favored two HEO opening sentences preserved. Intro P1 overlapping chemistry, P2 region-dependent modification question and prior art, P3 voltage plateau/dQdV and GITT relaxation signatures, P4 crossed BM/Mg material result. **Existing full v29 Word, SI v17, and kept Abstract not modified.**
+
+---
+
+# 2026-11-03 LATEST — PI-ALIGNED INTRO TERMINOLOGY CONSOLIDATED
+
+**Current Introduction candidate:** [manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md](manuscript/HEO_INTRO_CONSOLIDATED_REACTION_PROCESSES_ELECTROCHEMICAL_REGIONS_2026-11-03.md). PI explicitly agreed to the concept and term distinction: physical **overlapping reaction processes** are not discrete **electrochemical regions (R1–R4)**; **dominant reaction processes** may be associated with the experimentally defined intervals. Four-paragraph ~541-word English Introduction fully rewritten. P1 HEO operando/ex situ reaction processes → P2 direct logical bridge “Because these processes evolve during lithiation, materials modification may affect them to different extents,” overall-capacity literature gap → P3 broad plateau/overlapping dQdV, GITT relaxation amplitude/time/rest-voltage and NiO region precedent → P4 four-material matched BM/Mg charge effects and materials design. Original favored two opening sentences preserved. **Do not silently overwrite v29 Main, SI v17 or PI-kept Abstract**; use this new candidate for future deliberate manuscript integration.
+
+---
+
+# 2026-11-03 LATEST — INTRO REBUILT AS PHYSICAL REACTION → ELECTROCHEMICAL REGION → MATERIAL DESIGN
+
+New PI-review candidate: [manuscript/HEO_INTRO_MECHANISM_TO_ELECTROCHEM_TO_MATERIAL_DESIGN_PI_CANDIDATE_2026-11-03.md](manuscript/HEO_INTRO_MECHANISM_TO_ELECTROCHEM_TO_MATERIAL_DESIGN_PI_CANDIDATE_2026-11-03.md). ~550-word four-paragraph, retained PI-preferred opening. Explicitly addresses nine-point/most recent feedback: P1 real HEO multication state-resolved redox + oxide reconstruction and one Fe3O4 precedent, clear physical conclusion; P2 past structural snapshots and predominantly total capacity not resolving charge changes per electrochemical region → chemistry-guided materials development question; P3 plausible voltage/relaxation fingerprints, flat conversion plateau + dQ/dV overlap, GITT time-domain response with no ungrounded single D, actual Ng NiO 4-region precedent; P4 crossed BM/Mg four HEO stage-charges and materials design. Sources compared (Luo, Triolo, Li, Xiao, Ma, Ng, Kang/Chueh, Zhu/Wang). No new main/SI figure change. **DO NOT overwrite latest existing v29 Main, SI v17, retained Abstract until PI approval.** Internal exact GITT provenance and phase assignment cautions remain in candidate file, not submission prose. Next: PI line-by-line Intro review, then update canonical Main in deliberate revision.
+
+---
+
+# 2026-11-03 LATEST — PI NINE-POINT HEO-FIRST INTRODUCTION REWRITE
+
+**Newest Introduction-only candidate:** [manuscript/HEO_INTRO_HEO_FIRST_ELECTROCHEMICAL_STAGE_LOGIC_PI_CANDIDATE_2026-11-03.md](manuscript/HEO_INTRO_HEO_FIRST_ELECTROCHEMICAL_STAGE_LOGIC_PI_CANDIDATE_2026-11-03.md). Responds to PI's explicit 1–9 points: preserve favored two-sentence HEO opening, no general oxide introduction, one Co3O4 two-step comparison, remove odd ‘continuous voltage–capacity profile’ and ‘materials variable/outcome’ phrases, collapse Li/Xiao/Ma [9,20,24] into grouped material prior art, remove prematurely predefined reaction sequence from materials P2, state physical premise (flat conversion voltage plateau/dQdV overlap vs time-dependent GITT relaxation), cite electrochemical NiO/Co3O4 precedent, characterize ΔErest/t63 **without apparent D** and use four-sample matched BM/Mg charge localization for material design. Pub primary sources checked: Fu et al ACS AMI 2021 DOI 10.1021/acsami.1c05591; Sun et al Sci Rep 2016 6,19564; Ng et al J Mater Chem A 2021 DOI 10.1039/D0TA09683K; Luo 2022, Triolo 2023, Li 2025, Ma 2023, Kang/Chueh 2021. P3 physically distinguishes E / equilibrium two-phase vs composite finite-rate plateau (not proof 2phase); t63 operational kinetic/thermodynamic relaxation signature, not pure rate or diffusion. **Cited new refs [27] Fu and [28] Sun provisional; renumber on incorporation.** User’s uploaded other-chat pasted 21,460-char text verified; not entitled to claim every message in all other chats was directly reviewed. **Main v29, SI v17, kept Abstract NOT overwritten** pending PI approval of new candidate. Internal rationale saved in candidate file.
+
+---
+
+# 2026-11-03 LATEST — PRECEDENT RECHECK + REVISED ELECTROCHEMICAL BRIDGE INTRODUCTION
+
+The PI clarified a possible novelty boundary: sparse examples using electrochemical parameters alone to **region-segment conversion and connect dominance to physical processes**, typically combining GITT with other electrochemical analyses, spectroscopy, microscopy and/or simulation. Actual precedents must be acknowledged: Ng et al. *J Mater Chem A* 2021 NiO segments FOUR regions from GITT apparent diffusivity/exchange current; XPS/TEM/voltammetry/BV-MHC underpin mechanisms. He et al. *Nat Commun* 2016 Fe3O4 GITT distinguishes insertion/conversion; Li et al. *Angew Chem* 2025 HEO similarly, with structural validation; Ma et al. 2023 HEO Li2O doping also addresses two voltage domains. Therefore no claims of a literature void or first-ever electrochemical stage separation. **Sharper gap:** use directly observed GITT relaxation amplitude/characteristic time/rest-end-voltage landmarks to quantify *matched materials modification* (BM versus Mg) charge shifts by electrochemical lithiation region; interpretation guided by established chemical studies. New full four-paragraph candidate with PI cross-chat edits (broad metal oxide opening, particle-size literature in P2): [manuscript/HEO_INTRO_ELECTROCHEMICAL_BRIDGE_REVISED_CANDIDATE_2026-11-03.md](manuscript/HEO_INTRO_ELECTROCHEMICAL_BRIDGE_REVISED_CANDIDATE_2026-11-03.md). **Current v29 Word/Main and kept Abstract not overwritten.**
+
+---
+
+# 2026-11-03 LATEST — FULL MATERIALS-CENTERED v29 WRITING REVIEW DELIVERED
+
+**New comprehensive release note:** [manuscript/HEO_V29_MATERIALS_CENTERED_MANUSCRIPT_RELEASE_NOTE_2026-11-03.md](manuscript/HEO_V29_MATERIALS_CENTERED_MANUSCRIPT_RELEASE_NOTE_2026-11-03.md). PI endorsed the new materials-first Introduction and requested the entire manuscript storyline/figures implemented. Completed **15-page Word draft + full Markdown text + six-panel figure package + separate internal source-checklist**, all created in the 2026-11-03 conversation, not repo-hosted binary. Main Results §2.1–2.6 and full Experimental Section rewritten; bracket placeholders only for missing exact synthesis/electrode conditions. **Figure3** reassembled 4 first-cycle voltage profiles, FEC-matched cycling placeholder, existing FEC normalized rate plot; original bar chart removed. **Figure4** four-material CSV-based GITT descriptor comparison; **Figure5** signed two-pair 4-region charge map from accepted SI v17; **Figure6** material-design schematic. 26 references after removing Wang duplicated old [10]/[22] and adding Triolo/Ma/Yoon/Ng. **PI-kept Abstract carried over unchanged** and remains provisional. SI v17 remains unchanged. Figure1 Ga-free CoGa2O4 indexing, Mg chemistry, electrochem materials detail, principal FEC cycling raw plot and original GITT boundary provenance remain internal completion gates. Earlier canonical GitHub Main v28 is preserved pending direct PI feedback on v29. When continuing, start with the release note, **do not revert to older methodological-first storyline**.
+
+---
+
+# 2026-11-03 LATEST — PI ENDORSED MATERIALS-CENTERED INTRO; RESULTS/FIGURE REALIGNMENT REVIEW
+
+The PI said the new materials-design Introduction candidate was very good and chose that direction. Working candidate: [manuscript/HEO_INTRO_MATERIALS_DESIGN_NARRATIVE_CANDIDATE_2026-11-03.md](manuscript/HEO_INTRO_MATERIALS_DESIGN_NARRATIVE_CANDIDATE_2026-11-03.md). Comprehensive **review-only** of actual Main v28 six embedded graphics and SI v17 three tables/three graphics: [manuscript/HEO_BODY_FIGURE_REALIGNMENT_PROPOSAL_2026-11-03.md](manuscript/HEO_BODY_FIGURE_REALIGNMENT_PROPOSAL_2026-11-03.md). Key proposed change: bring SI Table S2 signed 2x2 regional comparisons into a new Main Figure 5 and show all-four GITT response signatures in Figure 4. Existing Figure 6 is text-heavy; refocus on materials design interpretation. In §2.3 fix invalid exact coincidence of t63 and DeltaErest minima in all materials. Existing references [10] and [22] duplicate the same Wang et al. *Nat Commun* 2023 DOI. **Main v28, SI v17 and PI-kept Abstract remain unchanged** until intentional integration. Preserve source evidence gates: Figure1 Ga-free CoGa2O4 annotations, Mg synthesis/ICP, electrode metadata.
+
+---
+
+# 2026-11-03 LATEST — MATERIALS-CENTERED INTRODUCTION CANDIDATE (PI REVIEW)
+
+New full four-paragraph ~576-word Introduction draft: [manuscript/HEO_INTRO_MATERIALS_DESIGN_NARRATIVE_CANDIDATE_2026-11-03.md](manuscript/HEO_INTRO_MATERIALS_DESIGN_NARRATIVE_CANDIDATE_2026-11-03.md). **Authoritative Main v28 and PI-kept Abstract remain unchanged.** User wants a materials research narrative connecting: (P1) state-resolved operando lithiation mechanism known in spinel HEO; (P2) translating this mechanistic understanding into actionable processing/composition design, with existing modifier precedents acknowledged rather than claiming none; (P3) useful electrochemical counterparts of evolving dominant processes, particularly ΔErest/t63/rest-end voltage when dQ/dV is overlapping, noting user PI's Si work and NiO region GITT precedent; (P4) 2x2 pristine/BM/Mg/BM-Mg effects, four recognizable response regions, largest BM R2 positive and Mg R3 negative, design relevance. Assertive but avoids false direct phase identification or first-ever region segmentation. Draft contains 7 verified named citations as author-year placeholders; renumber against manuscript before integration. Archive internal science gates in draft bottom only. Next decision: edit/approve candidate at paragraph level, then integrate into Main and synchronize refs while leaving Abstract alone.
+
+---
+
+# 2026-11-03 — HIGH-PRIORITY LITHIATION PROFILE / PHYSICAL STAGE LITERATURE AUDIT
+
+**New focused source report:** [manuscript/HEO_SPINEL_HEO_LITHIATION_VOLTAGE_REGION_MECHANISM_PRIOR_ART_2026-11-03.md](manuscript/HEO_SPINEL_HEO_LITHIATION_VOLTAGE_REGION_MECHANISM_PRIOR_ART_2026-11-03.md). Direct primary precedents linking **lithiation voltage or capacity coordinate to underlying chemistry in spinel HEO**: Luo et al. *Advanced Science* 2022 DOI 10.1002/advs.202201219 (operando XAS metal-specific reduction versus capacity; Fig 6/8), Triolo et al. *Small* 2023 DOI 10.1002/smll.202304585 (0.9,0.7,0.01 V XAS/XRD), Ma et al. *Energy Advances* 2023 DOI 10.1039/D3YA00326D (voltage plateaus insertion vs conversion, sampled ex situ XRD), Li et al. *Angew Chem* 2025 DOI 10.1002/anie.202518569 (**GITT 1.0 V insertion vs 0.6 V conversion**, structural multi-probe phase assignment and size comparison). Related conversion NiO Ng et al. 2021 explicitly 4 GITT **parameter trend** regions, DOI 10.1039/D0TA09683K. **Very important:** conversion chemistry does have strong voltage/capacity-resolved precedents; do NOT claim novelty in segmentation itself, or direct R1–R4 phase matching. The potential novelty remains region-localization of processing vs Mg effect with GITT finite-window ΔErest/t63 + voltage. Existing Main v28 and PI-kept Abstract intentionally unchanged; forthcoming priority is to decide how to integrate this into Intro P1/P3 and R2/R3 interpretation.
+
+---
+
+# 2026-10-15 PI DECISION — GITT REGION LANDMARKS BY COHERENT TRENDS, NOT EXACT EXTREMA
+
+The PI clarified that R1–R4 are **approximately delimited by coherent qualitative changes in ΔErest (3 s–60 min voltage-recovery amplitude) and t63 (recovery characteristic time), supported by the rest-end voltage plateau**, not by requiring two minima to occur at precisely the same pulse, or by imposing a new automated knee/minimum fitting scheme. Distinct modifier samples can show shifted or offset extrema but maintain recognizably analogous broad electrochemical response regions. L4 is additionally tied to the termination of the rested-voltage plateau. The project prioritizes *where BM vs Mg changes accessible GITT charge* over boundary-pulse exactness; retain ±1-pulse robustness audit as supporting evidence. This is appended to [Methods analysis lock](manuscript/HEO_METHODS_ANALYSIS_LOCK_2026-10-12.md), **without changing old accepted region capacities**. PI-kept Abstract remains untouched. Avoid claiming exact phase boundaries or exact co-location of ΔErest and t63 extrema across samples.
+
+---
+
+# 2026-10-15 LATEST — PI Si lineage / precise HEO boundary audit / NiO prior art
+
+**PI correction:** T. Yoon et al. 2015 Si region-specific capacity fade paper is the user's **own**; current HEO extension measures **modification-driven** BM/Mg region-specific capacity changes using GITT landmarks because dQ/dV regions are not clear. **Direct important conversion precedent:** Ng et al. *J. Mater. Chem. A* 2021 DOI 10.1039/D0TA09683K segments NiO into FOUR electrochemical regions based on GITT Dapp/exchange current, not ΔErest+t63. **Original HEO boundary criteria:** L1 initial t63 minimum/ΔErest onset changes, L3 central t63 minimum/nearby ΔErest/dQdE landmarks, L4 Erest(Q) plateau end. `ΔErest` is the finite 3s–60min **voltage recovery**, not current-on overpotential. Mg (t63-min pulse24 vs ΔErest-min pulse18) and BM-Mg (34 vs39) show these landmarks are NOT always coincident; pristine pulse25 coincides. Exact accepted L1/L3/L4 pulse locations are still inferred from accepted old regional charge table, not signed source annotations; raw total counts verified, archived ±1 pulse sensitivity passed. [Full detailed scientific and literature note](manuscript/HEO_BOUNDARY_PROVENANCE_AND_NIO_ANALOG_AUDIT_2026-10-15.md). PI-selected 2026-10-15 [Abstract KEPT](manuscript/HEO_ABSTRACT_PI_KEPT_NARRATIVE_RESET_2026-10-15.md) unchanged, Main v28 unchanged; do NOT silently modify. The literature audit has been supplemented with direct NiO segmentation paper.
+
+---
+
+# 2026-10-15 PI ABSTRACT KEPT + CROSS-CHEMISTRY PRIOR-ART CHECK (MOST RECENT)
+
+**PI-selected abstract is KEPT (not yet submission locked):** [manuscript/HEO_ABSTRACT_PI_KEPT_NARRATIVE_RESET_2026-10-15.md](manuscript/HEO_ABSTRACT_PI_KEPT_NARRATIVE_RESET_2026-10-15.md). Starts with opposing BM/Mg capacity changes, asks how electrochemical response changes across lithiation; GITT discriminates four electrochemical regimes as a research result. Does not assume universal four chemical conversion reactions. **Extensive literature/novelty audit:** [manuscript/HEO_LITERATURE_AUDIT_SI_LRLO_CONVERSION_STAGE_DIAGNOSTICS_2026-10-15.md](manuscript/HEO_LITERATURE_AUDIT_SI_LRLO_CONVERSION_STAGE_DIAGNOSTICS_2026-10-15.md). Direct precedents include T. Yoon et al. *JES* 2015 Si early-lithiation voltage fade, Zhang et al. *JES* 2018 explicit L1-L3 dQ/dV integration, Li-rich operando dQ/dV phase evolution, Lowe et al. 2013 Mn3O4 operando conversion regions, He et al. *Nat Commun* 2016 Fe3O4 **GITT+intercalation vs conversion**, Xiao et al. *ACS AMI* 2023 **ball-milled (FeCoCrMnMg)3O4 GITT with 10 min pulse / 60 min relaxation**. This materially limits first-to-segment claims. **Next priority:** establish incremental diagnostic value of ΔErest / t63 by comparing voltage-only or dQ/dV stage analysis versus voltage+relaxation on same 4 HEO samples, and R1–R4 boundary sensitivity ±1–2 pulses. Main v28 remains physical overlap of progressive conversion; 6 original figures / SI v17 unaffected. Old abstract in Word remains historical placeholder until PI lock.
+
+---
+
+# CURRENT HEO MAIN REVIEW — v28 progressive / overlapping conversion (2026-10-15)
+
+**Latest full Main text:** [manuscript/HEO_MANUSCRIPT_V28_PROGRESSIVE_CONVERSION_INTEGRATED_2026-10-15.md](manuscript/HEO_MANUSCRIPT_V28_PROGRESSIVE_CONVERSION_INTEGRATED_2026-10-15.md). **Build/science QA:** [manuscript/HEO_V28_PROGRESSIVE_CONVERSION_MAIN_WORD_QA_2026-10-15.md](manuscript/HEO_V28_PROGRESSIVE_CONVERSION_MAIN_WORD_QA_2026-10-15.md). Word proof: `HEO_Manuscript_V28_ProgressiveConversion_R2R3_2026-10-15.docx`, conversation artifact only (**13 pages, 6 original figures, 23 references, visually rendered/checked**). SI v17 unchanged. New **nonlocked Abstract candidate**: [manuscript/HEO_ABSTRACT_V28_PROGRESSIVE_CONVERSION_CANDIDATE_2026-10-15.md](manuscript/HEO_ABSTRACT_V28_PROGRESSIVE_CONVERSION_CANDIDATE_2026-10-15.md); actual Word's Abstract is still the older PI-review placeholder and has NOT been silently replaced.
+
+**Core 2026-10-15 science correction:** R2/R3 are **overlapping parts of progressive conversion, not separated before/after metal/Li₂O appears.** Initial metal/Li₂O product formation can start within R2 while oxide destabilization/reconstruction dominates; additional metal reduction and product development continue into R3. Different metal reduction windows + intermediate oxides + heterogeneous reaction propagation help account for **broad charge/capacity interval**, which may coexist with a **comparatively narrow potential plateau**. New directly verified in situ Fe3O4 study citation [23], DOI 10.1038/ncomms11441; related HEO [7,8] reused with composition caveats. Mg spectator/oxide-environment explanation remains a plausible hypothesis, not a phase assignment; R2/BM and R3/Mg nominal GITT differences unchanged. **Next:** PI line-by-line Abstract approval; pending Figure1 CoGa2O4 indexing, Mg site, exact GITT original boundaries, rest electrode/figure QA and 3-cycle scope.
+
+---
+
+# HEO CURRENT PI REVIEW — v27 Mg mechanism integrated (2026-10-15)
+
+**Active Main full-text authority:** [manuscript/HEO_MANUSCRIPT_V27_MG_MECHANISM_PRIORITIZED_2026-10-15.md](manuscript/HEO_MANUSCRIPT_V27_MG_MECHANISM_PRIORITIZED_2026-10-15.md). **Current QA/next-step note:** [manuscript/HEO_V27_MAIN_INTEGRATED_QA_AND_NEXT_ABSTRACT_GATE_2026-10-15.md](manuscript/HEO_V27_MAIN_INTEGRATED_QA_AND_NEXT_ABSTRACT_GATE_2026-10-15.md). Word review: HEO_Manuscript_V27_MgMechanismPrioritized_2026-10-15.docx (13 pages, 6 embedded original figures), generated conversation artifact **not GitHub binary**. SI v17 unchanged.
+
+v27 now **actually integrates** the ranked Mg discussion into Section 2.5 with supporting recent primary spinel and rock-salt HEO comparisons as references [21] and [22]; revises Section 2.6 and Conclusion. **Strongest plausible mechanism, not proven:** Mg-containing oxide environment persists as redox-active transition metals reduce, limiting access to R3 late conversion. Active-metal dilution and conversion-potential/current-on kinetic effects remain alternatives; t63 is post-pulse and cannot exclude pulse-stage kinetics. R2/R3 nominal GITT regional comparisons unchanged.
+
+**Important next work:** PI line-by-line review of Abstract (in v27 Word, the superseded historical v24 Abstract is still deliberately present as a placeholder); then synchronize approved text into Main/Intro/Conclusion/SI. Figure1 CoGa2O4 source indexing, Mg synthesis/ICP/site, BET raw, XPS Cr6+, landmark boundary provenance and final cell metadata still need collaborator proof before AFM submission.
+
+---
+
+# MG R3 MECHANISM HYPOTHESIS RANKING — PI REVIEW, 2026-10-15
+
+**Read latest proposed Section 2.5 mechanism:** [manuscript/HEO_V27_MG_LATE_CONVERSION_HYPOTHESES_AND_LITERATURE_2026-10-15.md](manuscript/HEO_V27_MG_LATE_CONVERSION_HYPOTHESES_AND_LITERATURE_2026-10-15.md). It ranks (1) Mg²⁺ as redox-inactive structural spectator preserving a Mg-containing oxide environment and limiting **accessible late conversion under voltage cutoff**, (2) reducible-cation dilution, (3) current-on pulse kinetics/potential-window shift, (4) segregation/contact/SEI effects. The **preferred explanation is #1 potentially assisted by #2**, not a proved particular MgO phase or local Mg–O bond energy. Under Mg addition, nominal R2 charge shrinks only **5.3%** but R3 **51.6%** in the un-milled pair; analogous magnitudes **10.3% vs 77.3%** in the BM pair, inconsistent with simple *uniform* scaling alone. 2026 *Chemical Science* spinel Mg functional-differentiation paper DOI 10.1039/D5SC10185A supplies valuable but different-composition primary literature. Note includes two **ready-to-insert §2.5 paragraphs**, references, caveats and discriminating experiments. **v26 Main Word and Abstract remain unchanged** pending PI adoption.
+
+---
+
+# CURRENT HEO PI-REVIEW RELEASE — v26 Main / SI v17 (2026-10-15)
+
+**GitHub full SI text/tables:** [manuscript/HEO_SI_V17_SOURCE_EVIDENCE_FULLTEXT_2026-10-15.md](manuscript/HEO_SI_V17_SOURCE_EVIDENCE_FULLTEXT_2026-10-15.md). **Nonlocked new Abstract candidate:** [manuscript/HEO_ABSTRACT_V26_CANDIDATE_PENDING_PI_2026-10-15.md](manuscript/HEO_ABSTRACT_V26_CANDIDATE_PENDING_PI_2026-10-15.md) (179 words; do not silently insert).\n\n**Active full Main text:** [manuscript/HEO_MANUSCRIPT_V26_EVIDENCE_ALIGNED_2026-10-15.md](manuscript/HEO_MANUSCRIPT_V26_EVIDENCE_ALIGNED_2026-10-15.md). **Read its evidence/QA gate:** [manuscript/HEO_V26_MAIN_SI_EVIDENCE_ALIGNMENT_AND_PENDING_2026-10-15.md](manuscript/HEO_V26_MAIN_SI_EVIDENCE_ALIGNMENT_AND_PENDING_2026-10-15.md). New Word proof `HEO_Manuscript_V26_EvidenceAligned_PIReview_2026-10-15.docx` (13 pages, six figures) and companion `HEO_SI_V17_SourceEvidenceReview_2026-10-15.docx` (4 pages, three original stage tables and three SI figures) are conversation deliverables, **not GitHub binary files**. Original source/phase-index audit: [manuscript/HEO_V26_FIGURE1_2_STRUCTURE_EVIDENCE_GATE_2026-10-15.md](manuscript/HEO_V26_FIGURE1_2_STRUCTURE_EVIDENCE_GATE_2026-10-15.md).
+
+**New evidence-aligned body points:** printed Figure2 BET areas HEO 3.94/BM 18.159/Mg 6.49/BM-Mg 16.64 m² g−1. Milling increases gas-accessible area in both pairs; Mg has **larger** BET than parent while R3 nominal charge is far lower, so a simple lower-area explanation is insufficient. Do not claim proven milling-induced primary particle shrinkage from electrode-BSE mean aggregates (HEO 1.95, BM 2.12 µm). **URGENT source error check:** collaborator Figure1 HRTEM labels `CoGa₂O₄`, but Mg-free precursor list contains Ni/Fe/Co/Mn/Cr and no Ga; exact correct phase index must be checked and artwork corrected by collaborator. Mg composition/site, XPS Cr6+, BET regression, original L1/L3/L4 provenance and electrode metadata remain open. V26 is advanced PI review **not submission-ready**. The embedded historical v24 Abstract is marked pending current PI line-by-line revision; do not call it the final approved Abstract. Keep separate pristine HEO EKF maps out of this materials paper.
+
+---
+
+# NEW HEO CHARACTERIZATION EVIDENCE GATE — 2026-10-15 (read with v25 Main)
+
+**Source-verified Figure 1–2 scientific audit:** [manuscript/HEO_V26_FIGURE1_2_STRUCTURE_EVIDENCE_GATE_2026-10-15.md](manuscript/HEO_V26_FIGURE1_2_STRUCTURE_EVIDENCE_GATE_2026-10-15.md). Inspection of **actual embedded v25 Figures 1–2**, collaborator's September 17 2026 source presentation and Mg-free synthesis methods established printed BET values **HEO 3.94, BM-HEO 18.159, Mg-HEO 6.49, BM-Mg-HEO 16.64 m²/g**. Milling increases BET in both matched pairs; Mg-free comparison **Mg raises BET yet R3 charge declines**, which argues against *surface area decrease alone* as the Mg explanation. **URGENT Figure1 issue:** multiple collaborator-origin HRTEM indexes say **“CoGa₂O₄”**, but reported precursor system has no Ga; verify whether it is a *reference spinel* vs a mislabeled product before any final Figure1 submission. Mg XPS reports anomalous Cr6+ in an unverified recent batch; quantify ICP/Mg state first. Source slides' electrode BSE aggregate sizes 1.95/2.12/1.93/1.99 µm do not prove milling reduces aggregate size. All such values and ready-to-insert draft §2.1/§2.4/§2.5 phrasing are in the audit.
+
+**Status distinction:** v25 integrated Main/Word is unchanged; v26 is an **evidence review and provisional prose**, not a finished v26 Word or solved phase identification. Original Figures 1–2 require collaborator correction/confirmation. The previously recognized electrochemical stage-localization result BM→R2 / Mg→R3 remains working evidence, while its microscopic structural cause remains conditional.
+
+---
+
+# CURRENT MAIN-TEXT AUTHORITY — v25 stage-dominant mechanism integrated (2026-10-15)
+
+**Read first:** [manuscript/HEO_MANUSCRIPT_V25_STAGE_MECHANISM_INTEGRATED_2026-10-15.md](manuscript/HEO_MANUSCRIPT_V25_STAGE_MECHANISM_INTEGRATED_2026-10-15.md), then [manuscript/HEO_V25_INTEGRATED_WORD_AND_SCIENTIFIC_QA_2026-10-15.md](manuscript/HEO_V25_INTEGRATED_WORD_AND_SCIENTIFIC_QA_2026-10-15.md) and [manuscript/HEO_V25_DOMINANT_REACTION_STAGE_MECHANISM_REVIEW_2026-10-15.md](manuscript/HEO_V25_DOMINANT_REACTION_STAGE_MECHANISM_REVIEW_2026-10-15.md).
+
+The v25 **full Main body text is now in GitHub**, integrated from the actual v24 six-figure Word file: intro conversion/reconversion distinction; R1–R4 electrochemical landmarks as information about **dominant reactions**; BM-R2 mechanistic accessibility and persistent relaxation; Mg-R3 late-conversion accessibility/energetics versus uniform dilution; physical discussion and revised conclusion. The corresponding 13-page, six-figure local review artifact is `HEO_Manuscript_V25_DominantStageMechanism_2026-10-15.docx`, downloadable in the creation chat but **not a GitHub binary**. Footer now reads v25, and reference list remains in review.
+
+**Important:** The single-paragraph Abstract embedded in v25 is the *older v24 text only*, preserved without substantive changes; PI's more recent line-by-line Abstract revision and proposed conversion–reconversion opening remain UNLOCKED. Do not treat embedded v25 Abstract as approved final. GITT R1–R4 nominal regional differences still use first-lithiation pulse evidence; 3-cycle data availability does not imply later-cycle stage assignments verified. No new spectral EKF figures in HEO Main. Missing Mg structural evidence, old original boundary source labels, electrode metadata, full 20-reference audit, SI reconciliation, and AFM formatting remain.
+
+---
+
+# LATEST PI SCIENTIFIC REVIEW — 2026-10-15 (READ BEFORE v24)
+
+**New HEO discussion authority:** [manuscript/HEO_V25_DOMINANT_REACTION_STAGE_MECHANISM_REVIEW_2026-10-15.md](manuscript/HEO_V25_DOMINANT_REACTION_STAGE_MECHANISM_REVIEW_2026-10-15.md). This contains **insert-ready revisions to Main Sections 2.3, 2.4, 2.5 and 2.6**, physical explanations for why BM preferentially expands R2 while Mg preferentially decreases R3, and PI clarification that GITT potential/polarization/ΔErest/t63 changes are intended to locate **dominant reaction processes**, while phase-specific direct identification remains unproven. It also corrects conversion/reconversion terminology for lithiation versus delithiation, and records that three-cycle GITT inclusion is an open question. The actual v24 Word binary is **not** altered; no Abstract revision has been publication-locked. Preserve the old v22/v24 snapshots and merge these prose replacements during the next Main Word rebuild after claim audit.
+
+---
+
+# LATEST AUTHORITY — v24 raw-verified HEO Main/SI (2026-10-12)
+
+**Authoritative latest review notes:** `manuscript/HEO_V24_RAW_VERIFIED_MAIN_SI_RELEASE_2026-10-12.md` and `modeling/HEO_FOUR_SAMPLE_RAW_WORKBOOK_AUDIT_2026-10-12.md`. Latest Word Main review artifact is `HEO_Manuscript_V24_RawVerified_2026-10-12.docx` (12 rendered pages, 6 images, Abstract exactly unchanged); current companion is `HEO_SI_V16_RawVerified_Focused_Review_2026-10-12.docx` (4 rendered pages, 3 tables, 3 reused context figures). Artifacts are delivered within the session, not GitHub binaries; the existing v22 GitHub markdown remains previous text snapshot.
+
+**Breakthrough since v23:** original **BM HEO 3 GITT raw workbook recovered** plus the other three direct source workbooks; independent first-lithiation complete 600-second pulse counts = HEO **65**, BM **76**, Mg **48**, BM-Mg **56**, exactly the totals of accepted original four-sample regional charge table. Original individual L1/L3/L4 boundary annotations are **still inferred from historical rounded partition**, not independently recovered as signed boundary labels. Mg-free synthesis/BM procedure and instrument models are now provisionally described from collaborator Method document; **Mg-containing synthesis and electrode metadata remain unsigned/missing**, so still not submission-ready. No new segmentation, no unique phase assignment, no EKF spectral Main/SI panels.
+
+**Separate EKF work**: `tyoon-lab/electrochemical-kinetic-fingerprint/03_LFP/HEO_PRISTINE_GITT_TIME_DOMAIN_PILOT_2026-10-12.md` records the pristine HEO 65-pulse inversion; it does not improve L1–L3 electrochemical segmentation and will be used in the LFP–Li₂MnO₃–pristine HEO GITT methodological/comparison manuscript, not the materials HEO AFM paper.
+
+---
+
+# LATEST HANDOFF — HEO v23 / EKF pilot, 2026-10-12
+
+**Read first:** `manuscript/HEO_V23_STAGE_ORIGIN_REVIEW_AND_EKF_GATE_2026-10-12.md`. This adds a 12-page v23 PI scientific-review Word proof (Abstract unchanged, Figures 1–5 reused, Figure 6 layout cleaned) and 4-page focused SI v15 (main Table 1 moved to SI; three region-capacity/contrast/robustness tables). Word/SI binaries are in the conversation artifacts, not tracked in GitHub. v23 is not submission-ready: collaborator Section 2.1, synthesis/electrode metadata, raw BM boundary provenance and full references remain open. The v22 GitHub manuscript remains the preceding textual baseline; follow the new v23 review note for its changes.
+
+**EKF decision:** a pristine HEO raw-GITT 65-pulse time-domain pilot, tested with 27 sensitivity settings, did not robustly improve the accepted four-region boundaries (original 6/25/56 versus spectrum-only ~21/39/56), nor directly identify specific conversion products. Exclude the new EKF analysis from HEO AFM Main/SI. Retain it for the separate LFP–Li2MnO3–pristine HEO GITT manuscript; all BM/Mg contrasts stay in HEO materials paper. Detailed pilot in EKF repo: `03_LFP/HEO_PRISTINE_GITT_TIME_DOMAIN_PILOT_2026-10-12.md`. No new physical-stage claims are authorized by the pilot.
+
+---
+
+# CROSS-PAPER BOUNDARY UPDATE — 2026-10-12
+
+A separate GITT relaxation manuscript may use **pristine HEO only** as a reconstructive-conversion generalization case.
+
+- Keep BM/Mg modification comparisons and the BM-R2 / Mg-R3 stage-origin story owned by this HEO materials manuscript.
+- Do not migrate the HEO paper's central modification figures/results into the GITT manuscript.
+- Existing HEO/BM apparent-D method-dependence audits remain background/reviewer-defense material.
+- Cross-paper boundary authority: `GITT_CROSS_PAPER_DATA_USE_BOUNDARY_2026-10-12.md`.
+
+# HEO — Current State, 2026-10-12
+
+## Read this first
+
+This is the single authoritative restart point for the HEO manuscript.
+
+A new chat/session should be able to resume from this file without a separate handoff message.
+
+The 2026-10-08 reaction-fingerprint state remains useful history, but the paper identity has sharpened further during PI Abstract review.
+
+## Recovered original 2026-10-07 region partition — AUTHORITATIVE WORKING EVIDENCE
+
+The exact **rounded original accepted four-sample GITT region-capacity table** was recovered from previous analysis discussion and archived in:
+- `modeling/HEO_ORIGINAL_REGION_PARTITION_RECONSTRUCTION_2026-10-12.md`
+- `modeling/HEO_ORIGINAL_REGION_PARTITION_RECONSTRUCTION_2026-10-12.csv`
+- `modeling/HEO_ORIGINAL_REGION_CONTRASTS_2026-10-12.csv`
+
+Original fractional shares **R1/R2/R3/R4**: HEO **9.2/29.2/47.7/13.8%**, BM-HEO **11.8/38.2/28.9/21.1%**, Mg-HEO **12.5/37.5/31.2/18.8%**, BM-Mg-HEO **16.1/46.4/8.9/28.6%**.
+
+Using **16.6667 mAh g⁻¹ per 600s / 100 mA g⁻¹ GITT pulse**, original region counts reconstruct as HEO **6/19/31/9**, BM-HEO **9/29/22/16**, Mg-HEO **6/18/15/9**, BM-Mg-HEO **9/26/5/16**. Therefore **inferred** L1/L3/L4 *cumulative region-end pulses* are **HEO 6/25/56; BM-HEO 9/38/60; Mg-HEO 6/24/39; BM-Mg-HEO 9/35/40**. These IDs are *inferred from rounded accepted region charges*, not directly recovered boundary annotations; do not portray them as new extremum measurements.
+
+Main stage-origin numbers based on the old GITT protocol table:
+- HEO→BM-HEO: **R2 +166.7**, R3 −150, net +183.3 mAh g⁻¹.
+- Mg-HEO→BM-Mg-HEO: **R2 +133.3** (largest POSITIVE region change), R3 −166.7, net +133.3.
+- HEO→Mg-HEO: **R3 −266.7**, net −283.3.
+- BM-HEO→BM-Mg-HEO: **R3 −283.3**, net −333.3.
+- These signed regional differences are derived from the original GITT pulse partition; not from independently measured GCD totals.
+
+**Interpretation:** This restores the original already-agreed BM→R2 and Mg→R3 quantitative evidence. The subsequent 3-sample *broken-stick* L4 calculation remains exploratory and NOT a replacement for accepted region boundaries. Three original raw first-lithiation pulse counts (HEO 65, Mg 48, BM-Mg 56) match reconstructed table totals. BM raw, exact raw-original boundary markers, and per-region t63 for all four remain pending.
+
+**New local-only figure drafts:** `HEO_v22_Figure4_REFERENCE_FIXED_REGIONS_DRAFT.png` (HEO raw + old reconstructed boundaries), `HEO_v22_Figure5_BM_R2_PARTITION_DRAFT.png` and `HEO_v22_Figure6_Mg_R3_2x2_PARTITION_DRAFT.png`. These are numerical audit plots, NOT final publication artwork or GitHub-committed binary files.
+
+## Latest raw-GITT boundary audit — 2026-10-12 (PRELIMINARY)
+
+> **IMPORTANT CORRECTION:** Region criteria L1/L3/L4 and a ±1-step sensitivity check were agreed and audited in the 2026-10-08 fingerprint and 2026-10-12 Methods locks. The three-sample broken-stick L4 and minimum-t63 boundary proposals below are **separate exploratory candidate estimators**, NOT approved replacements of the established region partition or the historical R2/R3 fractions. Existing four-sample stage story remains the baseline; only a consistent final application/documentation of the already-agreed L4 plateau-end criterion was pending.
+
+
+
+- Detailed provenance, extraction method, and result: `modeling/HEO_L4_THREE_SAMPLE_RAW_REAUDIT_2026-10-12.md`.
+- Available original GITT files recovered: HEO ([GITT try 2_031].xlsx from Drive), Mg-HEO and BM-Mg-HEO (Sept. 17 Gmail). **BM-HEO raw remains missing**, so all four-sample regional partitions are not finalized.
+- First-lithiation whole pulses extracted: HEO 65, Mg-HEO 48, BM-Mg-HEO 56. Three prior conversion-associated excess peak voltages reproduce the archived audit exactly (HEO pulse 50 at 0.527481 V; Mg pulse 38 at 0.386972 V; BM-Mg pulse 37 at 0.502865 V).
+- Candidate L3 from central `t63` minima: HEO pulse 25; Mg pulse 24; BM-Mg pulse 34. Candidate common broken-stick voltage L4: pulses **53, 37, 39**, sensitivity ranges **50–53, 34–37, 38–40**, respectively.
+- Under **this unfinalized new L4 definition**, corresponding R3 shares are **43.08%, 27.08%, 8.93%**. These do **not** match historical manuscript HEO/Mg R3 shares ~48%/~31%; **do not silently replace frozen Abstract/Results numbers**. Direction of HEO→Mg R3 decrease survives tested L4 variations.
+- Figure 4 preliminary HEO three-trace diagnostic and three-sample L4 knee diagnostics were generated locally (not final figure artwork, not binary-committed to GitHub).
+- Next: obtain **BM HEO 3 GITT 로우 데이터.xlsx**; apply common L1/L3/L4 rules across **four** datasets, check exact region-wise absolute/fractional GITT charge and sensitivity, redraw Figures 4–6. Preserve the v22 prose and PI-preferred Abstract pending completed audit.
+
+## Latest PI-integrated manuscript and figure audit — 2026-10-12
+
+**Current reviewed prose authority (v22):**
+
+- `manuscript/HEO_MANUSCRIPT_V22_PI_INTEGRATED_2026-10-12.md`
+- Companion claim-to-evidence audit: `manuscript/HEO_V22_FIGURE3_6_EVIDENCE_AUDIT_2026-10-12.md`
+- The independently maintained PI-preferred Abstract remains `manuscript/HEO_ABSTRACT_PI_PREFERRED_2026-10-12.md`; the v22 Abstract is a verbatim copy.
+- Prior v21 and legacy Figure 3–6 notes are **historical**, not the current body prose/figure assignments. Section 2.1 and the experimental section are not complete.
+
+**Critical submission status:** Figure 3 largely supports the material-capacity contrast (with raw source-provenance limitations). The *existing old* Figures 4, 5 and 6 **do not match the new Main story** and must be redrawn: new Fig 4 = L1/L3/L4 and R1–R4 electrochemical segmentation; new Fig 5 = BM R2 capacity gain with regional t63; new Fig 6 = Mg R3 capacity loss, cross-composition 2×2 comparison and horizontal reaction-sequence synthesis. Do not claim Figure 4–6 publication artwork is final.
+
+**Immediate next work:** standardize L4 across four samples; freeze exact region-wise GITT numerical partition/absolute deltas and t63; regenerate main Figure 4–6 and captions; verify old excess-localization and cycling-history panels' SI relocation; integrate final collaborator Figures 1–2 and Methods; then revise SI/references and audit Abstract against final results.
+
+## v22 integrated Word export — 2026-10-12 (LATEST)
+
+A **12-page** Word review document was produced and successfully rendered with **all 6 original October stage-origin-aligned figures** preserved:
+- `HEO_Manuscript_V22_PI_Integrated_Figures1-6_2026-10-12.docx` (downloadable conversation artifact, **not** a GitHub-tracked binary).
+- GitHub release/QA note: `manuscript/HEO_V22_WORD_EXPORT_RELEASE_NOTE_2026-10-12.md`.
+- Text authority: `manuscript/HEO_MANUSCRIPT_V22_PI_INTEGRATED_2026-10-12.md` (Abstract, Introduction, Results 2.2–2.6, Conclusion PI-reviewed).
+- Word source for existing figures + provisional Section 2.1/Experimental/20 reference entries: `HEO_MANUSCRIPT_V21_STAGE_ORIGIN_ALIGNED_2026-10-11.docx` from Google Drive.
+- Original Oct Word Figure 4 and Figure 5 **already** match the current stage-origin narrative; no full redraw and no new boundary calculation. Figure 6 original schematic is retained but small labels overlap; fix *artwork only* if needed.
+- **Working Table 1** with four-material original GITT R1–R4 fractions is embedded in the Word; still decide whether to keep in Main or place in SI. It is not a new calculation.
+- Proof rendered and all **12 pages reviewed**; image captions stay with pictures and Conclusion is not split over pages.
+- Work remains: Section 2.1 collaborator validation, missing Experimental details, Figure 6 label cleanup, final reference/citation check, SI sync. The Word is a PI-review draft, **not a submission-ready final**.
+
+## October 11 embedded main-figure visual audit — 2026-10-12 (CURRENT)
+
+**Current real Figure 1–6 visual basis is in `HEO_MANUSCRIPT_V21_STAGE_ORIGIN_ALIGNED_2026-10-11.docx` in the HEO preparation Google Drive folder.** All six embedded PNGs and captions have been directly inspected. Figure 4 already plots three GITT descriptors with L1/L3/L4 and R1–R4; Figure 5 already plots BM/HEO relaxation, R2/R3 region fractions and median t63; Figure 6 already shows the BM-R2/Mg-R3 horizontal reaction-sequence synthesis. The old September “redraw Figure 4–6” assumption is **obsolete** for current artwork.
+
+Reuse existing Figure 4 and 5 with minor labeling/caption/QC changes; keep Figure 6 schematic and improve small overlapping text plus supply the two-Mg-contrast/four-sample signed GITT comparison. Figure 3 already exists with first-cycle profiles and bars; Figures 1–2 existing working microscopy/BET art pending collaborator verification. **Do not restart segmentation, numerical analysis, or redraw all figures.** Full audit: `manuscript/HEO_EXISTING_FIGURE1_6_ASSET_REUSE_AUDIT_2026-10-12.md`.
+
+Body prose authority remains `manuscript/HEO_MANUSCRIPT_V22_PI_INTEGRATED_2026-10-12.md`; figure-art basis remains the stage-origin v21 Word. Only the minimal figure-to-text reconciliation, collaborator characterization completion, and Methods/SI/caption sync are open.
+
+## Current paper identity
+
+Working target: **Advanced Functional Materials (AFM)**.
+
+Working title remains provisional:
+
+**GITT Relaxation Fingerprints Resolve Material-Specific Perturbations of Conversion Lithiation in Spinel High-Entropy Oxide Anodes**
+
+Current manuscript-facing identity:
+
+> **Use GITT relaxation to resolve the multistep HEO conversion reaction electrochemically, then identify which reaction stage is primarily responsible for the familiar macroscopic capacity change produced by ball milling or Mg incorporation.**
+
+The paper is a **materials/conversion paper**, not a generic GITT-method paper.
+
+## Current central result
+
+The materials-level starting observation is simple:
+
+- ball milling increases first-lithiation capacity;
+- Mg incorporation decreases first-lithiation capacity.
+
+The stage-resolved GITT result explains where those opposite capacity changes arise:
+
+> **Ball-milling capacity gain originates predominantly from expansion of the conversion-onset/progression regime associated with oxide destabilization and structural reconstruction, whereas Mg-induced capacity loss is concentrated in the subsequent late-conversion regime associated with evolution toward reduced metal/Li2O-derived states.**
+
+Headline mapping:
+
+- **BM -> R2 dominant expansion -> capacity gain**
+- **Mg -> R3 dominant suppression -> capacity loss**
+
+Secondary observations remain scientifically useful but are not the Abstract headline:
+
+- BM also changes R1/R4 and reduces the relative R3 contribution;
+- BM makes post-onset relaxation more persistent;
+- Mg changes the remaining R3 relaxation timescale only weakly;
+- accessibility and relaxation persistence are not the same quantity.
+
+## Abstract status — PI-preferred working baseline, 2026-10-12
+
+**Current abstract for all Introduction and body review**:
+
+`manuscript/HEO_ABSTRACT_PI_PREFERRED_2026-10-12.md`
+
+This is the PI-preferred, improved-flow version agreed in conversation after the earlier provisional lock. Preserve the approved text during line-by-line body review; refine only when evidence, logic, or a final PI decision warrants it. **It supersedes the older abstract text in the v21 snapshot for current narrative alignment**, but does not erase the historical version.
+
+The new abstract begins with multistep conversion, poses the question of which reaction regions control macroscopic capacity changes, states the four GITT electrochemical regimes, contrasts the BM-R2 and Mg-R3 stage origins, and ends with the materials-facing significance of stage specificity.
+
+**Do not infer unique microscopic phases at R1-R4 boundaries or claim demonstrated cycling-stability optimization.** Physical assignments are broad associations supported by literature plus state-resolved electrochemistry.
+
+## Why the Abstract changed the paper
+
+During line-by-line PI review, several earlier phrasings were rejected because they made the work sound method-driven or abstract:
+
+- `GITT is used to resolve ... rather than only to extract Dapp` was rejected as an artificial method announcement.
+- `state-dependent reaction fingerprint` was too compressed to be immediately interpretable.
+- exhaustive BM statements (`R1/R2/R4 up, R3 down`) diluted the headline.
+- the relaxation-persistence result, although valid, distracted from the stronger materials message in the Abstract.
+- later sentences initially switched from concrete conversion chemistry to abstract regime names, breaking the reader's physical mental picture.
+
+The adopted Abstract therefore anchors on a familiar macroscopic materials effect and uses GITT to reveal its **reaction-stage origin**.
+
+## Reaction sequence and region map
+
+The four electrochemically defined regimes remain:
+
+- **R1:** early lithiation
+- **R2:** conversion onset and progression; broadly associated with oxide destabilization and structural reconstruction
+- **R3:** late conversion; broadly associated with continued evolution toward reduced metal/Li2O-derived states
+- **R4:** post-plateau deep lithiation
+
+Important evidence rule:
+
+> Regions are defined electrochemically first from GITT relaxation / relaxed-voltage landmarks. Their physical labels are broad literature-supported assignments, not direct spectroscopic identification by GITT and not four discrete elementary microscopic steps.
+
+Current landmarks:
+
+- L1: early transition
+- L3: central conversion-associated landmark
+- L4: end of broad relaxed-voltage plateau / transition to steeper post-plateau branch
+
+L2/L5 remain internal features, not boundaries.
+
+## Quantitative headline
+
+First-cycle lithiation/delithiation capacities:
+
+- HEO: 901.25 / 609.12 mAh g-1
+- BM-HEO: 1056.10 / 782.08 mAh g-1
+- Mg-HEO: 731.15 / 458.91 mAh g-1
+- BM-Mg-HEO: 944.07 / 580.83 mAh g-1
+
+Regional fraction headline:
+
+- HEO R2 ~29% -> BM-HEO R2 ~38%: **largest BM-driven expansion**
+- HEO R3 ~48% -> BM-HEO R3 ~29%: reduced relative late-conversion contribution
+- HEO R3 ~48% -> Mg-HEO R3 ~31%: **dominant Mg-driven suppression**
+
+Use regional percentages as the preferred Main-text partition metric.
+
+## Current section architecture
+
+### 1. Introduction
+
+Literature-established multistep HEO conversion
+-> materials-development question: capacity changes are known, but which reaction stage causes them?
+-> GITT relaxation provides state-resolved electrochemical information
+-> BM and Mg provide opposite macroscopic perturbations
+-> present study localizes the stage origin of the capacity gain/loss.
+
+### 2. Results and Discussion
+
+**2.1. Structural and morphological perturbations introduced by ball milling and Mg incorporation**
+
+**2.2. Opposite capacity changes motivate a stage-resolved analysis of conversion**
+
+**2.3. GITT relaxation fingerprints resolve four lithiation regimes**
+
+**2.4. Ball milling capacity gain originates predominantly from conversion onset and reconstruction**
+
+**2.5. Mg-induced capacity loss originates predominantly from late conversion**
+
+**2.6. Stage-resolved GITT links macroscopic capacity changes to their reaction origin**
+
+### 3. Conclusion
+
+Restate the four broad regimes, then the BM-R2 and Mg-R3 origins, then the materials-level implication.
+
+## Current Figure logic
+
+- **Figures 1–2:** material structure/composition/morphology; final collaborator package still pending.
+- **Figure 3:** opposite macroscopic capacity changes.
+- **Figure 4:** four GITT-defined electrochemical regimes and broad physical assignment.
+- **Figure 5:** BM capacity gain is dominated by R2 expansion; relaxation persistence is secondary mechanistic information.
+- **Figure 6:** single horizontal R1 -> R2 -> R3 -> R4 reaction sequence showing BM acting mainly on R2 and Mg mainly on R3.
+
+Important Figure decision:
+
+> The final conceptual Figure 6 must be a **single horizontal reaction-sequence schematic**, not a 2 x 2 conceptual matrix. The experimental design may be 2 x 2, but the conceptual figure should visualize the reaction coordinate and the dominant action point of each modification.
+
+## Main manuscript authority
+
+Current rendered Word working manuscript:
+
+**HEO_MANUSCRIPT_V21_STAGE_ORIGIN_ALIGNED_2026-10-11.docx**
+
+GitHub text snapshot:
+
+`manuscript/HEO_V21_STAGE_ORIGIN_TEXT_SNAPSHOT_2026-10-12.md`
+
+Current story/decision authority:
+
+`manuscript/HEO_STAGE_ORIGIN_STORY_LOCK_2026-10-12.md`
+
+Abstract dependency map:
+
+`manuscript/HEO_ABSTRACT_CONTROL_MAP_2026-10-12.md`
+
+Analysis/method guardrails:
+
+`manuscript/HEO_METHODS_ANALYSIS_LOCK_2026-10-12.md`
+
+The 2026-10-08 v18 files remain historical and are superseded for manuscript story and wording.
+
+## Retired / demoted stories
+
+Do not restart from these without an explicit audit reason:
+
+- capacity–kinetics mismatch as the paper identity;
+- capacity as a direct kinetic-speed coordinate;
+- polarization–t63 non-equivalence as the endpoint;
+- conventional GITT Dapp conflict as Main novelty;
+- four-step microkinetic model as Main Figure 6;
+- exact microscopic mapping of old model steps onto experimental R1–R4;
+- 2 x 2 conceptual synthesis figure;
+- BM as a simple kinetic acceleration;
+- Mg as a simple kinetic slowing;
+- `beta broadening` as the BM interpretation.
+
+These may remain historical, SI, or reviewer-defense material where scientifically useful.
+
+## Internal robustness
+
+Boundary sensitivity (L1/L3/L4 independently shifted +/-1 GITT step) supports the qualitative conclusions:
+
+- BM capacity pattern R1+, R2+, R3-, R4+: 100% in tested comparisons.
+- BM t63 pattern R1-, R2+, R3+, R4+: 100%.
+- Mg-induced R3 capacity loss: 100%.
+- R3 is the most negative Mg capacity change: 100%.
+- Mg-induced R3 t63 change remains small (|Delta t63| <= 1.5 min): 100%.
+
+Keep this internal unless reviewer defense or SI robustness becomes necessary.
+
+## Analysis guardrails
+
+- t63 is an operational relaxation timescale, not a microscopic elementary rate constant.
+- Delta Erest is a relaxation amplitude, not a pure kinetic overpotential.
+- relaxed 60 min voltage is used as a state coordinate.
+- physical reaction labels are assigned after electrochemical segmentation.
+- exact element-specific reduction steps are not assigned to R1–R4 without direct evidence.
+- protocol-derived regional capacity is not identical to the separate GCD absolute capacity scale.
+- Main text should emphasize regional fractions; exact absolute regional mAh g-1 requires direct raw-current integration if later needed.
+
+## Remaining blockers
+
+1. Final collaborator Figures 1–2 package: quantitative XRD/refinement, composition, TEM/SEM/BET, XPS decision.
+2. Final Mg synthesis recipe and collaborator-verified composition.
+3. Missing cell/electrode metadata for submission-ready Experimental.
+4. Exact reference verification for close prior art and any working citations not yet publisher-checked.
+5. Standardized final L4 algorithm across all four samples before numerical freeze.
+6. Main/SI synchronization after PI line-by-line body review.
+7. Final title/TOC/keywords only after body review and reverse Abstract audit.
+
+## Next task in a new chat
+
+**Begin from v22 Word export, not an unassembled v21 manuscript.** The 12-page file `HEO_Manuscript_V22_PI_Integrated_Figures1-6_2026-10-12.docx` contains all existing main figures and the current PI-approved text, plus provisional v21 2.1/Experimental/20 refs and review-only four-material GITT table. Read `manuscript/HEO_V22_WORD_EXPORT_RELEASE_NOTE_2026-10-12.md` for current limitations. Resolve collaborator Section 2.1/Experimental metadata, Figure 6 small-label overlap, table Main-vs-SI placement, reference numbering, and SI alignment. **Do not** redo established L1/L3/L4 segmentation or Figures 4–5.
+
