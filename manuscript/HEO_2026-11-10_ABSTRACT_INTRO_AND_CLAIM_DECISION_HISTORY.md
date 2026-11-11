@@ -1,5 +1,8 @@
 # HEO Abstract and Introduction — complete decision rationale and author-approval status (2026-11-10)
 
+> **HISTORICAL NOV 10 RECORD, superseded for current wording.** The PI accepted the full Abstract and four Introduction paragraphs on 2026-11-11. Read [the final locked text and decisions](HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md). Statements below that say the wording is unapproved/pending reflect the historical Nov 10 status only.
+
+
 **Primary directive:** This history preserves **discussion and decisions**, not a new PI-approved rewrite. The most recent substantive task explicitly asked to review *Abstract, Introduction, body* and put proposed changes into **Word comments**. No assistant-proposed Abstract/Introduction language has been silently implemented in the current Word. Use the latest author file and review comments as separate layers.
 
 ## What the author is trying to achieve
