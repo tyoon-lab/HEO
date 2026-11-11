@@ -1,4 +1,6 @@
-# HEO — START HERE: current authoritative state (reconciled 2026-11-10)
+# HEO — START HERE: current authoritative state (PI text locked 2026-11-11; science reconciled 2026-11-10)
+
+**CURRENT PI WORDING AUTHORITY (2026-11-11):** [Full PI-approved Abstract and four Introduction paragraphs, with the complete sentence-by-sentence decision rationale](manuscript/HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md). Use this as the single authority for these five paragraphs; the November 10 pending/candidate wording sections below are historical. It does not replace any Word/DOCX binary, native comments, figure or SI. November 7 Word identities below are archival; a later November 11 Word draft may still differ from the final approved wording.
 
 **This is the SINGLE ENTRY POINT for starting a new HEO chat WITHOUT a separate handoff.**
 
@@ -6,11 +8,12 @@
 
 ## 1. Read these files IN ORDER
 
-1. **[Authoritative science, current exact Word identities, numbers, figures and remaining gates](manuscript/HEO_2026-11-10_AUTHORITATIVE_SCIENCE_MANUSCRIPT_STATE.md).** This takes priority for current physics/numeric boundaries.
-2. **[All Abstract/Introduction deliberation, PI text and pending wording choices](manuscript/HEO_2026-11-10_ABSTRACT_INTRO_AND_CLAIM_DECISION_HISTORY.md).** This takes priority for *what the PI wants to say* and what is STILL PROPOSED.
-3. **[All 45 native Word comments (IDs 0–44), nine unresolved yellow note locations, change actions](manuscript/HEO_2026-11-10_WORD_45_COMMENT_AND_YELLOW_HIGHLIGHT_AUDIT.md).** These are *suggestions*, not applied body changes.
-4. **[Full scientific and editorial process, pivots and discarded alternatives Sep→Nov](manuscript/HEO_2026-11-10_DEVELOPMENT_TRAJECTORY_AND_SUPERSEDED_DECISIONS.md).** This explains why the science/storyline differs from older locked files.
-5. **[Actual author-uploaded Nov7 Word full text](manuscript/HEO_2026-11-07_AUTHOR_UPLOADED_MS_FULL_TEXT_SNAPSHOT.md)** and **[Nov7 45-comment review Word full text](manuscript/HEO_2026-11-07_45_COMMENT_REVIEW_MS_FULL_TEXT_SNAPSHOT.md)**. These are GitHub full-text captures, with line-wrap artifacts, no binary images or native Word comment bodies. Use them to inspect actual wording when the DOCX bytes are not available in the new chat.
+1. **[PI-LOCKED Abstract and entire Introduction (Nov 11)](manuscript/HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md).** Exact accepted wording and decision log.
+2. **[Authoritative science, current exact Word identities, numbers, figures and remaining gates](manuscript/HEO_2026-11-10_AUTHORITATIVE_SCIENCE_MANUSCRIPT_STATE.md).** This takes priority for current physics/numeric boundaries.
+3. **[Older Nov 10 Abstract/Introduction deliberation and superseded proposed options](manuscript/HEO_2026-11-10_ABSTRACT_INTRO_AND_CLAIM_DECISION_HISTORY.md).** This takes priority for *what the PI wants to say* and what is STILL PROPOSED.
+4. **[Nov 7 audit of 45 native Word comments (IDs 0–44), nine unresolved yellow note locations, change actions](manuscript/HEO_2026-11-10_WORD_45_COMMENT_AND_YELLOW_HIGHLIGHT_AUDIT.md).** These are *suggestions*, not applied body changes.
+5. **[Full scientific and editorial process, pivots and discarded alternatives Sep→Nov](manuscript/HEO_2026-11-10_DEVELOPMENT_TRAJECTORY_AND_SUPERSEDED_DECISIONS.md).** This explains why the science/storyline differs from older locked files.
+6. **[Actual author-uploaded Nov7 Word full text](manuscript/HEO_2026-11-07_AUTHOR_UPLOADED_MS_FULL_TEXT_SNAPSHOT.md)** and **[Nov7 45-comment review Word full text](manuscript/HEO_2026-11-07_45_COMMENT_REVIEW_MS_FULL_TEXT_SNAPSHOT.md)**. These are GitHub full-text captures, with line-wrap artifacts, no binary images or native Word comment bodies. Use them to inspect actual wording when the DOCX bytes are not available in the new chat.
 
 For original source figures, experiment details, manuscript provenance:
 - [PI-accepted t63-only region cuts, accepted November 6](manuscript/HEO_V35_T63_ONLY_L4_SHOULDER_REASSIGNMENT_2026-11-06.md)
@@ -68,7 +71,9 @@ Place Figures1+2 under §2.1 heading; Fig3 under §2.2; Fig4 under §2.3; Fig5 u
 
 24 main references renumbered; each claim's DOI/publisher relevance not yet exhaustively reverified. SI v22 includes S1–S7 and Table S6, not yet aligned with latest main.
 
-## 5. Current Abstract/Introduction status — important
+## 5. Historical Nov 10 Abstract/Introduction discussion — superseded for exact wording
+
+**Current Nov 11 lock:** [see full accepted passages](manuscript/HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md). The following November 10 narrative is retained for historical reasons and does not override the final PI-approved text.
 
 The PI now prefers a **causal mechanism-first abstract**:
 morphological/cation modification → underlying lithium-storage mechanism remains hard to attribute **because overlapping chemical/structural and possible interfacial processes** → total capacity and spectroscopy give different partial views → GITT **t63-only electrochemical regions** and nominal regional charge comparison → matched BM/Mg largest regional gain/loss → plausible R2/R3 literature-based process interpretation → materials-design significance.
@@ -82,7 +87,7 @@ morphological/cation modification → underlying lithium-storage mechanism remai
 
 ## 6. Immediate next work (actual priority)
 
-1. PI decides wording at Word comments **2, 4–7, 18–19, 23–29, 30–33**: Abstract/Intro, physical region assignment, BM/Mg mechanisms, R3 hump, Fig6, conclusion. Make *scoped* edits after approval, not blanket overhaul.
+1. **Abstract/Introduction text is PI locked as of Nov 11.** Next prioritize Results/Discussion comments **18–19, 23–29, 30–33**: physical assignment, BM/Mg mechanistic interpretation, R3 hump, Fig6 and conclusion. Preserve the locked paragraphs when editing an actual DOCX, including unresolved native comments.
 2. Collaborator supplies **nine yellow-note locations**: Mg precursor and stoichiometry, true coprecipitation and milling conditions, BET degassing, powder XRD+ICP, source HRTEM indexing, calibrated matched XPS, actual electrode/cell/electrolyte/FEC/loading/1C/rate metadata. No invented routine recipes.
 3. Correct BET wording to **4.6× vs 2.6×** and “reproducible inflections” to operational landmarks. Main/SI GITT charge and GCD basis consistent.
 4. Revise figures/captions only for justified corrections, ensure Fig6 makes **interpretive** rather than duplicate Fig5 quantitative contribution, source image text/labels verified.
