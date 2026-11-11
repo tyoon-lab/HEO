@@ -1,5 +1,7 @@
 # HEO — Spinel High-Entropy Oxide Conversion Anode Research
 
+**LATEST FIGURE 3 SOURCE AUDIT (2026-11-11):** [Verified September 17 email/slide 9–10 evidence, current revised §2.1–2.2 wording and student data-request list](manuscript/HEO_2026-11-11_FIGURE3_SOURCE_CHECK_AND_STUDENT_DATA_REQUESTS.md). Native source plots support partial, rather than full, rate recovery; raw cycle/rate tables remain pending.
+
 **LATEST PI DECISION (2026-11-11):** [Full accepted Abstract and four Introduction paragraphs, with rationale](manuscript/HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md) are locked for the current manuscript revision. November 10 pending/proposed text and earlier Word extracts are superseded for wording only. GitHub records were updated; this operation did not modify a DOCX, figures, or Word comments.
 
 ## Start here, no handoff required
@@ -11,6 +13,7 @@ The manuscript is being scientifically reviewed. **No journal is currently selec
 ## Current detailed GitHub records
 
 - [Authoritative scientific results, Word identities and remaining tasks](manuscript/HEO_2026-11-10_AUTHORITATIVE_SCIENCE_MANUSCRIPT_STATE.md)
+- [NEW Fig3 source evidence, accepted Section 2.1–2.2 revisions and student raw-data request checklist](manuscript/HEO_2026-11-11_FIGURE3_SOURCE_CHECK_AND_STUDENT_DATA_REQUESTS.md)
 - [CURRENT PI-approved Abstract + entire Introduction and final decisions](manuscript/HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md)
 - [Older Nov10 Abstract/Introduction discussion and rejected/pending alternatives](manuscript/HEO_2026-11-10_ABSTRACT_INTRO_AND_CLAIM_DECISION_HISTORY.md)
 - [All 45 actual native Word comments and 9 unresolved yellow source-data requests](manuscript/HEO_2026-11-10_WORD_45_COMMENT_AND_YELLOW_HIGHLIGHT_AUDIT.md)
