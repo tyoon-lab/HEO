@@ -70,3 +70,38 @@ Scope: exactly four materials' **first** positive-current halfcycle; original fi
 **Exploratory 2-knot continuous linear fit** to the three observables simultaneously after centering/normalizing each observable, with shared sample-specific knot positions but independent slopes, finds early knot around pulse 5–6 and QOCV ~0.56–0.64 V, late knot at HEO pulse41 (1.77 V), BM pulse47 (1.92 V), Mg pulse26 (1.60 V), BM-Mg pulse29 (1.64 V). **Importantly this is a *forced* two-breakpoint model, not proof of meaningful boundaries**. Stability audit demonstrates endpoints drive the knots: deleting the last two fully rested pulses in HEO and BM moves the nominal late knot from ~1.77/1.92 V to ~1.27/1.12 V; deleting the first two pulses moves early knots to ~1.05 V HEO, ~0.89 V BM, ~1.04 V Mg, ~1.02 V BM-Mg. Therefore **DO NOT publish these values as robust delithiation region boundaries** or import first-lithiation R1–R4 labels into delithiation. A defensible description is an early fast-rise, middle broad response and late large-polarization region, keeping thresholds provisional.
 
 **Interpretation/decision:** first delithiation 3-observable overview is physically informative, but the change points are cutoff/current-reversal sensitive; keep the quantitative knot search internal until challenged by common-voltage analysis, alternative window choices, and independent physical evidence. In particular, terminal high-voltage |ΔErest| increases while t63 decreases and should not be read as globally slower delithiation. No manuscript/Word file, abstract, figure numbering or locked first-lithiation segmentation modified.
+
+
+## Addendum — PI provisional three-region basis + QOCV differential-charge test (2026-11-11)
+
+### PI decision
+For **first delithiation only**, **provisionally adopt THREE operational t63-response regimes** as a working analysis structure:
+- **D1, early:** steep t63 increase after first current reversal;
+- **D2, middle:** broad high, quasi-plateau or smooth maximum t63;
+- **D3, late:** falling t63 while often rising |ΔErest|.
+
+The labels D1–D3 are **internal placeholders**, not yet named in the paper. **No adopted numeric breakpoints**, no assertion of three distinct chemical phases, and no mapping to first-lithiation R1–R4. t63 is the primary proposed boundary descriptor; QOCV and |ΔErest| are independent supporting observables. Earlier joint forced two-knot model was highly endpoint-sensitive; do not reuse fitted voltages as confirmed boundaries. The PI specifically requested examining a *QOCV-based dQ/dV*, not rewriting manuscripts, a DOCX, or redrawing existing publication figures.
+
+### Computation — first delithiation
+Using the prior first-positive-current, fully-rested pulsewise CSV (`first_delithiation_gitt_t63_pulsewise.csv`, from four real XLSX workbooks, n=45/51/30/34), calculate local discrete differential capacity from adjacent **full** 600-s pulses at nominal 100 mA g−1:
+
+`dQ/dV at (QOCV_i + QOCV_{i+1})/2 = (100 mA/g * 600s / 3600s) / (QOCV_{i+1} - QOCV_i)`.
+
+- The 60-min rest-end `QOCV_i` monotonically increases in all four sequences (strictly positive first differences); no negative or zero denominator.
+- This is **GITT QOCV-derived finite-step quasi-equilibrium differential charge**, **NOT** ordinary continuous GCD dQ/dV, true equilibrium OCV differential capacity, or a direct unique chemical reaction fingerprint.
+- Direct unsmoothed midpoint differences in 60-minute QOCV; optional weak Savitzky–Golay windows 5,7,9 (degree 2) were only used for *peak-stability diagnostics* and do not alter the plotted curve.
+
+| Sample | n full-rest pulses | Peak dQ/dV QOCV (V) | Peak height (mAh g−1 V−1) | t63 maximum QOCV (V) | weak-smoothing peak QOCV (5/7/9-point windows, V) |
+|---|---:|---:|---:|---:|---|
+| HEO | 45 | 1.534 | 813.8 | 1.298 | 1.534 / 1.555 / 1.555 |
+| BM-HEO | 51 | 1.307 | 801.7 | 1.080 | 1.307 / 1.328 / 1.328 |
+| Mg-HEO | 30 | 1.527 | 545.0 | 0.756 | 1.557 / 1.557 / 1.557 |
+| BM-Mg-HEO | 34 | 1.305 | 547.9 | 1.024 | 1.305 / 1.305 / 1.305 |
+
+Interpretation at observation level:
+1. **Ball milling** shifts the *global maximum of the QOCV-derived dQ/dV curve* to a lower QOCV in both matched comparisons (~1.53→~1.30 V). The **BM-HEO shoulder** at ~1.56–1.60 V is detectable as a second weak local maximum using 5- and 7-point smoothers, but it merges into one broad feature at 9 points. **Do not** claim two uniquely identified reactions.
+2. **Mg incorporation** substantially reduces raw dQ/dV peak magnitude (~814→545 and ~802→548 mAh g−1 V−1) without similarly large peak-voltage shifts at matched milling condition. Magnitude depends on total accessed charge, voltage profile, rest kinetics and protocol, so mechanistic attribution is premature.
+3. The **t63 maxima and dQ/dV maxima are systematically separated** (~0.23 V in both Mg-free samples; ~0.77 V Mg-HEO; ~0.28 V BM-Mg). This argues AGAINST setting a single delithiation boundary at a dQ/dV peak or assuming voltage-relaxation time traces the differential-capacity maximum. dQ/dV can help identify distinct *potential-dependent storage features* while t63 provides an independent time-response descriptor.
+4. Do not lock first-delithiation region voltages from these peak values. Check later whether each D1–D3 boundary remains stable under leave-endpoint-out sensitivity analysis and whether sharp dQ/dV features (versus broad maxima) have independent physical meaning.
+
+Visualization created as current-chat analysis artifact (not committed as binaries): `HEO_first_delithiation_QOCV_dQdV.png`. Numeric derived curve: `HEO_first_delithiation_QOCV_dQdV.csv`. No manuscript/Word changes or new experiments.
