@@ -1,5 +1,7 @@
 # HEO — Spinel High-Entropy Oxide Conversion Anode Research
 
+**LATEST PI DECISION (2026-11-11):** [Full accepted Abstract and four Introduction paragraphs, with rationale](manuscript/HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md) are locked for the current manuscript revision. November 10 pending/proposed text and earlier Word extracts are superseded for wording only. GitHub records were updated; this operation did not modify a DOCX, figures, or Word comments.
+
 ## Start here, no handoff required
 
 **[CURRENT SOURCE OF TRUTH: START_HERE_CURRENT_STATE_2026-10-12.md](START_HERE_CURRENT_STATE_2026-10-12.md)** — **reconciled November 10, 2026**. Read this first in every new chat. All older “latest” banners or dated locks must be interpreted historically.
@@ -9,7 +11,8 @@ The manuscript is being scientifically reviewed. **No journal is currently selec
 ## Current detailed GitHub records
 
 - [Authoritative scientific results, Word identities and remaining tasks](manuscript/HEO_2026-11-10_AUTHORITATIVE_SCIENCE_MANUSCRIPT_STATE.md)
-- [Complete Abstract/Introduction discussion, rejected alternatives and PI pending decisions](manuscript/HEO_2026-11-10_ABSTRACT_INTRO_AND_CLAIM_DECISION_HISTORY.md)
+- [CURRENT PI-approved Abstract + entire Introduction and final decisions](manuscript/HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md)
+- [Older Nov10 Abstract/Introduction discussion and rejected/pending alternatives](manuscript/HEO_2026-11-10_ABSTRACT_INTRO_AND_CLAIM_DECISION_HISTORY.md)
 - [All 45 actual native Word comments and 9 unresolved yellow source-data requests](manuscript/HEO_2026-11-10_WORD_45_COMMENT_AND_YELLOW_HIGHLIGHT_AUDIT.md)
 - [Research decision trajectory, early framing pivots and figure history](manuscript/HEO_2026-11-10_DEVELOPMENT_TRAJECTORY_AND_SUPERSEDED_DECISIONS.md)
 - [Latest PI-uploaded manuscript full-text capture](manuscript/HEO_2026-11-07_AUTHOR_UPLOADED_MS_FULL_TEXT_SNAPSHOT.md)
@@ -25,10 +28,12 @@ The manuscript is being scientifically reviewed. **No journal is currently selec
 
 **Figures:** Fig1/2 structural/chemical overview; Fig3 macroscopic performance; Fig4 measured four-sample t63/ΔErest/QOCV; Fig5 signed region-wise charge; Fig6 physical interpretation on measured HEO QOCV (qualitative arrows, not a second signed-charge figure).
 
+**Wording vs evidence:** Abstract and Introduction paragraphs 1–4 have PI approval; Results/Methods/figures/SI are still under review. The listed 45 Word comments are a Nov 7 archival audit, not a verified current Word comment count.
+
 **Working style:** [Yoon-Lab-Publication-Toolkit v0.22](https://github.com/tyoon-lab/Yoon-Lab-Publication-Toolkit/blob/main/MANUSCRIPT_VOICE_CONSTITUTION.md) (direct P, evidence-supported S, only necessary C). The PI's causal Abstract purpose and accepted text override cosmetic AI editing; no unapproved rewrite is in the Word.
 
 ## Submission gates
 
-PI approval of 45 comments and Abstract/Intro wording; collaborator source for HRTEM CoGa2O4 indexing, Mg stoichiometry/synthesis, XRD/ICP, XPS chemical calibration, BET degassing, electrode/cell/electrolyte/FEC/testing metadata; updated figures and main↔SI reconciliation. Until then, **review copy, not submission ready**.
+PI-approved Abstract/Introduction text logged Nov 11; unresolved Results/Methods comments and collaborator source for HRTEM CoGa2O4 indexing, Mg stoichiometry/synthesis, XRD/ICP, XPS chemical calibration, BET degassing, electrode/cell/electrolyte/FEC/testing metadata; updated figures and main↔SI reconciliation. Until then, **review copy, not submission ready**.
 
 Historical pre-reconciliation README and START_HERE are preserved under [history](history/); prior experimental/models/figure records remain available.
