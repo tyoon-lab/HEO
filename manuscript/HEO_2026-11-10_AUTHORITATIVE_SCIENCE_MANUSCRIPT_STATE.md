@@ -1,5 +1,8 @@
 # HEO: authoritative current research and manuscript state — 2026-11-10
 
+> **2026-11-11 TEXT STATUS UPDATE:** The PI approved the full Abstract and four Introduction paragraphs, recorded verbatim in [this new text-lock record](HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md). This file remains authoritative for scientific numbers, evidence strength and pending source audits. Its older statements that Abstract/Intro wording was unapproved are dated snapshots. The GitHub documentation update does not change DOCX binaries, native comments, figure assets, SI or raw data.
+
+
 ## Purpose and authority
 
 This file is the stable *research/science authority* for the next session. Begin at [START_HERE_CURRENT_STATE_2026-10-12.md](../START_HERE_CURRENT_STATE_2026-10-12.md), which links the live state, a full decision trajectory, the Abstract/Introduction deliberation, and the Word-review comment/action ledger. This file **does not claim that unpublished proposed text has been approved or applied to the Word**.
