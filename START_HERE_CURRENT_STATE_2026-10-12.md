@@ -1,5 +1,7 @@
 # HEO — START HERE: current authoritative state (PI text locked 2026-11-11; science reconciled 2026-11-10)
 
+**FIGURE 3/SECTION 2.1–2.2 SOURCE RECHECK (2026-11-11):** [September email + PowerPoint slide 9–10 audit, revised exact manuscript passages and student raw-data request checklist](manuscript/HEO_2026-11-11_FIGURE3_SOURCE_CHECK_AND_STUDENT_DATA_REQUESTS.md). Corrected 4.6×/2.6× BET, tempered XPS, dropped the unsupported `all recover baseline` and `featureless` wording. A locally rendered 13-page native-comment-preserving DOCX review artifact was generated; **not** committed to this GitHub repo. Graph-based approximate 100-cycle values require instrument-file confirmation. This supersedes older Figure 3 prose where inconsistent.
+
 **CURRENT PI WORDING AUTHORITY (2026-11-11):** [Full PI-approved Abstract and four Introduction paragraphs, with the complete sentence-by-sentence decision rationale](manuscript/HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md). Use this as the single authority for these five paragraphs; the November 10 pending/candidate wording sections below are historical. It does not replace any Word/DOCX binary, native comments, figure or SI. November 7 Word identities below are archival; a later November 11 Word draft may still differ from the final approved wording.
 
 **This is the SINGLE ENTRY POINT for starting a new HEO chat WITHOUT a separate handoff.**
@@ -8,7 +10,8 @@
 
 ## 1. Read these files IN ORDER
 
-1. **[PI-LOCKED Abstract and entire Introduction (Nov 11)](manuscript/HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md).** Exact accepted wording and decision log.
+1. **[Latest Figure 3 email/PowerPoint evidence and reviewed 2.1–2.2 passages](manuscript/HEO_2026-11-11_FIGURE3_SOURCE_CHECK_AND_STUDENT_DATA_REQUESTS.md).**
+2. **[PI-LOCKED Abstract and entire Introduction (Nov 11)](manuscript/HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md).** Exact accepted wording and decision log.
 2. **[Authoritative science, current exact Word identities, numbers, figures and remaining gates](manuscript/HEO_2026-11-10_AUTHORITATIVE_SCIENCE_MANUSCRIPT_STATE.md).** This takes priority for current physics/numeric boundaries.
 3. **[Older Nov 10 Abstract/Introduction deliberation and superseded proposed options](manuscript/HEO_2026-11-10_ABSTRACT_INTRO_AND_CLAIM_DECISION_HISTORY.md).** This takes priority for *what the PI wants to say* and what is STILL PROPOSED.
 4. **[Nov 7 audit of 45 native Word comments (IDs 0–44), nine unresolved yellow note locations, change actions](manuscript/HEO_2026-11-10_WORD_45_COMMENT_AND_YELLOW_HIGHLIGHT_AUDIT.md).** These are *suggestions*, not applied body changes.
