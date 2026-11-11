@@ -52,3 +52,21 @@
 - Keep C1/C2/C3 numeric metrics, reference-3s algebra, potential interpolation, cutoff flags, and no-replicate caveats in this internal note.
 - Mechanistic test still pending: `t63` effective response vs fraction of reversible charge or SOC, and paired `ΔErest` shape; potential-defined bins alone cannot uniquely transfer the first-lithiation R2/R3 process labels into later delithiation.
 - **No new experimental request or manuscript draft yet.** No replicated-cell inference from one cell's three sequential cycles.
+
+
+## Addendum 2026-11-11 — first delithiation, three-observable joint review (PI request)
+
+Scope: exactly four materials' **first** positive-current halfcycle; original first-delith pulsewise XLSX extraction, 45/51/30/34 **fully rested** pulses. Compare t63 (time after 3s reference), signed ΔErest = E(rest 3600s)−E(rest 3s) (negative on delithiation, display its **magnitude**), and QOCV (rest-end voltage). Graph x is normalized ordinal index of included, fully rested GITT pulses, **not equal absolute charge across materials** and does not include terminal cutoff partial pulse. Three independent single-axis charts and one vertical viewing sheet generated as local conversation artifacts: `HEO_first_delith_C1_t63_normalized.png`, `HEO_first_delith_C1_dE_normalized.png`, `HEO_first_delith_C1_QOCV_normalized.png`, `HEO_first_delith_C1_t63_dErest_QOCV_overview.png`. Original pulsewise calculations preserved in `first_delithiation_gitt_t63_pulsewise.csv` within local conversation; **those binaries are not in GitHub**.
+
+| Sample | t63 peak (s) / QOCV (V) | t63 median (s) | |ΔErest| first→last full-rest pulse (mV) | QOCV first→last (V) |
+|---|---|---:|---|---|
+| HEO | 471 / 1.298 | ~418 | 20.2→370.2 | 0.219→1.902 |
+| BM-HEO | 587 / 1.080 | ~540 | 16.7→342.8 | 0.190→2.076 |
+| Mg-HEO | 500 / 0.756 | ~459 | 26.9→379.6 | 0.200→1.756 |
+| BM-Mg-HEO | 546 / 1.024 | ~485 | 23.1→419.5 | 0.196→1.853 |
+
+**Direct observational trends:** (1) Rapid initial increase in t63 (notably over pulses ~1–5), then broad intermediate high/plateau or slowly declining t63; peak voltage differs substantially among materials; late delithiation t63 decreases. (2) |ΔErest| generally rises through delithiation and increases more sharply at the high-voltage/terminal pulses, despite decreasing t63. (3) QOCV rises smoothly and differently across samples; there is no obvious universal mid-cycle jump that independently establishes a common physical boundary. ΔE amplitude and t63 are distinct, and the three signals do **not** deliver coincident universal transition points.
+
+**Exploratory 2-knot continuous linear fit** to the three observables simultaneously after centering/normalizing each observable, with shared sample-specific knot positions but independent slopes, finds early knot around pulse 5–6 and QOCV ~0.56–0.64 V, late knot at HEO pulse41 (1.77 V), BM pulse47 (1.92 V), Mg pulse26 (1.60 V), BM-Mg pulse29 (1.64 V). **Importantly this is a *forced* two-breakpoint model, not proof of meaningful boundaries**. Stability audit demonstrates endpoints drive the knots: deleting the last two fully rested pulses in HEO and BM moves the nominal late knot from ~1.77/1.92 V to ~1.27/1.12 V; deleting the first two pulses moves early knots to ~1.05 V HEO, ~0.89 V BM, ~1.04 V Mg, ~1.02 V BM-Mg. Therefore **DO NOT publish these values as robust delithiation region boundaries** or import first-lithiation R1–R4 labels into delithiation. A defensible description is an early fast-rise, middle broad response and late large-polarization region, keeping thresholds provisional.
+
+**Interpretation/decision:** first delithiation 3-observable overview is physically informative, but the change points are cutoff/current-reversal sensitive; keep the quantitative knot search internal until challenged by common-voltage analysis, alternative window choices, and independent physical evidence. In particular, terminal high-voltage |ΔErest| increases while t63 decreases and should not be read as globally slower delithiation. No manuscript/Word file, abstract, figure numbering or locked first-lithiation segmentation modified.
