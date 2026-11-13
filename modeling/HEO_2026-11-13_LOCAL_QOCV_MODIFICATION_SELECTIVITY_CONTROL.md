@@ -78,3 +78,23 @@ The **later** Mg-specific ~0.9V *local normalized charge loss* and *local voltag
 - `HEO_normalized_dQdV_vs_QOCV_C2C3_2x2.png`, `HEO_charge_selectivity_residual_QOCV_2x2.png`, `HEO_relaxation_amplitude_shape_residuals_2x2.png`
 - `HEO_later_cycles_normalized_charge_vs_QOCV.csv`, `HEO_normalized_charge_modification_contrasts.csv`, `HEO_local_feature_selectivity_window_sensitivity.csv`, `HEO_voltage_relaxation_amplitude_residuals.csv`, `HEO_amplitude_residual_cyclewise_sensitivity.csv`
 - `HEO_C2C3_0p9V_selectivity_control.py`
+
+
+## 2026-11-13: Rest-observation-window robustness check (completed in same analysis)
+
+To challenge whether Mg-associated local attenuation of |ΔErest| around 0.90 V is an artifact of the 3500s endpoint, reopen the **already validated matched-voltage raw-rest voltage arrays** `HEO_broad_QOCV_rawshape_{sample}.npz`. For each of 0.5:0.1:1.3V, cycle C2/C3 and material, recompute `A(tref,tend)=1000*|E(tend)−E(tref)|` (mV). Use `tref=3s` and `10s`, `tend=600/1800/3500s`; for each cycle independently fit a single multiplicative amplitude gain to the full 0.5–1.3 V reference curve, then evaluate Mg-treatment local residual at 0.90 V.
+
+**Observed 0.90V residual with 3s reference, mV:**
+
+| matched Mg comparison | C2 600s | C3 600s | C2 1800s | C3 1800s | C2 3500s | C3 3500s |
+|---|---:|---:|---:|---:|---:|---:|
+| Mg-HEO − HEO | −7.54 | −7.60 | −10.54 | −11.56 | −12.05 | −13.93 |
+| BM-Mg-HEO − BM-HEO | −8.11 | −7.76 | −10.56 | −10.47 | −11.57 | −11.64 |
+
+The residuals remain **negative across all six C2/C3/endtime combinations** in both matched Mg contrasts. The relative residual vs uniform-gain reference is **roughly −7 to −10%** across endpoints. Switching start reference from 3s to 10s does not reverse signs or change relative magnitude materially. Thus the effect does not depend on the specific 3500s endpoint, although the *absolute* residual grows when slower relaxation is included.
+
+This is **additional evidence for a composition-associated localized voltage-recovery-amplitude change** around the later-cycle 0.9V feature, not direct proof of a specific chemical reaction or unique phase. Absolute ΔErest can respond to dE/dQ thermodynamic slope changes, interfacial effects, and coupled transport. The accompanying normalized **fixed-voltage charge loss** for Mg in the same band remains ~1 pp beyond whole-capacity scaling, with absolute loss only ~6mAh/g in 0.85–0.95V. Even these jointly consistent signs are observational, based on four conditions without independent electrode replicates.
+
+**New local code and outputs (not committed as binaries):** `HEO_C2C3_rest_window_sensitivity.py`, `HEO_rest_window_amplitude_residual_sensitivity.csv`, `HEO_Mg_amplitude_residual_rest_window_sensitivity.png`.
+
+**Next gate:** assess variation in the *underlying QOCV slope* and `ΔErest/|dV/dQ|` 'equivalent charge' sensitivity around 0.9V; that quantity is model-dependent and must not be called experimentally measured migrated charge. More useful first: compare local voltage recovery with QOCV derivative in the **same** 0.9±0.1V region, and evaluate whether apparent Mg effect is accounted for by slope changes. Preserve the already approved C1 region definitions, and continue to keep manuscript unedited.
