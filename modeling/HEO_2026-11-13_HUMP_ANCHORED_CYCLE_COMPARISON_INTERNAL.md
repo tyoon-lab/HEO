@@ -77,3 +77,34 @@ These differing QOCVs and t63s at hump *do not invalidate a repeatable dominant-
 2. Test whether hump anchors correlate with **GITT local dQ/dV feature**, and changes in relaxation spectra beyond a single t63. A ΔErest peak is not itself a capacity-concentration peak.
 3. Compare region R2 and R3 perturbation contrasts with later *pre*/*post*-hump charge while controlling for state-of-charge/voltage cutoff and the enormous first-cycle hysteresis. Under this working hypothesis do not demand identical absolute QOCV/t63/ΔErest.
 4. If convincing, one concise Results/SI sentence may explain that first-lithiation-specific capacity precedes a reproducible later-cycle relaxation-amplitude feature; **no manuscript change without PI decision**.
+
+
+## New local QOCV-differential and modification decomposition (2026-11-13 continuation)
+
+PI clarification: the hump is an **observable fiducial marker** for comparing a candidate recurring dominant process; it is **not assumed** to represent a charge maximum, local reaction-rate maximum, or identical time constant. Internal continuation on the same original 12 lithiation traces (C1/C2/C3; four materials), no manuscript change.
+
+### Independent QOCV-derived |dQ/dV| relative to |ΔErest| marker
+- QOCV was smoothed with a seven-pulse, quadratic Savitzky–Golay filter before calculating local \`|dQ/dV| = 1/|dQOCV/dQ|\`. Also checked raw, five-pulse and nine-pulse derivatives. Search local \`|dQ/dV|\` maximum only within ±150 mAh/g of the **independently chosen |ΔErest| anchor**; the maximum may lie elsewhere globally. \`|dQ/dV|\` need not peak at the relaxation-amplitude hump.
+- In **C2/C3**, the local \`|dQ/dV|\` maxima occur *before* the \`|ΔErest|\` marker: HEO **−33/−17**, BM-HEO **−17/−33**, Mg-HEO **−67/−50**, BM-Mg-HEO **−33/−50 mAh/g**, respectively. These offsets are approximately 1–4 GITT pulses and are stable within one pulse under raw/5/7/9 smoothing choices. Thus the hump is a potentially robust marker around a broad reaction feature, **not the unique maximum of charge concentration**.
+- In C1, HEO's local differential-charge maximum is **+83 mAh/g after** its unambiguous |ΔErest| hump, whereas Mg-HEO's is approximately **at** its hump; therefore a fixed relation between the two descriptors is neither expected nor demonstrated. C1 BM hump/shoulder markers remain tentative.
+- At the hump itself, t63 is generally still **increasing** with lithiation: for HEO C1 near Qrelative=0, t63 goes ~709 s at −50 mAh/g, 774 s at 0, ~842 s at +50; C2/C3 show a smaller monotone rise. An amplitude hump without t63 hump is entirely consistent with changing amplitude/weights in the relaxation spectrum. This is a hypothesis, not a decomposition of relaxation modes.
+- Diagnostic figure locally: \`HEO_hump_anchor_local_dQdV_2x2.png\`; detailed local estimates \`HEO_hump_local_dQdV_t63_dErest_comparison.csv\`. These file binaries have not been pushed to GitHub.
+
+### C2/C3 modification effect split at the hump/shoulder
+Use **C2 and C3 average** halfcycle charge and separately derived anchors (no C1 anchor enters this calculation). The total matched capacity effect is decomposed arithmetically into *before marker* and *after marker*:
+
+| Matched contrast | ΔQ before marker | ΔQ after marker | total ΔQ | fraction of total from after marker |
+|---|---:|---:|---:|---:|
+| BM-HEO − HEO | +41.7 | **+100.0** | +141.7 | **70.6%** |
+| BM-Mg-HEO − Mg-HEO | +25.0 | **+66.7** | +91.7 | **72.7%** |
+| Mg-HEO − HEO | **−125.0** | **−116.7** | −241.7 | 48.3% |
+| BM-Mg-HEO − BM-HEO | **−141.7** | **−150.0** | −291.7 | 51.4% |
+
+All units mAh/g; positive/negative sign is the change in matched sample's GITT lithiation nominal charge (complete pulses). **Exploratory implication:** Ball-milling's additional later-cycle charge is *nominally* more concentrated after the marker, while Mg-associated later-cycle charge reduction spans both sides approximately equally. This is more discriminating than the older statement that only the sign of later post-marker capacity agrees with C1 R2 or R3 effects. Still no causal allocation or quantitative 1:1 inheritance of an initial R2/R3 process.
+
+### Sensitivity and limits
+- Moving **either** of the two matched materials' C2/C3 marker by just ±1 pulse (~16.7 mAh/g) can change the estimated after-marker share of ball-milling effects from **47–94% (Mg-free)** or **36–109% (Mg-containing)** under independent worst-case shifts; for Mg effects from **35–62%** (unmilled) or **40–63%** (milled). The BM anchor is weaker than the HEO/Mg peak, so **do not publish the nominal ~71–73% as a precise mechanistic fraction**.
+- Each matched comparison derives from one sample trajectory, with no inter-cell replicates, and only two chronological later cycles. The comparisons are not independent confirmatory samples.
+- The first-cycle **R2 ball-milling gain** (+166.7 or +150 mAh/g) and **R3 Mg-associated loss** (−200 or −183.3 mAh/g) are assigned by **t63 first-cycle regions**, whereas later marker bins are **|ΔErest| features**. They should be plotted side by side as trends, not treated as chemically identical bins.
+- Stronger hypothesis to test: a common *broad reaction window* produces a stable differential-charge peak slightly *ahead* of the later-cycle relaxation-amplitude marker; ball milling changes the charge passed after the marker more than before, whereas Mg incorporation reduces charge on both sides. Validate with raw time-domain relaxation spectral shape, peak/shoulder positioning stability and independent structure evidence before considering a manuscript claim.
+- Generated local figures \`HEO_hump_anchor_later_cycle_modification_effects.png\` and \`HEO_hump_anchor_local_dQdV_2x2.png\`, with local CSV \`HEO_hump_anchor_modification_effect_decomposition.csv\` and script \`HEO_hump_effect_decomposition.py\`. No Word or locked manuscript edits.
