@@ -199,3 +199,30 @@ Later-cycle post-hump fraction of total charge is HEO ~48.8%, BM-HEO ~52.5%, Mg-
 - Optionally compare empirical R1–R4 first-cycle perturbation contrasts against later-cycle total, pre- and post-marker charge, with explicit caveats: only four material-condition combinations, no independent repeated electrodes and strong collinearity between total and post capacity.
 
 **Manuscript text/figures/native comments remained unchanged.**
+
+
+## Continuation: uniform-capacity-scaling null model (2026-11-13)
+
+This test directly addresses the PI's central question: whether the hump-anchored post-cycle charge reveals a **selective material-modification effect** beyond the trivial observation that electrodes with higher total capacity also have more charge after an approximately mid-capacity marker.
+
+**Null model:** In a matched pair, material B (unmodified comparator) has post-anchor fraction `f_post,B = Q_post,B/Q_total,B`. If modification A scales the entire lithiation capacity **uniformly** without selectively reweighting pre/post charge, the prediction is `Q_post,A,pred = f_post,B * Q_total,A`. Test residual `δQ_post=Q_post,A,measured−Q_post,A,pred` for C2/C3 averaged capacities, separately for the chosen |ΔErest| hump and the distinct QOCV-based local dQ/dV maximum.
+
+| Pair | Hump residual, mAh/g | dQ/dV-marker residual, mAh/g | conservative one-pulse anchor-position bound |
+|---|---:|---:|---:|
+| BM-HEO − HEO | +30.9 | +25.8 | ±36.7 |
+| BM-Mg-HEO − Mg-HEO | +21.7 | −6.7 | ±36.7 |
+| Mg-HEO − HEO | +1.3 | +43.3 | ±27.6 |
+| BM-Mg-HEO − BM-HEO | +3.1 | +28.4 | ±27.6 |
+
+The ± bounds are **not** measurement SDs or confidence intervals. They reflect a worst-case analytical uncertainty of ±one nominal 16.67 mAh/g pulse in each member's separately located anchor, propagated with the capacity ratio: `δQbound=Qpulse*(1+Qtotal,A/Qtotal,B)`. They are a simple deterministic sensitivity envelope; actual uncertainty may be different.
+
+**Interpretation:**
+- All four **hump-based residuals lie within their one-pulse anchor uncertainty envelope**, so the null proportional capacity-scaling model is **not clearly rejected**. This weakens the earlier mechanistic interpretation that ball milling selectively increases post-hump capacity by ~70% of its total benefit.
+- The alternate dQ/dV marker yields a nominal Mg-related post-peak excess (e.g. +43.3 mAh/g unmilled), but this could reflect an Mg-driven shift of the **marker location itself**, not a newly isolated reaction. It is a descriptor-derived comparison from the same voltage/charge experiment, **not an independent direct reaction-identification measurement**.
+- Post-hump fractions are ~48.8%, 52.5%, 49.1%, 53.0% of C2/C3 total charge for HEO, BM-HEO, Mg-HEO, BM-Mg-HEO. The apparent selective shift under ball milling is only ~3.7–3.9 percentage points, roughly the uncertainty associated with one 16.67 mAh/g pulse. Thus first R2/R3 regional modification results are valid **as descriptive regional charge comparisons**, but their mechanistic inheritance into later post-hump charge **has not been demonstrated uniquely**.
+- **Positive finding survives:** both landmarks recur to within **one full pulse (0–16.7 mAh/g)** between C2 and C3; local dQ/dV peak consistently precedes hump by 1–4 pulses. This supports studying a **broad repeatable electrochemical response window**, without claiming a sharp reaction boundary or that hump itself is a charge maximum.
+- **First C1** HEO/Mg clear hump is within R3, while BM C1 shoulder assignments are tentative. Keep first-cycle region boundaries intact and chemical labels explicitly literature-inferred.
+
+Local newly generated visualizations (not uploaded into GitHub as binary): `HEO_hump_dual_landmark_2x2.png` and SVG, `HEO_hump_vs_dQdV_modification_split_2x2.png`, `HEO_hump_uniform_scaling_null_4contrasts.png`; derived CSVs `HEO_hump_dual_landmark_cycle_positions.csv`, `HEO_hump_vs_dQdV_anchor_matched_contrasts.csv`, `HEO_hump_uniform_scaling_null_results.csv`; reproducibility scripts `HEO_hump_dual_landmark_validation.py`, `HEO_hump_uniform_scaling_null_test.py`.
+
+**Next strongest discriminator:** define an **interval between the independent differential-charge maximum and relaxation hump** in C2/C3, then compare *within-interval* voltage and full normalized relaxation spectra across samples, subtracting simple baseline capacity scaling. Assess whether the interval shows a specific modification-driven change larger than ±one-pulse placement and the same-cell C2/C3 history variation. In parallel assess whether this interval lies within a t63-defined R3 analogue without imposing C1 boundaries on later cycles. No new experiments automatically required and no manuscript text edited.
