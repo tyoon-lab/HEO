@@ -108,3 +108,55 @@ All units mAh/g; positive/negative sign is the change in matched sample's GITT l
 - The first-cycle **R2 ball-milling gain** (+166.7 or +150 mAh/g) and **R3 Mg-associated loss** (−200 or −183.3 mAh/g) are assigned by **t63 first-cycle regions**, whereas later marker bins are **|ΔErest| features**. They should be plotted side by side as trends, not treated as chemically identical bins.
 - Stronger hypothesis to test: a common *broad reaction window* produces a stable differential-charge peak slightly *ahead* of the later-cycle relaxation-amplitude marker; ball milling changes the charge passed after the marker more than before, whereas Mg incorporation reduces charge on both sides. Validate with raw time-domain relaxation spectral shape, peak/shoulder positioning stability and independent structure evidence before considering a manuscript claim.
 - Generated local figures \`HEO_hump_anchor_later_cycle_modification_effects.png\` and \`HEO_hump_anchor_local_dQdV_2x2.png\`, with local CSV \`HEO_hump_anchor_modification_effect_decomposition.csv\` and script \`HEO_hump_effect_decomposition.py\`. No Word or locked manuscript edits.
+
+
+## Raw-rest-voltage test, C1/C2/C3, all four electrodes (2026-11-13 follow-up)
+
+**Scope and status:** PI-requested verification of whether the **complete raw GITT open-circuit relaxation** around the |ΔErest| hump/shoulder is compatible with a reproducible later-cycle reaction marker. Analysis is exploratory, no editor-approved chemical identity or reaction-mode fit. **No Word manuscript, Abstract, Introduction or R1–R4 region boundaries were edited.**
+
+### Experimental calculations and source identity
+
+- Reopened full original 2022 raw Excel reports: `HEO GITT 로우 데이터.xlsx`, `BM HEO 3 GITT 로우 데이터.xlsx`, `HEO 3 Mg 로우 데이터.xlsx`, `BM HEO 3 Mg 로우 데이터.xlsx`. For each source, streaming-parse actual voltage/time/current rows from both data sheets, remove duplicate sheet-edge records, reconstruct positive-current/delithiation and negative-current/lithiation segments across direct current sign reversals. The direct-reversal detection correction is critical; a cut-off current reversal does not imply a rest and must not create an artificial fourth cycle.
+- For each sample and lithiation C1/C2/C3, choose the source pulse number nearest the previously selected **hump/shoulder** position and ±3 full 600s neighboring GITT pulses (21 full rests sampled per electrode). Anchor pulse number (C1/C2/C3): HEO **49/22/21**; BM-HEO **45/24/24** (C1 shoulder tentative); Mg-HEO **38/14/14**; BM-Mg-HEO **36/15/16** (C1 and C2 shoulders tentative).
+- The original rest record is nominally 3600s. Define ΔErest as `E(3600s) − E(3s)` and its normalized time trajectory as `F(t)=[E(t)−E(3s)]/[E(end)−E(3s)]`, comparing the full 3–3500s shape on a logarithmic time grid. Voltage at 3s is interpolated from original samples. Do not normalize each curve's time axis or adjust the vertical shapes by fitting. The selected anchor ΔErest values reproduce earlier pulsewise audits.
+- Source extraction and verification scripts in the conversation workspace (uncommitted binaries/scripts): `HEO_hump_relaxation_shape_analysis.py`, `HEO_hump_relaxation_visualize.py`; intermediate full raw traces `HEO_hump_selected_raw_relaxation_traces_{sample}.npz`; observations `HEO_hump_relaxation_shape_grid_{sample}.csv`, `HEO_hump_relaxation_selected_shape_metrics.csv`, `HEO_hump_relaxation_shape_sensitivity.csv`.
+
+### At the anchor: direct raw relaxation response
+
+| Sample | F(300s) C1 | F(300s) C2 | F(300s) C3 | first vs later extra fractional recovery at 300s [percentage points] | ΔErest amplitude C1/C2/C3 (mV) |
+|---|---:|---:|---:|---:|---|
+| HEO | 0.4159 | 0.5061 | 0.5015 | **+8.79 pp** | 188.2 / 137.5 / 149.7 |
+| BM-HEO | 0.4438 | 0.4894 | 0.4819 | **+4.19 pp** | 160.5 / 143.7 / 152.3 |
+| Mg-HEO | 0.4443 | 0.4928 | 0.4984 | **+5.13 pp** | 115.3 / 137.1 / 147.8 |
+| BM-Mg-HEO | 0.4386 | 0.4931 | 0.4857 | **+5.08 pp** | 133.2 / 144.2 / 155.2 |
+
+These are fractions of the **within-observation-window 3–3600s** recoverable voltage, not the fraction of all irreversible/reversible charge.
+
+**Direct finding:** All four samples have a **slower normalized C1 relaxation** at the hump/shoulder than C2 and C3. Despite their differing absolute voltage amplitudes, the C2/C3 normalized curves almost perfectly overlap. This is a physical time-domain result rather than an artifact of simply reading the t63 crossing time.
+
+### Quantifying complete-shape reproducibility
+
+RMSE over 200 log-spaced 3–3500s time points, comparing (i) `C1 − mean(C2,C3)` and (ii) `C2−C3`, on unit-normalized recovery fraction:
+
+| Sample | RMSE C1 vs C2/C3 average | RMSE C2 vs C3 | ratio |
+|---|---:|---:|---:|
+| HEO | 0.0530 | 0.0043 | 12.4× |
+| BM-HEO | 0.0279 | 0.0050 | 5.6× |
+| Mg-HEO | 0.0344 | 0.0025 | 13.8× |
+| BM-Mg-HEO | 0.0325 | 0.0047 | 6.9× |
+
+**Hump anchor sensitivity:** At **each of ±3 pulse** around the selected marker (±50 mAh/g), all four samples retain the same orientation `C1 normalized recovery by 300s < C2 and C3`, with `C1 vs later complete-shape RMSE > C2 vs C3`. Even BM-HEO and BM-Mg-HEO retain that pattern despite subjective C1 shoulder assignment. This strongly supports a broadly reproducible **first-cycle-to-later-cycle reorganization of relaxation dynamics**, but does **not** independently establish a single identical reaction component for the hump.
+
+### Scientific interpretation: advance but limit the claim
+
+1. **Supports recurring later response:** The C2 and C3 **entire normalized relaxation curves** are extremely similar at homologous hump/shoulder landmarks across four electrodes, even when their delithiation/lithiation charge and actual ΔE amplitudes differ. The observed convergence is compatible with a reproducible dominant electrochemical process or common coupled transport/kinetic response after first-cycle reconstruction.
+2. **C1 not a mere amplitude change:** First-cycle normalized time profiles recover more slowly, on top of magnitude differences. Therefore first-cycle reaction-history changes involve **relaxation-time structure/relative mode weights**, not merely charge-axis translation or an overall polarization amplitude scale.
+3. **Not a chemical fingerprint:** A smooth GITT rest voltage and its finite-window-normalized t63 can arise from multiple overlapping relaxation mechanisms; C2/C3 normalized-shape similarity alone does not confirm phase identity or a unique R3 conversion step. The stronger statement that *all* of C1 extra pre-hump charge belongs to insertion/cation migration still lacks direct stoichiometric/operando support.
+4. **R1–R4 and modification comparison:** This common across-electrode first→later change may be a general initial structure/reaction-history phenomenon. The earlier first-lithiation R2 ball-milling gains and R3 Mg losses, as well as later post-hump capacity differences, remain valid measured **charge contrasts**, but present data do not uniquely map those contrasts to the shape change. Keep the interpretation separate.
+5. **Important operational caveat:** C2/C3 traces are sequential cycles in one cell, not independent replicates. The first- vs later-cycle difference is large relative to C2/C3 drift but no population-level significance/error bar can be asserted.
+
+### Figures and useful next calculation
+
+Locally generated four-material 2×2 plots: `HEO_hump_raw_relaxation_normalized_C1_C3_2x2.png`, `HEO_hump_raw_relaxation_amplitude_C1_C3_2x2.png`, `HEO_hump_F300_local_sensitivity_C1_C3_2x2.png` with SVG of first two and both summary/source CSVs. The zoomed full raw response is more relevant than merely plotting derived t63.
+
+Next optional scientific check: on **multiple pulses before/after hump**, compare 1–3 cycle normalized full-trace shapes at **hump-relative charge** and at **common QOCV**, to see whether the convergent C2/C3 response belongs to a broad region rather than a single selected anchor. Only then ask whether broad changes correspond to R2/R3 regional charge perturbations. A multi-exponential kernel/relaxation spectrum is optional and should be reported only with explicit identifiability/finite-window limits.
