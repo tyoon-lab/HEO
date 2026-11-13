@@ -256,3 +256,20 @@ Within the interval `local peak Q → hump Q`, the measured QOCV decreases as fo
 Note that both interval width and potential displacement increase in Mg-containing samples; this is compatible with a change in the potential distribution and relaxation process, **not direct proof of uniquely slower/faster diffusion or a separate metal reduction reaction**. Local C2/C3 values are saved in `HEO_later_cycle_dual_marker_window_metrics.csv` (conversation attachment, not GitHub).
 
 **Preferred next scientific check:** test whether the ~0.90 V feature remains stable using derivative regularization over larger and smaller pulse windows and, if possible, voltage-matched *raw normalized relaxation traces* across all samples. Distinguish a reproducible cross-material peak from a 60min-window/voltage-grid artifact; compare first-lithiation C1 local peak voltage (HEO ~0.474 V and Mg-HEO ~0.387 V near the chosen hump) as a separate initial-structure response rather than forcing the C2/C3 ~0.90 V correspondence onto pristine spinels.
+
+
+## Follow-up: a fixed common-QOCV window around 0.90 V, avoiding subjective hump registration
+
+**Purpose:** distinguish shared potential feature from total-capacity scaling and subjectively located humps. For C2/C3 only, all four samples have monotonic decreasing QOCV(Q) in the GITT full-rest-pulse sequence, enabling linear interpolation of Q(V) at common end-of-rest voltages. Define `Qwindow = Q(QOCV=0.85V) − Q(QOCV=0.95V)`; also check narrower 0.875–0.925 V and wider 0.80–1.00 V. This is a **common-voltage charge interval, not a proven reaction-specific capacity or true equilibrium OCV**.
+
+C2/C3 mean nominal charge in **0.85–0.95 V** (mAh/g):
+- HEO **79.29** (C2/C3 close; within 0.9 mAh/g).
+- BM-HEO **97.25** (within 0.5 mAh/g).
+- Mg-HEO **46.19** (within 0.02 mAh/g).
+- BM-Mg-HEO **57.60** (within 0.8 mAh/g).
+
+Matched changes: BM+17.96 Mg-free, BM+11.41 Mg-containing; Mg−33.10 unmilled, Mg−39.65 milled. In the **0.80–1.00 V** window the same directional trends recur (HEO 152.74; BM 184.25; Mg 89.63; BM-Mg 110.23 mAh/g), as in the narrower **0.875–0.925 V** window (HEO 40.17; BM 49.56; Mg 23.27; BM-Mg 29.33 mAh/g).
+
+This is a relatively **objective quantitative descriptor** of the shared ~0.90V redox/charge feature and extremely stable C2/C3 sequential cycle behavior. Nevertheless, the fixed-voltage interval captures an approximately constant **fraction of total capacity** within a given material type: ~11.3% (HEO), 11.6% (BM-HEO), 10.1% (Mg-HEO), 10.5% (BM-Mg) for 0.85–0.95V. Thus the absolute matched charge differences largely reflect overall capacity scaling; no independent regional-selective mechanistic effect is established.
+
+Local code/data/figures (not committed as GitHub binaries): `HEO_C2C3_common_QOCV_voltage_window_charge.csv`, `HEO_C2C3_common_QOCV_window_charge_bars.png`, `HEO_C2_C3_QOCV_dQdV_common_0p9V_2x2.png`, with `HEO_common_voltage_window_plot.py` and `HEO_later_cycles_dQdV_common_voltage_check.py`. This latest check endorses **dual-landmark interval plus a fixed-voltage quantitative control** as the experimental way forward. Do **not** prematurely replace manuscript R1–R4 or claim the first-cycle R2/R3 modification effect causes later capacity differences.
