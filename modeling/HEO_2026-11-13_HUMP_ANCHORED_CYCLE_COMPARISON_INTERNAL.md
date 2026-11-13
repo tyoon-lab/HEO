@@ -160,3 +160,42 @@ RMSE over 200 log-spaced 3–3500s time points, comparing (i) `C1 − mean(C2,C3
 Locally generated four-material 2×2 plots: `HEO_hump_raw_relaxation_normalized_C1_C3_2x2.png`, `HEO_hump_raw_relaxation_amplitude_C1_C3_2x2.png`, `HEO_hump_F300_local_sensitivity_C1_C3_2x2.png` with SVG of first two and both summary/source CSVs. The zoomed full raw response is more relevant than merely plotting derived t63.
 
 Next optional scientific check: on **multiple pulses before/after hump**, compare 1–3 cycle normalized full-trace shapes at **hump-relative charge** and at **common QOCV**, to see whether the convergent C2/C3 response belongs to a broad region rather than a single selected anchor. Only then ask whether broad changes correspond to R2/R3 regional charge perturbations. A multi-exponential kernel/relaxation spectrum is optional and should be reported only with explicit identifiability/finite-window limits.
+
+
+## 2026-11-13 continuation: independent QOCV differential-charge anchor as a challenge to the hump hypothesis
+
+**PI research decision:** keep first-cycle t63-defined R1–R4 unchanged; use recurring voltage-relaxation amplitude hump as an *observable fiducial*, never as proof of a charge maximum. Compare **independent** hump and QOCV-derived local dQ/dV maxima in same-cell C2/C3 lithiation to challenge the interpretation of first-cycle effects.
+
+### Reproducible data and visualizations in current conversation runtime
+
+Source files: `HEO_hump_anchor_C1_C3_summary.csv`, `HEO_hump_local_dQdV_t63_dErest_comparison.csv` (Savitzky–Golay 7 pulse local derivative), and locked C1 region charges as earlier in this record. Script: `/mnt/data/HEO_hump_dual_landmark_validation.py`. Generated (not GitHub committed) `HEO_hump_dual_landmark_2x2.png/.svg`, `HEO_hump_vs_dQdV_modification_split_2x2.png`, `HEO_hump_dual_landmark_cycle_positions.csv`, `HEO_hump_vs_dQdV_charge_partitions.csv`, `HEO_hump_vs_dQdV_anchor_matched_contrasts.csv`.
+
+**Experimental observations:**
+1. C2 vs C3 |ΔErest| hump/shoulder absolute Q differs by **0 or 16.7 mAh/g** for each of four samples (zero or one pulse). Independently the QOCV-derived dQ/dV local peak (7-pulse smoothing) shifts by **0 or 16.7 mAh/g** in C2 vs C3. Within each later cycle, the dQ/dV peak lies about **17–67 mAh/g (one to four GITT pulses) *before* the |ΔErest| hump** for all eight sample-cycle comparisons.
+2. HEO and Mg-HEO *clear* C1 hump falls **inside C1 R3** (at ~75%/79% of total C1 lithiation charge), whereas their C2/C3 hump is near 50%. BM first-cycle hump assignment is a **tentative shoulder**; it also lies nominally inside R3 (~59%/64% of total C1 charge), but this chemical alignment must be regarded as weaker evidence.
+3. C2/C3 later-cycle hump and independent dQ/dV marker each repeat closely; a **broad, reproducible electrochemical feature/window** is a stronger working object than a sharp unique region boundary. C2/C3 same-cell chronological cycle repeatability is not independent replication or phase identification.
+4. A *null hypothesis* still needs testing: later-cycle total GITT capacity changes account for much of the absolute post-hump charge variation, with hump roughly at half capacity. Therefore finding BM-positive/Mg-negative post-hump charges **alone** does not distinguish a unique reaction contribution from generalized capacity scaling.
+
+### Sensitivity: does the conclusion about where modification acts survive choice of marker?
+
+Use C2/C3 averaged nominal capacities, full-rest complete pulses, split at either the preselected hump or the independent local dQ/dV peak. Matched pairwise capacity differences (mAh/g):
+
+| Modification pair | Hump Δpre | Hump Δpost | dQ/dV-peak Δpre | dQ/dV-peak Δpost | Δtotal |
+|---|---:|---:|---:|---:|---:|
+| BM-HEO – HEO | +41.7 | +100.0 | +41.7 | +100.0 | +141.7 |
+| BM-Mg-HEO – Mg-HEO | +25.0 | +66.7 | +41.7 | +50.0 | +91.7 |
+| Mg-HEO – HEO | −125.0 | −116.7 | −158.3 | −83.3 | −241.7 |
+| BM-Mg-HEO – BM-HEO | −141.7 | −150.0 | −158.3 | −133.3 | −291.7 |
+
+**Robust in both definitions:** BM increases later lithiation charge and Mg decreases it. In Mg-free pair, BM post-marker increase exceeds pre-marker increase by +58.3; within Mg pair the putative post-marker enrichment falls to +8.3 mAh/g with the independent dQ/dV anchor, comparable with one pulse. Mg's charge-loss pre/post balance also changes appreciably across anchors. **Do not claim a precise regional retention fraction or unique R2→later-post / R3→later-post mapping.**
+
+Later-cycle post-hump fraction of total charge is HEO ~48.8%, BM-HEO ~52.5%, Mg-HEO ~49.1%, BM-Mg-HEO ~52.9%. BM shifts this proportion only by roughly 3.7–3.8 *percentage points*, a change sensitive to just one 16.7 mAh/g anchor-pulse uncertainty. For dQ/dV marker the corresponding fractions differ, and the Mg-containing BM trend is not robust. This is why absolute BM +100/+67 post-charge alone must not be called a mechanistically isolated capacity gain.
+
+**Context for initial R1–R4:** Original sample-specific first-lithiation regional charge distributions and matched R2/R3 contrasts remain correct operationally. R3 in all samples *contains* the nominal marker, but its within-R3 relative location varies widely (especially weak BM shoulders), so R3 must not be treated as chemically interchangeable with a fixed-width hump-centered region. Hump provides a repeatable after-formation landmark; t63 segmentation provides an initial-cycle operational partition. The evidence does not yet rank either as the uniquely correct chemical-reaction segmentation.
+
+### Next discriminating analysis
+- Compare the **baseline-free excess** post-marker charge, e.g. fraction/post-hump vs a simple null model in which sample modifications uniformly multiply C2/C3 capacity while preserving a ~50% marker position; propagate ±one-pulse marker uncertainty. A stronger mechanism claim needs a pattern distinguishable from this baseline.
+- Examine whether normalized raw voltage-relaxation spectra differ **systematically before and after** the dual landmark interval (dQ/dV peak -> |ΔErest| hump), across C2/C3 and four samples. The raw-shape difference was already persistent for ±3 pulses, which suggests a broad feature rather than sharp change at a single point.
+- Optionally compare empirical R1–R4 first-cycle perturbation contrasts against later-cycle total, pre- and post-marker charge, with explicit caveats: only four material-condition combinations, no independent repeated electrodes and strong collinearity between total and post capacity.
+
+**Manuscript text/figures/native comments remained unchanged.**
