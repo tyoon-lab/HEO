@@ -226,3 +226,33 @@ The ± bounds are **not** measurement SDs or confidence intervals. They reflect 
 Local newly generated visualizations (not uploaded into GitHub as binary): `HEO_hump_dual_landmark_2x2.png` and SVG, `HEO_hump_vs_dQdV_modification_split_2x2.png`, `HEO_hump_uniform_scaling_null_4contrasts.png`; derived CSVs `HEO_hump_dual_landmark_cycle_positions.csv`, `HEO_hump_vs_dQdV_anchor_matched_contrasts.csv`, `HEO_hump_uniform_scaling_null_results.csv`; reproducibility scripts `HEO_hump_dual_landmark_validation.py`, `HEO_hump_uniform_scaling_null_test.py`.
 
 **Next strongest discriminator:** define an **interval between the independent differential-charge maximum and relaxation hump** in C2/C3, then compare *within-interval* voltage and full normalized relaxation spectra across samples, subtracting simple baseline capacity scaling. Assess whether the interval shows a specific modification-driven change larger than ±one-pulse placement and the same-cell C2/C3 history variation. In parallel assess whether this interval lies within a t63-defined R3 analogue without imposing C1 boundaries on later cycles. No new experiments automatically required and no manuscript text edited.
+
+
+## 2026-11-13 follow-up: later-cycle *common-potential* differential-charge landmark
+
+A closer check of the `HEO_hump_local_dQdV_t63_dErest_comparison.csv` file reveals a stronger, less arbitrary observable than relative charge position. The **QOCV at the local dQ/dV peak** is nearly constant across all four materials and both later lithiation cycles.
+
+| Sample | C2 dQ/dV local peak QOCV | C3 dQ/dV local peak QOCV |
+|---|---:|---:|
+| HEO | **0.8892 V** | **0.8799 V** |
+| BM-HEO | **0.8903 V** | **0.8947 V** |
+| Mg-HEO | **0.9128 V** | **0.8856 V** |
+| BM-Mg-HEO | **0.8953 V** | **0.8992 V** |
+
+The selected local maximum uses Savitzky–Golay 7-pulse smoothing and a window independently centered on the |ΔErest| feature. **All eight lie 0.880–0.913 V**. Raw differential values likewise yield **0.877–0.910 V**, 5-pulse 0.877–0.911 V, 9-pulse 0.886–0.913 V. It is an *independent numerical descriptor from the same GITT experiment*, not a separate chemistry measurement.
+
+The repeated C2/C3 local dQ/dV peak occurs one to four 600s pulses (roughly **17–67 mAh/g**) earlier in lithiation than the |ΔErest| hump. Hump QOCVs are more spread, particularly Mg-containing samples: HEO ~0.85 V, BM-HEO ~0.86–0.87 V, Mg-HEO ~0.76–0.77 V, BM-Mg-HEO ~0.81–0.84 V. By comparison, the differential-charge local maximum tends to align around **~0.90 V across morphology/composition**.
+
+**Physically promising refined construct:** a *dual-landmark response interval* starts near a recurrent ~0.90 V charge-response maximum and ends at the later, composition-dependent relaxation-amplitude hump. This suggests a broad repeating electrochemical event whose onset/charge response potential may be shared while its relaxation-amplitude trajectory differs under ball milling and Mg incorporation. Do **not** equate QOCV with fully equilibrated potential, infer a unique metal-ion redox process, assume the E-rest hump is a capacity peak or promote the dual-marker interval to a proven chemical phase boundary.
+
+Source-controlled graph generated locally: `HEO_C2_C3_QOCV_dQdV_common_0p9V_2x2.png` from `HEO_later_cycles_dQdV_common_voltage_check.py` (not committed). The plot uses smoothed QOCV derived |dQ/dV| versus actual rest-end QOCV for each C2/C3 lithiation. This cross-material voltage test is stronger than saying all markers occur halfway through each cycle.
+
+Within the interval `local peak Q → hump Q`, the measured QOCV decreases as follows (C2/C3):
+- HEO ~0.89→0.85 V (window 17–33 mAh/g)
+- BM-HEO ~0.89→0.86–0.87 V (17–33 mAh/g)
+- Mg-HEO ~0.89–0.91→0.76–0.77 V (50–67 mAh/g)
+- BM-Mg-HEO ~0.90→0.81–0.84 V (33–50 mAh/g).
+
+Note that both interval width and potential displacement increase in Mg-containing samples; this is compatible with a change in the potential distribution and relaxation process, **not direct proof of uniquely slower/faster diffusion or a separate metal reduction reaction**. Local C2/C3 values are saved in `HEO_later_cycle_dual_marker_window_metrics.csv` (conversation attachment, not GitHub).
+
+**Preferred next scientific check:** test whether the ~0.90 V feature remains stable using derivative regularization over larger and smaller pulse windows and, if possible, voltage-matched *raw normalized relaxation traces* across all samples. Distinguish a reproducible cross-material peak from a 60min-window/voltage-grid artifact; compare first-lithiation C1 local peak voltage (HEO ~0.474 V and Mg-HEO ~0.387 V near the chosen hump) as a separate initial-structure response rather than forcing the C2/C3 ~0.90 V correspondence onto pristine spinels.
