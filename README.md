@@ -1,5 +1,8 @@
 # HEO — Spinel High-Entropy Oxide Conversion Anode Research
 
+**CURRENT INTERNAL RESEARCH HANDOFF (2026-11-16):** [Complete first–third cycle GITT discussion, hump vs t63 R1–R4 interpretation, raw-rest relaxation, delithiation charge accounting](modeling/HEO_2026-11-16_COMPLETE_CYCLE_GITT_DISCUSSION_STATE.md) and [simulation/FEM decision gate](modeling/HEO_2026-11-16_SIMULATION_FEM_MODEL_SELECTION_GATE.md). These are **internal exploratory science notes**, **not revised/approved manuscript claims**, and no FEM has yet been run. The PI explicitly instructed that future GitHub updates require a new request. The PI-locked Abstract/Introduction and current Word/comments are unchanged.
+
+
 > **CURRENT ENTRY POINT (2026-11-16):** [START_HERE_CURRENT_STATE_2026-11-16.md](START_HERE_CURRENT_STATE_2026-11-16.md). This supersedes older start-here routing for new ChatGPT chats and links the complete November 11–14 three-cycle GITT/hump/R1–R4/delithiation study, locked manuscript status, and FEM decision gate. **No separate handoff required.** Existing Abstract/Introduction, first-lithiation R1–R4, figures and Word are unchanged. GitHub updates must occur only when the PI explicitly requests them. Previously generated sandbox plots and raw XLSX are not added as binaries by this documentation commit.
 
 
