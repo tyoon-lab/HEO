@@ -1,5 +1,8 @@
 # HEO — Spinel High-Entropy Oxide Conversion Anode Research
 
+> **CURRENT ENTRY POINT (2026-11-16):** [START_HERE_CURRENT_STATE_2026-11-16.md](START_HERE_CURRENT_STATE_2026-11-16.md). This supersedes older start-here routing for new ChatGPT chats and links the complete November 11–14 three-cycle GITT/hump/R1–R4/delithiation study, locked manuscript status, and FEM decision gate. **No separate handoff required.** Existing Abstract/Introduction, first-lithiation R1–R4, figures and Word are unchanged. GitHub updates must occur only when the PI explicitly requests them. Previously generated sandbox plots and raw XLSX are not added as binaries by this documentation commit.
+
+
 **LATEST FIGURE 3 SOURCE AUDIT (2026-11-11):** [Verified September 17 email/slide 9–10 evidence, current revised §2.1–2.2 wording and student data-request list](manuscript/HEO_2026-11-11_FIGURE3_SOURCE_CHECK_AND_STUDENT_DATA_REQUESTS.md). Native source plots support partial, rather than full, rate recovery; raw cycle/rate tables remain pending.
 
 **LATEST PI DECISION (2026-11-11):** [Full accepted Abstract and four Introduction paragraphs, with rationale](manuscript/HEO_2026-11-11_PI_LOCKED_ABSTRACT_INTRODUCTION_AND_DECISION_LOG.md) are locked for the current manuscript revision. November 10 pending/proposed text and earlier Word extracts are superseded for wording only. GitHub records were updated; this operation did not modify a DOCX, figures, or Word comments.
