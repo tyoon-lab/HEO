@@ -1,4 +1,4 @@
-# HEO — CURRENT STATE 2026-11-16 (single entry point for next ChatGPT chat)
+> **2026-11-18 UPDATE:** See the current preferred index [START_HERE_CURRENT_STATE_2026-11-18.md](START_HERE_CURRENT_STATE_2026-11-18.md), especially [the new C1–C3 minimal-model and mechanism audit](modeling/HEO_2026-11-18_C1_C3_MINIMAL_MODEL_MECHANISTIC_CONCLUSIONS.md). This earlier Nov-16 index is retained as a historical snapshot.\n\n# HEO — CURRENT STATE 2026-11-16 (single entry point for next ChatGPT chat)
 
 **Latest updated 2026-11-16; no separate handoff required.** This is a *routing/index document*: exact scientific decisions and evidence are in the linked records. Read in the order below. The project's old `START_HERE_CURRENT_STATE_2026-10-12.md` remains a historical detailed source, but **this document is the preferred new entry point**.
 
