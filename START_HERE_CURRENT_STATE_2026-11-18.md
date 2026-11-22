@@ -1,5 +1,8 @@
 # HEO — current project state, 2026-11-18
 
+> **SUPERSEDED FOR NEW CHATS (2026-11-23):** [START_HERE_CURRENT_STATE_2026-11-23.md](START_HERE_CURRENT_STATE_2026-11-23.md). The PI decided on experiment-free manuscript completion; read the new proposed §§2.3–2.6/Conclusion, literature reference audit and submission evidence gates there first. This 18-Nov record remains as historical C1–C3 modeling state. No Word, approved Abstract/Introduction, SI or figures were changed by the Nov-23 GitHub documentation update.
+
+
 **Preferred entry point for a new chat.** This index supersedes the Nov-16 index *for subsequent-cycle mechanistic discussion* while preserving all scientific and manuscript decisions. The PI specifically requested an explicit GitHub update on Nov 18, 2026, and a summary PowerPoint. No manual handoff from the old conversation is required.
 
 ## Read first, in this order
