@@ -1,5 +1,8 @@
 # HEO — Spinel High-Entropy Oxide Conversion Anode Research
 
+> **CURRENT HANDOFF (2026-11-23):** [Start here — experiment-free manuscript closure and next-chat actions](START_HERE_CURRENT_STATE_2026-11-23.md). Full [proposed Results/Discussion 2.3–2.6 + Conclusion](manuscript/HEO_2026-11-23_EXPERIMENT_FREE_RESULTS_DISCUSSION_PROPOSED.md) and [claim/reference/submission evidence audit](manuscript/HEO_2026-11-23_REFERENCE_CLAIM_AND_SUBMISSION_GATE_AUDIT.md). The PI explicitly ruled out additional experiments and FEM for this paper. Exact approved Abstract/Introduction, original Word comments, manuscript figures and SI remain unchanged. The proposed Markdown is **not yet the Word version**. Previous 'current' entries below are historical snapshots.
+
+
 **CURRENT INTERNAL RESEARCH HANDOFF (2026-11-16):** [Complete first–third cycle GITT discussion, hump vs t63 R1–R4 interpretation, raw-rest relaxation, delithiation charge accounting](modeling/HEO_2026-11-16_COMPLETE_CYCLE_GITT_DISCUSSION_STATE.md) and [simulation/FEM decision gate](modeling/HEO_2026-11-16_SIMULATION_FEM_MODEL_SELECTION_GATE.md). These are **internal exploratory science notes**, **not revised/approved manuscript claims**, and no FEM has yet been run. The PI explicitly instructed that future GitHub updates require a new request. The PI-locked Abstract/Introduction and current Word/comments are unchanged.
 
 
