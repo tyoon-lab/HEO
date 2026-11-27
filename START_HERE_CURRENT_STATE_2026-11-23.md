@@ -1,3 +1,5 @@
+> **Historical snapshot.** Current integrated Word and SI state: [START_HERE_CURRENT_STATE_2026-11-27.md](START_HERE_CURRENT_STATE_2026-11-27.md).
+
 # HEO — CURRENT STATE FOR NEXT CHAT (2026-11-23)
 
 **This is now the preferred starting point.** On 23 November 2026 the PI decided to **complete the HEO manuscript with existing data and verified published literature**, without further experiments. The requested sequence was: audit new 2.3–2.6 + Conclusion against the actual latest author Word and references; archive proposed revised prose and verification decisions on GitHub; hand over to a fresh chat. This was completed as a **research/documentation review**. It was **not** a final Word/SI rebuild or physical model validation.
@@ -44,3 +46,4 @@ Already existing Word [4] Luo 2022 (operando Co-free HEO XAS), [5] Triolo 2023 (
 Read this file then **review the proposed §2.3 line-by-line against the 11-Nov Word**: keep valid data, ensure citation/claim scope, polish non-abstract language; continue sequentially §2.4→§2.5→§2.6/Conclusion. Once PI approves the prose and figure ordering, and ONLY if PI requests, assemble Word preserving existing comments, and check SI/citation order. Additional experiments/FEM are off scope. GitHub updates in future chats ONLY when the PI explicitly asks.
 
 **Current completion:** Detailed experiment-free manuscript candidate and citation/source audit are now on GitHub. No new experiments, no new FEM, no Word changes, no completed SI rebuild, no confirmed submission.
+
